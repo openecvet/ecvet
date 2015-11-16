@@ -1,0 +1,35 @@
+(a) ‘Qualification’ means a formal outcome of an assessment and validation process which is obtained when a competent institution determines that an individual has achieved learning outcomes to given standards;
+
+(a) ‘Qualification’ bedeutet ein formales Ergebnis eines Beurteilungs(Beschreibungs) und Bewertungsprozesses (Nachweiserbringung), der dadurch erreicht wird, dass eine zuständige Institution entscheidet, ob eine Person ein Lernergebnis gemessen an einem gegebenen Standard erreicht hat.   
+
+(b) ‘Learning outcomes’ means statements of what a learner knows, understands and is able to do on completion of a learning process and which are defined in terms of knowledge, skills and competence;
+
+(b) 'Learning outcomes' bedeutet Aussagen darüber zu treffen, was ein Lerner weiß, versteht und zu tun in der Lage ist, um einen Lernprozess abzuschließen, die (Aussagen, Learning outcomes?) in den Bereiche knowledge, skills und competence definiert (AND OR, XOR?) sind.
+
+(c) ‘Unit of learning outcomes’ (unit) means a component of a qualification, consisting of a coherent set of knowledge, skills and competence, that can be assessed and validated;
+
+(c) ‘Unit of learning outcomes’ (unit) bedeutet eine Komponente einer Qualification, bestehend aus einem(r) schlüssigen (eindeutigen) Menge von knowledge, skills and competence, die bewertet und beurteilt werden können.
+
+(d) ‘Credit for learning outcomes’ (credit) means a set of learning outcomes of an individual which have been assessed and which can be accumulated towards a qualification or transferred to other learning programmes or qualifications;
+
+(d) ‘Credit for learning outcomes’ (credit) bedeutet eine Menge von 'learning outcomes' einer Person, die bewertet wurde und die in Richtung einer Qualifikation angesammelt oder auf andere Lernprogramme oder Qualificationen übertragen werden können.
+
+(e) ‘Competent institution’ means an institution which is responsible for designing and awarding qualifications or recognising units or other functions linked to ECVET, such as allocation of ECVET points to qualifications and units, assessment, validation and recognition of learning outcomes, under the rules and practices of participating countries;
+
+(e) ‘Competent institution’ bedeutet eine zuständige Institution, die verantwortlich für den Entwurf und die Auszeichnung von qualifciations ist der andere Funktionen in Bezug auf ECVET hat, so wie die Verteilung von ECVET Punkten für qualifications and units, Beurteilung, Bewertung und Anerkennung von learning outcomes in Bezug auf die Gesetze und Praktiken der teilnehmenden Länder.
+
+(f) ‘Assessment of learning outcomes’ means methods and processes used to establish the extent to which a learner has in fact attained particular knowledge, skills and competence;
+
+(f) ‘Assessment of learning outcomes’ bedeutet Methoden und Prozesse die verwendet werden um den Umfang dessen festzustellen, was ein Lerner tatsächlich an bestimmter knowledge, skills and competence erreicht hat.
+
+(g) ‘Validation of learning outcomes’ means the process of confirming that certain assessed learning outcomes achieved by a learner correspond to specific outcomes which may be required for a unit or a qualification;
+
+(g) ‘Validation of learning outcomes’ bedeutet der Prozess der Bestätigung, dass verschiedene beurteilte learning outcomes, übereinstimmend mit den speziellen outcomes, die für eine unit oder qualification Notwendig sind, von einem Lerner erreicht wurden
+
+(h) ‘Recognition of learning outcomes’ means the process of attesting officially achieved learning outcomes through the awarding of units or qualifications;
+
+(h) ‘Recognition of learning outcomes’ bedeutet der Prozess der Beglaubigung der offiziell erreichten learning outcomes durch die Auszeichnung der units oder qualifications
+
+(i) ‘ECVET points’ means a numerical representation of the overall weight of learning outcomes in a qualification and of the relative weight of units in relation to the qualification.
+
+(i) ‘ECVET points’ bedeutet eine numerische Representation des Gesamtgewichts der learning outcomes in einer qualification und des relativen Gewichts der units in relation zu der qualification.

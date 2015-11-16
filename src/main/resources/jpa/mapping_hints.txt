@@ -1,0 +1,59 @@
+<xsd:annotation>
+    <xsd:appinfo>
+        <annox:annotate target="field">
+            <Entity annox:class="javax.persistence.Entity"></Entity>
+            <Table annox:class="javax.persistence.Table" name="units"></Table>
+        </annox:annotate>
+    </xsd:appinfo>
+</xsd:annotation>
+<!---->
+<!-- ManyToMany unidirectional: Parent node in XSD becomes the annotation for he referenced field collection-->
+<!---->
+<xsd:annotation>
+    <xsd:appinfo>
+        <annox:annotate target="field">
+            <ManyToMany annox:class="javax.persistence.ManyToMany">
+                <cascade>PERSIST</cascade>
+                <cascade>MERGE</cascade>
+                <cascade>DETACH</cascade>
+            </ManyToMany>
+            <JoinTable annox:class="javax.persistence.JoinTable">
+                <inverseJoinColumns>
+                    <JoinColumn annox:class="javax.persistence.JoinColumn" name="units_id"></JoinColumn>
+                </inverseJoinColumns>
+                <joinColumns>
+                    <JoinColumn annox:class="javax.persistence.JoinColumn" name="unit_id"></JoinColumn>
+                </joinColumns>
+            </JoinTable>
+        </annox:annotate>
+    </xsd:appinfo>
+</xsd:annotation>
+<!---->
+<!--OneToOne unidirectional: Parent node in XSD becomes the annotation for he referenced field -->
+<!---->
+<xsd:annotation>
+    <xsd:appinfo>
+        <annox:annotate target="field">
+            <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.UnitsType"></OneToOne>
+        </annox:annotate>
+    </xsd:appinfo>
+</xsd:annotation>
+<!---->
+<!--wraper type -->
+<!---->
+<xsd:complexContent>
+    <xsd:extension base="evcetElement">
+    </xsd:extension>
+</xsd:complexContent>
+<!---->
+<!--enums human readable in db -->
+<!---->
+<xsd:annotation>
+    <xsd:appinfo>
+        <annox:annotate target="field">
+            <Enumerated annox:class="javax.persistence.Enumerated">
+                <EnumType>STRING</EnumType>
+            </Enumerated>
+        </annox:annotate>
+    </xsd:appinfo>
+</xsd:annotation>

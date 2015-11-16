@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qualification URI="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/draft_.xsd">
+	<id>1</id>
+	<title>title</title>
+	<description>description</description>
+	<competentInstitutions>
+		<competentInstitution URI="">
+			<title>title</title>
+			<description>description</description>
+			<partners>
+				<partner URI="">
+					<title>title</title>
+					<description>description</description>
+				</partner>
+			</partners>
+			<legislation>
+				<rules>rules</rules>
+				<practices>practices</practices>
+			</legislation>
+		</competentInstitution>
+	</competentInstitutions>
+	<complementaryDocuments>
+		<learningAgreements>
+			<learningAgreement URI="">
+				<title>title</title>
+				<description>description</description>
+			</learningAgreement>
+		</learningAgreements>
+		<transcriptionOfRecords>transcriptionOfRecords</transcriptionOfRecords>
+		<userGuide>userGuide</userGuide>
+	</complementaryDocuments>
+	<units>
+		<unit URI="12345">
+			<title>title</title>
+			<description>description</description>
+			<weightSum>0</weightSum>
+			<relativeWeight>0</relativeWeight>
+			<learningOutcomes>
+				<learningOutcome URI="">
+					<title>title</title>
+					<description>description</description>
+					<credit>0</credit>
+					<learningOutcomeTerms>
+						<learningOutcomeTerm>
+							<title>title</title>
+							<description>description</description>
+							<referenceLevels>
+								<referenceLevel framework="EQF" frameworkLevel="1" frameworkTerm="all" />
+							</referenceLevels>
+							<weight>0</weight>
+							<achievement>
+								<assessments>
+									<assessment>
+										<methods>
+											<method URI="" />
+										</methods>
+										<processes>
+											<process URI="" />
+										</processes>
+									</assessment>
+								</assessments>
+								<validations>
+									<validation>
+										<confirmingRequirement>
+											<assessmentURI>assessmentURI</assessmentURI>
+											<requirements>
+												<requirement URI="" threshold="" />
+											</requirements>
+										</confirmingRequirement>
+									</validation>
+								</validations>
+								<recognitions>
+									<recognition URI="">
+										<title>title</title>
+										<description>description</description>
+										<competentInstitutionURI>competentInstitutionURI</competentInstitutionURI>
+										<certificateTemplate>
+											<Data>MA==</Data>
+										</certificateTemplate>
+									</recognition>
+								</recognitions>
+							</achievement>
+						</learningOutcomeTerm>
+					</learningOutcomeTerms>
+				</learningOutcome>
+			</learningOutcomes>
+			<referenceLevels>
+				<referenceLevel framework="EQF" frameworkLevel="1" frameworkTerm="all" />
+			</referenceLevels>
+			<achievement>
+				<assessments>
+					<assessment>
+						<methods>
+							<method URI="" />
+						</methods>
+						<processes>
+							<process URI="" />
+						</processes>
+					</assessment>
+				</assessments>
+				<validations>
+					<validation>
+						<confirmingRequirement>
+							<assessmentURI>assessmentURI</assessmentURI>
+							<requirements>
+								<requirement URI="" threshold="" />
+							</requirements>
+						</confirmingRequirement>
+					</validation>
+				</validations>
+				<recognitions>
+					<recognition URI="">
+						<title>title</title>
+						<description>description</description>
+						<competentInstitutionURI>competentInstitutionURI</competentInstitutionURI>
+						<certificateTemplate>
+							<Data>MA==</Data>
+						</certificateTemplate>
+					</recognition>
+				</recognitions>
+			</achievement>
+			<validityInTime>P1D</validityInTime>
+		</unit>
+	</units>
+</qualification>
