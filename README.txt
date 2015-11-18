@@ -1,3 +1,6 @@
+for documentation visit: 
+https://github.com/openecvet/specification 
+http://open-ecvet.eu
 use:
 
 mvn clean generate-sources -P xjc 
