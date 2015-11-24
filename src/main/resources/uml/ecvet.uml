@@ -1,229 +1,295 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Diagram>
   <ID>JAVA</ID>
-  <OriginalElement>net.impact_eu.ecvet</OriginalElement>
+  <OriginalElement>net.impact_eu.ecvet.entity</OriginalElement>
   <nodes>
-    <node x="1373.5654761904764" y="236.0">net.impact_eu.ecvet.ConfirmingRequirementType</node>
-    <node x="707.6904761904764" y="1540.0">net.impact_eu.ecvet.UnitType</node>
-    <node x="12.41865079365084" y="1886.0">net.impact_eu.ecvet.CompetentInstitutionsType</node>
-    <node x="1378.0654761904764" y="592.0">net.impact_eu.ecvet.ValidationsType</node>
-    <node x="660.8154761904764" y="130.0">net.impact_eu.ecvet.MethodType</node>
-    <node x="787.6904761904764" y="1886.0">net.impact_eu.ecvet.UnitsType</node>
-    <node x="118.41865079365084" y="1600.0">net.impact_eu.ecvet.CompetentInstitutionType</node>
-    <node x="1161.5654761904764" y="1862.0">net.impact_eu.ecvet.ComplementaryDocumentsType</node>
-    <node x="625.6418650793653" y="1410.0">net.impact_eu.ecvet.LearningOutcomesType</node>
-    <node x="368.1686507936509" y="568.0">net.impact_eu.ecvet.ReferenceLevelType</node>
-    <node x="704.8154761904764" y="592.0">net.impact_eu.ecvet.AssessmentsType</node>
-    <node x="1000.0654761904764" y="722.0">net.impact_eu.ecvet.AchievementType</node>
-    <node x="342.3154761904764" y="402.0">net.impact_eu.ecvet.FrameworkType</node>
-    <node x="510.3154761904763" y="366.0">net.impact_eu.ecvet.FrameworkTermType</node>
-    <node x="693.1418650793653" y="1184.0">net.impact_eu.ecvet.LearningOutcomeType</node>
-    <node x="568.6418650793653" y="1078.0">net.impact_eu.ecvet.LearningOutcomeTermsType</node>
-    <node x="1268.5654761904764" y="1386.0">net.impact_eu.ecvet.LearningAgreementType</node>
-    <node x="338.16865079365084" y="746.0">net.impact_eu.ecvet.ReferenceLevelsType</node>
-    <node x="1168.5654761904764" y="1648.0">net.impact_eu.ecvet.LearningAgreementsType</node>
-    <node x="843.3154761904764" y="248.0">net.impact_eu.ecvet.ProcessesType</node>
-    <node x="0.0" y="1410.0">net.impact_eu.ecvet.PartnersType</node>
-    <node x="1336.0654761904764" y="130.0">net.impact_eu.ecvet.RequirementsType</node>
-    <node x="1090.5654761904764" y="248.0">net.impact_eu.ecvet.FileDataType</node>
-    <node x="35.5" y="1208.0">net.impact_eu.ecvet.PartnerType</node>
-    <node x="1412.0654761904764" y="0.0">net.impact_eu.ecvet.RequirementType</node>
-    <node x="258.0" y="1398.0">net.impact_eu.ecvet.LegislationType</node>
-    <node x="1052.0654761904764" y="366.0">net.impact_eu.ecvet.RecognitionType</node>
-    <node x="1279.0654761904764" y="414.0">net.impact_eu.ecvet.ValidationType</node>
-    <node x="882.8154761904764" y="130.0">net.impact_eu.ecvet.ProcessType</node>
-    <node x="747.6904761904764" y="2016.0">net.impact_eu.ecvet.QualificationType</node>
-    <node x="715.3154761904764" y="402.0">net.impact_eu.ecvet.AssessmentType</node>
-    <node x="680.6418650793653" y="876.0">net.impact_eu.ecvet.LearningOutcomeTermType</node>
-    <node x="1008.5654761904764" y="592.0">net.impact_eu.ecvet.RecognitionsType</node>
-    <node x="621.3154761904764" y="248.0">net.impact_eu.ecvet.MethodsType</node>
+    <node x="987.8545673076925" y="1252.0">net.impact_eu.ecvet.entity.LearningOutcomeTermsType</node>
+    <node x="749.125" y="624.0">net.impact_eu.ecvet.entity.ValidationsType</node>
+    <node x="2062.5625" y="1418.0">net.impact_eu.ecvet.entity.QualificationType</node>
+    <node x="741.1045673076924" y="1204.0">net.impact_eu.ecvet.entity.CompetentInstitutionType</node>
+    <node x="481.625" y="248.0">net.impact_eu.ecvet.entity.FileDataType</node>
+    <node x="727.125" y="130.0">net.impact_eu.ecvet.entity.RequirementsType</node>
+    <node x="1844.837740384616" y="624.0">net.impact_eu.ecvet.entity.LearningOutcomeType</node>
+    <node x="1571.337740384616" y="790.0">net.impact_eu.ecvet.entity.ReferenceLevelsType</node>
+    <node x="1425.875" y="402.0">net.impact_eu.ecvet.entity.FrameworkType</node>
+    <node x="409.25" y="1014.0">net.impact_eu.ecvet.entity.PartnersType</node>
+    <node x="1593.875" y="366.0">net.impact_eu.ecvet.entity.FrameworkTermType</node>
+    <node x="2163.6382211538466" y="390.0">net.impact_eu.ecvet.entity.EvcetElement</node>
+    <node x="1972.125" y="1252.0">net.impact_eu.ecvet.entity.UnitsType</node>
+    <node x="1035.875" y="248.0">net.impact_eu.ecvet.entity.ProcessesType</node>
+    <node x="1095.375" y="130.0">net.impact_eu.ecvet.entity.ProcessType</node>
+    <node x="443.125" y="366.0">net.impact_eu.ecvet.entity.RecognitionType</node>
+    <node x="1831.375" y="930.0">net.impact_eu.ecvet.entity.UnitType</node>
+    <node x="107.0" y="990.0">net.impact_eu.ecvet.entity.LearningAgreementType</node>
+    <node x="0.0" y="1406.0">net.impact_eu.ecvet.entity.ComplementaryDocumentsType</node>
+    <node x="1571.587740384616" y="588.0">net.impact_eu.ecvet.entity.ReferenceLevelType</node>
+    <node x="1297.875" y="248.0">net.impact_eu.ecvet.entity.MethodsType</node>
+    <node x="881.1045673076924" y="1002.0">net.impact_eu.ecvet.entity.LegislationType</node>
+    <node x="635.1045673076924" y="1430.0">net.impact_eu.ecvet.entity.CompetentInstitutionsType</node>
+    <node x="7.0" y="1252.0">net.impact_eu.ecvet.entity.LearningAgreementsType</node>
+    <node x="1169.875" y="402.0">net.impact_eu.ecvet.entity.AssessmentType</node>
+    <node x="670.125" y="414.0">net.impact_eu.ecvet.entity.ValidationType</node>
+    <node x="1139.375" y="624.0">net.impact_eu.ecvet.entity.AssessmentsType</node>
+    <node x="1357.375" y="130.0">net.impact_eu.ecvet.entity.MethodType</node>
+    <node x="1196.125" y="1560.0">net.impact_eu.ecvet.entity.EcvetFrameworkType</node>
+    <node x="764.9707532051286" y="766.0">net.impact_eu.ecvet.entity.AchievementType</node>
+    <node x="444.75" y="766.0">net.impact_eu.ecvet.entity.PartnerType</node>
+    <node x="399.625" y="624.0">net.impact_eu.ecvet.entity.RecognitionsType</node>
+    <node x="803.125" y="0.0">net.impact_eu.ecvet.entity.RequirementType</node>
+    <node x="764.625" y="236.0">net.impact_eu.ecvet.entity.ConfirmingRequirementType</node>
+    <node x="1099.8545673076924" y="966.0">net.impact_eu.ecvet.entity.LearningOutcomeTermType</node>
+    <node x="1946.337740384616" y="790.0">net.impact_eu.ecvet.entity.LearningOutcomesType</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="net.impact_eu.ecvet.LearningOutcomeTermType" target="net.impact_eu.ecvet.ReferenceLevelsType">
-      <point x="-58.0" y="-76.0" />
-      <point x="738.6418650793653" y="851.0" />
-      <point x="600.6686507936508" y="851.0" />
+    <edge source="net.impact_eu.ecvet.entity.UnitType" target="net.impact_eu.ecvet.entity.AchievementType">
+      <point x="-118.875" y="-112.0" />
+      <point x="1871.0" y="900.0" />
+      <point x="998.2207532051286" y="900.0" />
+      <point x="77.75" y="52.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.CompetentInstitutionType" target="net.impact_eu.ecvet.entity.LegislationType">
+      <point x="54.5" y="-76.0" />
+      <point x="904.6045673076924" y="1179.0" />
+      <point x="958.1045673076924" y="1179.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.UnitType" target="net.impact_eu.ecvet.entity.EvcetElement">
+      <point x="118.87499999999994" y="-112.0" />
+      <point x="2108.75" y="910.0" />
+      <point x="2338.837740384616" y="910.0" />
+      <point x="2338.837740384616" y="568.0" />
+      <point x="2254.2007211538466" y="568.0" />
+      <point x="10.0625" y="52.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.AchievementType" target="net.impact_eu.ecvet.entity.RecognitionsType">
+      <point x="-103.66666666666674" y="-52.0" />
+      <point x="816.8040865384619" y="741.0" />
+      <point x="546.625" y="741.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.ProcessesType" target="net.impact_eu.ecvet.entity.ProcessType">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.UnitType" target="net.impact_eu.ecvet.entity.ReferenceLevelsType">
+      <point x="-39.625" y="-112.0" />
+      <point x="1950.25" y="890.0" />
+      <point x="1833.837740384616" y="890.0" />
       <point x="87.5" y="28.0" />
     </edge>
-    <edge source="net.impact_eu.ecvet.RecognitionsType" target="net.impact_eu.ecvet.RecognitionType">
+    <edge source="net.impact_eu.ecvet.entity.UnitType" target="net.impact_eu.ecvet.entity.UnitsType">
+      <point x="79.24999999999994" y="112.0" />
+      <point x="0.0" y="-28.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.QualificationType" target="net.impact_eu.ecvet.entity.EvcetElement">
+      <point x="49.25" y="-40.0" />
+      <point x="2210.3125" y="1381.0" />
+      <point x="2364.671474358975" y="1381.0" />
+      <point x="2364.671474358975" y="548.0" />
+      <point x="2294.4507211538466" y="548.0" />
+      <point x="50.3125" y="52.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.QualificationType" target="net.impact_eu.ecvet.entity.UnitsType">
+      <point x="-49.25" y="-40.0" />
+      <point x="2111.8125" y="1381.0" />
+      <point x="2069.125" y="1381.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.CompetentInstitutionType" target="net.impact_eu.ecvet.entity.PartnersType">
+      <point x="-54.5" y="-76.0" />
+      <point x="795.6045673076924" y="1179.0" />
+      <point x="528.25" y="1179.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.AssessmentsType" target="net.impact_eu.ecvet.entity.AssessmentType">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.AssessmentType" target="net.impact_eu.ecvet.entity.ProcessesType">
+      <point x="-59.0" y="-40.0" />
+      <point x="1228.875" y="341.0" />
+      <point x="1156.875" y="341.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.RecognitionsType" target="net.impact_eu.ecvet.entity.RecognitionType">
       <point x="0.0" y="-28.0" />
       <point x="0.0" y="76.0" />
     </edge>
-    <edge source="net.impact_eu.ecvet.QualificationType" target="net.impact_eu.ecvet.CompetentInstitutionsType">
-      <point x="-75.66666666666674" y="-88.0" />
-      <point x="785.5238095238096" y="1991.0" />
-      <point x="227.41865079365084" y="1991.0" />
+    <edge source="net.impact_eu.ecvet.entity.AchievementType" target="net.impact_eu.ecvet.entity.AssessmentsType">
+      <point x="103.66666666666663" y="-52.0" />
+      <point x="1024.1374198717954" y="741.0" />
+      <point x="1287.875" y="741.0" />
       <point x="0.0" y="28.0" />
     </edge>
-    <edge source="net.impact_eu.ecvet.LearningAgreementsType" target="net.impact_eu.ecvet.LearningAgreementType">
+    <edge source="net.impact_eu.ecvet.entity.ReferenceLevelType" target="net.impact_eu.ecvet.entity.FrameworkType">
+      <point x="-75.33333333333348" y="-64.0" />
+      <point x="1609.2544070512824" y="568.0" />
+      <point x="1499.875" y="568.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.AssessmentType" target="net.impact_eu.ecvet.entity.MethodsType">
+      <point x="59.0" y="-40.0" />
+      <point x="1346.875" y="341.0" />
+      <point x="1418.875" y="341.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.PartnersType" target="net.impact_eu.ecvet.entity.PartnerType">
       <point x="0.0" y="-28.0" />
       <point x="0.0" y="52.0" />
     </edge>
-    <edge source="net.impact_eu.ecvet.CompetentInstitutionsType" target="net.impact_eu.ecvet.CompetentInstitutionType">
-      <point x="0.0" y="-28.0" />
-      <point x="0.0" y="76.0" />
+    <edge source="net.impact_eu.ecvet.entity.ReferenceLevelsType" target="net.impact_eu.ecvet.entity.ReferenceLevelType">
+      <point x="-87.5" y="-28.0" />
+      <point x="1658.837740384616" y="741.0" />
+      <point x="1684.587740384616" y="741.0" />
+      <point x="0.0" y="64.0" />
     </edge>
-    <edge source="net.impact_eu.ecvet.MethodsType" target="net.impact_eu.ecvet.MethodType">
-      <point x="0.0" y="-28.0" />
-      <point x="0.0" y="28.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.UnitType" target="net.impact_eu.ecvet.ReferenceLevelsType">
-      <point x="-102.33333333333326" y="-136.0" />
-      <point x="758.8571428571431" y="1515.0" />
-      <point x="422.50000000000006" y="1515.0" />
-      <point x="422.50000000000006" y="851.0" />
-      <point x="425.66865079365084" y="851.0" />
+    <edge source="net.impact_eu.ecvet.entity.LearningOutcomeTermType" target="net.impact_eu.ecvet.entity.ReferenceLevelsType">
+      <point x="58.0" y="-76.0" />
+      <point x="1273.8545673076924" y="910.0" />
+      <point x="1658.837740384616" y="910.0" />
       <point x="-87.5" y="28.0" />
     </edge>
-    <edge source="net.impact_eu.ecvet.ComplementaryDocumentsType" target="net.impact_eu.ecvet.LearningAgreementsType">
+    <edge source="net.impact_eu.ecvet.entity.LearningOutcomesType" target="net.impact_eu.ecvet.entity.LearningOutcomeType">
+      <point x="-95.5" y="-28.0" />
+      <point x="2041.837740384616" y="741.0" />
+      <point x="2036.337740384616" y="741.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.ComplementaryDocumentsType" target="net.impact_eu.ecvet.entity.LearningAgreementsType">
       <point x="0.0" y="-52.0" />
       <point x="0.0" y="28.0" />
     </edge>
-    <edge source="net.impact_eu.ecvet.PartnersType" target="net.impact_eu.ecvet.PartnerType">
-      <point x="0.0" y="-28.0" />
-      <point x="0.0" y="52.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.LearningOutcomeTermType" target="net.impact_eu.ecvet.AchievementType">
-      <point x="58.0" y="-76.0" />
-      <point x="854.6418650793653" y="851.0" />
-      <point x="1077.8154761904764" y="851.0" />
-      <point x="-77.75" y="52.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.CompetentInstitutionType" target="net.impact_eu.ecvet.PartnersType">
-      <point x="-54.5" y="-76.0" />
-      <point x="172.91865079365084" y="1515.0" />
-      <point x="119.0" y="1515.0" />
-      <point x="0.0" y="28.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.CompetentInstitutionType" target="net.impact_eu.ecvet.LegislationType">
-      <point x="54.5" y="-76.0" />
-      <point x="281.91865079365084" y="1515.0" />
-      <point x="335.0" y="1515.0" />
-      <point x="0.0" y="40.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.LearningOutcomeTermsType" target="net.impact_eu.ecvet.LearningOutcomeTermType">
-      <point x="0.0" y="-28.0" />
-      <point x="0.0" y="76.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.RequirementsType" target="net.impact_eu.ecvet.RequirementType">
-      <point x="0.0" y="-28.0" />
-      <point x="0.0" y="40.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.UnitsType" target="net.impact_eu.ecvet.UnitType">
-      <point x="-36.75" y="-28.0" />
-      <point x="824.4404761904764" y="1837.0" />
-      <point x="784.4404761904764" y="1837.0" />
-      <point x="-76.75" y="136.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.ReferenceLevelType" target="net.impact_eu.ecvet.FrameworkType">
-      <point x="-72.5" y="-52.0" />
-      <point x="440.6686507936509" y="543.0" />
-      <point x="416.3154761904764" y="543.0" />
-      <point x="0.0" y="40.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.AssessmentType" target="net.impact_eu.ecvet.ProcessesType">
-      <point x="59.0" y="-40.0" />
-      <point x="892.3154761904764" y="341.0" />
-      <point x="944.3154761904764" y="341.0" />
-      <point x="0.0" y="28.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.RecognitionType" target="net.impact_eu.ecvet.FileDataType">
+    <edge source="net.impact_eu.ecvet.entity.RecognitionType" target="net.impact_eu.ecvet.entity.FileDataType">
       <point x="0.0" y="-76.0" />
       <point x="0.0" y="28.0" />
     </edge>
-    <edge source="net.impact_eu.ecvet.AchievementType" target="net.impact_eu.ecvet.ValidationsType">
-      <point x="103.66666666666674" y="-52.0" />
-      <point x="1259.2321428571431" y="697.0" />
-      <point x="1491.0654761904764" y="697.0" />
-      <point x="0.0" y="28.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.ValidationType" target="net.impact_eu.ecvet.ConfirmingRequirementType">
+    <edge source="net.impact_eu.ecvet.entity.ValidationType" target="net.impact_eu.ecvet.entity.ConfirmingRequirementType">
       <point x="0.0" y="-28.0" />
       <point x="0.0" y="40.0" />
     </edge>
-    <edge source="net.impact_eu.ecvet.ConfirmingRequirementType" target="net.impact_eu.ecvet.RequirementsType">
+    <edge source="net.impact_eu.ecvet.entity.EcvetFrameworkType" target="net.impact_eu.ecvet.entity.CompetentInstitutionsType">
+      <point x="-55.5" y="-52.0" />
+      <point x="1362.625" y="1530.0" />
+      <point x="850.1045673076924" y="1530.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.UnitsType" target="net.impact_eu.ecvet.entity.EvcetElement">
+      <point x="64.66666666666663" y="-28.0" />
+      <point x="2133.7916666666665" y="1179.0" />
+      <point x="2349.837740384616" y="1179.0" />
+      <point x="2349.837740384616" y="558.0" />
+      <point x="2274.3257211538466" y="558.0" />
+      <point x="30.1875" y="52.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.ReferenceLevelsType" target="net.impact_eu.ecvet.entity.EvcetElement">
+      <point x="87.5" y="-28.0" />
+      <point x="1833.837740384616" y="741.0" />
+      <point x="1808.087740384616" y="741.0" />
+      <point x="1808.087740384616" y="558.0" />
+      <point x="2193.8257211538466" y="558.0" />
+      <point x="-50.3125" y="52.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.UnitsType" target="net.impact_eu.ecvet.entity.UnitType">
+      <point x="-64.66666666666669" y="-28.0" />
+      <point x="2004.4583333333333" y="1179.0" />
+      <point x="1910.625" y="1179.0" />
+      <point x="-79.25" y="112.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.EcvetFrameworkType" target="net.impact_eu.ecvet.entity.ComplementaryDocumentsType">
+      <point x="-166.5" y="-52.0" />
+      <point x="1251.625" y="1540.0" />
+      <point x="211.0" y="1540.0" />
+      <point x="0.0" y="52.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.LearningAgreementsType" target="net.impact_eu.ecvet.entity.LearningAgreementType">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="52.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.ConfirmingRequirementType" target="net.impact_eu.ecvet.entity.RequirementsType">
       <point x="0.0" y="-40.0" />
       <point x="0.0" y="28.0" />
     </edge>
-    <edge source="net.impact_eu.ecvet.ValidationsType" target="net.impact_eu.ecvet.ValidationType">
-      <point x="0.0" y="-28.0" />
-      <point x="0.0" y="28.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.LearningOutcomeType" target="net.impact_eu.ecvet.LearningOutcomeTermsType">
-      <point x="0.0" y="-76.0" />
-      <point x="0.0" y="28.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.UnitType" target="net.impact_eu.ecvet.AchievementType">
-      <point x="102.33333333333337" y="-136.0" />
-      <point x="963.5238095238096" y="1515.0" />
-      <point x="1245.8154761904764" y="1515.0" />
-      <point x="1245.8154761904764" y="851.0" />
-      <point x="1233.3154761904764" y="851.0" />
-      <point x="77.75" y="52.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.AchievementType" target="net.impact_eu.ecvet.AssessmentsType">
-      <point x="-103.66666666666674" y="-52.0" />
-      <point x="1051.8988095238096" y="697.0" />
-      <point x="833.3154761904764" y="697.0" />
-      <point x="0.0" y="28.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.UnitType" target="net.impact_eu.ecvet.UnitsType">
-      <point x="76.75" y="136.0" />
-      <point x="937.9404761904764" y="1837.0" />
-      <point x="897.9404761904764" y="1837.0" />
-      <point x="36.75" y="-28.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.UnitType" target="net.impact_eu.ecvet.LearningOutcomesType">
-      <point x="0.0" y="-136.0" />
-      <point x="861.1904761904764" y="1515.0" />
-      <point x="796.6418650793653" y="1515.0" />
-      <point x="0.0" y="28.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.AssessmentType" target="net.impact_eu.ecvet.MethodsType">
-      <point x="-59.0" y="-40.0" />
-      <point x="774.3154761904764" y="341.0" />
-      <point x="722.3154761904764" y="341.0" />
-      <point x="0.0" y="28.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.ProcessesType" target="net.impact_eu.ecvet.ProcessType">
-      <point x="0.0" y="-28.0" />
-      <point x="0.0" y="28.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.AchievementType" target="net.impact_eu.ecvet.RecognitionsType">
-      <point x="0.0" y="-52.0" />
-      <point x="0.0" y="28.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.ReferenceLevelsType" target="net.impact_eu.ecvet.ReferenceLevelType">
-      <point x="0.0" y="-28.0" />
-      <point x="0.0" y="52.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.AssessmentsType" target="net.impact_eu.ecvet.AssessmentType">
+    <edge source="net.impact_eu.ecvet.entity.RequirementsType" target="net.impact_eu.ecvet.entity.RequirementType">
       <point x="0.0" y="-28.0" />
       <point x="0.0" y="40.0" />
     </edge>
-    <edge source="net.impact_eu.ecvet.LearningOutcomesType" target="net.impact_eu.ecvet.LearningOutcomeType">
+    <edge source="net.impact_eu.ecvet.entity.AchievementType" target="net.impact_eu.ecvet.entity.ValidationsType">
+      <point x="0.0" y="-52.0" />
+      <point x="920.4707532051286" y="741.0" />
+      <point x="882.125" y="741.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.ReferenceLevelType" target="net.impact_eu.ecvet.entity.FrameworkTermType">
+      <point x="0.0" y="-64.0" />
+      <point x="1684.587740384616" y="568.0" />
+      <point x="1686.375" y="568.0" />
+      <point x="0.0" y="76.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.ValidationsType" target="net.impact_eu.ecvet.entity.ValidationType">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.LearningOutcomesType" target="net.impact_eu.ecvet.entity.EvcetElement">
+      <point x="95.5" y="-28.0" />
+      <point x="2232.837740384616" y="741.0" />
+      <point x="2238.337740384616" y="741.0" />
+      <point x="2238.337740384616" y="568.0" />
+      <point x="2234.0757211538466" y="568.0" />
+      <point x="-10.0625" y="52.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.LearningOutcomeType" target="net.impact_eu.ecvet.entity.EvcetElement">
+      <point x="0.0" y="-28.0" />
+      <point x="2036.337740384616" y="568.0" />
+      <point x="2213.9507211538466" y="568.0" />
+      <point x="-30.1875" y="52.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.MethodsType" target="net.impact_eu.ecvet.entity.MethodType">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.EcvetFrameworkType" target="net.impact_eu.ecvet.entity.QualificationType">
+      <point x="55.5" y="-52.0" />
+      <point x="1473.625" y="1530.0" />
+      <point x="2161.0625" y="1530.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.ReferenceLevelType" target="net.impact_eu.ecvet.entity.EvcetElement">
+      <point x="75.33333333333348" y="-64.0" />
+      <point x="1759.9210737179494" y="548.0" />
+      <point x="2173.7007211538466" y="548.0" />
+      <point x="-70.4375" y="52.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.LearningOutcomeTermType" target="net.impact_eu.ecvet.entity.AchievementType">
+      <point x="-58.0" y="-76.0" />
+      <point x="1157.8545673076924" y="910.0" />
+      <point x="842.7207532051286" y="910.0" />
+      <point x="-77.75" y="52.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.LearningOutcomeTermsType" target="net.impact_eu.ecvet.entity.LearningOutcomeTermType">
       <point x="0.0" y="-28.0" />
       <point x="0.0" y="76.0" />
     </edge>
-    <edge source="net.impact_eu.ecvet.ReferenceLevelType" target="net.impact_eu.ecvet.FrameworkTermType">
-      <point x="72.5" y="-52.0" />
-      <point x="585.6686507936508" y="543.0" />
-      <point x="602.8154761904764" y="543.0" />
-      <point x="0.0" y="76.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.QualificationType" target="net.impact_eu.ecvet.ComplementaryDocumentsType">
-      <point x="75.66666666666663" y="-88.0" />
-      <point x="936.8571428571429" y="1991.0" />
-      <point x="1372.5654761904764" y="1991.0" />
-      <point x="0.0" y="52.0" />
-    </edge>
-    <edge source="net.impact_eu.ecvet.QualificationType" target="net.impact_eu.ecvet.UnitsType">
-      <point x="0.0" y="-88.0" />
+    <edge source="net.impact_eu.ecvet.entity.UnitType" target="net.impact_eu.ecvet.entity.LearningOutcomesType">
+      <point x="39.625" y="-112.0" />
+      <point x="2029.5" y="900.0" />
+      <point x="2137.337740384616" y="900.0" />
       <point x="0.0" y="28.0" />
     </edge>
+    <edge source="net.impact_eu.ecvet.entity.CompetentInstitutionsType" target="net.impact_eu.ecvet.entity.CompetentInstitutionType">
+      <point x="0.0" y="-28.0" />
+      <point x="0.0" y="76.0" />
+    </edge>
+    <edge source="net.impact_eu.ecvet.entity.EcvetFrameworkType" target="net.impact_eu.ecvet.entity.EvcetElement">
+      <point x="166.5" y="-52.0" />
+      <point x="1584.625" y="1540.0" />
+      <point x="2400.046474358975" y="1540.0" />
+      <point x="2400.046474358975" y="538.0" />
+      <point x="2314.5757211538466" y="538.0" />
+      <point x="70.4375" y="52.0" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.41862567811934903" x="852.0" y="1096.0" />
+  <settings layout="Hierarchic Group" zoom="0.45022717885171415" x="1200.5" y="832.0" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
