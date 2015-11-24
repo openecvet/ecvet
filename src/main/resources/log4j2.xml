@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration>
   <Appenders>
-    <File name="A1" fileName="level5Debug.log" append="false">
+    <File name="A1" fileName="eu.open_ecvet.log" append="false">
       <PatternLayout pattern="%l: [%p] - %m%n " />
     </File>
     <Console name="STDOUT" target="SYSTEM_OUT">
@@ -11,7 +11,7 @@
   <Loggers>
 
     
-    <Logger name="net.impact_eu.ecvet" level="debug"> 
+    <Logger name="eu.open_ecvet" level="debug"> 
     </Logger> 
 
     <Root level="error">

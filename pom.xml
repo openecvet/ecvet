@@ -55,7 +55,7 @@
 						<configuration>
 							<generateDirectory>src/main/java</generateDirectory>
 							<schemaDirectory>src/main/resources</schemaDirectory>
-							<generatePackage>net.impact_eu.ecvet.entity</generatePackage>
+							<generatePackage>eu.open_ecvet.entity</generatePackage>
 							<schemaIncludes>
 								<include>xsd/draft.xsd</include>
 							</schemaIncludes>

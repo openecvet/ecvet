@@ -23,7 +23,7 @@
                             <xsd:annotation>
                                 <xsd:appinfo>
                                     <annox:annotate target="field">
-                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.QualificationType"></OneToOne>
+                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.QualificationType"></OneToOne>
                                     </annox:annotate>
                                 </xsd:appinfo>
                             </xsd:annotation>
@@ -51,7 +51,7 @@
                             <xsd:annotation>
                                 <xsd:appinfo>
                                     <annox:annotate target="field">
-                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.UnitListType"></OneToOne>
+                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.UnitListType"></OneToOne>
                                     </annox:annotate>
                                 </xsd:appinfo>
                             </xsd:annotation>
@@ -149,7 +149,7 @@
                             <xsd:annotation>
                                 <xsd:appinfo>
                                     <annox:annotate target="field">
-                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.LearningOutcomeListType"></OneToOne>
+                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.LearningOutcomeListType"></OneToOne>
                                     </annox:annotate>
                                 </xsd:appinfo>
                             </xsd:annotation>
@@ -158,7 +158,7 @@
                             <xsd:annotation>
                                 <xsd:appinfo>
                                     <annox:annotate target="field">
-                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.ReferenceLevelListType"></OneToOne>
+                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.ReferenceLevelListType"></OneToOne>
                                     </annox:annotate>
                                 </xsd:appinfo>
                             </xsd:annotation>
@@ -171,7 +171,7 @@
                                 </xsd:documentation>
                                 <xsd:appinfo>
                                     <annox:annotate target="field">
-                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.UnitListType"></OneToOne>
+                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.UnitListType"></OneToOne>
                                     </annox:annotate>
                                 </xsd:appinfo>
                             </xsd:annotation>
