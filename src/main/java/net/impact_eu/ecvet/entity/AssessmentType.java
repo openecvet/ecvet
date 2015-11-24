@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.12 um 05:29:51 PM CET 
+// Generiert: 2015.11.24 um 05:09:49 PM CET 
 //
 
 
@@ -29,8 +29,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="methods" type="{}methodsType"/&gt;
- *         &lt;element name="processes" type="{}processesType"/&gt;
+ *         &lt;element name="methodList" type="{}methodListType"/&gt;
+ *         &lt;element name="processList" type="{}processListType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -41,64 +41,64 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "assessmentType", propOrder = {
-    "methods",
-    "processes"
+    "methodList",
+    "processList"
 })
 public class AssessmentType
     implements Serializable
 {
 
     @XmlElement(required = true)
-    protected MethodsType methods;
+    protected MethodListType methodList;
     @XmlElement(required = true)
-    protected ProcessesType processes;
+    protected ProcessListType processList;
 
     /**
-     * Ruft den Wert der methods-Eigenschaft ab.
+     * Ruft den Wert der methodList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link MethodsType }
+     *     {@link MethodListType }
      *     
      */
-    public MethodsType getMethods() {
-        return methods;
+    public MethodListType getMethodList() {
+        return methodList;
     }
 
     /**
-     * Legt den Wert der methods-Eigenschaft fest.
+     * Legt den Wert der methodList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link MethodsType }
+     *     {@link MethodListType }
      *     
      */
-    public void setMethods(MethodsType value) {
-        this.methods = value;
+    public void setMethodList(MethodListType value) {
+        this.methodList = value;
     }
 
     /**
-     * Ruft den Wert der processes-Eigenschaft ab.
+     * Ruft den Wert der processList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link ProcessesType }
+     *     {@link ProcessListType }
      *     
      */
-    public ProcessesType getProcesses() {
-        return processes;
+    public ProcessListType getProcessList() {
+        return processList;
     }
 
     /**
-     * Legt den Wert der processes-Eigenschaft fest.
+     * Legt den Wert der processList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link ProcessesType }
+     *     {@link ProcessListType }
      *     
      */
-    public void setProcesses(ProcessesType value) {
-        this.processes = value;
+    public void setProcessList(ProcessListType value) {
+        this.processList = value;
     }
 
 }

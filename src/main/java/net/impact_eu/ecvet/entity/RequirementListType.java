@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.12 um 05:29:51 PM CET 
+// Generiert: 2015.11.24 um 05:09:49 PM CET 
 //
 
 
@@ -18,16 +18,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für learningOutcomeTermsType complex type.
+ * <p>Java-Klasse für requirementListType complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>
- * &lt;complexType name="learningOutcomeTermsType"&gt;
+ * &lt;complexType name="requirementListType"&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="learningOutcomeTerm" type="{}learningOutcomeTermType" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="requirements" type="{}requirementType" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -37,42 +37,43 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "learningOutcomeTermsType", propOrder = {
-    "learningOutcomeTerm"
+@XmlType(name = "requirementListType", propOrder = {
+    "requirements"
 })
-public class LearningOutcomeTermsType implements Serializable
+public class RequirementListType
+    implements Serializable
 {
 
     @XmlElement(required = true)
-    protected List<LearningOutcomeTermType> learningOutcomeTerm;
+    protected List<RequirementType> requirements;
 
     /**
-     * Gets the value of the learningOutcomeTerm property.
+     * Gets the value of the requirements property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the learningOutcomeTerm property.
+     * This is why there is not a <CODE>set</CODE> method for the requirements property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getLearningOutcomeTerm().add(newItem);
+     *    getRequirements().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link LearningOutcomeTermType }
+     * {@link RequirementType }
      * 
      * 
      */
-    public List<LearningOutcomeTermType> getLearningOutcomeTerm() {
-        if (learningOutcomeTerm == null) {
-            learningOutcomeTerm = new ArrayList<LearningOutcomeTermType>();
+    public List<RequirementType> getRequirements() {
+        if (requirements == null) {
+            requirements = new ArrayList<RequirementType>();
         }
-        return this.learningOutcomeTerm;
+        return this.requirements;
     }
 
 }

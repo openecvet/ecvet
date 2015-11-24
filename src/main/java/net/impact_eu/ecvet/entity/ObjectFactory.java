@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.12 um 05:29:51 PM CET 
+// Generiert: 2015.11.24 um 05:09:49 PM CET 
 //
 
 
@@ -33,9 +33,8 @@ public class ObjectFactory {
 
     private final static QName _EcvetFramework_QNAME = new QName("", "ecvetFramework");
     private final static QName _LearningOutcomeTypeTitle_QNAME = new QName("", "title");
-    private final static QName _LearningOutcomeTypeDescription_QNAME = new QName("", "description");
     private final static QName _LearningOutcomeTypeCredit_QNAME = new QName("", "credit");
-    private final static QName _LearningOutcomeTypeLearningOutcomeTerms_QNAME = new QName("", "learningOutcomeTerms");
+    private final static QName _LearningOutcomeTypeLearningOutcomeTermList_QNAME = new QName("", "learningOutcomeTermList");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: net.impact_eu.ecvet.entity
@@ -61,19 +60,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ComplementaryDocumentsType }
+     * Create an instance of {@link ComplementaryDocumentListType }
      * 
      */
-    public ComplementaryDocumentsType createComplementaryDocumentsType() {
-        return new ComplementaryDocumentsType();
+    public ComplementaryDocumentListType createComplementaryDocumentListType() {
+        return new ComplementaryDocumentListType();
     }
 
     /**
-     * Create an instance of {@link UnitsType }
+     * Create an instance of {@link UnitListType }
      * 
      */
-    public UnitsType createUnitsType() {
-        return new UnitsType();
+    public UnitListType createUnitListType() {
+        return new UnitListType();
     }
 
     /**
@@ -85,11 +84,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReferenceLevelsType }
+     * Create an instance of {@link ReferenceLevelListType }
      * 
      */
-    public ReferenceLevelsType createReferenceLevelsType() {
-        return new ReferenceLevelsType();
+    public ReferenceLevelListType createReferenceLevelListType() {
+        return new ReferenceLevelListType();
     }
 
     /**
@@ -101,11 +100,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LearningOutcomesType }
+     * Create an instance of {@link LearningOutcomeListType }
      * 
      */
-    public LearningOutcomesType createLearningOutcomesType() {
-        return new LearningOutcomesType();
+    public LearningOutcomeListType createLearningOutcomeListType() {
+        return new LearningOutcomeListType();
     }
 
     /**
@@ -117,11 +116,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LearningOutcomeTermsType }
+     * Create an instance of {@link LearningOutcomeTermListType }
      * 
      */
-    public LearningOutcomeTermsType createLearningOutcomeTermsType() {
-        return new LearningOutcomeTermsType();
+    public LearningOutcomeTermListType createLearningOutcomeTermListType() {
+        return new LearningOutcomeTermListType();
     }
 
     /**
@@ -141,11 +140,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ValidationsType }
+     * Create an instance of {@link ValidationListType }
      * 
      */
-    public ValidationsType createValidationsType() {
-        return new ValidationsType();
+    public ValidationListType createValidationListType() {
+        return new ValidationListType();
     }
 
     /**
@@ -165,11 +164,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link RequirementsType }
+     * Create an instance of {@link RequirementListType }
      * 
      */
-    public RequirementsType createRequirementsType() {
-        return new RequirementsType();
+    public RequirementListType createRequirementListType() {
+        return new RequirementListType();
     }
 
     /**
@@ -181,11 +180,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AssessmentsType }
+     * Create an instance of {@link AssessmentListType }
      * 
      */
-    public AssessmentsType createAssessmentsType() {
-        return new AssessmentsType();
+    public AssessmentListType createAssessmentListType() {
+        return new AssessmentListType();
     }
 
     /**
@@ -197,11 +196,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ProcessesType }
+     * Create an instance of {@link ProcessListType }
      * 
      */
-    public ProcessesType createProcessesType() {
-        return new ProcessesType();
+    public ProcessListType createProcessListType() {
+        return new ProcessListType();
     }
 
     /**
@@ -213,11 +212,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MethodsType }
+     * Create an instance of {@link MethodListType }
      * 
      */
-    public MethodsType createMethodsType() {
-        return new MethodsType();
+    public MethodListType createMethodListType() {
+        return new MethodListType();
     }
 
     /**
@@ -229,11 +228,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CompetentInstitutionsType }
+     * Create an instance of {@link CompetentInstitutionListType }
      * 
      */
-    public CompetentInstitutionsType createCompetentInstitutionsType() {
-        return new CompetentInstitutionsType();
+    public CompetentInstitutionListType createCompetentInstitutionListType() {
+        return new CompetentInstitutionListType();
     }
 
     /**
@@ -253,11 +252,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LearningAgreementsType }
+     * Create an instance of {@link LearningAgreementListType }
      * 
      */
-    public LearningAgreementsType createLearningAgreementsType() {
-        return new LearningAgreementsType();
+    public LearningAgreementListType createLearningAgreementListType() {
+        return new LearningAgreementListType();
     }
 
     /**
@@ -269,11 +268,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link RecognitionsType }
+     * Create an instance of {@link RecognitionListType }
      * 
      */
-    public RecognitionsType createRecognitionsType() {
-        return new RecognitionsType();
+    public RecognitionListType createRecognitionListType() {
+        return new RecognitionListType();
     }
 
     /**
@@ -335,15 +334,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "", name = "description", scope = LearningOutcomeType.class)
-    public JAXBElement<String> createLearningOutcomeTypeDescription(String value) {
-        return new JAXBElement<String>(_LearningOutcomeTypeDescription_QNAME, String.class, LearningOutcomeType.class, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
      * 
      */
@@ -353,12 +343,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LearningOutcomeTermsType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link LearningOutcomeTermListType }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "", name = "learningOutcomeTerms", scope = LearningOutcomeType.class)
-    public JAXBElement<LearningOutcomeTermsType> createLearningOutcomeTypeLearningOutcomeTerms(LearningOutcomeTermsType value) {
-        return new JAXBElement<LearningOutcomeTermsType>(_LearningOutcomeTypeLearningOutcomeTerms_QNAME, LearningOutcomeTermsType.class, LearningOutcomeType.class, value);
+    @XmlElementDecl(namespace = "", name = "learningOutcomeTermList", scope = LearningOutcomeType.class)
+    public JAXBElement<LearningOutcomeTermListType> createLearningOutcomeTypeLearningOutcomeTermList(LearningOutcomeTermListType value) {
+        return new JAXBElement<LearningOutcomeTermListType>(_LearningOutcomeTypeLearningOutcomeTermList_QNAME, LearningOutcomeTermListType.class, LearningOutcomeType.class, value);
     }
 
 }

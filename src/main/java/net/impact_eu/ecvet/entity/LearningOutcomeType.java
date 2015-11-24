@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.12 um 05:29:51 PM CET 
+// Generiert: 2015.11.24 um 05:09:49 PM CET 
 //
 
 
@@ -36,9 +36,8 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;extension base="{}evcetElement"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="credit" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="learningOutcomeTerms" type="{}learningOutcomeTermsType"/&gt;
+ *         &lt;element name="learningOutcomeTermList" type="{}learningOutcomeTermListType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -63,10 +62,9 @@ public class LearningOutcomeType
 {
 
     @XmlElementRefs({
-        @XmlElementRef(name = "description", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "learningOutcomeTerms", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "title", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "credit", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "credit", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "learningOutcomeTermList", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "title", type = JAXBElement.class, required = false)
     })
     protected List<JAXBElement<? extends Serializable>> rest;
 
@@ -76,8 +74,8 @@ public class LearningOutcomeType
      * <p>
      * Sie rufen diese "catch-all"-Eigenschaft aus folgendem Grund ab: 
      * Der Feldname "Title" wird von zwei verschiedenen Teilen eines Schemas verwendet. Siehe: 
-     * Zeile 336 von file:/home/tom/Dokumente/bupnet/impact/shared_documents/ecvet_general/spec/ecvet_draft/src/main/resources/xsd/draft.xsd
-     * Zeile 617 von file:/home/tom/Dokumente/bupnet/impact/shared_documents/ecvet_general/spec/ecvet_draft/src/main/resources/xsd/draft.xsd
+     * Zeile 327 von file:/home/tom/src/java/ecvet_draft/src/main/resources/xsd/draft.xsd
+     * Zeile 602 von file:/home/tom/src/java/ecvet_draft/src/main/resources/xsd/draft.xsd
      * <p>
      * Um diese Eigenschaft zu entfernen, wenden Sie eine Eigenschaftenanpassung für eine
      * der beiden folgenden Deklarationen an, um deren Namen zu ändern: 
@@ -98,10 +96,9 @@ public class LearningOutcomeType
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * {@link JAXBElement }{@code <}{@link LearningOutcomeTermsType }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     * {@link JAXBElement }{@code <}{@link LearningOutcomeTermListType }{@code >}
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * 
      * 
      */

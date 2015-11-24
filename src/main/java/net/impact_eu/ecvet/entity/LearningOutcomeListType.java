@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.12 um 05:29:51 PM CET 
+// Generiert: 2015.11.24 um 05:09:49 PM CET 
 //
 
 
@@ -28,12 +28,12 @@ import javax.xml.bind.annotation.XmlType;
  *                     According to: C 155/14 Annex 1 - Definitions (b) -- ‘Learning outcomes’ means statements of what a learner knows, understands and is able to do on completion of a learning process and which are defined in terms of knowledge, skills and competence;
  *                 
  * 
- * <p>Java-Klasse für learningOutcomesType complex type.
+ * <p>Java-Klasse für learningOutcomeListType complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>
- * &lt;complexType name="learningOutcomesType"&gt;
+ * &lt;complexType name="learningOutcomeListType"&gt;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}evcetElement"&gt;
  *       &lt;sequence&gt;
@@ -47,7 +47,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "learningOutcomesType", propOrder = {
+@XmlType(name = "learningOutcomeListType", propOrder = {
     "learningOutcome"
 })
 @Entity
@@ -55,8 +55,8 @@ import javax.xml.bind.annotation.XmlType;
 
 }, uniqueConstraints = {
 
-}, name = "learningOutcomes")
-public class LearningOutcomesType
+}, name = "learningOutcomeList")
+public class LearningOutcomeListType
     extends EvcetElement
     implements Serializable
 {
@@ -70,7 +70,7 @@ public class LearningOutcomesType
     @JoinTable(joinColumns = {
         @JoinColumn(name = "learningOutcome_id")
     }, inverseJoinColumns = {
-        @JoinColumn(name = "learningOutcomes_id")
+        @JoinColumn(name = "learningOutcomeList_id")
     }, indexes = {
 
     }, uniqueConstraints = {

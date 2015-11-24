@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.12 um 05:29:51 PM CET 
+// Generiert: 2015.11.24 um 05:09:49 PM CET 
 //
 
 
@@ -25,9 +25,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="assessments" type="{}assessmentsType"/&gt;
- *         &lt;element name="validations" type="{}validationsType"/&gt;
- *         &lt;element name="recognitions" type="{}recognitionsType"/&gt;
+ *         &lt;element name="assessmentList" type="{}assessmentListType"/&gt;
+ *         &lt;element name="validationList" type="{}validationListType"/&gt;
+ *         &lt;element name="recognitionList" type="{}recognitionListType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -38,91 +38,91 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "achievementType", propOrder = {
-    "assessments",
-    "validations",
-    "recognitions"
+    "assessmentList",
+    "validationList",
+    "recognitionList"
 })
 public class AchievementType
     implements Serializable
 {
 
     @XmlElement(required = true)
-    protected AssessmentsType assessments;
+    protected AssessmentListType assessmentList;
     @XmlElement(required = true)
-    protected ValidationsType validations;
+    protected ValidationListType validationList;
     @XmlElement(required = true)
-    protected RecognitionsType recognitions;
+    protected RecognitionListType recognitionList;
 
     /**
-     * Ruft den Wert der assessments-Eigenschaft ab.
+     * Ruft den Wert der assessmentList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link AssessmentsType }
+     *     {@link AssessmentListType }
      *     
      */
-    public AssessmentsType getAssessments() {
-        return assessments;
+    public AssessmentListType getAssessmentList() {
+        return assessmentList;
     }
 
     /**
-     * Legt den Wert der assessments-Eigenschaft fest.
+     * Legt den Wert der assessmentList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link AssessmentsType }
+     *     {@link AssessmentListType }
      *     
      */
-    public void setAssessments(AssessmentsType value) {
-        this.assessments = value;
+    public void setAssessmentList(AssessmentListType value) {
+        this.assessmentList = value;
     }
 
     /**
-     * Ruft den Wert der validations-Eigenschaft ab.
+     * Ruft den Wert der validationList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link ValidationsType }
+     *     {@link ValidationListType }
      *     
      */
-    public ValidationsType getValidations() {
-        return validations;
+    public ValidationListType getValidationList() {
+        return validationList;
     }
 
     /**
-     * Legt den Wert der validations-Eigenschaft fest.
+     * Legt den Wert der validationList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link ValidationsType }
+     *     {@link ValidationListType }
      *     
      */
-    public void setValidations(ValidationsType value) {
-        this.validations = value;
+    public void setValidationList(ValidationListType value) {
+        this.validationList = value;
     }
 
     /**
-     * Ruft den Wert der recognitions-Eigenschaft ab.
+     * Ruft den Wert der recognitionList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link RecognitionsType }
+     *     {@link RecognitionListType }
      *     
      */
-    public RecognitionsType getRecognitions() {
-        return recognitions;
+    public RecognitionListType getRecognitionList() {
+        return recognitionList;
     }
 
     /**
-     * Legt den Wert der recognitions-Eigenschaft fest.
+     * Legt den Wert der recognitionList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link RecognitionsType }
+     *     {@link RecognitionListType }
      *     
      */
-    public void setRecognitions(RecognitionsType value) {
-        this.recognitions = value;
+    public void setRecognitionList(RecognitionListType value) {
+        this.recognitionList = value;
     }
 
 }

@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.12 um 05:29:51 PM CET 
+// Generiert: 2015.11.24 um 05:09:49 PM CET 
 //
 
 
@@ -34,6 +34,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *       &lt;/sequence&gt;
  *       &lt;attribute name="URI" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *     &lt;/restriction&gt;
@@ -46,16 +47,17 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "evcetElement", propOrder = {
     "id",
-    "title"
+    "title",
+    "description"
 })
 @XmlSeeAlso({
     EcvetFrameworkType.class,
     QualificationType.class,
-    UnitsType.class,
+    UnitListType.class,
     UnitType.class,
-    ReferenceLevelsType.class,
+    ReferenceLevelListType.class,
     ReferenceLevelType.class,
-    LearningOutcomesType.class,
+    LearningOutcomeListType.class,
     LearningOutcomeType.class
 })
 @MappedSuperclass
@@ -70,6 +72,8 @@ public class EvcetElement
     protected Integer id;
     @XmlElement(required = true)
     protected String title;
+    @XmlElement(required = true)
+    protected String description;
     @XmlAttribute(name = "URI")
     protected String uri;
 
@@ -119,6 +123,30 @@ public class EvcetElement
      */
     public void setTitle(String value) {
         this.title = value;
+    }
+
+    /**
+     * Ruft den Wert der description-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getDescription() {
+        return description;
+    }
+
+    /**
+     * Legt den Wert der description-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setDescription(String value) {
+        this.description = value;
     }
 
     /**

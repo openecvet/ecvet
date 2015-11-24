@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.12 um 05:29:51 PM CET 
+// Generiert: 2015.11.24 um 05:09:49 PM CET 
 //
 
 
@@ -32,8 +32,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}evcetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="units" type="{}unitsType"/&gt;
+ *         &lt;element name="unitList" type="{}unitListType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -44,8 +43,7 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "qualificationType", propOrder = {
-    "description",
-    "units"
+    "unitList"
 })
 @Entity
 @Table(indexes = {
@@ -59,59 +57,33 @@ public class QualificationType
 {
 
     @XmlElement(required = true)
-    protected String description;
-    @XmlElement(required = true)
-    @OneToOne(targetEntity = UnitsType.class, cascade = {
+    @OneToOne(targetEntity = UnitListType.class, cascade = {
 
     })
-    protected UnitsType units;
+    protected UnitListType unitList;
 
     /**
-     * Ruft den Wert der description-Eigenschaft ab.
+     * Ruft den Wert der unitList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link UnitListType }
      *     
      */
-    public String getDescription() {
-        return description;
+    public UnitListType getUnitList() {
+        return unitList;
     }
 
     /**
-     * Legt den Wert der description-Eigenschaft fest.
+     * Legt den Wert der unitList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link UnitListType }
      *     
      */
-    public void setDescription(String value) {
-        this.description = value;
-    }
-
-    /**
-     * Ruft den Wert der units-Eigenschaft ab.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UnitsType }
-     *     
-     */
-    public UnitsType getUnits() {
-        return units;
-    }
-
-    /**
-     * Legt den Wert der units-Eigenschaft fest.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UnitsType }
-     *     
-     */
-    public void setUnits(UnitsType value) {
-        this.units = value;
+    public void setUnitList(UnitListType value) {
+        this.unitList = value;
     }
 
 }

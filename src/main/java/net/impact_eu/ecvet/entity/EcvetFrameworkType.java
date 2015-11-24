@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.12 um 05:29:51 PM CET 
+// Generiert: 2015.11.24 um 05:09:49 PM CET 
 //
 
 
@@ -28,8 +28,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}evcetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="competentInstitutions" type="{}competentInstitutionsType"/&gt;
- *         &lt;element name="complementaryDocuments" type="{}complementaryDocumentsType"/&gt;
+ *         &lt;element name="competentInstitutionList" type="{}competentInstitutionListType"/&gt;
+ *         &lt;element name="complementaryDocumentList" type="{}complementaryDocumentListType"/&gt;
  *         &lt;element name="qualification" type="{}qualificationType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
@@ -41,8 +41,8 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ecvetFrameworkType", propOrder = {
-    "competentInstitutions",
-    "complementaryDocuments",
+    "competentInstitutionList",
+    "complementaryDocumentList",
     "qualification"
 })
 @Entity
@@ -57,9 +57,9 @@ public class EcvetFrameworkType
 {
 
     @XmlElement(required = true)
-    protected CompetentInstitutionsType competentInstitutions;
+    protected CompetentInstitutionListType competentInstitutionList;
     @XmlElement(required = true)
-    protected ComplementaryDocumentsType complementaryDocuments;
+    protected ComplementaryDocumentListType complementaryDocumentList;
     @XmlElement(required = true)
     @OneToOne(targetEntity = QualificationType.class, cascade = {
 
@@ -67,51 +67,51 @@ public class EcvetFrameworkType
     protected QualificationType qualification;
 
     /**
-     * Ruft den Wert der competentInstitutions-Eigenschaft ab.
+     * Ruft den Wert der competentInstitutionList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link CompetentInstitutionsType }
+     *     {@link CompetentInstitutionListType }
      *     
      */
-    public CompetentInstitutionsType getCompetentInstitutions() {
-        return competentInstitutions;
+    public CompetentInstitutionListType getCompetentInstitutionList() {
+        return competentInstitutionList;
     }
 
     /**
-     * Legt den Wert der competentInstitutions-Eigenschaft fest.
+     * Legt den Wert der competentInstitutionList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link CompetentInstitutionsType }
+     *     {@link CompetentInstitutionListType }
      *     
      */
-    public void setCompetentInstitutions(CompetentInstitutionsType value) {
-        this.competentInstitutions = value;
+    public void setCompetentInstitutionList(CompetentInstitutionListType value) {
+        this.competentInstitutionList = value;
     }
 
     /**
-     * Ruft den Wert der complementaryDocuments-Eigenschaft ab.
+     * Ruft den Wert der complementaryDocumentList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link ComplementaryDocumentsType }
+     *     {@link ComplementaryDocumentListType }
      *     
      */
-    public ComplementaryDocumentsType getComplementaryDocuments() {
-        return complementaryDocuments;
+    public ComplementaryDocumentListType getComplementaryDocumentList() {
+        return complementaryDocumentList;
     }
 
     /**
-     * Legt den Wert der complementaryDocuments-Eigenschaft fest.
+     * Legt den Wert der complementaryDocumentList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link ComplementaryDocumentsType }
+     *     {@link ComplementaryDocumentListType }
      *     
      */
-    public void setComplementaryDocuments(ComplementaryDocumentsType value) {
-        this.complementaryDocuments = value;
+    public void setComplementaryDocumentList(ComplementaryDocumentListType value) {
+        this.complementaryDocumentList = value;
     }
 
     /**

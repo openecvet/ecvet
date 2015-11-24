@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.12 um 05:29:51 PM CET 
+// Generiert: 2015.11.24 um 05:09:49 PM CET 
 //
 
 
@@ -29,8 +29,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="referenceLevels" type="{}referenceLevelsType"/&gt;
+ *         &lt;element name="referenceLevelList" type="{}referenceLevelListType"/&gt;
  *         &lt;element name="weight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="achievement" type="{}achievementType"/&gt;
  *       &lt;/sequence&gt;
@@ -44,8 +43,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "learningOutcomeTermType", propOrder = {
     "title",
-    "description",
-    "referenceLevels",
+    "referenceLevelList",
     "weight",
     "achievement"
 })
@@ -56,9 +54,7 @@ public class LearningOutcomeTermType
     @XmlElement(required = true)
     protected String title;
     @XmlElement(required = true)
-    protected String description;
-    @XmlElement(required = true)
-    protected ReferenceLevelsType referenceLevels;
+    protected ReferenceLevelListType referenceLevelList;
     protected int weight;
     @XmlElement(required = true)
     protected AchievementType achievement;
@@ -88,51 +84,27 @@ public class LearningOutcomeTermType
     }
 
     /**
-     * Ruft den Wert der description-Eigenschaft ab.
+     * Ruft den Wert der referenceLevelList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link ReferenceLevelListType }
      *     
      */
-    public String getDescription() {
-        return description;
+    public ReferenceLevelListType getReferenceLevelList() {
+        return referenceLevelList;
     }
 
     /**
-     * Legt den Wert der description-Eigenschaft fest.
+     * Legt den Wert der referenceLevelList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link ReferenceLevelListType }
      *     
      */
-    public void setDescription(String value) {
-        this.description = value;
-    }
-
-    /**
-     * Ruft den Wert der referenceLevels-Eigenschaft ab.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ReferenceLevelsType }
-     *     
-     */
-    public ReferenceLevelsType getReferenceLevels() {
-        return referenceLevels;
-    }
-
-    /**
-     * Legt den Wert der referenceLevels-Eigenschaft fest.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ReferenceLevelsType }
-     *     
-     */
-    public void setReferenceLevels(ReferenceLevelsType value) {
-        this.referenceLevels = value;
+    public void setReferenceLevelList(ReferenceLevelListType value) {
+        this.referenceLevelList = value;
     }
 
     /**

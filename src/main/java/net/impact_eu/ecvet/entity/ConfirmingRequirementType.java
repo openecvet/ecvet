@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.12 um 05:29:51 PM CET 
+// Generiert: 2015.11.24 um 05:09:49 PM CET 
 //
 
 
@@ -30,7 +30,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="assessmentURI" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="requirements" type="{}requirementsType"/&gt;
+ *         &lt;element name="requirementList" type="{}requirementListType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -42,7 +42,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "confirmingRequirementType", propOrder = {
     "assessmentURI",
-    "requirements"
+    "requirementList"
 })
 public class ConfirmingRequirementType
     implements Serializable
@@ -51,7 +51,7 @@ public class ConfirmingRequirementType
     @XmlElement(required = true)
     protected String assessmentURI;
     @XmlElement(required = true)
-    protected RequirementsType requirements;
+    protected RequirementListType requirementList;
 
     /**
      * Ruft den Wert der assessmentURI-Eigenschaft ab.
@@ -78,27 +78,27 @@ public class ConfirmingRequirementType
     }
 
     /**
-     * Ruft den Wert der requirements-Eigenschaft ab.
+     * Ruft den Wert der requirementList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link RequirementsType }
+     *     {@link RequirementListType }
      *     
      */
-    public RequirementsType getRequirements() {
-        return requirements;
+    public RequirementListType getRequirementList() {
+        return requirementList;
     }
 
     /**
-     * Legt den Wert der requirements-Eigenschaft fest.
+     * Legt den Wert der requirementList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link RequirementsType }
+     *     {@link RequirementListType }
      *     
      */
-    public void setRequirements(RequirementsType value) {
-        this.requirements = value;
+    public void setRequirementList(RequirementListType value) {
+        this.requirementList = value;
     }
 
 }

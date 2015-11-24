@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.12 um 05:29:51 PM CET 
+// Generiert: 2015.11.24 um 05:09:49 PM CET 
 //
 
 
@@ -32,14 +32,13 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}evcetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="description" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="credit" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="weightSum" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="relativeWeight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="learningOutcomes" type="{}learningOutcomesType"/&gt;
- *         &lt;element name="referenceLevels" type="{}referenceLevelsType"/&gt;
+ *         &lt;element name="learningOutcomes" type="{}learningOutcomeListType"/&gt;
+ *         &lt;element name="referenceLevelList" type="{}referenceLevelListType"/&gt;
  *         &lt;element name="achievement" type="{}achievementType"/&gt;
- *         &lt;element name="units" type="{}unitsType" minOccurs="0"/&gt;
+ *         &lt;element name="unitList" type="{}unitListType" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -50,14 +49,13 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "unitType", propOrder = {
-    "description",
     "credit",
     "weightSum",
     "relativeWeight",
     "learningOutcomes",
-    "referenceLevels",
+    "referenceLevelList",
     "achievement",
-    "units"
+    "unitList"
 })
 @Entity
 @Table(indexes = {
@@ -70,51 +68,25 @@ public class UnitType
     implements Serializable
 {
 
-    @XmlElement(required = true)
-    protected String description;
     protected int credit;
     protected int weightSum;
     protected int relativeWeight;
     @XmlElement(required = true)
-    @OneToOne(targetEntity = LearningOutcomesType.class, cascade = {
+    @OneToOne(targetEntity = LearningOutcomeListType.class, cascade = {
 
     })
-    protected LearningOutcomesType learningOutcomes;
+    protected LearningOutcomeListType learningOutcomes;
     @XmlElement(required = true)
-    @OneToOne(targetEntity = ReferenceLevelsType.class, cascade = {
+    @OneToOne(targetEntity = ReferenceLevelListType.class, cascade = {
 
     })
-    protected ReferenceLevelsType referenceLevels;
+    protected ReferenceLevelListType referenceLevelList;
     @XmlElement(required = true)
     protected AchievementType achievement;
-    @OneToOne(targetEntity = UnitsType.class, cascade = {
+    @OneToOne(targetEntity = UnitListType.class, cascade = {
 
     })
-    protected UnitsType units;
-
-    /**
-     * Ruft den Wert der description-Eigenschaft ab.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDescription() {
-        return description;
-    }
-
-    /**
-     * Legt den Wert der description-Eigenschaft fest.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDescription(String value) {
-        this.description = value;
-    }
+    protected UnitListType unitList;
 
     /**
      * Ruft den Wert der credit-Eigenschaft ab.
@@ -169,10 +141,10 @@ public class UnitType
      * 
      * @return
      *     possible object is
-     *     {@link LearningOutcomesType }
+     *     {@link LearningOutcomeListType }
      *     
      */
-    public LearningOutcomesType getLearningOutcomes() {
+    public LearningOutcomeListType getLearningOutcomes() {
         return learningOutcomes;
     }
 
@@ -181,35 +153,35 @@ public class UnitType
      * 
      * @param value
      *     allowed object is
-     *     {@link LearningOutcomesType }
+     *     {@link LearningOutcomeListType }
      *     
      */
-    public void setLearningOutcomes(LearningOutcomesType value) {
+    public void setLearningOutcomes(LearningOutcomeListType value) {
         this.learningOutcomes = value;
     }
 
     /**
-     * Ruft den Wert der referenceLevels-Eigenschaft ab.
+     * Ruft den Wert der referenceLevelList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link ReferenceLevelsType }
+     *     {@link ReferenceLevelListType }
      *     
      */
-    public ReferenceLevelsType getReferenceLevels() {
-        return referenceLevels;
+    public ReferenceLevelListType getReferenceLevelList() {
+        return referenceLevelList;
     }
 
     /**
-     * Legt den Wert der referenceLevels-Eigenschaft fest.
+     * Legt den Wert der referenceLevelList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link ReferenceLevelsType }
+     *     {@link ReferenceLevelListType }
      *     
      */
-    public void setReferenceLevels(ReferenceLevelsType value) {
-        this.referenceLevels = value;
+    public void setReferenceLevelList(ReferenceLevelListType value) {
+        this.referenceLevelList = value;
     }
 
     /**
@@ -237,27 +209,27 @@ public class UnitType
     }
 
     /**
-     * Ruft den Wert der units-Eigenschaft ab.
+     * Ruft den Wert der unitList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link UnitsType }
+     *     {@link UnitListType }
      *     
      */
-    public UnitsType getUnits() {
-        return units;
+    public UnitListType getUnitList() {
+        return unitList;
     }
 
     /**
-     * Legt den Wert der units-Eigenschaft fest.
+     * Legt den Wert der unitList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link UnitsType }
+     *     {@link UnitListType }
      *     
      */
-    public void setUnits(UnitsType value) {
-        this.units = value;
+    public void setUnitList(UnitListType value) {
+        this.unitList = value;
     }
 
 }

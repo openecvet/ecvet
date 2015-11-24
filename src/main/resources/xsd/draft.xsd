@@ -17,8 +17,8 @@
             <xsd:complexContent>
                 <xsd:extension base="evcetElement">
                     <xsd:sequence>
-                        <xsd:element name="competentInstitutions" type="competentInstitutionsType" />
-                        <xsd:element name="complementaryDocuments" type="complementaryDocumentsType" />
+                        <xsd:element name="competentInstitutionList" type="competentInstitutionListType" />
+                        <xsd:element name="complementaryDocumentList" type="complementaryDocumentListType" />
                         <xsd:element name="qualification" type="qualificationType">
                             <xsd:annotation>
                                 <xsd:appinfo>
@@ -47,12 +47,11 @@
             <xsd:complexContent>
                 <xsd:extension base="evcetElement">
                     <xsd:sequence>
-                        <xsd:element name="description" type="xsd:string" />
-                        <xsd:element name="units" type="unitsType">
+                        <xsd:element name="unitList" type="unitListType">
                             <xsd:annotation>
                                 <xsd:appinfo>
                                     <annox:annotate target="field">
-                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.UnitsType"></OneToOne>
+                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.UnitListType"></OneToOne>
                                     </annox:annotate>
                                 </xsd:appinfo>
                             </xsd:annotation>
@@ -61,24 +60,24 @@
                 </xsd:extension>
             </xsd:complexContent>
         </xsd:complexType>
-        <xsd:complexType name="complementaryDocumentsType">
+        <xsd:complexType name="complementaryDocumentListType">
             <xsd:annotation>
                 <xsd:documentation>
                     ANNEX II ECVET — PRINCIPLES AND TECHNICAL SPECIFICATIONS -- ECVET tools and methodology comprise the description of qualifi­cations in terms of units of learning outcomes with associated points, a transfer and accumulation process andcomplementary documents such as learning agreements, transcripts of records and ECVET users’ guides. TODO: own type with file attachments
                 </xsd:documentation>
             </xsd:annotation>
             <xsd:sequence>
-                <xsd:element name="learningAgreements" type="learningAgreementsType" />
+                <xsd:element name="learningAgreementList" type="learningAgreementListType" />
                 <xsd:element name="transcriptionOfRecords" type="xsd:string" />
                 <xsd:element name="userGuide" type="xsd:string" />
             </xsd:sequence>
         </xsd:complexType>
-        <xsd:complexType name="unitsType">
+        <xsd:complexType name="unitListType">
             <xsd:annotation>
                 <xsd:appinfo>
                     <annox:annotate target="field">
                         <Entity annox:class="javax.persistence.Entity"></Entity>
-                        <Table annox:class="javax.persistence.Table" name="units"></Table>
+                        <Table annox:class="javax.persistence.Table" name="unitList"></Table>
                     </annox:annotate>
                 </xsd:appinfo>
             </xsd:annotation>
@@ -95,12 +94,12 @@
                                             <cascade>DETACH</cascade>
                                         </ManyToMany>
                                         <JoinTable annox:class="javax.persistence.JoinTable">
-                                            <inverseJoinColumns>
-                                                <JoinColumn annox:class="javax.persistence.JoinColumn" name="units_id"></JoinColumn>
-                                            </inverseJoinColumns>
                                             <joinColumns>
-                                                <JoinColumn annox:class="javax.persistence.JoinColumn" name="unit_id"></JoinColumn>
+                                                <JoinColumn annox:class="javax.persistence.JoinColumn" name="unitList_id"></JoinColumn>
                                             </joinColumns>
+                                            <inverseJoinColumns>
+                                                <JoinColumn annox:class="javax.persistence.JoinColumn" name="unit_id"></JoinColumn>
+                                            </inverseJoinColumns>
                                         </JoinTable>
                                     </annox:annotate>
                                 </xsd:appinfo>
@@ -125,7 +124,6 @@
             <xsd:complexContent>
                 <xsd:extension base="evcetElement">
                     <xsd:sequence>
-                        <xsd:element name="description" type="xsd:string" />
                         <xsd:element name="credit" type="xsd:int">
                             <xsd:annotation>
                                 <xsd:documentation>
@@ -147,33 +145,33 @@
                                 </xsd:documentation>
                             </xsd:annotation>
                         </xsd:element>
-                        <xsd:element name="learningOutcomes" type="learningOutcomesType">
+                        <xsd:element name="learningOutcomes" type="learningOutcomeListType">
                             <xsd:annotation>
                                 <xsd:appinfo>
                                     <annox:annotate target="field">
-                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.LearningOutcomesType"></OneToOne>
+                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.LearningOutcomeListType"></OneToOne>
                                     </annox:annotate>
                                 </xsd:appinfo>
                             </xsd:annotation>
                         </xsd:element>
-                        <xsd:element name="referenceLevels" type="referenceLevelsType">
+                        <xsd:element name="referenceLevelList" type="referenceLevelListType">
                             <xsd:annotation>
                                 <xsd:appinfo>
                                     <annox:annotate target="field">
-                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.ReferenceLevelsType"></OneToOne>
+                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.ReferenceLevelListType"></OneToOne>
                                     </annox:annotate>
                                 </xsd:appinfo>
                             </xsd:annotation>
                         </xsd:element>
                         <xsd:element name="achievement" type="achievementType" />
-                        <xsd:element name="units" type="unitsType" minOccurs="0">
+                        <xsd:element name="unitList" type="unitListType" minOccurs="0">
                             <xsd:annotation>
                                 <xsd:documentation>
                                     not explicitly recommended but useful to organize the content and also used in pilot projects (we can comment out this in the first draft)
                                 </xsd:documentation>
                                 <xsd:appinfo>
                                     <annox:annotate target="field">
-                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.UnitsType"></OneToOne>
+                                        <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.UnitListType"></OneToOne>
                                     </annox:annotate>
                                 </xsd:appinfo>
                             </xsd:annotation>
@@ -192,12 +190,12 @@
                 </xsd:extension>
             </xsd:complexContent>
         </xsd:complexType>
-        <xsd:complexType name="referenceLevelsType">
+        <xsd:complexType name="referenceLevelListType">
             <xsd:annotation>
                 <xsd:appinfo>
                     <annox:annotate target="field">
                         <Entity annox:class="javax.persistence.Entity"></Entity>
-                        <Table annox:class="javax.persistence.Table" name="referenceLevels"></Table>
+                        <Table annox:class="javax.persistence.Table" name="referenceLevelList"></Table>
                     </annox:annotate>
                 </xsd:appinfo>
                 <xsd:documentation>
@@ -206,7 +204,7 @@
             <xsd:complexContent>
                 <xsd:extension base="evcetElement">
                     <xsd:sequence>
-                        <xsd:element name="referenceLevel" type="referenceLevelType" maxOccurs="unbounded">
+                        <xsd:element name="referenceLevels" type="referenceLevelType" maxOccurs="unbounded">
                             <xsd:annotation>
                                 <xsd:appinfo>
                                     <annox:annotate target="field">
@@ -216,12 +214,12 @@
                                             <cascade>DETACH</cascade>
                                         </ManyToMany>
                                         <JoinTable annox:class="javax.persistence.JoinTable">
-                                            <inverseJoinColumns>
-                                                <JoinColumn annox:class="javax.persistence.JoinColumn" name="referenceLevels_id"></JoinColumn>
-                                            </inverseJoinColumns>
                                             <joinColumns>
-                                                <JoinColumn annox:class="javax.persistence.JoinColumn" name="referenceLevel_id"></JoinColumn>
+                                                <JoinColumn annox:class="javax.persistence.JoinColumn" name="referenceLevelList_id"></JoinColumn>
                                             </joinColumns>
+                                            <inverseJoinColumns>
+                                                <JoinColumn annox:class="javax.persistence.JoinColumn" name="referenceLevel_id"></JoinColumn>
+                                            </inverseJoinColumns>
                                         </JoinTable>
                                     </annox:annotate>
                                 </xsd:appinfo>
@@ -271,12 +269,12 @@
                 </xsd:extension>
             </xsd:complexContent>
         </xsd:complexType>
-        <xsd:complexType name="learningOutcomesType">
+        <xsd:complexType name="learningOutcomeListType">
             <xsd:annotation>
                 <xsd:appinfo>
                     <annox:annotate target="field">
                         <Entity annox:class="javax.persistence.Entity"></Entity>
-                        <Table annox:class="javax.persistence.Table" name="learningOutcomes"></Table>
+                        <Table annox:class="javax.persistence.Table" name="learningOutcomeList"></Table>
                     </annox:annotate>
                 </xsd:appinfo>
                 <xsd:documentation>
@@ -297,7 +295,7 @@
                                         </ManyToMany>
                                         <JoinTable annox:class="javax.persistence.JoinTable">
                                             <inverseJoinColumns>
-                                                <JoinColumn annox:class="javax.persistence.JoinColumn" name="learningOutcomes_id"></JoinColumn>
+                                                <JoinColumn annox:class="javax.persistence.JoinColumn" name="learningOutcomeList_id"></JoinColumn>
                                             </inverseJoinColumns>
                                             <joinColumns>
                                                 <JoinColumn annox:class="javax.persistence.JoinColumn" name="learningOutcome_id"></JoinColumn>
@@ -327,7 +325,6 @@
                 <xsd:extension base="evcetElement">
                     <xsd:sequence>
                         <xsd:element name="title" type="xsd:string" />
-                        <xsd:element name="description" type="xsd:string" />
                         <xsd:element name="credit" type="xsd:int">
                             <xsd:annotation>
                                 <xsd:documentation>
@@ -335,7 +332,7 @@
                                 </xsd:documentation>
                             </xsd:annotation>
                         </xsd:element>
-                        <xsd:element name="learningOutcomeTerms" type="learningOutcomeTermsType">
+                        <xsd:element name="learningOutcomeTermList" type="learningOutcomeTermListType">
                             <xsd:annotation>
                                 <xsd:documentation>
                                     According to: C 155/14 Annex 1 - Definitions (b) -- Actually a definition of terms of knowlege, skills and competences must follow here. But this is possibly ambiguous, if a nqf is used to descibe the outcome (and which might use other terms)
@@ -346,9 +343,9 @@
                 </xsd:extension>
             </xsd:complexContent>
         </xsd:complexType>
-        <xsd:complexType name="learningOutcomeTermsType">
+        <xsd:complexType name="learningOutcomeTermListType">
             <xsd:sequence>
-                <xsd:element name="learningOutcomeTerm" maxOccurs="unbounded" type="learningOutcomeTermType" />
+                <xsd:element name="learningOutcomeTerms" maxOccurs="unbounded" type="learningOutcomeTermType" />
             </xsd:sequence>
         </xsd:complexType>
         <xsd:complexType name="learningOutcomeTermType">
@@ -358,8 +355,7 @@
             </xsd:annotation>
             <xsd:sequence>
                 <xsd:element name="title" type="xsd:string" />
-                <xsd:element name="description" type="xsd:string" />
-                <xsd:element name="referenceLevels" type="referenceLevelsType" />
+                <xsd:element name="referenceLevelList" type="referenceLevelListType" />
                 <xsd:element name="weight" type="xsd:int">
                     <xsd:annotation>
                         <xsd:documentation>
@@ -383,14 +379,14 @@
                         A unit is a component of a qualification, consisting of a coherent set of knowledge, skills and competence that can be assessed and validated with a number of associated ECVET points. achievment is a container to make the consisting types (re)usable for unit / learningOutcomeTerm
                     </xsd:documentation>
                 </xsd:annotation>
-                <xsd:element name="assessments" type="assessmentsType" />
-                <xsd:element name="validations" type="validationsType" />
-                <xsd:element name="recognitions" type="recognitionsType" />
+                <xsd:element name="assessmentList" type="assessmentListType" />
+                <xsd:element name="validationList" type="validationListType" />
+                <xsd:element name="recognitionList" type="recognitionListType" />
             </xsd:sequence>
         </xsd:complexType>
-        <xsd:complexType name="validationsType">
+        <xsd:complexType name="validationListType">
             <xsd:sequence>
-                <xsd:element name="validation" type="validationType" maxOccurs="unbounded">
+                <xsd:element name="validations" type="validationType" maxOccurs="unbounded">
                     <xsd:annotation>
                         <xsd:documentation>
                             the 'particular' validation of the learningOutcome @see validationType
@@ -429,21 +425,21 @@
                         </xsd:documentation>
                     </xsd:annotation>
                 </xsd:element>
-                <xsd:element name="requirements" type="requirementsType" />
+                <xsd:element name="requirementList" type="requirementListType" />
             </xsd:sequence>
         </xsd:complexType>
-        <xsd:complexType name="requirementsType">
+        <xsd:complexType name="requirementListType">
             <xsd:sequence>
-                <xsd:element name="requirement" type="requirementType" maxOccurs="unbounded" />
+                <xsd:element name="requirements" type="requirementType" maxOccurs="unbounded" />
             </xsd:sequence>
         </xsd:complexType>
         <xsd:complexType name="requirementType">
             <xsd:attribute name="URI" type="xsd:string" />
             <xsd:attribute name="threshold" type="xsd:string" />
         </xsd:complexType>
-        <xsd:complexType name="assessmentsType">
+        <xsd:complexType name="assessmentListType">
             <xsd:sequence>
-                <xsd:element name="assessment" type="assessmentType" maxOccurs="unbounded">
+                <xsd:element name="assessments" type="assessmentType" maxOccurs="unbounded">
                     <xsd:annotation>
                         <xsd:documentation>the procedures and criteria for assessment of these learning outcomes,
                         </xsd:documentation>
@@ -458,14 +454,14 @@
                 </xsd:documentation>
             </xsd:annotation>
             <xsd:sequence>
-                <xsd:element name="methods" type="methodsType">
+                <xsd:element name="methodList" type="methodListType">
                     <xsd:annotation>
                         <xsd:documentation>
                             According to: C 155/14 Annex 1 - Definitions (f) --- The methods used to establish
                         </xsd:documentation>
                     </xsd:annotation>
                 </xsd:element>
-                <xsd:element name="processes" type="processesType">
+                <xsd:element name="processList" type="processListType">
                     <xsd:annotation>
                         <xsd:documentation>
                             According to: C 155/14 Annex 1 - Definitions (f) --- The processes used to establish
@@ -474,25 +470,25 @@
                 </xsd:element>
             </xsd:sequence>
         </xsd:complexType>
-        <xsd:complexType name="processesType">
+        <xsd:complexType name="processListType">
             <xsd:sequence>
-                <xsd:element name="process" type="processType" maxOccurs="unbounded" />
+                <xsd:element name="processes" type="processType" maxOccurs="unbounded" />
             </xsd:sequence>
         </xsd:complexType>
         <xsd:complexType name="processType">
             <xsd:attribute name="URI" type="xsd:string" />
         </xsd:complexType>
-        <xsd:complexType name="methodsType">
+        <xsd:complexType name="methodListType">
             <xsd:sequence>
-                <xsd:element name="method" type="methodType" maxOccurs="unbounded" />
+                <xsd:element name="methods" type="methodType" maxOccurs="unbounded" />
             </xsd:sequence>
         </xsd:complexType>
         <xsd:complexType name="methodType">
             <xsd:attribute name="URI" type="xsd:string" />
         </xsd:complexType>
-        <xsd:complexType name="competentInstitutionsType">
+        <xsd:complexType name="competentInstitutionListType">
             <xsd:sequence>
-                <xsd:element maxOccurs="unbounded" name="competentInstitution" type="competentInstitutionType" />
+                <xsd:element maxOccurs="unbounded" name="competentInstitutions" type="competentInstitutionType" />
             </xsd:sequence>
         </xsd:complexType>
         <xsd:complexType name="competentInstitutionType">
@@ -503,7 +499,6 @@
             </xsd:annotation>
             <xsd:sequence>
                 <xsd:element name="title" type="xsd:string" />
-                <xsd:element name="description" type="xsd:string" />
                 <xsd:element name="partners" type="partnersType">
                     <xsd:annotation>
                         <xsd:documentation>
@@ -526,27 +521,25 @@
                 <xsd:element name="practices" type="xsd:string"></xsd:element>
             </xsd:sequence>
         </xsd:complexType>
-        <xsd:complexType name="learningAgreementsType">
+        <xsd:complexType name="learningAgreementListType">
             <xsd:sequence>
-                <xsd:element maxOccurs="unbounded" name="learningAgreement" type="learningAgreementType" />
+                <xsd:element maxOccurs="unbounded" name="learningAgreements" type="learningAgreementType" />
             </xsd:sequence>
         </xsd:complexType>
         <xsd:complexType name="learningAgreementType">
             <xsd:sequence>
                 <xsd:element name="title" type="xsd:string" />
-                <xsd:element name="description" type="xsd:string" />
             </xsd:sequence>
             <xsd:attribute name="URI" type="xsd:string" />
         </xsd:complexType>
-        <xsd:complexType name="recognitionsType">
+        <xsd:complexType name="recognitionListType">
             <xsd:sequence>
-                <xsd:element maxOccurs="unbounded" name="recognition" type="recognitionType"></xsd:element>
+                <xsd:element maxOccurs="unbounded" name="recognitions" type="recognitionType"></xsd:element>
             </xsd:sequence>
         </xsd:complexType>
         <xsd:complexType name="recognitionType">
             <xsd:sequence>
                 <xsd:element name="title" type="xsd:string" />
-                <xsd:element name="description" type="xsd:string" />
                 <xsd:element name="competentInstitutionURI" type="xsd:string">
                     <xsd:annotation>
                         <xsd:documentation>
@@ -572,7 +565,6 @@
         <xsd:complexType name="partnerType">
             <xsd:sequence>
                 <xsd:element name="title" type="xsd:string" />
-                <xsd:element name="description" type="xsd:string" />
             </xsd:sequence>
             <xsd:attribute name="URI" type="xsd:string" />
         </xsd:complexType>
@@ -610,7 +602,14 @@
                 <xsd:element name="title" type="xsd:string">
                     <xsd:annotation>
                         <xsd:documentation>
-                            qalification and unit must have a title, this might be unsefull also for other elements
+                            qualification and unit must have a title, this might be unsefull also for other elements
+                        </xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+                 <xsd:element name="description" type="xsd:string">
+                    <xsd:annotation>
+                        <xsd:documentation>
+                           not recommended, but usefull to give further explanations to the title
                         </xsd:documentation>
                     </xsd:annotation>
                 </xsd:element>
