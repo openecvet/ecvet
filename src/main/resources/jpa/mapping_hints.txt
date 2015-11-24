@@ -2,7 +2,7 @@
     <xsd:appinfo>
         <annox:annotate target="field">
             <Entity annox:class="javax.persistence.Entity"></Entity>
-            <Table annox:class="javax.persistence.Table" name="units"></Table>
+            <Table annox:class="javax.persistence.Table" name="unitList"></Table>
         </annox:annotate>
     </xsd:appinfo>
 </xsd:annotation>
@@ -18,12 +18,12 @@
                 <cascade>DETACH</cascade>
             </ManyToMany>
             <JoinTable annox:class="javax.persistence.JoinTable">
-                <inverseJoinColumns>
-                    <JoinColumn annox:class="javax.persistence.JoinColumn" name="units_id"></JoinColumn>
-                </inverseJoinColumns>
                 <joinColumns>
-                    <JoinColumn annox:class="javax.persistence.JoinColumn" name="unit_id"></JoinColumn>
+                    <JoinColumn annox:class="javax.persistence.JoinColumn" name="unitList_id"></JoinColumn>
                 </joinColumns>
+                <inverseJoinColumns>
+                    <JoinColumn annox:class="javax.persistence.JoinColumn" name="unit_id"></JoinColumn>
+                </inverseJoinColumns>
             </JoinTable>
         </annox:annotate>
     </xsd:appinfo>
@@ -34,7 +34,7 @@
 <xsd:annotation>
     <xsd:appinfo>
         <annox:annotate target="field">
-            <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.UnitsType"></OneToOne>
+            <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="net.impact_eu.ecvet.entity.UnitListType"></OneToOne>
         </annox:annotate>
     </xsd:appinfo>
 </xsd:annotation>
