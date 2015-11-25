@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.24 um 08:34:47 PM CET 
+// Generiert: 2015.11.25 um 10:17:29 AM CET 
 //
 
 
@@ -23,8 +23,8 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- *                     According to: C 155/14 Annex 1 - Definitions (b) -- a single learning outcome represents the statement, which is described in the defintion
- *                 
+ * 				According to: C 155/14 Annex 1 - Definitions (b) -- a single learning outcome represents the statement, which is described in the defintion
+ * 			
  * 
  * <p>Java-Klasse für learningOutcomeType complex type.
  * 
@@ -62,9 +62,9 @@ public class LearningOutcomeType
 {
 
     @XmlElementRefs({
+        @XmlElementRef(name = "title", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "credit", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "learningOutcomeTermList", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "title", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "learningOutcomeTermList", type = JAXBElement.class, required = false)
     })
     protected List<JAXBElement<? extends Serializable>> rest;
 
@@ -74,8 +74,8 @@ public class LearningOutcomeType
      * <p>
      * Sie rufen diese "catch-all"-Eigenschaft aus folgendem Grund ab: 
      * Der Feldname "Title" wird von zwei verschiedenen Teilen eines Schemas verwendet. Siehe: 
-     * Zeile 327 von file:/home/tom/src/java/specification/src/main/resources/xsd/draft.xsd
-     * Zeile 602 von file:/home/tom/src/java/specification/src/main/resources/xsd/draft.xsd
+     * Zeile 336 von file:/home/tom/src/java/ecvet_draft/src/main/resources/xsd/draft.xsd
+     * Zeile 620 von file:/home/tom/src/java/ecvet_draft/src/main/resources/xsd/draft.xsd
      * <p>
      * Um diese Eigenschaft zu entfernen, wenden Sie eine Eigenschaftenanpassung für eine
      * der beiden folgenden Deklarationen an, um deren Namen zu ändern: 
@@ -96,9 +96,9 @@ public class LearningOutcomeType
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link Integer }{@code >}
-     * {@link JAXBElement }{@code <}{@link LearningOutcomeTermListType }{@code >}
      * {@link JAXBElement }{@code <}{@link String }{@code >}
+     * {@link JAXBElement }{@code <}{@link LearningOutcomeTermListType }{@code >}
+     * {@link JAXBElement }{@code <}{@link Integer }{@code >}
      * 
      * 
      */

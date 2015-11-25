@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.24 um 08:34:47 PM CET 
+// Generiert: 2015.11.25 um 10:17:29 AM CET 
 //
 
 
@@ -20,8 +20,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- *                     According to: C 155/14 Annex 1 - Definitions (c) -- ‘Unit of learning outcomes’ (unit) means a component of a qualification, consisting of a coherent set of knowledge, skills and competence, that can be assessed and validated. Possibly ambiguous -> the child element which follow here is a set of learningOutcomes (which represent the KSC terms)
- *                 
+ * 				According to: C 155/14 Annex 1 - Definitions (c) -- ‘Unit of learning outcomes’ (unit) means a component of a qualification, consisting of a coherent set of knowledge, skills and competence, that can be
+ * 				assessed and validated. Possibly ambiguous -> the child element which follow here is a set of learningOutcomes (which represent the KSC terms)
+ * 			
  * 
  * <p>Java-Klasse für unitType complex type.
  * 

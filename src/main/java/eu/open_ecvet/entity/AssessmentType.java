@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.24 um 08:34:47 PM CET 
+// Generiert: 2015.11.25 um 10:17:29 AM CET 
 //
 
 
@@ -17,8 +17,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- *                     According to: C 155/14 Annex 1 - Definitions (f) --- ‘Assessment of learning outcomes’ means methods and processes used to establish the extent to which a learner has in fact attained particular knowledge, skills and competence
- *                 
+ * 				According to: C 155/14 Annex 1 - Definitions (f) --- ‘Assessment of learning outcomes’ means methods and processes used to establish the extent to which a learner has in fact attained particular knowledge,
+ * 				skills and competence
+ * 			
  * 
  * <p>Java-Klasse für assessmentType complex type.
  * 

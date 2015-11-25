@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.24 um 08:34:47 PM CET 
+// Generiert: 2015.11.25 um 10:17:29 AM CET 
 //
 
 
@@ -12,6 +12,7 @@ import java.io.Serializable;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.MappedSuperclass;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -73,6 +74,7 @@ public class EvcetElement
     @XmlElement(required = true)
     protected String title;
     @XmlElement(required = true)
+    @Lob
     protected String description;
     @XmlAttribute(name = "URI")
     protected String uri;

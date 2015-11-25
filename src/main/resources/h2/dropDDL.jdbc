@@ -1,0 +1,22 @@
+ALTER TABLE qualification DROP CONSTRAINT FK_qualification_UNITLIST_ID
+ALTER TABLE unit DROP CONSTRAINT FK_unit_LEARNINGOUTCOMES_ID
+ALTER TABLE unit DROP CONSTRAINT FK_unit_REFERENCELEVELLIST_ID
+ALTER TABLE unit DROP CONSTRAINT FK_unit_UNITLIST_ID
+ALTER TABLE ecvetFramework DROP CONSTRAINT FK_ecvetFramework_QUALIFICATION_ID
+ALTER TABLE referenceLevelList_referenceLevel DROP CONSTRAINT rferenceLevelListreferenceLevelrferenceLevelListid
+ALTER TABLE referenceLevelList_referenceLevel DROP CONSTRAINT referenceLevelList_referenceLevelreferenceLevel_id
+ALTER TABLE unitList_unit DROP CONSTRAINT FK_unitList_unit_unit_id
+ALTER TABLE unitList_unit DROP CONSTRAINT FK_unitList_unit_unitList_id
+ALTER TABLE learningOutcomeList_learningOutcome DROP CONSTRAINT lrnngOutcomeListlearningOutcomelrningOutcomeListid
+ALTER TABLE learningOutcomeList_learningOutcome DROP CONSTRAINT larningOutcomeListlearningOutcomelearningOutcomeid
+DROP TABLE qualification
+DROP TABLE learningOutcome
+DROP TABLE referenceLevelList
+DROP TABLE unitList
+DROP TABLE unit
+DROP TABLE ecvetFramework
+DROP TABLE referenceLevel
+DROP TABLE learningOutcomeList
+DROP TABLE referenceLevelList_referenceLevel
+DROP TABLE unitList_unit
+DROP TABLE learningOutcomeList_learningOutcome

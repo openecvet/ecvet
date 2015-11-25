@@ -5,7 +5,7 @@
 Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-Generiert: 2015.11.24 um 08:34:46 PM CET 
+Generiert: 2015.11.25 um 10:17:29 AM CET 
 
   -->
   <jaxb:bindings scd="x-schema::">
@@ -108,7 +108,7 @@ Generiert: 2015.11.24 um 08:34:46 PM CET
     <jaxb:bindings scd="~partnerType">
       <jaxb:class ref="eu.open_ecvet.entity.PartnerType"/>
     </jaxb:bindings>
-    <jaxb:bindings scd="~FileDataType">
+    <jaxb:bindings scd="~fileDataType">
       <jaxb:class ref="eu.open_ecvet.entity.FileDataType"/>
     </jaxb:bindings>
     <jaxb:bindings scd="~evcetElement">

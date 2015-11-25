@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.24 um 08:34:47 PM CET 
+// Generiert: 2015.11.25 um 10:17:29 AM CET 
 //
 
 
@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * which are defined in terms of knowledge, skills and competence;
- *                 
+ * 			
  * 
  * <p>Java-Klasse für learningOutcomeTermType complex type.
  * 
