@@ -1,264 +1,264 @@
-2015-11-25 11:50:36 jdbc[3]: exception
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATION" nicht gefunden
 Table "QUALIFICATION" not found; SQL statement:
 ALTER TABLE qualification DROP CONSTRAINT FK_qualification_UNITLIST_ID [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 ALTER TABLE unit DROP CONSTRAINT FK_unit_LEARNINGOUTCOMES_ID [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 ALTER TABLE unit DROP CONSTRAINT FK_unit_REFERENCELEVELLIST_ID [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 ALTER TABLE unit DROP CONSTRAINT FK_unit_UNITLIST_ID [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ECVETFRAMEWORK" nicht gefunden
 Table "ECVETFRAMEWORK" not found; SQL statement:
-ALTER TABLE ecvetFramework DROP CONSTRAINT FK_ecvetFramework_QUALIFICATION_ID [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+ALTER TABLE ecvetframework DROP CONSTRAINT FK_ecvetframework_QUALIFICATION_ID [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVELLIST_REFERENCELEVEL" nicht gefunden
 Table "REFERENCELEVELLIST_REFERENCELEVEL" not found; SQL statement:
-ALTER TABLE referenceLevelList_referenceLevel DROP CONSTRAINT rferenceLevelListreferenceLevelrferenceLevelListid [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+ALTER TABLE referencelevellist_referencelevel DROP CONSTRAINT rferencelevellistreferencelevelrferencelevellistid [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVELLIST_REFERENCELEVEL" nicht gefunden
 Table "REFERENCELEVELLIST_REFERENCELEVEL" not found; SQL statement:
-ALTER TABLE referenceLevelList_referenceLevel DROP CONSTRAINT referenceLevelList_referenceLevelreferenceLevel_id [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+ALTER TABLE referencelevellist_referencelevel DROP CONSTRAINT referencelevellist_referencelevelreferencelevel_id [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNIT" nicht gefunden
 Table "UNITLIST_UNIT" not found; SQL statement:
-ALTER TABLE unitList_unit DROP CONSTRAINT FK_unitList_unit_unit_id [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+ALTER TABLE unitlist_unit DROP CONSTRAINT FK_unitlist_unit_unitid [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNIT" nicht gefunden
 Table "UNITLIST_UNIT" not found; SQL statement:
-ALTER TABLE unitList_unit DROP CONSTRAINT FK_unitList_unit_unitList_id [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+ALTER TABLE unitlist_unit DROP CONSTRAINT FK_unitlist_unit_unitlist_id [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" not found; SQL statement:
-ALTER TABLE learningOutcomeList_learningOutcome DROP CONSTRAINT lrnngOutcomeListlearningOutcomelrningOutcomeListid [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+ALTER TABLE learningoutcomelist_learningoutcome DROP CONSTRAINT lrnngoutcomelistlearningoutcomelrningoutcomelistid [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" not found; SQL statement:
-ALTER TABLE learningOutcomeList_learningOutcome DROP CONSTRAINT larningOutcomeListlearningOutcomelearningOutcomeid [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+ALTER TABLE learningoutcomelist_learningoutcome DROP CONSTRAINT larningoutcomelistlearningoutcomelearningoutcomeid [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATION" nicht gefunden
 Table "QUALIFICATION" not found; SQL statement:
 DROP TABLE qualification [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOME" not found; SQL statement:
-DROP TABLE learningOutcome [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE learningoutcome [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVELLIST" nicht gefunden
 Table "REFERENCELEVELLIST" not found; SQL statement:
-DROP TABLE referenceLevelList [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE referencelevellist [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST" nicht gefunden
 Table "UNITLIST" not found; SQL statement:
-DROP TABLE unitList [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE unitlist [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 DROP TABLE unit [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ECVETFRAMEWORK" nicht gefunden
 Table "ECVETFRAMEWORK" not found; SQL statement:
-DROP TABLE ecvetFramework [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE ecvetframework [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVEL" nicht gefunden
 Table "REFERENCELEVEL" not found; SQL statement:
-DROP TABLE referenceLevel [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE referencelevel [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST" not found; SQL statement:
-DROP TABLE learningOutcomeList [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE learningoutcomelist [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVELLIST_REFERENCELEVEL" nicht gefunden
 Table "REFERENCELEVELLIST_REFERENCELEVEL" not found; SQL statement:
-DROP TABLE referenceLevelList_referenceLevel [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE referencelevellist_referencelevel [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNIT" nicht gefunden
 Table "UNITLIST_UNIT" not found; SQL statement:
-DROP TABLE unitList_unit [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE unitlist_unit [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" not found; SQL statement:
-DROP TABLE learningOutcomeList_learningOutcome [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE learningoutcomelist_learningoutcome [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATION" nicht gefunden
 Table "QUALIFICATION" not found; SQL statement:
 DROP TABLE qualification [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOME" not found; SQL statement:
-DROP TABLE learningOutcome [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE learningoutcome [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVELLIST" nicht gefunden
 Table "REFERENCELEVELLIST" not found; SQL statement:
-DROP TABLE referenceLevelList [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE referencelevellist [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST" nicht gefunden
 Table "UNITLIST" not found; SQL statement:
-DROP TABLE unitList [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE unitlist [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 DROP TABLE unit [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ECVETFRAMEWORK" nicht gefunden
 Table "ECVETFRAMEWORK" not found; SQL statement:
-DROP TABLE ecvetFramework [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE ecvetframework [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVEL" nicht gefunden
 Table "REFERENCELEVEL" not found; SQL statement:
-DROP TABLE referenceLevel [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE referencelevel [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST" not found; SQL statement:
-DROP TABLE learningOutcomeList [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE learningoutcomelist [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVELLIST_REFERENCELEVEL" nicht gefunden
 Table "REFERENCELEVELLIST_REFERENCELEVEL" not found; SQL statement:
-DROP TABLE referenceLevelList_referenceLevel [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE referencelevellist_referencelevel [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNIT" nicht gefunden
 Table "UNITLIST_UNIT" not found; SQL statement:
-DROP TABLE unitList_unit [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE unitlist_unit [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" not found; SQL statement:
-DROP TABLE learningOutcomeList_learningOutcome [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE learningoutcomelist_learningoutcome [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATION" nicht gefunden
 Table "QUALIFICATION" not found; SQL statement:
 DROP TABLE qualification [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOME" not found; SQL statement:
-DROP TABLE learningOutcome [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE learningoutcome [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVELLIST" nicht gefunden
 Table "REFERENCELEVELLIST" not found; SQL statement:
-DROP TABLE referenceLevelList [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE referencelevellist [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST" nicht gefunden
 Table "UNITLIST" not found; SQL statement:
-DROP TABLE unitList [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE unitlist [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 DROP TABLE unit [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ECVETFRAMEWORK" nicht gefunden
 Table "ECVETFRAMEWORK" not found; SQL statement:
-DROP TABLE ecvetFramework [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE ecvetframework [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVEL" nicht gefunden
 Table "REFERENCELEVEL" not found; SQL statement:
-DROP TABLE referenceLevel [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE referencelevel [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST" not found; SQL statement:
-DROP TABLE learningOutcomeList [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE learningoutcomelist [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVELLIST_REFERENCELEVEL" nicht gefunden
 Table "REFERENCELEVELLIST_REFERENCELEVEL" not found; SQL statement:
-DROP TABLE referenceLevelList_referenceLevel [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE referencelevellist_referencelevel [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNIT" nicht gefunden
 Table "UNITLIST_UNIT" not found; SQL statement:
-DROP TABLE unitList_unit [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE unitlist_unit [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" not found; SQL statement:
-DROP TABLE learningOutcomeList_learningOutcome [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE learningoutcomelist_learningoutcome [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATION" nicht gefunden
 Table "QUALIFICATION" not found; SQL statement:
 DROP TABLE qualification [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOME" not found; SQL statement:
-DROP TABLE learningOutcome [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE learningoutcome [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVELLIST" nicht gefunden
 Table "REFERENCELEVELLIST" not found; SQL statement:
-DROP TABLE referenceLevelList [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE referencelevellist [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST" nicht gefunden
 Table "UNITLIST" not found; SQL statement:
-DROP TABLE unitList [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE unitlist [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 DROP TABLE unit [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ECVETFRAMEWORK" nicht gefunden
 Table "ECVETFRAMEWORK" not found; SQL statement:
-DROP TABLE ecvetFramework [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE ecvetframework [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVEL" nicht gefunden
 Table "REFERENCELEVEL" not found; SQL statement:
-DROP TABLE referenceLevel [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE referencelevel [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST" not found; SQL statement:
-DROP TABLE learningOutcomeList [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE learningoutcomelist [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVELLIST_REFERENCELEVEL" nicht gefunden
 Table "REFERENCELEVELLIST_REFERENCELEVEL" not found; SQL statement:
-DROP TABLE referenceLevelList_referenceLevel [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE referencelevellist_referencelevel [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNIT" nicht gefunden
 Table "UNITLIST_UNIT" not found; SQL statement:
-DROP TABLE unitList_unit [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE unitlist_unit [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" not found; SQL statement:
-DROP TABLE learningOutcomeList_learningOutcome [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE learningoutcomelist_learningoutcome [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATION" nicht gefunden
 Table "QUALIFICATION" not found; SQL statement:
 DROP TABLE qualification [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOME" not found; SQL statement:
-DROP TABLE learningOutcome [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE learningoutcome [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVELLIST" nicht gefunden
 Table "REFERENCELEVELLIST" not found; SQL statement:
-DROP TABLE referenceLevelList [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE referencelevellist [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST" nicht gefunden
 Table "UNITLIST" not found; SQL statement:
-DROP TABLE unitList [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE unitlist [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 DROP TABLE unit [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ECVETFRAMEWORK" nicht gefunden
 Table "ECVETFRAMEWORK" not found; SQL statement:
-DROP TABLE ecvetFramework [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE ecvetframework [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVEL" nicht gefunden
 Table "REFERENCELEVEL" not found; SQL statement:
-DROP TABLE referenceLevel [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE referencelevel [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST" not found; SQL statement:
-DROP TABLE learningOutcomeList [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE learningoutcomelist [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REFERENCELEVELLIST_REFERENCELEVEL" nicht gefunden
 Table "REFERENCELEVELLIST_REFERENCELEVEL" not found; SQL statement:
-DROP TABLE referenceLevelList_referenceLevel [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE referencelevellist_referencelevel [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNIT" nicht gefunden
 Table "UNITLIST_UNIT" not found; SQL statement:
-DROP TABLE unitList_unit [42102-190]
-2015-11-25 11:50:36 jdbc[3]: exception
+DROP TABLE unitlist_unit [42102-190]
+2015-11-25 21:23:57 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" not found; SQL statement:
-DROP TABLE learningOutcomeList_learningOutcome [42102-190]
+DROP TABLE learningoutcomelist_learningoutcome [42102-190]

@@ -13,7 +13,7 @@
 			<xsd:appinfo>
 				<annox:annotate target="field">
 					<Entity annox:class="javax.persistence.Entity"></Entity>
-					<Table annox:class="javax.persistence.Table" name="ecvetFramework"></Table>
+					<Table annox:class="javax.persistence.Table" name="ecvetframework"></Table>
 				</annox:annotate>
 			</xsd:appinfo>
 		</xsd:annotation>
@@ -82,7 +82,7 @@
 			<xsd:appinfo>
 				<annox:annotate target="field">
 					<Entity annox:class="javax.persistence.Entity"></Entity>
-					<Table annox:class="javax.persistence.Table" name="unitList"></Table>
+					<Table annox:class="javax.persistence.Table" name="unitlist"></Table>
 				</annox:annotate>
 			</xsd:appinfo>
 		</xsd:annotation>
@@ -100,10 +100,10 @@
 									</ManyToMany>
 									<JoinTable annox:class="javax.persistence.JoinTable">
 										<joinColumns>
-											<JoinColumn annox:class="javax.persistence.JoinColumn" name="unitList_id"></JoinColumn>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="unitlist_id"></JoinColumn>
 										</joinColumns>
 										<inverseJoinColumns>
-											<JoinColumn annox:class="javax.persistence.JoinColumn" name="unit_id"></JoinColumn>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="unitid"></JoinColumn>
 										</inverseJoinColumns>
 									</JoinTable>
 								</annox:annotate>
@@ -203,7 +203,7 @@
 			<xsd:appinfo>
 				<annox:annotate target="field">
 					<Entity annox:class="javax.persistence.Entity"></Entity>
-					<Table annox:class="javax.persistence.Table" name="referenceLevelList"></Table>
+					<Table annox:class="javax.persistence.Table" name="referencelevellist"></Table>
 				</annox:annotate>
 			</xsd:appinfo>
 			<xsd:documentation>
@@ -223,10 +223,10 @@
 									</ManyToMany>
 									<JoinTable annox:class="javax.persistence.JoinTable">
 										<joinColumns>
-											<JoinColumn annox:class="javax.persistence.JoinColumn" name="referenceLevelList_id"></JoinColumn>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="referencelevellist_id"></JoinColumn>
 										</joinColumns>
 										<inverseJoinColumns>
-											<JoinColumn annox:class="javax.persistence.JoinColumn" name="referenceLevel_id"></JoinColumn>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="referencelevel_id"></JoinColumn>
 										</inverseJoinColumns>
 									</JoinTable>
 								</annox:annotate>
@@ -242,7 +242,7 @@
 			<xsd:appinfo>
 				<annox:annotate target="field">
 					<Entity annox:class="javax.persistence.Entity"></Entity>
-					<Table annox:class="javax.persistence.Table" name="referenceLevel"></Table>
+					<Table annox:class="javax.persistence.Table" name="referencelevel"></Table>
 				</annox:annotate>
 			</xsd:appinfo>
 		</xsd:annotation>
@@ -282,7 +282,7 @@
 			<xsd:appinfo>
 				<annox:annotate target="field">
 					<Entity annox:class="javax.persistence.Entity"></Entity>
-					<Table annox:class="javax.persistence.Table" name="learningOutcomeList"></Table>
+					<Table annox:class="javax.persistence.Table" name="learningoutcomelist"></Table>
 				</annox:annotate>
 			</xsd:appinfo>
 			<xsd:documentation>
@@ -304,10 +304,10 @@
 									</ManyToMany>
 									<JoinTable annox:class="javax.persistence.JoinTable">
 										<inverseJoinColumns>
-											<JoinColumn annox:class="javax.persistence.JoinColumn" name="learningOutcomeList_id"></JoinColumn>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="learningoutcomelist_id"></JoinColumn>
 										</inverseJoinColumns>
 										<joinColumns>
-											<JoinColumn annox:class="javax.persistence.JoinColumn" name="learningOutcome_id"></JoinColumn>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="learningoutcome_id"></JoinColumn>
 										</joinColumns>
 									</JoinTable>
 								</annox:annotate>
@@ -323,7 +323,7 @@
 			<xsd:appinfo>
 				<annox:annotate target="field">
 					<Entity annox:class="javax.persistence.Entity"></Entity>
-					<Table annox:class="javax.persistence.Table" name="learningOutcome"></Table>
+					<Table annox:class="javax.persistence.Table" name="learningoutcome"></Table>
 				</annox:annotate>
 			</xsd:appinfo>
 			<xsd:documentation>

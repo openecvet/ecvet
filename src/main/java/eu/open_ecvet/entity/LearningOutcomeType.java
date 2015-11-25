@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.25 um 10:17:29 AM CET 
+// Generiert: 2015.11.25 um 09:23:53 PM CET 
 //
 
 
@@ -55,16 +55,16 @@ import javax.xml.bind.annotation.XmlType;
 
 }, uniqueConstraints = {
 
-}, name = "learningOutcome")
+}, name = "learningoutcome")
 public class LearningOutcomeType
     extends EvcetElement
     implements Serializable
 {
 
     @XmlElementRefs({
-        @XmlElementRef(name = "title", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "learningOutcomeTermList", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "credit", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "learningOutcomeTermList", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "title", type = JAXBElement.class, required = false)
     })
     protected List<JAXBElement<? extends Serializable>> rest;
 
@@ -96,8 +96,8 @@ public class LearningOutcomeType
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link JAXBElement }{@code <}{@link LearningOutcomeTermListType }{@code >}
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link JAXBElement }{@code <}{@link Integer }{@code >}
      * 
      * 

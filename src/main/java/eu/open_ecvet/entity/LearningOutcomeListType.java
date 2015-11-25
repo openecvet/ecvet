@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.25 um 10:17:29 AM CET 
+// Generiert: 2015.11.25 um 09:23:53 PM CET 
 //
 
 
@@ -56,7 +56,7 @@ import javax.xml.bind.annotation.XmlType;
 
 }, uniqueConstraints = {
 
-}, name = "learningOutcomeList")
+}, name = "learningoutcomelist")
 public class LearningOutcomeListType
     extends EvcetElement
     implements Serializable
@@ -69,9 +69,9 @@ public class LearningOutcomeListType
         CascadeType.DETACH
     })
     @JoinTable(joinColumns = {
-        @JoinColumn(name = "learningOutcome_id")
+        @JoinColumn(name = "learningoutcome_id")
     }, inverseJoinColumns = {
-        @JoinColumn(name = "learningOutcomeList_id")
+        @JoinColumn(name = "learningoutcomelist_id")
     }, indexes = {
 
     }, uniqueConstraints = {
