@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.25 um 09:23:53 PM CET 
+// Generiert: 2015.11.26 um 05:01:19 PM CET 
 //
 
 
@@ -284,11 +284,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PartnersType }
+     * Create an instance of {@link PartnerListType }
      * 
      */
-    public PartnersType createPartnersType() {
-        return new PartnersType();
+    public PartnerListType createPartnerListType() {
+        return new PartnerListType();
     }
 
     /**

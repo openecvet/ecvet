@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.25 um 09:23:53 PM CET 
+// Generiert: 2015.11.26 um 05:01:19 PM CET 
 //
 
 
@@ -11,6 +11,12 @@ package eu.open_ecvet.entity;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -18,18 +24,18 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für partnersType complex type.
+ * <p>Java-Klasse für partnerListType complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>
- * &lt;complexType name="partnersType"&gt;
+ * &lt;complexType name="partnerListType"&gt;
  *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *     &lt;extension base="{}evcetElement"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="partner" type="{}partnerType" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
+ *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
@@ -37,14 +43,35 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "partnersType", propOrder = {
+@XmlType(name = "partnerListType", propOrder = {
     "partner"
 })
-public class PartnersType
+@Entity
+@Table(indexes = {
+
+}, uniqueConstraints = {
+
+}, name = "partnerlist")
+public class PartnerListType
+    extends EvcetElement
     implements Serializable
 {
 
     @XmlElement(required = true)
+    @ManyToMany(cascade = {
+        CascadeType.PERSIST,
+        CascadeType.MERGE,
+        CascadeType.DETACH
+    })
+    @JoinTable(joinColumns = {
+        @JoinColumn(name = "partnerlist_id")
+    }, inverseJoinColumns = {
+        @JoinColumn(name = "partner_id")
+    }, indexes = {
+
+    }, uniqueConstraints = {
+
+    })
     protected List<PartnerType> partner;
 
     /**

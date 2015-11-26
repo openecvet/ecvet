@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.25 um 09:23:53 PM CET 
+// Generiert: 2015.11.26 um 05:01:19 PM CET 
 //
 
 
@@ -27,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="methods" type="{}methodType" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="method" type="{}methodType" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -38,28 +38,28 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "methodListType", propOrder = {
-    "methods"
+    "method"
 })
 public class MethodListType
     implements Serializable
 {
 
     @XmlElement(required = true)
-    protected List<MethodType> methods;
+    protected List<MethodType> method;
 
     /**
-     * Gets the value of the methods property.
+     * Gets the value of the method property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the methods property.
+     * This is why there is not a <CODE>set</CODE> method for the method property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getMethods().add(newItem);
+     *    getMethod().add(newItem);
      * </pre>
      * 
      * 
@@ -69,11 +69,11 @@ public class MethodListType
      * 
      * 
      */
-    public List<MethodType> getMethods() {
-        if (methods == null) {
-            methods = new ArrayList<MethodType>();
+    public List<MethodType> getMethod() {
+        if (method == null) {
+            method = new ArrayList<MethodType>();
         }
-        return this.methods;
+        return this.method;
     }
 
 }

@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.25 um 09:23:53 PM CET 
+// Generiert: 2015.11.26 um 05:01:19 PM CET 
 //
 
 
@@ -33,7 +33,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}evcetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="units" type="{}unitType" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="unit" type="{}unitType" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -44,7 +44,7 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "unitListType", propOrder = {
-    "units"
+    "unit"
 })
 @Entity
 @Table(indexes = {
@@ -66,27 +66,27 @@ public class UnitListType
     @JoinTable(joinColumns = {
         @JoinColumn(name = "unitlist_id")
     }, inverseJoinColumns = {
-        @JoinColumn(name = "unitid")
+        @JoinColumn(name = "unit_id")
     }, indexes = {
 
     }, uniqueConstraints = {
 
     })
-    protected List<UnitType> units;
+    protected List<UnitType> unit;
 
     /**
-     * Gets the value of the units property.
+     * Gets the value of the unit property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the units property.
+     * This is why there is not a <CODE>set</CODE> method for the unit property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getUnits().add(newItem);
+     *    getUnit().add(newItem);
      * </pre>
      * 
      * 
@@ -96,11 +96,11 @@ public class UnitListType
      * 
      * 
      */
-    public List<UnitType> getUnits() {
-        if (units == null) {
-            units = new ArrayList<UnitType>();
+    public List<UnitType> getUnit() {
+        if (unit == null) {
+            unit = new ArrayList<UnitType>();
         }
-        return this.units;
+        return this.unit;
     }
 
 }

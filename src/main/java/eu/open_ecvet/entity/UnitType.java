@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.25 um 09:23:53 PM CET 
+// Generiert: 2015.11.26 um 05:01:19 PM CET 
 //
 
 
@@ -20,7 +20,8 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- * 				According to: C 155/14 Annex 1 - Definitions (c) -- ‘Unit of learning outcomes’ (unit) means a component of a qualification, consisting of a coherent set of knowledge, skills and competence, that can be
+ * 				According to: C 155/14 Annex 1 - Definitions (c) -- ‘Unit of learning outcomes’ (unit) means a component of a qualification, consisting of a coherent set of knowledge, skills and
+ * 				competence, that can be
  * 				assessed and validated. Possibly ambiguous -> the child element which follow here is a set of learningOutcomes (which represent the KSC terms)
  * 			
  * 
@@ -36,7 +37,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="credit" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="weightSum" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="relativeWeight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="learningOutcomes" type="{}learningOutcomeListType"/&gt;
+ *         &lt;element name="learningOutcomeList" type="{}learningOutcomeListType"/&gt;
  *         &lt;element name="referenceLevelList" type="{}referenceLevelListType"/&gt;
  *         &lt;element name="achievement" type="{}achievementType"/&gt;
  *         &lt;element name="unitList" type="{}unitListType" minOccurs="0"/&gt;
@@ -53,7 +54,7 @@ import javax.xml.bind.annotation.XmlType;
     "credit",
     "weightSum",
     "relativeWeight",
-    "learningOutcomes",
+    "learningOutcomeList",
     "referenceLevelList",
     "achievement",
     "unitList"
@@ -76,7 +77,7 @@ public class UnitType
     @OneToOne(targetEntity = LearningOutcomeListType.class, cascade = {
 
     })
-    protected LearningOutcomeListType learningOutcomes;
+    protected LearningOutcomeListType learningOutcomeList;
     @XmlElement(required = true)
     @OneToOne(targetEntity = ReferenceLevelListType.class, cascade = {
 
@@ -138,27 +139,27 @@ public class UnitType
     }
 
     /**
-     * Ruft den Wert der learningOutcomes-Eigenschaft ab.
+     * Ruft den Wert der learningOutcomeList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link LearningOutcomeListType }
      *     
      */
-    public LearningOutcomeListType getLearningOutcomes() {
-        return learningOutcomes;
+    public LearningOutcomeListType getLearningOutcomeList() {
+        return learningOutcomeList;
     }
 
     /**
-     * Legt den Wert der learningOutcomes-Eigenschaft fest.
+     * Legt den Wert der learningOutcomeList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link LearningOutcomeListType }
      *     
      */
-    public void setLearningOutcomes(LearningOutcomeListType value) {
-        this.learningOutcomes = value;
+    public void setLearningOutcomeList(LearningOutcomeListType value) {
+        this.learningOutcomeList = value;
     }
 
     /**

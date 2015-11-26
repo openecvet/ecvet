@@ -262,3 +262,707 @@ DROP TABLE unitlist_unit [42102-190]
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" not found; SQL statement:
 DROP TABLE learningoutcomelist_learningoutcome [42102-190]
+2015-11-26 15:42:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Bedingung "FK_UNIT_LEARNINGOUTCOMELIST_ID" nicht gefunden
+Constraint "FK_UNIT_LEARNINGOUTCOMELIST_ID" not found; SQL statement:
+ALTER TABLE unit DROP CONSTRAINT FK_unit_LEARNINGOUTCOMELIST_ID [90057-190]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.ddl.AlterTableDropConstraint.update(AlterTableDropConstraint.java:41)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:253)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:157)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:143)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:885)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:957)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:630)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:558)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:1995)
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:570)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:242)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:228)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeNoSelectCall(DatasourceCallQueryMechanism.java:271)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeNoSelect(DatasourceCallQueryMechanism.java:251)
+	at org.eclipse.persistence.queries.DataModifyQuery.executeDatabaseQuery(DataModifyQuery.java:85)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:899)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.internalExecuteQuery(AbstractSession.java:3207)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1797)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1779)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1730)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.priviledgedExecuteNonSelectingCall(AbstractSession.java:5000)
+	at org.eclipse.persistence.tools.schemaframework.TableDefinition.dropForeignConstraintsOnDatabase(TableDefinition.java:1068)
+	at org.eclipse.persistence.tools.schemaframework.TableDefinition.dropConstraintsOnDatabase(TableDefinition.java:1042)
+	at org.eclipse.persistence.tools.schemaframework.SchemaManager.dropConstraints(SchemaManager.java:527)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.dropConstraints(TableCreator.java:205)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.dropTables(TableCreator.java:243)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.replaceTablesAndConstraints(TableCreator.java:330)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.replaceTables(TableCreator.java:322)
+	at org.eclipse.persistence.tools.schemaframework.SchemaManager.replaceDefaultTables(SchemaManager.java:1114)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.generateDefaultTables(EntityManagerFactoryProvider.java:106)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDLToDatabase(EntityManagerSetupImpl.java:3937)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDL(EntityManagerSetupImpl.java:3865)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDL(EntityManagerSetupImpl.java:3765)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:724)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:204)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:336)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:302)
+	at eu.open_ecvet.H2DBTest.startH2DB(H2DBTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+2015-11-26 15:42:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Bedingung "FK_UNITLIST_UNIT_UNIT_ID" nicht gefunden
+Constraint "FK_UNITLIST_UNIT_UNIT_ID" not found; SQL statement:
+ALTER TABLE unitlist_unit DROP CONSTRAINT FK_unitlist_unit_unit_id [90057-190]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.ddl.AlterTableDropConstraint.update(AlterTableDropConstraint.java:41)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:253)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:157)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:143)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:885)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:957)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:630)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:558)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:1995)
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:570)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:242)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:228)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeNoSelectCall(DatasourceCallQueryMechanism.java:271)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeNoSelect(DatasourceCallQueryMechanism.java:251)
+	at org.eclipse.persistence.queries.DataModifyQuery.executeDatabaseQuery(DataModifyQuery.java:85)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:899)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.internalExecuteQuery(AbstractSession.java:3207)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1797)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1779)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1730)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.priviledgedExecuteNonSelectingCall(AbstractSession.java:5000)
+	at org.eclipse.persistence.tools.schemaframework.TableDefinition.dropForeignConstraintsOnDatabase(TableDefinition.java:1068)
+	at org.eclipse.persistence.tools.schemaframework.TableDefinition.dropConstraintsOnDatabase(TableDefinition.java:1042)
+	at org.eclipse.persistence.tools.schemaframework.SchemaManager.dropConstraints(SchemaManager.java:527)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.dropConstraints(TableCreator.java:205)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.dropTables(TableCreator.java:243)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.replaceTablesAndConstraints(TableCreator.java:330)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.replaceTables(TableCreator.java:322)
+	at org.eclipse.persistence.tools.schemaframework.SchemaManager.replaceDefaultTables(SchemaManager.java:1114)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.generateDefaultTables(EntityManagerFactoryProvider.java:106)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDLToDatabase(EntityManagerSetupImpl.java:3937)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDL(EntityManagerSetupImpl.java:3865)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDL(EntityManagerSetupImpl.java:3765)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:724)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:204)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:336)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:302)
+	at eu.open_ecvet.H2DBTest.startH2DB(H2DBTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Bedingung "FK_ECVETFRAMEWORK_COMPETENTINSTITUTIONLIST_ID" nicht gefunden
+Constraint "FK_ECVETFRAMEWORK_COMPETENTINSTITUTIONLIST_ID" not found; SQL statement:
+ALTER TABLE ecvetframework DROP CONSTRAINT FK_ecvetframework_COMPETENTINSTITUTIONLIST_ID [90057-190]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.ddl.AlterTableDropConstraint.update(AlterTableDropConstraint.java:41)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:253)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:157)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:143)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:885)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:957)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:630)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:558)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:1995)
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:570)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:242)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:228)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeNoSelectCall(DatasourceCallQueryMechanism.java:271)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeNoSelect(DatasourceCallQueryMechanism.java:251)
+	at org.eclipse.persistence.queries.DataModifyQuery.executeDatabaseQuery(DataModifyQuery.java:85)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:899)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.internalExecuteQuery(AbstractSession.java:3207)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1797)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1779)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1730)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.priviledgedExecuteNonSelectingCall(AbstractSession.java:5000)
+	at org.eclipse.persistence.tools.schemaframework.TableDefinition.dropForeignConstraintsOnDatabase(TableDefinition.java:1068)
+	at org.eclipse.persistence.tools.schemaframework.TableDefinition.dropConstraintsOnDatabase(TableDefinition.java:1042)
+	at org.eclipse.persistence.tools.schemaframework.SchemaManager.dropConstraints(SchemaManager.java:527)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.dropConstraints(TableCreator.java:205)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.dropTables(TableCreator.java:243)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.replaceTablesAndConstraints(TableCreator.java:330)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.replaceTables(TableCreator.java:322)
+	at org.eclipse.persistence.tools.schemaframework.SchemaManager.replaceDefaultTables(SchemaManager.java:1114)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.generateDefaultTables(EntityManagerFactoryProvider.java:106)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDLToDatabase(EntityManagerSetupImpl.java:3937)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDL(EntityManagerSetupImpl.java:3865)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDL(EntityManagerSetupImpl.java:3765)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:724)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:204)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:336)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:302)
+	at eu.open_ecvet.H2DBTest.startH2DB(H2DBTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" nicht gefunden
+Table "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" not found; SQL statement:
+ALTER TABLE competentinstitutionlist_competentinstitution DROP CONSTRAINT cmptntnstttnlistcompetentinstitutioncmptntnstttnid [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" nicht gefunden
+Table "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" not found; SQL statement:
+ALTER TABLE competentinstitutionlist_competentinstitution DROP CONSTRAINT cmptntnstttnlstcmpetentinstitutioncmptntnstttnlstd [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTION" nicht gefunden
+Table "COMPETENTINSTITUTION" not found; SQL statement:
+DROP TABLE competentinstitution [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST" nicht gefunden
+Table "COMPETENTINSTITUTIONLIST" not found; SQL statement:
+DROP TABLE competentinstitutionlist [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" nicht gefunden
+Table "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" not found; SQL statement:
+DROP TABLE competentinstitutionlist_competentinstitution [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTION" nicht gefunden
+Table "COMPETENTINSTITUTION" not found; SQL statement:
+DROP TABLE competentinstitution [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST" nicht gefunden
+Table "COMPETENTINSTITUTIONLIST" not found; SQL statement:
+DROP TABLE competentinstitutionlist [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" nicht gefunden
+Table "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" not found; SQL statement:
+DROP TABLE competentinstitutionlist_competentinstitution [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTION" nicht gefunden
+Table "COMPETENTINSTITUTION" not found; SQL statement:
+DROP TABLE competentinstitution [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST" nicht gefunden
+Table "COMPETENTINSTITUTIONLIST" not found; SQL statement:
+DROP TABLE competentinstitutionlist [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" nicht gefunden
+Table "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" not found; SQL statement:
+DROP TABLE competentinstitutionlist_competentinstitution [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTION" nicht gefunden
+Table "COMPETENTINSTITUTION" not found; SQL statement:
+DROP TABLE competentinstitution [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST" nicht gefunden
+Table "COMPETENTINSTITUTIONLIST" not found; SQL statement:
+DROP TABLE competentinstitutionlist [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" nicht gefunden
+Table "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" not found; SQL statement:
+DROP TABLE competentinstitutionlist_competentinstitution [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTION" nicht gefunden
+Table "COMPETENTINSTITUTION" not found; SQL statement:
+DROP TABLE competentinstitution [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST" nicht gefunden
+Table "COMPETENTINSTITUTIONLIST" not found; SQL statement:
+DROP TABLE competentinstitutionlist [42102-190]
+2015-11-26 16:22:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" nicht gefunden
+Table "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" not found; SQL statement:
+DROP TABLE competentinstitutionlist_competentinstitution [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST_PARTNER" nicht gefunden
+Table "PARTNERLIST_PARTNER" not found; SQL statement:
+ALTER TABLE partnerlist_partner DROP CONSTRAINT FK_partnerlist_partner_partner_id [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST_PARTNER" nicht gefunden
+Table "PARTNERLIST_PARTNER" not found; SQL statement:
+ALTER TABLE partnerlist_partner DROP CONSTRAINT FK_partnerlist_partner_partnerlist_id [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNER" nicht gefunden
+Table "PARTNER" not found; SQL statement:
+DROP TABLE partner [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST" nicht gefunden
+Table "PARTNERLIST" not found; SQL statement:
+DROP TABLE partnerlist [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST_PARTNER" nicht gefunden
+Table "PARTNERLIST_PARTNER" not found; SQL statement:
+DROP TABLE partnerlist_partner [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNER" nicht gefunden
+Table "PARTNER" not found; SQL statement:
+DROP TABLE partner [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST" nicht gefunden
+Table "PARTNERLIST" not found; SQL statement:
+DROP TABLE partnerlist [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST_PARTNER" nicht gefunden
+Table "PARTNERLIST_PARTNER" not found; SQL statement:
+DROP TABLE partnerlist_partner [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNER" nicht gefunden
+Table "PARTNER" not found; SQL statement:
+DROP TABLE partner [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST" nicht gefunden
+Table "PARTNERLIST" not found; SQL statement:
+DROP TABLE partnerlist [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST_PARTNER" nicht gefunden
+Table "PARTNERLIST_PARTNER" not found; SQL statement:
+DROP TABLE partnerlist_partner [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNER" nicht gefunden
+Table "PARTNER" not found; SQL statement:
+DROP TABLE partner [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST" nicht gefunden
+Table "PARTNERLIST" not found; SQL statement:
+DROP TABLE partnerlist [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST_PARTNER" nicht gefunden
+Table "PARTNERLIST_PARTNER" not found; SQL statement:
+DROP TABLE partnerlist_partner [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNER" nicht gefunden
+Table "PARTNER" not found; SQL statement:
+DROP TABLE partner [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST" nicht gefunden
+Table "PARTNERLIST" not found; SQL statement:
+DROP TABLE partnerlist [42102-190]
+2015-11-26 16:33:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST_PARTNER" nicht gefunden
+Table "PARTNERLIST_PARTNER" not found; SQL statement:
+DROP TABLE partnerlist_partner [42102-190]
+2015-11-26 16:36:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATION" nicht gefunden
+Table "LEGISLATION" not found; SQL statement:
+DROP TABLE legislation [42102-190]
+2015-11-26 16:36:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATION" nicht gefunden
+Table "LEGISLATION" not found; SQL statement:
+DROP TABLE legislation [42102-190]
+2015-11-26 16:36:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATION" nicht gefunden
+Table "LEGISLATION" not found; SQL statement:
+DROP TABLE legislation [42102-190]
+2015-11-26 16:36:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATION" nicht gefunden
+Table "LEGISLATION" not found; SQL statement:
+DROP TABLE legislation [42102-190]
+2015-11-26 16:36:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATION" nicht gefunden
+Table "LEGISLATION" not found; SQL statement:
+DROP TABLE legislation [42102-190]
+2015-11-26 16:44:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Bedingung "FK_COMPETENTINSTITUTION_LEGISLATION_ID" nicht gefunden
+Constraint "FK_COMPETENTINSTITUTION_LEGISLATION_ID" not found; SQL statement:
+ALTER TABLE competentinstitution DROP CONSTRAINT FK_competentinstitution_LEGISLATION_ID [90057-190]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.ddl.AlterTableDropConstraint.update(AlterTableDropConstraint.java:41)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:253)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:157)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:143)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:885)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:957)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:630)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:558)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:1995)
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:570)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:242)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:228)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeNoSelectCall(DatasourceCallQueryMechanism.java:271)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeNoSelect(DatasourceCallQueryMechanism.java:251)
+	at org.eclipse.persistence.queries.DataModifyQuery.executeDatabaseQuery(DataModifyQuery.java:85)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:899)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.internalExecuteQuery(AbstractSession.java:3207)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1797)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1779)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1730)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.priviledgedExecuteNonSelectingCall(AbstractSession.java:5000)
+	at org.eclipse.persistence.tools.schemaframework.TableDefinition.dropForeignConstraintsOnDatabase(TableDefinition.java:1068)
+	at org.eclipse.persistence.tools.schemaframework.TableDefinition.dropConstraintsOnDatabase(TableDefinition.java:1042)
+	at org.eclipse.persistence.tools.schemaframework.SchemaManager.dropConstraints(SchemaManager.java:527)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.dropConstraints(TableCreator.java:205)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.dropTables(TableCreator.java:243)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.replaceTablesAndConstraints(TableCreator.java:330)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.replaceTables(TableCreator.java:322)
+	at org.eclipse.persistence.tools.schemaframework.SchemaManager.replaceDefaultTables(SchemaManager.java:1114)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.generateDefaultTables(EntityManagerFactoryProvider.java:106)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDLToDatabase(EntityManagerSetupImpl.java:3937)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDL(EntityManagerSetupImpl.java:3865)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDL(EntityManagerSetupImpl.java:3765)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:724)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:204)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:336)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:302)
+	at eu.open_ecvet.H2DBTest.startH2DB(H2DBTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+2015-11-26 16:44:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Bedingung "FK_COMPETENTINSTITUTION_PARTNERLIST_ID" nicht gefunden
+Constraint "FK_COMPETENTINSTITUTION_PARTNERLIST_ID" not found; SQL statement:
+ALTER TABLE competentinstitution DROP CONSTRAINT FK_competentinstitution_PARTNERLIST_ID [90057-190]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.ddl.AlterTableDropConstraint.update(AlterTableDropConstraint.java:41)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:253)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:157)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:143)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:885)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:957)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:630)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:558)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:1995)
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:570)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:242)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:228)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeNoSelectCall(DatasourceCallQueryMechanism.java:271)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeNoSelect(DatasourceCallQueryMechanism.java:251)
+	at org.eclipse.persistence.queries.DataModifyQuery.executeDatabaseQuery(DataModifyQuery.java:85)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:899)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.internalExecuteQuery(AbstractSession.java:3207)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1797)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1779)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1730)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.priviledgedExecuteNonSelectingCall(AbstractSession.java:5000)
+	at org.eclipse.persistence.tools.schemaframework.TableDefinition.dropForeignConstraintsOnDatabase(TableDefinition.java:1068)
+	at org.eclipse.persistence.tools.schemaframework.TableDefinition.dropConstraintsOnDatabase(TableDefinition.java:1042)
+	at org.eclipse.persistence.tools.schemaframework.SchemaManager.dropConstraints(SchemaManager.java:527)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.dropConstraints(TableCreator.java:205)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.dropTables(TableCreator.java:243)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.replaceTablesAndConstraints(TableCreator.java:330)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.replaceTables(TableCreator.java:322)
+	at org.eclipse.persistence.tools.schemaframework.SchemaManager.replaceDefaultTables(SchemaManager.java:1114)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.generateDefaultTables(EntityManagerFactoryProvider.java:106)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDLToDatabase(EntityManagerSetupImpl.java:3937)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDL(EntityManagerSetupImpl.java:3865)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDL(EntityManagerSetupImpl.java:3765)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:724)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:204)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:336)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:302)
+	at eu.open_ecvet.H2DBTest.startH2DB(H2DBTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Bedingung "FK_ECVETFRAMEWORK_COMPLEMENTARYDOCUMENTLIST_ID" nicht gefunden
+Constraint "FK_ECVETFRAMEWORK_COMPLEMENTARYDOCUMENTLIST_ID" not found; SQL statement:
+ALTER TABLE ecvetframework DROP CONSTRAINT FK_ecvetframework_COMPLEMENTARYDOCUMENTLIST_ID [90057-190]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.ddl.AlterTableDropConstraint.update(AlterTableDropConstraint.java:41)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:253)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:157)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:143)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:885)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:957)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:630)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:558)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:1995)
+	at org.eclipse.persistence.sessions.server.ServerSession.executeCall(ServerSession.java:570)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:242)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:228)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeNoSelectCall(DatasourceCallQueryMechanism.java:271)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeNoSelect(DatasourceCallQueryMechanism.java:251)
+	at org.eclipse.persistence.queries.DataModifyQuery.executeDatabaseQuery(DataModifyQuery.java:85)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:899)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.internalExecuteQuery(AbstractSession.java:3207)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1797)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1779)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1730)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.priviledgedExecuteNonSelectingCall(AbstractSession.java:5000)
+	at org.eclipse.persistence.tools.schemaframework.TableDefinition.dropForeignConstraintsOnDatabase(TableDefinition.java:1068)
+	at org.eclipse.persistence.tools.schemaframework.TableDefinition.dropConstraintsOnDatabase(TableDefinition.java:1042)
+	at org.eclipse.persistence.tools.schemaframework.SchemaManager.dropConstraints(SchemaManager.java:527)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.dropConstraints(TableCreator.java:205)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.dropTables(TableCreator.java:243)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.replaceTablesAndConstraints(TableCreator.java:330)
+	at org.eclipse.persistence.tools.schemaframework.TableCreator.replaceTables(TableCreator.java:322)
+	at org.eclipse.persistence.tools.schemaframework.SchemaManager.replaceDefaultTables(SchemaManager.java:1114)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.generateDefaultTables(EntityManagerFactoryProvider.java:106)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDLToDatabase(EntityManagerSetupImpl.java:3937)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDL(EntityManagerSetupImpl.java:3865)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.writeDDL(EntityManagerSetupImpl.java:3765)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:724)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:204)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:304)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:336)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:302)
+	at eu.open_ecvet.H2DBTest.startH2DB(H2DBTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTLIST" nicht gefunden
+Table "COMPLEMENTARYDOCUMENTLIST" not found; SQL statement:
+ALTER TABLE complementarydocumentlist DROP CONSTRAINT complementarydocumentlist_LEARNINGAGREEMENTLIST_ID [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" nicht gefunden
+Table "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" not found; SQL statement:
+ALTER TABLE learningagreementlist_learningagreement DROP CONSTRAINT lrnnggrmentlistlearningagreementlrnnggrementlistid [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" nicht gefunden
+Table "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" not found; SQL statement:
+ALTER TABLE learningagreementlist_learningagreement DROP CONSTRAINT lrnnggreementlistlearningagreementlrnngagreementid [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT" nicht gefunden
+Table "LEARNINGAGREEMENT" not found; SQL statement:
+DROP TABLE learningagreement [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST" nicht gefunden
+Table "LEARNINGAGREEMENTLIST" not found; SQL statement:
+DROP TABLE learningagreementlist [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTLIST" nicht gefunden
+Table "COMPLEMENTARYDOCUMENTLIST" not found; SQL statement:
+DROP TABLE complementarydocumentlist [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" nicht gefunden
+Table "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" not found; SQL statement:
+DROP TABLE learningagreementlist_learningagreement [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT" nicht gefunden
+Table "LEARNINGAGREEMENT" not found; SQL statement:
+DROP TABLE learningagreement [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST" nicht gefunden
+Table "LEARNINGAGREEMENTLIST" not found; SQL statement:
+DROP TABLE learningagreementlist [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTLIST" nicht gefunden
+Table "COMPLEMENTARYDOCUMENTLIST" not found; SQL statement:
+DROP TABLE complementarydocumentlist [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" nicht gefunden
+Table "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" not found; SQL statement:
+DROP TABLE learningagreementlist_learningagreement [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT" nicht gefunden
+Table "LEARNINGAGREEMENT" not found; SQL statement:
+DROP TABLE learningagreement [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST" nicht gefunden
+Table "LEARNINGAGREEMENTLIST" not found; SQL statement:
+DROP TABLE learningagreementlist [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTLIST" nicht gefunden
+Table "COMPLEMENTARYDOCUMENTLIST" not found; SQL statement:
+DROP TABLE complementarydocumentlist [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" nicht gefunden
+Table "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" not found; SQL statement:
+DROP TABLE learningagreementlist_learningagreement [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT" nicht gefunden
+Table "LEARNINGAGREEMENT" not found; SQL statement:
+DROP TABLE learningagreement [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST" nicht gefunden
+Table "LEARNINGAGREEMENTLIST" not found; SQL statement:
+DROP TABLE learningagreementlist [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTLIST" nicht gefunden
+Table "COMPLEMENTARYDOCUMENTLIST" not found; SQL statement:
+DROP TABLE complementarydocumentlist [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" nicht gefunden
+Table "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" not found; SQL statement:
+DROP TABLE learningagreementlist_learningagreement [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT" nicht gefunden
+Table "LEARNINGAGREEMENT" not found; SQL statement:
+DROP TABLE learningagreement [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST" nicht gefunden
+Table "LEARNINGAGREEMENTLIST" not found; SQL statement:
+DROP TABLE learningagreementlist [42102-190]
+2015-11-26 17:01:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTLIST" nicht gefunden
+Table "COMPLEMENTARYDOCUMENTLIST" not found; SQL statement:
+DROP TABLE complementarydocumentlist [42102-190]
+2015-11-26 17:01:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" nicht gefunden
+Table "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" not found; SQL statement:
+DROP TABLE learningagreementlist_learningagreement [42102-190]

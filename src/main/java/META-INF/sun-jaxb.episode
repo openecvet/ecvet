@@ -5,7 +5,7 @@
 Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-Generiert: 2015.11.25 um 09:23:52 PM CET 
+Generiert: 2015.11.26 um 05:01:19 PM CET 
 
   -->
   <jaxb:bindings scd="x-schema::">
@@ -102,8 +102,8 @@ Generiert: 2015.11.25 um 09:23:52 PM CET
     <jaxb:bindings scd="~recognitionType">
       <jaxb:class ref="eu.open_ecvet.entity.RecognitionType"/>
     </jaxb:bindings>
-    <jaxb:bindings scd="~partnersType">
-      <jaxb:class ref="eu.open_ecvet.entity.PartnersType"/>
+    <jaxb:bindings scd="~partnerListType">
+      <jaxb:class ref="eu.open_ecvet.entity.PartnerListType"/>
     </jaxb:bindings>
     <jaxb:bindings scd="~partnerType">
       <jaxb:class ref="eu.open_ecvet.entity.PartnerType"/>

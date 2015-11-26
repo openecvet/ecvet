@@ -5,7 +5,8 @@
 		<xsd:annotation>
 			<xsd:documentation>ECVET is a technical framework for the transfer, recognition and, where appropriate, accumulation of individuals’ learningoutcomes with a view to achieving a qualification. ECVET
 				tools and methodology comprise the description of qualifi­cations in terms of units of learning outcomes with associated points, a transfer and accumulation process andcomplementary documents such
-				as learning agreements, transcripts of records and ECVET users’ guides.</xsd:documentation>
+				as learning agreements, transcripts of records and ECVET users’ guides.
+			</xsd:documentation>
 		</xsd:annotation>
 	</xsd:element>
 	<xsd:complexType name="ecvetFrameworkType">
@@ -20,8 +21,24 @@
 		<xsd:complexContent>
 			<xsd:extension base="evcetElement">
 				<xsd:sequence>
-					<xsd:element name="competentInstitutionList" type="competentInstitutionListType" />
-					<xsd:element name="complementaryDocumentList" type="complementaryDocumentListType" />
+					<xsd:element name="competentInstitutionList" type="competentInstitutionListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.CompetentInstitutionListType"></OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="complementaryDocumentList" type="complementaryDocumentListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.ComplementaryDocumentListType"></OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
 					<xsd:element name="qualification" type="qualificationType">
 						<xsd:annotation>
 							<xsd:appinfo>
@@ -44,7 +61,8 @@
 				</annox:annotate>
 			</xsd:appinfo>
 			<xsd:documentation>
-				According to: C 155/14 Annex 1 - Definitions (a) -- 'Qualification’ means a formal outcome of an assessment and validation process which is obtained when a competent institution determines that an
+				According to: C 155/14 Annex 1 - Definitions (a) -- 'Qualification’ means a formal outcome of an assessment and validation process which is obtained when a competent institution
+				determines that an
 				individual has achieved learning outcomes to given standards
 			</xsd:documentation>
 		</xsd:annotation>
@@ -67,15 +85,39 @@
 	<xsd:complexType name="complementaryDocumentListType">
 		<xsd:annotation>
 			<xsd:documentation>
-				ANNEX II ECVET — PRINCIPLES AND TECHNICAL SPECIFICATIONS -- ECVET tools and methodology comprise the description of qualifi­cations in terms of units of learning outcomes with associated points, a
+				ANNEX II ECVET — PRINCIPLES AND TECHNICAL SPECIFICATIONS -- ECVET tools and methodology comprise the description of qualifi­cations in terms of units of learning outcomes with
+				associated points, a
 				transfer and accumulation process andcomplementary documents such as learning agreements, transcripts of records and ECVET users’ guides. TODO: own type with file attachments
 			</xsd:documentation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="complementarydocumentlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
 		</xsd:annotation>
-		<xsd:sequence>
-			<xsd:element name="learningAgreementList" type="learningAgreementListType" />
-			<xsd:element name="transcriptionOfRecords" type="xsd:string" />
-			<xsd:element name="userGuide" type="xsd:string" />
-		</xsd:sequence>
+		<xsd:complexContent>
+			<xsd:extension base="evcetElement">
+				<xsd:sequence>
+					<xsd:annotation>
+						<xsd:documentation>
+							TODO: all this elements must extend complementaryDocumentList (which allows to attach files etc)
+						</xsd:documentation>
+					</xsd:annotation>
+					<xsd:element name="learningAgreementList" type="learningAgreementListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.LearningAgreementListType"></OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="transcriptionOfRecords" type="xsd:string" />
+					<xsd:element name="userGuide" type="xsd:string" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
 	</xsd:complexType>
 	<xsd:complexType name="unitListType">
 		<xsd:annotation>
@@ -89,7 +131,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="evcetElement">
 				<xsd:sequence>
-					<xsd:element name="units" type="unitType" maxOccurs="unbounded">
+					<xsd:element name="unit" type="unitType" maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -103,7 +145,7 @@
 											<JoinColumn annox:class="javax.persistence.JoinColumn" name="unitlist_id"></JoinColumn>
 										</joinColumns>
 										<inverseJoinColumns>
-											<JoinColumn annox:class="javax.persistence.JoinColumn" name="unitid"></JoinColumn>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="unit_id"></JoinColumn>
 										</inverseJoinColumns>
 									</JoinTable>
 								</annox:annotate>
@@ -123,7 +165,8 @@
 				</annox:annotate>
 			</xsd:appinfo>
 			<xsd:documentation>
-				According to: C 155/14 Annex 1 - Definitions (c) -- ‘Unit of learning outcomes’ (unit) means a component of a qualification, consisting of a coherent set of knowledge, skills and competence, that can be
+				According to: C 155/14 Annex 1 - Definitions (c) -- ‘Unit of learning outcomes’ (unit) means a component of a qualification, consisting of a coherent set of knowledge, skills and
+				competence, that can be
 				assessed and validated. Possibly ambiguous -&gt; the child element which follow here is a set of learningOutcomes (which represent the KSC terms)
 			</xsd:documentation>
 		</xsd:annotation>
@@ -140,7 +183,8 @@
 					<xsd:element name="weightSum" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
-								According to: C 155/14 Annex 1 - Definitions (i) ‘ECVET points’ means a numerical representation of the overall weight of learning outcomes in a qualification and of the relative weight of units in
+								According to: C 155/14 Annex 1 - Definitions (i) ‘ECVET points’ means a numerical representation of the overall weight of learning outcomes in a qualification and of the
+								relative weight of units in
 								relation to the qualification. This is the sum of all single weight elements which occure as childs under learningOutcomeTerm
 							</xsd:documentation>
 						</xsd:annotation>
@@ -148,12 +192,13 @@
 					<xsd:element name="relativeWeight" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
-								According to: C 155/14 Annex 1 - Definitions (i) ‘ECVET points’ means a numerical representation of the overall weight of learning outcomes in a qualification and of the relative weight of units in
+								According to: C 155/14 Annex 1 - Definitions (i) ‘ECVET points’ means a numerical representation of the overall weight of learning outcomes in a qualification and of the
+								relative weight of units in
 								relation to the qualification. Convenient field. The weightSum in relation to the overall weight
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="learningOutcomes" type="learningOutcomeListType">
+					<xsd:element name="learningOutcomeList" type="learningOutcomeListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -212,7 +257,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="evcetElement">
 				<xsd:sequence>
-					<xsd:element name="referenceLevels" type="referenceLevelType" maxOccurs="unbounded">
+					<xsd:element name="referenceLevel" type="referenceLevelType" maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -286,7 +331,8 @@
 				</annox:annotate>
 			</xsd:appinfo>
 			<xsd:documentation>
-				According to: C 155/14 Annex 1 - Definitions (b) -- ‘Learning outcomes’ means statements of what a learner knows, understands and is able to do on completion of a learning process and which are defined in
+				According to: C 155/14 Annex 1 - Definitions (b) -- ‘Learning outcomes’ means statements of what a learner knows, understands and is able to do on completion of a learning
+				process and which are defined in
 				terms of knowledge, skills and competence;
 			</xsd:documentation>
 		</xsd:annotation>
@@ -337,7 +383,8 @@
 					<xsd:element name="credit" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
-								According to: C 155/14 Annex 1 - Definitions (d) -- ‘Credit for learning outcomes’ (credit) means a set of learning outcomes of an individual which have been assessed and which can be accumulated
+								According to: C 155/14 Annex 1 - Definitions (d) -- ‘Credit for learning outcomes’ (credit) means a set of learning outcomes of an individual which have been assessed and
+								which can be accumulated
 								towards a qualification or transferred to other learning programmes or qualifications
 							</xsd:documentation>
 						</xsd:annotation>
@@ -345,7 +392,8 @@
 					<xsd:element name="learningOutcomeTermList" type="learningOutcomeTermListType">
 						<xsd:annotation>
 							<xsd:documentation>
-								According to: C 155/14 Annex 1 - Definitions (b) -- Actually a definition of terms of knowlege, skills and competences must follow here. But this is possibly ambiguous, if a nqf is used to descibe the
+								According to: C 155/14 Annex 1 - Definitions (b) -- Actually a definition of terms of knowlege, skills and competences must follow here. But this is possibly ambiguous, if a
+								nqf is used to descibe the
 								outcome (and which might use other terms)
 							</xsd:documentation>
 						</xsd:annotation>
@@ -356,7 +404,7 @@
 	</xsd:complexType>
 	<xsd:complexType name="learningOutcomeTermListType">
 		<xsd:sequence>
-			<xsd:element name="learningOutcomeTerms" maxOccurs="unbounded" type="learningOutcomeTermType" />
+			<xsd:element name="learningOutcomeTerm" maxOccurs="unbounded" type="learningOutcomeTermType" />
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="learningOutcomeTermType">
@@ -370,7 +418,8 @@
 			<xsd:element name="weight" type="xsd:int">
 				<xsd:annotation>
 					<xsd:documentation>
-						According to: C 155/14 Annex 1 - Definitions (i) ‘ECVET points’ means a numerical representation of the overall weight of learning outcomes in a qualification and of the relative weight of units in
+						According to: C 155/14 Annex 1 - Definitions (i) ‘ECVET points’ means a numerical representation of the overall weight of learning outcomes in a qualification and of the
+						relative weight of units in
 						relation to the qualification.
 					</xsd:documentation>
 				</xsd:annotation>
@@ -378,7 +427,8 @@
 			<xsd:element name="achievement" type="achievementType">
 				<xsd:annotation>
 					<xsd:documentation>
-						constructed in a way that enables discrete assessment and validation of learning outcomes contained in the unit. review tom: discrete means in the context separated from each other (and the German
+						constructed in a way that enables discrete assessment and validation of learning outcomes contained in the unit. review tom: discrete means in the context separated from each
+						other (and the German
 						translation agrees with me) so the assessement and validation elements make more sense here and rather attached to units
 					</xsd:documentation>
 				</xsd:annotation>
@@ -389,7 +439,8 @@
 		<xsd:sequence>
 			<xsd:annotation>
 				<xsd:documentation>
-					A unit is a component of a qualification, consisting of a coherent set of knowledge, skills and competence that can be assessed and validated with a number of associated ECVET points. achievment
+					A unit is a component of a qualification, consisting of a coherent set of knowledge, skills and competence that can be assessed and validated with a number of associated ECVET
+					points. achievment
 					is a container to make the consisting types (re)usable for unit / learningOutcomeTerm
 				</xsd:documentation>
 			</xsd:annotation>
@@ -400,7 +451,7 @@
 	</xsd:complexType>
 	<xsd:complexType name="validationListType">
 		<xsd:sequence>
-			<xsd:element name="validations" type="validationType" maxOccurs="unbounded">
+			<xsd:element name="validation" type="validationType" maxOccurs="unbounded">
 				<xsd:annotation>
 					<xsd:documentation>
 						the 'particular' validation of the learningOutcome @see validationType
@@ -412,7 +463,8 @@
 	<xsd:complexType name="validationType">
 		<xsd:annotation>
 			<xsd:documentation>
-				According to: C 155/14 Annex 1 - Definitions (g) --- ‘Validation of learning outcomes’ means the process of confirming that certain assessed learning outcomes achieved by a learner correspond to specific
+				According to: C 155/14 Annex 1 - Definitions (g) --- ‘Validation of learning outcomes’ means the process of confirming that certain assessed learning outcomes achieved by a
+				learner correspond to specific
 				outcomes which may be required for a unit or a qualification
 			</xsd:documentation>
 		</xsd:annotation>
@@ -445,7 +497,7 @@
 	</xsd:complexType>
 	<xsd:complexType name="requirementListType">
 		<xsd:sequence>
-			<xsd:element name="requirements" type="requirementType" maxOccurs="unbounded" />
+			<xsd:element name="requirement" type="requirementType" maxOccurs="unbounded" />
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="requirementType">
@@ -454,7 +506,7 @@
 	</xsd:complexType>
 	<xsd:complexType name="assessmentListType">
 		<xsd:sequence>
-			<xsd:element name="assessments" type="assessmentType" maxOccurs="unbounded">
+			<xsd:element name="assessment" type="assessmentType" maxOccurs="unbounded">
 				<xsd:annotation>
 					<xsd:documentation>the procedures and criteria for assessment of these learning outcomes,
 					</xsd:documentation>
@@ -465,7 +517,8 @@
 	<xsd:complexType name="assessmentType">
 		<xsd:annotation>
 			<xsd:documentation>
-				According to: C 155/14 Annex 1 - Definitions (f) --- ‘Assessment of learning outcomes’ means methods and processes used to establish the extent to which a learner has in fact attained particular knowledge,
+				According to: C 155/14 Annex 1 - Definitions (f) --- ‘Assessment of learning outcomes’ means methods and processes used to establish the extent to which a learner has in fact
+				attained particular knowledge,
 				skills and competence
 			</xsd:documentation>
 		</xsd:annotation>
@@ -488,7 +541,7 @@
 	</xsd:complexType>
 	<xsd:complexType name="processListType">
 		<xsd:sequence>
-			<xsd:element name="processes" type="processType" maxOccurs="unbounded" />
+			<xsd:element name="process" type="processType" maxOccurs="unbounded" />
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="processType">
@@ -496,63 +549,169 @@
 	</xsd:complexType>
 	<xsd:complexType name="methodListType">
 		<xsd:sequence>
-			<xsd:element name="methods" type="methodType" maxOccurs="unbounded" />
+			<xsd:element name="method" type="methodType" maxOccurs="unbounded" />
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="methodType">
 		<xsd:attribute name="URI" type="xsd:string" />
 	</xsd:complexType>
 	<xsd:complexType name="competentInstitutionListType">
-		<xsd:sequence>
-			<xsd:element maxOccurs="unbounded" name="competentInstitutions" type="competentInstitutionType" />
-		</xsd:sequence>
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="competentinstitutionlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="evcetElement">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" name="competentInstitution" type="competentInstitutionType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="competentinstitutionlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="competentinstitution_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
 	</xsd:complexType>
 	<xsd:complexType name="competentInstitutionType">
 		<xsd:annotation>
 			<xsd:documentation>
-				According to: C 155/14 Annex 1 - Definitions (e) -- ‘Competent institution’ means an institution which is responsible for designing and awarding qualifications or recognising units or other functions
-				linked to ECVET, such as allocation of ECVET points to qualifications and units, assessment, validation and recognition of learning outcomes, under the rules and practices of participating
+				According to: C 155/14 Annex 1 - Definitions (e) -- ‘Competent institution’ means an institution which is responsible for designing and awarding qualifications or recognising
+				units or other functions
+				linked to ECVET, such as allocation of ECVET points to qualifications and units, assessment, validation and recognition of learning outcomes, under the rules and practices
+				of participating
 				countries
 			</xsd:documentation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="competentinstitution"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
 		</xsd:annotation>
-		<xsd:sequence>
-			<xsd:element name="title" type="xsd:string" />
-			<xsd:element name="partners" type="partnersType">
-				<xsd:annotation>
-					<xsd:documentation>
-						ANNEX II ECVET — PRINCIPLES AND TECHNICAL SPECIFICATIONS ... are defined by competent institutions and partners involved in the training process...
-					</xsd:documentation>
-				</xsd:annotation>
-			</xsd:element>
-			<xsd:element name="legislation" type="legislationType" />
-		</xsd:sequence>
-		<xsd:attribute name="URI" type="xsd:string" />
+		<xsd:complexContent>
+			<xsd:extension base="evcetElement">
+				<xsd:sequence>
+					<xsd:element name="partnerList" type="partnerListType">
+						<xsd:annotation>
+							<xsd:documentation>
+								ANNEX II ECVET — PRINCIPLES AND TECHNICAL SPECIFICATIONS ... are defined by competent institutions and partners involved in the training process...
+							</xsd:documentation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.PartnerListType"></OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="legislation" type="legislationType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.LegislationType"></OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
 	</xsd:complexType>
 	<xsd:complexType name="legislationType">
-		<xsd:sequence>
-			<xsd:annotation>
-				<xsd:documentation>
-					description of the specific rules and practices for this qualification in the country (references to the definition in (e))
-				</xsd:documentation>
-			</xsd:annotation>
-			<xsd:element name="rules" type="xsd:string"></xsd:element>
-			<xsd:element name="practices" type="xsd:string"></xsd:element>
-		</xsd:sequence>
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="legislation"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="evcetElement">
+				<xsd:sequence>
+					<xsd:annotation>
+						<xsd:documentation>
+							description of the specific rules and practices for this qualification in the country (references to the definition in (e))
+						</xsd:documentation>
+					</xsd:annotation>
+					<xsd:element name="rules" type="xsd:string"></xsd:element>
+					<xsd:element name="practices" type="xsd:string"></xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
 	</xsd:complexType>
 	<xsd:complexType name="learningAgreementListType">
-		<xsd:sequence>
-			<xsd:element maxOccurs="unbounded" name="learningAgreements" type="learningAgreementType" />
-		</xsd:sequence>
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="learningagreementlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="evcetElement">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" name="learningAgreement" type="learningAgreementType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="learningagreementlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="learningagreement_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
 	</xsd:complexType>
 	<xsd:complexType name="learningAgreementType">
-		<xsd:sequence>
-			<xsd:element name="title" type="xsd:string" />
-		</xsd:sequence>
-		<xsd:attribute name="URI" type="xsd:string" />
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="learningagreement"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="evcetElement"></xsd:extension>
+		</xsd:complexContent>
 	</xsd:complexType>
 	<xsd:complexType name="recognitionListType">
 		<xsd:sequence>
-			<xsd:element maxOccurs="unbounded" name="recognitions" type="recognitionType"></xsd:element>
+			<xsd:element maxOccurs="unbounded" name="recognition" type="recognitionType"></xsd:element>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="recognitionType">
@@ -575,16 +734,55 @@
 		</xsd:sequence>
 		<xsd:attribute name="URI" type="xsd:string" />
 	</xsd:complexType>
-	<xsd:complexType name="partnersType">
-		<xsd:sequence>
-			<xsd:element maxOccurs="unbounded" name="partner" type="partnerType" />
-		</xsd:sequence>
+	<xsd:complexType name="partnerListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="partnerlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="evcetElement">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" name="partner" type="partnerType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="partnerlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="partner_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
 	</xsd:complexType>
 	<xsd:complexType name="partnerType">
-		<xsd:sequence>
-			<xsd:element name="title" type="xsd:string" />
-		</xsd:sequence>
-		<xsd:attribute name="URI" type="xsd:string" />
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="partner"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="evcetElement"></xsd:extension>
+		</xsd:complexContent>
 	</xsd:complexType>
 	<xsd:complexType name="fileDataType">
 		<xsd:sequence>
@@ -628,7 +826,7 @@
 				<xsd:annotation>
 					<xsd:appinfo>
 						<annox:annotate target="field">
-						<Lob annox:class="javax.persistence.Lob"></Lob>
+							<Lob annox:class="javax.persistence.Lob"></Lob>
 						</annox:annotate>
 					</xsd:appinfo>
 					<xsd:documentation>

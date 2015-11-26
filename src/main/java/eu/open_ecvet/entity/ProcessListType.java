@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.25 um 09:23:53 PM CET 
+// Generiert: 2015.11.26 um 05:01:19 PM CET 
 //
 
 
@@ -27,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="processes" type="{}processType" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="process" type="{}processType" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -38,28 +38,28 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "processListType", propOrder = {
-    "processes"
+    "process"
 })
 public class ProcessListType
     implements Serializable
 {
 
     @XmlElement(required = true)
-    protected List<ProcessType> processes;
+    protected List<ProcessType> process;
 
     /**
-     * Gets the value of the processes property.
+     * Gets the value of the process property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the processes property.
+     * This is why there is not a <CODE>set</CODE> method for the process property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getProcesses().add(newItem);
+     *    getProcess().add(newItem);
      * </pre>
      * 
      * 
@@ -69,11 +69,11 @@ public class ProcessListType
      * 
      * 
      */
-    public List<ProcessType> getProcesses() {
-        if (processes == null) {
-            processes = new ArrayList<ProcessType>();
+    public List<ProcessType> getProcess() {
+        if (process == null) {
+            process = new ArrayList<ProcessType>();
         }
-        return this.processes;
+        return this.process;
     }
 
 }

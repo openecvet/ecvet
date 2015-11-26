@@ -2,13 +2,16 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.25 um 09:23:53 PM CET 
+// Generiert: 2015.11.26 um 05:01:19 PM CET 
 //
 
 
 package eu.open_ecvet.entity;
 
 import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -17,7 +20,8 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- * 				ANNEX II ECVET — PRINCIPLES AND TECHNICAL SPECIFICATIONS -- ECVET tools and methodology comprise the description of qualifi­cations in terms of units of learning outcomes with associated points, a
+ * 				ANNEX II ECVET — PRINCIPLES AND TECHNICAL SPECIFICATIONS -- ECVET tools and methodology comprise the description of qualifi­cations in terms of units of learning outcomes with
+ * 				associated points, a
  * 				transfer and accumulation process andcomplementary documents such as learning agreements, transcripts of records and ECVET users’ guides. TODO: own type with file attachments
  * 			
  * 
@@ -28,13 +32,13 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="complementaryDocumentListType"&gt;
  *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *     &lt;extension base="{}evcetElement"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="learningAgreementList" type="{}learningAgreementListType"/&gt;
  *         &lt;element name="transcriptionOfRecords" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="userGuide" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
+ *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
@@ -47,11 +51,21 @@ import javax.xml.bind.annotation.XmlType;
     "transcriptionOfRecords",
     "userGuide"
 })
+@Entity
+@Table(indexes = {
+
+}, uniqueConstraints = {
+
+}, name = "complementarydocumentlist")
 public class ComplementaryDocumentListType
+    extends EvcetElement
     implements Serializable
 {
 
     @XmlElement(required = true)
+    @OneToOne(targetEntity = LearningAgreementListType.class, cascade = {
+
+    })
     protected LearningAgreementListType learningAgreementList;
     @XmlElement(required = true)
     protected String transcriptionOfRecords;

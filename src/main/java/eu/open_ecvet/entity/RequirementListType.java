@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.25 um 09:23:53 PM CET 
+// Generiert: 2015.11.26 um 05:01:19 PM CET 
 //
 
 
@@ -27,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="requirements" type="{}requirementType" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="requirement" type="{}requirementType" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -38,28 +38,28 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "requirementListType", propOrder = {
-    "requirements"
+    "requirement"
 })
 public class RequirementListType
     implements Serializable
 {
 
     @XmlElement(required = true)
-    protected List<RequirementType> requirements;
+    protected List<RequirementType> requirement;
 
     /**
-     * Gets the value of the requirements property.
+     * Gets the value of the requirement property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the requirements property.
+     * This is why there is not a <CODE>set</CODE> method for the requirement property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getRequirements().add(newItem);
+     *    getRequirement().add(newItem);
      * </pre>
      * 
      * 
@@ -69,11 +69,11 @@ public class RequirementListType
      * 
      * 
      */
-    public List<RequirementType> getRequirements() {
-        if (requirements == null) {
-            requirements = new ArrayList<RequirementType>();
+    public List<RequirementType> getRequirement() {
+        if (requirement == null) {
+            requirement = new ArrayList<RequirementType>();
         }
-        return this.requirements;
+        return this.requirement;
     }
 
 }

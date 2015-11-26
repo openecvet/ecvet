@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.25 um 09:23:53 PM CET 
+// Generiert: 2015.11.26 um 05:01:19 PM CET 
 //
 
 
@@ -27,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="learningOutcomeTerms" type="{}learningOutcomeTermType" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="learningOutcomeTerm" type="{}learningOutcomeTermType" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -38,27 +38,27 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "learningOutcomeTermListType", propOrder = {
-    "learningOutcomeTerms"
+    "learningOutcomeTerm"
 })
 public class LearningOutcomeTermListType implements Serializable
 {
 
     @XmlElement(required = true)
-    protected List<LearningOutcomeTermType> learningOutcomeTerms;
+    protected List<LearningOutcomeTermType> learningOutcomeTerm;
 
     /**
-     * Gets the value of the learningOutcomeTerms property.
+     * Gets the value of the learningOutcomeTerm property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the learningOutcomeTerms property.
+     * This is why there is not a <CODE>set</CODE> method for the learningOutcomeTerm property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getLearningOutcomeTerms().add(newItem);
+     *    getLearningOutcomeTerm().add(newItem);
      * </pre>
      * 
      * 
@@ -68,11 +68,11 @@ public class LearningOutcomeTermListType implements Serializable
      * 
      * 
      */
-    public List<LearningOutcomeTermType> getLearningOutcomeTerms() {
-        if (learningOutcomeTerms == null) {
-            learningOutcomeTerms = new ArrayList<LearningOutcomeTermType>();
+    public List<LearningOutcomeTermType> getLearningOutcomeTerm() {
+        if (learningOutcomeTerm == null) {
+            learningOutcomeTerm = new ArrayList<LearningOutcomeTermType>();
         }
-        return this.learningOutcomeTerms;
+        return this.learningOutcomeTerm;
     }
 
 }
