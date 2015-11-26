@@ -3,24 +3,45 @@
   <id>0</id>
   <title>title</title>
   <description>description</description>
-  <competentInstitutionList>
+  <competentInstitutionList URI="">
+    <id>0</id>
+    <title>title</title>
+    <description>description</description>
     <competentInstitution URI="">
+      <id>0</id>
       <title>title</title>
-      <partnerList>
+      <description>description</description>
+      <partnerList URI="">
+        <id>0</id>
+        <title>title</title>
+        <description>description</description>
         <partner URI="">
+          <id>0</id>
           <title>title</title>
+          <description>description</description>
         </partner>
       </partnerList>
-      <legislation>
+      <legislation URI="">
+        <id>0</id>
+        <title>title</title>
+        <description>description</description>
         <rules>rules</rules>
         <practices>practices</practices>
       </legislation>
     </competentInstitution>
   </competentInstitutionList>
-  <complementaryDocumentList>
-    <learningAgreementList>
+  <complementaryDocumentList URI="">
+    <id>0</id>
+    <title>title</title>
+    <description>description</description>
+    <learningAgreementList URI="">
+      <id>0</id>
+      <title>title</title>
+      <description>description</description>
       <learningAgreement URI="">
+        <id>0</id>
         <title>title</title>
+        <description>description</description>
       </learningAgreement>
     </learningAgreementList>
     <transcriptionOfRecords>transcriptionOfRecords</transcriptionOfRecords>
@@ -106,12 +127,6 @@
           <title>title</title>
           <description>description</description>
           <referenceLevel URI="" framework="EQF" frameworkLevel="1" frameworkTerm="all">
-            <id>0</id>
-            <title>title</title>
-            <description>description</description>
-            <indication>indication</indication>
-          </referenceLevel>
-           <referenceLevel URI="" framework="DQF" frameworkLevel="2" frameworkTerm="all">
             <id>0</id>
             <title>title</title>
             <description>description</description>
