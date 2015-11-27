@@ -5,7 +5,7 @@
 Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-Generiert: 2015.11.26 um 05:01:19 PM CET 
+Generiert: 2015.11.27 um 10:26:59 AM CET 
 
   -->
   <jaxb:bindings scd="x-schema::">
@@ -18,8 +18,20 @@ Generiert: 2015.11.26 um 05:01:19 PM CET
     <jaxb:bindings scd="~qualificationType">
       <jaxb:class ref="eu.open_ecvet.entity.QualificationType"/>
     </jaxb:bindings>
-    <jaxb:bindings scd="~complementaryDocumentListType">
-      <jaxb:class ref="eu.open_ecvet.entity.ComplementaryDocumentListType"/>
+    <jaxb:bindings scd="~complementaryDocumentsType">
+      <jaxb:class ref="eu.open_ecvet.entity.ComplementaryDocumentsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~transcriptionOfRecordListType">
+      <jaxb:class ref="eu.open_ecvet.entity.TranscriptionOfRecordListType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~userGuideListType">
+      <jaxb:class ref="eu.open_ecvet.entity.UserGuideListType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~transcriptionOfRecordType">
+      <jaxb:class ref="eu.open_ecvet.entity.TranscriptionOfRecordType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~userGuideType">
+      <jaxb:class ref="eu.open_ecvet.entity.UserGuideType"/>
     </jaxb:bindings>
     <jaxb:bindings scd="~unitListType">
       <jaxb:class ref="eu.open_ecvet.entity.UnitListType"/>
@@ -108,17 +120,26 @@ Generiert: 2015.11.26 um 05:01:19 PM CET
     <jaxb:bindings scd="~partnerType">
       <jaxb:class ref="eu.open_ecvet.entity.PartnerType"/>
     </jaxb:bindings>
+    <jaxb:bindings scd="~attachmentType">
+      <jaxb:class ref="eu.open_ecvet.entity.AttachmentType"/>
+    </jaxb:bindings>
     <jaxb:bindings scd="~fileDataType">
       <jaxb:class ref="eu.open_ecvet.entity.FileDataType"/>
     </jaxb:bindings>
     <jaxb:bindings scd="~evcetElement">
       <jaxb:class ref="eu.open_ecvet.entity.EvcetElement"/>
     </jaxb:bindings>
+    <jaxb:bindings scd="~ecvetAttachment">
+      <jaxb:class ref="eu.open_ecvet.entity.EcvetAttachment"/>
+    </jaxb:bindings>
     <jaxb:bindings scd="~frameworkType">
       <jaxb:typesafeEnumClass ref="eu.open_ecvet.entity.FrameworkType"/>
     </jaxb:bindings>
     <jaxb:bindings scd="~frameworkTermType">
       <jaxb:typesafeEnumClass ref="eu.open_ecvet.entity.FrameworkTermType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~mimeTypeEnumeration">
+      <jaxb:typesafeEnumClass ref="eu.open_ecvet.entity.MimeTypeEnumeration"/>
     </jaxb:bindings>
   </jaxb:bindings>
 </jaxb:bindings>

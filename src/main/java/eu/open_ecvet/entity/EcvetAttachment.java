@@ -12,28 +12,28 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.CascadeType;
-import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.Table;
+import javax.persistence.MappedSuperclass;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für partnerListType complex type.
+ * <p>Java-Klasse für ecvetAttachment complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>
- * &lt;complexType name="partnerListType"&gt;
+ * &lt;complexType name="ecvetAttachment"&gt;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}evcetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="partner" type="{}partnerType" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="attachments" type="{}attachmentType" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -43,16 +43,16 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "partnerListType", propOrder = {
-    "partner"
+@XmlType(name = "ecvetAttachment", propOrder = {
+    "attachments"
 })
-@Entity
-@Table(indexes = {
-
-}, uniqueConstraints = {
-
-}, name = "partnerlist")
-public class PartnerListType
+@XmlSeeAlso({
+    TranscriptionOfRecordType.class,
+    UserGuideType.class,
+    LearningAgreementType.class
+})
+@MappedSuperclass
+public class EcvetAttachment
     extends EvcetElement
     implements Serializable
 {
@@ -64,43 +64,43 @@ public class PartnerListType
         CascadeType.DETACH
     })
     @JoinTable(joinColumns = {
-        @JoinColumn(name = "partnerlist_id")
+        @JoinColumn(name = "attachments_id")
     }, inverseJoinColumns = {
-        @JoinColumn(name = "partner_id")
+        @JoinColumn(name = "attachment_id")
     }, indexes = {
 
     }, uniqueConstraints = {
 
     })
-    protected List<PartnerType> partner;
+    protected List<AttachmentType> attachments;
 
     /**
-     * Gets the value of the partner property.
+     * Gets the value of the attachments property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the partner property.
+     * This is why there is not a <CODE>set</CODE> method for the attachments property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getPartner().add(newItem);
+     *    getAttachments().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link PartnerType }
+     * {@link AttachmentType }
      * 
      * 
      */
-    public List<PartnerType> getPartner() {
-        if (partner == null) {
-            partner = new ArrayList<PartnerType>();
+    public List<AttachmentType> getAttachments() {
+        if (attachments == null) {
+            attachments = new ArrayList<AttachmentType>();
         }
-        return this.partner;
+        return this.attachments;
     }
 
 }

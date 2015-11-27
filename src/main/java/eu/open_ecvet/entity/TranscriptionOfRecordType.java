@@ -17,12 +17,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für learningAgreementType complex type.
+ * <p>Java-Klasse für transcriptionOfRecordType complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>
- * &lt;complexType name="learningAgreementType"&gt;
+ * &lt;complexType name="transcriptionOfRecordType"&gt;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetAttachment"&gt;
  *     &lt;/extension&gt;
@@ -33,14 +33,14 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "learningAgreementType")
+@XmlType(name = "transcriptionOfRecordType")
 @Entity
 @Table(indexes = {
 
 }, uniqueConstraints = {
 
-}, name = "learningagreement")
-public class LearningAgreementType
+}, name = "transcriptionofrecord")
+public class TranscriptionOfRecordType
     extends EcvetAttachment
     implements Serializable
 {

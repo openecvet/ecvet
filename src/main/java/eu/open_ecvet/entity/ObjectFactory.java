@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.26 um 05:01:19 PM CET 
+// Generiert: 2015.11.27 um 10:26:59 AM CET 
 //
 
 
@@ -60,11 +60,43 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ComplementaryDocumentListType }
+     * Create an instance of {@link ComplementaryDocumentsType }
      * 
      */
-    public ComplementaryDocumentListType createComplementaryDocumentListType() {
-        return new ComplementaryDocumentListType();
+    public ComplementaryDocumentsType createComplementaryDocumentsType() {
+        return new ComplementaryDocumentsType();
+    }
+
+    /**
+     * Create an instance of {@link TranscriptionOfRecordListType }
+     * 
+     */
+    public TranscriptionOfRecordListType createTranscriptionOfRecordListType() {
+        return new TranscriptionOfRecordListType();
+    }
+
+    /**
+     * Create an instance of {@link UserGuideListType }
+     * 
+     */
+    public UserGuideListType createUserGuideListType() {
+        return new UserGuideListType();
+    }
+
+    /**
+     * Create an instance of {@link TranscriptionOfRecordType }
+     * 
+     */
+    public TranscriptionOfRecordType createTranscriptionOfRecordType() {
+        return new TranscriptionOfRecordType();
+    }
+
+    /**
+     * Create an instance of {@link UserGuideType }
+     * 
+     */
+    public UserGuideType createUserGuideType() {
+        return new UserGuideType();
     }
 
     /**
@@ -300,6 +332,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link AttachmentType }
+     * 
+     */
+    public AttachmentType createAttachmentType() {
+        return new AttachmentType();
+    }
+
+    /**
      * Create an instance of {@link FileDataType }
      * 
      */
@@ -313,6 +353,14 @@ public class ObjectFactory {
      */
     public EvcetElement createEvcetElement() {
         return new EvcetElement();
+    }
+
+    /**
+     * Create an instance of {@link EcvetAttachment }
+     * 
+     */
+    public EcvetAttachment createEcvetAttachment() {
+        return new EcvetAttachment();
     }
 
     /**

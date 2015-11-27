@@ -30,11 +30,11 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="complementaryDocumentList" type="complementaryDocumentListType">
+					<xsd:element name="complementaryDocuments" type="complementaryDocumentsType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.ComplementaryDocumentListType"></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.ComplementaryDocumentsType"></OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -82,7 +82,7 @@
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
-	<xsd:complexType name="complementaryDocumentListType">
+	<xsd:complexType name="complementaryDocumentsType">
 		<xsd:annotation>
 			<xsd:documentation>
 				ANNEX II ECVET — PRINCIPLES AND TECHNICAL SPECIFICATIONS -- ECVET tools and methodology comprise the description of qualifi­cations in terms of units of learning outcomes with
@@ -113,9 +113,129 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="transcriptionOfRecords" type="xsd:string" />
-					<xsd:element name="userGuide" type="xsd:string" />
+					<xsd:element name="transcriptionOfRecordList" type="transcriptionOfRecordListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.TranscriptionOfRecordListType"></OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="userGuide" type="userGuideListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.UserGuideListType"></OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
 				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="transcriptionOfRecordListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="transcriptionofrecordlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="evcetElement">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" name="transcriptionOfRecord" type="transcriptionOfRecordType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="transcriptionofrecordlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="transcriptionofrecord_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="userGuideListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="userguidelist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="evcetElement">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" name="userGuide" type="userGuideType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="userguidelist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="userguide_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="transcriptionOfRecordType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="transcriptionofrecord"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetAttachment">
+
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="userGuideType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="userguide"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetAttachment">
+
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
@@ -706,7 +826,9 @@
 			</xsd:appinfo>
 		</xsd:annotation>
 		<xsd:complexContent>
-			<xsd:extension base="evcetElement"></xsd:extension>
+			<xsd:extension base="ecvetAttachment">
+
+			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
 	<xsd:complexType name="recognitionListType">
@@ -784,8 +906,37 @@
 			<xsd:extension base="evcetElement"></xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
+
+	<xsd:complexType name="attachmentType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="attachment"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+			
+		<xsd:complexContent>
+		<xsd:extension base="evcetElement">
+<!-- 		<xsd:attribute name="idref" type="xsd:IDREF" use="required" /> -->
+		</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
 	<xsd:complexType name="fileDataType">
 		<xsd:sequence>
+			<xsd:element name="originalFileName" type="xsd:string" minOccurs="0">
+			</xsd:element>
+			<xsd:element name="mimeType" type="mimeTypeEnumeration">
+			</xsd:element>
+			<xsd:element name="fileSize" type="xsd:long">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
+						the file size in bytes
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
 			<xsd:element name="data" type="xsd:base64Binary">
 				<xsd:annotation>
 					<xsd:documentation xml:lang="en">
@@ -794,6 +945,7 @@
 				</xsd:annotation>
 			</xsd:element>
 		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:ID" use="required" />
 	</xsd:complexType>
 	<xsd:complexType name="evcetElement">
 		<xsd:annotation>
@@ -837,6 +989,42 @@
 		</xsd:sequence>
 		<xsd:attribute name="URI" type="xsd:string" />
 	</xsd:complexType>
+	<xsd:complexType name="ecvetAttachment">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<MappedSuperclass annox:class="javax.persistence.MappedSuperclass"></MappedSuperclass>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="evcetElement">
+				<xsd:sequence>
+					<xsd:element name="attachments" maxOccurs="unbounded" type="attachmentType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="attachments_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="attachment_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
 	<xsd:simpleType name="frameworkType">
 		<xsd:restriction base="xsd:string">
 			<xsd:enumeration value="EQF" />
@@ -855,6 +1043,21 @@
 			<xsd:enumeration value="knowledge" />
 			<xsd:enumeration value="skills" />
 			<xsd:enumeration value="competences" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="mimeTypeEnumeration">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				Restricts the string by defining an enumeration of allowed file mime types.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="image/jpeg" />
+			<xsd:enumeration value="image/pjpeg" />
+			<xsd:enumeration value="image/png" />
+			<xsd:enumeration value="image/x-png" />
+			<xsd:enumeration value="application/pdf" />
 		</xsd:restriction>
 	</xsd:simpleType>
 	<!-- TODO: consider this -->

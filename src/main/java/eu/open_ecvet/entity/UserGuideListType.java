@@ -24,16 +24,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für partnerListType complex type.
+ * <p>Java-Klasse für userGuideListType complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>
- * &lt;complexType name="partnerListType"&gt;
+ * &lt;complexType name="userGuideListType"&gt;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}evcetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="partner" type="{}partnerType" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="userGuide" type="{}userGuideType" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -43,16 +43,16 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "partnerListType", propOrder = {
-    "partner"
+@XmlType(name = "userGuideListType", propOrder = {
+    "userGuide"
 })
 @Entity
 @Table(indexes = {
 
 }, uniqueConstraints = {
 
-}, name = "partnerlist")
-public class PartnerListType
+}, name = "userguidelist")
+public class UserGuideListType
     extends EvcetElement
     implements Serializable
 {
@@ -64,43 +64,43 @@ public class PartnerListType
         CascadeType.DETACH
     })
     @JoinTable(joinColumns = {
-        @JoinColumn(name = "partnerlist_id")
+        @JoinColumn(name = "userguidelist_id")
     }, inverseJoinColumns = {
-        @JoinColumn(name = "partner_id")
+        @JoinColumn(name = "userguide_id")
     }, indexes = {
 
     }, uniqueConstraints = {
 
     })
-    protected List<PartnerType> partner;
+    protected List<UserGuideType> userGuide;
 
     /**
-     * Gets the value of the partner property.
+     * Gets the value of the userGuide property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the partner property.
+     * This is why there is not a <CODE>set</CODE> method for the userGuide property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getPartner().add(newItem);
+     *    getUserGuide().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link PartnerType }
+     * {@link UserGuideType }
      * 
      * 
      */
-    public List<PartnerType> getPartner() {
-        if (partner == null) {
-            partner = new ArrayList<PartnerType>();
+    public List<UserGuideType> getUserGuide() {
+        if (userGuide == null) {
+            userGuide = new ArrayList<UserGuideType>();
         }
-        return this.partner;
+        return this.userGuide;
     }
 
 }

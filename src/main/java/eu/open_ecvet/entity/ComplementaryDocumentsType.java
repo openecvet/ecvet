@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.26 um 05:01:19 PM CET 
+// Generiert: 2015.11.27 um 10:26:59 AM CET 
 //
 
 
@@ -25,18 +25,18 @@ import javax.xml.bind.annotation.XmlType;
  * 				transfer and accumulation process andcomplementary documents such as learning agreements, transcripts of records and ECVET users’ guides. TODO: own type with file attachments
  * 			
  * 
- * <p>Java-Klasse für complementaryDocumentListType complex type.
+ * <p>Java-Klasse für complementaryDocumentsType complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>
- * &lt;complexType name="complementaryDocumentListType"&gt;
+ * &lt;complexType name="complementaryDocumentsType"&gt;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}evcetElement"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="learningAgreementList" type="{}learningAgreementListType"/&gt;
- *         &lt;element name="transcriptionOfRecords" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="userGuide" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="transcriptionOfRecordList" type="{}transcriptionOfRecordListType"/&gt;
+ *         &lt;element name="userGuide" type="{}userGuideListType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -46,9 +46,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "complementaryDocumentListType", propOrder = {
+@XmlType(name = "complementaryDocumentsType", propOrder = {
     "learningAgreementList",
-    "transcriptionOfRecords",
+    "transcriptionOfRecordList",
     "userGuide"
 })
 @Entity
@@ -57,7 +57,7 @@ import javax.xml.bind.annotation.XmlType;
 }, uniqueConstraints = {
 
 }, name = "complementarydocumentlist")
-public class ComplementaryDocumentListType
+public class ComplementaryDocumentsType
     extends EvcetElement
     implements Serializable
 {
@@ -68,9 +68,15 @@ public class ComplementaryDocumentListType
     })
     protected LearningAgreementListType learningAgreementList;
     @XmlElement(required = true)
-    protected String transcriptionOfRecords;
+    @OneToOne(targetEntity = TranscriptionOfRecordListType.class, cascade = {
+
+    })
+    protected TranscriptionOfRecordListType transcriptionOfRecordList;
     @XmlElement(required = true)
-    protected String userGuide;
+    @OneToOne(targetEntity = UserGuideListType.class, cascade = {
+
+    })
+    protected UserGuideListType userGuide;
 
     /**
      * Ruft den Wert der learningAgreementList-Eigenschaft ab.
@@ -97,27 +103,27 @@ public class ComplementaryDocumentListType
     }
 
     /**
-     * Ruft den Wert der transcriptionOfRecords-Eigenschaft ab.
+     * Ruft den Wert der transcriptionOfRecordList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link TranscriptionOfRecordListType }
      *     
      */
-    public String getTranscriptionOfRecords() {
-        return transcriptionOfRecords;
+    public TranscriptionOfRecordListType getTranscriptionOfRecordList() {
+        return transcriptionOfRecordList;
     }
 
     /**
-     * Legt den Wert der transcriptionOfRecords-Eigenschaft fest.
+     * Legt den Wert der transcriptionOfRecordList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link TranscriptionOfRecordListType }
      *     
      */
-    public void setTranscriptionOfRecords(String value) {
-        this.transcriptionOfRecords = value;
+    public void setTranscriptionOfRecordList(TranscriptionOfRecordListType value) {
+        this.transcriptionOfRecordList = value;
     }
 
     /**
@@ -125,10 +131,10 @@ public class ComplementaryDocumentListType
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link UserGuideListType }
      *     
      */
-    public String getUserGuide() {
+    public UserGuideListType getUserGuide() {
         return userGuide;
     }
 
@@ -137,10 +143,10 @@ public class ComplementaryDocumentListType
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link UserGuideListType }
      *     
      */
-    public void setUserGuide(String value) {
+    public void setUserGuide(UserGuideListType value) {
         this.userGuide = value;
     }
 
