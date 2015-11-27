@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.27 um 10:26:59 AM CET 
+// Generiert: 2015.11.27 um 08:10:16 PM CET 
 //
 
 
@@ -11,6 +11,12 @@ package eu.open_ecvet.entity;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -25,11 +31,11 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="methodListType"&gt;
  *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *     &lt;extension base="{}evcetElement"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="method" type="{}methodType" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
+ *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
@@ -40,11 +46,32 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "methodListType", propOrder = {
     "method"
 })
+@Entity
+@Table(indexes = {
+
+}, uniqueConstraints = {
+
+}, name = "methodlist")
 public class MethodListType
+    extends EvcetElement
     implements Serializable
 {
 
     @XmlElement(required = true)
+    @ManyToMany(cascade = {
+        CascadeType.PERSIST,
+        CascadeType.MERGE,
+        CascadeType.DETACH
+    })
+    @JoinTable(joinColumns = {
+        @JoinColumn(name = "methodlist_id")
+    }, inverseJoinColumns = {
+        @JoinColumn(name = "method_id")
+    }, indexes = {
+
+    }, uniqueConstraints = {
+
+    })
     protected List<MethodType> method;
 
     /**

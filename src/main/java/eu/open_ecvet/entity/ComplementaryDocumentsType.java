@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.27 um 10:26:59 AM CET 
+// Generiert: 2015.11.27 um 08:10:16 PM CET 
 //
 
 
@@ -36,7 +36,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element name="learningAgreementList" type="{}learningAgreementListType"/&gt;
  *         &lt;element name="transcriptionOfRecordList" type="{}transcriptionOfRecordListType"/&gt;
- *         &lt;element name="userGuide" type="{}userGuideListType"/&gt;
+ *         &lt;element name="userGuideList" type="{}userGuideListType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -49,7 +49,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "complementaryDocumentsType", propOrder = {
     "learningAgreementList",
     "transcriptionOfRecordList",
-    "userGuide"
+    "userGuideList"
 })
 @Entity
 @Table(indexes = {
@@ -76,7 +76,7 @@ public class ComplementaryDocumentsType
     @OneToOne(targetEntity = UserGuideListType.class, cascade = {
 
     })
-    protected UserGuideListType userGuide;
+    protected UserGuideListType userGuideList;
 
     /**
      * Ruft den Wert der learningAgreementList-Eigenschaft ab.
@@ -127,27 +127,27 @@ public class ComplementaryDocumentsType
     }
 
     /**
-     * Ruft den Wert der userGuide-Eigenschaft ab.
+     * Ruft den Wert der userGuideList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link UserGuideListType }
      *     
      */
-    public UserGuideListType getUserGuide() {
-        return userGuide;
+    public UserGuideListType getUserGuideList() {
+        return userGuideList;
     }
 
     /**
-     * Legt den Wert der userGuide-Eigenschaft fest.
+     * Legt den Wert der userGuideList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link UserGuideListType }
      *     
      */
-    public void setUserGuide(UserGuideListType value) {
-        this.userGuide = value;
+    public void setUserGuideList(UserGuideListType value) {
+        this.userGuideList = value;
     }
 
 }

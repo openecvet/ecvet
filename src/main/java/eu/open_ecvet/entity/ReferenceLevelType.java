@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.27 um 10:26:59 AM CET 
+// Generiert: 2015.11.27 um 08:10:16 PM CET 
 //
 
 
@@ -30,7 +30,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}evcetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="indication" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="indicator" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *       &lt;/sequence&gt;
  *       &lt;attribute name="framework" type="{}frameworkType" /&gt;
  *       &lt;attribute name="frameworkLevel" type="{}frameworkLevelType" /&gt;
@@ -44,7 +44,7 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "referenceLevelType", propOrder = {
-    "indication"
+    "indicator"
 })
 @Entity
 @Table(indexes = {
@@ -58,7 +58,7 @@ public class ReferenceLevelType
 {
 
     @XmlElement(required = true)
-    protected String indication;
+    protected String indicator;
     @XmlAttribute(name = "framework")
     @Enumerated(EnumType.STRING)
     protected FrameworkType framework;
@@ -69,27 +69,27 @@ public class ReferenceLevelType
     protected FrameworkTermType frameworkTerm;
 
     /**
-     * Ruft den Wert der indication-Eigenschaft ab.
+     * Ruft den Wert der indicator-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getIndication() {
-        return indication;
+    public String getIndicator() {
+        return indicator;
     }
 
     /**
-     * Legt den Wert der indication-Eigenschaft fest.
+     * Legt den Wert der indicator-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setIndication(String value) {
-        this.indication = value;
+    public void setIndicator(String value) {
+        this.indicator = value;
     }
 
     /**

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecvetFramework URI="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/draft_.xsd">
+<ecvetFramework URI="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/draft.xsd">
   <id>0</id>
   <title>title</title>
   <description>description</description>
@@ -30,7 +30,7 @@
       </legislation>
     </competentInstitution>
   </competentInstitutionList>
-  <complementaryDocumentList URI="">
+  <complementaryDocuments URI="">
     <id>0</id>
     <title>title</title>
     <description>description</description>
@@ -42,11 +42,47 @@
         <id>0</id>
         <title>title</title>
         <description>description</description>
+        <attachment URI="" idref="idvalue0">
+          <id>0</id>
+          <title>title</title>
+          <description>description</description>
+          <idrefToken>idrefToken</idrefToken>
+        </attachment>
       </learningAgreement>
     </learningAgreementList>
-    <transcriptionOfRecords>transcriptionOfRecords</transcriptionOfRecords>
-    <userGuide>userGuide</userGuide>
-  </complementaryDocumentList>
+    <transcriptionOfRecordList URI="">
+      <id>0</id>
+      <title>title</title>
+      <description>description</description>
+      <transcriptionOfRecord URI="">
+        <id>0</id>
+        <title>title</title>
+        <description>description</description>
+        <attachment URI="" idref="idvalue0">
+          <id>0</id>
+          <title>title</title>
+          <description>description</description>
+          <idrefToken>idrefToken</idrefToken>
+        </attachment>
+      </transcriptionOfRecord>
+    </transcriptionOfRecordList>
+    <userGuideList URI="">
+      <id>0</id>
+      <title>title</title>
+      <description>description</description>
+      <userGuide URI="">
+        <id>0</id>
+        <title>title</title>
+        <description>description</description>
+        <attachment URI="" idref="idvalue0">
+          <id>0</id>
+          <title>title</title>
+          <description>description</description>
+          <idrefToken>idrefToken</idrefToken>
+        </attachment>
+      </userGuide>
+    </userGuideList>
+  </complementaryDocuments>
   <qualification URI="">
     <id>0</id>
     <title>title</title>
@@ -83,7 +119,7 @@
                     <id>0</id>
                     <title>title</title>
                     <description>description</description>
-                    <indication>indication</indication>
+                    <indicator>indicator</indicator>
                   </referenceLevel>
                 </referenceLevelList>
                 <weight>0</weight>
@@ -112,7 +148,9 @@
                     <recognition URI="">
                       <title>title</title>
                       <competentInstitutionURI>competentInstitutionURI</competentInstitutionURI>
-                      <certificateTemplate>
+                      <certificateTemplate id="idvalue0">
+                        <mimeType>image/jpeg</mimeType>
+                        <fileSize>0</fileSize>
                         <data>MA==</data>
                       </certificateTemplate>
                     </recognition>
@@ -130,7 +168,7 @@
             <id>0</id>
             <title>title</title>
             <description>description</description>
-            <indication>indication</indication>
+            <indicator>indicator</indicator>
           </referenceLevel>
         </referenceLevelList>
         <achievement>
@@ -158,7 +196,9 @@
             <recognition URI="">
               <title>title</title>
               <competentInstitutionURI>competentInstitutionURI</competentInstitutionURI>
-              <certificateTemplate>
+              <certificateTemplate id="idvalue1">
+                <mimeType>image/jpeg</mimeType>
+                <fileSize>0</fileSize>
                 <data>MA==</data>
               </certificateTemplate>
             </recognition>

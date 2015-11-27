@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.27 um 10:26:59 AM CET 
+// Generiert: 2015.11.27 um 08:10:16 PM CET 
 //
 
 
@@ -32,7 +32,9 @@ import javax.xml.namespace.QName;
 public class ObjectFactory {
 
     private final static QName _EcvetFramework_QNAME = new QName("", "ecvetFramework");
-    private final static QName _LearningOutcomeTypeTitle_QNAME = new QName("", "title");
+    private final static QName _RecognitionTypeTitle_QNAME = new QName("", "title");
+    private final static QName _RecognitionTypeCompetentInstitutionURI_QNAME = new QName("", "competentInstitutionURI");
+    private final static QName _RecognitionTypeCertificateTemplate_QNAME = new QName("", "certificateTemplate");
     private final static QName _LearningOutcomeTypeCredit_QNAME = new QName("", "credit");
     private final static QName _LearningOutcomeTypeLearningOutcomeTermList_QNAME = new QName("", "learningOutcomeTermList");
 
@@ -376,9 +378,36 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
      */
+    @XmlElementDecl(namespace = "", name = "title", scope = RecognitionType.class)
+    public JAXBElement<String> createRecognitionTypeTitle(String value) {
+        return new JAXBElement<String>(_RecognitionTypeTitle_QNAME, String.class, RecognitionType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "", name = "competentInstitutionURI", scope = RecognitionType.class)
+    public JAXBElement<String> createRecognitionTypeCompetentInstitutionURI(String value) {
+        return new JAXBElement<String>(_RecognitionTypeCompetentInstitutionURI_QNAME, String.class, RecognitionType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link FileDataType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "", name = "certificateTemplate", scope = RecognitionType.class)
+    public JAXBElement<FileDataType> createRecognitionTypeCertificateTemplate(FileDataType value) {
+        return new JAXBElement<FileDataType>(_RecognitionTypeCertificateTemplate_QNAME, FileDataType.class, RecognitionType.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * 
+     */
     @XmlElementDecl(namespace = "", name = "title", scope = LearningOutcomeType.class)
     public JAXBElement<String> createLearningOutcomeTypeTitle(String value) {
-        return new JAXBElement<String>(_LearningOutcomeTypeTitle_QNAME, String.class, LearningOutcomeType.class, value);
+        return new JAXBElement<String>(_RecognitionTypeTitle_QNAME, String.class, LearningOutcomeType.class, value);
     }
 
     /**

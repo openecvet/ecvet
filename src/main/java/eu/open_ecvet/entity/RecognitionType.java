@@ -2,17 +2,22 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.27 um 10:26:59 AM CET 
+// Generiert: 2015.11.27 um 08:10:16 PM CET 
 //
 
 
 package eu.open_ecvet.entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementRef;
+import javax.xml.bind.annotation.XmlElementRefs;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -24,14 +29,13 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="recognitionType"&gt;
  *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *     &lt;extension base="{}evcetElement"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="competentInstitutionURI" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="certificateTemplate" type="{}fileDataType"/&gt;
  *       &lt;/sequence&gt;
- *       &lt;attribute name="URI" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
- *     &lt;/restriction&gt;
+ *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
@@ -40,117 +44,65 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "recognitionType", propOrder = {
-    "title",
-    "competentInstitutionURI",
-    "certificateTemplate"
+    "rest"
 })
+@Entity
+@Table(indexes = {
+
+}, uniqueConstraints = {
+
+}, name = "recognition")
 public class RecognitionType
+    extends EvcetElement
     implements Serializable
 {
 
-    @XmlElement(required = true)
-    protected String title;
-    @XmlElement(required = true)
-    protected String competentInstitutionURI;
-    @XmlElement(required = true)
-    protected FileDataType certificateTemplate;
-    @XmlAttribute(name = "URI")
-    protected String uri;
+    @XmlElementRefs({
+        @XmlElementRef(name = "certificateTemplate", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "competentInstitutionURI", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "title", type = JAXBElement.class, required = false)
+    })
+    protected List<JAXBElement<? extends Serializable>> rest;
 
     /**
-     * Ruft den Wert der title-Eigenschaft ab.
+     * Ruft das restliche Contentmodell ab. 
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTitle() {
-        return title;
-    }
-
-    /**
-     * Legt den Wert der title-Eigenschaft fest.
+     * <p>
+     * Sie rufen diese "catch-all"-Eigenschaft aus folgendem Grund ab: 
+     * Der Feldname "Title" wird von zwei verschiedenen Teilen eines Schemas verwendet. Siehe: 
+     * Zeile 1121 von file:/home/tom/src/java/ecvet_draft/src/main/resources/xsd/draft.xsd
+     * Zeile 1268 von file:/home/tom/src/java/ecvet_draft/src/main/resources/xsd/draft.xsd
+     * <p>
+     * Um diese Eigenschaft zu entfernen, wenden Sie eine Eigenschaftenanpassung für eine
+     * der beiden folgenden Deklarationen an, um deren Namen zu ändern: 
+     * Gets the value of the rest property.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTitle(String value) {
-        this.title = value;
-    }
-
-    /**
-     * Ruft den Wert der competentInstitutionURI-Eigenschaft ab.
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the rest property.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCompetentInstitutionURI() {
-        return competentInstitutionURI;
-    }
-
-    /**
-     * Legt den Wert der competentInstitutionURI-Eigenschaft fest.
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getRest().add(newItem);
+     * </pre>
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCompetentInstitutionURI(String value) {
-        this.competentInstitutionURI = value;
-    }
-
-    /**
-     * Ruft den Wert der certificateTemplate-Eigenschaft ab.
      * 
-     * @return
-     *     possible object is
-     *     {@link FileDataType }
-     *     
-     */
-    public FileDataType getCertificateTemplate() {
-        return certificateTemplate;
-    }
-
-    /**
-     * Legt den Wert der certificateTemplate-Eigenschaft fest.
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link JAXBElement }{@code <}{@link FileDataType }{@code >}
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * 
-     * @param value
-     *     allowed object is
-     *     {@link FileDataType }
-     *     
-     */
-    public void setCertificateTemplate(FileDataType value) {
-        this.certificateTemplate = value;
-    }
-
-    /**
-     * Ruft den Wert der uri-Eigenschaft ab.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
      */
-    public String getURI() {
-        return uri;
-    }
-
-    /**
-     * Legt den Wert der uri-Eigenschaft fest.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setURI(String value) {
-        this.uri = value;
+    public List<JAXBElement<? extends Serializable>> getRest() {
+        if (rest == null) {
+            rest = new ArrayList<JAXBElement<? extends Serializable>>();
+        }
+        return this.rest;
     }
 
 }

@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.27 um 10:26:59 AM CET 
+// Generiert: 2015.11.27 um 08:10:16 PM CET 
 //
 
 
@@ -63,18 +63,29 @@ import javax.xml.bind.annotation.XmlType;
     ReferenceLevelType.class,
     LearningOutcomeListType.class,
     LearningOutcomeType.class,
+    LearningOutcomeTermListType.class,
+    LearningOutcomeTermType.class,
+    AchievementType.class,
+    ValidationListType.class,
+    AssessmentListType.class,
+    AssessmentType.class,
+    ProcessListType.class,
+    ProcessType.class,
+    MethodListType.class,
+    MethodType.class,
     CompetentInstitutionListType.class,
     CompetentInstitutionType.class,
     LegislationType.class,
     LearningAgreementListType.class,
+    RecognitionListType.class,
+    RecognitionType.class,
     PartnerListType.class,
     PartnerType.class,
     AttachmentType.class,
     EcvetAttachment.class
 })
 @MappedSuperclass
-public class EvcetElement
-    implements Serializable
+public class EvcetElement implements Serializable
 {
 
     @XmlElement(required = true, type = Integer.class, nillable = true)

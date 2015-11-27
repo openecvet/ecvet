@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.27 um 10:26:59 AM CET 
+// Generiert: 2015.11.27 um 08:10:16 PM CET 
 //
 
 
@@ -11,8 +11,13 @@ package eu.open_ecvet.entity;
 import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlIDREF;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -25,6 +30,10 @@ import javax.xml.bind.annotation.XmlType;
  * &lt;complexType name="attachmentType"&gt;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}evcetElement"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="idrefToken" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="idref" use="required" type="{http://www.w3.org/2001/XMLSchema}IDREF" /&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
@@ -33,7 +42,9 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "attachmentType")
+@XmlType(name = "attachmentType", propOrder = {
+    "idrefToken"
+})
 @Entity
 @Table(indexes = {
 
@@ -45,5 +56,60 @@ public class AttachmentType
     implements Serializable
 {
 
+    @XmlElement(required = true)
+    protected String idrefToken;
+    @XmlAttribute(name = "idref", required = true)
+    @XmlIDREF
+    @XmlSchemaType(name = "IDREF")
+    @Transient
+    protected Object idref;
+
+    /**
+     * Ruft den Wert der idrefToken-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getIdrefToken() {
+        return idrefToken;
+    }
+
+    /**
+     * Legt den Wert der idrefToken-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIdrefToken(String value) {
+        this.idrefToken = value;
+    }
+
+    /**
+     * Ruft den Wert der idref-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Object }
+     *     
+     */
+    public Object getIdref() {
+        return idref;
+    }
+
+    /**
+     * Legt den Wert der idref-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Object }
+     *     
+     */
+    public void setIdref(Object value) {
+        this.idref = value;
+    }
 
 }
