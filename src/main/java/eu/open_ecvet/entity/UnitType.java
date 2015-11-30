@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.27 um 08:10:16 PM CET 
+// Generiert: 2015.11.30 um 04:09:30 PM CET 
 //
 
 
@@ -32,14 +32,14 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="unitType"&gt;
  *   &lt;complexContent&gt;
- *     &lt;extension base="{}evcetElement"&gt;
+ *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="credit" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="weightSum" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="relativeWeight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="learningOutcomeList" type="{}learningOutcomeListType"/&gt;
  *         &lt;element name="referenceLevelList" type="{}referenceLevelListType"/&gt;
- *         &lt;element name="achievement" type="{}achievementType"/&gt;
+ *         &lt;element name="evaluations" type="{}evaluationsType"/&gt;
  *         &lt;element name="unitList" type="{}unitListType" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
@@ -56,7 +56,7 @@ import javax.xml.bind.annotation.XmlType;
     "relativeWeight",
     "learningOutcomeList",
     "referenceLevelList",
-    "achievement",
+    "evaluations",
     "unitList"
 })
 @Entity
@@ -66,7 +66,7 @@ import javax.xml.bind.annotation.XmlType;
 
 }, name = "unit")
 public class UnitType
-    extends EvcetElement
+    extends EcvetElement
     implements Serializable
 {
 
@@ -84,7 +84,7 @@ public class UnitType
     })
     protected ReferenceLevelListType referenceLevelList;
     @XmlElement(required = true)
-    protected AchievementType achievement;
+    protected EvaluationsType evaluations;
     @OneToOne(targetEntity = UnitListType.class, cascade = {
 
     })
@@ -187,27 +187,27 @@ public class UnitType
     }
 
     /**
-     * Ruft den Wert der achievement-Eigenschaft ab.
+     * Ruft den Wert der evaluations-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link AchievementType }
+     *     {@link EvaluationsType }
      *     
      */
-    public AchievementType getAchievement() {
-        return achievement;
+    public EvaluationsType getEvaluations() {
+        return evaluations;
     }
 
     /**
-     * Legt den Wert der achievement-Eigenschaft fest.
+     * Legt den Wert der evaluations-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link AchievementType }
+     *     {@link EvaluationsType }
      *     
      */
-    public void setAchievement(AchievementType value) {
-        this.achievement = value;
+    public void setEvaluations(EvaluationsType value) {
+        this.evaluations = value;
     }
 
     /**

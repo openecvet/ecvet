@@ -17,12 +17,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für userGuideType complex type.
+ * <p>Java-Klasse für certificateTemplateType complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>
- * &lt;complexType name="userGuideType"&gt;
+ * &lt;complexType name="certificateTemplateType"&gt;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetAttachment"&gt;
  *     &lt;/extension&gt;
@@ -33,14 +33,14 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "userGuideType")
+@XmlType(name = "certificateTemplateType")
 @Entity
 @Table(indexes = {
 
 }, uniqueConstraints = {
 
-}, name = "userguide")
-public class UserGuideType
+}, name = "certificatetemplate")
+public class CertificateTemplateType
     extends EcvetAttachment
     implements Serializable
 {

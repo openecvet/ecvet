@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.27 um 08:10:16 PM CET 
+// Generiert: 2015.11.30 um 04:09:30 PM CET 
 //
 
 
@@ -166,11 +166,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AchievementType }
+     * Create an instance of {@link EvaluationsType }
      * 
      */
-    public AchievementType createAchievementType() {
-        return new AchievementType();
+    public EvaluationsType createEvaluationsType() {
+        return new EvaluationsType();
     }
 
     /**
@@ -190,27 +190,19 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link ConfirmingRequirementListType }
+     * 
+     */
+    public ConfirmingRequirementListType createConfirmingRequirementListType() {
+        return new ConfirmingRequirementListType();
+    }
+
+    /**
      * Create an instance of {@link ConfirmingRequirementType }
      * 
      */
     public ConfirmingRequirementType createConfirmingRequirementType() {
         return new ConfirmingRequirementType();
-    }
-
-    /**
-     * Create an instance of {@link RequirementListType }
-     * 
-     */
-    public RequirementListType createRequirementListType() {
-        return new RequirementListType();
-    }
-
-    /**
-     * Create an instance of {@link RequirementType }
-     * 
-     */
-    public RequirementType createRequirementType() {
-        return new RequirementType();
     }
 
     /**
@@ -318,6 +310,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link CertificateTemplateType }
+     * 
+     */
+    public CertificateTemplateType createCertificateTemplateType() {
+        return new CertificateTemplateType();
+    }
+
+    /**
      * Create an instance of {@link PartnerListType }
      * 
      */
@@ -350,11 +350,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link EvcetElement }
+     * Create an instance of {@link EcvetElement }
      * 
      */
-    public EvcetElement createEvcetElement() {
-        return new EvcetElement();
+    public EcvetElement createEcvetElement() {
+        return new EcvetElement();
     }
 
     /**
@@ -393,12 +393,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link FileDataType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link CertificateTemplateType }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "", name = "certificateTemplate", scope = RecognitionType.class)
-    public JAXBElement<FileDataType> createRecognitionTypeCertificateTemplate(FileDataType value) {
-        return new JAXBElement<FileDataType>(_RecognitionTypeCertificateTemplate_QNAME, FileDataType.class, RecognitionType.class, value);
+    public JAXBElement<CertificateTemplateType> createRecognitionTypeCertificateTemplate(CertificateTemplateType value) {
+        return new JAXBElement<CertificateTemplateType>(_RecognitionTypeCertificateTemplate_QNAME, CertificateTemplateType.class, RecognitionType.class, value);
     }
 
     /**

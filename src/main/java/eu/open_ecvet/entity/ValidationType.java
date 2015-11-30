@@ -2,13 +2,16 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.27 um 08:10:16 PM CET 
+// Generiert: 2015.11.30 um 04:09:30 PM CET 
 //
 
 
 package eu.open_ecvet.entity;
 
 import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -29,11 +32,11 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="validationType"&gt;
  *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="confirmingRequirement" type="{}confirmingRequirementType"/&gt;
+ *         &lt;element name="confirmingRequirementList" type="{}confirmingRequirementListType"/&gt;
  *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
+ *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
@@ -42,37 +45,47 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "validationType", propOrder = {
-    "confirmingRequirement"
+    "confirmingRequirementList"
 })
+@Entity
+@Table(indexes = {
+
+}, uniqueConstraints = {
+
+}, name = "validation")
 public class ValidationType
+    extends EcvetElement
     implements Serializable
 {
 
     @XmlElement(required = true)
-    protected ConfirmingRequirementType confirmingRequirement;
+    @OneToOne(targetEntity = ConfirmingRequirementListType.class, cascade = {
+
+    })
+    protected ConfirmingRequirementListType confirmingRequirementList;
 
     /**
-     * Ruft den Wert der confirmingRequirement-Eigenschaft ab.
+     * Ruft den Wert der confirmingRequirementList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link ConfirmingRequirementType }
+     *     {@link ConfirmingRequirementListType }
      *     
      */
-    public ConfirmingRequirementType getConfirmingRequirement() {
-        return confirmingRequirement;
+    public ConfirmingRequirementListType getConfirmingRequirementList() {
+        return confirmingRequirementList;
     }
 
     /**
-     * Legt den Wert der confirmingRequirement-Eigenschaft fest.
+     * Legt den Wert der confirmingRequirementList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link ConfirmingRequirementType }
+     *     {@link ConfirmingRequirementListType }
      *     
      */
-    public void setConfirmingRequirement(ConfirmingRequirementType value) {
-        this.confirmingRequirement = value;
+    public void setConfirmingRequirementList(ConfirmingRequirementListType value) {
+        this.confirmingRequirementList = value;
     }
 
 }

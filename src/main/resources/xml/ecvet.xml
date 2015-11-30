@@ -46,6 +46,7 @@
           <id>0</id>
           <title>title</title>
           <description>description</description>
+          <attachmentUrl>attachmentUrl</attachmentUrl>
           <idrefToken>idrefToken</idrefToken>
         </attachment>
       </learningAgreement>
@@ -62,6 +63,7 @@
           <id>0</id>
           <title>title</title>
           <description>description</description>
+          <attachmentUrl>attachmentUrl</attachmentUrl>
           <idrefToken>idrefToken</idrefToken>
         </attachment>
       </transcriptionOfRecord>
@@ -78,6 +80,7 @@
           <id>0</id>
           <title>title</title>
           <description>description</description>
+          <attachmentUrl>attachmentUrl</attachmentUrl>
           <idrefToken>idrefToken</idrefToken>
         </attachment>
       </userGuide>
@@ -108,9 +111,14 @@
             <description>description</description>
             <title>title</title>
             <credit>0</credit>
-            <learningOutcomeTermList>
-              <learningOutcomeTerm>
+            <learningOutcomeTermList URI="">
+              <id>0</id>
+              <title>title</title>
+              <description>description</description>
+              <learningOutcomeTerm URI="">
+                <id>0</id>
                 <title>title</title>
+                <description>description</description>
                 <referenceLevelList URI="">
                   <id>0</id>
                   <title>title</title>
@@ -123,39 +131,87 @@
                   </referenceLevel>
                 </referenceLevelList>
                 <weight>0</weight>
-                <achievement>
-                  <assessmentList>
-                    <assessment>
-                      <methodList>
-                        <method URI=""/>
+                <evaluations URI="">
+                  <id>0</id>
+                  <title>title</title>
+                  <description>description</description>
+                  <assessmentList URI="">
+                    <id>0</id>
+                    <title>title</title>
+                    <description>description</description>
+                    <assessment URI="">
+                      <id>0</id>
+                      <title>title</title>
+                      <description>description</description>
+                      <methodList URI="">
+                        <id>0</id>
+                        <title>title</title>
+                        <description>description</description>
+                        <method URI="">
+                          <id>0</id>
+                          <title>title</title>
+                          <description>description</description>
+                        </method>
                       </methodList>
-                      <processList>
-                        <process URI=""/>
+                      <processList URI="">
+                        <id>0</id>
+                        <title>title</title>
+                        <description>description</description>
+                        <process URI="">
+                          <id>0</id>
+                          <title>title</title>
+                          <description>description</description>
+                        </process>
                       </processList>
                     </assessment>
                   </assessmentList>
-                  <validationList>
-                    <validation>
-                      <confirmingRequirement>
-                        <assessmentURI>assessmentURI</assessmentURI>
-                        <requirementList>
-                          <requirement URI="" threshold=""/>
-                        </requirementList>
-                      </confirmingRequirement>
+                  <validationList URI="">
+                    <id>0</id>
+                    <title>title</title>
+                    <description>description</description>
+                    <validation URI="">
+                      <id>0</id>
+                      <title>title</title>
+                      <description>description</description>
+                      <confirmingRequirementList URI="">
+                        <id>0</id>
+                        <title>title</title>
+                        <description>description</description>
+                        <confirmingRequirement URI="">
+                          <id>0</id>
+                          <title>title</title>
+                          <description>description</description>
+                          <threshold>threshold</threshold>
+                          <assessmentURI>assessmentURI</assessmentURI>
+                        </confirmingRequirement>
+                      </confirmingRequirementList>
                     </validation>
                   </validationList>
-                  <recognitionList>
+                  <recognitionList URI="">
+                    <id>0</id>
+                    <title>title</title>
+                    <description>description</description>
                     <recognition URI="">
+                      <id>0</id>
+                      <title>title</title>
+                      <description>description</description>
                       <title>title</title>
                       <competentInstitutionURI>competentInstitutionURI</competentInstitutionURI>
-                      <certificateTemplate id="idvalue0">
-                        <mimeType>image/jpeg</mimeType>
-                        <fileSize>0</fileSize>
-                        <data>MA==</data>
+                      <certificateTemplate URI="">
+                        <id>0</id>
+                        <title>title</title>
+                        <description>description</description>
+                        <attachment URI="" idref="idvalue0">
+                          <id>0</id>
+                          <title>title</title>
+                          <description>description</description>
+                          <attachmentUrl>attachmentUrl</attachmentUrl>
+                          <idrefToken>idrefToken</idrefToken>
+                        </attachment>
                       </certificateTemplate>
                     </recognition>
                   </recognitionList>
-                </achievement>
+                </evaluations>
               </learningOutcomeTerm>
             </learningOutcomeTermList>
           </learningOutcome>
@@ -171,39 +227,87 @@
             <indicator>indicator</indicator>
           </referenceLevel>
         </referenceLevelList>
-        <achievement>
-          <assessmentList>
-            <assessment>
-              <methodList>
-                <method URI=""/>
+        <evaluations URI="">
+          <id>0</id>
+          <title>title</title>
+          <description>description</description>
+          <assessmentList URI="">
+            <id>0</id>
+            <title>title</title>
+            <description>description</description>
+            <assessment URI="">
+              <id>0</id>
+              <title>title</title>
+              <description>description</description>
+              <methodList URI="">
+                <id>0</id>
+                <title>title</title>
+                <description>description</description>
+                <method URI="">
+                  <id>0</id>
+                  <title>title</title>
+                  <description>description</description>
+                </method>
               </methodList>
-              <processList>
-                <process URI=""/>
+              <processList URI="">
+                <id>0</id>
+                <title>title</title>
+                <description>description</description>
+                <process URI="">
+                  <id>0</id>
+                  <title>title</title>
+                  <description>description</description>
+                </process>
               </processList>
             </assessment>
           </assessmentList>
-          <validationList>
-            <validation>
-              <confirmingRequirement>
-                <assessmentURI>assessmentURI</assessmentURI>
-                <requirementList>
-                  <requirement URI="" threshold=""/>
-                </requirementList>
-              </confirmingRequirement>
+          <validationList URI="">
+            <id>0</id>
+            <title>title</title>
+            <description>description</description>
+            <validation URI="">
+              <id>0</id>
+              <title>title</title>
+              <description>description</description>
+              <confirmingRequirementList URI="">
+                <id>0</id>
+                <title>title</title>
+                <description>description</description>
+                <confirmingRequirement URI="">
+                  <id>0</id>
+                  <title>title</title>
+                  <description>description</description>
+                  <threshold>threshold</threshold>
+                  <assessmentURI>assessmentURI</assessmentURI>
+                </confirmingRequirement>
+              </confirmingRequirementList>
             </validation>
           </validationList>
-          <recognitionList>
+          <recognitionList URI="">
+            <id>0</id>
+            <title>title</title>
+            <description>description</description>
             <recognition URI="">
+              <id>0</id>
+              <title>title</title>
+              <description>description</description>
               <title>title</title>
               <competentInstitutionURI>competentInstitutionURI</competentInstitutionURI>
-              <certificateTemplate id="idvalue1">
-                <mimeType>image/jpeg</mimeType>
-                <fileSize>0</fileSize>
-                <data>MA==</data>
+              <certificateTemplate URI="">
+                <id>0</id>
+                <title>title</title>
+                <description>description</description>
+                <attachment URI="" idref="idvalue0">
+                  <id>0</id>
+                  <title>title</title>
+                  <description>description</description>
+                  <attachmentUrl>attachmentUrl</attachmentUrl>
+                  <idrefToken>idrefToken</idrefToken>
+                </attachment>
               </certificateTemplate>
             </recognition>
           </recognitionList>
-        </achievement>
+        </evaluations>
       </unit>
     </unitList>
   </qualification>

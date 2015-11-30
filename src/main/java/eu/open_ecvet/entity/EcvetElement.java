@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.27 um 08:10:16 PM CET 
+// Generiert: 2015.11.30 um 04:09:30 PM CET 
 //
 
 
@@ -24,12 +24,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für evcetElement complex type.
+ * <p>Java-Klasse für ecvetElement complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>
- * &lt;complexType name="evcetElement"&gt;
+ * &lt;complexType name="ecvetElement"&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
@@ -46,7 +46,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "evcetElement", propOrder = {
+@XmlType(name = "ecvetElement", propOrder = {
     "id",
     "title",
     "description"
@@ -65,8 +65,11 @@ import javax.xml.bind.annotation.XmlType;
     LearningOutcomeType.class,
     LearningOutcomeTermListType.class,
     LearningOutcomeTermType.class,
-    AchievementType.class,
+    EvaluationsType.class,
     ValidationListType.class,
+    ValidationType.class,
+    ConfirmingRequirementListType.class,
+    ConfirmingRequirementType.class,
     AssessmentListType.class,
     AssessmentType.class,
     ProcessListType.class,
@@ -85,7 +88,7 @@ import javax.xml.bind.annotation.XmlType;
     EcvetAttachment.class
 })
 @MappedSuperclass
-public class EvcetElement implements Serializable
+public class EcvetElement implements Serializable
 {
 
     @XmlElement(required = true, type = Integer.class, nillable = true)

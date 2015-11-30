@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.27 um 08:10:16 PM CET 
+// Generiert: 2015.11.30 um 04:09:30 PM CET 
 //
 
 
@@ -11,7 +11,11 @@ package eu.open_ecvet.entity;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -27,7 +31,7 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="validationListType"&gt;
  *   &lt;complexContent&gt;
- *     &lt;extension base="{}evcetElement"&gt;
+ *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="validation" type="{}validationType" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
@@ -49,11 +53,25 @@ import javax.xml.bind.annotation.XmlType;
 
 }, name = "validationlist")
 public class ValidationListType
-    extends EvcetElement
+    extends EcvetElement
     implements Serializable
 {
 
     @XmlElement(required = true)
+    @ManyToMany(cascade = {
+        CascadeType.PERSIST,
+        CascadeType.MERGE,
+        CascadeType.DETACH
+    })
+    @JoinTable(joinColumns = {
+        @JoinColumn(name = "validationlist_id")
+    }, inverseJoinColumns = {
+        @JoinColumn(name = "validation_id")
+    }, indexes = {
+
+    }, uniqueConstraints = {
+
+    })
     protected List<ValidationType> validation;
 
     /**

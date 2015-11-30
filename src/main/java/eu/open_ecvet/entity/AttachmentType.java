@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.11.27 um 08:10:16 PM CET 
+// Generiert: 2015.11.30 um 04:09:30 PM CET 
 //
 
 
@@ -29,8 +29,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;complexType name="attachmentType"&gt;
  *   &lt;complexContent&gt;
- *     &lt;extension base="{}evcetElement"&gt;
+ *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
+ *         &lt;element name="attachmentUrl" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="idrefToken" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *       &lt;/sequence&gt;
  *       &lt;attribute name="idref" use="required" type="{http://www.w3.org/2001/XMLSchema}IDREF" /&gt;
@@ -43,6 +44,7 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "attachmentType", propOrder = {
+    "attachmentUrl",
     "idrefToken"
 })
 @Entity
@@ -52,10 +54,12 @@ import javax.xml.bind.annotation.XmlType;
 
 }, name = "attachment")
 public class AttachmentType
-    extends EvcetElement
+    extends EcvetElement
     implements Serializable
 {
 
+    @XmlElement(required = true)
+    protected String attachmentUrl;
     @XmlElement(required = true)
     protected String idrefToken;
     @XmlAttribute(name = "idref", required = true)
@@ -63,6 +67,30 @@ public class AttachmentType
     @XmlSchemaType(name = "IDREF")
     @Transient
     protected Object idref;
+
+    /**
+     * Ruft den Wert der attachmentUrl-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAttachmentUrl() {
+        return attachmentUrl;
+    }
+
+    /**
+     * Legt den Wert der attachmentUrl-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAttachmentUrl(String value) {
+        this.attachmentUrl = value;
+    }
 
     /**
      * Ruft den Wert der idrefToken-Eigenschaft ab.
