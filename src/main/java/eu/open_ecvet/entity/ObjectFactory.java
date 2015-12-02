@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.02 um 10:59:58 AM CET 
+// Generiert: 2015.12.02 um 04:40:14 PM CET 
 //
 
 
@@ -32,9 +32,6 @@ import javax.xml.namespace.QName;
 public class ObjectFactory {
 
     private final static QName _EcvetFramework_QNAME = new QName("", "ecvetFramework");
-    private final static QName _RecognitionTypeTitle_QNAME = new QName("", "title");
-    private final static QName _RecognitionTypeCompetentInstitutionURI_QNAME = new QName("", "competentInstitutionURI");
-    private final static QName _RecognitionTypeCertificateTemplate_QNAME = new QName("", "certificateTemplate");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: eu.open_ecvet.entity
@@ -370,33 +367,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "", name = "ecvetFramework")
     public JAXBElement<EcvetFrameworkType> createEcvetFramework(EcvetFrameworkType value) {
         return new JAXBElement<EcvetFrameworkType>(_EcvetFramework_QNAME, EcvetFrameworkType.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "", name = "title", scope = RecognitionType.class)
-    public JAXBElement<String> createRecognitionTypeTitle(String value) {
-        return new JAXBElement<String>(_RecognitionTypeTitle_QNAME, String.class, RecognitionType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "", name = "competentInstitutionURI", scope = RecognitionType.class)
-    public JAXBElement<String> createRecognitionTypeCompetentInstitutionURI(String value) {
-        return new JAXBElement<String>(_RecognitionTypeCompetentInstitutionURI_QNAME, String.class, RecognitionType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CertificateTemplateType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "", name = "certificateTemplate", scope = RecognitionType.class)
-    public JAXBElement<CertificateTemplateType> createRecognitionTypeCertificateTemplate(CertificateTemplateType value) {
-        return new JAXBElement<CertificateTemplateType>(_RecognitionTypeCertificateTemplate_QNAME, CertificateTemplateType.class, RecognitionType.class, value);
     }
 
 }

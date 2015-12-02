@@ -1187,8 +1187,7 @@
 		</xsd:annotation>
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
-				<xsd:sequence>
-					<xsd:element name="title" type="xsd:string" />
+				<xsd:sequence>					
 					<xsd:element name="competentInstitutionURI" type="xsd:string">
 						<xsd:annotation>
 							<xsd:documentation>

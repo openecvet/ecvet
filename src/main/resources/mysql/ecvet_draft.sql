@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Erstellungszeit: 02. Dez 2015 um 10:57
+-- Erstellungszeit: 02. Dez 2015 um 16:46
 -- Server-Version: 5.5.46-0ubuntu0.14.04.2
 -- PHP-Version: 5.5.9-1ubuntu4.14
 
@@ -537,10 +537,11 @@ CREATE TABLE IF NOT EXISTS `qualification` (
 DROP TABLE IF EXISTS `recognition`;
 CREATE TABLE IF NOT EXISTS `recognition` (
   `ID` int(11) NOT NULL,
+  `COMPETENTINSTITUTIONURI` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `DESCRIPTION` longtext COLLATE utf8_bin,
   `TITLE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `URI` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `REST_ID` int(11) DEFAULT NULL
+  `CERTIFICATETEMPLATE_ID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
@@ -1029,7 +1030,7 @@ ALTER TABLE `qualification`
 -- Indizes für die Tabelle `recognition`
 --
 ALTER TABLE `recognition`
-  ADD PRIMARY KEY (`ID`), ADD KEY `FK_recognition_REST_ID` (`REST_ID`);
+  ADD PRIMARY KEY (`ID`), ADD KEY `FK_recognition_CERTIFICATETEMPLATE_ID` (`CERTIFICATETEMPLATE_ID`);
 
 --
 -- Indizes für die Tabelle `recognitionlist`
@@ -1476,7 +1477,7 @@ ADD CONSTRAINT `FK_qualification_UNITLIST_ID` FOREIGN KEY (`UNITLIST_ID`) REFERE
 -- Constraints der Tabelle `recognition`
 --
 ALTER TABLE `recognition`
-ADD CONSTRAINT `FK_recognition_REST_ID` FOREIGN KEY (`REST_ID`) REFERENCES `certificatetemplate` (`ID`);
+ADD CONSTRAINT `FK_recognition_CERTIFICATETEMPLATE_ID` FOREIGN KEY (`CERTIFICATETEMPLATE_ID`) REFERENCES `certificatetemplate` (`ID`);
 
 --
 -- Constraints der Tabelle `recognitionlist_recognition`

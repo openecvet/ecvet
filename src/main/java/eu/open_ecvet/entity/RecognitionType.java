@@ -2,23 +2,19 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.02 um 10:59:58 AM CET 
+// Generiert: 2015.12.02 um 04:40:14 PM CET 
 //
 
 
 package eu.open_ecvet.entity;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlElementRefs;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -32,7 +28,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="competentInstitutionURI" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="certificateTemplate" type="{}certificateTemplateType"/&gt;
  *       &lt;/sequence&gt;
@@ -45,7 +40,8 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "recognitionType", propOrder = {
-    "rest"
+    "competentInstitutionURI",
+    "certificateTemplate"
 })
 @Entity
 @Table(indexes = {
@@ -58,55 +54,60 @@ public class RecognitionType
     implements Serializable
 {
 
-    @XmlElementRefs({
-        @XmlElementRef(name = "title", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "competentInstitutionURI", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "certificateTemplate", type = JAXBElement.class, required = false)
-    })
+    @XmlElement(required = true)
+    protected String competentInstitutionURI;
+    @XmlElement(required = true)
     @OneToOne(targetEntity = CertificateTemplateType.class, cascade = {
 
     })
-    protected List<JAXBElement<? extends Serializable>> rest;
+    protected CertificateTemplateType certificateTemplate;
 
     /**
-     * Ruft das restliche Contentmodell ab. 
+     * Ruft den Wert der competentInstitutionURI-Eigenschaft ab.
      * 
-     * <p>
-     * Sie rufen diese "catch-all"-Eigenschaft aus folgendem Grund ab: 
-     * Der Feldname "Title" wird von zwei verschiedenen Teilen eines Schemas verwendet. Siehe: 
-     * Zeile 1191 von file:/home/duschata/src/java/ecvet_spec/src/main/resources/xsd/draft.xsd
-     * Zeile 1358 von file:/home/duschata/src/java/ecvet_spec/src/main/resources/xsd/draft.xsd
-     * <p>
-     * Um diese Eigenschaft zu entfernen, wenden Sie eine Eigenschaftenanpassung für eine
-     * der beiden folgenden Deklarationen an, um deren Namen zu ändern: 
-     * Gets the value of the rest property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the rest property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getRest().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link CertificateTemplateType }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public List<JAXBElement<? extends Serializable>> getRest() {
-        if (rest == null) {
-            rest = new ArrayList<JAXBElement<? extends Serializable>>();
-        }
-        return this.rest;
+    public String getCompetentInstitutionURI() {
+        return competentInstitutionURI;
+    }
+
+    /**
+     * Legt den Wert der competentInstitutionURI-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCompetentInstitutionURI(String value) {
+        this.competentInstitutionURI = value;
+    }
+
+    /**
+     * Ruft den Wert der certificateTemplate-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link CertificateTemplateType }
+     *     
+     */
+    public CertificateTemplateType getCertificateTemplate() {
+        return certificateTemplate;
+    }
+
+    /**
+     * Legt den Wert der certificateTemplate-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CertificateTemplateType }
+     *     
+     */
+    public void setCertificateTemplate(CertificateTemplateType value) {
+        this.certificateTemplate = value;
     }
 
 }

@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.02 um 10:59:58 AM CET 
+// Generiert: 2015.12.02 um 04:40:14 PM CET 
 //
 
 
@@ -88,7 +88,8 @@ import javax.xml.bind.annotation.XmlType;
     EcvetAttachment.class
 })
 @MappedSuperclass
-public class EcvetElement implements Serializable
+public class EcvetElement
+    implements Serializable
 {
 
     @XmlElement(required = true, type = Integer.class, nillable = true)
