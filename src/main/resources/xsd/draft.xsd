@@ -499,8 +499,7 @@
 		</xsd:annotation>
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
-				<xsd:sequence>
-					<xsd:element name="title" type="xsd:string" />
+				<xsd:sequence>                      
 					<xsd:element name="credit" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
@@ -517,6 +516,11 @@
 								nqf is used to descibe the
 								outcome (and which might use other terms)
 							</xsd:documentation>
+                                                        <xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.LearningOutcomeTermListType"></OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:sequence>

@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.01 um 02:08:26 PM CET 
+// Generiert: 2015.12.02 um 10:59:58 AM CET 
 //
 
 
@@ -35,8 +35,6 @@ public class ObjectFactory {
     private final static QName _RecognitionTypeTitle_QNAME = new QName("", "title");
     private final static QName _RecognitionTypeCompetentInstitutionURI_QNAME = new QName("", "competentInstitutionURI");
     private final static QName _RecognitionTypeCertificateTemplate_QNAME = new QName("", "certificateTemplate");
-    private final static QName _LearningOutcomeTypeCredit_QNAME = new QName("", "credit");
-    private final static QName _LearningOutcomeTypeLearningOutcomeTermList_QNAME = new QName("", "learningOutcomeTermList");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: eu.open_ecvet.entity
@@ -399,33 +397,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "", name = "certificateTemplate", scope = RecognitionType.class)
     public JAXBElement<CertificateTemplateType> createRecognitionTypeCertificateTemplate(CertificateTemplateType value) {
         return new JAXBElement<CertificateTemplateType>(_RecognitionTypeCertificateTemplate_QNAME, CertificateTemplateType.class, RecognitionType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "", name = "title", scope = LearningOutcomeType.class)
-    public JAXBElement<String> createLearningOutcomeTypeTitle(String value) {
-        return new JAXBElement<String>(_RecognitionTypeTitle_QNAME, String.class, LearningOutcomeType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "", name = "credit", scope = LearningOutcomeType.class)
-    public JAXBElement<Integer> createLearningOutcomeTypeCredit(Integer value) {
-        return new JAXBElement<Integer>(_LearningOutcomeTypeCredit_QNAME, Integer.class, LearningOutcomeType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LearningOutcomeTermListType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "", name = "learningOutcomeTermList", scope = LearningOutcomeType.class)
-    public JAXBElement<LearningOutcomeTermListType> createLearningOutcomeTypeLearningOutcomeTermList(LearningOutcomeTermListType value) {
-        return new JAXBElement<LearningOutcomeTermListType>(_LearningOutcomeTypeLearningOutcomeTermList_QNAME, LearningOutcomeTermListType.class, LearningOutcomeType.class, value);
     }
 
 }

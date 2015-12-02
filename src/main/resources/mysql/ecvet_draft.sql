@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Erstellungszeit: 01. Dez 2015 um 14:09
+-- Erstellungszeit: 02. Dez 2015 um 10:57
 -- Server-Version: 5.5.46-0ubuntu0.14.04.2
 -- PHP-Version: 5.5.9-1ubuntu4.14
 
@@ -301,10 +301,11 @@ CREATE TABLE IF NOT EXISTS `learningagreement_attachment` (
 DROP TABLE IF EXISTS `learningoutcome`;
 CREATE TABLE IF NOT EXISTS `learningoutcome` (
   `ID` int(11) NOT NULL,
+  `CREDIT` int(11) DEFAULT NULL,
   `DESCRIPTION` longtext COLLATE utf8_bin,
-  `REST` longblob,
   `TITLE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `URI` varchar(255) COLLATE utf8_bin DEFAULT NULL
+  `URI` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `LEARNINGOUTCOMETERMLIST_ID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
@@ -926,7 +927,7 @@ ALTER TABLE `learningagreement_attachment`
 -- Indizes für die Tabelle `learningoutcome`
 --
 ALTER TABLE `learningoutcome`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`ID`), ADD KEY `FK_learningoutcome_LEARNINGOUTCOMETERMLIST_ID` (`LEARNINGOUTCOMETERMLIST_ID`);
 
 --
 -- Indizes für die Tabelle `learningoutcomelist`
@@ -1416,6 +1417,12 @@ ADD CONSTRAINT `lrnnggrmentlistlearningagreementlrnnggrementlistid` FOREIGN KEY 
 ALTER TABLE `learningagreement_attachment`
 ADD CONSTRAINT `FK_learningagreement_attachment_attachment_id` FOREIGN KEY (`attachment_id`) REFERENCES `attachment` (`ID`),
 ADD CONSTRAINT `FK_learningagreement_attachment_attachments_id` FOREIGN KEY (`attachments_id`) REFERENCES `learningagreement` (`ID`);
+
+--
+-- Constraints der Tabelle `learningoutcome`
+--
+ALTER TABLE `learningoutcome`
+ADD CONSTRAINT `FK_learningoutcome_LEARNINGOUTCOMETERMLIST_ID` FOREIGN KEY (`LEARNINGOUTCOMETERMLIST_ID`) REFERENCES `learningoutcometermlist` (`ID`);
 
 --
 -- Constraints der Tabelle `learningoutcomelist_learningoutcome`

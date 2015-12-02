@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.01 um 02:08:26 PM CET 
+// Generiert: 2015.12.02 um 10:59:58 AM CET 
 //
 
 
@@ -59,9 +59,9 @@ public class RecognitionType
 {
 
     @XmlElementRefs({
-        @XmlElementRef(name = "certificateTemplate", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "title", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "competentInstitutionURI", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "competentInstitutionURI", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "certificateTemplate", type = JAXBElement.class, required = false)
     })
     @OneToOne(targetEntity = CertificateTemplateType.class, cascade = {
 
@@ -74,8 +74,8 @@ public class RecognitionType
      * <p>
      * Sie rufen diese "catch-all"-Eigenschaft aus folgendem Grund ab: 
      * Der Feldname "Title" wird von zwei verschiedenen Teilen eines Schemas verwendet. Siehe: 
-     * Zeile 1187 von file:/home/tom/src/java/ecvet_draft/src/main/resources/xsd/draft.xsd
-     * Zeile 1354 von file:/home/tom/src/java/ecvet_draft/src/main/resources/xsd/draft.xsd
+     * Zeile 1191 von file:/home/duschata/src/java/ecvet_spec/src/main/resources/xsd/draft.xsd
+     * Zeile 1358 von file:/home/duschata/src/java/ecvet_spec/src/main/resources/xsd/draft.xsd
      * <p>
      * Um diese Eigenschaft zu entfernen, wenden Sie eine Eigenschaftenanpassung für eine
      * der beiden folgenden Deklarationen an, um deren Namen zu ändern: 
@@ -96,8 +96,8 @@ public class RecognitionType
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link JAXBElement }{@code <}{@link CertificateTemplateType }{@code >}
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link JAXBElement }{@code <}{@link String }{@code >}
      * 
      * 

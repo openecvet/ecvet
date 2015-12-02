@@ -2,22 +2,19 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.01 um 02:08:26 PM CET 
+// Generiert: 2015.12.02 um 10:59:58 AM CET 
 //
 
 
 package eu.open_ecvet.entity;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlElementRefs;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -35,7 +32,6 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="credit" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="learningOutcomeTermList" type="{}learningOutcomeTermListType"/&gt;
  *       &lt;/sequence&gt;
@@ -48,7 +44,8 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "learningOutcomeType", propOrder = {
-    "rest"
+    "credit",
+    "learningOutcomeTermList"
 })
 @Entity
 @Table(indexes = {
@@ -61,52 +58,51 @@ public class LearningOutcomeType
     implements Serializable
 {
 
-    @XmlElementRefs({
-        @XmlElementRef(name = "title", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "credit", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "learningOutcomeTermList", type = JAXBElement.class, required = false)
+    protected int credit;
+    @XmlElement(required = true)
+    @OneToOne(targetEntity = LearningOutcomeTermListType.class, cascade = {
+
     })
-    protected List<JAXBElement<? extends Serializable>> rest;
+    protected LearningOutcomeTermListType learningOutcomeTermList;
 
     /**
-     * Ruft das restliche Contentmodell ab. 
-     * 
-     * <p>
-     * Sie rufen diese "catch-all"-Eigenschaft aus folgendem Grund ab: 
-     * Der Feldname "Title" wird von zwei verschiedenen Teilen eines Schemas verwendet. Siehe: 
-     * Zeile 503 von file:/home/tom/src/java/ecvet_draft/src/main/resources/xsd/draft.xsd
-     * Zeile 1354 von file:/home/tom/src/java/ecvet_draft/src/main/resources/xsd/draft.xsd
-     * <p>
-     * Um diese Eigenschaft zu entfernen, wenden Sie eine Eigenschaftenanpassung für eine
-     * der beiden folgenden Deklarationen an, um deren Namen zu ändern: 
-     * Gets the value of the rest property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the rest property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getRest().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * {@link JAXBElement }{@code <}{@link Integer }{@code >}
-     * {@link JAXBElement }{@code <}{@link LearningOutcomeTermListType }{@code >}
-     * 
+     * Ruft den Wert der credit-Eigenschaft ab.
      * 
      */
-    public List<JAXBElement<? extends Serializable>> getRest() {
-        if (rest == null) {
-            rest = new ArrayList<JAXBElement<? extends Serializable>>();
-        }
-        return this.rest;
+    public int getCredit() {
+        return credit;
+    }
+
+    /**
+     * Legt den Wert der credit-Eigenschaft fest.
+     * 
+     */
+    public void setCredit(int value) {
+        this.credit = value;
+    }
+
+    /**
+     * Ruft den Wert der learningOutcomeTermList-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link LearningOutcomeTermListType }
+     *     
+     */
+    public LearningOutcomeTermListType getLearningOutcomeTermList() {
+        return learningOutcomeTermList;
+    }
+
+    /**
+     * Legt den Wert der learningOutcomeTermList-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link LearningOutcomeTermListType }
+     *     
+     */
+    public void setLearningOutcomeTermList(LearningOutcomeTermListType value) {
+        this.learningOutcomeTermList = value;
     }
 
 }
