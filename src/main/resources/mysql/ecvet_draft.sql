@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Erstellungszeit: 02. Dez 2015 um 16:46
+-- Erstellungszeit: 03. Dez 2015 um 13:39
 -- Server-Version: 5.5.46-0ubuntu0.14.04.2
 -- PHP-Version: 5.5.9-1ubuntu4.14
 
@@ -150,11 +150,11 @@ CREATE TABLE IF NOT EXISTS `competentinstitutionlist_competentinstitution` (
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `complementarydocumentlist`
+-- Tabellenstruktur für Tabelle `complementarydocuments`
 --
 
-DROP TABLE IF EXISTS `complementarydocumentlist`;
-CREATE TABLE IF NOT EXISTS `complementarydocumentlist` (
+DROP TABLE IF EXISTS `complementarydocuments`;
+CREATE TABLE IF NOT EXISTS `complementarydocuments` (
   `ID` int(11) NOT NULL,
   `DESCRIPTION` longtext COLLATE utf8_bin,
   `TITLE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
@@ -865,10 +865,10 @@ ALTER TABLE `competentinstitutionlist_competentinstitution`
   ADD PRIMARY KEY (`competentinstitutionlist_id`,`competentinstitution_id`), ADD KEY `cmptntnstttnlistcompetentinstitutioncmptntnstttnid` (`competentinstitution_id`);
 
 --
--- Indizes für die Tabelle `complementarydocumentlist`
+-- Indizes für die Tabelle `complementarydocuments`
 --
-ALTER TABLE `complementarydocumentlist`
-  ADD PRIMARY KEY (`ID`), ADD KEY `complementarydocumentlist_LEARNINGAGREEMENTLIST_ID` (`LEARNINGAGREEMENTLIST_ID`), ADD KEY `FK_complementarydocumentlist_USERGUIDELIST_ID` (`USERGUIDELIST_ID`), ADD KEY `cmplementarydocumentlistTRNSCRIPTIONOFRECORDLISTID` (`TRANSCRIPTIONOFRECORDLIST_ID`);
+ALTER TABLE `complementarydocuments`
+  ADD PRIMARY KEY (`ID`), ADD KEY `complementarydocumentsTRANSCRIPTIONOFRECORDLIST_ID` (`TRANSCRIPTIONOFRECORDLIST_ID`), ADD KEY `FK_complementarydocuments_LEARNINGAGREEMENTLIST_ID` (`LEARNINGAGREEMENTLIST_ID`), ADD KEY `FK_complementarydocuments_USERGUIDELIST_ID` (`USERGUIDELIST_ID`);
 
 --
 -- Indizes für die Tabelle `confirmingrequirement`
@@ -1181,9 +1181,9 @@ ALTER TABLE `competentinstitution`
 ALTER TABLE `competentinstitutionlist`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT für Tabelle `complementarydocumentlist`
+-- AUTO_INCREMENT für Tabelle `complementarydocuments`
 --
-ALTER TABLE `complementarydocumentlist`
+ALTER TABLE `complementarydocuments`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT für Tabelle `confirmingrequirement`
@@ -1375,12 +1375,12 @@ ADD CONSTRAINT `cmptntnstttnlstcmpetentinstitutioncmptntnstttnlstd` FOREIGN KEY 
 ADD CONSTRAINT `cmptntnstttnlistcompetentinstitutioncmptntnstttnid` FOREIGN KEY (`competentinstitution_id`) REFERENCES `competentinstitution` (`ID`);
 
 --
--- Constraints der Tabelle `complementarydocumentlist`
+-- Constraints der Tabelle `complementarydocuments`
 --
-ALTER TABLE `complementarydocumentlist`
-ADD CONSTRAINT `cmplementarydocumentlistTRNSCRIPTIONOFRECORDLISTID` FOREIGN KEY (`TRANSCRIPTIONOFRECORDLIST_ID`) REFERENCES `transcriptionofrecordlist` (`ID`),
-ADD CONSTRAINT `complementarydocumentlist_LEARNINGAGREEMENTLIST_ID` FOREIGN KEY (`LEARNINGAGREEMENTLIST_ID`) REFERENCES `learningagreementlist` (`ID`),
-ADD CONSTRAINT `FK_complementarydocumentlist_USERGUIDELIST_ID` FOREIGN KEY (`USERGUIDELIST_ID`) REFERENCES `userguidelist` (`ID`);
+ALTER TABLE `complementarydocuments`
+ADD CONSTRAINT `FK_complementarydocuments_USERGUIDELIST_ID` FOREIGN KEY (`USERGUIDELIST_ID`) REFERENCES `userguidelist` (`ID`),
+ADD CONSTRAINT `complementarydocumentsTRANSCRIPTIONOFRECORDLIST_ID` FOREIGN KEY (`TRANSCRIPTIONOFRECORDLIST_ID`) REFERENCES `transcriptionofrecordlist` (`ID`),
+ADD CONSTRAINT `FK_complementarydocuments_LEARNINGAGREEMENTLIST_ID` FOREIGN KEY (`LEARNINGAGREEMENTLIST_ID`) REFERENCES `learningagreementlist` (`ID`);
 
 --
 -- Constraints der Tabelle `confirmingrequirementlist_confirmingrequirement`
@@ -1393,7 +1393,7 @@ ADD CONSTRAINT `cnfrmngrqrmntlstcnfrmngrquirementcnfrmngrqrmntlstd` FOREIGN KEY 
 -- Constraints der Tabelle `ecvetframework`
 --
 ALTER TABLE `ecvetframework`
-ADD CONSTRAINT `FK_ecvetframework_COMPLEMENTARYDOCUMENTS_ID` FOREIGN KEY (`COMPLEMENTARYDOCUMENTS_ID`) REFERENCES `complementarydocumentlist` (`ID`),
+ADD CONSTRAINT `FK_ecvetframework_COMPLEMENTARYDOCUMENTS_ID` FOREIGN KEY (`COMPLEMENTARYDOCUMENTS_ID`) REFERENCES `complementarydocuments` (`ID`),
 ADD CONSTRAINT `FK_ecvetframework_COMPETENTINSTITUTIONLIST_ID` FOREIGN KEY (`COMPETENTINSTITUTIONLIST_ID`) REFERENCES `competentinstitutionlist` (`ID`),
 ADD CONSTRAINT `FK_ecvetframework_QUALIFICATION_ID` FOREIGN KEY (`QUALIFICATION_ID`) REFERENCES `qualification` (`ID`);
 
