@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generated build file-->
+<!--XDEV 4.1.3 @ Dec 2, 2015 10:09:32 PM-->
+<project name="ecvet_impl" basedir="." default="deploy">
+    <target name="deploy">
+        <taskdef name="GenerateApplication" classname="xdev.util.builder.ant.tasks.GenerateApplication" />
+        <GenerateApplication project="ecvet_impl" todir="/home/duschata/deployed" cleartodir="true" opentodir="true" vmoptions="-XX:+UseParallelGC -XX:+CMSClassUnloadingEnabled -Dsun.java2d.noddraw -Xms64m -Xmx512m" main="eu.open_ecvet.app.view.MainWindow" windowsexe="true" macapp="true" executablejar="true" />
+    </target>
+</project>
+

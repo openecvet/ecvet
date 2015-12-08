@@ -1,0 +1,1178 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "class": "xdev.ui.XdevButton",
+                    "events": ["action.actionPerformed"],
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "WEST",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 1,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "button2"
+                        },
+                        "enabled": {
+                            "value": false
+                        },
+                        "height": {
+                            "value": 22
+                        },
+                        "tabIndex": {
+                            "value": 17
+                        },
+                        "text": {
+                            "value": "Competent Institution List"
+                        },
+                        "width": {
+                            "value": 174
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 3
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevButton",
+                    "events": ["action.actionPerformed"],
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "WEST",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 1,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "button"
+                        },
+                        "enabled": {
+                            "value": false
+                        },
+                        "height": {
+                            "value": 22
+                        },
+                        "tabIndex": {
+                            "value": 16
+                        },
+                        "text": {
+                            "value": "Complementary Documents"
+                        },
+                        "width": {
+                            "value": 186
+                        },
+                        "x": {
+                            "value": 183
+                        },
+                        "y": {
+                            "value": 3
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevButton",
+                    "events": ["action.actionPerformed"],
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "WEST",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 3,
+                                "gridy": 1,
+                                "insets": "0,0,0,0",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "qualificationShortcut"
+                        },
+                        "height": {
+                            "value": 22
+                        },
+                        "tabIndex": {
+                            "value": 1
+                        },
+                        "text": {
+                            "value": "Qualification"
+                        },
+                        "width": {
+                            "value": 98
+                        },
+                        "x": {
+                            "value": 372
+                        },
+                        "y": {
+                            "value": 3
+                        }
+                    }
+                }
+            ],
+            "class": "xdev.ui.XdevContainer",
+            "properties": {
+                "-constraints": {
+                    "value": {
+                        "anchor": "WEST",
+                        "fill": "HORIZONTAL",
+                        "gridHeight": 1,
+                        "gridWidth": 1,
+                        "gridx": 1,
+                        "gridy": 1,
+                        "insets": "3,3,3,3",
+                        "ipadx": 0,
+                        "ipady": 0,
+                        "type": "XDEV_TABLELAYOUT",
+                        "weightx": 0.1,
+                        "weighty": 0
+                    }
+                },
+                "-fieldName": {
+                    "value": "container"
+                },
+                "height": {
+                    "value": 29
+                },
+                "layout": {
+                    "value": {
+                        "autoFill": "AUTO_FILL_BOTH",
+                        "type": "XDEV_TABLELAYOUT"
+                    }
+                },
+                "width": {
+                    "value": 794
+                },
+                "x": {
+                    "value": 3
+                },
+                "y": {
+                    "value": 3
+                }
+            }
+        },
+        {
+            "children": [{
+                "class": "xdev.ui.XdevButton",
+                "events": ["action.actionPerformed"],
+                "properties": {
+                    "-constraints": {
+                        "value": {
+                            "anchor": "EAST",
+                            "fill": "NONE",
+                            "gridHeight": 1,
+                            "gridWidth": 1,
+                            "gridx": 1,
+                            "gridy": 1,
+                            "insets": "3,3,3,3",
+                            "ipadx": 0,
+                            "ipady": 0,
+                            "type": "XDEV_TABLELAYOUT",
+                            "weightx": 0,
+                            "weighty": 0
+                        }
+                    },
+                    "-fieldName": {
+                        "value": "deleteButton"
+                    },
+                    "height": {
+                        "value": 22
+                    },
+                    "tabIndex": {
+                        "value": 4
+                    },
+                    "text": {
+                        "value": "Delete"
+                    },
+                    "width": {
+                        "value": 64
+                    },
+                    "x": {
+                        "value": 3
+                    },
+                    "y": {
+                        "value": 3
+                    }
+                }
+            }],
+            "class": "xdev.ui.XdevContainer",
+            "properties": {
+                "-constraints": {
+                    "value": {
+                        "anchor": "EAST",
+                        "fill": "NONE",
+                        "gridHeight": 1,
+                        "gridWidth": 1,
+                        "gridx": 1,
+                        "gridy": 4,
+                        "insets": "3,3,3,3",
+                        "ipadx": 0,
+                        "ipady": 0,
+                        "type": "XDEV_TABLELAYOUT",
+                        "weightx": 0.1,
+                        "weighty": 0
+                    }
+                },
+                "-fieldName": {
+                    "value": "container2"
+                },
+                "height": {
+                    "value": 29
+                },
+                "layout": {
+                    "value": {
+                        "autoFill": "AUTO_FILL_BOTH",
+                        "type": "XDEV_TABLELAYOUT"
+                    }
+                },
+                "width": {
+                    "value": 71
+                },
+                "x": {
+                    "value": 726
+                },
+                "y": {
+                    "value": 433
+                }
+            }
+        },
+        {
+            "class": "xdev.ui.XdevTable",
+            "properties": {
+                "-autofillColumns": {
+                    "value": {
+                        "expression": "TITLE, URI, COMPETENTINSTITUTIONLIST_TITLE, COMPLEMENTARYDOCUMENTS_TITLE, QUALIFICATION_TITLE"
+                    }
+                },
+                "-autofillWithData": {
+                    "value": true
+                },
+                "-connectedFormular": {
+                    "value": "formular"
+                },
+                "-constraints": {
+                    "value": {
+                        "anchor": "WEST",
+                        "fill": "HORIZONTAL",
+                        "gridHeight": 1,
+                        "gridWidth": 1,
+                        "gridx": 1,
+                        "gridy": 2,
+                        "insets": "3,3,3,3",
+                        "ipadx": 0,
+                        "ipady": 0,
+                        "type": "XDEV_TABLELAYOUT",
+                        "weightx": 0.1,
+                        "weighty": 0
+                    }
+                },
+                "-fieldName": {
+                    "value": "table"
+                },
+                "-virtualTable": {
+                    "value": "eu.open_ecvet.app.model.Ecvetframework"
+                },
+                "height": {
+                    "value": 156
+                },
+                "selectionMode": {
+                    "value": "SINGLE_SELECTION"
+                },
+                "tabIndex": {
+                    "value": 29
+                },
+                "width": {
+                    "value": 794
+                },
+                "x": {
+                    "value": 3
+                },
+                "y": {
+                    "value": 38
+                }
+            }
+        },
+        {
+            "children": [
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 1,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label2"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "name": {
+                            "value": "label2"
+                        },
+                        "text": {
+                            "value": "TITLE"
+                        },
+                        "width": {
+                            "value": 32
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 5
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevTextField",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 1,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "textField2"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Ecvetframework.TITLE"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "horizontalAlignment": {
+                            "value": "LEFT"
+                        },
+                        "maxSignCount": {
+                            "value": 2147483647
+                        },
+                        "name": {
+                            "value": "textField2"
+                        },
+                        "tabIndex": {
+                            "value": 30
+                        },
+                        "width": {
+                            "value": 599
+                        },
+                        "x": {
+                            "value": 198
+                        },
+                        "y": {
+                            "value": 3
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 2,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label3"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "name": {
+                            "value": "label3"
+                        },
+                        "text": {
+                            "value": "DESCRIPTION"
+                        },
+                        "width": {
+                            "value": 77
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 29
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevTextArea",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "BOTH",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 2,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 1
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "textArea"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Ecvetframework.DESCRIPTION"
+                        },
+                        "height": {
+                            "value": 62
+                        },
+                        "maxSignCount": {
+                            "value": 2147483647
+                        },
+                        "tabIndex": {
+                            "value": 31
+                        },
+                        "width": {
+                            "value": 599
+                        },
+                        "x": {
+                            "value": 198
+                        },
+                        "y": {
+                            "value": 30
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 3,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label4"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "name": {
+                            "value": "label4"
+                        },
+                        "text": {
+                            "value": "URI"
+                        },
+                        "width": {
+                            "value": 20
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 100
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevTextField",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 3,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "textField"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Ecvetframework.URI"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "horizontalAlignment": {
+                            "value": "LEFT"
+                        },
+                        "maxSignCount": {
+                            "value": 2147483647
+                        },
+                        "tabIndex": {
+                            "value": 32
+                        },
+                        "width": {
+                            "value": 599
+                        },
+                        "x": {
+                            "value": 198
+                        },
+                        "y": {
+                            "value": 98
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 4,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label5"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "name": {
+                            "value": "label5"
+                        },
+                        "text": {
+                            "value": "COMPETENTINSTITUTIONLIST_ID"
+                        },
+                        "width": {
+                            "value": 183
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 126
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevComboBox",
+                    "properties": {
+                        "-autofillColumns": {
+                            "value": {
+                                "expression": "TITLE"
+                            }
+                        },
+                        "-autofillDataColumn": {
+                            "value": {
+                                "expression": "ID"
+                            }
+                        },
+                        "-autofillWithData": {
+                            "value": true
+                        },
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 4,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "competentInstitutionComboBox"
+                        },
+                        "-virtualTable": {
+                            "value": "eu.open_ecvet.app.model.Competentinstitutionlist"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Ecvetframework.COMPETENTINSTITUTIONLIST_ID"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "name": {
+                            "value": "comboBox2"
+                        },
+                        "tabIndex": {
+                            "value": 33
+                        },
+                        "width": {
+                            "value": 599
+                        },
+                        "x": {
+                            "value": 198
+                        },
+                        "y": {
+                            "value": 124
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 5,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label6"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "name": {
+                            "value": "label6"
+                        },
+                        "text": {
+                            "value": "COMPLEMENTARYDOCUMENTS_ID"
+                        },
+                        "width": {
+                            "value": 189
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 152
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevComboBox",
+                    "properties": {
+                        "-autofillColumns": {
+                            "value": {
+                                "expression": "TITLE"
+                            }
+                        },
+                        "-autofillDataColumn": {
+                            "value": {
+                                "expression": "ID"
+                            }
+                        },
+                        "-autofillWithData": {
+                            "value": true
+                        },
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 5,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "complementaryDocumentsComboBox"
+                        },
+                        "-virtualTable": {
+                            "value": "eu.open_ecvet.app.model.Complementarydocuments"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Ecvetframework.COMPLEMENTARYDOCUMENTS_ID"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "name": {
+                            "value": "comboBox3"
+                        },
+                        "tabIndex": {
+                            "value": 34
+                        },
+                        "width": {
+                            "value": 599
+                        },
+                        "x": {
+                            "value": 198
+                        },
+                        "y": {
+                            "value": 150
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 6,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "text": {
+                            "value": "QUALIFICATION_ID"
+                        },
+                        "width": {
+                            "value": 103
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 178
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevComboBox",
+                    "properties": {
+                        "-autofillColumns": {
+                            "value": {
+                                "expression": "TITLE"
+                            }
+                        },
+                        "-autofillDataColumn": {
+                            "value": {
+                                "expression": "ID"
+                            }
+                        },
+                        "-autofillWithData": {
+                            "value": true
+                        },
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 6,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "qualificationComboBox"
+                        },
+                        "-virtualTable": {
+                            "value": "eu.open_ecvet.app.model.Qualification"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Ecvetframework.QUALIFICATION_ID"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "tabIndex": {
+                            "value": 35
+                        },
+                        "width": {
+                            "value": 599
+                        },
+                        "x": {
+                            "value": 198
+                        },
+                        "y": {
+                            "value": 176
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "class": "xdev.ui.XdevButton",
+                            "events": ["action.actionPerformed"],
+                            "properties": {
+                                "-constraints": {
+                                    "value": {
+                                        "type": "FLOW",
+                                        "zpos": 0
+                                    }
+                                },
+                                "-fieldName": {
+                                    "value": "cmdNew"
+                                },
+                                "height": {
+                                    "value": 22
+                                },
+                                "tabIndex": {
+                                    "value": 36
+                                },
+                                "text": {
+                                    "value": "New"
+                                },
+                                "width": {
+                                    "value": 52
+                                },
+                                "x": {
+                                    "value": 446
+                                },
+                                "y": {
+                                    "value": 3
+                                }
+                            }
+                        },
+                        {
+                            "class": "xdev.ui.XdevButton",
+                            "events": ["action.actionPerformed"],
+                            "properties": {
+                                "-constraints": {
+                                    "value": {
+                                        "type": "FLOW",
+                                        "zpos": 0
+                                    }
+                                },
+                                "-fieldName": {
+                                    "value": "cmdReset"
+                                },
+                                "height": {
+                                    "value": 22
+                                },
+                                "tabIndex": {
+                                    "value": 37
+                                },
+                                "text": {
+                                    "value": "Reset"
+                                },
+                                "width": {
+                                    "value": 60
+                                },
+                                "x": {
+                                    "value": 501
+                                },
+                                "y": {
+                                    "value": 3
+                                }
+                            }
+                        },
+                        {
+                            "class": "xdev.ui.XdevButton",
+                            "events": ["action.actionPerformed"],
+                            "properties": {
+                                "-constraints": {
+                                    "value": {
+                                        "type": "FLOW",
+                                        "zpos": 0
+                                    }
+                                },
+                                "-fieldName": {
+                                    "value": "cmdSave"
+                                },
+                                "height": {
+                                    "value": 22
+                                },
+                                "tabIndex": {
+                                    "value": 38
+                                },
+                                "text": {
+                                    "value": "Save"
+                                },
+                                "width": {
+                                    "value": 56
+                                },
+                                "x": {
+                                    "value": 564
+                                },
+                                "y": {
+                                    "value": 3
+                                }
+                            }
+                        },
+                        {
+                            "class": "xdev.ui.XdevButton",
+                            "events": ["action.actionPerformed"],
+                            "properties": {
+                                "-constraints": {
+                                    "value": {
+                                        "type": "FLOW",
+                                        "zpos": 0
+                                    }
+                                },
+                                "-fieldName": {
+                                    "value": "cmdSaveAndNew"
+                                },
+                                "height": {
+                                    "value": 22
+                                },
+                                "tabIndex": {
+                                    "value": 39
+                                },
+                                "text": {
+                                    "value": "Save + New"
+                                },
+                                "width": {
+                                    "value": 97
+                                },
+                                "x": {
+                                    "value": 623
+                                },
+                                "y": {
+                                    "value": 3
+                                }
+                            }
+                        },
+                        {
+                            "class": "xdev.ui.XdevButton",
+                            "events": ["action.actionPerformed"],
+                            "properties": {
+                                "-constraints": {
+                                    "value": {
+                                        "type": "FLOW",
+                                        "zpos": 0
+                                    }
+                                },
+                                "-fieldName": {
+                                    "value": "cmdSearch"
+                                },
+                                "height": {
+                                    "value": 22
+                                },
+                                "tabIndex": {
+                                    "value": 40
+                                },
+                                "text": {
+                                    "value": "Search"
+                                },
+                                "width": {
+                                    "value": 68
+                                },
+                                "x": {
+                                    "value": 723
+                                },
+                                "y": {
+                                    "value": 3
+                                }
+                            }
+                        }
+                    ],
+                    "class": "xdev.ui.XdevContainer",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "CENTER",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 2,
+                                "gridx": 1,
+                                "gridy": 7,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "container3"
+                        },
+                        "height": {
+                            "value": 28
+                        },
+                        "layout": {
+                            "value": {
+                                "align": "TRAILING",
+                                "alignOnBaseline": false,
+                                "hgap": 3,
+                                "type": "FLOW",
+                                "vgap": 3
+                            }
+                        },
+                        "width": {
+                            "value": 794
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 202
+                        }
+                    }
+                }
+            ],
+            "class": "xdev.ui.XdevFormular",
+            "properties": {
+                "-constraints": {
+                    "value": {
+                        "anchor": "CENTER",
+                        "fill": "HORIZONTAL",
+                        "gridHeight": 1,
+                        "gridWidth": 1,
+                        "gridx": 1,
+                        "gridy": 3,
+                        "insets": "0,0,0,0",
+                        "ipadx": 0,
+                        "ipady": 0,
+                        "type": "XDEV_TABLELAYOUT",
+                        "weightx": 0.1,
+                        "weighty": 0
+                    }
+                },
+                "-fieldName": {
+                    "value": "formular"
+                },
+                "height": {
+                    "value": 233
+                },
+                "layout": {
+                    "value": {
+                        "autoFill": "AUTO_FILL_BOTH",
+                        "type": "XDEV_TABLELAYOUT"
+                    }
+                },
+                "width": {
+                    "value": 800
+                },
+                "y": {
+                    "value": 197
+                }
+            }
+        }
+    ],
+    "class": "xdev.ui.XdevWindow",
+    "events": [
+        "window.windowClosing",
+        "init.init"
+    ],
+    "properties": {
+        "-fieldName": {
+            "value": "FrameworkView"
+        },
+        "height": {
+            "value": 600
+        },
+        "horizontalScrollBarPolicy": {
+            "value": "HORIZONTAL_SCROLLBAR_AS_NEEDED"
+        },
+        "layout": {
+            "value": {
+                "autoFill": "AUTO_FILL_BOTH",
+                "type": "XDEV_TABLELAYOUT"
+            }
+        },
+        "verticalScrollBarPolicy": {
+            "value": "VERTICAL_SCROLLBAR_AS_NEEDED"
+        },
+        "width": {
+            "value": 800
+        }
+    }
+}

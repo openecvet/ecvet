@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>af90b2c0-4776-453c-b6a8-6a2c524c88a3</OriginalElement>
+  <nodes>
+    <node x="1279.75" y="323.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.complementarydocumentlist</node>
+    <node x="445.5" y="36.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningoutcome</node>
+    <node x="1699.5" y="48.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningagreement</node>
+    <node x="1021.9148550724638" y="48.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.unitlist</node>
+    <node x="1886.75" y="359.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.competentinstitutionlist</node>
+    <node x="2121.1014492753625" y="335.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.competentinstitution</node>
+    <node x="1350.5" y="48.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningagreementlist</node>
+    <node x="2427.4583333333335" y="48.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.partner</node>
+    <node x="267.5" y="48.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.referencelevellist</node>
+    <node x="1088.75" y="347.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.qualification</node>
+    <node x="2254.5833333333335" y="48.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.partnerlist</node>
+    <node x="1954.2083333333335" y="682.5">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.competentinstitutionlist_competentinstitution</node>
+    <node x="2043.5833333333335" y="24.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.legislation</node>
+    <node x="0.0" y="0.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.referencelevel</node>
+    <node x="68.5" y="383.5">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.referencelevellist_referencelevel</node>
+    <node x="760.2500000000001" y="275.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.unit</node>
+    <node x="2339.8333333333335" y="383.5">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.partnerlist_partner</node>
+    <node x="899.7500000000002" y="682.5">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.unitlist_unit</node>
+    <node x="791.75" y="48.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningoutcomelist</node>
+    <node x="439.2500000000001" y="383.5">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningoutcomelist_learningoutcome</node>
+    <node x="1535.75" y="383.5">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningagreementlist_learningagreement</node>
+    <node x="1292.25" y="622.0">af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.ecvetframework</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.unit" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.unitlist">
+      <point x="96.99999999999989" y="-148.5" />
+      <point x="1002.75" y="255.0" />
+      <point x="1047.0815217391305" y="255.0" />
+      <point x="-50.33333333333326" y="64.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningagreementlist_learningagreement" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningagreement">
+      <point x="82.75" y="-40.0" />
+      <point x="0.0" y="64.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.referencelevellist_referencelevel" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.referencelevellist">
+      <point x="67.25" y="-40.0" />
+      <point x="270.25" y="255.0" />
+      <point x="307.0" y="255.0" />
+      <point x="-39.5" y="64.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.qualification" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.unitlist">
+      <point x="0.0" y="-76.5" />
+      <point x="1174.25" y="255.0" />
+      <point x="1147.748188405797" y="255.0" />
+      <point x="50.33333333333326" y="64.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.partnerlist_partner" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.partnerlist">
+      <point x="-48.25" y="-40.0" />
+      <point x="2388.0833333333335" y="255.0" />
+      <point x="2367.8333333333335" y="255.0" />
+      <point x="37.75" y="64.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.competentinstitution" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.legislation">
+      <point x="-47.75" y="-88.5" />
+      <point x="2168.8514492753625" y="255.0" />
+      <point x="2139.0833333333335" y="255.0" />
+      <point x="0.0" y="88.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.competentinstitutionlist_competentinstitution" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.competentinstitution">
+      <point x="89.25" y="-40.0" />
+      <point x="2221.9583333333335" y="597.0" />
+      <point x="2216.6014492753625" y="597.0" />
+      <point x="0.0" y="88.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningagreementlist_learningagreement" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningagreementlist">
+      <point x="-82.75" y="-40.0" />
+      <point x="1618.5" y="255.0" />
+      <point x="1492.25" y="255.0" />
+      <point x="47.25" y="64.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.ecvetframework" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.complementarydocumentlist">
+      <point x="0.0" y="-100.5" />
+      <point x="0.0" y="100.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningoutcomelist_learningoutcome" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningoutcomelist">
+      <point x="75.25" y="-40.0" />
+      <point x="665.0000000000001" y="255.0" />
+      <point x="835.25" y="255.0" />
+      <point x="-43.5" y="64.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.ecvetframework" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.competentinstitutionlist">
+      <point x="70.33333333333326" y="-100.5" />
+      <point x="1468.0833333333333" y="597.0" />
+      <point x="1937.25" y="597.0" />
+      <point x="-50.5" y="64.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.competentinstitutionlist_competentinstitution" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.competentinstitutionlist">
+      <point x="-89.25" y="-40.0" />
+      <point x="2043.4583333333335" y="597.0" />
+      <point x="2038.25" y="597.0" />
+      <point x="50.5" y="64.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.competentinstitution" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.partnerlist">
+      <point x="47.75" y="-88.5" />
+      <point x="2264.3514492753625" y="255.0" />
+      <point x="2292.3333333333335" y="255.0" />
+      <point x="-37.75" y="64.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.referencelevellist_referencelevel" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.referencelevel">
+      <point x="-67.25" y="-40.0" />
+      <point x="135.75" y="255.0" />
+      <point x="115.5" y="255.0" />
+      <point x="0.0" y="112.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.partnerlist_partner" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.partner">
+      <point x="48.25" y="-40.0" />
+      <point x="2484.5833333333335" y="255.0" />
+      <point x="2502.9583333333335" y="255.0" />
+      <point x="0.0" y="64.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.unitlist_unit" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.unitlist">
+      <point x="41.999999999999886" y="-40.0" />
+      <point x="1025.75" y="597.0" />
+      <point x="1078.25" y="597.0" />
+      <point x="1078.25" y="255.0" />
+      <point x="1097.4148550724638" y="255.0" />
+      <point x="0.0" y="64.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.unit" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.referencelevellist">
+      <point x="-97.00000000000011" y="-148.5" />
+      <point x="808.75" y="245.0" />
+      <point x="386.0" y="245.0" />
+      <point x="39.5" y="64.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningoutcomelist_learningoutcome" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningoutcome">
+      <point x="-75.25" y="-40.0" />
+      <point x="514.5000000000001" y="255.0" />
+      <point x="531.0" y="255.0" />
+      <point x="0.0" y="76.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.unitlist_unit" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.unit">
+      <point x="-42.000000000000114" y="-40.0" />
+      <point x="941.75" y="597.0" />
+      <point x="905.7500000000001" y="597.0" />
+      <point x="0.0" y="148.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.complementarydocumentlist" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningagreementlist">
+      <point x="0.0" y="-100.5" />
+      <point x="-47.25" y="64.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.unit" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.learningoutcomelist">
+      <point x="-1.1368683772161603E-13" y="-148.5" />
+      <point x="905.75" y="255.0" />
+      <point x="922.25" y="255.0" />
+      <point x="43.5" y="64.5" />
+    </edge>
+    <edge source="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.ecvetframework" target="af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.qualification">
+      <point x="-70.33333333333326" y="-100.5" />
+      <point x="1327.4166666666667" y="597.0" />
+      <point x="1174.25" y="597.0" />
+      <point x="0.0" y="76.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6743747595228933" x="1192.4089690192277" y="437.64183490560544" />
+  <SelectedNodes>
+    <node>af90b2c0-4776-453c-b6a8-6a2c524c88a3.table:ecvet_draft.ecvetframework</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+

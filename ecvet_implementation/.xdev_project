@@ -1,0 +1,33 @@
+{
+    "classpath": [
+        {
+            "exported": true,
+            "path": "MySQL JDBC",
+            "type": "USER_LIBRARY"
+        },
+        {
+            "exported": true,
+            "path": "H2 JDBC",
+            "type": "USER_LIBRARY"
+        }
+    ],
+    "defaultOutputDir": "bin",
+    "flavor": "JAVA2",
+    "laf": "xdev.ui.laf.SystemLookAndFeel",
+    "name": "ecvet_impl",
+    "open": true,
+    "sourcepath": {
+        "defaultOutputDir": "bin",
+        "sourceDirs": [
+            {
+                "outputPath": "bin",
+                "path": "src/main/java",
+                "type": "SOURCE"
+            },
+            {
+                "path": "src/main/resources",
+                "type": "RES"
+            }
+        ]
+    }
+}

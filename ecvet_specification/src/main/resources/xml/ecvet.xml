@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecvetFramework URI="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/draft_.xsd">
+  <id>0</id>
+  <title>title</title>
+  <description>description</description>
+  <competentInstitutionList URI="">
+    <id>0</id>
+    <title>title</title>
+    <description>description</description>
+    <competentInstitution URI="">
+      <id>0</id>
+      <title>title</title>
+      <description>description</description>
+      <partnerList URI="">
+        <id>0</id>
+        <title>title</title>
+        <description>description</description>
+        <partner URI="">
+          <id>0</id>
+          <title>title</title>
+          <description>description</description>
+        </partner>
+      </partnerList>
+      <legislation URI="">
+        <id>0</id>
+        <title>title</title>
+        <description>description</description>
+        <rules>rules</rules>
+        <practices>practices</practices>
+      </legislation>
+    </competentInstitution>
+  </competentInstitutionList>
+  <complementaryDocuments URI="">
+    <id>0</id>
+    <title>title</title>
+    <description>description</description>
+    <learningAgreementList URI="">
+      <id>0</id>
+      <title>title</title>
+      <description>description</description>
+      <learningAgreement URI="">
+        <id>0</id>
+        <title>title</title>
+        <description>description</description>
+        <attachment URI="" idref="idvalue0">
+          <id>0</id>
+          <title>title</title>
+          <description>description</description>
+          <attachmentUrl>attachmentUrl</attachmentUrl>
+          <idrefToken>idrefToken</idrefToken>
+        </attachment>
+      </learningAgreement>
+    </learningAgreementList>
+    <transcriptionOfRecordList URI="">
+      <id>0</id>
+      <title>title</title>
+      <description>description</description>
+      <transcriptionOfRecord URI="">
+        <id>0</id>
+        <title>title</title>
+        <description>description</description>
+        <attachment URI="" idref="idvalue0">
+          <id>0</id>
+          <title>title</title>
+          <description>description</description>
+          <attachmentUrl>attachmentUrl</attachmentUrl>
+          <idrefToken>idrefToken</idrefToken>
+        </attachment>
+      </transcriptionOfRecord>
+    </transcriptionOfRecordList>
+    <userGuideList URI="">
+      <id>0</id>
+      <title>title</title>
+      <description>description</description>
+      <userGuide URI="">
+        <id>0</id>
+        <title>title</title>
+        <description>description</description>
+        <attachment URI="" idref="idvalue0">
+          <id>0</id>
+          <title>title</title>
+          <description>description</description>
+          <attachmentUrl>attachmentUrl</attachmentUrl>
+          <idrefToken>idrefToken</idrefToken>
+        </attachment>
+      </userGuide>
+    </userGuideList>
+  </complementaryDocuments>
+  <qualification URI="">
+    <id>0</id>
+    <title>title</title>
+    <description>description</description>
+    <unitList URI="">
+      <id>0</id>
+      <title>title</title>
+      <description>description</description>
+      <unit URI="">
+        <id>0</id>
+        <title>title</title>
+        <description>description</description>
+        <credit>0</credit>
+        <weightSum>0</weightSum>
+        <relativeWeight>0</relativeWeight>
+        <learningOutcomeList URI="">
+          <id>0</id>
+          <title>title</title>
+          <description>description</description>
+          <learningOutcome URI="">
+            <id>0</id>
+            <title>title</title>
+            <description>description</description>
+            <title>title</title>
+            <credit>0</credit>
+            <learningOutcomeTermList URI="">
+              <id>0</id>
+              <title>title</title>
+              <description>description</description>
+              <learningOutcomeTerm URI="">
+                <id>0</id>
+                <title>title</title>
+                <description>description</description>
+                <referenceLevelList URI="">
+                  <id>0</id>
+                  <title>title</title>
+                  <description>description</description>
+                  <referenceLevel URI="" framework="EQF" frameworkLevel="1" frameworkTerm="all">
+                    <id>0</id>
+                    <title>title</title>
+                    <description>description</description>
+                    <indicator>indicator</indicator>
+                  </referenceLevel>
+                </referenceLevelList>
+                <weight>0</weight>
+                <evaluations URI="">
+                  <id>0</id>
+                  <title>title</title>
+                  <description>description</description>
+                  <assessmentList URI="">
+                    <id>0</id>
+                    <title>title</title>
+                    <description>description</description>
+                    <assessment URI="">
+                      <id>0</id>
+                      <title>title</title>
+                      <description>description</description>
+                      <methodList URI="">
+                        <id>0</id>
+                        <title>title</title>
+                        <description>description</description>
+                        <method URI="">
+                          <id>0</id>
+                          <title>title</title>
+                          <description>description</description>
+                        </method>
+                      </methodList>
+                      <processList URI="">
+                        <id>0</id>
+                        <title>title</title>
+                        <description>description</description>
+                        <process URI="">
+                          <id>0</id>
+                          <title>title</title>
+                          <description>description</description>
+                        </process>
+                      </processList>
+                    </assessment>
+                  </assessmentList>
+                  <validationList URI="">
+                    <id>0</id>
+                    <title>title</title>
+                    <description>description</description>
+                    <validation URI="">
+                      <id>0</id>
+                      <title>title</title>
+                      <description>description</description>
+                      <confirmingRequirementList URI="">
+                        <id>0</id>
+                        <title>title</title>
+                        <description>description</description>
+                        <confirmingRequirement URI="">
+                          <id>0</id>
+                          <title>title</title>
+                          <description>description</description>
+                          <threshold>threshold</threshold>
+                          <assessmentURI>assessmentURI</assessmentURI>
+                        </confirmingRequirement>
+                      </confirmingRequirementList>
+                    </validation>
+                  </validationList>
+                  <recognitionList URI="">
+                    <id>0</id>
+                    <title>title</title>
+                    <description>description</description>
+                    <recognition URI="">
+                      <id>0</id>
+                      <title>title</title>
+                      <description>description</description>
+                      <title>title</title>
+                      <competentInstitutionURI>competentInstitutionURI</competentInstitutionURI>
+                      <certificateTemplate URI="">
+                        <id>0</id>
+                        <title>title</title>
+                        <description>description</description>
+                        <attachment URI="" idref="idvalue0">
+                          <id>0</id>
+                          <title>title</title>
+                          <description>description</description>
+                          <attachmentUrl>attachmentUrl</attachmentUrl>
+                          <idrefToken>idrefToken</idrefToken>
+                        </attachment>
+                      </certificateTemplate>
+                    </recognition>
+                  </recognitionList>
+                </evaluations>
+              </learningOutcomeTerm>
+            </learningOutcomeTermList>
+          </learningOutcome>
+        </learningOutcomeList>
+        <referenceLevelList URI="">
+          <id>0</id>
+          <title>title</title>
+          <description>description</description>
+          <referenceLevel URI="" framework="EQF" frameworkLevel="1" frameworkTerm="all">
+            <id>0</id>
+            <title>title</title>
+            <description>description</description>
+            <indicator>indicator</indicator>
+          </referenceLevel>
+        </referenceLevelList>
+        <evaluations URI="">
+          <id>0</id>
+          <title>title</title>
+          <description>description</description>
+          <assessmentList URI="">
+            <id>0</id>
+            <title>title</title>
+            <description>description</description>
+            <assessment URI="">
+              <id>0</id>
+              <title>title</title>
+              <description>description</description>
+              <methodList URI="">
+                <id>0</id>
+                <title>title</title>
+                <description>description</description>
+                <method URI="">
+                  <id>0</id>
+                  <title>title</title>
+                  <description>description</description>
+                </method>
+              </methodList>
+              <processList URI="">
+                <id>0</id>
+                <title>title</title>
+                <description>description</description>
+                <process URI="">
+                  <id>0</id>
+                  <title>title</title>
+                  <description>description</description>
+                </process>
+              </processList>
+            </assessment>
+          </assessmentList>
+          <validationList URI="">
+            <id>0</id>
+            <title>title</title>
+            <description>description</description>
+            <validation URI="">
+              <id>0</id>
+              <title>title</title>
+              <description>description</description>
+              <confirmingRequirementList URI="">
+                <id>0</id>
+                <title>title</title>
+                <description>description</description>
+                <confirmingRequirement URI="">
+                  <id>0</id>
+                  <title>title</title>
+                  <description>description</description>
+                  <threshold>threshold</threshold>
+                  <assessmentURI>assessmentURI</assessmentURI>
+                </confirmingRequirement>
+              </confirmingRequirementList>
+            </validation>
+          </validationList>
+          <recognitionList URI="">
+            <id>0</id>
+            <title>title</title>
+            <description>description</description>
+            <recognition URI="">
+              <id>0</id>
+              <title>title</title>
+              <description>description</description>
+              <title>title</title>
+              <competentInstitutionURI>competentInstitutionURI</competentInstitutionURI>
+              <certificateTemplate URI="">
+                <id>0</id>
+                <title>title</title>
+                <description>description</description>
+                <attachment URI="" idref="idvalue0">
+                  <id>0</id>
+                  <title>title</title>
+                  <description>description</description>
+                  <attachmentUrl>attachmentUrl</attachmentUrl>
+                  <idrefToken>idrefToken</idrefToken>
+                </attachment>
+              </certificateTemplate>
+            </recognition>
+          </recognitionList>
+        </evaluations>
+      </unit>
+    </unitList>
+  </qualification>
+</ecvetFramework>

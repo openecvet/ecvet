@@ -1,0 +1,15 @@
+{
+    "id": "h2_jdbc",
+    "params": {
+        "authKey": "AA3127283913C251D9505D1E9E",
+        "catalog": "./res/ecvet_draft",
+        "embedded": true,
+        "host": "localhost",
+        "isServerDataSource": false,
+        "password": "tAYMDfMgwG8=",
+        "port": 5435,
+        "serverURL": "http://localhost:8080/servlet/",
+        "urlExtension": "",
+        "username": "SA"
+    }
+}

@@ -5,3 +5,8 @@
 .classpath
 target/
 *.log
+bin/
+.cache/
+.history/
+.tmp/
+

@@ -1,0 +1,2926 @@
+{
+    "children": [
+        {
+            "children": [{
+                "children": [
+                    {
+                        "class": "xdev.ui.XdevMenuItem",
+                        "properties": {
+                            "-fieldName": {
+                                "value": "menuItem"
+                            },
+                            "text": {
+                                "value": "Save"
+                            }
+                        }
+                    },
+                    {
+                        "class": "xdev.ui.XdevMenuItem",
+                        "events": ["action.actionPerformed"],
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "type": "NULL",
+                                    "zpos": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "menuItem2"
+                            },
+                            "text": {
+                                "value": "About"
+                            }
+                        }
+                    }
+                ],
+                "class": "xdev.ui.XdevMenu",
+                "properties": {
+                    "-fieldName": {
+                        "value": "menu"
+                    },
+                    "text": {
+                        "value": "File"
+                    }
+                }
+            }],
+            "class": "xdev.ui.XdevMenuBar",
+            "properties": {
+                "-constraints": {
+                    "value": {
+                        "anchor": "CENTER",
+                        "fill": "NONE",
+                        "gridHeight": 1,
+                        "gridWidth": 1,
+                        "gridx": 1,
+                        "gridy": 1,
+                        "insets": "0,0,0,0",
+                        "ipadx": 0,
+                        "ipady": 0,
+                        "type": "XDEV_TABLELAYOUT",
+                        "weightx": 0,
+                        "weighty": 0
+                    }
+                },
+                "-fieldName": {
+                    "value": "menuBar"
+                },
+                "height": {
+                    "value": 20
+                },
+                "preferredSize": {
+                    "value": {
+                        "height": 20,
+                        "width": 800
+                    }
+                },
+                "width": {
+                    "value": 800
+                }
+            }
+        },
+        {
+            "children": [
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "frameworkContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new FrameworkView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-fieldName": {
+                            "value": "frameworkTab"
+                        },
+                        "index": {
+                            "value": 1
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Framework"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "qualificationContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new QualificationView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 33
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "qualificationTab"
+                        },
+                        "index": {
+                            "value": 14
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Qualification"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "unitsContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new UnitListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 32
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "unitListTab"
+                        },
+                        "index": {
+                            "value": 15
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Unit List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "unitContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new UnitView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 31
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "unitTab"
+                        },
+                        "index": {
+                            "value": 16
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Unit"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "learningOutcomeListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new LearningOutcomeListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 29
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "learningOutcomeListTab"
+                        },
+                        "index": {
+                            "value": 17
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Learning Outcome List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "referenceLevelListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new ReferenceLevelListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 30
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "referenceLevelListTab"
+                        },
+                        "index": {
+                            "value": 35
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Reference Level List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "learningOutcomeWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new LearningOutcomeView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 28
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "learningOutcomeTab"
+                        },
+                        "index": {
+                            "value": 18
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Learning Outcome"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "referenceLevelWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new ReferenceLevelView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 27
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "referenceLevelTab"
+                        },
+                        "index": {
+                            "value": 36
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Reference Level"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "learningOutcomeTermListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new LearningOutcomeTermListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 26
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "learningOutcomeTermListTab"
+                        },
+                        "index": {
+                            "value": 19
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Learning Outcome Term List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "learningOutcomeTermWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new LearningOutcomeTermView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 24
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "learningOutcomeTermTab"
+                        },
+                        "index": {
+                            "value": 20
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Learning Outcome Term"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "evaluationsWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new EvaluationsView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 25
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "evaluationsTab"
+                        },
+                        "index": {
+                            "value": 21
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Evaluations"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "assessmentListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new AssessmentListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 13
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "assessmentListTab"
+                        },
+                        "index": {
+                            "value": 22
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Assessment List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "validationListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new ValidationListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 14
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "validationListTab"
+                        },
+                        "index": {
+                            "value": 28
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Validation List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "recognitionListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new RecognitionListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 15
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "recognitionListTab"
+                        },
+                        "index": {
+                            "value": 32
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Recognition List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "asssessmentWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new AssessmentView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 16
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "assessmentTab"
+                        },
+                        "index": {
+                            "value": 23
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Assessment"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "methodListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new MethodListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 17
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "methodListTab"
+                        },
+                        "index": {
+                            "value": 24
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Method List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "methodWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new MethodView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 18
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "methodTab"
+                        },
+                        "index": {
+                            "value": 25
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Method"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "processListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new ProcessListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 19
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "processListTab"
+                        },
+                        "index": {
+                            "value": 26
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Process List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "processWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new ProcessView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 20
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "processTab"
+                        },
+                        "index": {
+                            "value": 27
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Process"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "validationWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new ValidationView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 21
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "validationTab"
+                        },
+                        "index": {
+                            "value": 29
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Validation"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "confirmingRequirementListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new ConfirmingRequirementListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 22
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "confirmingRequirementListTab"
+                        },
+                        "index": {
+                            "value": 30
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Confirming Requirement List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "confirmingRequirementWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new ConfirmingRequirementView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 23
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "confirmingRequirementTab"
+                        },
+                        "index": {
+                            "value": 31
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Confirming Requirement"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "recognitionWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new RecognitionView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 12
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "recognitionTab"
+                        },
+                        "index": {
+                            "value": 33
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Recognition"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "certificateTemplateWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new CertificateTemplateView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 11
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "certificateTemplateTab"
+                        },
+                        "index": {
+                            "value": 34
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Certificate Template"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "competentInstitutionListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new CompetentInstitutionListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 5
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "competentInstitutionListTab"
+                        },
+                        "index": {
+                            "value": 2
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Competent Institution List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "competentInstitutionWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new CompetentInstitutionView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 6
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "competentInstitutionTab"
+                        },
+                        "index": {
+                            "value": 3
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Competent Institution"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "partnerListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new PartnerListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 7
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "partnerListTab"
+                        },
+                        "index": {
+                            "value": 4
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Partner List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "partnerWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new PartnerView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 8
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "partnerTab"
+                        },
+                        "index": {
+                            "value": 5
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Partner"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "legislationWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new LegislationView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 9
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "legislationTab"
+                        },
+                        "index": {
+                            "value": 6
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Legislation"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "complementaryDocumentsWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new ComplementaryDocumentsView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 10
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "complementaryDocumentsTab"
+                        },
+                        "index": {
+                            "value": 7
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Complementary Documents"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "learningAgreementListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new LearningAgreementListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 3
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "learningAgreementListTab"
+                        },
+                        "index": {
+                            "value": 8
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Learning Agreement List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "learningAgreementWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new LearningAgreementView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 4
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "learningAgreementTab"
+                        },
+                        "index": {
+                            "value": 9
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Learning Agreement"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "attachmentWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new AttachmentView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 2
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "attachmentTab"
+                        },
+                        "index": {
+                            "value": 37
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Attachment"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "transcriptionOfRecordWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new TranscriptionOfRecordView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 1
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "transcriptionOfRecordTab"
+                        },
+                        "index": {
+                            "value": 11
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Transcription of Record"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "transcriptionOfRecordListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new TranscriptionOfRecordListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-fieldName": {
+                            "value": "transcriptionOfRecordListTab"
+                        },
+                        "index": {
+                            "value": 10
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Transcription of Record List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "userGuideListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new UserGuideListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-fieldName": {
+                            "value": "userGuideListTab"
+                        },
+                        "index": {
+                            "value": 12
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "User Guide List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "userGuideWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 594
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new UserGuideView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-fieldName": {
+                            "value": "userGuideTab"
+                        },
+                        "index": {
+                            "value": 13
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "User Guide"
+                        }
+                    }
+                },
+                {
+                    "children": [
+                        {
+                            "class": "xdev.ui.XdevLabel",
+                            "properties": {
+                                "-constraints": {
+                                    "value": {
+                                        "anchor": "CENTER",
+                                        "fill": "NONE",
+                                        "gridHeight": 1,
+                                        "gridWidth": 1,
+                                        "gridx": 2,
+                                        "gridy": 3,
+                                        "insets": "3,3,3,3",
+                                        "ipadx": 0,
+                                        "ipady": 0,
+                                        "type": "XDEV_TABLELAYOUT",
+                                        "weightx": 0,
+                                        "weighty": 0
+                                    }
+                                },
+                                "-fieldName": {
+                                    "value": "label2"
+                                },
+                                "height": {
+                                    "value": 16
+                                },
+                                "text": {
+                                    "value": "see: http://open-ecvet.eu"
+                                },
+                                "width": {
+                                    "value": 145
+                                },
+                                "x": {
+                                    "value": 227
+                                },
+                                "y": {
+                                    "value": 148
+                                }
+                            }
+                        },
+                        {
+                            "class": "xdev.ui.XdevLabel",
+                            "properties": {
+                                "-constraints": {
+                                    "value": {
+                                        "anchor": "SOUTH",
+                                        "fill": "NONE",
+                                        "gridHeight": 1,
+                                        "gridWidth": 1,
+                                        "gridx": 2,
+                                        "gridy": 1,
+                                        "insets": "3,3,3,3",
+                                        "ipadx": 0,
+                                        "ipady": 0,
+                                        "type": "XDEV_TABLELAYOUT",
+                                        "weightx": 0,
+                                        "weighty": 0
+                                    }
+                                },
+                                "-fieldName": {
+                                    "value": "label"
+                                },
+                                "font": {
+                                    "value": {
+                                        "name": "Arial Black",
+                                        "size": 19,
+                                        "style": "plain"
+                                    }
+                                },
+                                "height": {
+                                    "value": 29
+                                },
+                                "text": {
+                                    "value": "Welcome to the open-ecvet implementation"
+                                },
+                                "width": {
+                                    "value": 457
+                                },
+                                "x": {
+                                    "value": 71
+                                },
+                                "y": {
+                                    "value": 3
+                                }
+                            }
+                        },
+                        {
+                            "class": "xdev.ui.XdevPicture",
+                            "properties": {
+                                "-constraints": {
+                                    "value": {
+                                        "anchor": "CENTER",
+                                        "fill": "NONE",
+                                        "gridHeight": 1,
+                                        "gridWidth": 1,
+                                        "gridx": 2,
+                                        "gridy": 2,
+                                        "insets": "3,3,3,3",
+                                        "ipadx": 0,
+                                        "ipady": 0,
+                                        "type": "XDEV_TABLELAYOUT",
+                                        "weightx": 0.1,
+                                        "weighty": 0
+                                    }
+                                },
+                                "-fieldName": {
+                                    "value": "picture"
+                                },
+                                "height": {
+                                    "value": 104
+                                },
+                                "imagePath": {
+                                    "value": "res/impact_logo.png"
+                                },
+                                "preferredSize": {
+                                    "value": {
+                                        "height": 104,
+                                        "width": 300
+                                    }
+                                },
+                                "width": {
+                                    "value": 300
+                                },
+                                "x": {
+                                    "value": 150
+                                },
+                                "y": {
+                                    "value": 38
+                                }
+                            }
+                        }
+                    ],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-fieldName": {
+                            "value": "tab"
+                        },
+                        "index": {
+                            "value": 0
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Welcome"
+                        }
+                    }
+                }
+            ],
+            "class": "xdev.ui.XdevTabbedPane",
+            "events": ["change.stateChanged"],
+            "properties": {
+                "-constraints": {
+                    "value": {
+                        "anchor": "CENTER",
+                        "fill": "BOTH",
+                        "gridHeight": 1,
+                        "gridWidth": 1,
+                        "gridx": 1,
+                        "gridy": 1,
+                        "insets": "3,3,3,3",
+                        "ipadx": 0,
+                        "ipady": 0,
+                        "type": "XDEV_TABLELAYOUT",
+                        "weightx": 1,
+                        "weighty": 1
+                    }
+                },
+                "-fieldName": {
+                    "value": "tabbedPane"
+                },
+                "height": {
+                    "value": 574
+                },
+                "preferredSize": {
+                    "value": {
+                        "height": 104,
+                        "width": 300
+                    }
+                },
+                "selectedIndex": {
+                    "value": 0
+                },
+                "tabLayoutPolicy": {
+                    "value": "SCROLL"
+                },
+                "tabPlacement": {
+                    "value": "LEFT"
+                },
+                "width": {
+                    "value": 794
+                },
+                "x": {
+                    "value": 3
+                },
+                "y": {
+                    "value": 3
+                }
+            }
+        }
+    ],
+    "class": "xdev.ui.XdevWindow",
+    "events": [
+        "window.windowClosing",
+        "init.init"
+    ],
+    "properties": {
+        "-fieldName": {
+            "value": "MainWindow"
+        },
+        "font": {
+            "value": {
+                "name": "Arial",
+                "size": 11,
+                "style": "plain"
+            }
+        },
+        "height": {
+            "value": 600
+        },
+        "icon": {
+            "value": "./res/cube.png"
+        },
+        "layout": {
+            "value": {
+                "autoFill": "AUTO_FILL_BOTH",
+                "type": "XDEV_TABLELAYOUT"
+            }
+        },
+        "title": {
+            "value": "open-ecvet - the open ecvet implementation"
+        },
+        "width": {
+            "value": 800
+        }
+    }
+}

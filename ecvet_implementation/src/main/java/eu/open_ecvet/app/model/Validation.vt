@@ -1,0 +1,265 @@
+{
+    "columns": [
+        {
+            "autoIncrement": true,
+            "autoTruncate": true,
+            "caption": "",
+            "dataFlavor": "UNDEFINED",
+            "defaultValue": 0,
+            "editable": false,
+            "format": {
+                "dateFormat": "MEDIUM",
+                "dateSet": "DATE",
+                "groupingUsed": false,
+                "locale": "%",
+                "maxFractionDigits": 0,
+                "minFractionDigits": 0,
+                "pattern": [
+                    "",
+                    "yyyy-MM-dd",
+                    "#,##0.###;-#,##0.###",
+                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0%"
+                ],
+                "signedColor": "255,0,0",
+                "suppressZero": false,
+                "timeFormat": "MEDIUM",
+                "type": "NUMBER",
+                "useSignedColor": false
+            },
+            "horizontalAlign": "LEFT",
+            "length": 10,
+            "maxWidth": 0,
+            "minWidth": 0,
+            "name": "ID",
+            "nullable": false,
+            "persistent": true,
+            "preferredWidth": 100,
+            "scale": 0,
+            "type": "INTEGER",
+            "visible": false
+        },
+        {
+            "autoIncrement": false,
+            "autoTruncate": true,
+            "caption": "",
+            "dataFlavor": "UNDEFINED",
+            "editable": true,
+            "format": {
+                "dateFormat": "MEDIUM",
+                "dateSet": "DATE",
+                "groupingUsed": true,
+                "locale": "%",
+                "maxFractionDigits": 2,
+                "minFractionDigits": 2,
+                "pattern": [
+                    "",
+                    "yyyy-MM-dd",
+                    "#,##0.###;-#,##0.###",
+                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0%"
+                ],
+                "signedColor": "255,0,0",
+                "suppressZero": false,
+                "timeFormat": "MEDIUM",
+                "type": "NONE",
+                "useSignedColor": false
+            },
+            "horizontalAlign": "LEFT",
+            "length": 2147483647,
+            "maxWidth": 0,
+            "minWidth": 0,
+            "name": "DESCRIPTION",
+            "nullable": true,
+            "persistent": true,
+            "preferredWidth": 100,
+            "scale": 0,
+            "type": "VARCHAR",
+            "visible": true
+        },
+        {
+            "autoIncrement": false,
+            "autoTruncate": true,
+            "caption": "",
+            "dataFlavor": "UNDEFINED",
+            "editable": true,
+            "format": {
+                "dateFormat": "MEDIUM",
+                "dateSet": "DATE",
+                "groupingUsed": true,
+                "locale": "%",
+                "maxFractionDigits": 2,
+                "minFractionDigits": 2,
+                "pattern": [
+                    "",
+                    "yyyy-MM-dd",
+                    "#,##0.###;-#,##0.###",
+                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0%"
+                ],
+                "signedColor": "255,0,0",
+                "suppressZero": false,
+                "timeFormat": "MEDIUM",
+                "type": "NONE",
+                "useSignedColor": false
+            },
+            "horizontalAlign": "LEFT",
+            "length": 2147483647,
+            "maxWidth": 0,
+            "minWidth": 0,
+            "name": "TITLE",
+            "nullable": true,
+            "persistent": true,
+            "preferredWidth": 100,
+            "scale": 0,
+            "type": "VARCHAR",
+            "visible": true
+        },
+        {
+            "autoIncrement": false,
+            "autoTruncate": true,
+            "caption": "",
+            "dataFlavor": "UNDEFINED",
+            "editable": true,
+            "format": {
+                "dateFormat": "MEDIUM",
+                "dateSet": "DATE",
+                "groupingUsed": true,
+                "locale": "%",
+                "maxFractionDigits": 2,
+                "minFractionDigits": 2,
+                "pattern": [
+                    "",
+                    "yyyy-MM-dd",
+                    "#,##0.###;-#,##0.###",
+                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0%"
+                ],
+                "signedColor": "255,0,0",
+                "suppressZero": false,
+                "timeFormat": "MEDIUM",
+                "type": "NONE",
+                "useSignedColor": false
+            },
+            "horizontalAlign": "LEFT",
+            "length": 2147483647,
+            "maxWidth": 0,
+            "minWidth": 0,
+            "name": "URI",
+            "nullable": true,
+            "persistent": true,
+            "preferredWidth": 100,
+            "scale": 0,
+            "type": "VARCHAR",
+            "visible": true
+        },
+        {
+            "autoIncrement": false,
+            "autoTruncate": true,
+            "caption": "",
+            "dataFlavor": "UNDEFINED",
+            "editable": true,
+            "format": {
+                "dateFormat": "MEDIUM",
+                "dateSet": "DATE",
+                "groupingUsed": false,
+                "locale": "%",
+                "maxFractionDigits": 0,
+                "minFractionDigits": 0,
+                "pattern": [
+                    "",
+                    "yyyy-MM-dd",
+                    "#,##0.###;-#,##0.###",
+                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0%"
+                ],
+                "signedColor": "255,0,0",
+                "suppressZero": false,
+                "timeFormat": "MEDIUM",
+                "type": "NUMBER",
+                "useSignedColor": false
+            },
+            "horizontalAlign": "LEFT",
+            "length": 10,
+            "maxWidth": 0,
+            "minWidth": 0,
+            "name": "CONFIRMINGREQUIREMENTLIST_ID",
+            "nullable": true,
+            "persistent": true,
+            "preferredWidth": 100,
+            "scale": 0,
+            "type": "INTEGER",
+            "visible": false
+        },
+        {
+            "autoIncrement": false,
+            "autoTruncate": true,
+            "caption": "TITLE",
+            "dataFlavor": "UNDEFINED",
+            "editable": true,
+            "format": {
+                "dateFormat": "MEDIUM",
+                "dateSet": "DATE",
+                "groupingUsed": true,
+                "locale": "%",
+                "maxFractionDigits": 2,
+                "minFractionDigits": 2,
+                "pattern": [
+                    "",
+                    "yyyy-MM-dd",
+                    "#,##0.###;-#,##0.###",
+                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0%"
+                ],
+                "signedColor": "255,0,0",
+                "suppressZero": false,
+                "timeFormat": "MEDIUM",
+                "type": "NONE",
+                "useSignedColor": false
+            },
+            "horizontalAlign": "LEFT",
+            "length": 2147483647,
+            "maxWidth": 0,
+            "minWidth": 0,
+            "name": "CONFIRMINGREQUIREMENTLIST_TITLE",
+            "nullable": true,
+            "persistent": false,
+            "preferredWidth": 100,
+            "scale": 0,
+            "tableColumnLink": {
+                "linkedColumn": "TITLE",
+                "linkedTable": "eu.open_ecvet.app.model.Confirmingrequirementlist",
+                "path": [{
+                    "first": {
+                        "cardinality": "ONE",
+                        "columns": ["ID"],
+                        "table": "eu.open_ecvet.app.model.Confirmingrequirementlist"
+                    },
+                    "second": {
+                        "cardinality": "MANY",
+                        "columns": ["CONFIRMINGREQUIREMENTLIST_ID"],
+                        "table": "eu.open_ecvet.app.model.Validation"
+                    }
+                }]
+            },
+            "type": "VARCHAR",
+            "visible": true
+        }
+    ],
+    "dataSource": "eu.open_ecvet.app.data_src.EcvetH2",
+    "dataSourceSchema": "PUBLIC",
+    "dataSourceTable": "VALIDATION",
+    "indices": [
+        {
+            "columns": ["ID"],
+            "name": "PRIMARY_KEY",
+            "type": "PRIMARY_KEY"
+        },
+        {
+            "columns": ["CONFIRMINGREQUIREMENTLIST_ID"],
+            "name": "FK_VALIDATION_CONFIRMINGREQUIREMENTLIST_ID_INDEX_1",
+            "type": "NORMAL"
+        }
+    ],
+    "primaryColumn": "TITLE"
+}

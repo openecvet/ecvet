@@ -1,0 +1,105 @@
+{
+    "children": [
+        {
+            "class": "xdev.ui.XdevLabel",
+            "properties": {
+                "-constraints": {
+                    "value": {
+                        "anchor": "CENTER",
+                        "fill": "NONE",
+                        "gridHeight": 1,
+                        "gridWidth": 1,
+                        "gridx": 1,
+                        "gridy": 1,
+                        "insets": "3,3,3,3",
+                        "ipadx": 0,
+                        "ipady": 0,
+                        "type": "XDEV_TABLELAYOUT",
+                        "weightx": 0.1,
+                        "weighty": 0
+                    }
+                },
+                "-fieldName": {
+                    "value": "label"
+                },
+                "height": {
+                    "value": 16
+                },
+                "text": {
+                    "value": "Constraint Violation"
+                },
+                "width": {
+                    "value": 113
+                },
+                "x": {
+                    "value": 93
+                },
+                "y": {
+                    "value": 3
+                }
+            }
+        },
+        {
+            "class": "xdev.ui.XdevButton",
+            "events": ["action.actionPerformed"],
+            "properties": {
+                "-constraints": {
+                    "value": {
+                        "anchor": "CENTER",
+                        "fill": "NONE",
+                        "gridHeight": 1,
+                        "gridWidth": 1,
+                        "gridx": 1,
+                        "gridy": 2,
+                        "insets": "3,3,3,3",
+                        "ipadx": 0,
+                        "ipady": 0,
+                        "type": "XDEV_TABLELAYOUT",
+                        "weightx": 0.1,
+                        "weighty": 0.1
+                    }
+                },
+                "-fieldName": {
+                    "value": "button"
+                },
+                "height": {
+                    "value": 22
+                },
+                "tabIndex": {
+                    "value": 1
+                },
+                "text": {
+                    "value": "OK"
+                },
+                "width": {
+                    "value": 44
+                },
+                "x": {
+                    "value": 128
+                },
+                "y": {
+                    "value": 50
+                }
+            }
+        }
+    ],
+    "class": "xdev.ui.XdevWindow",
+    "events": ["window.windowClosing"],
+    "properties": {
+        "-fieldName": {
+            "value": "AlertWindow"
+        },
+        "height": {
+            "value": 100
+        },
+        "layout": {
+            "value": {
+                "autoFill": "AUTO_FILL_BOTH",
+                "type": "XDEV_TABLELAYOUT"
+            }
+        },
+        "width": {
+            "value": 300
+        }
+    }
+}
