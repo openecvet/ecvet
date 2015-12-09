@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.08 um 12:15:43 PM CET 
+// Generiert: 2015.12.09 um 05:23:53 PM CET 
 //
 
 
@@ -16,6 +16,7 @@ import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -25,9 +26,16 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- * 				According to: C 155/14 Annex 1 - Definitions (b) -- ‘Learning outcomes’ means statements of what a learner knows, understands and is able to do on completion of a learning
- * 				process and which are defined in
+ * 				According to: C 155/14 Annex 1 - Definitions (b)
+ * 				-- ‘Learning outcomes’ means statements of what a learner knows,
+ * 				understands and is able to do on completion of a learning
+ * 				process and
+ * 				which are defined in
  * 				terms of knowledge, skills and competence;
+ * 
+ * 				Developers comment: the terms can be specified by referencing them
+ * 				to the qualificationlLevelListType which include the constants for
+ * 				the terms
  * 			
  * 
  * <p>Java-Klasse für learningOutcomeListType complex type.
@@ -40,6 +48,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="learningOutcome" type="{}learningOutcomeType" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="qualificationFrameworkList" type="{}qualificationFrameworkListType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -50,7 +59,8 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "learningOutcomeListType", propOrder = {
-    "learningOutcome"
+    "learningOutcome",
+    "qualificationFrameworkList"
 })
 @Entity
 @Table(indexes = {
@@ -79,6 +89,11 @@ public class LearningOutcomeListType
 
     })
     protected List<LearningOutcomeType> learningOutcome;
+    @XmlElement(required = true)
+    @OneToOne(targetEntity = QualificationFrameworkListType.class, cascade = {
+
+    })
+    protected QualificationFrameworkListType qualificationFrameworkList;
 
     /**
      * Gets the value of the learningOutcome property.
@@ -107,6 +122,30 @@ public class LearningOutcomeListType
             learningOutcome = new ArrayList<LearningOutcomeType>();
         }
         return this.learningOutcome;
+    }
+
+    /**
+     * Ruft den Wert der qualificationFrameworkList-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link QualificationFrameworkListType }
+     *     
+     */
+    public QualificationFrameworkListType getQualificationFrameworkList() {
+        return qualificationFrameworkList;
+    }
+
+    /**
+     * Legt den Wert der qualificationFrameworkList-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link QualificationFrameworkListType }
+     *     
+     */
+    public void setQualificationFrameworkList(QualificationFrameworkListType value) {
+        this.qualificationFrameworkList = value;
     }
 
 }

@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.08 um 12:15:43 PM CET 
+// Generiert: 2015.12.09 um 05:23:53 PM CET 
 //
 
 
@@ -20,9 +20,13 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- * 				According to: C 155/14 Annex 1 - Definitions (c) -- ‘Unit of learning outcomes’ (unit) means a component of a qualification, consisting of a coherent set of knowledge, skills and
+ * 				According to: C 155/14 Annex 1 - Definitions (c)
+ * 				-- ‘Unit of learning outcomes’ (unit) means a component of a
+ * 				qualification, consisting of a coherent set of knowledge, skills and
  * 				competence, that can be
- * 				assessed and validated. Possibly ambiguous -> the child element which follow here is a set of learningOutcomes (which represent the KSC terms)
+ * 				assessed and validated. Possibly ambiguous
+ * 				-> the child element which follow here is a set of
+ * 				learningOutcomes (which represent the KSC terms)
  * 			
  * 
  * <p>Java-Klasse für unitType complex type.
@@ -38,7 +42,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="weightSum" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="relativeWeight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="learningOutcomeList" type="{}learningOutcomeListType"/&gt;
- *         &lt;element name="referenceLevelList" type="{}referenceLevelListType"/&gt;
+ *         &lt;element name="qualificationFrameworkList" type="{}qualificationFrameworkListType"/&gt;
  *         &lt;element name="evaluations" type="{}evaluationsType"/&gt;
  *         &lt;element name="unitList" type="{}unitListType" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
@@ -55,7 +59,7 @@ import javax.xml.bind.annotation.XmlType;
     "weightSum",
     "relativeWeight",
     "learningOutcomeList",
-    "referenceLevelList",
+    "qualificationFrameworkList",
     "evaluations",
     "unitList"
 })
@@ -79,10 +83,10 @@ public class UnitType
     })
     protected LearningOutcomeListType learningOutcomeList;
     @XmlElement(required = true)
-    @OneToOne(targetEntity = ReferenceLevelListType.class, cascade = {
+    @OneToOne(targetEntity = QualificationFrameworkListType.class, cascade = {
 
     })
-    protected ReferenceLevelListType referenceLevelList;
+    protected QualificationFrameworkListType qualificationFrameworkList;
     @XmlElement(required = true)
     protected EvaluationsType evaluations;
     @OneToOne(targetEntity = UnitListType.class, cascade = {
@@ -163,27 +167,27 @@ public class UnitType
     }
 
     /**
-     * Ruft den Wert der referenceLevelList-Eigenschaft ab.
+     * Ruft den Wert der qualificationFrameworkList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link ReferenceLevelListType }
+     *     {@link QualificationFrameworkListType }
      *     
      */
-    public ReferenceLevelListType getReferenceLevelList() {
-        return referenceLevelList;
+    public QualificationFrameworkListType getQualificationFrameworkList() {
+        return qualificationFrameworkList;
     }
 
     /**
-     * Legt den Wert der referenceLevelList-Eigenschaft fest.
+     * Legt den Wert der qualificationFrameworkList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link ReferenceLevelListType }
+     *     {@link QualificationFrameworkListType }
      *     
      */
-    public void setReferenceLevelList(ReferenceLevelListType value) {
-        this.referenceLevelList = value;
+    public void setQualificationFrameworkList(QualificationFrameworkListType value) {
+        this.qualificationFrameworkList = value;
     }
 
     /**

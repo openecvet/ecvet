@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.08 um 12:15:43 PM CET 
+// Generiert: 2015.12.09 um 05:23:53 PM CET 
 //
 
 
@@ -47,7 +47,7 @@ import javax.xml.bind.annotation.XmlType;
     "attachment"
 })
 @XmlSeeAlso({
-    TranscriptionOfRecordType.class,
+    TranscriptsOfRecordType.class,
     UserGuideType.class,
     LearningAgreementType.class,
     CertificateTemplateType.class

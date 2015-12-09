@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.08 um 12:15:43 PM CET 
+// Generiert: 2015.12.09 um 05:23:53 PM CET 
 //
 
 
@@ -65,11 +65,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TranscriptionOfRecordListType }
+     * Create an instance of {@link TranscriptsOfRecordListType }
      * 
      */
-    public TranscriptionOfRecordListType createTranscriptionOfRecordListType() {
-        return new TranscriptionOfRecordListType();
+    public TranscriptsOfRecordListType createTranscriptsOfRecordListType() {
+        return new TranscriptsOfRecordListType();
     }
 
     /**
@@ -81,11 +81,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TranscriptionOfRecordType }
+     * Create an instance of {@link TranscriptsOfRecordType }
      * 
      */
-    public TranscriptionOfRecordType createTranscriptionOfRecordType() {
-        return new TranscriptionOfRecordType();
+    public TranscriptsOfRecordType createTranscriptsOfRecordType() {
+        return new TranscriptsOfRecordType();
     }
 
     /**
@@ -113,19 +113,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReferenceLevelListType }
+     * Create an instance of {@link QualificationFrameworkListType }
      * 
      */
-    public ReferenceLevelListType createReferenceLevelListType() {
-        return new ReferenceLevelListType();
+    public QualificationFrameworkListType createQualificationFrameworkListType() {
+        return new QualificationFrameworkListType();
     }
 
     /**
-     * Create an instance of {@link ReferenceLevelType }
+     * Create an instance of {@link QualificationFrameworkType }
      * 
      */
-    public ReferenceLevelType createReferenceLevelType() {
-        return new ReferenceLevelType();
+    public QualificationFrameworkType createQualificationFrameworkType() {
+        return new QualificationFrameworkType();
     }
 
     /**
@@ -142,22 +142,6 @@ public class ObjectFactory {
      */
     public LearningOutcomeType createLearningOutcomeType() {
         return new LearningOutcomeType();
-    }
-
-    /**
-     * Create an instance of {@link LearningOutcomeTermListType }
-     * 
-     */
-    public LearningOutcomeTermListType createLearningOutcomeTermListType() {
-        return new LearningOutcomeTermListType();
-    }
-
-    /**
-     * Create an instance of {@link LearningOutcomeTermType }
-     * 
-     */
-    public LearningOutcomeTermType createLearningOutcomeTermType() {
-        return new LearningOutcomeTermType();
     }
 
     /**

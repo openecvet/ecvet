@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Erstellungszeit: 03. Dez 2015 um 13:39
+-- Erstellungszeit: 09. Dez 2015 um 17:29
 -- Server-Version: 5.5.46-0ubuntu0.14.04.2
 -- PHP-Version: 5.5.9-1ubuntu4.14
 
@@ -160,7 +160,7 @@ CREATE TABLE IF NOT EXISTS `complementarydocuments` (
   `TITLE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `URI` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `LEARNINGAGREEMENTLIST_ID` int(11) DEFAULT NULL,
-  `TRANSCRIPTIONOFRECORDLIST_ID` int(11) DEFAULT NULL,
+  `TRANSCRIPTSOFRECORDLIST_ID` int(11) DEFAULT NULL,
   `USERGUIDELIST_ID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -305,7 +305,8 @@ CREATE TABLE IF NOT EXISTS `learningoutcome` (
   `DESCRIPTION` longtext COLLATE utf8_bin,
   `TITLE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `URI` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `LEARNINGOUTCOMETERMLIST_ID` int(11) DEFAULT NULL
+  `WEIGHT` int(11) DEFAULT NULL,
+  `EVALUATIONS_ID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
@@ -319,7 +320,8 @@ CREATE TABLE IF NOT EXISTS `learningoutcomelist` (
   `ID` int(11) NOT NULL,
   `DESCRIPTION` longtext COLLATE utf8_bin,
   `TITLE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `URI` varchar(255) COLLATE utf8_bin DEFAULT NULL
+  `URI` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `QUALIFICATIONFRAMEWORKLIST_ID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
@@ -332,49 +334,6 @@ DROP TABLE IF EXISTS `learningoutcomelist_learningoutcome`;
 CREATE TABLE IF NOT EXISTS `learningoutcomelist_learningoutcome` (
   `learningoutcome_id` int(11) NOT NULL,
   `learningoutcomelist_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
--- --------------------------------------------------------
-
---
--- Tabellenstruktur für Tabelle `learningoutcometerm`
---
-
-DROP TABLE IF EXISTS `learningoutcometerm`;
-CREATE TABLE IF NOT EXISTS `learningoutcometerm` (
-  `ID` int(11) NOT NULL,
-  `DESCRIPTION` longtext COLLATE utf8_bin,
-  `TITLE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `URI` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `WEIGHT` int(11) DEFAULT NULL,
-  `EVALUATIONS_ID` int(11) DEFAULT NULL,
-  `REFERENCELEVELLIST_ID` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
--- --------------------------------------------------------
-
---
--- Tabellenstruktur für Tabelle `learningoutcometermlist`
---
-
-DROP TABLE IF EXISTS `learningoutcometermlist`;
-CREATE TABLE IF NOT EXISTS `learningoutcometermlist` (
-  `ID` int(11) NOT NULL,
-  `DESCRIPTION` longtext COLLATE utf8_bin,
-  `TITLE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `URI` varchar(255) COLLATE utf8_bin DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
--- --------------------------------------------------------
-
---
--- Tabellenstruktur für Tabelle `learningoutcometermlist_learningoutcometerm`
---
-
-DROP TABLE IF EXISTS `learningoutcometermlist_learningoutcometerm`;
-CREATE TABLE IF NOT EXISTS `learningoutcometermlist_learningoutcometerm` (
-  `learningoutcometermlist_id` int(11) NOT NULL,
-  `learningoutcometerm_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
@@ -531,6 +490,50 @@ CREATE TABLE IF NOT EXISTS `qualification` (
 -- --------------------------------------------------------
 
 --
+-- Tabellenstruktur für Tabelle `qualificationframework`
+--
+
+DROP TABLE IF EXISTS `qualificationframework`;
+CREATE TABLE IF NOT EXISTS `qualificationframework` (
+  `ID` int(11) NOT NULL,
+  `DESCRIPTION` longtext COLLATE utf8_bin,
+  `FRAMEWORK` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `FRAMEWORKLEVEL` int(11) DEFAULT NULL,
+  `FRAMEWORKTERM` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `INDICATOR` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `TITLE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `URI` varchar(255) COLLATE utf8_bin DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `qualificationframeworklist`
+--
+
+DROP TABLE IF EXISTS `qualificationframeworklist`;
+CREATE TABLE IF NOT EXISTS `qualificationframeworklist` (
+  `ID` int(11) NOT NULL,
+  `DESCRIPTION` longtext COLLATE utf8_bin,
+  `TITLE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `URI` varchar(255) COLLATE utf8_bin DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `qualificationframeworklist_qualificationframework`
+--
+
+DROP TABLE IF EXISTS `qualificationframeworklist_qualificationframework`;
+CREATE TABLE IF NOT EXISTS `qualificationframeworklist_qualificationframework` (
+  `qualificationframeworklist_id` int(11) NOT NULL,
+  `qualificationframework_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
 -- Tabellenstruktur für Tabelle `recognition`
 --
 
@@ -573,29 +576,11 @@ CREATE TABLE IF NOT EXISTS `recognitionlist_recognition` (
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `referencelevel`
+-- Tabellenstruktur für Tabelle `transcriptsofrecord`
 --
 
-DROP TABLE IF EXISTS `referencelevel`;
-CREATE TABLE IF NOT EXISTS `referencelevel` (
-  `ID` int(11) NOT NULL,
-  `DESCRIPTION` longtext COLLATE utf8_bin,
-  `FRAMEWORK` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `FRAMEWORKLEVEL` int(11) DEFAULT NULL,
-  `FRAMEWORKTERM` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `INDICATOR` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `TITLE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `URI` varchar(255) COLLATE utf8_bin DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
--- --------------------------------------------------------
-
---
--- Tabellenstruktur für Tabelle `referencelevellist`
---
-
-DROP TABLE IF EXISTS `referencelevellist`;
-CREATE TABLE IF NOT EXISTS `referencelevellist` (
+DROP TABLE IF EXISTS `transcriptsofrecord`;
+CREATE TABLE IF NOT EXISTS `transcriptsofrecord` (
   `ID` int(11) NOT NULL,
   `DESCRIPTION` longtext COLLATE utf8_bin,
   `TITLE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
@@ -605,23 +590,11 @@ CREATE TABLE IF NOT EXISTS `referencelevellist` (
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `referencelevellist_referencelevel`
+-- Tabellenstruktur für Tabelle `transcriptsofrecordlist`
 --
 
-DROP TABLE IF EXISTS `referencelevellist_referencelevel`;
-CREATE TABLE IF NOT EXISTS `referencelevellist_referencelevel` (
-  `referencelevellist_id` int(11) NOT NULL,
-  `referencelevel_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
--- --------------------------------------------------------
-
---
--- Tabellenstruktur für Tabelle `transcriptionofrecord`
---
-
-DROP TABLE IF EXISTS `transcriptionofrecord`;
-CREATE TABLE IF NOT EXISTS `transcriptionofrecord` (
+DROP TABLE IF EXISTS `transcriptsofrecordlist`;
+CREATE TABLE IF NOT EXISTS `transcriptsofrecordlist` (
   `ID` int(11) NOT NULL,
   `DESCRIPTION` longtext COLLATE utf8_bin,
   `TITLE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
@@ -631,37 +604,23 @@ CREATE TABLE IF NOT EXISTS `transcriptionofrecord` (
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `transcriptionofrecordlist`
+-- Tabellenstruktur für Tabelle `transcriptsofrecordlist_transcriptsofrecord`
 --
 
-DROP TABLE IF EXISTS `transcriptionofrecordlist`;
-CREATE TABLE IF NOT EXISTS `transcriptionofrecordlist` (
-  `ID` int(11) NOT NULL,
-  `DESCRIPTION` longtext COLLATE utf8_bin,
-  `TITLE` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `URI` varchar(255) COLLATE utf8_bin DEFAULT NULL
+DROP TABLE IF EXISTS `transcriptsofrecordlist_transcriptsofrecord`;
+CREATE TABLE IF NOT EXISTS `transcriptsofrecordlist_transcriptsofrecord` (
+  `transcriptsofrecordlist_id` int(11) NOT NULL,
+  `transcriptsofrecord_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `transcriptionofrecordlist_transcriptionofrecord`
+-- Tabellenstruktur für Tabelle `transcriptsofrecord_attachment`
 --
 
-DROP TABLE IF EXISTS `transcriptionofrecordlist_transcriptionofrecord`;
-CREATE TABLE IF NOT EXISTS `transcriptionofrecordlist_transcriptionofrecord` (
-  `transcriptionofrecordlist_id` int(11) NOT NULL,
-  `transcriptionofrecord_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
--- --------------------------------------------------------
-
---
--- Tabellenstruktur für Tabelle `transcriptionofrecord_attachment`
---
-
-DROP TABLE IF EXISTS `transcriptionofrecord_attachment`;
-CREATE TABLE IF NOT EXISTS `transcriptionofrecord_attachment` (
+DROP TABLE IF EXISTS `transcriptsofrecord_attachment`;
+CREATE TABLE IF NOT EXISTS `transcriptsofrecord_attachment` (
   `attachments_id` int(11) NOT NULL,
   `attachment_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -683,7 +642,7 @@ CREATE TABLE IF NOT EXISTS `unit` (
   `WEIGHTSUM` int(11) DEFAULT NULL,
   `EVALUATIONS_ID` int(11) DEFAULT NULL,
   `LEARNINGOUTCOMELIST_ID` int(11) DEFAULT NULL,
-  `REFERENCELEVELLIST_ID` int(11) DEFAULT NULL,
+  `QUALIFICATIONFRAMEWORKLIST_ID` int(11) DEFAULT NULL,
   `UNITLIST_ID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -868,7 +827,7 @@ ALTER TABLE `competentinstitutionlist_competentinstitution`
 -- Indizes für die Tabelle `complementarydocuments`
 --
 ALTER TABLE `complementarydocuments`
-  ADD PRIMARY KEY (`ID`), ADD KEY `complementarydocumentsTRANSCRIPTIONOFRECORDLIST_ID` (`TRANSCRIPTIONOFRECORDLIST_ID`), ADD KEY `FK_complementarydocuments_LEARNINGAGREEMENTLIST_ID` (`LEARNINGAGREEMENTLIST_ID`), ADD KEY `FK_complementarydocuments_USERGUIDELIST_ID` (`USERGUIDELIST_ID`);
+  ADD PRIMARY KEY (`ID`), ADD KEY `complementarydocuments_TRANSCRIPTSOFRECORDLIST_ID` (`TRANSCRIPTSOFRECORDLIST_ID`), ADD KEY `FK_complementarydocuments_LEARNINGAGREEMENTLIST_ID` (`LEARNINGAGREEMENTLIST_ID`), ADD KEY `FK_complementarydocuments_USERGUIDELIST_ID` (`USERGUIDELIST_ID`);
 
 --
 -- Indizes für die Tabelle `confirmingrequirement`
@@ -928,37 +887,19 @@ ALTER TABLE `learningagreement_attachment`
 -- Indizes für die Tabelle `learningoutcome`
 --
 ALTER TABLE `learningoutcome`
-  ADD PRIMARY KEY (`ID`), ADD KEY `FK_learningoutcome_LEARNINGOUTCOMETERMLIST_ID` (`LEARNINGOUTCOMETERMLIST_ID`);
+  ADD PRIMARY KEY (`ID`), ADD KEY `FK_learningoutcome_EVALUATIONS_ID` (`EVALUATIONS_ID`);
 
 --
 -- Indizes für die Tabelle `learningoutcomelist`
 --
 ALTER TABLE `learningoutcomelist`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`ID`), ADD KEY `learningoutcomelist_QUALIFICATIONFRAMEWORKLIST_ID` (`QUALIFICATIONFRAMEWORKLIST_ID`);
 
 --
 -- Indizes für die Tabelle `learningoutcomelist_learningoutcome`
 --
 ALTER TABLE `learningoutcomelist_learningoutcome`
   ADD PRIMARY KEY (`learningoutcome_id`,`learningoutcomelist_id`), ADD KEY `lrnngoutcomelistlearningoutcomelrningoutcomelistid` (`learningoutcomelist_id`);
-
---
--- Indizes für die Tabelle `learningoutcometerm`
---
-ALTER TABLE `learningoutcometerm`
-  ADD PRIMARY KEY (`ID`), ADD KEY `FK_learningoutcometerm_REFERENCELEVELLIST_ID` (`REFERENCELEVELLIST_ID`), ADD KEY `FK_learningoutcometerm_EVALUATIONS_ID` (`EVALUATIONS_ID`);
-
---
--- Indizes für die Tabelle `learningoutcometermlist`
---
-ALTER TABLE `learningoutcometermlist`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indizes für die Tabelle `learningoutcometermlist_learningoutcometerm`
---
-ALTER TABLE `learningoutcometermlist_learningoutcometerm`
-  ADD PRIMARY KEY (`learningoutcometermlist_id`,`learningoutcometerm_id`), ADD KEY `lrnngtcmtermlistlearningoutcometermlrnngtcmetermid` (`learningoutcometerm_id`);
 
 --
 -- Indizes für die Tabelle `legislation`
@@ -1027,6 +968,24 @@ ALTER TABLE `qualification`
   ADD PRIMARY KEY (`ID`), ADD KEY `FK_qualification_UNITLIST_ID` (`UNITLIST_ID`);
 
 --
+-- Indizes für die Tabelle `qualificationframework`
+--
+ALTER TABLE `qualificationframework`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indizes für die Tabelle `qualificationframeworklist`
+--
+ALTER TABLE `qualificationframeworklist`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indizes für die Tabelle `qualificationframeworklist_qualificationframework`
+--
+ALTER TABLE `qualificationframeworklist_qualificationframework`
+  ADD PRIMARY KEY (`qualificationframeworklist_id`,`qualificationframework_id`), ADD KEY `qlfctnfrmwrklstqualificationframeworkqlfctnfrmwrkd` (`qualificationframework_id`);
+
+--
 -- Indizes für die Tabelle `recognition`
 --
 ALTER TABLE `recognition`
@@ -1045,52 +1004,34 @@ ALTER TABLE `recognitionlist_recognition`
   ADD PRIMARY KEY (`recognitionlist_id`,`recognition_id`), ADD KEY `FK_recognitionlist_recognition_recognition_id` (`recognition_id`);
 
 --
--- Indizes für die Tabelle `referencelevel`
+-- Indizes für die Tabelle `transcriptsofrecord`
 --
-ALTER TABLE `referencelevel`
+ALTER TABLE `transcriptsofrecord`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indizes für die Tabelle `referencelevellist`
+-- Indizes für die Tabelle `transcriptsofrecordlist`
 --
-ALTER TABLE `referencelevellist`
+ALTER TABLE `transcriptsofrecordlist`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indizes für die Tabelle `referencelevellist_referencelevel`
+-- Indizes für die Tabelle `transcriptsofrecordlist_transcriptsofrecord`
 --
-ALTER TABLE `referencelevellist_referencelevel`
-  ADD PRIMARY KEY (`referencelevellist_id`,`referencelevel_id`), ADD KEY `referencelevellist_referencelevelreferencelevel_id` (`referencelevel_id`);
+ALTER TABLE `transcriptsofrecordlist_transcriptsofrecord`
+  ADD PRIMARY KEY (`transcriptsofrecordlist_id`,`transcriptsofrecord_id`), ADD KEY `trnscrptsfrcrdlsttrnscriptsofrecordtrnscrptsfrcrdd` (`transcriptsofrecord_id`);
 
 --
--- Indizes für die Tabelle `transcriptionofrecord`
+-- Indizes für die Tabelle `transcriptsofrecord_attachment`
 --
-ALTER TABLE `transcriptionofrecord`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indizes für die Tabelle `transcriptionofrecordlist`
---
-ALTER TABLE `transcriptionofrecordlist`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Indizes für die Tabelle `transcriptionofrecordlist_transcriptionofrecord`
---
-ALTER TABLE `transcriptionofrecordlist_transcriptionofrecord`
-  ADD PRIMARY KEY (`transcriptionofrecordlist_id`,`transcriptionofrecord_id`), ADD KEY `trnscrptnfrcrdlsttrnscrptonofrecordtrnscrptnfrcrdd` (`transcriptionofrecord_id`);
-
---
--- Indizes für die Tabelle `transcriptionofrecord_attachment`
---
-ALTER TABLE `transcriptionofrecord_attachment`
-  ADD PRIMARY KEY (`attachments_id`,`attachment_id`), ADD KEY `FK_transcriptionofrecord_attachment_attachment_id` (`attachment_id`);
+ALTER TABLE `transcriptsofrecord_attachment`
+  ADD PRIMARY KEY (`attachments_id`,`attachment_id`), ADD KEY `FK_transcriptsofrecord_attachment_attachment_id` (`attachment_id`);
 
 --
 -- Indizes für die Tabelle `unit`
 --
 ALTER TABLE `unit`
-  ADD PRIMARY KEY (`ID`), ADD KEY `FK_unit_REFERENCELEVELLIST_ID` (`REFERENCELEVELLIST_ID`), ADD KEY `FK_unit_EVALUATIONS_ID` (`EVALUATIONS_ID`), ADD KEY `FK_unit_LEARNINGOUTCOMELIST_ID` (`LEARNINGOUTCOMELIST_ID`), ADD KEY `FK_unit_UNITLIST_ID` (`UNITLIST_ID`);
+  ADD PRIMARY KEY (`ID`), ADD KEY `FK_unit_EVALUATIONS_ID` (`EVALUATIONS_ID`), ADD KEY `FK_unit_LEARNINGOUTCOMELIST_ID` (`LEARNINGOUTCOMELIST_ID`), ADD KEY `FK_unit_QUALIFICATIONFRAMEWORKLIST_ID` (`QUALIFICATIONFRAMEWORKLIST_ID`), ADD KEY `FK_unit_UNITLIST_ID` (`UNITLIST_ID`);
 
 --
 -- Indizes für die Tabelle `unitlist`
@@ -1226,16 +1167,6 @@ ALTER TABLE `learningoutcome`
 ALTER TABLE `learningoutcomelist`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT für Tabelle `learningoutcometerm`
---
-ALTER TABLE `learningoutcometerm`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT für Tabelle `learningoutcometermlist`
---
-ALTER TABLE `learningoutcometermlist`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
---
 -- AUTO_INCREMENT für Tabelle `legislation`
 --
 ALTER TABLE `legislation`
@@ -1276,6 +1207,16 @@ ALTER TABLE `processlist`
 ALTER TABLE `qualification`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT für Tabelle `qualificationframework`
+--
+ALTER TABLE `qualificationframework`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT für Tabelle `qualificationframeworklist`
+--
+ALTER TABLE `qualificationframeworklist`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT für Tabelle `recognition`
 --
 ALTER TABLE `recognition`
@@ -1286,24 +1227,14 @@ ALTER TABLE `recognition`
 ALTER TABLE `recognitionlist`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT für Tabelle `referencelevel`
+-- AUTO_INCREMENT für Tabelle `transcriptsofrecord`
 --
-ALTER TABLE `referencelevel`
+ALTER TABLE `transcriptsofrecord`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT für Tabelle `referencelevellist`
+-- AUTO_INCREMENT für Tabelle `transcriptsofrecordlist`
 --
-ALTER TABLE `referencelevellist`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT für Tabelle `transcriptionofrecord`
---
-ALTER TABLE `transcriptionofrecord`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT für Tabelle `transcriptionofrecordlist`
---
-ALTER TABLE `transcriptionofrecordlist`
+ALTER TABLE `transcriptsofrecordlist`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT für Tabelle `unit`
@@ -1379,7 +1310,7 @@ ADD CONSTRAINT `cmptntnstttnlistcompetentinstitutioncmptntnstttnid` FOREIGN KEY 
 --
 ALTER TABLE `complementarydocuments`
 ADD CONSTRAINT `FK_complementarydocuments_USERGUIDELIST_ID` FOREIGN KEY (`USERGUIDELIST_ID`) REFERENCES `userguidelist` (`ID`),
-ADD CONSTRAINT `complementarydocumentsTRANSCRIPTIONOFRECORDLIST_ID` FOREIGN KEY (`TRANSCRIPTIONOFRECORDLIST_ID`) REFERENCES `transcriptionofrecordlist` (`ID`),
+ADD CONSTRAINT `complementarydocuments_TRANSCRIPTSOFRECORDLIST_ID` FOREIGN KEY (`TRANSCRIPTSOFRECORDLIST_ID`) REFERENCES `transcriptsofrecordlist` (`ID`),
 ADD CONSTRAINT `FK_complementarydocuments_LEARNINGAGREEMENTLIST_ID` FOREIGN KEY (`LEARNINGAGREEMENTLIST_ID`) REFERENCES `learningagreementlist` (`ID`);
 
 --
@@ -1423,7 +1354,13 @@ ADD CONSTRAINT `FK_learningagreement_attachment_attachments_id` FOREIGN KEY (`at
 -- Constraints der Tabelle `learningoutcome`
 --
 ALTER TABLE `learningoutcome`
-ADD CONSTRAINT `FK_learningoutcome_LEARNINGOUTCOMETERMLIST_ID` FOREIGN KEY (`LEARNINGOUTCOMETERMLIST_ID`) REFERENCES `learningoutcometermlist` (`ID`);
+ADD CONSTRAINT `FK_learningoutcome_EVALUATIONS_ID` FOREIGN KEY (`EVALUATIONS_ID`) REFERENCES `evaluations` (`ID`);
+
+--
+-- Constraints der Tabelle `learningoutcomelist`
+--
+ALTER TABLE `learningoutcomelist`
+ADD CONSTRAINT `learningoutcomelist_QUALIFICATIONFRAMEWORKLIST_ID` FOREIGN KEY (`QUALIFICATIONFRAMEWORKLIST_ID`) REFERENCES `qualificationframeworklist` (`ID`);
 
 --
 -- Constraints der Tabelle `learningoutcomelist_learningoutcome`
@@ -1431,20 +1368,6 @@ ADD CONSTRAINT `FK_learningoutcome_LEARNINGOUTCOMETERMLIST_ID` FOREIGN KEY (`LEA
 ALTER TABLE `learningoutcomelist_learningoutcome`
 ADD CONSTRAINT `larningoutcomelistlearningoutcomelearningoutcomeid` FOREIGN KEY (`learningoutcome_id`) REFERENCES `learningoutcomelist` (`ID`),
 ADD CONSTRAINT `lrnngoutcomelistlearningoutcomelrningoutcomelistid` FOREIGN KEY (`learningoutcomelist_id`) REFERENCES `learningoutcome` (`ID`);
-
---
--- Constraints der Tabelle `learningoutcometerm`
---
-ALTER TABLE `learningoutcometerm`
-ADD CONSTRAINT `FK_learningoutcometerm_EVALUATIONS_ID` FOREIGN KEY (`EVALUATIONS_ID`) REFERENCES `evaluations` (`ID`),
-ADD CONSTRAINT `FK_learningoutcometerm_REFERENCELEVELLIST_ID` FOREIGN KEY (`REFERENCELEVELLIST_ID`) REFERENCES `referencelevellist` (`ID`);
-
---
--- Constraints der Tabelle `learningoutcometermlist_learningoutcometerm`
---
-ALTER TABLE `learningoutcometermlist_learningoutcometerm`
-ADD CONSTRAINT `lrnngtcmtrmlstlearningoutcometermlrnngtcmtrmlistid` FOREIGN KEY (`learningoutcometermlist_id`) REFERENCES `learningoutcometermlist` (`ID`),
-ADD CONSTRAINT `lrnngtcmtermlistlearningoutcometermlrnngtcmetermid` FOREIGN KEY (`learningoutcometerm_id`) REFERENCES `learningoutcometerm` (`ID`);
 
 --
 -- Constraints der Tabelle `methodlist_method`
@@ -1474,6 +1397,13 @@ ALTER TABLE `qualification`
 ADD CONSTRAINT `FK_qualification_UNITLIST_ID` FOREIGN KEY (`UNITLIST_ID`) REFERENCES `unitlist` (`ID`);
 
 --
+-- Constraints der Tabelle `qualificationframeworklist_qualificationframework`
+--
+ALTER TABLE `qualificationframeworklist_qualificationframework`
+ADD CONSTRAINT `qlfctnfrmwrklstqualificationframeworkqlfctnfrmwrkd` FOREIGN KEY (`qualificationframework_id`) REFERENCES `qualificationframework` (`ID`),
+ADD CONSTRAINT `qlfctnfrmwrklstqlficationframeworkqlfctnfrmwrklstd` FOREIGN KEY (`qualificationframeworklist_id`) REFERENCES `qualificationframeworklist` (`ID`);
+
+--
 -- Constraints der Tabelle `recognition`
 --
 ALTER TABLE `recognition`
@@ -1487,25 +1417,18 @@ ADD CONSTRAINT `FK_recognitionlist_recognition_recognition_id` FOREIGN KEY (`rec
 ADD CONSTRAINT `FK_recognitionlist_recognition_recognitionlist_id` FOREIGN KEY (`recognitionlist_id`) REFERENCES `recognitionlist` (`ID`);
 
 --
--- Constraints der Tabelle `referencelevellist_referencelevel`
+-- Constraints der Tabelle `transcriptsofrecordlist_transcriptsofrecord`
 --
-ALTER TABLE `referencelevellist_referencelevel`
-ADD CONSTRAINT `referencelevellist_referencelevelreferencelevel_id` FOREIGN KEY (`referencelevel_id`) REFERENCES `referencelevel` (`ID`),
-ADD CONSTRAINT `rferencelevellistreferencelevelrferencelevellistid` FOREIGN KEY (`referencelevellist_id`) REFERENCES `referencelevellist` (`ID`);
+ALTER TABLE `transcriptsofrecordlist_transcriptsofrecord`
+ADD CONSTRAINT `trnscrptsfrcrdlsttrnscriptsofrecordtrnscrptsfrcrdd` FOREIGN KEY (`transcriptsofrecord_id`) REFERENCES `transcriptsofrecord` (`ID`),
+ADD CONSTRAINT `trnscrptsfrcrdlsttrnscrptsfrcordtrnscrptsfrcrdlstd` FOREIGN KEY (`transcriptsofrecordlist_id`) REFERENCES `transcriptsofrecordlist` (`ID`);
 
 --
--- Constraints der Tabelle `transcriptionofrecordlist_transcriptionofrecord`
+-- Constraints der Tabelle `transcriptsofrecord_attachment`
 --
-ALTER TABLE `transcriptionofrecordlist_transcriptionofrecord`
-ADD CONSTRAINT `trnscrptnfrcrdlsttrnscrptonofrecordtrnscrptnfrcrdd` FOREIGN KEY (`transcriptionofrecord_id`) REFERENCES `transcriptionofrecord` (`ID`),
-ADD CONSTRAINT `trnscrptnfrcrdlsttrnscrptnfrcordtrnscrptnfrcrdlstd` FOREIGN KEY (`transcriptionofrecordlist_id`) REFERENCES `transcriptionofrecordlist` (`ID`);
-
---
--- Constraints der Tabelle `transcriptionofrecord_attachment`
---
-ALTER TABLE `transcriptionofrecord_attachment`
-ADD CONSTRAINT `FK_transcriptionofrecord_attachment_attachments_id` FOREIGN KEY (`attachments_id`) REFERENCES `transcriptionofrecord` (`ID`),
-ADD CONSTRAINT `FK_transcriptionofrecord_attachment_attachment_id` FOREIGN KEY (`attachment_id`) REFERENCES `attachment` (`ID`);
+ALTER TABLE `transcriptsofrecord_attachment`
+ADD CONSTRAINT `FK_transcriptsofrecord_attachment_attachments_id` FOREIGN KEY (`attachments_id`) REFERENCES `transcriptsofrecord` (`ID`),
+ADD CONSTRAINT `FK_transcriptsofrecord_attachment_attachment_id` FOREIGN KEY (`attachment_id`) REFERENCES `attachment` (`ID`);
 
 --
 -- Constraints der Tabelle `unit`
@@ -1514,7 +1437,7 @@ ALTER TABLE `unit`
 ADD CONSTRAINT `FK_unit_UNITLIST_ID` FOREIGN KEY (`UNITLIST_ID`) REFERENCES `unitlist` (`ID`),
 ADD CONSTRAINT `FK_unit_EVALUATIONS_ID` FOREIGN KEY (`EVALUATIONS_ID`) REFERENCES `evaluations` (`ID`),
 ADD CONSTRAINT `FK_unit_LEARNINGOUTCOMELIST_ID` FOREIGN KEY (`LEARNINGOUTCOMELIST_ID`) REFERENCES `learningoutcomelist` (`ID`),
-ADD CONSTRAINT `FK_unit_REFERENCELEVELLIST_ID` FOREIGN KEY (`REFERENCELEVELLIST_ID`) REFERENCES `referencelevellist` (`ID`);
+ADD CONSTRAINT `FK_unit_QUALIFICATIONFRAMEWORKLIST_ID` FOREIGN KEY (`QUALIFICATIONFRAMEWORKLIST_ID`) REFERENCES `qualificationframeworklist` (`ID`);
 
 --
 -- Constraints der Tabelle `unitlist_unit`

@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.08 um 12:15:43 PM CET 
+// Generiert: 2015.12.09 um 05:23:53 PM CET 
 //
 
 
@@ -20,9 +20,15 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- * 				ANNEX II ECVET — PRINCIPLES AND TECHNICAL SPECIFICATIONS -- ECVET tools and methodology comprise the description of qualifi­cations in terms of units of learning outcomes with
+ * 				ANNEX II ECVET — PRINCIPLES AND TECHNICAL
+ * 				SPECIFICATIONS -- ECVET tools and methodology comprise the
+ * 				description of qualifi­cations in terms of units of learning
+ * 				outcomes with
  * 				associated points, a
- * 				transfer and accumulation process andcomplementary documents such as learning agreements, transcripts of records and ECVET users’ guides. TODO: own type with file attachments
+ * 				transfer and accumulation process
+ * 				andcomplementary documents such as learning agreements, transcripts
+ * 				of records and ECVET users’ guides. TODO: own type with file
+ * 				attachments
  * 			
  * 
  * <p>Java-Klasse für complementaryDocumentsType complex type.
@@ -35,7 +41,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="learningAgreementList" type="{}learningAgreementListType"/&gt;
- *         &lt;element name="transcriptionOfRecordList" type="{}transcriptionOfRecordListType"/&gt;
+ *         &lt;element name="transcriptsOfRecordList" type="{}transcriptsOfRecordListType"/&gt;
  *         &lt;element name="userGuideList" type="{}userGuideListType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
@@ -48,7 +54,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "complementaryDocumentsType", propOrder = {
     "learningAgreementList",
-    "transcriptionOfRecordList",
+    "transcriptsOfRecordList",
     "userGuideList"
 })
 @Entity
@@ -68,10 +74,10 @@ public class ComplementaryDocumentsType
     })
     protected LearningAgreementListType learningAgreementList;
     @XmlElement(required = true)
-    @OneToOne(targetEntity = TranscriptionOfRecordListType.class, cascade = {
+    @OneToOne(targetEntity = TranscriptsOfRecordListType.class, cascade = {
 
     })
-    protected TranscriptionOfRecordListType transcriptionOfRecordList;
+    protected TranscriptsOfRecordListType transcriptsOfRecordList;
     @XmlElement(required = true)
     @OneToOne(targetEntity = UserGuideListType.class, cascade = {
 
@@ -103,27 +109,27 @@ public class ComplementaryDocumentsType
     }
 
     /**
-     * Ruft den Wert der transcriptionOfRecordList-Eigenschaft ab.
+     * Ruft den Wert der transcriptsOfRecordList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link TranscriptionOfRecordListType }
+     *     {@link TranscriptsOfRecordListType }
      *     
      */
-    public TranscriptionOfRecordListType getTranscriptionOfRecordList() {
-        return transcriptionOfRecordList;
+    public TranscriptsOfRecordListType getTranscriptsOfRecordList() {
+        return transcriptsOfRecordList;
     }
 
     /**
-     * Legt den Wert der transcriptionOfRecordList-Eigenschaft fest.
+     * Legt den Wert der transcriptsOfRecordList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link TranscriptionOfRecordListType }
+     *     {@link TranscriptsOfRecordListType }
      *     
      */
-    public void setTranscriptionOfRecordList(TranscriptionOfRecordListType value) {
-        this.transcriptionOfRecordList = value;
+    public void setTranscriptsOfRecordList(TranscriptsOfRecordListType value) {
+        this.transcriptsOfRecordList = value;
     }
 
     /**

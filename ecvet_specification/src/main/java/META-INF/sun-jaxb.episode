@@ -5,7 +5,7 @@
 Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-Generiert: 2015.12.08 um 12:15:43 PM CET 
+Generiert: 2015.12.09 um 05:23:53 PM CET 
 
   -->
   <jaxb:bindings scd="x-schema::">
@@ -21,14 +21,14 @@ Generiert: 2015.12.08 um 12:15:43 PM CET
     <jaxb:bindings scd="~complementaryDocumentsType">
       <jaxb:class ref="eu.open_ecvet.entity.ComplementaryDocumentsType"/>
     </jaxb:bindings>
-    <jaxb:bindings scd="~transcriptionOfRecordListType">
-      <jaxb:class ref="eu.open_ecvet.entity.TranscriptionOfRecordListType"/>
+    <jaxb:bindings scd="~transcriptsOfRecordListType">
+      <jaxb:class ref="eu.open_ecvet.entity.TranscriptsOfRecordListType"/>
     </jaxb:bindings>
     <jaxb:bindings scd="~userGuideListType">
       <jaxb:class ref="eu.open_ecvet.entity.UserGuideListType"/>
     </jaxb:bindings>
-    <jaxb:bindings scd="~transcriptionOfRecordType">
-      <jaxb:class ref="eu.open_ecvet.entity.TranscriptionOfRecordType"/>
+    <jaxb:bindings scd="~transcriptsOfRecordType">
+      <jaxb:class ref="eu.open_ecvet.entity.TranscriptsOfRecordType"/>
     </jaxb:bindings>
     <jaxb:bindings scd="~userGuideType">
       <jaxb:class ref="eu.open_ecvet.entity.UserGuideType"/>
@@ -39,23 +39,17 @@ Generiert: 2015.12.08 um 12:15:43 PM CET
     <jaxb:bindings scd="~unitType">
       <jaxb:class ref="eu.open_ecvet.entity.UnitType"/>
     </jaxb:bindings>
-    <jaxb:bindings scd="~referenceLevelListType">
-      <jaxb:class ref="eu.open_ecvet.entity.ReferenceLevelListType"/>
+    <jaxb:bindings scd="~qualificationFrameworkListType">
+      <jaxb:class ref="eu.open_ecvet.entity.QualificationFrameworkListType"/>
     </jaxb:bindings>
-    <jaxb:bindings scd="~referenceLevelType">
-      <jaxb:class ref="eu.open_ecvet.entity.ReferenceLevelType"/>
+    <jaxb:bindings scd="~qualificationFrameworkType">
+      <jaxb:class ref="eu.open_ecvet.entity.QualificationFrameworkType"/>
     </jaxb:bindings>
     <jaxb:bindings scd="~learningOutcomeListType">
       <jaxb:class ref="eu.open_ecvet.entity.LearningOutcomeListType"/>
     </jaxb:bindings>
     <jaxb:bindings scd="~learningOutcomeType">
       <jaxb:class ref="eu.open_ecvet.entity.LearningOutcomeType"/>
-    </jaxb:bindings>
-    <jaxb:bindings scd="~learningOutcomeTermListType">
-      <jaxb:class ref="eu.open_ecvet.entity.LearningOutcomeTermListType"/>
-    </jaxb:bindings>
-    <jaxb:bindings scd="~learningOutcomeTermType">
-      <jaxb:class ref="eu.open_ecvet.entity.LearningOutcomeTermType"/>
     </jaxb:bindings>
     <jaxb:bindings scd="~evaluationsType">
       <jaxb:class ref="eu.open_ecvet.entity.EvaluationsType"/>

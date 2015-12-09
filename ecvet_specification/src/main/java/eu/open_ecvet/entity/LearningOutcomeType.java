@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.08 um 12:15:43 PM CET 
+// Generiert: 2015.12.09 um 05:23:53 PM CET 
 //
 
 
@@ -20,7 +20,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- * 				According to: C 155/14 Annex 1 - Definitions (b) -- a single learning outcome represents the statement, which is described in the defintion
+ * 				According to: C 155/14 Annex 1 - Definitions (b)
+ * 				-- a single learning outcome represents the statement, which is
+ * 				described in the defintion
  * 			
  * 
  * <p>Java-Klasse für learningOutcomeType complex type.
@@ -33,7 +35,8 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="credit" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="learningOutcomeTermList" type="{}learningOutcomeTermListType"/&gt;
+ *         &lt;element name="weight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="evaluations" type="{}evaluationsType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -45,7 +48,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "learningOutcomeType", propOrder = {
     "credit",
-    "learningOutcomeTermList"
+    "weight",
+    "evaluations"
 })
 @Entity
 @Table(indexes = {
@@ -59,11 +63,12 @@ public class LearningOutcomeType
 {
 
     protected int credit;
+    protected int weight;
     @XmlElement(required = true)
-    @OneToOne(targetEntity = LearningOutcomeTermListType.class, cascade = {
+    @OneToOne(targetEntity = EvaluationsType.class, cascade = {
 
     })
-    protected LearningOutcomeTermListType learningOutcomeTermList;
+    protected EvaluationsType evaluations;
 
     /**
      * Ruft den Wert der credit-Eigenschaft ab.
@@ -82,27 +87,43 @@ public class LearningOutcomeType
     }
 
     /**
-     * Ruft den Wert der learningOutcomeTermList-Eigenschaft ab.
+     * Ruft den Wert der weight-Eigenschaft ab.
      * 
-     * @return
-     *     possible object is
-     *     {@link LearningOutcomeTermListType }
-     *     
      */
-    public LearningOutcomeTermListType getLearningOutcomeTermList() {
-        return learningOutcomeTermList;
+    public int getWeight() {
+        return weight;
     }
 
     /**
-     * Legt den Wert der learningOutcomeTermList-Eigenschaft fest.
+     * Legt den Wert der weight-Eigenschaft fest.
+     * 
+     */
+    public void setWeight(int value) {
+        this.weight = value;
+    }
+
+    /**
+     * Ruft den Wert der evaluations-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link EvaluationsType }
+     *     
+     */
+    public EvaluationsType getEvaluations() {
+        return evaluations;
+    }
+
+    /**
+     * Legt den Wert der evaluations-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link LearningOutcomeTermListType }
+     *     {@link EvaluationsType }
      *     
      */
-    public void setLearningOutcomeTermList(LearningOutcomeTermListType value) {
-        this.learningOutcomeTermList = value;
+    public void setEvaluations(EvaluationsType value) {
+        this.evaluations = value;
     }
 
 }
