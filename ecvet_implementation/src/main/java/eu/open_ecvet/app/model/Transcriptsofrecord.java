@@ -15,7 +15,7 @@ import java.util.Locale;
 import eu.open_ecvet.app.data_src.EcvetH2;
 
 
-public class Transcriptionofrecord extends VirtualTable implements StaticInstanceSupport // ${GENERATED-CODE-LINE:VT_SUPERCLASS}
+public class Transcriptsofrecord extends VirtualTable implements StaticInstanceSupport // ${GENERATED-CODE-LINE:VT_SUPERCLASS}
 {
 	
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
@@ -56,10 +56,10 @@ public class Transcriptionofrecord extends VirtualTable implements StaticInstanc
 	}
 	
 	
-	public Transcriptionofrecord()
+	public Transcriptsofrecord()
 	{
-		super(Transcriptionofrecord.class.getName(),"PUBLIC","TRANSCRIPTIONOFRECORD",ID,
-				DESCRIPTION,TITLE,URI);
+		super(Transcriptsofrecord.class.getName(),"PUBLIC","TRANSCRIPTSOFRECORD",ID,DESCRIPTION,
+				TITLE,URI);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(TITLE);
@@ -67,10 +67,10 @@ public class Transcriptionofrecord extends VirtualTable implements StaticInstanc
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"ID"));
 	}
 	
-	public final static Transcriptionofrecord	VT	= new Transcriptionofrecord();
+	public final static Transcriptsofrecord	VT	= new Transcriptsofrecord();
 	
 	
-	public static Transcriptionofrecord getInstance()
+	public static Transcriptsofrecord getInstance()
 	{
 		return VT;
 	}

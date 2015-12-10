@@ -196,7 +196,7 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 33
+                                "zpos": 35
                             }
                         },
                         "-fieldName": {
@@ -267,7 +267,7 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 32
+                                "zpos": 34
                             }
                         },
                         "-fieldName": {
@@ -338,7 +338,7 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 31
+                                "zpos": 33
                             }
                         },
                         "-fieldName": {
@@ -409,7 +409,7 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 29
+                                "zpos": 31
                             }
                         },
                         "-fieldName": {
@@ -450,7 +450,7 @@
                                 }
                             },
                             "-fieldName": {
-                                "value": "referenceLevelListWindowContainer"
+                                "value": "qualificationFrameworkListWindowContainer"
                             },
                             "height": {
                                 "value": 558
@@ -468,7 +468,7 @@
                                 "value": 3
                             },
                             "xdevWindow": {
-                                "code": "new ReferenceLevelListView(self)"
+                                "code": "new QualificationFrameworkListView(self)"
                             },
                             "y": {
                                 "value": 3
@@ -480,14 +480,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 30
+                                "zpos": 32
                             }
                         },
                         "-fieldName": {
-                            "value": "referenceLevelListTab"
+                            "value": "qualificationFrameworkListTab"
                         },
                         "index": {
-                            "value": 35
+                            "value": 33
                         },
                         "layout": {
                             "value": {
@@ -496,7 +496,7 @@
                             }
                         },
                         "title": {
-                            "value": "Reference Level List"
+                            "value": "Qualification Framework List"
                         }
                     }
                 },
@@ -551,7 +551,7 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 28
+                                "zpos": 30
                             }
                         },
                         "-fieldName": {
@@ -610,7 +610,7 @@
                                 "value": 3
                             },
                             "xdevWindow": {
-                                "code": "new ReferenceLevelView(self)"
+                                "code": "new QualificationFrameworkView(self)"
                             },
                             "y": {
                                 "value": 3
@@ -622,14 +622,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 27
+                                "zpos": 29
                             }
                         },
                         "-fieldName": {
-                            "value": "referenceLevelTab"
+                            "value": "qualificationFrameworkTab"
                         },
                         "index": {
-                            "value": 36
+                            "value": 34
                         },
                         "layout": {
                             "value": {
@@ -638,149 +638,7 @@
                             }
                         },
                         "title": {
-                            "value": "Reference Level"
-                        }
-                    }
-                },
-                {
-                    "children": [{
-                        "class": "xdev.ui.XdevWindowContainer",
-                        "properties": {
-                            "-constraints": {
-                                "value": {
-                                    "anchor": "WEST",
-                                    "fill": "BOTH",
-                                    "gridHeight": 1,
-                                    "gridWidth": 1,
-                                    "gridx": 1,
-                                    "gridy": 1,
-                                    "insets": "3,3,3,3",
-                                    "ipadx": 0,
-                                    "ipady": 0,
-                                    "type": "XDEV_TABLELAYOUT",
-                                    "weightx": 1,
-                                    "weighty": 1
-                                }
-                            },
-                            "-fieldName": {
-                                "value": "learningOutcomeTermListWindowContainer"
-                            },
-                            "height": {
-                                "value": 558
-                            },
-                            "preferredSize": {
-                                "value": {
-                                    "height": 200,
-                                    "width": 200
-                                }
-                            },
-                            "width": {
-                                "value": 594
-                            },
-                            "x": {
-                                "value": 3
-                            },
-                            "xdevWindow": {
-                                "code": "new LearningOutcomeTermListView(self)"
-                            },
-                            "y": {
-                                "value": 3
-                            }
-                        }
-                    }],
-                    "class": "xdev.ui.XdevTab",
-                    "properties": {
-                        "-constraints": {
-                            "value": {
-                                "type": "NULL",
-                                "zpos": 26
-                            }
-                        },
-                        "-fieldName": {
-                            "value": "learningOutcomeTermListTab"
-                        },
-                        "index": {
-                            "value": 19
-                        },
-                        "layout": {
-                            "value": {
-                                "autoFill": "AUTO_FILL_BOTH",
-                                "type": "XDEV_TABLELAYOUT"
-                            }
-                        },
-                        "title": {
-                            "value": "Learning Outcome Term List"
-                        }
-                    }
-                },
-                {
-                    "children": [{
-                        "class": "xdev.ui.XdevWindowContainer",
-                        "properties": {
-                            "-constraints": {
-                                "value": {
-                                    "anchor": "WEST",
-                                    "fill": "BOTH",
-                                    "gridHeight": 1,
-                                    "gridWidth": 1,
-                                    "gridx": 1,
-                                    "gridy": 1,
-                                    "insets": "3,3,3,3",
-                                    "ipadx": 0,
-                                    "ipady": 0,
-                                    "type": "XDEV_TABLELAYOUT",
-                                    "weightx": 1,
-                                    "weighty": 1
-                                }
-                            },
-                            "-fieldName": {
-                                "value": "learningOutcomeTermWindowContainer"
-                            },
-                            "height": {
-                                "value": 558
-                            },
-                            "preferredSize": {
-                                "value": {
-                                    "height": 200,
-                                    "width": 200
-                                }
-                            },
-                            "width": {
-                                "value": 594
-                            },
-                            "x": {
-                                "value": 3
-                            },
-                            "xdevWindow": {
-                                "code": "new LearningOutcomeTermView(self)"
-                            },
-                            "y": {
-                                "value": 3
-                            }
-                        }
-                    }],
-                    "class": "xdev.ui.XdevTab",
-                    "properties": {
-                        "-constraints": {
-                            "value": {
-                                "type": "NULL",
-                                "zpos": 24
-                            }
-                        },
-                        "-fieldName": {
-                            "value": "learningOutcomeTermTab"
-                        },
-                        "index": {
-                            "value": 20
-                        },
-                        "layout": {
-                            "value": {
-                                "autoFill": "AUTO_FILL_BOTH",
-                                "type": "XDEV_TABLELAYOUT"
-                            }
-                        },
-                        "title": {
-                            "value": "Learning Outcome Term"
+                            "value": "Qualification Framework"
                         }
                     }
                 },
@@ -835,14 +693,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 25
+                                "zpos": 28
                             }
                         },
                         "-fieldName": {
                             "value": "evaluationsTab"
                         },
                         "index": {
-                            "value": 21
+                            "value": 19
                         },
                         "layout": {
                             "value": {
@@ -906,14 +764,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 13
+                                "zpos": 17
                             }
                         },
                         "-fieldName": {
                             "value": "assessmentListTab"
                         },
                         "index": {
-                            "value": 22
+                            "value": 20
                         },
                         "layout": {
                             "value": {
@@ -977,14 +835,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 14
+                                "zpos": 18
                             }
                         },
                         "-fieldName": {
                             "value": "validationListTab"
                         },
                         "index": {
-                            "value": 28
+                            "value": 26
                         },
                         "layout": {
                             "value": {
@@ -1048,14 +906,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 15
+                                "zpos": 19
                             }
                         },
                         "-fieldName": {
                             "value": "recognitionListTab"
                         },
                         "index": {
-                            "value": 32
+                            "value": 30
                         },
                         "layout": {
                             "value": {
@@ -1119,14 +977,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 16
+                                "zpos": 20
                             }
                         },
                         "-fieldName": {
                             "value": "assessmentTab"
                         },
                         "index": {
-                            "value": 23
+                            "value": 21
                         },
                         "layout": {
                             "value": {
@@ -1190,14 +1048,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 17
+                                "zpos": 21
                             }
                         },
                         "-fieldName": {
                             "value": "methodListTab"
                         },
                         "index": {
-                            "value": 24
+                            "value": 22
                         },
                         "layout": {
                             "value": {
@@ -1261,14 +1119,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 18
+                                "zpos": 22
                             }
                         },
                         "-fieldName": {
                             "value": "methodTab"
                         },
                         "index": {
-                            "value": 25
+                            "value": 23
                         },
                         "layout": {
                             "value": {
@@ -1332,14 +1190,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 19
+                                "zpos": 23
                             }
                         },
                         "-fieldName": {
                             "value": "processListTab"
                         },
                         "index": {
-                            "value": 26
+                            "value": 24
                         },
                         "layout": {
                             "value": {
@@ -1403,14 +1261,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 20
+                                "zpos": 24
                             }
                         },
                         "-fieldName": {
                             "value": "processTab"
                         },
                         "index": {
-                            "value": 27
+                            "value": 25
                         },
                         "layout": {
                             "value": {
@@ -1474,14 +1332,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 21
+                                "zpos": 25
                             }
                         },
                         "-fieldName": {
                             "value": "validationTab"
                         },
                         "index": {
-                            "value": 29
+                            "value": 27
                         },
                         "layout": {
                             "value": {
@@ -1545,14 +1403,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 22
+                                "zpos": 26
                             }
                         },
                         "-fieldName": {
                             "value": "confirmingRequirementListTab"
                         },
                         "index": {
-                            "value": 30
+                            "value": 28
                         },
                         "layout": {
                             "value": {
@@ -1616,14 +1474,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 23
+                                "zpos": 27
                             }
                         },
                         "-fieldName": {
                             "value": "confirmingRequirementTab"
                         },
                         "index": {
-                            "value": 31
+                            "value": 29
                         },
                         "layout": {
                             "value": {
@@ -1687,14 +1545,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 12
+                                "zpos": 16
                             }
                         },
                         "-fieldName": {
                             "value": "recognitionTab"
                         },
                         "index": {
-                            "value": 33
+                            "value": 31
                         },
                         "layout": {
                             "value": {
@@ -1758,14 +1616,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 11
+                                "zpos": 15
                             }
                         },
                         "-fieldName": {
                             "value": "certificateTemplateTab"
                         },
                         "index": {
-                            "value": 34
+                            "value": 32
                         },
                         "layout": {
                             "value": {
@@ -1829,7 +1687,7 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 5
+                                "zpos": 9
                             }
                         },
                         "-fieldName": {
@@ -1900,7 +1758,7 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 6
+                                "zpos": 10
                             }
                         },
                         "-fieldName": {
@@ -1971,7 +1829,7 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 7
+                                "zpos": 11
                             }
                         },
                         "-fieldName": {
@@ -2042,7 +1900,7 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 8
+                                "zpos": 12
                             }
                         },
                         "-fieldName": {
@@ -2113,7 +1971,7 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 9
+                                "zpos": 13
                             }
                         },
                         "-fieldName": {
@@ -2184,7 +2042,7 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 10
+                                "zpos": 14
                             }
                         },
                         "-fieldName": {
@@ -2255,7 +2113,7 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 3
+                                "zpos": 7
                             }
                         },
                         "-fieldName": {
@@ -2326,7 +2184,7 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 4
+                                "zpos": 8
                             }
                         },
                         "-fieldName": {
@@ -2397,14 +2255,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 2
+                                "zpos": 6
                             }
                         },
                         "-fieldName": {
                             "value": "attachmentTab"
                         },
                         "index": {
-                            "value": 37
+                            "value": 35
                         },
                         "layout": {
                             "value": {
@@ -2438,7 +2296,7 @@
                                 }
                             },
                             "-fieldName": {
-                                "value": "transcriptionOfRecordWindowContainer"
+                                "value": "transcriptsOfRecordWindowContainer"
                             },
                             "height": {
                                 "value": 558
@@ -2456,7 +2314,7 @@
                                 "value": 3
                             },
                             "xdevWindow": {
-                                "code": "new TranscriptionOfRecordView(self)"
+                                "code": "new TranscriptsOfRecordView(self)"
                             },
                             "y": {
                                 "value": 3
@@ -2468,11 +2326,11 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 1
+                                "zpos": 5
                             }
                         },
                         "-fieldName": {
-                            "value": "transcriptionOfRecordTab"
+                            "value": "transcriptsOfRecordTab"
                         },
                         "index": {
                             "value": 11
@@ -2484,7 +2342,7 @@
                             }
                         },
                         "title": {
-                            "value": "Transcription of Record"
+                            "value": "Transcripts of Record"
                         }
                     }
                 },
@@ -2509,7 +2367,7 @@
                                 }
                             },
                             "-fieldName": {
-                                "value": "transcriptionOfRecordListWindowContainer"
+                                "value": "transcriptsOfRecordListWindowContainer"
                             },
                             "height": {
                                 "value": 558
@@ -2527,7 +2385,7 @@
                                 "value": 3
                             },
                             "xdevWindow": {
-                                "code": "new TranscriptionOfRecordListView(self)"
+                                "code": "new TranscriptsOfRecordListView(self)"
                             },
                             "y": {
                                 "value": 3
@@ -2536,8 +2394,14 @@
                     }],
                     "class": "xdev.ui.XdevTab",
                     "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 1
+                            }
+                        },
                         "-fieldName": {
-                            "value": "transcriptionOfRecordListTab"
+                            "value": "transcriptsOfRecordListTab"
                         },
                         "index": {
                             "value": 10
@@ -2549,7 +2413,7 @@
                             }
                         },
                         "title": {
-                            "value": "Transcription of Record List"
+                            "value": "Transcripts of Record List"
                         }
                     }
                 },
@@ -2601,6 +2465,12 @@
                     }],
                     "class": "xdev.ui.XdevTab",
                     "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 2
+                            }
+                        },
                         "-fieldName": {
                             "value": "userGuideListTab"
                         },
@@ -2666,6 +2536,12 @@
                     }],
                     "class": "xdev.ui.XdevTab",
                     "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 3
+                            }
+                        },
                         "-fieldName": {
                             "value": "userGuideTab"
                         },
@@ -2694,7 +2570,7 @@
                                         "fill": "NONE",
                                         "gridHeight": 1,
                                         "gridWidth": 1,
-                                        "gridx": 2,
+                                        "gridx": 1,
                                         "gridy": 3,
                                         "insets": "3,3,3,3",
                                         "ipadx": 0,
@@ -2733,7 +2609,7 @@
                                         "fill": "NONE",
                                         "gridHeight": 1,
                                         "gridWidth": 1,
-                                        "gridx": 2,
+                                        "gridx": 1,
                                         "gridy": 1,
                                         "insets": "3,3,3,3",
                                         "ipadx": 0,
@@ -2779,7 +2655,7 @@
                                         "fill": "NONE",
                                         "gridHeight": 1,
                                         "gridWidth": 1,
-                                        "gridx": 2,
+                                        "gridx": 1,
                                         "gridy": 2,
                                         "insets": "3,3,3,3",
                                         "ipadx": 0,
@@ -2818,6 +2694,12 @@
                     ],
                     "class": "xdev.ui.XdevTab",
                     "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 4
+                            }
+                        },
                         "-fieldName": {
                             "value": "tab"
                         },

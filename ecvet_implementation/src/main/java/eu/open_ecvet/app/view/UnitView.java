@@ -25,7 +25,7 @@ import eu.open_ecvet.app.helper.UpdateView;
 import eu.open_ecvet.app.helper.UpdateViewHelper;
 import eu.open_ecvet.app.model.Evaluations;
 import eu.open_ecvet.app.model.Learningoutcomelist;
-import eu.open_ecvet.app.model.Referencelevellist;
+import eu.open_ecvet.app.model.Qualificationframeworklist;
 import eu.open_ecvet.app.model.Unit;
 import eu.open_ecvet.app.model.Unitlist;
 
@@ -50,7 +50,7 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 										{
 											evaluationsComboBox.setModel(Evaluations.VT,"TITLE","ID",true);
 											learningOutcomeListComboBox.setModel(Learningoutcomelist.VT,"TITLE","ID",true);
-											referenceLevelListComboBox.setModel(Referencelevellist.VT,"TITLE","ID",true);
+											qualificationFrameworkListComboBox.setModel(Qualificationframeworklist.VT,"TITLE","ID",true);
 											unitListComboBox.setModel(Unitlist.VT,"TITLE","ID",true);
 											
 											table.refresh();
@@ -92,6 +92,18 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 			updateView.update();
 			this.openInDialog(new AlertWindow(),true);
 		}
+	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void this_init() // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		UpdateViewHelper.instance().add(updateView);
+	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void unitListShortcut_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		mainWindow.tabbedPane.setSelectedComponent(mainWindow.unitListTab);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
 
 
@@ -146,15 +158,9 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
 
 
-	@EventHandlerDelegate void this_init() // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	@EventHandlerDelegate void qualificationFrameworkListComboBox_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		UpdateViewHelper.instance().add(updateView);
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
-
-	@EventHandlerDelegate void unitListShortcut_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		mainWindow.tabbedPane.setSelectedComponent(mainWindow.unitListTab);
+		
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
 
 
@@ -162,15 +168,15 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 	XdevContainer	container, container3, container2;
 	XdevFormattedTextField	formattedTextField2, formattedTextField3, formattedTextField;
 	XdevButton				evaluationShortcut, learningOutcomeListShortcut,
-			referenceLevelShortcut, unitListShortcut, cmdNew, cmdReset, cmdSave, cmdSaveAndNew,
-			cmdSearch, deleteButton;
+			qualificationFrameworkShortcut, unitListShortcut, cmdNew, cmdReset, cmdSave,
+			cmdSaveAndNew, cmdSearch, deleteButton;
 	XdevTextField			textField2, textField;
 	XdevFormular			formular;
 	XdevTable				table;
 	XdevTextArea			textArea;
 	XdevComboBox			evaluationsComboBox, learningOutcomeListComboBox,
-			referenceLevelListComboBox, unitListComboBox;
-	XdevLabel				label2, label3, label6, label4, label5, label7, label8, label9,
+			qualificationFrameworkListComboBox, unitListComboBox;
+	XdevLabel				label2, label3, label4, label5, label6, label7, label8, label9,
 			label10, label;
 	// End generated definitions ${GENERATED-CODE-BLOCK-END:DEFINITIONS}
 	
@@ -178,7 +184,7 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		container = new XdevContainer();
 		evaluationShortcut = new XdevButton();
 		learningOutcomeListShortcut = new XdevButton();
-		referenceLevelShortcut = new XdevButton();
+		qualificationFrameworkShortcut = new XdevButton();
 		unitListShortcut = new XdevButton();
 		table = new XdevTable();
 		formular = new XdevFormular();
@@ -186,12 +192,12 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		textField2 = new XdevTextField();
 		label3 = new XdevLabel();
 		textArea = new XdevTextArea();
-		label6 = new XdevLabel();
-		textField = new XdevTextField();
 		label4 = new XdevLabel();
 		formattedTextField2 = new XdevFormattedTextField();
 		label5 = new XdevLabel();
 		formattedTextField3 = new XdevFormattedTextField();
+		label6 = new XdevLabel();
+		textField = new XdevTextField();
 		label7 = new XdevLabel();
 		formattedTextField = new XdevFormattedTextField();
 		label8 = new XdevLabel();
@@ -199,7 +205,7 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		label9 = new XdevLabel();
 		learningOutcomeListComboBox = new XdevComboBox();
 		label10 = new XdevLabel();
-		referenceLevelListComboBox = new XdevComboBox();
+		qualificationFrameworkListComboBox = new XdevComboBox();
 		label = new XdevLabel();
 		unitListComboBox = new XdevComboBox();
 		container3 = new XdevContainer();
@@ -221,85 +227,85 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		learningOutcomeListShortcut.setTabIndex(1);
 		learningOutcomeListShortcut.setText("Learning Outcome List");
 		learningOutcomeListShortcut.setEnabled(false);
-		referenceLevelShortcut.setTabIndex(36);
-		referenceLevelShortcut.setText("Reference Level");
-		referenceLevelShortcut.setName("xShortcut3");
-		referenceLevelShortcut.setEnabled(false);
+		qualificationFrameworkShortcut.setTabIndex(36);
+		qualificationFrameworkShortcut.setText("Qualification Framework");
+		qualificationFrameworkShortcut.setName("xShortcut3");
+		qualificationFrameworkShortcut.setEnabled(false);
 		unitListShortcut.setTabIndex(37);
 		unitListShortcut.setText("Unit List");
 		unitListShortcut.setName("xShortcut4");
-		table.setTabIndex(3);
+		table.setTabIndex(38);
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		table.setModel(Unit.VT,"TITLE, URI, EVALUATIONS_TITLE, LEARNINGOUTCOMELIST_TITLE, REFERENCELEVELLIST_TITLE, UNITLIST_TITLE",true);
+		table.setModel(Unit.VT,"TITLE, URI, EVALUATIONS_TITLE, LEARNINGOUTCOMELIST_TITLE, QUALIFICATIONFRAMEWORKLIST_TITLE, UNITLIST_TITLE",true);
 		label2.setText("TITLE");
 		label2.setName("label2");
 		textField2.setDataField("eu.open_ecvet.app.model.Unit.TITLE");
-		textField2.setTabIndex(20);
+		textField2.setTabIndex(39);
 		textField2.setMaxSignCount(Integer.MAX_VALUE);
 		textField2.setName("textField2");
 		textField2.setHorizontalAlignment(SwingConstants.LEFT);
 		label3.setText("DESCRIPTION");
 		label3.setName("label3");
 		textArea.setDataField("eu.open_ecvet.app.model.Unit.DESCRIPTION");
-		textArea.setTabIndex(21);
+		textArea.setTabIndex(40);
 		textArea.setMaxSignCount(Integer.MAX_VALUE);
-		label6.setText("URI");
-		label6.setName("label6");
-		textField.setDataField("eu.open_ecvet.app.model.Unit.URI");
-		textField.setTabIndex(24);
-		textField.setMaxSignCount(Integer.MAX_VALUE);
-		textField.setHorizontalAlignment(SwingConstants.LEFT);
 		label4.setText("CREDIT");
 		label4.setName("label4");
 		formattedTextField2.setDataField("eu.open_ecvet.app.model.Unit.CREDIT");
-		formattedTextField2.setTabIndex(22);
+		formattedTextField2.setTabIndex(41);
 		formattedTextField2.setName("formattedTextField2");
 		formattedTextField2.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
 		formattedTextField2.setHorizontalAlignment(SwingConstants.LEFT);
 		label5.setText("RELATIVEWEIGHT");
 		label5.setName("label5");
 		formattedTextField3.setDataField("eu.open_ecvet.app.model.Unit.RELATIVEWEIGHT");
-		formattedTextField3.setTabIndex(23);
+		formattedTextField3.setTabIndex(42);
 		formattedTextField3.setName("formattedTextField3");
 		formattedTextField3.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
 		formattedTextField3.setHorizontalAlignment(SwingConstants.LEFT);
+		label6.setText("URI");
+		label6.setName("label6");
+		textField.setDataField("eu.open_ecvet.app.model.Unit.URI");
+		textField.setTabIndex(43);
+		textField.setMaxSignCount(Integer.MAX_VALUE);
+		textField.setHorizontalAlignment(SwingConstants.LEFT);
 		label7.setText("WEIGHTSUM");
 		label7.setName("label7");
 		formattedTextField.setDataField("eu.open_ecvet.app.model.Unit.WEIGHTSUM");
-		formattedTextField.setTabIndex(25);
+		formattedTextField.setTabIndex(44);
 		formattedTextField.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
 		formattedTextField.setHorizontalAlignment(SwingConstants.LEFT);
 		label8.setText("EVALUATIONS_ID");
 		label8.setName("label8");
 		evaluationsComboBox.setDataField("eu.open_ecvet.app.model.Unit.EVALUATIONS_ID");
-		evaluationsComboBox.setTabIndex(26);
+		evaluationsComboBox.setTabIndex(45);
 		evaluationsComboBox.setName("comboBox2");
 		evaluationsComboBox.setModel(Evaluations.VT,"TITLE","ID",true);
 		label9.setText("LEARNINGOUTCOMELIST_ID");
 		label9.setName("label9");
 		learningOutcomeListComboBox.setDataField("eu.open_ecvet.app.model.Unit.LEARNINGOUTCOMELIST_ID");
-		learningOutcomeListComboBox.setTabIndex(27);
+		learningOutcomeListComboBox.setTabIndex(46);
 		learningOutcomeListComboBox.setName("comboBox3");
-		learningOutcomeListComboBox.setModel(Learningoutcomelist.VT,"TITLE","ID",true);
-		label10.setText("REFERENCELEVELLIST_ID");
+		learningOutcomeListComboBox.setModel(Learningoutcomelist.VT,"ID","ID",true);
+		label10.setText("QUALIFICATIONFRAMEWORKLIST_ID");
 		label10.setName("label10");
-		referenceLevelListComboBox.setDataField("eu.open_ecvet.app.model.Unit.REFERENCELEVELLIST_ID");
-		referenceLevelListComboBox.setTabIndex(28);
-		referenceLevelListComboBox.setName("comboBox4");
-		referenceLevelListComboBox.setModel(Referencelevellist.VT,"TITLE","ID",true);
+		qualificationFrameworkListComboBox.setDataField("eu.open_ecvet.app.model.Unit.QUALIFICATIONFRAMEWORKLIST_ID");
+		qualificationFrameworkListComboBox.setTabIndex(47);
+		qualificationFrameworkListComboBox.setName("comboBox4");
+		qualificationFrameworkListComboBox.setModel(Qualificationframeworklist.VT,"TITLE","ID",true);
 		label.setText("UNITLIST_ID");
 		unitListComboBox.setDataField("eu.open_ecvet.app.model.Unit.UNITLIST_ID");
-		unitListComboBox.setTabIndex(29);
+		unitListComboBox.setTabIndex(48);
 		unitListComboBox.setModel(Unitlist.VT,"TITLE","ID",true);
-		cmdNew.setTabIndex(30);
+		cmdNew.setTabIndex(49);
 		cmdNew.setText("New");
-		cmdReset.setTabIndex(31);
+		cmdReset.setTabIndex(50);
 		cmdReset.setText("Reset");
-		cmdSave.setTabIndex(32);
+		cmdSave.setTabIndex(51);
 		cmdSave.setText("Save");
-		cmdSaveAndNew.setTabIndex(33);
+		cmdSaveAndNew.setTabIndex(52);
 		cmdSaveAndNew.setText("Save + New");
-		cmdSearch.setTabIndex(34);
+		cmdSearch.setTabIndex(53);
 		cmdSearch.setText("Search");
 		deleteButton.setTabIndex(4);
 		deleteButton.setText("Delete");
@@ -310,12 +316,12 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		textField2.saveState();
 		label3.saveState();
 		textArea.saveState();
-		label6.saveState();
-		textField.saveState();
 		label4.saveState();
 		formattedTextField2.saveState();
 		label5.saveState();
 		formattedTextField3.saveState();
+		label6.saveState();
+		textField.saveState();
 		label7.saveState();
 		formattedTextField.saveState();
 		label8.saveState();
@@ -323,14 +329,14 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		label9.saveState();
 		learningOutcomeListComboBox.saveState();
 		label10.saveState();
-		referenceLevelListComboBox.saveState();
+		qualificationFrameworkListComboBox.saveState();
 		label.saveState();
 		unitListComboBox.saveState();
 		
 		container.setLayout(new GridBagLayout());
 		container.add(evaluationShortcut,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
 		container.add(learningOutcomeListShortcut,new GBC(2,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
-		container.add(referenceLevelShortcut,new GBC(3,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
+		container.add(qualificationFrameworkShortcut,new GBC(3,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
 		container.add(unitListShortcut,new GBC(4,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
 		GBC.addSpacer(container,true,true);
 		container3.setLayout(new FlowLayout(FlowLayout.TRAILING,3,3));
@@ -345,12 +351,12 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		formular.add(label3,new GBC(1,2,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		JScrollPane textArea_carrier = new XScrollPane(textArea,XScrollPane.VERTICAL_SCROLLBAR_ALWAYS,XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		formular.add(textArea_carrier,new GBC(2,2,1,1,1.0,1.0,GBC.BASELINE_LEADING,GBC.BOTH,new Insets(3,3,3,3),0,0));
-		formular.add(label6,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(label4,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(formattedTextField2,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(label5,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(formattedTextField3,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(formattedTextField2,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(formattedTextField3,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label6,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(textField,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label7,new GBC(1,6,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(formattedTextField,new GBC(2,6,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label8,new GBC(1,7,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
@@ -358,7 +364,7 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		formular.add(label9,new GBC(1,8,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(learningOutcomeListComboBox,new GBC(2,8,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label10,new GBC(1,9,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(referenceLevelListComboBox,new GBC(2,9,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(qualificationFrameworkListComboBox,new GBC(2,9,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label,new GBC(1,10,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(unitListComboBox,new GBC(2,10,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(container3,new GBC(1,11,2,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
@@ -383,6 +389,7 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 			}
 		});
 		unitListShortcut.addActionListener(e -> unitListShortcut_actionPerformed(e));
+		qualificationFrameworkListComboBox.addActionListener(e -> qualificationFrameworkListComboBox_actionPerformed(e));
 		cmdNew.addActionListener(e -> cmdNew_actionPerformed(e));
 		cmdReset.addActionListener(e -> cmdReset_actionPerformed(e));
 		cmdSave.addActionListener(e -> cmdSave_actionPerformed(e));

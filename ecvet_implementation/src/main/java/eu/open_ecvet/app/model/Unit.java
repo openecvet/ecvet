@@ -33,8 +33,8 @@ public class Unit extends VirtualTable implements StaticInstanceSupport // ${GE
 	public final static VirtualTableColumn<String>	EVALUATIONS_TITLE;
 	public final static VirtualTableColumn<Integer>	LEARNINGOUTCOMELIST_ID;
 	public final static VirtualTableColumn<String>	LEARNINGOUTCOMELIST_TITLE;
-	public final static VirtualTableColumn<Integer>	REFERENCELEVELLIST_ID;
-	public final static VirtualTableColumn<String>	REFERENCELEVELLIST_TITLE;
+	public final static VirtualTableColumn<Integer>	QUALIFICATIONFRAMEWORKLIST_ID;
+	public final static VirtualTableColumn<String>	QUALIFICATIONFRAMEWORKLIST_TITLE;
 	public final static VirtualTableColumn<Integer>	UNITLIST_ID;
 	public final static VirtualTableColumn<String>	UNITLIST_TITLE;
 	
@@ -118,20 +118,22 @@ public class Unit extends VirtualTable implements StaticInstanceSupport // ${GE
 		LEARNINGOUTCOMELIST_TITLE.setPreferredWidth(100);
 		LEARNINGOUTCOMELIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
 		
-		REFERENCELEVELLIST_ID = new VirtualTableColumn<Integer>("REFERENCELEVELLIST_ID");
-		REFERENCELEVELLIST_ID.setType(DataType.INTEGER);
-		REFERENCELEVELLIST_ID.setDefaultValue(null);
-		REFERENCELEVELLIST_ID.setVisible(false);
-		REFERENCELEVELLIST_ID.setPreferredWidth(100);
-		REFERENCELEVELLIST_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,
-				0,0,false,false));
+		QUALIFICATIONFRAMEWORKLIST_ID = new VirtualTableColumn<Integer>(
+				"QUALIFICATIONFRAMEWORKLIST_ID");
+		QUALIFICATIONFRAMEWORKLIST_ID.setType(DataType.INTEGER);
+		QUALIFICATIONFRAMEWORKLIST_ID.setDefaultValue(null);
+		QUALIFICATIONFRAMEWORKLIST_ID.setVisible(false);
+		QUALIFICATIONFRAMEWORKLIST_ID.setPreferredWidth(100);
+		QUALIFICATIONFRAMEWORKLIST_ID.setTextFormat(TextFormat.getNumberInstance(
+				Locale.getDefault(),null,0,0,false,false));
 		
-		REFERENCELEVELLIST_TITLE = new VirtualTableColumn<String>("REFERENCELEVELLIST_TITLE");
-		REFERENCELEVELLIST_TITLE.setType(DataType.VARCHAR,2147483647);
-		REFERENCELEVELLIST_TITLE.setDefaultValue(null);
-		REFERENCELEVELLIST_TITLE.setCaption("TITLE");
-		REFERENCELEVELLIST_TITLE.setPreferredWidth(100);
-		REFERENCELEVELLIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
+		QUALIFICATIONFRAMEWORKLIST_TITLE = new VirtualTableColumn<String>(
+				"QUALIFICATIONFRAMEWORKLIST_TITLE");
+		QUALIFICATIONFRAMEWORKLIST_TITLE.setType(DataType.VARCHAR,2147483647);
+		QUALIFICATIONFRAMEWORKLIST_TITLE.setDefaultValue(null);
+		QUALIFICATIONFRAMEWORKLIST_TITLE.setCaption("TITLE");
+		QUALIFICATIONFRAMEWORKLIST_TITLE.setPreferredWidth(100);
+		QUALIFICATIONFRAMEWORKLIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
 		
 		UNITLIST_ID = new VirtualTableColumn<Integer>("UNITLIST_ID");
 		UNITLIST_ID.setType(DataType.INTEGER);
@@ -162,12 +164,14 @@ public class Unit extends VirtualTable implements StaticInstanceSupport // ${GE
 				Cardinality.ONE,Unit.class.getName(),new String[]{Unit.LEARNINGOUTCOMELIST_ID
 						.getName()},Cardinality.MANY)));
 		
-		REFERENCELEVELLIST_TITLE.setPersistent(false);
-		REFERENCELEVELLIST_TITLE.setTableColumnLink(new TableColumnLink(Referencelevellist.class
-				.getName(),Referencelevellist.TITLE.getName(),new EntityRelationship(
-				Referencelevellist.class.getName(),new String[]{Referencelevellist.ID.getName()},
-				Cardinality.ONE,Unit.class.getName(),new String[]{Unit.REFERENCELEVELLIST_ID
-						.getName()},Cardinality.MANY)));
+		QUALIFICATIONFRAMEWORKLIST_TITLE.setPersistent(false);
+		QUALIFICATIONFRAMEWORKLIST_TITLE.setTableColumnLink(new TableColumnLink(
+				Qualificationframeworklist.class.getName(),Qualificationframeworklist.TITLE
+						.getName(),
+				new EntityRelationship(Qualificationframeworklist.class.getName(),
+						new String[]{Qualificationframeworklist.ID.getName()},Cardinality.ONE,
+						Unit.class.getName(),new String[]{Unit.QUALIFICATIONFRAMEWORKLIST_ID
+								.getName()},Cardinality.MANY)));
 		
 		UNITLIST_TITLE.setPersistent(false);
 		UNITLIST_TITLE.setTableColumnLink(new TableColumnLink(Unitlist.class.getName(),
@@ -181,15 +185,15 @@ public class Unit extends VirtualTable implements StaticInstanceSupport // ${GE
 	{
 		super(Unit.class.getName(),"PUBLIC","UNIT",ID,CREDIT,DESCRIPTION,RELATIVEWEIGHT,TITLE,URI,
 				WEIGHTSUM,EVALUATIONS_ID,EVALUATIONS_TITLE,LEARNINGOUTCOMELIST_ID,
-				LEARNINGOUTCOMELIST_TITLE,REFERENCELEVELLIST_ID,REFERENCELEVELLIST_TITLE,
-				UNITLIST_ID,UNITLIST_TITLE);
+				LEARNINGOUTCOMELIST_TITLE,QUALIFICATIONFRAMEWORKLIST_ID,
+				QUALIFICATIONFRAMEWORKLIST_TITLE,UNITLIST_ID,UNITLIST_TITLE);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(TITLE);
 		
-		addIndex(new Index("FK_UNIT_REFERENCELEVELLIST_ID_INDEX_2",IndexType.NORMAL,
-				"REFERENCELEVELLIST_ID"));
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"ID"));
+		addIndex(new Index("FK_UNIT_QUALIFICATIONFRAMEWORKLIST_ID_INDEX_2",IndexType.NORMAL,
+				"QUALIFICATIONFRAMEWORKLIST_ID"));
 		addIndex(new Index("FK_UNIT_EVALUATIONS_ID_INDEX_2",IndexType.NORMAL,"EVALUATIONS_ID"));
 		addIndex(new Index("FK_UNIT_UNITLIST_ID_INDEX_2",IndexType.NORMAL,"UNITLIST_ID"));
 		addIndex(new Index("FK_UNIT_LEARNINGOUTCOMELIST_ID_INDEX_2",IndexType.NORMAL,

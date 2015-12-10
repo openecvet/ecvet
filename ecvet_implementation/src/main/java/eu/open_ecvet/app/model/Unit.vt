@@ -481,7 +481,7 @@
             "length": 10,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "REFERENCELEVELLIST_ID",
+            "name": "QUALIFICATIONFRAMEWORKLIST_ID",
             "nullable": true,
             "persistent": true,
             "preferredWidth": 100,
@@ -519,23 +519,23 @@
             "length": 2147483647,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "REFERENCELEVELLIST_TITLE",
+            "name": "QUALIFICATIONFRAMEWORKLIST_TITLE",
             "nullable": true,
             "persistent": false,
             "preferredWidth": 100,
             "scale": 0,
             "tableColumnLink": {
                 "linkedColumn": "TITLE",
-                "linkedTable": "eu.open_ecvet.app.model.Referencelevellist",
+                "linkedTable": "eu.open_ecvet.app.model.Qualificationframeworklist",
                 "path": [{
                     "first": {
                         "cardinality": "ONE",
                         "columns": ["ID"],
-                        "table": "eu.open_ecvet.app.model.Referencelevellist"
+                        "table": "eu.open_ecvet.app.model.Qualificationframeworklist"
                     },
                     "second": {
                         "cardinality": "MANY",
-                        "columns": ["REFERENCELEVELLIST_ID"],
+                        "columns": ["QUALIFICATIONFRAMEWORKLIST_ID"],
                         "table": "eu.open_ecvet.app.model.Unit"
                     }
                 }]
@@ -641,14 +641,14 @@
     "dataSourceTable": "UNIT",
     "indices": [
         {
-            "columns": ["REFERENCELEVELLIST_ID"],
-            "name": "FK_UNIT_REFERENCELEVELLIST_ID_INDEX_2",
-            "type": "NORMAL"
-        },
-        {
             "columns": ["ID"],
             "name": "PRIMARY_KEY",
             "type": "PRIMARY_KEY"
+        },
+        {
+            "columns": ["QUALIFICATIONFRAMEWORKLIST_ID"],
+            "name": "FK_UNIT_QUALIFICATIONFRAMEWORKLIST_ID_INDEX_2",
+            "type": "NORMAL"
         },
         {
             "columns": ["EVALUATIONS_ID"],

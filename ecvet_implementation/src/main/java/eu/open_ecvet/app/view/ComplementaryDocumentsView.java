@@ -23,8 +23,7 @@ import eu.open_ecvet.app.helper.UpdateView;
 import eu.open_ecvet.app.helper.UpdateViewHelper;
 import eu.open_ecvet.app.model.Complementarydocuments;
 import eu.open_ecvet.app.model.Learningagreementlist;
-import eu.open_ecvet.app.model.Transcriptionofrecordlist;
-import eu.open_ecvet.app.model.Unitlist;
+import eu.open_ecvet.app.model.Transcriptsofrecordlist;
 import eu.open_ecvet.app.model.Userguidelist;
 
 
@@ -47,8 +46,7 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 										{
 											learningAgreementListComboBox.setModel(
 													Learningagreementlist.VT,"TITLE","ID",true);
-											transcriptionOfRecordListComboBox.setModel(
-													Transcriptionofrecordlist.VT,"TITLE","ID",true);
+											transcriptsOfRecordListComboBox.setModel(Transcriptsofrecordlist.VT,"TITLE","ID",true);
 											userGuideListComboBox.setModel(Userguidelist.VT,
 													"TITLE","ID",true);
 											table.refresh();
@@ -100,23 +98,19 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 		UpdateViewHelper.instance().add(updateView);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
 	
-	
-	@EventHandlerDelegate
-	void cmdNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	@EventHandlerDelegate void cmdNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.reset(eu.open_ecvet.app.model.Complementarydocuments.VT);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
-	@EventHandlerDelegate
-	void cmdReset_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void cmdReset_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.reset();
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
-	@EventHandlerDelegate
-	void cmdSave_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void cmdSave_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		if(formular.verifyFormularComponents())
 		{
@@ -130,10 +124,9 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 			}
 		}
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
-	@EventHandlerDelegate
-	void cmdSaveAndNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void cmdSaveAndNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		if(formular.verifyFormularComponents())
 		{
@@ -148,14 +141,14 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 			}
 		}
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
-	@EventHandlerDelegate
-	void cmdSearch_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void cmdSearch_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.search("AND",table);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
+
+
 	// Generated definitions, do not edit! ${GENERATED-CODE-BLOCK-START:DEFINITIONS}
 	XdevContainer	container, container3, container2;
 	XdevButton		learningAgreementListShortcut, transcriptionOfRecordListShortcut,
@@ -165,7 +158,7 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 	XdevFormular	formular;
 	XdevTable		table;
 	XdevTextArea	textArea;
-	XdevComboBox	learningAgreementListComboBox, transcriptionOfRecordListComboBox,
+	XdevComboBox	learningAgreementListComboBox, transcriptsOfRecordListComboBox,
 			userGuideListComboBox;
 	XdevLabel		label2, label3, label4, label5, label6, label;
 	// End generated definitions ${GENERATED-CODE-BLOCK-END:DEFINITIONS}
@@ -186,7 +179,7 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 		label5 = new XdevLabel();
 		learningAgreementListComboBox = new XdevComboBox();
 		label6 = new XdevLabel();
-		transcriptionOfRecordListComboBox = new XdevComboBox();
+		transcriptsOfRecordListComboBox = new XdevComboBox();
 		label = new XdevLabel();
 		userGuideListComboBox = new XdevComboBox();
 		container3 = new XdevContainer();
@@ -214,56 +207,50 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 		userGuideListShortcut.setEnabled(false);
 		table.setTabIndex(3);
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		table.setModel(
-				Complementarydocuments.VT,
-				"TITLE, URI, LEARNINGAGREEMENTLIST_TITLE, TRANSCRIPTIONOFRECORDLIST_TITLE, USERGUIDELIST_TITLE",
-				true);
+		table.setModel(Complementarydocuments.VT,"TITLE, URI, LEARNINGAGREEMENTLIST_TITLE, TRANSCRIPTSOFRECORDLIST_TITLE, USERGUIDELIST_TITLE",true);
 		label2.setText("TITLE");
 		label2.setName("label2");
 		textField2.setDataField("eu.open_ecvet.app.model.Complementarydocuments.TITLE");
-		textField2.setTabIndex(5);
+		textField2.setTabIndex(18);
 		textField2.setMaxSignCount(Integer.MAX_VALUE);
 		textField2.setName("textField2");
 		textField2.setHorizontalAlignment(SwingConstants.LEFT);
 		label3.setText("DESCRIPTION");
 		label3.setName("label3");
 		textArea.setDataField("eu.open_ecvet.app.model.Complementarydocuments.DESCRIPTION");
-		textArea.setTabIndex(6);
+		textArea.setTabIndex(19);
 		textArea.setMaxSignCount(Integer.MAX_VALUE);
 		label4.setText("URI");
 		label4.setName("label4");
 		textField.setDataField("eu.open_ecvet.app.model.Complementarydocuments.URI");
-		textField.setTabIndex(7);
+		textField.setTabIndex(20);
 		textField.setMaxSignCount(Integer.MAX_VALUE);
 		textField.setHorizontalAlignment(SwingConstants.LEFT);
 		label5.setText("LEARNINGAGREEMENTLIST_ID");
 		label5.setName("label5");
-		learningAgreementListComboBox
-				.setDataField("eu.open_ecvet.app.model.Complementarydocuments.LEARNINGAGREEMENTLIST_ID");
-		learningAgreementListComboBox.setTabIndex(8);
+		learningAgreementListComboBox.setDataField("eu.open_ecvet.app.model.Complementarydocuments.LEARNINGAGREEMENTLIST_ID");
+		learningAgreementListComboBox.setTabIndex(21);
 		learningAgreementListComboBox.setName("comboBox2");
 		learningAgreementListComboBox.setModel(Learningagreementlist.VT,"TITLE","ID",true);
-		label6.setText("TRANSCRIPTIONOFRECORDLIST_ID");
+		label6.setText("TRANSCRIPTSOFRECORDLIST_ID");
 		label6.setName("label6");
-		transcriptionOfRecordListComboBox
-				.setDataField("eu.open_ecvet.app.model.Complementarydocuments.TRANSCRIPTIONOFRECORDLIST_ID");
-		transcriptionOfRecordListComboBox.setTabIndex(9);
-		transcriptionOfRecordListComboBox.setName("comboBox3");
-		transcriptionOfRecordListComboBox.setModel(Transcriptionofrecordlist.VT,"TITLE","ID",true);
+		transcriptsOfRecordListComboBox.setDataField("eu.open_ecvet.app.model.Complementarydocuments.TRANSCRIPTSOFRECORDLIST_ID");
+		transcriptsOfRecordListComboBox.setTabIndex(22);
+		transcriptsOfRecordListComboBox.setName("comboBox3");
+		transcriptsOfRecordListComboBox.setModel(Transcriptsofrecordlist.VT,"TITLE","ID",true);
 		label.setText("USERGUIDELIST_ID");
-		userGuideListComboBox
-				.setDataField("eu.open_ecvet.app.model.Complementarydocuments.USERGUIDELIST_ID");
-		userGuideListComboBox.setTabIndex(10);
+		userGuideListComboBox.setDataField("eu.open_ecvet.app.model.Complementarydocuments.USERGUIDELIST_ID");
+		userGuideListComboBox.setTabIndex(23);
 		userGuideListComboBox.setModel(Userguidelist.VT,"TITLE","ID",true);
-		cmdNew.setTabIndex(11);
+		cmdNew.setTabIndex(24);
 		cmdNew.setText("New");
-		cmdReset.setTabIndex(12);
+		cmdReset.setTabIndex(25);
 		cmdReset.setText("Reset");
-		cmdSave.setTabIndex(13);
+		cmdSave.setTabIndex(26);
 		cmdSave.setText("Save");
-		cmdSaveAndNew.setTabIndex(14);
+		cmdSaveAndNew.setTabIndex(27);
 		cmdSaveAndNew.setText("Save + New");
-		cmdSearch.setTabIndex(15);
+		cmdSearch.setTabIndex(28);
 		cmdSearch.setText("Search");
 		deleteButton.setTabIndex(4);
 		deleteButton.setText("Delete");
@@ -279,17 +266,14 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 		label5.saveState();
 		learningAgreementListComboBox.saveState();
 		label6.saveState();
-		transcriptionOfRecordListComboBox.saveState();
+		transcriptsOfRecordListComboBox.saveState();
 		label.saveState();
 		userGuideListComboBox.saveState();
 		
 		container.setLayout(new GridBagLayout());
-		container.add(learningAgreementListShortcut,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,
-				new Insets(0,0,0,0),0,0));
-		container.add(transcriptionOfRecordListShortcut,new GBC(2,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,
-				new Insets(0,0,0,0),0,0));
-		container.add(userGuideListShortcut,new GBC(3,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,
-				0,0,0),0,0));
+		container.add(learningAgreementListShortcut,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
+		container.add(transcriptionOfRecordListShortcut,new GBC(2,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
+		container.add(userGuideListShortcut,new GBC(3,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
 		GBC.addSpacer(container,true,true);
 		container3.setLayout(new FlowLayout(FlowLayout.TRAILING,3,3));
 		container3.add(cmdNew);
@@ -298,47 +282,29 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 		container3.add(cmdSaveAndNew);
 		container3.add(cmdSearch);
 		formular.setLayout(new GridBagLayout());
-		formular.add(label2,new GBC(1,1,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(textField2,new GBC(2,1,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
-				new Insets(3,3,3,3),0,0));
-		formular.add(label3,new GBC(1,2,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		JScrollPane textArea_carrier = new XScrollPane(textArea,
-				XScrollPane.VERTICAL_SCROLLBAR_ALWAYS,XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-		formular.add(textArea_carrier,new GBC(2,2,1,1,1.0,1.0,GBC.BASELINE_LEADING,GBC.BOTH,
-				new Insets(3,3,3,3),0,0));
-		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
-				new Insets(3,3,3,3),0,0));
-		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(learningAgreementListComboBox,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,
-				GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(label6,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(transcriptionOfRecordListComboBox,new GBC(2,5,1,1,1.0,0.0,
-				GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(label,new GBC(1,6,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,
-				new Insets(3,3,3,3),0,0));
-		formular.add(userGuideListComboBox,new GBC(2,6,1,1,1.0,0.0,GBC.BASELINE_LEADING,
-				GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(container3,new GBC(1,7,2,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,
-				3),0,0));
+		formular.add(label2,new GBC(1,1,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(textField2,new GBC(2,1,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label3,new GBC(1,2,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		JScrollPane textArea_carrier = new XScrollPane(textArea,XScrollPane.VERTICAL_SCROLLBAR_ALWAYS,XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		formular.add(textArea_carrier,new GBC(2,2,1,1,1.0,1.0,GBC.BASELINE_LEADING,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(learningAgreementListComboBox,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label6,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(transcriptsOfRecordListComboBox,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label,new GBC(1,6,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(userGuideListComboBox,new GBC(2,6,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(container3,new GBC(1,7,2,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(formular,true,true);
 		container2.setLayout(new GridBagLayout());
-		container2.add(deleteButton,new GBC(1,1,1,1,0.0,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),
-				0,0));
+		container2.add(deleteButton,new GBC(1,1,1,1,0.0,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(container2,true,true);
 		this.setLayout(new GridBagLayout());
 		this.add(container,new GBC(1,1,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		JScrollPane table_carrier = new XScrollPane(table,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
-				XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		this.add(table_carrier,new GBC(1,2,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),
-				0,0));
-		this.add(formular,
-				new GBC(1,3,1,1,0.1,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(0,0,0,0),0,0));
+		JScrollPane table_carrier = new XScrollPane(table,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		this.add(table_carrier,new GBC(1,2,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		this.add(formular,new GBC(1,3,1,1,0.1,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(0,0,0,0),0,0));
 		this.add(container2,new GBC(1,4,1,1,0.1,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(this,true,true);
 		

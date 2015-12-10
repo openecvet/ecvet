@@ -15,12 +15,16 @@ import java.util.Locale;
 import eu.open_ecvet.app.data_src.EcvetH2;
 
 
-public class Learningoutcometermlist extends VirtualTable implements StaticInstanceSupport // ${GENERATED-CODE-LINE:VT_SUPERCLASS}
+public class Qualificationframework extends VirtualTable implements StaticInstanceSupport // ${GENERATED-CODE-LINE:VT_SUPERCLASS}
 {
 	
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
 	public final static VirtualTableColumn<Integer>	ID;
 	public final static VirtualTableColumn<String>	DESCRIPTION;
+	public final static VirtualTableColumn<String>	FRAMEWORK;
+	public final static VirtualTableColumn<Integer>	FRAMEWORKLEVEL;
+	public final static VirtualTableColumn<String>	FRAMEWORKTERM;
+	public final static VirtualTableColumn<String>	INDICATOR;
 	public final static VirtualTableColumn<String>	TITLE;
 	public final static VirtualTableColumn<String>	URI;
 	
@@ -42,6 +46,31 @@ public class Learningoutcometermlist extends VirtualTable implements StaticInsta
 		DESCRIPTION.setPreferredWidth(100);
 		DESCRIPTION.setTextFormat(TextFormat.getPlainInstance());
 		
+		FRAMEWORK = new VirtualTableColumn<String>("FRAMEWORK");
+		FRAMEWORK.setType(DataType.VARCHAR,2147483647);
+		FRAMEWORK.setDefaultValue(null);
+		FRAMEWORK.setPreferredWidth(100);
+		FRAMEWORK.setTextFormat(TextFormat.getPlainInstance());
+		
+		FRAMEWORKLEVEL = new VirtualTableColumn<Integer>("FRAMEWORKLEVEL");
+		FRAMEWORKLEVEL.setType(DataType.INTEGER);
+		FRAMEWORKLEVEL.setDefaultValue(null);
+		FRAMEWORKLEVEL.setPreferredWidth(100);
+		FRAMEWORKLEVEL.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,
+				false,false));
+		
+		FRAMEWORKTERM = new VirtualTableColumn<String>("FRAMEWORKTERM");
+		FRAMEWORKTERM.setType(DataType.VARCHAR,2147483647);
+		FRAMEWORKTERM.setDefaultValue(null);
+		FRAMEWORKTERM.setPreferredWidth(100);
+		FRAMEWORKTERM.setTextFormat(TextFormat.getPlainInstance());
+		
+		INDICATOR = new VirtualTableColumn<String>("INDICATOR");
+		INDICATOR.setType(DataType.VARCHAR,2147483647);
+		INDICATOR.setDefaultValue(null);
+		INDICATOR.setPreferredWidth(100);
+		INDICATOR.setTextFormat(TextFormat.getPlainInstance());
+		
 		TITLE = new VirtualTableColumn<String>("TITLE");
 		TITLE.setType(DataType.VARCHAR,2147483647);
 		TITLE.setDefaultValue(null);
@@ -56,10 +85,10 @@ public class Learningoutcometermlist extends VirtualTable implements StaticInsta
 	}
 	
 	
-	public Learningoutcometermlist()
+	public Qualificationframework()
 	{
-		super(Learningoutcometermlist.class.getName(),"PUBLIC","LEARNINGOUTCOMETERMLIST",ID,
-				DESCRIPTION,TITLE,URI);
+		super(Qualificationframework.class.getName(),"PUBLIC","QUALIFICATIONFRAMEWORK",ID,
+				DESCRIPTION,FRAMEWORK,FRAMEWORKLEVEL,FRAMEWORKTERM,INDICATOR,TITLE,URI);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(TITLE);
@@ -67,10 +96,10 @@ public class Learningoutcometermlist extends VirtualTable implements StaticInsta
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"ID"));
 	}
 	
-	public final static Learningoutcometermlist	VT	= new Learningoutcometermlist();
+	public final static Qualificationframework	VT	= new Qualificationframework();
 	
 	
-	public static Learningoutcometermlist getInstance()
+	public static Qualificationframework getInstance()
 	{
 		return VT;
 	}

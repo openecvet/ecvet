@@ -89,6 +89,9 @@
                 "-autofillWithData": {
                     "value": true
                 },
+                "-connectedFormular": {
+                    "value": "formular"
+                },
                 "-constraints": {
                     "value": {
                         "anchor": "WEST",
@@ -109,10 +112,13 @@
                     "value": "table"
                 },
                 "-virtualTable": {
-                    "value": "eu.open_ecvet.app.model.Transcriptionofrecordlist"
+                    "value": "eu.open_ecvet.app.model.Qualificationframework"
                 },
                 "height": {
                     "value": 156
+                },
+                "selectionMode": {
+                    "value": "SINGLE_SELECTION"
                 },
                 "tabIndex": {
                     "value": 3
@@ -209,106 +215,12 @@
                     "value": 726
                 },
                 "y": {
-                    "value": 394
+                    "value": 453
                 }
             }
         },
         {
             "children": [
-                {
-                    "class": "xdev.ui.XdevNmListBox",
-                    "properties": {
-                        "-autofillColumns": {
-                            "value": {
-                                "expression": "{$TRANSCRIPTIONOFRECORD_TITLE}"
-                            }
-                        },
-                        "-autofillDataColumn": {
-                            "value": {
-                                "expression": "TRANSCRIPTIONOFRECORD_ID"
-                            }
-                        },
-                        "-autofillWithData": {
-                            "value": true
-                        },
-                        "-constraints": {
-                            "value": {
-                                "anchor": "WEST",
-                                "fill": "BOTH",
-                                "gridHeight": 2,
-                                "gridWidth": 1,
-                                "gridx": 3,
-                                "gridy": 2,
-                                "insets": "3,3,3,3",
-                                "ipadx": 0,
-                                "ipady": 0,
-                                "type": "XDEV_TABLELAYOUT",
-                                "weightx": 1,
-                                "weighty": 1
-                            }
-                        },
-                        "-fieldName": {
-                            "value": "nmListBox"
-                        },
-                        "-virtualTable": {
-                            "value": "eu.open_ecvet.app.model.TranscriptionofrecordlistTranscriptionofrecord"
-                        },
-                        "height": {
-                            "value": 134
-                        },
-                        "tabIndex": {
-                            "value": 13
-                        },
-                        "width": {
-                            "value": 309
-                        },
-                        "x": {
-                            "value": 488
-                        },
-                        "y": {
-                            "value": 29
-                        }
-                    }
-                },
-                {
-                    "class": "xdev.ui.XdevLabel",
-                    "properties": {
-                        "-constraints": {
-                            "value": {
-                                "anchor": "WEST",
-                                "fill": "NONE",
-                                "gridHeight": 1,
-                                "gridWidth": 1,
-                                "gridx": 3,
-                                "gridy": 1,
-                                "insets": "3,3,3,3",
-                                "ipadx": 0,
-                                "ipady": 0,
-                                "type": "XDEV_TABLELAYOUT",
-                                "weightx": 0,
-                                "weighty": 0
-                            }
-                        },
-                        "-fieldName": {
-                            "value": "label4"
-                        },
-                        "height": {
-                            "value": 16
-                        },
-                        "text": {
-                            "value": "Transcription of Record"
-                        },
-                        "width": {
-                            "value": 135
-                        },
-                        "x": {
-                            "value": 488
-                        },
-                        "y": {
-                            "value": 5
-                        }
-                    }
-                },
                 {
                     "class": "xdev.ui.XdevLabel",
                     "properties": {
@@ -374,7 +286,7 @@
                             "value": "textField2"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Transcriptionofrecordlist.TITLE"
+                            "value": "eu.open_ecvet.app.model.Qualificationframework.TITLE"
                         },
                         "height": {
                             "value": 20
@@ -392,10 +304,10 @@
                             "value": 5
                         },
                         "width": {
-                            "value": 396
+                            "value": 685
                         },
                         "x": {
-                            "value": 86
+                            "value": 112
                         },
                         "y": {
                             "value": 3
@@ -467,10 +379,10 @@
                             "value": "textArea"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Transcriptionofrecordlist.DESCRIPTION"
+                            "value": "eu.open_ecvet.app.model.Qualificationframework.DESCRIPTION"
                         },
                         "height": {
-                            "value": 107
+                            "value": 62
                         },
                         "maxSignCount": {
                             "value": 2147483647
@@ -479,10 +391,10 @@
                             "value": 6
                         },
                         "width": {
-                            "value": 396
+                            "value": 685
                         },
                         "x": {
-                            "value": 86
+                            "value": 112
                         },
                         "y": {
                             "value": 30
@@ -509,22 +421,25 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "label"
+                            "value": "label4"
                         },
                         "height": {
                             "value": 16
                         },
+                        "name": {
+                            "value": "label4"
+                        },
                         "text": {
-                            "value": "URI"
+                            "value": "FRAMEWORK"
                         },
                         "width": {
-                            "value": 20
+                            "value": 70
                         },
                         "x": {
                             "value": 3
                         },
                         "y": {
-                            "value": 145
+                            "value": 100
                         }
                     }
                 },
@@ -548,10 +463,395 @@
                             }
                         },
                         "-fieldName": {
+                            "value": "textField3"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Qualificationframework.FRAMEWORK"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "horizontalAlignment": {
+                            "value": "LEFT"
+                        },
+                        "maxSignCount": {
+                            "value": 2147483647
+                        },
+                        "name": {
+                            "value": "textField3"
+                        },
+                        "tabIndex": {
+                            "value": 7
+                        },
+                        "width": {
+                            "value": 685
+                        },
+                        "x": {
+                            "value": 112
+                        },
+                        "y": {
+                            "value": 98
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 4,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label5"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "name": {
+                            "value": "label5"
+                        },
+                        "text": {
+                            "value": "FRAMEWORKLEVEL"
+                        },
+                        "width": {
+                            "value": 103
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 126
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevFormattedTextField",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 4,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "formattedTextField"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Qualificationframework.FRAMEWORKLEVEL"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "horizontalAlignment": {
+                            "value": "LEFT"
+                        },
+                        "tabIndex": {
+                            "value": 8
+                        },
+                        "textFormat": {
+                            "value": {
+                                "dateFormat": "MEDIUM",
+                                "dateSet": "DATE",
+                                "groupingUsed": false,
+                                "locale": "%",
+                                "maxFractionDigits": 0,
+                                "minFractionDigits": 0,
+                                "pattern": [
+                                    "",
+                                    "yyyy-MM-dd",
+                                    "#,##0.###;-#,##0.###",
+                                    "¤#,##0.00;-¤#,##0.00",
+                                    "#,##0%"
+                                ],
+                                "signedColor": "255,0,0",
+                                "suppressZero": false,
+                                "timeFormat": "MEDIUM",
+                                "type": "NUMBER",
+                                "useSignedColor": false
+                            }
+                        },
+                        "width": {
+                            "value": 685
+                        },
+                        "x": {
+                            "value": 112
+                        },
+                        "y": {
+                            "value": 124
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 5,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label6"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "name": {
+                            "value": "label6"
+                        },
+                        "text": {
+                            "value": "FRAMEWORKTERM"
+                        },
+                        "width": {
+                            "value": 100
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 152
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevTextField",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 5,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "textField4"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Qualificationframework.FRAMEWORKTERM"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "horizontalAlignment": {
+                            "value": "LEFT"
+                        },
+                        "maxSignCount": {
+                            "value": 2147483647
+                        },
+                        "name": {
+                            "value": "textField4"
+                        },
+                        "tabIndex": {
+                            "value": 9
+                        },
+                        "width": {
+                            "value": 685
+                        },
+                        "x": {
+                            "value": 112
+                        },
+                        "y": {
+                            "value": 150
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 6,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label7"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "name": {
+                            "value": "label7"
+                        },
+                        "text": {
+                            "value": "INDICATOR"
+                        },
+                        "width": {
+                            "value": 62
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 178
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevTextField",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 6,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "textField5"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Qualificationframework.INDICATOR"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "horizontalAlignment": {
+                            "value": "LEFT"
+                        },
+                        "maxSignCount": {
+                            "value": 2147483647
+                        },
+                        "name": {
+                            "value": "textField5"
+                        },
+                        "tabIndex": {
+                            "value": 10
+                        },
+                        "width": {
+                            "value": 685
+                        },
+                        "x": {
+                            "value": 112
+                        },
+                        "y": {
+                            "value": 176
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 7,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "text": {
+                            "value": "URI"
+                        },
+                        "width": {
+                            "value": 20
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 204
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevTextField",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 7,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
                             "value": "textField"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Transcriptionofrecordlist.URI"
+                            "value": "eu.open_ecvet.app.model.Qualificationframework.URI"
                         },
                         "height": {
                             "value": 20
@@ -563,16 +863,16 @@
                             "value": 2147483647
                         },
                         "tabIndex": {
-                            "value": 7
+                            "value": 11
                         },
                         "width": {
-                            "value": 396
+                            "value": 685
                         },
                         "x": {
-                            "value": 86
+                            "value": 112
                         },
                         "y": {
-                            "value": 143
+                            "value": 202
                         }
                     }
                 },
@@ -595,7 +895,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 8
+                                    "value": 12
                                 },
                                 "text": {
                                     "value": "New"
@@ -628,7 +928,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 9
+                                    "value": 13
                                 },
                                 "text": {
                                     "value": "Reset"
@@ -661,7 +961,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 10
+                                    "value": 14
                                 },
                                 "text": {
                                     "value": "Save"
@@ -694,7 +994,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 11
+                                    "value": 15
                                 },
                                 "text": {
                                     "value": "Save + New"
@@ -727,7 +1027,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 12
+                                    "value": 16
                                 },
                                 "text": {
                                     "value": "Search"
@@ -751,9 +1051,9 @@
                                 "anchor": "CENTER",
                                 "fill": "HORIZONTAL",
                                 "gridHeight": 1,
-                                "gridWidth": 3,
+                                "gridWidth": 2,
                                 "gridx": 1,
-                                "gridy": 4,
+                                "gridy": 8,
                                 "insets": "3,3,3,3",
                                 "ipadx": 0,
                                 "ipady": 0,
@@ -784,7 +1084,7 @@
                             "value": 3
                         },
                         "y": {
-                            "value": 169
+                            "value": 228
                         }
                     }
                 }
@@ -811,7 +1111,7 @@
                     "value": "formular"
                 },
                 "height": {
-                    "value": 200
+                    "value": 259
                 },
                 "layout": {
                     "value": {
@@ -835,7 +1135,7 @@
     ],
     "properties": {
         "-fieldName": {
-            "value": "TranscriptionOfRecordListView"
+            "value": "QualificationFrameworkView"
         },
         "height": {
             "value": 600

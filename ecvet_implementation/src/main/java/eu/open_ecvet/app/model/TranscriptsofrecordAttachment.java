@@ -18,7 +18,7 @@ import java.util.Locale;
 import eu.open_ecvet.app.data_src.EcvetH2;
 
 
-public class TranscriptionofrecordAttachment extends VirtualTable implements StaticInstanceSupport // ${GENERATED-CODE-LINE:VT_SUPERCLASS}
+public class TranscriptsofrecordAttachment extends VirtualTable implements StaticInstanceSupport // ${GENERATED-CODE-LINE:VT_SUPERCLASS}
 {
 	
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
@@ -57,16 +57,16 @@ public class TranscriptionofrecordAttachment extends VirtualTable implements Sta
 		ATTACHMENT_TITLE.setTableColumnLink(new TableColumnLink(Attachment.class.getName(),
 				Attachment.TITLE.getName(),new EntityRelationship(Attachment.class.getName(),
 						new String[]{Attachment.ID.getName()},Cardinality.ONE,
-						TranscriptionofrecordAttachment.class.getName(),
-						new String[]{TranscriptionofrecordAttachment.ATTACHMENT_ID.getName()},
+						TranscriptsofrecordAttachment.class.getName(),
+						new String[]{TranscriptsofrecordAttachment.ATTACHMENT_ID.getName()},
 						Cardinality.MANY)));
 	}
 	
 	
-	public TranscriptionofrecordAttachment()
+	public TranscriptsofrecordAttachment()
 	{
-		super(TranscriptionofrecordAttachment.class.getName(),"PUBLIC",
-				"TRANSCRIPTIONOFRECORD_ATTACHMENT",ATTACHMENTS_ID,ATTACHMENT_ID,ATTACHMENT_TITLE);
+		super(TranscriptsofrecordAttachment.class.getName(),"PUBLIC",
+				"TRANSCRIPTSOFRECORD_ATTACHMENT",ATTACHMENTS_ID,ATTACHMENT_ID,ATTACHMENT_TITLE);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(ATTACHMENTS_ID);
@@ -74,10 +74,10 @@ public class TranscriptionofrecordAttachment extends VirtualTable implements Sta
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"ATTACHMENTS_ID","ATTACHMENT_ID"));
 	}
 	
-	public final static TranscriptionofrecordAttachment	VT	= new TranscriptionofrecordAttachment();
+	public final static TranscriptsofrecordAttachment	VT	= new TranscriptsofrecordAttachment();
 	
 	
-	public static TranscriptionofrecordAttachment getInstance()
+	public static TranscriptsofrecordAttachment getInstance()
 	{
 		return VT;
 	}

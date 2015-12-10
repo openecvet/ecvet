@@ -455,5 +455,5 @@
             "type": "NORMAL"
         }
     ],
-    "primaryColumn": "ID"
+    "primaryColumn": "TITLE"
 }

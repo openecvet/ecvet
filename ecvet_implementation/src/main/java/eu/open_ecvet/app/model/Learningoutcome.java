@@ -27,8 +27,9 @@ public class Learningoutcome extends VirtualTable implements StaticInstanceSuppo
 	public final static VirtualTableColumn<String>	DESCRIPTION;
 	public final static VirtualTableColumn<String>	TITLE;
 	public final static VirtualTableColumn<String>	URI;
-	public final static VirtualTableColumn<Integer>	LEARNINGOUTCOMETERMLIST_ID;
-	public final static VirtualTableColumn<String>	LEARNINGOUTCOMETERMLIST_TITLE;
+	public final static VirtualTableColumn<Integer>	WEIGHT;
+	public final static VirtualTableColumn<Integer>	EVALUATIONS_ID;
+	public final static VirtualTableColumn<String>	EVALUATIONS_TITLE;
 	
 	static
 	{
@@ -66,44 +67,47 @@ public class Learningoutcome extends VirtualTable implements StaticInstanceSuppo
 		URI.setPreferredWidth(100);
 		URI.setTextFormat(TextFormat.getPlainInstance());
 		
-		LEARNINGOUTCOMETERMLIST_ID = new VirtualTableColumn<Integer>("LEARNINGOUTCOMETERMLIST_ID");
-		LEARNINGOUTCOMETERMLIST_ID.setType(DataType.INTEGER);
-		LEARNINGOUTCOMETERMLIST_ID.setDefaultValue(null);
-		LEARNINGOUTCOMETERMLIST_ID.setVisible(false);
-		LEARNINGOUTCOMETERMLIST_ID.setPreferredWidth(100);
-		LEARNINGOUTCOMETERMLIST_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),
-				null,0,0,false,false));
+		WEIGHT = new VirtualTableColumn<Integer>("WEIGHT");
+		WEIGHT.setType(DataType.INTEGER);
+		WEIGHT.setDefaultValue(null);
+		WEIGHT.setPreferredWidth(100);
+		WEIGHT.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
 		
-		LEARNINGOUTCOMETERMLIST_TITLE = new VirtualTableColumn<String>(
-				"LEARNINGOUTCOMETERMLIST_TITLE");
-		LEARNINGOUTCOMETERMLIST_TITLE.setType(DataType.VARCHAR,2147483647);
-		LEARNINGOUTCOMETERMLIST_TITLE.setDefaultValue(null);
-		LEARNINGOUTCOMETERMLIST_TITLE.setCaption("TITLE");
-		LEARNINGOUTCOMETERMLIST_TITLE.setPreferredWidth(100);
-		LEARNINGOUTCOMETERMLIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
+		EVALUATIONS_ID = new VirtualTableColumn<Integer>("EVALUATIONS_ID");
+		EVALUATIONS_ID.setType(DataType.INTEGER);
+		EVALUATIONS_ID.setDefaultValue(null);
+		EVALUATIONS_ID.setVisible(false);
+		EVALUATIONS_ID.setPreferredWidth(100);
+		EVALUATIONS_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,
+				false,false));
 		
-		LEARNINGOUTCOMETERMLIST_TITLE.setPersistent(false);
-		LEARNINGOUTCOMETERMLIST_TITLE.setTableColumnLink(new TableColumnLink(
-				Learningoutcometermlist.class.getName(),Learningoutcometermlist.TITLE.getName(),
-				new EntityRelationship(Learningoutcometermlist.class.getName(),
-						new String[]{Learningoutcometermlist.ID.getName()},Cardinality.ONE,
-						Learningoutcome.class.getName(),
-						new String[]{Learningoutcome.LEARNINGOUTCOMETERMLIST_ID.getName()},
-						Cardinality.MANY)));
+		EVALUATIONS_TITLE = new VirtualTableColumn<String>("EVALUATIONS_TITLE");
+		EVALUATIONS_TITLE.setType(DataType.VARCHAR,2147483647);
+		EVALUATIONS_TITLE.setDefaultValue(null);
+		EVALUATIONS_TITLE.setCaption("TITLE");
+		EVALUATIONS_TITLE.setPreferredWidth(100);
+		EVALUATIONS_TITLE.setTextFormat(TextFormat.getPlainInstance());
+		
+		EVALUATIONS_TITLE.setPersistent(false);
+		EVALUATIONS_TITLE.setTableColumnLink(new TableColumnLink(Evaluations.class.getName(),
+				Evaluations.TITLE.getName(),new EntityRelationship(Evaluations.class.getName(),
+						new String[]{Evaluations.ID.getName()},Cardinality.ONE,
+						Learningoutcome.class.getName(),new String[]{Learningoutcome.EVALUATIONS_ID
+								.getName()},Cardinality.MANY)));
 	}
 	
 	
 	public Learningoutcome()
 	{
 		super(Learningoutcome.class.getName(),"PUBLIC","LEARNINGOUTCOME",ID,CREDIT,DESCRIPTION,
-				TITLE,URI,LEARNINGOUTCOMETERMLIST_ID,LEARNINGOUTCOMETERMLIST_TITLE);
+				TITLE,URI,WEIGHT,EVALUATIONS_ID,EVALUATIONS_TITLE);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(TITLE);
 		
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"ID"));
-		addIndex(new Index("FK_LEARNINGOUTCOME_LEARNINGOUTCOMETERMLIST_ID_INDEX_7",
-				IndexType.NORMAL,"LEARNINGOUTCOMETERMLIST_ID"));
+		addIndex(new Index("FK_LEARNINGOUTCOME_EVALUATIONS_ID_INDEX_7",IndexType.NORMAL,
+				"EVALUATIONS_ID"));
 	}
 	
 	public final static Learningoutcome	VT	= new Learningoutcome();

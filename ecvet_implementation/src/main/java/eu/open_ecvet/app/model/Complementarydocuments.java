@@ -28,8 +28,8 @@ public class Complementarydocuments extends VirtualTable implements StaticInstan
 	public final static VirtualTableColumn<String>	URI;
 	public final static VirtualTableColumn<Integer>	LEARNINGAGREEMENTLIST_ID;
 	public final static VirtualTableColumn<String>	LEARNINGAGREEMENTLIST_TITLE;
-	public final static VirtualTableColumn<Integer>	TRANSCRIPTIONOFRECORDLIST_ID;
-	public final static VirtualTableColumn<String>	TRANSCRIPTIONOFRECORDLIST_TITLE;
+	public final static VirtualTableColumn<Integer>	TRANSCRIPTSOFRECORDLIST_ID;
+	public final static VirtualTableColumn<String>	TRANSCRIPTSOFRECORDLIST_TITLE;
 	public final static VirtualTableColumn<Integer>	USERGUIDELIST_ID;
 	public final static VirtualTableColumn<String>	USERGUIDELIST_TITLE;
 	
@@ -78,22 +78,21 @@ public class Complementarydocuments extends VirtualTable implements StaticInstan
 		LEARNINGAGREEMENTLIST_TITLE.setPreferredWidth(100);
 		LEARNINGAGREEMENTLIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
 		
-		TRANSCRIPTIONOFRECORDLIST_ID = new VirtualTableColumn<Integer>(
-				"TRANSCRIPTIONOFRECORDLIST_ID");
-		TRANSCRIPTIONOFRECORDLIST_ID.setType(DataType.INTEGER);
-		TRANSCRIPTIONOFRECORDLIST_ID.setDefaultValue(null);
-		TRANSCRIPTIONOFRECORDLIST_ID.setVisible(false);
-		TRANSCRIPTIONOFRECORDLIST_ID.setPreferredWidth(100);
-		TRANSCRIPTIONOFRECORDLIST_ID.setTextFormat(TextFormat.getNumberInstance(
-				Locale.getDefault(),null,0,0,false,false));
+		TRANSCRIPTSOFRECORDLIST_ID = new VirtualTableColumn<Integer>("TRANSCRIPTSOFRECORDLIST_ID");
+		TRANSCRIPTSOFRECORDLIST_ID.setType(DataType.INTEGER);
+		TRANSCRIPTSOFRECORDLIST_ID.setDefaultValue(null);
+		TRANSCRIPTSOFRECORDLIST_ID.setVisible(false);
+		TRANSCRIPTSOFRECORDLIST_ID.setPreferredWidth(100);
+		TRANSCRIPTSOFRECORDLIST_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),
+				null,0,0,false,false));
 		
-		TRANSCRIPTIONOFRECORDLIST_TITLE = new VirtualTableColumn<String>(
-				"TRANSCRIPTIONOFRECORDLIST_TITLE");
-		TRANSCRIPTIONOFRECORDLIST_TITLE.setType(DataType.VARCHAR,2147483647);
-		TRANSCRIPTIONOFRECORDLIST_TITLE.setDefaultValue(null);
-		TRANSCRIPTIONOFRECORDLIST_TITLE.setCaption("TITLE");
-		TRANSCRIPTIONOFRECORDLIST_TITLE.setPreferredWidth(100);
-		TRANSCRIPTIONOFRECORDLIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
+		TRANSCRIPTSOFRECORDLIST_TITLE = new VirtualTableColumn<String>(
+				"TRANSCRIPTSOFRECORDLIST_TITLE");
+		TRANSCRIPTSOFRECORDLIST_TITLE.setType(DataType.VARCHAR,2147483647);
+		TRANSCRIPTSOFRECORDLIST_TITLE.setDefaultValue(null);
+		TRANSCRIPTSOFRECORDLIST_TITLE.setCaption("TITLE");
+		TRANSCRIPTSOFRECORDLIST_TITLE.setPreferredWidth(100);
+		TRANSCRIPTSOFRECORDLIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
 		
 		USERGUIDELIST_ID = new VirtualTableColumn<Integer>("USERGUIDELIST_ID");
 		USERGUIDELIST_ID.setType(DataType.INTEGER);
@@ -119,15 +118,14 @@ public class Complementarydocuments extends VirtualTable implements StaticInstan
 						new String[]{Complementarydocuments.LEARNINGAGREEMENTLIST_ID.getName()},
 						Cardinality.MANY)));
 		
-		TRANSCRIPTIONOFRECORDLIST_TITLE.setPersistent(false);
-		TRANSCRIPTIONOFRECORDLIST_TITLE
-				.setTableColumnLink(new TableColumnLink(Transcriptionofrecordlist.class.getName(),
-						Transcriptionofrecordlist.TITLE.getName(),new EntityRelationship(
-								Transcriptionofrecordlist.class.getName(),
-								new String[]{Transcriptionofrecordlist.ID.getName()},
-								Cardinality.ONE,Complementarydocuments.class.getName(),
-								new String[]{Complementarydocuments.TRANSCRIPTIONOFRECORDLIST_ID
-										.getName()},Cardinality.MANY)));
+		TRANSCRIPTSOFRECORDLIST_TITLE.setPersistent(false);
+		TRANSCRIPTSOFRECORDLIST_TITLE.setTableColumnLink(new TableColumnLink(
+				Transcriptsofrecordlist.class.getName(),Transcriptsofrecordlist.TITLE.getName(),
+				new EntityRelationship(Transcriptsofrecordlist.class.getName(),
+						new String[]{Transcriptsofrecordlist.ID.getName()},Cardinality.ONE,
+						Complementarydocuments.class.getName(),
+						new String[]{Complementarydocuments.TRANSCRIPTSOFRECORDLIST_ID.getName()},
+						Cardinality.MANY)));
 		
 		USERGUIDELIST_TITLE.setPersistent(false);
 		USERGUIDELIST_TITLE.setTableColumnLink(new TableColumnLink(Userguidelist.class.getName(),
@@ -143,7 +141,7 @@ public class Complementarydocuments extends VirtualTable implements StaticInstan
 	{
 		super(Complementarydocuments.class.getName(),"PUBLIC","COMPLEMENTARYDOCUMENTS",ID,
 				DESCRIPTION,TITLE,URI,LEARNINGAGREEMENTLIST_ID,LEARNINGAGREEMENTLIST_TITLE,
-				TRANSCRIPTIONOFRECORDLIST_ID,TRANSCRIPTIONOFRECORDLIST_TITLE,USERGUIDELIST_ID,
+				TRANSCRIPTSOFRECORDLIST_ID,TRANSCRIPTSOFRECORDLIST_TITLE,USERGUIDELIST_ID,
 				USERGUIDELIST_TITLE);
 		
 		setDataSource(EcvetH2.DB);
@@ -154,8 +152,8 @@ public class Complementarydocuments extends VirtualTable implements StaticInstan
 		addIndex(new Index("FK_COMPLEMENTARYDOCUMENTS_LEARNINGAGREEMENTLIST_ID_INDEX_B",
 				IndexType.NORMAL,"LEARNINGAGREEMENTLIST_ID"));
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"ID"));
-		addIndex(new Index("COMPLEMENTARYDOCUMENTSTRANSCRIPTIONOFRECORDLIST_ID_INDEX_B",
-				IndexType.NORMAL,"TRANSCRIPTIONOFRECORDLIST_ID"));
+		addIndex(new Index("COMPLEMENTARYDOCUMENTS_TRANSCRIPTSOFRECORDLIST_ID_INDEX_B",
+				IndexType.NORMAL,"TRANSCRIPTSOFRECORDLIST_ID"));
 	}
 	
 	public final static Complementarydocuments	VT	= new Complementarydocuments();

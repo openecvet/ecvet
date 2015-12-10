@@ -14,7 +14,7 @@
     "defaultOutputDir": "bin",
     "flavor": "JAVA2",
     "laf": "xdev.ui.laf.SystemLookAndFeel",
-    "name": "ecvet_impl",
+    "name": "ecvet_implementation",
     "open": true,
     "sourcepath": {
         "defaultOutputDir": "bin",

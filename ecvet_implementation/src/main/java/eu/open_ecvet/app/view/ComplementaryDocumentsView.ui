@@ -178,7 +178,7 @@
             "properties": {
                 "-autofillColumns": {
                     "value": {
-                        "expression": "TITLE, URI, LEARNINGAGREEMENTLIST_TITLE, TRANSCRIPTIONOFRECORDLIST_TITLE, USERGUIDELIST_TITLE"
+                        "expression": "TITLE, URI, LEARNINGAGREEMENTLIST_TITLE, TRANSCRIPTSOFRECORDLIST_TITLE, USERGUIDELIST_TITLE"
                     }
                 },
                 "-autofillWithData": {
@@ -396,13 +396,13 @@
                             "value": "textField2"
                         },
                         "tabIndex": {
-                            "value": 5
+                            "value": 18
                         },
                         "width": {
-                            "value": 595
+                            "value": 607
                         },
                         "x": {
-                            "value": 202
+                            "value": 190
                         },
                         "y": {
                             "value": 3
@@ -483,13 +483,13 @@
                             "value": 2147483647
                         },
                         "tabIndex": {
-                            "value": 6
+                            "value": 19
                         },
                         "width": {
-                            "value": 595
+                            "value": 607
                         },
                         "x": {
-                            "value": 202
+                            "value": 190
                         },
                         "y": {
                             "value": 30
@@ -573,13 +573,13 @@
                             "value": 2147483647
                         },
                         "tabIndex": {
-                            "value": 7
+                            "value": 20
                         },
                         "width": {
-                            "value": 595
+                            "value": 607
                         },
                         "x": {
-                            "value": 202
+                            "value": 190
                         },
                         "y": {
                             "value": 98
@@ -676,13 +676,13 @@
                             "value": "comboBox2"
                         },
                         "tabIndex": {
-                            "value": 8
+                            "value": 21
                         },
                         "width": {
-                            "value": 595
+                            "value": 607
                         },
                         "x": {
-                            "value": 202
+                            "value": 190
                         },
                         "y": {
                             "value": 124
@@ -718,10 +718,10 @@
                             "value": "label6"
                         },
                         "text": {
-                            "value": "TRANSCRIPTIONOFRECORDLIST_ID"
+                            "value": "TRANSCRIPTSOFRECORDLIST_ID"
                         },
                         "width": {
-                            "value": 193
+                            "value": 181
                         },
                         "x": {
                             "value": 3
@@ -764,13 +764,13 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "transcriptionOfRecordListComboBox"
+                            "value": "transcriptsOfRecordListComboBox"
                         },
                         "-virtualTable": {
-                            "value": "eu.open_ecvet.app.model.Transcriptionofrecordlist"
+                            "value": "eu.open_ecvet.app.model.Transcriptsofrecordlist"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Complementarydocuments.TRANSCRIPTIONOFRECORDLIST_ID"
+                            "value": "eu.open_ecvet.app.model.Complementarydocuments.TRANSCRIPTSOFRECORDLIST_ID"
                         },
                         "height": {
                             "value": 20
@@ -779,13 +779,13 @@
                             "value": "comboBox3"
                         },
                         "tabIndex": {
-                            "value": 9
+                            "value": 22
                         },
                         "width": {
-                            "value": 595
+                            "value": 607
                         },
                         "x": {
-                            "value": 202
+                            "value": 190
                         },
                         "y": {
                             "value": 150
@@ -876,13 +876,13 @@
                             "value": 20
                         },
                         "tabIndex": {
-                            "value": 10
+                            "value": 23
                         },
                         "width": {
-                            "value": 595
+                            "value": 607
                         },
                         "x": {
-                            "value": 202
+                            "value": 190
                         },
                         "y": {
                             "value": 176
@@ -908,7 +908,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 11
+                                    "value": 24
                                 },
                                 "text": {
                                     "value": "New"
@@ -941,7 +941,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 12
+                                    "value": 25
                                 },
                                 "text": {
                                     "value": "Reset"
@@ -974,7 +974,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 13
+                                    "value": 26
                                 },
                                 "text": {
                                     "value": "Save"
@@ -1007,7 +1007,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 14
+                                    "value": 27
                                 },
                                 "text": {
                                     "value": "Save + New"
@@ -1040,7 +1040,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 15
+                                    "value": 28
                                 },
                                 "text": {
                                     "value": "Search"

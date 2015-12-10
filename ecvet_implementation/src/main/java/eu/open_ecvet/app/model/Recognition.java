@@ -7,9 +7,6 @@ import xdev.db.Index;
 import xdev.db.Index.IndexType;
 import xdev.lang.StaticInstanceSupport;
 import xdev.ui.text.TextFormat;
-import xdev.vt.Cardinality;
-import xdev.vt.EntityRelationship;
-import xdev.vt.TableColumnLink;
 import xdev.vt.VirtualTable;
 import xdev.vt.VirtualTableColumn;
 
@@ -28,7 +25,6 @@ public class Recognition extends VirtualTable implements StaticInstanceSupport /
 	public final static VirtualTableColumn<String>	TITLE;
 	public final static VirtualTableColumn<String>	URI;
 	public final static VirtualTableColumn<Integer>	CERTIFICATETEMPLATE_ID;
-	public final static VirtualTableColumn<String>	CERTIFICATETEMPLATE_TITLE;
 	
 	static
 	{
@@ -69,34 +65,19 @@ public class Recognition extends VirtualTable implements StaticInstanceSupport /
 		CERTIFICATETEMPLATE_ID = new VirtualTableColumn<Integer>("CERTIFICATETEMPLATE_ID");
 		CERTIFICATETEMPLATE_ID.setType(DataType.INTEGER);
 		CERTIFICATETEMPLATE_ID.setDefaultValue(null);
-		CERTIFICATETEMPLATE_ID.setVisible(false);
 		CERTIFICATETEMPLATE_ID.setPreferredWidth(100);
 		CERTIFICATETEMPLATE_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,
 				0,0,false,false));
-		
-		CERTIFICATETEMPLATE_TITLE = new VirtualTableColumn<String>("CERTIFICATETEMPLATE_TITLE");
-		CERTIFICATETEMPLATE_TITLE.setType(DataType.VARCHAR,2147483647);
-		CERTIFICATETEMPLATE_TITLE.setDefaultValue(null);
-		CERTIFICATETEMPLATE_TITLE.setCaption("TITLE");
-		CERTIFICATETEMPLATE_TITLE.setPreferredWidth(100);
-		CERTIFICATETEMPLATE_TITLE.setTextFormat(TextFormat.getPlainInstance());
-		
-		CERTIFICATETEMPLATE_TITLE.setPersistent(false);
-		CERTIFICATETEMPLATE_TITLE.setTableColumnLink(new TableColumnLink(Certificatetemplate.class
-				.getName(),Certificatetemplate.TITLE.getName(),new EntityRelationship(
-				Certificatetemplate.class.getName(),new String[]{Certificatetemplate.ID.getName()},
-				Cardinality.ONE,Recognition.class.getName(),
-				new String[]{Recognition.CERTIFICATETEMPLATE_ID.getName()},Cardinality.MANY)));
 	}
 	
 	
 	public Recognition()
 	{
 		super(Recognition.class.getName(),"PUBLIC","RECOGNITION",ID,COMPETENTINSTITUTIONURI,
-				DESCRIPTION,TITLE,URI,CERTIFICATETEMPLATE_ID,CERTIFICATETEMPLATE_TITLE);
+				DESCRIPTION,TITLE,URI,CERTIFICATETEMPLATE_ID);
 		
 		setDataSource(EcvetH2.DB);
-		setPrimaryColumn(COMPETENTINSTITUTIONURI);
+		setPrimaryColumn(TITLE);
 		
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"ID"));
 		addIndex(new Index("FK_RECOGNITION_CERTIFICATETEMPLATE_ID_INDEX_9",IndexType.NORMAL,

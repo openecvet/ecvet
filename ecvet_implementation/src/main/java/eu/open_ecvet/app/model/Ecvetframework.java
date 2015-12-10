@@ -145,7 +145,7 @@ public class Ecvetframework extends VirtualTable implements StaticInstanceSuppor
 				QUALIFICATION_TITLE);
 		
 		setDataSource(EcvetH2.DB);
-		setPrimaryColumn(ID);
+		setPrimaryColumn(TITLE);
 		
 		addIndex(new Index("FK_ECVETFRAMEWORK_QUALIFICATION_ID_INDEX_F",IndexType.NORMAL,
 				"QUALIFICATION_ID"));

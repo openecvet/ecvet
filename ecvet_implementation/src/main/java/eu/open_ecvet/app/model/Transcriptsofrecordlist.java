@@ -15,16 +15,12 @@ import java.util.Locale;
 import eu.open_ecvet.app.data_src.EcvetH2;
 
 
-public class Referencelevel extends VirtualTable implements StaticInstanceSupport // ${GENERATED-CODE-LINE:VT_SUPERCLASS}
+public class Transcriptsofrecordlist extends VirtualTable implements StaticInstanceSupport // ${GENERATED-CODE-LINE:VT_SUPERCLASS}
 {
 	
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
 	public final static VirtualTableColumn<Integer>	ID;
 	public final static VirtualTableColumn<String>	DESCRIPTION;
-	public final static VirtualTableColumn<String>	FRAMEWORK;
-	public final static VirtualTableColumn<Integer>	FRAMEWORKLEVEL;
-	public final static VirtualTableColumn<String>	FRAMEWORKTERM;
-	public final static VirtualTableColumn<String>	INDICATOR;
 	public final static VirtualTableColumn<String>	TITLE;
 	public final static VirtualTableColumn<String>	URI;
 	
@@ -46,31 +42,6 @@ public class Referencelevel extends VirtualTable implements StaticInstanceSuppor
 		DESCRIPTION.setPreferredWidth(100);
 		DESCRIPTION.setTextFormat(TextFormat.getPlainInstance());
 		
-		FRAMEWORK = new VirtualTableColumn<String>("FRAMEWORK");
-		FRAMEWORK.setType(DataType.VARCHAR,2147483647);
-		FRAMEWORK.setDefaultValue(null);
-		FRAMEWORK.setPreferredWidth(100);
-		FRAMEWORK.setTextFormat(TextFormat.getPlainInstance());
-		
-		FRAMEWORKLEVEL = new VirtualTableColumn<Integer>("FRAMEWORKLEVEL");
-		FRAMEWORKLEVEL.setType(DataType.INTEGER);
-		FRAMEWORKLEVEL.setDefaultValue(null);
-		FRAMEWORKLEVEL.setPreferredWidth(100);
-		FRAMEWORKLEVEL.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,
-				false,false));
-		
-		FRAMEWORKTERM = new VirtualTableColumn<String>("FRAMEWORKTERM");
-		FRAMEWORKTERM.setType(DataType.VARCHAR,2147483647);
-		FRAMEWORKTERM.setDefaultValue(null);
-		FRAMEWORKTERM.setPreferredWidth(100);
-		FRAMEWORKTERM.setTextFormat(TextFormat.getPlainInstance());
-		
-		INDICATOR = new VirtualTableColumn<String>("INDICATOR");
-		INDICATOR.setType(DataType.VARCHAR,2147483647);
-		INDICATOR.setDefaultValue(null);
-		INDICATOR.setPreferredWidth(100);
-		INDICATOR.setTextFormat(TextFormat.getPlainInstance());
-		
 		TITLE = new VirtualTableColumn<String>("TITLE");
 		TITLE.setType(DataType.VARCHAR,2147483647);
 		TITLE.setDefaultValue(null);
@@ -85,10 +56,10 @@ public class Referencelevel extends VirtualTable implements StaticInstanceSuppor
 	}
 	
 	
-	public Referencelevel()
+	public Transcriptsofrecordlist()
 	{
-		super(Referencelevel.class.getName(),"PUBLIC","REFERENCELEVEL",ID,DESCRIPTION,FRAMEWORK,
-				FRAMEWORKLEVEL,FRAMEWORKTERM,INDICATOR,TITLE,URI);
+		super(Transcriptsofrecordlist.class.getName(),"PUBLIC","TRANSCRIPTSOFRECORDLIST",ID,
+				DESCRIPTION,TITLE,URI);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(TITLE);
@@ -96,10 +67,10 @@ public class Referencelevel extends VirtualTable implements StaticInstanceSuppor
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"ID"));
 	}
 	
-	public final static Referencelevel	VT	= new Referencelevel();
+	public final static Transcriptsofrecordlist	VT	= new Transcriptsofrecordlist();
 	
 	
-	public static Referencelevel getInstance()
+	public static Transcriptsofrecordlist getInstance()
 	{
 		return VT;
 	}

@@ -24,6 +24,7 @@ public class ConfirmingrequirementlistConfirmingrequirement extends VirtualTable
 	
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
 	public final static VirtualTableColumn<Integer>	CONFIRMINGREQUIREMENTLIST_ID;
+	public final static VirtualTableColumn<String>	CONFIRMINGREQUIREMENTLIST_TITLE;
 	public final static VirtualTableColumn<Integer>	CONFIRMINGREQUIREMENT_ID;
 	public final static VirtualTableColumn<String>	CONFIRMINGREQUIREMENT_TITLE;
 	
@@ -38,6 +39,14 @@ public class ConfirmingrequirementlistConfirmingrequirement extends VirtualTable
 		CONFIRMINGREQUIREMENTLIST_ID.setPreferredWidth(100);
 		CONFIRMINGREQUIREMENTLIST_ID.setTextFormat(TextFormat.getNumberInstance(
 				Locale.getDefault(),null,0,0,false,false));
+		
+		CONFIRMINGREQUIREMENTLIST_TITLE = new VirtualTableColumn<String>(
+				"CONFIRMINGREQUIREMENTLIST_TITLE");
+		CONFIRMINGREQUIREMENTLIST_TITLE.setType(DataType.VARCHAR,2147483647);
+		CONFIRMINGREQUIREMENTLIST_TITLE.setDefaultValue(null);
+		CONFIRMINGREQUIREMENTLIST_TITLE.setCaption("TITLE");
+		CONFIRMINGREQUIREMENTLIST_TITLE.setPreferredWidth(100);
+		CONFIRMINGREQUIREMENTLIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
 		
 		CONFIRMINGREQUIREMENT_ID = new VirtualTableColumn<Integer>("CONFIRMINGREQUIREMENT_ID");
 		CONFIRMINGREQUIREMENT_ID.setType(DataType.INTEGER);
@@ -54,6 +63,19 @@ public class ConfirmingrequirementlistConfirmingrequirement extends VirtualTable
 		CONFIRMINGREQUIREMENT_TITLE.setCaption("TITLE");
 		CONFIRMINGREQUIREMENT_TITLE.setPreferredWidth(100);
 		CONFIRMINGREQUIREMENT_TITLE.setTextFormat(TextFormat.getPlainInstance());
+		
+		CONFIRMINGREQUIREMENTLIST_TITLE.setPersistent(false);
+		CONFIRMINGREQUIREMENTLIST_TITLE
+				.setTableColumnLink(new TableColumnLink(
+						Confirmingrequirementlist.class.getName(),
+						Confirmingrequirementlist.TITLE.getName(),
+						new EntityRelationship(
+								Confirmingrequirementlist.class.getName(),
+								new String[]{Confirmingrequirementlist.ID.getName()},
+								Cardinality.ONE,
+								ConfirmingrequirementlistConfirmingrequirement.class.getName(),
+								new String[]{ConfirmingrequirementlistConfirmingrequirement.CONFIRMINGREQUIREMENTLIST_ID
+										.getName()},Cardinality.MANY)));
 		
 		CONFIRMINGREQUIREMENT_TITLE.setPersistent(false);
 		CONFIRMINGREQUIREMENT_TITLE
@@ -74,7 +96,8 @@ public class ConfirmingrequirementlistConfirmingrequirement extends VirtualTable
 	{
 		super(ConfirmingrequirementlistConfirmingrequirement.class.getName(),"PUBLIC",
 				"CONFIRMINGREQUIREMENTLIST_CONFIRMINGREQUIREMENT",CONFIRMINGREQUIREMENTLIST_ID,
-				CONFIRMINGREQUIREMENT_ID,CONFIRMINGREQUIREMENT_TITLE);
+				CONFIRMINGREQUIREMENTLIST_TITLE,CONFIRMINGREQUIREMENT_ID,
+				CONFIRMINGREQUIREMENT_TITLE);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(CONFIRMINGREQUIREMENTLIST_ID);

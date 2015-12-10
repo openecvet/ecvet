@@ -3,7 +3,6 @@
         {
             "children": [{
                 "class": "xdev.ui.XdevButton",
-                "events": ["action.actionPerformed"],
                 "properties": {
                     "-constraints": {
                         "value": {
@@ -22,7 +21,7 @@
                         }
                     },
                     "-fieldName": {
-                        "value": "learningOutcomeTermShortcut"
+                        "value": "xShortcut"
                     },
                     "height": {
                         "value": 22
@@ -31,10 +30,10 @@
                         "value": 1
                     },
                     "text": {
-                        "value": "Learning Outcome Term"
+                        "value": "Button"
                     },
                     "width": {
-                        "value": 166
+                        "value": 65
                     }
                 }
             }],
@@ -113,7 +112,7 @@
                     "value": "table"
                 },
                 "-virtualTable": {
-                    "value": "eu.open_ecvet.app.model.Learningoutcometermlist"
+                    "value": "eu.open_ecvet.app.model.Transcriptsofrecordlist"
                 },
                 "height": {
                     "value": 156
@@ -227,12 +226,12 @@
                     "properties": {
                         "-autofillColumns": {
                             "value": {
-                                "expression": "{$LEARNINGOUTCOMETERM_TITLE}"
+                                "expression": "{$TRANSCRIPTSOFRECORD_TITLE}"
                             }
                         },
                         "-autofillDataColumn": {
                             "value": {
-                                "expression": "LEARNINGOUTCOMETERM_ID"
+                                "expression": "TRANSCRIPTSOFRECORD_ID"
                             }
                         },
                         "-autofillWithData": {
@@ -258,7 +257,7 @@
                             "value": "nmListBox"
                         },
                         "-virtualTable": {
-                            "value": "eu.open_ecvet.app.model.LearningoutcometermlistLearningoutcometerm"
+                            "value": "eu.open_ecvet.app.model.TranscriptsofrecordlistTranscriptsofrecord"
                         },
                         "height": {
                             "value": 134
@@ -297,7 +296,7 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "label4"
+                            "value": "label5"
                         },
                         "height": {
                             "value": 16
@@ -381,7 +380,7 @@
                             "value": "textField2"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Learningoutcometermlist.TITLE"
+                            "value": "eu.open_ecvet.app.model.Transcriptsofrecordlist.TITLE"
                         },
                         "height": {
                             "value": 20
@@ -474,7 +473,7 @@
                             "value": "textArea"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Learningoutcometermlist.DESCRIPTION"
+                            "value": "eu.open_ecvet.app.model.Transcriptsofrecordlist.DESCRIPTION"
                         },
                         "height": {
                             "value": 107
@@ -558,7 +557,7 @@
                             "value": "textField"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Learningoutcometermlist.URI"
+                            "value": "eu.open_ecvet.app.model.Transcriptsofrecordlist.URI"
                         },
                         "height": {
                             "value": 20
@@ -625,7 +624,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 0
+                                        "zpos": 1
                                     }
                                 },
                                 "-fieldName": {
@@ -658,7 +657,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 0
+                                        "zpos": 2
                                     }
                                 },
                                 "-fieldName": {
@@ -691,7 +690,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 0
+                                        "zpos": 3
                                     }
                                 },
                                 "-fieldName": {
@@ -724,7 +723,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 0
+                                        "zpos": 4
                                     }
                                 },
                                 "-fieldName": {
@@ -842,7 +841,7 @@
     ],
     "properties": {
         "-fieldName": {
-            "value": "LearningOutcomeTermListView"
+            "value": "TranscriptsOfRecordListView"
         },
         "height": {
             "value": 600

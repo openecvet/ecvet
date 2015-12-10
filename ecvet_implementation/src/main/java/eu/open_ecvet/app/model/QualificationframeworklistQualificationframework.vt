@@ -31,7 +31,7 @@
             "length": 10,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "REFERENCELEVELLIST_ID",
+            "name": "QUALIFICATIONFRAMEWORKLIST_ID",
             "nullable": false,
             "persistent": true,
             "preferredWidth": 100,
@@ -70,7 +70,7 @@
             "length": 10,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "REFERENCELEVEL_ID",
+            "name": "QUALIFICATIONFRAMEWORK_ID",
             "nullable": false,
             "persistent": true,
             "preferredWidth": 100,
@@ -108,24 +108,24 @@
             "length": 2147483647,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "REFERENCELEVEL_TITLE",
+            "name": "QUALIFICATIONFRAMEWORK_TITLE",
             "nullable": true,
             "persistent": false,
             "preferredWidth": 100,
             "scale": 0,
             "tableColumnLink": {
                 "linkedColumn": "TITLE",
-                "linkedTable": "eu.open_ecvet.app.model.Referencelevel",
+                "linkedTable": "eu.open_ecvet.app.model.Qualificationframework",
                 "path": [{
                     "first": {
                         "cardinality": "ONE",
                         "columns": ["ID"],
-                        "table": "eu.open_ecvet.app.model.Referencelevel"
+                        "table": "eu.open_ecvet.app.model.Qualificationframework"
                     },
                     "second": {
                         "cardinality": "MANY",
-                        "columns": ["REFERENCELEVEL_ID"],
-                        "table": "eu.open_ecvet.app.model.ReferencelevellistReferencelevel"
+                        "columns": ["QUALIFICATIONFRAMEWORK_ID"],
+                        "table": "eu.open_ecvet.app.model.QualificationframeworklistQualificationframework"
                     }
                 }]
             },
@@ -135,14 +135,14 @@
     ],
     "dataSource": "eu.open_ecvet.app.data_src.EcvetH2",
     "dataSourceSchema": "PUBLIC",
-    "dataSourceTable": "REFERENCELEVELLIST_REFERENCELEVEL",
+    "dataSourceTable": "QUALIFICATIONFRAMEWORKLIST_QUALIFICATIONFRAMEWORK",
     "indices": [{
         "columns": [
-            "REFERENCELEVELLIST_ID",
-            "REFERENCELEVEL_ID"
+            "QUALIFICATIONFRAMEWORKLIST_ID",
+            "QUALIFICATIONFRAMEWORK_ID"
         ],
         "name": "PRIMARY_KEY",
         "type": "PRIMARY_KEY"
     }],
-    "primaryColumn": "REFERENCELEVELLIST_ID"
+    "primaryColumn": "QUALIFICATIONFRAMEWORKLIST_ID"
 }

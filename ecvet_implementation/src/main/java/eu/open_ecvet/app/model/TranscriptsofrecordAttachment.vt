@@ -1,12 +1,12 @@
 {
     "columns": [
         {
-            "autoIncrement": true,
+            "autoIncrement": false,
             "autoTruncate": true,
             "caption": "",
             "dataFlavor": "UNDEFINED",
             "defaultValue": 0,
-            "editable": false,
+            "editable": true,
             "format": {
                 "dateFormat": "MEDIUM",
                 "dateSet": "DATE",
@@ -31,7 +31,7 @@
             "length": 10,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "ID",
+            "name": "ATTACHMENTS_ID",
             "nullable": false,
             "persistent": true,
             "preferredWidth": 100,
@@ -44,14 +44,15 @@
             "autoTruncate": true,
             "caption": "",
             "dataFlavor": "UNDEFINED",
+            "defaultValue": 0,
             "editable": true,
             "format": {
                 "dateFormat": "MEDIUM",
                 "dateSet": "DATE",
-                "groupingUsed": true,
+                "groupingUsed": false,
                 "locale": "%",
-                "maxFractionDigits": 2,
-                "minFractionDigits": 2,
+                "maxFractionDigits": 0,
+                "minFractionDigits": 0,
                 "pattern": [
                     "",
                     "yyyy-MM-dd",
@@ -62,25 +63,25 @@
                 "signedColor": "255,0,0",
                 "suppressZero": false,
                 "timeFormat": "MEDIUM",
-                "type": "NONE",
+                "type": "NUMBER",
                 "useSignedColor": false
             },
             "horizontalAlign": "LEFT",
-            "length": 2147483647,
+            "length": 10,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "DESCRIPTION",
-            "nullable": true,
+            "name": "ATTACHMENT_ID",
+            "nullable": false,
             "persistent": true,
             "preferredWidth": 100,
             "scale": 0,
-            "type": "VARCHAR",
-            "visible": true
+            "type": "INTEGER",
+            "visible": false
         },
         {
             "autoIncrement": false,
             "autoTruncate": true,
-            "caption": "",
+            "caption": "TITLE",
             "dataFlavor": "UNDEFINED",
             "editable": true,
             "format": {
@@ -107,60 +108,41 @@
             "length": 2147483647,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "TITLE",
+            "name": "ATTACHMENT_TITLE",
             "nullable": true,
-            "persistent": true,
+            "persistent": false,
             "preferredWidth": 100,
             "scale": 0,
-            "type": "VARCHAR",
-            "visible": true
-        },
-        {
-            "autoIncrement": false,
-            "autoTruncate": true,
-            "caption": "",
-            "dataFlavor": "UNDEFINED",
-            "editable": true,
-            "format": {
-                "dateFormat": "MEDIUM",
-                "dateSet": "DATE",
-                "groupingUsed": true,
-                "locale": "%",
-                "maxFractionDigits": 2,
-                "minFractionDigits": 2,
-                "pattern": [
-                    "",
-                    "yyyy-MM-dd",
-                    "#,##0.###;-#,##0.###",
-                    "¤#,##0.00;-¤#,##0.00",
-                    "#,##0%"
-                ],
-                "signedColor": "255,0,0",
-                "suppressZero": false,
-                "timeFormat": "MEDIUM",
-                "type": "NONE",
-                "useSignedColor": false
+            "tableColumnLink": {
+                "linkedColumn": "TITLE",
+                "linkedTable": "eu.open_ecvet.app.model.Attachment",
+                "path": [{
+                    "first": {
+                        "cardinality": "ONE",
+                        "columns": ["ID"],
+                        "table": "eu.open_ecvet.app.model.Attachment"
+                    },
+                    "second": {
+                        "cardinality": "MANY",
+                        "columns": ["ATTACHMENT_ID"],
+                        "table": "eu.open_ecvet.app.model.TranscriptsofrecordAttachment"
+                    }
+                }]
             },
-            "horizontalAlign": "LEFT",
-            "length": 2147483647,
-            "maxWidth": 0,
-            "minWidth": 0,
-            "name": "URI",
-            "nullable": true,
-            "persistent": true,
-            "preferredWidth": 100,
-            "scale": 0,
             "type": "VARCHAR",
             "visible": true
         }
     ],
     "dataSource": "eu.open_ecvet.app.data_src.EcvetH2",
     "dataSourceSchema": "PUBLIC",
-    "dataSourceTable": "TRANSCRIPTIONOFRECORDLIST",
+    "dataSourceTable": "TRANSCRIPTSOFRECORD_ATTACHMENT",
     "indices": [{
-        "columns": ["ID"],
+        "columns": [
+            "ATTACHMENTS_ID",
+            "ATTACHMENT_ID"
+        ],
         "name": "PRIMARY_KEY",
         "type": "PRIMARY_KEY"
     }],
-    "primaryColumn": "TITLE"
+    "primaryColumn": "ATTACHMENTS_ID"
 }

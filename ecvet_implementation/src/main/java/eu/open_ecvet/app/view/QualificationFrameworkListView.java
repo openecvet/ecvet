@@ -2,6 +2,7 @@
 package eu.open_ecvet.app.view;
 
 
+import xdev.db.DBException;
 import xdev.lang.EventHandlerDelegate;
 import xdev.ui.*;
 
@@ -20,42 +21,40 @@ import javax.swing.SwingConstants;
 
 import eu.open_ecvet.app.helper.UpdateView;
 import eu.open_ecvet.app.helper.UpdateViewHelper;
-import eu.open_ecvet.app.model.Transcriptionofrecord;
-import eu.open_ecvet.app.model.TranscriptionofrecordAttachment;
+import eu.open_ecvet.app.model.Qualificationframeworklist;
+import eu.open_ecvet.app.model.QualificationframeworklistQualificationframework;
 
 
-public class TranscriptionOfRecordView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLASS}
+public class QualificationFrameworkListView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLASS}
 {
 	private MainWindow	mainWindow;
 	
 	private UpdateView	updateView	= new UpdateView()
 									{
-
-										
 										
 										@Override
 										public String getName()
 										{
-										
-											return TranscriptionOfRecordView.class.getSimpleName();
+											
+											return QualificationFrameworkListView.class.getSimpleName();
 										}
-
-
+										
+										
 										public void update()
 										{
-											nmListBox.setModel(TranscriptionofrecordAttachment.VT,"{$ATTACHMENT_TITLE}","ATTACHMENT_ID",true);
+											nmListBox.setModel(QualificationframeworklistQualificationframework.VT,"{$QUALIFICATIONFRAMEWORK_TITLE}","QUALIFICATIONFRAMEWORK_ID",true);
 											table.refresh();
 										}
 									};
 	
 	
-	public TranscriptionOfRecordView()
+	public QualificationFrameworkListView()
 	{
 		
 	}
 	
 	
-	public TranscriptionOfRecordView(MainWindow mainWindow)
+	public QualificationFrameworkListView(MainWindow mainWindow)
 	{
 		this.mainWindow = mainWindow;
 	}
@@ -71,18 +70,18 @@ public class TranscriptionOfRecordView extends XdevWindow // ${GENERATED-CODE-L
 	@EventHandlerDelegate
 	void deleteButton_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		//		try
-		//		{
-		//			formular.delete();
-		//			formular.reset(Unitlist.VT);
-		//		}
-		//		catch(DBException e)
-		//		{
-		//			// TODO Auto-generated code
-		//			e.printStackTrace();
-		updateView.update();
-		this.openInDialog(new AlertWindow(),true);
-		//		}
+		try
+		{
+			formular.delete();
+			formular.reset(Qualificationframeworklist.VT);
+		}
+		catch(DBException e)
+		{
+			// TODO Auto-generated code
+			e.printStackTrace();
+			updateView.update();
+			this.openInDialog(new AlertWindow(),true);
+		}
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
 	
 	
@@ -95,7 +94,7 @@ public class TranscriptionOfRecordView extends XdevWindow // ${GENERATED-CODE-L
 	
 	@EventHandlerDelegate void cmdNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		formular.reset(eu.open_ecvet.app.model.Transcriptionofrecord.VT);
+		formular.reset(eu.open_ecvet.app.model.Qualificationframeworklist.VT);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
 
 
@@ -128,7 +127,7 @@ public class TranscriptionOfRecordView extends XdevWindow // ${GENERATED-CODE-L
 			try
 			{
 				formular.save();
-				formular.reset(eu.open_ecvet.app.model.Transcriptionofrecord.VT);
+				formular.reset(eu.open_ecvet.app.model.Qualificationframeworklist.VT);
 			}
 			catch(Exception e)
 			{
@@ -146,7 +145,8 @@ public class TranscriptionOfRecordView extends XdevWindow // ${GENERATED-CODE-L
 
 	// Generated definitions, do not edit! ${GENERATED-CODE-BLOCK-START:DEFINITIONS}
 	XdevContainer	container, container3, container2;
-	XdevButton		xShortcut, cmdNew, cmdReset, cmdSave, cmdSaveAndNew, cmdSearch, deleteButton;
+	XdevButton		qualifcationFrameworkShortcut, cmdNew, cmdReset, cmdSave, cmdSaveAndNew,
+			cmdSearch, deleteButton;
 	XdevTextField	textField2, textField;
 	XdevFormular	formular;
 	XdevTable		table;
@@ -157,7 +157,7 @@ public class TranscriptionOfRecordView extends XdevWindow // ${GENERATED-CODE-L
 	
 	{// Generated initializers, do not edit! ${GENERATED-CODE-BLOCK-START:INITIALIZERS}
 		container = new XdevContainer();
-		xShortcut = new XdevButton();
+		qualifcationFrameworkShortcut = new XdevButton();
 		table = new XdevTable();
 		formular = new XdevFormular();
 		label2 = new XdevLabel();
@@ -180,27 +180,28 @@ public class TranscriptionOfRecordView extends XdevWindow // ${GENERATED-CODE-L
 		this.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 		this.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
 		this.setPreferredSize(new Dimension(800,600));
-		xShortcut.setTabIndex(1);
-		xShortcut.setText("Button");
+		qualifcationFrameworkShortcut.setTabIndex(1);
+		qualifcationFrameworkShortcut.setText("Qualification Framework");
+		qualifcationFrameworkShortcut.setEnabled(false);
 		table.setTabIndex(3);
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		table.setModel(Transcriptionofrecord.VT,"TITLE, URI",true);
+		table.setModel(Qualificationframeworklist.VT,"TITLE, URI",true);
 		label2.setText("TITLE");
 		label2.setName("label2");
-		textField2.setDataField("eu.open_ecvet.app.model.Transcriptionofrecord.TITLE");
+		textField2.setDataField("eu.open_ecvet.app.model.Qualificationframeworklist.TITLE");
 		textField2.setTabIndex(5);
 		textField2.setMaxSignCount(Integer.MAX_VALUE);
 		textField2.setName("textField2");
 		textField2.setHorizontalAlignment(SwingConstants.LEFT);
-		label4.setText("Attachment");
+		label4.setText("Label");
 		label3.setText("DESCRIPTION");
 		label3.setName("label3");
-		textArea.setDataField("eu.open_ecvet.app.model.Transcriptionofrecord.DESCRIPTION");
+		textArea.setDataField("eu.open_ecvet.app.model.Qualificationframeworklist.DESCRIPTION");
 		textArea.setTabIndex(6);
 		textArea.setMaxSignCount(Integer.MAX_VALUE);
 		nmListBox.setTabIndex(13);
 		label.setText("URI");
-		textField.setDataField("eu.open_ecvet.app.model.Transcriptionofrecord.URI");
+		textField.setDataField("eu.open_ecvet.app.model.Qualificationframeworklist.URI");
 		textField.setTabIndex(7);
 		textField.setMaxSignCount(Integer.MAX_VALUE);
 		textField.setHorizontalAlignment(SwingConstants.LEFT);
@@ -229,7 +230,7 @@ public class TranscriptionOfRecordView extends XdevWindow // ${GENERATED-CODE-L
 		textField.saveState();
 		
 		container.setLayout(new GridBagLayout());
-		container.add(xShortcut,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
+		container.add(qualifcationFrameworkShortcut,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
 		GBC.addSpacer(container,true,true);
 		container3.setLayout(new FlowLayout(FlowLayout.TRAILING,3,3));
 		container3.add(cmdNew);
@@ -261,7 +262,7 @@ public class TranscriptionOfRecordView extends XdevWindow // ${GENERATED-CODE-L
 		this.add(container2,new GBC(1,4,1,1,0.1,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(this,true,true);
 		
-		nmListBox.setModel(TranscriptionofrecordAttachment.VT,"{$ATTACHMENT_TITLE}","ATTACHMENT_ID",true);
+		nmListBox.setModel(QualificationframeworklistQualificationframework.VT,"{$QUALIFICATIONFRAMEWORK_TITLE}","QUALIFICATIONFRAMEWORK_ID",true);
 		
 		this.addWindowListener(new WindowAdapter()
 		{

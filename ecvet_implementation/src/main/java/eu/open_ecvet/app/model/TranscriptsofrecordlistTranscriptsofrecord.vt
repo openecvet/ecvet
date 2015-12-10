@@ -31,7 +31,7 @@
             "length": 10,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "ATTACHMENTS_ID",
+            "name": "TRANSCRIPTSOFRECORDLIST_ID",
             "nullable": false,
             "persistent": true,
             "preferredWidth": 100,
@@ -70,7 +70,7 @@
             "length": 10,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "ATTACHMENT_ID",
+            "name": "TRANSCRIPTSOFRECORD_ID",
             "nullable": false,
             "persistent": true,
             "preferredWidth": 100,
@@ -108,24 +108,24 @@
             "length": 2147483647,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "ATTACHMENT_TITLE",
+            "name": "TRANSCRIPTSOFRECORD_TITLE",
             "nullable": true,
             "persistent": false,
             "preferredWidth": 100,
             "scale": 0,
             "tableColumnLink": {
                 "linkedColumn": "TITLE",
-                "linkedTable": "eu.open_ecvet.app.model.Attachment",
+                "linkedTable": "eu.open_ecvet.app.model.Transcriptsofrecord",
                 "path": [{
                     "first": {
                         "cardinality": "ONE",
                         "columns": ["ID"],
-                        "table": "eu.open_ecvet.app.model.Attachment"
+                        "table": "eu.open_ecvet.app.model.Transcriptsofrecord"
                     },
                     "second": {
                         "cardinality": "MANY",
-                        "columns": ["ATTACHMENT_ID"],
-                        "table": "eu.open_ecvet.app.model.TranscriptionofrecordAttachment"
+                        "columns": ["TRANSCRIPTSOFRECORD_ID"],
+                        "table": "eu.open_ecvet.app.model.TranscriptsofrecordlistTranscriptsofrecord"
                     }
                 }]
             },
@@ -135,14 +135,14 @@
     ],
     "dataSource": "eu.open_ecvet.app.data_src.EcvetH2",
     "dataSourceSchema": "PUBLIC",
-    "dataSourceTable": "TRANSCRIPTIONOFRECORD_ATTACHMENT",
+    "dataSourceTable": "TRANSCRIPTSOFRECORDLIST_TRANSCRIPTSOFRECORD",
     "indices": [{
         "columns": [
-            "ATTACHMENTS_ID",
-            "ATTACHMENT_ID"
+            "TRANSCRIPTSOFRECORDLIST_ID",
+            "TRANSCRIPTSOFRECORD_ID"
         ],
         "name": "PRIMARY_KEY",
         "type": "PRIMARY_KEY"
     }],
-    "primaryColumn": "ATTACHMENTS_ID"
+    "primaryColumn": "TRANSCRIPTSOFRECORDLIST_ID"
 }

@@ -23,6 +23,7 @@ public class MethodlistMethod extends VirtualTable implements StaticInstanceSupp
 	
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
 	public final static VirtualTableColumn<Integer>	METHODLIST_ID;
+	public final static VirtualTableColumn<String>	METHODLIST_TITLE;
 	public final static VirtualTableColumn<Integer>	METHOD_ID;
 	public final static VirtualTableColumn<String>	METHOD_TITLE;
 	
@@ -36,6 +37,13 @@ public class MethodlistMethod extends VirtualTable implements StaticInstanceSupp
 		METHODLIST_ID.setPreferredWidth(100);
 		METHODLIST_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,
 				false,false));
+		
+		METHODLIST_TITLE = new VirtualTableColumn<String>("METHODLIST_TITLE");
+		METHODLIST_TITLE.setType(DataType.VARCHAR,2147483647);
+		METHODLIST_TITLE.setDefaultValue(null);
+		METHODLIST_TITLE.setCaption("TITLE");
+		METHODLIST_TITLE.setPreferredWidth(100);
+		METHODLIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
 		
 		METHOD_ID = new VirtualTableColumn<Integer>("METHOD_ID");
 		METHOD_ID.setType(DataType.INTEGER);
@@ -53,6 +61,13 @@ public class MethodlistMethod extends VirtualTable implements StaticInstanceSupp
 		METHOD_TITLE.setPreferredWidth(100);
 		METHOD_TITLE.setTextFormat(TextFormat.getPlainInstance());
 		
+		METHODLIST_TITLE.setPersistent(false);
+		METHODLIST_TITLE.setTableColumnLink(new TableColumnLink(Methodlist.class.getName(),
+				Methodlist.TITLE.getName(),new EntityRelationship(Methodlist.class.getName(),
+						new String[]{Methodlist.ID.getName()},Cardinality.ONE,
+						MethodlistMethod.class.getName(),
+						new String[]{MethodlistMethod.METHODLIST_ID.getName()},Cardinality.MANY)));
+		
 		METHOD_TITLE.setPersistent(false);
 		METHOD_TITLE.setTableColumnLink(new TableColumnLink(Method.class.getName(),Method.TITLE
 				.getName(),new EntityRelationship(Method.class.getName(),new String[]{Method.ID
@@ -64,7 +79,7 @@ public class MethodlistMethod extends VirtualTable implements StaticInstanceSupp
 	public MethodlistMethod()
 	{
 		super(MethodlistMethod.class.getName(),"PUBLIC","METHODLIST_METHOD",METHODLIST_ID,
-				METHOD_ID,METHOD_TITLE);
+				METHODLIST_TITLE,METHOD_ID,METHOD_TITLE);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(METHODLIST_ID);

@@ -15,7 +15,7 @@ import java.util.Locale;
 import eu.open_ecvet.app.data_src.EcvetH2;
 
 
-public class Referencelevellist extends VirtualTable implements StaticInstanceSupport // ${GENERATED-CODE-LINE:VT_SUPERCLASS}
+public class Qualificationframeworklist extends VirtualTable implements StaticInstanceSupport // ${GENERATED-CODE-LINE:VT_SUPERCLASS}
 {
 	
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
@@ -56,10 +56,10 @@ public class Referencelevellist extends VirtualTable implements StaticInstanceSu
 	}
 	
 	
-	public Referencelevellist()
+	public Qualificationframeworklist()
 	{
-		super(Referencelevellist.class.getName(),"PUBLIC","REFERENCELEVELLIST",ID,DESCRIPTION,
-				TITLE,URI);
+		super(Qualificationframeworklist.class.getName(),"PUBLIC","QUALIFICATIONFRAMEWORKLIST",ID,
+				DESCRIPTION,TITLE,URI);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(TITLE);
@@ -67,10 +67,10 @@ public class Referencelevellist extends VirtualTable implements StaticInstanceSu
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"ID"));
 	}
 	
-	public final static Referencelevellist	VT	= new Referencelevellist();
+	public final static Qualificationframeworklist	VT	= new Qualificationframeworklist();
 	
 	
-	public static Referencelevellist getInstance()
+	public static Qualificationframeworklist getInstance()
 	{
 		return VT;
 	}

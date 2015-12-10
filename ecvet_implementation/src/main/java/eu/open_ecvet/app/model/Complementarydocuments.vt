@@ -275,7 +275,7 @@
             "length": 10,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "TRANSCRIPTIONOFRECORDLIST_ID",
+            "name": "TRANSCRIPTSOFRECORDLIST_ID",
             "nullable": true,
             "persistent": true,
             "preferredWidth": 100,
@@ -313,23 +313,23 @@
             "length": 2147483647,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "TRANSCRIPTIONOFRECORDLIST_TITLE",
+            "name": "TRANSCRIPTSOFRECORDLIST_TITLE",
             "nullable": true,
             "persistent": false,
             "preferredWidth": 100,
             "scale": 0,
             "tableColumnLink": {
                 "linkedColumn": "TITLE",
-                "linkedTable": "eu.open_ecvet.app.model.Transcriptionofrecordlist",
+                "linkedTable": "eu.open_ecvet.app.model.Transcriptsofrecordlist",
                 "path": [{
                     "first": {
                         "cardinality": "ONE",
                         "columns": ["ID"],
-                        "table": "eu.open_ecvet.app.model.Transcriptionofrecordlist"
+                        "table": "eu.open_ecvet.app.model.Transcriptsofrecordlist"
                     },
                     "second": {
                         "cardinality": "MANY",
-                        "columns": ["TRANSCRIPTIONOFRECORDLIST_ID"],
+                        "columns": ["TRANSCRIPTSOFRECORDLIST_ID"],
                         "table": "eu.open_ecvet.app.model.Complementarydocuments"
                     }
                 }]
@@ -450,8 +450,8 @@
             "type": "PRIMARY_KEY"
         },
         {
-            "columns": ["TRANSCRIPTIONOFRECORDLIST_ID"],
-            "name": "COMPLEMENTARYDOCUMENTSTRANSCRIPTIONOFRECORDLIST_ID_INDEX_B",
+            "columns": ["TRANSCRIPTSOFRECORDLIST_ID"],
+            "name": "COMPLEMENTARYDOCUMENTS_TRANSCRIPTSOFRECORDLIST_ID_INDEX_B",
             "type": "NORMAL"
         }
     ],
