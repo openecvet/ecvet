@@ -23,11 +23,12 @@ public class Validation extends VirtualTable implements StaticInstanceSupport //
 	
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
 	public final static VirtualTableColumn<Integer>	ID;
+	public final static VirtualTableColumn<String>	ASSESSMENTURI;
 	public final static VirtualTableColumn<String>	DESCRIPTION;
 	public final static VirtualTableColumn<String>	TITLE;
 	public final static VirtualTableColumn<String>	URI;
-	public final static VirtualTableColumn<Integer>	CONFIRMINGREQUIREMENTLIST_ID;
-	public final static VirtualTableColumn<String>	CONFIRMINGREQUIREMENTLIST_TITLE;
+	public final static VirtualTableColumn<Integer>	REQUIREMENTLIST_ID;
+	public final static VirtualTableColumn<String>	REQUIREMENTLIST_TITLE;
 	
 	static
 	{
@@ -40,6 +41,12 @@ public class Validation extends VirtualTable implements StaticInstanceSupport //
 		ID.setEditable(false);
 		ID.setPreferredWidth(100);
 		ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
+		
+		ASSESSMENTURI = new VirtualTableColumn<String>("ASSESSMENTURI");
+		ASSESSMENTURI.setType(DataType.VARCHAR,2147483647);
+		ASSESSMENTURI.setDefaultValue(null);
+		ASSESSMENTURI.setPreferredWidth(100);
+		ASSESSMENTURI.setTextFormat(TextFormat.getPlainInstance());
 		
 		DESCRIPTION = new VirtualTableColumn<String>("DESCRIPTION");
 		DESCRIPTION.setType(DataType.VARCHAR,2147483647);
@@ -59,46 +66,41 @@ public class Validation extends VirtualTable implements StaticInstanceSupport //
 		URI.setPreferredWidth(100);
 		URI.setTextFormat(TextFormat.getPlainInstance());
 		
-		CONFIRMINGREQUIREMENTLIST_ID = new VirtualTableColumn<Integer>(
-				"CONFIRMINGREQUIREMENTLIST_ID");
-		CONFIRMINGREQUIREMENTLIST_ID.setType(DataType.INTEGER);
-		CONFIRMINGREQUIREMENTLIST_ID.setDefaultValue(null);
-		CONFIRMINGREQUIREMENTLIST_ID.setVisible(false);
-		CONFIRMINGREQUIREMENTLIST_ID.setPreferredWidth(100);
-		CONFIRMINGREQUIREMENTLIST_ID.setTextFormat(TextFormat.getNumberInstance(
-				Locale.getDefault(),null,0,0,false,false));
+		REQUIREMENTLIST_ID = new VirtualTableColumn<Integer>("REQUIREMENTLIST_ID");
+		REQUIREMENTLIST_ID.setType(DataType.INTEGER);
+		REQUIREMENTLIST_ID.setDefaultValue(null);
+		REQUIREMENTLIST_ID.setVisible(false);
+		REQUIREMENTLIST_ID.setPreferredWidth(100);
+		REQUIREMENTLIST_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,
+				false,false));
 		
-		CONFIRMINGREQUIREMENTLIST_TITLE = new VirtualTableColumn<String>(
-				"CONFIRMINGREQUIREMENTLIST_TITLE");
-		CONFIRMINGREQUIREMENTLIST_TITLE.setType(DataType.VARCHAR,2147483647);
-		CONFIRMINGREQUIREMENTLIST_TITLE.setDefaultValue(null);
-		CONFIRMINGREQUIREMENTLIST_TITLE.setCaption("TITLE");
-		CONFIRMINGREQUIREMENTLIST_TITLE.setPreferredWidth(100);
-		CONFIRMINGREQUIREMENTLIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
+		REQUIREMENTLIST_TITLE = new VirtualTableColumn<String>("REQUIREMENTLIST_TITLE");
+		REQUIREMENTLIST_TITLE.setType(DataType.VARCHAR,2147483647);
+		REQUIREMENTLIST_TITLE.setDefaultValue(null);
+		REQUIREMENTLIST_TITLE.setCaption("TITLE");
+		REQUIREMENTLIST_TITLE.setPreferredWidth(100);
+		REQUIREMENTLIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
 		
-		CONFIRMINGREQUIREMENTLIST_TITLE.setPersistent(false);
-		CONFIRMINGREQUIREMENTLIST_TITLE.setTableColumnLink(new TableColumnLink(
-				Confirmingrequirementlist.class.getName(),
-				Confirmingrequirementlist.TITLE.getName(),new EntityRelationship(
-						Confirmingrequirementlist.class.getName(),
-						new String[]{Confirmingrequirementlist.ID.getName()},Cardinality.ONE,
-						Validation.class.getName(),
-						new String[]{Validation.CONFIRMINGREQUIREMENTLIST_ID.getName()},
-						Cardinality.MANY)));
+		REQUIREMENTLIST_TITLE.setPersistent(false);
+		REQUIREMENTLIST_TITLE.setTableColumnLink(new TableColumnLink(Requirementlist.class
+				.getName(),Requirementlist.TITLE.getName(),new EntityRelationship(
+				Requirementlist.class.getName(),new String[]{Requirementlist.ID.getName()},
+				Cardinality.ONE,Validation.class.getName(),
+				new String[]{Validation.REQUIREMENTLIST_ID.getName()},Cardinality.MANY)));
 	}
 	
 	
 	public Validation()
 	{
-		super(Validation.class.getName(),"PUBLIC","VALIDATION",ID,DESCRIPTION,TITLE,URI,
-				CONFIRMINGREQUIREMENTLIST_ID,CONFIRMINGREQUIREMENTLIST_TITLE);
+		super(Validation.class.getName(),"PUBLIC","VALIDATION",ID,ASSESSMENTURI,DESCRIPTION,TITLE,
+				URI,REQUIREMENTLIST_ID,REQUIREMENTLIST_TITLE);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(TITLE);
 		
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"ID"));
-		addIndex(new Index("FK_VALIDATION_CONFIRMINGREQUIREMENTLIST_ID_INDEX_1",IndexType.NORMAL,
-				"CONFIRMINGREQUIREMENTLIST_ID"));
+		addIndex(new Index("FK_VALIDATION_REQUIREMENTLIST_ID_INDEX_1",IndexType.NORMAL,
+				"REQUIREMENTLIST_ID"));
 	}
 	
 	public final static Validation	VT	= new Validation();

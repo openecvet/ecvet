@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.09 um 05:23:53 PM CET 
+// Generiert: 2015.12.10 um 04:48:47 PM CET 
 //
 
 
@@ -169,19 +169,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ConfirmingRequirementListType }
+     * Create an instance of {@link RequirementListType }
      * 
      */
-    public ConfirmingRequirementListType createConfirmingRequirementListType() {
-        return new ConfirmingRequirementListType();
+    public RequirementListType createRequirementListType() {
+        return new RequirementListType();
     }
 
     /**
-     * Create an instance of {@link ConfirmingRequirementType }
+     * Create an instance of {@link RequirementType }
      * 
      */
-    public ConfirmingRequirementType createConfirmingRequirementType() {
-        return new ConfirmingRequirementType();
+    public RequirementType createRequirementType() {
+        return new RequirementType();
     }
 
     /**

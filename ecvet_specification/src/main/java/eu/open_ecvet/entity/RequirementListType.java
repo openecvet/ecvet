@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.09 um 05:23:53 PM CET 
+// Generiert: 2015.12.10 um 04:48:47 PM CET 
 //
 
 
@@ -24,16 +24,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für confirmingRequirementListType complex type.
+ * <p>Java-Klasse für requirementListType complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>
- * &lt;complexType name="confirmingRequirementListType"&gt;
+ * &lt;complexType name="requirementListType"&gt;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="confirmingRequirement" type="{}confirmingRequirementType" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="requirement" type="{}requirementType" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -43,16 +43,16 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "confirmingRequirementListType", propOrder = {
-    "confirmingRequirement"
+@XmlType(name = "requirementListType", propOrder = {
+    "requirement"
 })
 @Entity
 @Table(indexes = {
 
 }, uniqueConstraints = {
 
-}, name = "confirmingrequirementlist")
-public class ConfirmingRequirementListType
+}, name = "requirementlist")
+public class RequirementListType
     extends EcvetElement
     implements Serializable
 {
@@ -64,43 +64,43 @@ public class ConfirmingRequirementListType
         CascadeType.DETACH
     })
     @JoinTable(joinColumns = {
-        @JoinColumn(name = "confirmingrequirementlist_id")
+        @JoinColumn(name = "requirementlist_id")
     }, inverseJoinColumns = {
-        @JoinColumn(name = "confirmingrequirement_id")
+        @JoinColumn(name = "requirement_id")
     }, indexes = {
 
     }, uniqueConstraints = {
 
     })
-    protected List<ConfirmingRequirementType> confirmingRequirement;
+    protected List<RequirementType> requirement;
 
     /**
-     * Gets the value of the confirmingRequirement property.
+     * Gets the value of the requirement property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the confirmingRequirement property.
+     * This is why there is not a <CODE>set</CODE> method for the requirement property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getConfirmingRequirement().add(newItem);
+     *    getRequirement().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link ConfirmingRequirementType }
+     * {@link RequirementType }
      * 
      * 
      */
-    public List<ConfirmingRequirementType> getConfirmingRequirement() {
-        if (confirmingRequirement == null) {
-            confirmingRequirement = new ArrayList<ConfirmingRequirementType>();
+    public List<RequirementType> getRequirement() {
+        if (requirement == null) {
+            requirement = new ArrayList<RequirementType>();
         }
-        return this.confirmingRequirement;
+        return this.requirement;
     }
 
 }

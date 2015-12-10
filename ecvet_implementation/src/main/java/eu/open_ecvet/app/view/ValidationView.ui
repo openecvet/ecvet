@@ -86,7 +86,7 @@
             "properties": {
                 "-autofillColumns": {
                     "value": {
-                        "expression": "TITLE, URI, CONFIRMINGREQUIREMENTLIST_TITLE"
+                        "expression": "TITLE, URI, REQUIREMENTLIST_TITLE"
                     }
                 },
                 "-autofillWithData": {
@@ -218,7 +218,7 @@
                     "value": 726
                 },
                 "y": {
-                    "value": 375
+                    "value": 401
                 }
             }
         },
@@ -307,10 +307,10 @@
                             "value": 5
                         },
                         "width": {
-                            "value": 596
+                            "value": 666
                         },
                         "x": {
-                            "value": 201
+                            "value": 131
                         },
                         "y": {
                             "value": 3
@@ -394,10 +394,10 @@
                             "value": 6
                         },
                         "width": {
-                            "value": 596
+                            "value": 666
                         },
                         "x": {
-                            "value": 201
+                            "value": 131
                         },
                         "y": {
                             "value": 30
@@ -433,10 +433,10 @@
                             "value": "label4"
                         },
                         "text": {
-                            "value": "URI"
+                            "value": "ASSESSMENTURI"
                         },
                         "width": {
-                            "value": 20
+                            "value": 97
                         },
                         "x": {
                             "value": 3
@@ -466,10 +466,10 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "textField"
+                            "value": "textField3"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Validation.URI"
+                            "value": "eu.open_ecvet.app.model.Validation.ASSESSMENTURI"
                         },
                         "height": {
                             "value": 20
@@ -480,14 +480,17 @@
                         "maxSignCount": {
                             "value": 2147483647
                         },
+                        "name": {
+                            "value": "textField3"
+                        },
                         "tabIndex": {
                             "value": 7
                         },
                         "width": {
-                            "value": 596
+                            "value": 666
                         },
                         "x": {
-                            "value": 201
+                            "value": 131
                         },
                         "y": {
                             "value": 98
@@ -514,22 +517,112 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "label"
+                            "value": "label5"
                         },
                         "height": {
                             "value": 16
                         },
+                        "name": {
+                            "value": "label5"
+                        },
                         "text": {
-                            "value": "CONFIRMINGREQUIREMENTLIST_ID"
+                            "value": "URI"
                         },
                         "width": {
-                            "value": 192
+                            "value": 20
                         },
                         "x": {
                             "value": 3
                         },
                         "y": {
                             "value": 126
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevTextField",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 4,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "textField"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Validation.URI"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "horizontalAlignment": {
+                            "value": "LEFT"
+                        },
+                        "maxSignCount": {
+                            "value": 2147483647
+                        },
+                        "tabIndex": {
+                            "value": 8
+                        },
+                        "width": {
+                            "value": 666
+                        },
+                        "x": {
+                            "value": 131
+                        },
+                        "y": {
+                            "value": 124
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 5,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "text": {
+                            "value": "REQUIREMENTLIST_ID"
+                        },
+                        "width": {
+                            "value": 122
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 152
                         }
                     }
                 },
@@ -556,7 +649,7 @@
                                 "gridHeight": 1,
                                 "gridWidth": 1,
                                 "gridx": 2,
-                                "gridy": 4,
+                                "gridy": 5,
                                 "insets": "3,3,3,3",
                                 "ipadx": 0,
                                 "ipady": 0,
@@ -566,28 +659,28 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "confirmingRequirementListComboBox"
+                            "value": "requirementListComboBox"
                         },
                         "-virtualTable": {
-                            "value": "eu.open_ecvet.app.model.Confirmingrequirementlist"
+                            "value": "eu.open_ecvet.app.model.Requirementlist"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Validation.CONFIRMINGREQUIREMENTLIST_ID"
+                            "value": "eu.open_ecvet.app.model.Validation.REQUIREMENTLIST_ID"
                         },
                         "height": {
                             "value": 20
                         },
                         "tabIndex": {
-                            "value": 8
+                            "value": 9
                         },
                         "width": {
-                            "value": 596
+                            "value": 666
                         },
                         "x": {
-                            "value": 201
+                            "value": 131
                         },
                         "y": {
-                            "value": 124
+                            "value": 150
                         }
                     }
                 },
@@ -610,7 +703,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 9
+                                    "value": 10
                                 },
                                 "text": {
                                     "value": "New"
@@ -643,7 +736,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 10
+                                    "value": 11
                                 },
                                 "text": {
                                     "value": "Reset"
@@ -676,7 +769,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 11
+                                    "value": 12
                                 },
                                 "text": {
                                     "value": "Save"
@@ -709,7 +802,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 12
+                                    "value": 13
                                 },
                                 "text": {
                                     "value": "Save + New"
@@ -742,7 +835,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 13
+                                    "value": 14
                                 },
                                 "text": {
                                     "value": "Search"
@@ -768,7 +861,7 @@
                                 "gridHeight": 1,
                                 "gridWidth": 2,
                                 "gridx": 1,
-                                "gridy": 5,
+                                "gridy": 6,
                                 "insets": "3,3,3,3",
                                 "ipadx": 0,
                                 "ipady": 0,
@@ -799,7 +892,7 @@
                             "value": 3
                         },
                         "y": {
-                            "value": 150
+                            "value": 176
                         }
                     }
                 }
@@ -826,7 +919,7 @@
                     "value": "formular"
                 },
                 "height": {
-                    "value": 181
+                    "value": 207
                 },
                 "layout": {
                     "value": {

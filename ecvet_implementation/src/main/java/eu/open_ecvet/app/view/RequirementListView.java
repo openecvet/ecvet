@@ -21,10 +21,11 @@ import javax.swing.SwingConstants;
 
 import eu.open_ecvet.app.helper.UpdateView;
 import eu.open_ecvet.app.helper.UpdateViewHelper;
-import eu.open_ecvet.app.model.Confirmingrequirement;
+import eu.open_ecvet.app.model.Requirementlist;
+import eu.open_ecvet.app.model.RequirementlistRequirement;
 
 
-public class ConfirmingRequirementView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLASS}
+public class RequirementListView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLASS}
 {
 	private MainWindow	mainWindow;
 	
@@ -35,25 +36,26 @@ public class ConfirmingRequirementView extends XdevWindow // ${GENERATED-CODE-L
 										public String getName()
 										{
 											
-											return ConfirmingRequirementView.class.getSimpleName();
+											return RequirementListView.class
+													.getSimpleName();
 										}
 										
 										
 										public void update()
 										{
+											nmListBox.setModel(RequirementlistRequirement.VT,"{$REQUIREMENT_TITLE}","REQUIREMENT_ID",true);
 											table.refresh();
-											//	comboBox.refresh();
 										}
 									};
 	
 	
-	public ConfirmingRequirementView()
+	public RequirementListView()
 	{
 		
 	}
 	
 	
-	public ConfirmingRequirementView(MainWindow mainWindow)
+	public RequirementListView(MainWindow mainWindow)
 	{
 		this.mainWindow = mainWindow;
 	}
@@ -72,11 +74,10 @@ public class ConfirmingRequirementView extends XdevWindow // ${GENERATED-CODE-L
 		try
 		{
 			formular.delete();
-			formular.reset(Confirmingrequirement.VT);
+			formular.reset(Requirementlist.VT);
 		}
 		catch(DBException e)
 		{
-			// TODO Auto-generated code
 			e.printStackTrace();
 			updateView.update();
 			this.openInDialog(new AlertWindow(),true);
@@ -95,7 +96,7 @@ public class ConfirmingRequirementView extends XdevWindow // ${GENERATED-CODE-L
 	@EventHandlerDelegate
 	void cmdNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		formular.reset(eu.open_ecvet.app.model.Confirmingrequirement.VT);
+		formular.reset(Requirementlist.VT);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
 	
 	
@@ -131,7 +132,7 @@ public class ConfirmingRequirementView extends XdevWindow // ${GENERATED-CODE-L
 			try
 			{
 				formular.save();
-				formular.reset(eu.open_ecvet.app.model.Confirmingrequirement.VT);
+				formular.reset(Requirementlist.VT);
 			}
 			catch(Exception e)
 			{
@@ -147,29 +148,35 @@ public class ConfirmingRequirementView extends XdevWindow // ${GENERATED-CODE-L
 		formular.search("AND",table);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
 	
+	@EventHandlerDelegate void requirementShortcut_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		mainWindow.tabbedPane.setSelectedComponent(mainWindow.requirementTab);
+	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
+
 	// Generated definitions, do not edit! ${GENERATED-CODE-BLOCK-START:DEFINITIONS}
 	XdevContainer	container, container3, container2;
-	XdevButton		xShortcut, cmdNew, cmdReset, cmdSave, cmdSaveAndNew, cmdSearch, deleteButton;
-	XdevTextField	textField2, textField3, textField4, textField;
+	XdevButton		requirementShortcut, cmdNew, cmdReset, cmdSave, cmdSaveAndNew, cmdSearch,
+			deleteButton;
+	XdevTextField	textField2, textField;
 	XdevFormular	formular;
 	XdevTable		table;
 	XdevTextArea	textArea;
-	XdevLabel		label2, label3, label4, label5, label;
+	XdevLabel		label2, label4, label3, label;
+	XdevNmListBox	nmListBox;
 	// End generated definitions ${GENERATED-CODE-BLOCK-END:DEFINITIONS}
 	
 	{// Generated initializers, do not edit! ${GENERATED-CODE-BLOCK-START:INITIALIZERS}
 		container = new XdevContainer();
-		xShortcut = new XdevButton();
+		requirementShortcut = new XdevButton();
 		table = new XdevTable();
 		formular = new XdevFormular();
 		label2 = new XdevLabel();
 		textField2 = new XdevTextField();
+		label4 = new XdevLabel();
 		label3 = new XdevLabel();
 		textArea = new XdevTextArea();
-		label4 = new XdevLabel();
-		textField3 = new XdevTextField();
-		label5 = new XdevLabel();
-		textField4 = new XdevTextField();
+		nmListBox = new XdevNmListBox();
 		label = new XdevLabel();
 		textField = new XdevTextField();
 		container3 = new XdevContainer();
@@ -184,52 +191,39 @@ public class ConfirmingRequirementView extends XdevWindow // ${GENERATED-CODE-L
 		this.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 		this.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
 		this.setPreferredSize(new Dimension(800,600));
-		xShortcut.setTabIndex(1);
-		xShortcut.setText("Button");
-		xShortcut.setEnabled(false);
+		requirementShortcut.setTabIndex(1);
+		requirementShortcut.setText("Requirement");
 		table.setTabIndex(3);
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		table.setModel(Confirmingrequirement.VT,"TITLE, URI",true);
+		table.setModel(Requirementlist.VT,"TITLE, URI",true);
 		label2.setText("TITLE");
 		label2.setName("label2");
-		textField2.setDataField("eu.open_ecvet.app.model.Confirmingrequirement.TITLE");
+		textField2.setDataField("eu.open_ecvet.app.model.Confirmingrequirementlist.TITLE");
 		textField2.setTabIndex(5);
 		textField2.setMaxSignCount(Integer.MAX_VALUE);
 		textField2.setName("textField2");
 		textField2.setHorizontalAlignment(SwingConstants.LEFT);
+		label4.setText("Label");
 		label3.setText("DESCRIPTION");
 		label3.setName("label3");
-		textArea.setDataField("eu.open_ecvet.app.model.Confirmingrequirement.DESCRIPTION");
+		textArea.setDataField("eu.open_ecvet.app.model.Confirmingrequirementlist.DESCRIPTION");
 		textArea.setTabIndex(6);
 		textArea.setMaxSignCount(Integer.MAX_VALUE);
-		label4.setText("ASSESSMENTURI");
-		label4.setName("label4");
-		textField3.setDataField("eu.open_ecvet.app.model.Confirmingrequirement.ASSESSMENTURI");
-		textField3.setTabIndex(7);
-		textField3.setMaxSignCount(Integer.MAX_VALUE);
-		textField3.setName("textField3");
-		textField3.setHorizontalAlignment(SwingConstants.LEFT);
-		label5.setText("THRESHOLD");
-		label5.setName("label5");
-		textField4.setDataField("eu.open_ecvet.app.model.Confirmingrequirement.THRESHOLD");
-		textField4.setTabIndex(8);
-		textField4.setMaxSignCount(Integer.MAX_VALUE);
-		textField4.setName("textField4");
-		textField4.setHorizontalAlignment(SwingConstants.LEFT);
+		nmListBox.setTabIndex(13);
 		label.setText("URI");
-		textField.setDataField("eu.open_ecvet.app.model.Confirmingrequirement.URI");
-		textField.setTabIndex(9);
+		textField.setDataField("eu.open_ecvet.app.model.Confirmingrequirementlist.URI");
+		textField.setTabIndex(7);
 		textField.setMaxSignCount(Integer.MAX_VALUE);
 		textField.setHorizontalAlignment(SwingConstants.LEFT);
-		cmdNew.setTabIndex(10);
+		cmdNew.setTabIndex(8);
 		cmdNew.setText("New");
-		cmdReset.setTabIndex(11);
+		cmdReset.setTabIndex(9);
 		cmdReset.setText("Reset");
-		cmdSave.setTabIndex(12);
+		cmdSave.setTabIndex(10);
 		cmdSave.setText("Save");
-		cmdSaveAndNew.setTabIndex(13);
+		cmdSaveAndNew.setTabIndex(11);
 		cmdSaveAndNew.setText("Save + New");
-		cmdSearch.setTabIndex(14);
+		cmdSearch.setTabIndex(12);
 		cmdSearch.setText("Search");
 		deleteButton.setTabIndex(4);
 		deleteButton.setText("Delete");
@@ -238,17 +232,15 @@ public class ConfirmingRequirementView extends XdevWindow // ${GENERATED-CODE-L
 		MasterDetail.connect(table,formular);
 		label2.saveState();
 		textField2.saveState();
+		label4.saveState();
 		label3.saveState();
 		textArea.saveState();
-		label4.saveState();
-		textField3.saveState();
-		label5.saveState();
-		textField4.saveState();
+		nmListBox.saveState();
 		label.saveState();
 		textField.saveState();
 		
 		container.setLayout(new GridBagLayout());
-		container.add(xShortcut,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
+		container.add(requirementShortcut,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
 		GBC.addSpacer(container,true,true);
 		container3.setLayout(new FlowLayout(FlowLayout.TRAILING,3,3));
 		container3.add(cmdNew);
@@ -259,16 +251,15 @@ public class ConfirmingRequirementView extends XdevWindow // ${GENERATED-CODE-L
 		formular.setLayout(new GridBagLayout());
 		formular.add(label2,new GBC(1,1,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(textField2,new GBC(2,1,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label4,new GBC(3,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(label3,new GBC(1,2,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		JScrollPane textArea_carrier = new XScrollPane(textArea,XScrollPane.VERTICAL_SCROLLBAR_ALWAYS,XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		formular.add(textArea_carrier,new GBC(2,2,1,1,1.0,1.0,GBC.BASELINE_LEADING,GBC.BOTH,new Insets(3,3,3,3),0,0));
-		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(textField3,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(textField4,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(label,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(textField,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(container3,new GBC(1,6,2,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		JScrollPane nmListBox_carrier = new XScrollPane(nmListBox,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		formular.add(nmListBox_carrier,new GBC(3,2,1,2,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		formular.add(label,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(container3,new GBC(1,4,3,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(formular,true,true);
 		container2.setLayout(new GridBagLayout());
 		container2.add(deleteButton,new GBC(1,1,1,1,0.0,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
@@ -281,6 +272,8 @@ public class ConfirmingRequirementView extends XdevWindow // ${GENERATED-CODE-L
 		this.add(container2,new GBC(1,4,1,1,0.1,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(this,true,true);
 		
+		nmListBox.setModel(RequirementlistRequirement.VT,"{$REQUIREMENT_TITLE}","REQUIREMENT_ID",true);
+		
 		this.addWindowListener(new WindowAdapter()
 		{
 			@Override
@@ -289,6 +282,7 @@ public class ConfirmingRequirementView extends XdevWindow // ${GENERATED-CODE-L
 				this_windowClosing(e);
 			}
 		});
+		requirementShortcut.addActionListener(e -> requirementShortcut_actionPerformed(e));
 		cmdNew.addActionListener(e -> cmdNew_actionPerformed(e));
 		cmdReset.addActionListener(e -> cmdReset_actionPerformed(e));
 		cmdSave.addActionListener(e -> cmdSave_actionPerformed(e));

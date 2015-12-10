@@ -10,9 +10,6 @@
     <vt class="eu.open_ecvet.app.model.Competentinstitutionlist" />
     <vt class="eu.open_ecvet.app.model.CompetentinstitutionlistCompetentinstitution" />
     <vt class="eu.open_ecvet.app.model.Complementarydocuments" />
-    <vt class="eu.open_ecvet.app.model.Confirmingrequirement" />
-    <vt class="eu.open_ecvet.app.model.Confirmingrequirementlist" />
-    <vt class="eu.open_ecvet.app.model.ConfirmingrequirementlistConfirmingrequirement" />
     <vt class="eu.open_ecvet.app.model.Ecvetframework" />
     <vt class="eu.open_ecvet.app.model.Evaluations" />
     <vt class="eu.open_ecvet.app.model.Learningagreement" />
@@ -39,6 +36,9 @@
     <vt class="eu.open_ecvet.app.model.Recognition" />
     <vt class="eu.open_ecvet.app.model.Recognitionlist" />
     <vt class="eu.open_ecvet.app.model.RecognitionlistRecognition" />
+    <vt class="eu.open_ecvet.app.model.Requirement" />
+    <vt class="eu.open_ecvet.app.model.Requirementlist" />
+    <vt class="eu.open_ecvet.app.model.RequirementlistRequirement" />
     <vt class="eu.open_ecvet.app.model.Transcriptsofrecord" />
     <vt class="eu.open_ecvet.app.model.TranscriptsofrecordAttachment" />
     <vt class="eu.open_ecvet.app.model.Transcriptsofrecordlist" />

@@ -71,8 +71,8 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		processTab.setName(ProcessView.class.getSimpleName());
 		validationListTab.setName(ValidationListView.class.getSimpleName());
 		validationTab.setName(ValidationView.class.getSimpleName());
-		confirmingRequirementListTab.setName(ConfirmingRequirementListView.class.getSimpleName());
-		confirmingRequirementTab.setName(ConfirmingRequirementView.class.getSimpleName());
+		requirementListTab.setName(RequirementListView.class.getSimpleName());
+		requirementTab.setName(RequirementView.class.getSimpleName());
 		recognitionListTab.setName(RecognitionListView.class.getSimpleName());
 		recognitionTab.setName(RecognitionView.class.getSimpleName());
 		certificateTemplateTab.setName(CertificateTemplateView.class.getSimpleName());
@@ -103,9 +103,9 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 			transcriptsOfRecordTab, userGuideListTab, userGuideTab, qualificationTab, unitListTab,
 			unitTab, learningOutcomeListTab, learningOutcomeTab, evaluationsTab, assessmentListTab,
 			assessmentTab, methodListTab, methodTab, processListTab, processTab, validationListTab,
-			validationTab, confirmingRequirementListTab, confirmingRequirementTab,
-			recognitionListTab, recognitionTab, certificateTemplateTab,
-			qualificationFrameworkListTab, qualificationFrameworkTab, attachmentTab;
+			validationTab, requirementListTab, requirementTab, recognitionListTab, recognitionTab,
+			certificateTemplateTab, qualificationFrameworkListTab, qualificationFrameworkTab,
+			attachmentTab;
 	XdevMenuItem	menuItem, menuItem2;
 	XdevTabbedPane	tabbedPane;
 	XdevWindowContainer	frameworkContainer, competentInstitutionListWindowContainer,
@@ -119,7 +119,7 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 			evaluationsWindowContainer, assessmentListWindowContainer, asssessmentWindowContainer,
 			methodListWindowContainer, methodWindowContainer, processListWindowContainer,
 			processWindowContainer, validationListWindowContainer, validationWindowContainer,
-			confirmingRequirementListWindowContainer, confirmingRequirementWindowContainer,
+			requirementListWindowContainer, requirementWindowContainer,
 			recognitionListWindowContainer, recognitionWindowContainer,
 			certificateTemplateWindowContainer, qualificationFrameworkListWindowContainer,
 			referenceLevelWindowContainer, attachmentWindowContainer;
@@ -193,10 +193,10 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		validationListWindowContainer = new XdevWindowContainer();
 		validationTab = new XdevTab();
 		validationWindowContainer = new XdevWindowContainer();
-		confirmingRequirementListTab = new XdevTab();
-		confirmingRequirementListWindowContainer = new XdevWindowContainer();
-		confirmingRequirementTab = new XdevTab();
-		confirmingRequirementWindowContainer = new XdevWindowContainer();
+		requirementListTab = new XdevTab();
+		requirementListWindowContainer = new XdevWindowContainer();
+		requirementTab = new XdevTab();
+		requirementWindowContainer = new XdevWindowContainer();
 		recognitionListTab = new XdevTab();
 		recognitionListWindowContainer = new XdevWindowContainer();
 		recognitionTab = new XdevTab();
@@ -304,12 +304,12 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		validationTab.setTitle("Validation");
 		validationTab.setIndex(27);
 		validationWindowContainer.setXdevWindow(new ValidationView(self));
-		confirmingRequirementListTab.setTitle("Confirming Requirement List");
-		confirmingRequirementListTab.setIndex(28);
-		confirmingRequirementListWindowContainer.setXdevWindow(new ConfirmingRequirementListView(self));
-		confirmingRequirementTab.setTitle("Confirming Requirement");
-		confirmingRequirementTab.setIndex(29);
-		confirmingRequirementWindowContainer.setXdevWindow(new ConfirmingRequirementView(self));
+		requirementListTab.setTitle("Requirement List");
+		requirementListTab.setIndex(28);
+		requirementListWindowContainer.setXdevWindow(new RequirementListView(self));
+		requirementTab.setTitle("Requirement");
+		requirementTab.setIndex(29);
+		requirementWindowContainer.setXdevWindow(new RequirementView(self));
 		recognitionListTab.setTitle("Recognition List");
 		recognitionListTab.setIndex(30);
 		recognitionListWindowContainer.setXdevWindow(new RecognitionListView(self));
@@ -450,14 +450,14 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		validationWindowContainer.setPreferredSize(new Dimension(200,200));
 		validationTab.add(validationWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(validationTab,true,true);
-		confirmingRequirementListTab.setLayout(new GridBagLayout());
-		confirmingRequirementListWindowContainer.setPreferredSize(new Dimension(200,200));
-		confirmingRequirementListTab.add(confirmingRequirementListWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
-		GBC.addSpacer(confirmingRequirementListTab,true,true);
-		confirmingRequirementTab.setLayout(new GridBagLayout());
-		confirmingRequirementWindowContainer.setPreferredSize(new Dimension(200,200));
-		confirmingRequirementTab.add(confirmingRequirementWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
-		GBC.addSpacer(confirmingRequirementTab,true,true);
+		requirementListTab.setLayout(new GridBagLayout());
+		requirementListWindowContainer.setPreferredSize(new Dimension(200,200));
+		requirementListTab.add(requirementListWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		GBC.addSpacer(requirementListTab,true,true);
+		requirementTab.setLayout(new GridBagLayout());
+		requirementWindowContainer.setPreferredSize(new Dimension(200,200));
+		requirementTab.add(requirementWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		GBC.addSpacer(requirementTab,true,true);
 		recognitionListTab.setLayout(new GridBagLayout());
 		recognitionListWindowContainer.setPreferredSize(new Dimension(200,200));
 		recognitionListTab.add(recognitionListWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
@@ -510,8 +510,8 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		tabbedPane.addTab(processTab);
 		tabbedPane.addTab(validationListTab);
 		tabbedPane.addTab(validationTab);
-		tabbedPane.addTab(confirmingRequirementListTab);
-		tabbedPane.addTab(confirmingRequirementTab);
+		tabbedPane.addTab(requirementListTab);
+		tabbedPane.addTab(requirementTab);
 		tabbedPane.addTab(recognitionListTab);
 		tabbedPane.addTab(recognitionTab);
 		tabbedPane.addTab(certificateTemplateTab);

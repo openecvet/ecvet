@@ -69,6 +69,44 @@
             "length": 2147483647,
             "maxWidth": 0,
             "minWidth": 0,
+            "name": "ASSESSMENTURI",
+            "nullable": true,
+            "persistent": true,
+            "preferredWidth": 100,
+            "scale": 0,
+            "type": "VARCHAR",
+            "visible": true
+        },
+        {
+            "autoIncrement": false,
+            "autoTruncate": true,
+            "caption": "",
+            "dataFlavor": "UNDEFINED",
+            "editable": true,
+            "format": {
+                "dateFormat": "MEDIUM",
+                "dateSet": "DATE",
+                "groupingUsed": true,
+                "locale": "%",
+                "maxFractionDigits": 2,
+                "minFractionDigits": 2,
+                "pattern": [
+                    "",
+                    "yyyy-MM-dd",
+                    "#,##0.###;-#,##0.###",
+                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0%"
+                ],
+                "signedColor": "255,0,0",
+                "suppressZero": false,
+                "timeFormat": "MEDIUM",
+                "type": "NONE",
+                "useSignedColor": false
+            },
+            "horizontalAlign": "LEFT",
+            "length": 2147483647,
+            "maxWidth": 0,
+            "minWidth": 0,
             "name": "DESCRIPTION",
             "nullable": true,
             "persistent": true,
@@ -183,7 +221,7 @@
             "length": 10,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "CONFIRMINGREQUIREMENTLIST_ID",
+            "name": "REQUIREMENTLIST_ID",
             "nullable": true,
             "persistent": true,
             "preferredWidth": 100,
@@ -221,23 +259,23 @@
             "length": 2147483647,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "CONFIRMINGREQUIREMENTLIST_TITLE",
+            "name": "REQUIREMENTLIST_TITLE",
             "nullable": true,
             "persistent": false,
             "preferredWidth": 100,
             "scale": 0,
             "tableColumnLink": {
                 "linkedColumn": "TITLE",
-                "linkedTable": "eu.open_ecvet.app.model.Confirmingrequirementlist",
+                "linkedTable": "eu.open_ecvet.app.model.Requirementlist",
                 "path": [{
                     "first": {
                         "cardinality": "ONE",
                         "columns": ["ID"],
-                        "table": "eu.open_ecvet.app.model.Confirmingrequirementlist"
+                        "table": "eu.open_ecvet.app.model.Requirementlist"
                     },
                     "second": {
                         "cardinality": "MANY",
-                        "columns": ["CONFIRMINGREQUIREMENTLIST_ID"],
+                        "columns": ["REQUIREMENTLIST_ID"],
                         "table": "eu.open_ecvet.app.model.Validation"
                     }
                 }]
@@ -256,8 +294,8 @@
             "type": "PRIMARY_KEY"
         },
         {
-            "columns": ["CONFIRMINGREQUIREMENTLIST_ID"],
-            "name": "FK_VALIDATION_CONFIRMINGREQUIREMENTLIST_ID_INDEX_1",
+            "columns": ["REQUIREMENTLIST_ID"],
+            "name": "FK_VALIDATION_REQUIREMENTLIST_ID_INDEX_1",
             "type": "NORMAL"
         }
     ],

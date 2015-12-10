@@ -15,14 +15,12 @@ import java.util.Locale;
 import eu.open_ecvet.app.data_src.EcvetH2;
 
 
-public class Confirmingrequirement extends VirtualTable implements StaticInstanceSupport // ${GENERATED-CODE-LINE:VT_SUPERCLASS}
+public class Requirementlist extends VirtualTable implements StaticInstanceSupport // ${GENERATED-CODE-LINE:VT_SUPERCLASS}
 {
 	
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
 	public final static VirtualTableColumn<Integer>	ID;
-	public final static VirtualTableColumn<String>	ASSESSMENTURI;
 	public final static VirtualTableColumn<String>	DESCRIPTION;
-	public final static VirtualTableColumn<String>	THRESHOLD;
 	public final static VirtualTableColumn<String>	TITLE;
 	public final static VirtualTableColumn<String>	URI;
 	
@@ -38,23 +36,11 @@ public class Confirmingrequirement extends VirtualTable implements StaticInstanc
 		ID.setPreferredWidth(100);
 		ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
 		
-		ASSESSMENTURI = new VirtualTableColumn<String>("ASSESSMENTURI");
-		ASSESSMENTURI.setType(DataType.VARCHAR,2147483647);
-		ASSESSMENTURI.setDefaultValue(null);
-		ASSESSMENTURI.setPreferredWidth(100);
-		ASSESSMENTURI.setTextFormat(TextFormat.getPlainInstance());
-		
 		DESCRIPTION = new VirtualTableColumn<String>("DESCRIPTION");
 		DESCRIPTION.setType(DataType.VARCHAR,2147483647);
 		DESCRIPTION.setDefaultValue(null);
 		DESCRIPTION.setPreferredWidth(100);
 		DESCRIPTION.setTextFormat(TextFormat.getPlainInstance());
-		
-		THRESHOLD = new VirtualTableColumn<String>("THRESHOLD");
-		THRESHOLD.setType(DataType.VARCHAR,2147483647);
-		THRESHOLD.setDefaultValue(null);
-		THRESHOLD.setPreferredWidth(100);
-		THRESHOLD.setTextFormat(TextFormat.getPlainInstance());
 		
 		TITLE = new VirtualTableColumn<String>("TITLE");
 		TITLE.setType(DataType.VARCHAR,2147483647);
@@ -70,10 +56,9 @@ public class Confirmingrequirement extends VirtualTable implements StaticInstanc
 	}
 	
 	
-	public Confirmingrequirement()
+	public Requirementlist()
 	{
-		super(Confirmingrequirement.class.getName(),"PUBLIC","CONFIRMINGREQUIREMENT",ID,
-				ASSESSMENTURI,DESCRIPTION,THRESHOLD,TITLE,URI);
+		super(Requirementlist.class.getName(),"PUBLIC","REQUIREMENTLIST",ID,DESCRIPTION,TITLE,URI);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(TITLE);
@@ -81,10 +66,10 @@ public class Confirmingrequirement extends VirtualTable implements StaticInstanc
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"ID"));
 	}
 	
-	public final static Confirmingrequirement	VT	= new Confirmingrequirement();
+	public final static Requirementlist	VT	= new Requirementlist();
 	
 	
-	public static Confirmingrequirement getInstance()
+	public static Requirementlist getInstance()
 	{
 		return VT;
 	}

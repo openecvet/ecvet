@@ -589,7 +589,7 @@
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					
+
 					<xsd:element name="weight" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
@@ -748,7 +748,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="confirmingRequirementList" type="confirmingRequirementListType">
+					<xsd:element name="requirementList" type="requirementListType">
 						<xsd:annotation>
 							<xsd:documentation>
 								According to: C 155/14 Annex 1 - Definitions
@@ -757,29 +757,32 @@
 							<xsd:appinfo>
 								<annox:annotate target="field">
 									<OneToOne annox:class="javax.persistence.OneToOne"
-										targetEntity="eu.open_ecvet.entity.ConfirmingRequirementListType"></OneToOne>
+										targetEntity="eu.open_ecvet.entity.RequirementListType"></OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="assessmentURI" type="xsd:string">
+						<!-- TODO: id ref ? -->
 					</xsd:element>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
 
-	<xsd:complexType name="confirmingRequirementListType">
+	<xsd:complexType name="requirementListType">
 		<xsd:annotation>
 			<xsd:appinfo>
 				<annox:annotate target="field">
 					<Entity annox:class="javax.persistence.Entity"></Entity>
-					<Table annox:class="javax.persistence.Table" name="confirmingrequirementlist"></Table>
+					<Table annox:class="javax.persistence.Table" name="requirementlist"></Table>
 				</annox:annotate>
 			</xsd:appinfo>
 		</xsd:annotation>
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="confirmingRequirement" type="confirmingRequirementType"
+					<xsd:element name="requirement" type="requirementType"
 						maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:appinfo>
@@ -792,11 +795,11 @@
 									<JoinTable annox:class="javax.persistence.JoinTable">
 										<joinColumns>
 											<JoinColumn annox:class="javax.persistence.JoinColumn"
-												name="confirmingrequirementlist_id"></JoinColumn>
+												name="requirementlist_id"></JoinColumn>
 										</joinColumns>
 										<inverseJoinColumns>
 											<JoinColumn annox:class="javax.persistence.JoinColumn"
-												name="confirmingrequirement_id"></JoinColumn>
+												name="requirement_id"></JoinColumn>
 										</inverseJoinColumns>
 									</JoinTable>
 								</annox:annotate>
@@ -808,12 +811,12 @@
 		</xsd:complexContent>
 	</xsd:complexType>
 
-	<xsd:complexType name="confirmingRequirementType">
+	<xsd:complexType name="requirementType">
 		<xsd:annotation>
 			<xsd:appinfo>
 				<annox:annotate target="field">
 					<Entity annox:class="javax.persistence.Entity"></Entity>
-					<Table annox:class="javax.persistence.Table" name="confirmingrequirement"></Table>
+					<Table annox:class="javax.persistence.Table" name="requirement"></Table>
 				</annox:annotate>
 			</xsd:appinfo>
 		</xsd:annotation>
@@ -821,10 +824,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="threshold" type="xsd:string" />
-					<xsd:element name="assessmentURI" type="xsd:string">
-						<!-- TODO: id ref ? -->
-					</xsd:element>
+					<xsd:element name="achievementCriterion" type="xsd:string" />
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>

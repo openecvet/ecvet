@@ -47,6 +47,10 @@ public class EcvetH2_relations extends EntityRelationshipModel implements Static
 		add(Partnerlist.class.getName(),new String[]{Partnerlist.ID.getName()},Cardinality.ONE,
 				Competentinstitution.class.getName(),
 				new String[]{Competentinstitution.PARTNERLIST_ID.getName()},Cardinality.MANY);
+		add(Requirementlist.class.getName(),new String[]{Requirementlist.ID.getName()},
+				Cardinality.ONE,RequirementlistRequirement.class.getName(),
+				new String[]{RequirementlistRequirement.REQUIREMENTLIST_ID.getName()},
+				Cardinality.MANY);
 		add(Learningagreementlist.class.getName(),new String[]{Learningagreementlist.ID.getName()},
 				Cardinality.ONE,LearningagreementlistLearningagreement.class.getName(),
 				new String[]{LearningagreementlistLearningagreement.LEARNINGAGREEMENTLIST_ID
@@ -95,12 +99,6 @@ public class EcvetH2_relations extends EntityRelationshipModel implements Static
 				CompetentinstitutionlistCompetentinstitution.class.getName(),
 				new String[]{CompetentinstitutionlistCompetentinstitution.COMPETENTINSTITUTIONLIST_ID
 						.getName()},Cardinality.MANY);
-		add(Confirmingrequirementlist.class.getName(),
-				new String[]{Confirmingrequirementlist.ID.getName()},
-				Cardinality.ONE,
-				ConfirmingrequirementlistConfirmingrequirement.class.getName(),
-				new String[]{ConfirmingrequirementlistConfirmingrequirement.CONFIRMINGREQUIREMENTLIST_ID
-						.getName()},Cardinality.MANY);
 		add(Unit.class.getName(),new String[]{Unit.ID.getName()},Cardinality.ONE,
 				UnitlistUnit.class.getName(),new String[]{UnitlistUnit.UNIT_ID.getName()},
 				Cardinality.MANY);
@@ -129,6 +127,9 @@ public class EcvetH2_relations extends EntityRelationshipModel implements Static
 				Cardinality.ONE,LearningoutcomelistLearningoutcome.class.getName(),
 				new String[]{LearningoutcomelistLearningoutcome.LEARNINGOUTCOMELIST_ID.getName()},
 				Cardinality.MANY);
+		add(Requirementlist.class.getName(),new String[]{Requirementlist.ID.getName()},
+				Cardinality.ONE,Validation.class.getName(),
+				new String[]{Validation.REQUIREMENTLIST_ID.getName()},Cardinality.MANY);
 		add(Validation.class.getName(),new String[]{Validation.ID.getName()},Cardinality.ONE,
 				ValidationlistValidation.class.getName(),
 				new String[]{ValidationlistValidation.VALIDATION_ID.getName()},Cardinality.MANY);
@@ -155,15 +156,12 @@ public class EcvetH2_relations extends EntityRelationshipModel implements Static
 				Cardinality.ONE,RecognitionlistRecognition.class.getName(),
 				new String[]{RecognitionlistRecognition.RECOGNITIONLIST_ID.getName()},
 				Cardinality.MANY);
-		add(Confirmingrequirement.class.getName(),
-				new String[]{Confirmingrequirement.ID.getName()},
-				Cardinality.ONE,
-				ConfirmingrequirementlistConfirmingrequirement.class.getName(),
-				new String[]{ConfirmingrequirementlistConfirmingrequirement.CONFIRMINGREQUIREMENT_ID
-						.getName()},Cardinality.MANY);
 		add(Learningagreement.class.getName(),new String[]{Learningagreement.ID.getName()},
 				Cardinality.ONE,LearningagreementAttachment.class.getName(),
 				new String[]{LearningagreementAttachment.ATTACHMENTS_ID.getName()},Cardinality.MANY);
+		add(Requirement.class.getName(),new String[]{Requirement.ID.getName()},Cardinality.ONE,
+				RequirementlistRequirement.class.getName(),
+				new String[]{RequirementlistRequirement.REQUIREMENT_ID.getName()},Cardinality.MANY);
 		add(Certificatetemplate.class.getName(),new String[]{Certificatetemplate.ID.getName()},
 				Cardinality.ONE,CertificatetemplateAttachment.class.getName(),
 				new String[]{CertificatetemplateAttachment.ATTACHMENTS_ID.getName()},
@@ -176,10 +174,6 @@ public class EcvetH2_relations extends EntityRelationshipModel implements Static
 				Cardinality.ONE,LearningoutcomelistLearningoutcome.class.getName(),
 				new String[]{LearningoutcomelistLearningoutcome.LEARNINGOUTCOME_ID.getName()},
 				Cardinality.MANY);
-		add(Confirmingrequirementlist.class.getName(),
-				new String[]{Confirmingrequirementlist.ID.getName()},Cardinality.ONE,
-				Validation.class.getName(),
-				new String[]{Validation.CONFIRMINGREQUIREMENTLIST_ID.getName()},Cardinality.MANY);
 		add(Unitlist.class.getName(),new String[]{Unitlist.ID.getName()},Cardinality.ONE,
 				UnitlistUnit.class.getName(),new String[]{UnitlistUnit.UNITLIST_ID.getName()},
 				Cardinality.MANY);

@@ -7,9 +7,6 @@ import xdev.db.Index;
 import xdev.db.Index.IndexType;
 import xdev.lang.StaticInstanceSupport;
 import xdev.ui.text.TextFormat;
-import xdev.vt.Cardinality;
-import xdev.vt.EntityRelationship;
-import xdev.vt.TableColumnLink;
 import xdev.vt.VirtualTable;
 import xdev.vt.VirtualTableColumn;
 
@@ -24,7 +21,6 @@ public class LearningoutcomelistLearningoutcome extends VirtualTable implements
 	
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
 	public final static VirtualTableColumn<Integer>	LEARNINGOUTCOME_ID;
-	public final static VirtualTableColumn<String>	LEARNINGOUTCOME_TITLE;
 	public final static VirtualTableColumn<Integer>	LEARNINGOUTCOMELIST_ID;
 	
 	static
@@ -33,46 +29,30 @@ public class LearningoutcomelistLearningoutcome extends VirtualTable implements
 		LEARNINGOUTCOME_ID.setType(DataType.INTEGER);
 		LEARNINGOUTCOME_ID.setNullable(false);
 		LEARNINGOUTCOME_ID.setDefaultValue(0);
-		LEARNINGOUTCOME_ID.setVisible(false);
 		LEARNINGOUTCOME_ID.setPreferredWidth(100);
 		LEARNINGOUTCOME_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,
 				false,false));
 		
-		LEARNINGOUTCOME_TITLE = new VirtualTableColumn<String>("LEARNINGOUTCOME_TITLE");
-		LEARNINGOUTCOME_TITLE.setType(DataType.VARCHAR,2147483647);
-		LEARNINGOUTCOME_TITLE.setDefaultValue(null);
-		LEARNINGOUTCOME_TITLE.setCaption("TITLE");
-		LEARNINGOUTCOME_TITLE.setPreferredWidth(100);
-		LEARNINGOUTCOME_TITLE.setTextFormat(TextFormat.getPlainInstance());
-		
 		LEARNINGOUTCOMELIST_ID = new VirtualTableColumn<Integer>("LEARNINGOUTCOMELIST_ID");
 		LEARNINGOUTCOMELIST_ID.setType(DataType.INTEGER);
-		LEARNINGOUTCOMELIST_ID.setDefaultValue(null);
+		LEARNINGOUTCOMELIST_ID.setNullable(false);
+		LEARNINGOUTCOMELIST_ID.setDefaultValue(0);
 		LEARNINGOUTCOMELIST_ID.setPreferredWidth(100);
 		LEARNINGOUTCOMELIST_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,
-				0,0,true,false));
-		
-		LEARNINGOUTCOME_TITLE.setPersistent(false);
-		LEARNINGOUTCOME_TITLE.setTableColumnLink(new TableColumnLink(Learningoutcome.class
-				.getName(),Learningoutcome.TITLE.getName(),new EntityRelationship(
-				Learningoutcome.class.getName(),new String[]{Learningoutcome.ID.getName()},
-				Cardinality.ONE,LearningoutcomelistLearningoutcome.class.getName(),
-				new String[]{LearningoutcomelistLearningoutcome.LEARNINGOUTCOMELIST_ID.getName()},
-				Cardinality.MANY)));
+				0,0,false,false));
 	}
 	
 	
 	public LearningoutcomelistLearningoutcome()
 	{
 		super(LearningoutcomelistLearningoutcome.class.getName(),"PUBLIC",
-				"LEARNINGOUTCOMELIST_LEARNINGOUTCOME",LEARNINGOUTCOME_ID,LEARNINGOUTCOME_TITLE,
-				LEARNINGOUTCOMELIST_ID);
+				"LEARNINGOUTCOMELIST_LEARNINGOUTCOME",LEARNINGOUTCOME_ID,LEARNINGOUTCOMELIST_ID);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(LEARNINGOUTCOME_ID);
 		
-		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"LEARNINGOUTCOME_ID",
-				"LEARNINGOUTCOMELIST_ID"));
+		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"LEARNINGOUTCOMELIST_ID",
+				"LEARNINGOUTCOME_ID"));
 	}
 	
 	public final static LearningoutcomelistLearningoutcome	VT	= new LearningoutcomelistLearningoutcome();

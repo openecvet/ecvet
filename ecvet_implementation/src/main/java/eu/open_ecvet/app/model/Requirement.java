@@ -15,11 +15,12 @@ import java.util.Locale;
 import eu.open_ecvet.app.data_src.EcvetH2;
 
 
-public class Confirmingrequirementlist extends VirtualTable implements StaticInstanceSupport // ${GENERATED-CODE-LINE:VT_SUPERCLASS}
+public class Requirement extends VirtualTable implements StaticInstanceSupport // ${GENERATED-CODE-LINE:VT_SUPERCLASS}
 {
 	
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
 	public final static VirtualTableColumn<Integer>	ID;
+	public final static VirtualTableColumn<String>	ACHIEVEMENTCRITERION;
 	public final static VirtualTableColumn<String>	DESCRIPTION;
 	public final static VirtualTableColumn<String>	TITLE;
 	public final static VirtualTableColumn<String>	URI;
@@ -35,6 +36,12 @@ public class Confirmingrequirementlist extends VirtualTable implements StaticIns
 		ID.setEditable(false);
 		ID.setPreferredWidth(100);
 		ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
+		
+		ACHIEVEMENTCRITERION = new VirtualTableColumn<String>("ACHIEVEMENTCRITERION");
+		ACHIEVEMENTCRITERION.setType(DataType.VARCHAR,2147483647);
+		ACHIEVEMENTCRITERION.setDefaultValue(null);
+		ACHIEVEMENTCRITERION.setPreferredWidth(100);
+		ACHIEVEMENTCRITERION.setTextFormat(TextFormat.getPlainInstance());
 		
 		DESCRIPTION = new VirtualTableColumn<String>("DESCRIPTION");
 		DESCRIPTION.setType(DataType.VARCHAR,2147483647);
@@ -56,9 +63,9 @@ public class Confirmingrequirementlist extends VirtualTable implements StaticIns
 	}
 	
 	
-	public Confirmingrequirementlist()
+	public Requirement()
 	{
-		super(Confirmingrequirementlist.class.getName(),"PUBLIC","CONFIRMINGREQUIREMENTLIST",ID,
+		super(Requirement.class.getName(),"PUBLIC","REQUIREMENT",ID,ACHIEVEMENTCRITERION,
 				DESCRIPTION,TITLE,URI);
 		
 		setDataSource(EcvetH2.DB);
@@ -67,10 +74,10 @@ public class Confirmingrequirementlist extends VirtualTable implements StaticIns
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"ID"));
 	}
 	
-	public final static Confirmingrequirementlist	VT	= new Confirmingrequirementlist();
+	public final static Requirement	VT	= new Requirement();
 	
 	
-	public static Confirmingrequirementlist getInstance()
+	public static Requirement getInstance()
 	{
 		return VT;
 	}

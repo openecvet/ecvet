@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.09 um 05:23:53 PM CET 
+// Generiert: 2015.12.10 um 04:48:47 PM CET 
 //
 
 
@@ -18,17 +18,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für confirmingRequirementType complex type.
+ * <p>Java-Klasse für requirementType complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>
- * &lt;complexType name="confirmingRequirementType"&gt;
+ * &lt;complexType name="requirementType"&gt;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="threshold" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="assessmentURI" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="achievementCriterion" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -38,72 +37,45 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "confirmingRequirementType", propOrder = {
-    "threshold",
-    "assessmentURI"
+@XmlType(name = "requirementType", propOrder = {
+    "achievementCriterion"
 })
 @Entity
 @Table(indexes = {
 
 }, uniqueConstraints = {
 
-}, name = "confirmingrequirement")
-public class ConfirmingRequirementType
+}, name = "requirement")
+public class RequirementType
     extends EcvetElement
     implements Serializable
 {
 
     @XmlElement(required = true)
-    protected String threshold;
-    @XmlElement(required = true)
-    protected String assessmentURI;
+    protected String achievementCriterion;
 
     /**
-     * Ruft den Wert der threshold-Eigenschaft ab.
+     * Ruft den Wert der achievementCriterion-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getThreshold() {
-        return threshold;
+    public String getAchievementCriterion() {
+        return achievementCriterion;
     }
 
     /**
-     * Legt den Wert der threshold-Eigenschaft fest.
+     * Legt den Wert der achievementCriterion-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setThreshold(String value) {
-        this.threshold = value;
-    }
-
-    /**
-     * Ruft den Wert der assessmentURI-Eigenschaft ab.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAssessmentURI() {
-        return assessmentURI;
-    }
-
-    /**
-     * Legt den Wert der assessmentURI-Eigenschaft fest.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAssessmentURI(String value) {
-        this.assessmentURI = value;
+    public void setAchievementCriterion(String value) {
+        this.achievementCriterion = value;
     }
 
 }

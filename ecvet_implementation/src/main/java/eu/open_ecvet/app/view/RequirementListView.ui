@@ -22,7 +22,7 @@
                         }
                     },
                     "-fieldName": {
-                        "value": "confirmingRequirementShortcut"
+                        "value": "requirementShortcut"
                     },
                     "height": {
                         "value": 22
@@ -31,10 +31,10 @@
                         "value": 1
                     },
                     "text": {
-                        "value": "Confirming Requirement"
+                        "value": "Requirement"
                     },
                     "width": {
-                        "value": 166
+                        "value": 100
                     }
                 }
             }],
@@ -113,7 +113,7 @@
                     "value": "table"
                 },
                 "-virtualTable": {
-                    "value": "eu.open_ecvet.app.model.Confirmingrequirementlist"
+                    "value": "eu.open_ecvet.app.model.Requirementlist"
                 },
                 "height": {
                     "value": 156
@@ -142,12 +142,12 @@
                     "properties": {
                         "-autofillColumns": {
                             "value": {
-                                "expression": "{$CONFIRMINGREQUIREMENT_TITLE}"
+                                "expression": "{$REQUIREMENT_TITLE}"
                             }
                         },
                         "-autofillDataColumn": {
                             "value": {
-                                "expression": "CONFIRMINGREQUIREMENT_ID"
+                                "expression": "REQUIREMENT_ID"
                             }
                         },
                         "-autofillWithData": {
@@ -173,7 +173,7 @@
                             "value": "nmListBox"
                         },
                         "-virtualTable": {
-                            "value": "eu.open_ecvet.app.model.ConfirmingrequirementlistConfirmingrequirement"
+                            "value": "eu.open_ecvet.app.model.RequirementlistRequirement"
                         },
                         "height": {
                             "value": 134
@@ -842,7 +842,7 @@
     ],
     "properties": {
         "-fieldName": {
-            "value": "ConfirmingRequirementListView"
+            "value": "RequirementListView"
         },
         "height": {
             "value": 600

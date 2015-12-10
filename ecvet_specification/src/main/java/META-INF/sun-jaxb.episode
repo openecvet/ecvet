@@ -5,7 +5,7 @@
 Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-Generiert: 2015.12.09 um 05:23:53 PM CET 
+Generiert: 2015.12.10 um 04:48:46 PM CET 
 
   -->
   <jaxb:bindings scd="x-schema::">
@@ -60,11 +60,11 @@ Generiert: 2015.12.09 um 05:23:53 PM CET
     <jaxb:bindings scd="~validationType">
       <jaxb:class ref="eu.open_ecvet.entity.ValidationType"/>
     </jaxb:bindings>
-    <jaxb:bindings scd="~confirmingRequirementListType">
-      <jaxb:class ref="eu.open_ecvet.entity.ConfirmingRequirementListType"/>
+    <jaxb:bindings scd="~requirementListType">
+      <jaxb:class ref="eu.open_ecvet.entity.RequirementListType"/>
     </jaxb:bindings>
-    <jaxb:bindings scd="~confirmingRequirementType">
-      <jaxb:class ref="eu.open_ecvet.entity.ConfirmingRequirementType"/>
+    <jaxb:bindings scd="~requirementType">
+      <jaxb:class ref="eu.open_ecvet.entity.RequirementType"/>
     </jaxb:bindings>
     <jaxb:bindings scd="~assessmentListType">
       <jaxb:class ref="eu.open_ecvet.entity.AssessmentListType"/>
