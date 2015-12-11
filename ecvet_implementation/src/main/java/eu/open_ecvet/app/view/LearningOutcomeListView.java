@@ -43,7 +43,7 @@ public class LearningOutcomeListView extends XdevWindow // ${GENERATED-CODE-LIN
 										
 										public void update()
 										{
-											
+											qualificationFrameworkListomboBox.setModel(Qualificationframeworklist.VT,"TITLE","ID",true);
 											nmListBox.setModel(
 													LearningoutcomelistLearningoutcome.VT,
 													"{$LEARNINGOUTCOME_TITLE}",
@@ -156,7 +156,7 @@ public class LearningOutcomeListView extends XdevWindow // ${GENERATED-CODE-LIN
 	XdevFormular	formular;
 	XdevTable		table;
 	XdevTextArea	textArea;
-	XdevComboBox	comboBox;
+	XdevComboBox	qualificationFrameworkListomboBox;
 	XdevLabel		label2, label5, label3, label4, label;
 	XdevNmListBox	nmListBox;
 	// End generated definitions ${GENERATED-CODE-BLOCK-END:DEFINITIONS}
@@ -175,7 +175,7 @@ public class LearningOutcomeListView extends XdevWindow // ${GENERATED-CODE-LIN
 		label4 = new XdevLabel();
 		textField = new XdevTextField();
 		label = new XdevLabel();
-		comboBox = new XdevComboBox();
+		qualificationFrameworkListomboBox = new XdevComboBox();
 		container3 = new XdevContainer();
 		cmdNew = new XdevButton();
 		cmdReset = new XdevButton();
@@ -215,9 +215,9 @@ public class LearningOutcomeListView extends XdevWindow // ${GENERATED-CODE-LIN
 		textField.setMaxSignCount(Integer.MAX_VALUE);
 		textField.setHorizontalAlignment(SwingConstants.LEFT);
 		label.setText("QUALIFICATIONFRAMEWORKLIST_ID");
-		comboBox.setDataField("eu.open_ecvet.app.model.Learningoutcomelist.QUALIFICATIONFRAMEWORKLIST_ID");
-		comboBox.setTabIndex(8);
-		comboBox.setModel(Qualificationframeworklist.VT,"TITLE","ID",true);
+		qualificationFrameworkListomboBox.setDataField("eu.open_ecvet.app.model.Learningoutcomelist.QUALIFICATIONFRAMEWORKLIST_ID");
+		qualificationFrameworkListomboBox.setTabIndex(8);
+		qualificationFrameworkListomboBox.setModel(Qualificationframeworklist.VT,"TITLE","ID",true);
 		cmdNew.setTabIndex(9);
 		cmdNew.setText("New");
 		cmdReset.setTabIndex(10);
@@ -242,7 +242,7 @@ public class LearningOutcomeListView extends XdevWindow // ${GENERATED-CODE-LIN
 		label4.saveState();
 		textField.saveState();
 		label.saveState();
-		comboBox.saveState();
+		qualificationFrameworkListomboBox.saveState();
 		
 		container.setLayout(new GridBagLayout());
 		container.add(xShortcut,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
@@ -265,7 +265,7 @@ public class LearningOutcomeListView extends XdevWindow // ${GENERATED-CODE-LIN
 		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(comboBox,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(qualificationFrameworkListomboBox,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(container3,new GBC(1,5,3,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(formular,true,true);
 		container2.setLayout(new GridBagLayout());
@@ -279,7 +279,7 @@ public class LearningOutcomeListView extends XdevWindow // ${GENERATED-CODE-LIN
 		this.add(container2,new GBC(1,4,1,1,0.1,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(this,true,true);
 		
-		nmListBox.setModel(LearningoutcomelistLearningoutcome.VT,"{$LEARNINGOUTCOMELIST_TITLE}","LEARNINGOUTCOMELIST_TITLE",true);
+		nmListBox.setModel(LearningoutcomelistLearningoutcome.VT,"{$LEARNINGOUTCOMELIST_TITLE}","LEARNINGOUTCOME_ID",true);
 		
 		this.addWindowListener(new WindowAdapter()
 		{

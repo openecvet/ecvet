@@ -92,65 +92,60 @@ public class RequirementListView extends XdevWindow // ${GENERATED-CODE-LINE:BE
 		UpdateViewHelper.instance().add(updateView);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
 	
-	
-	@EventHandlerDelegate
-	void cmdNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		formular.reset(Requirementlist.VT);
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
-	@EventHandlerDelegate
-	void cmdReset_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		formular.reset();
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
-	@EventHandlerDelegate
-	void cmdSave_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		if(formular.verifyFormularComponents())
-		{
-			try
-			{
-				formular.save();
-			}
-			catch(Exception e)
-			{
-				e.printStackTrace();
-			}
-		}
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
-	@EventHandlerDelegate
-	void cmdSaveAndNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		if(formular.verifyFormularComponents())
-		{
-			try
-			{
-				formular.save();
-				formular.reset(Requirementlist.VT);
-			}
-			catch(Exception e)
-			{
-				e.printStackTrace();
-			}
-		}
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
-	@EventHandlerDelegate
-	void cmdSearch_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		formular.search("AND",table);
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
 	@EventHandlerDelegate void requirementShortcut_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		mainWindow.tabbedPane.setSelectedComponent(mainWindow.requirementTab);
+	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void cmdNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		formular.reset(eu.open_ecvet.app.model.Requirementlist.VT);
+	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void cmdReset_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		formular.reset();
+	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void cmdSave_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		if(formular.verifyFormularComponents())
+		{
+			try
+			{
+				formular.save();
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+		}
+	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void cmdSaveAndNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		if(formular.verifyFormularComponents())
+		{
+			try
+			{
+				formular.save();
+				formular.reset(eu.open_ecvet.app.model.Requirementlist.VT);
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+		}
+	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void cmdSearch_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		formular.search("AND",table);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
 
 
@@ -198,7 +193,7 @@ public class RequirementListView extends XdevWindow // ${GENERATED-CODE-LINE:BE
 		table.setModel(Requirementlist.VT,"TITLE, URI",true);
 		label2.setText("TITLE");
 		label2.setName("label2");
-		textField2.setDataField("eu.open_ecvet.app.model.Confirmingrequirementlist.TITLE");
+		textField2.setDataField("eu.open_ecvet.app.model.Requirementlist.TITLE");
 		textField2.setTabIndex(5);
 		textField2.setMaxSignCount(Integer.MAX_VALUE);
 		textField2.setName("textField2");
@@ -206,12 +201,12 @@ public class RequirementListView extends XdevWindow // ${GENERATED-CODE-LINE:BE
 		label4.setText("Label");
 		label3.setText("DESCRIPTION");
 		label3.setName("label3");
-		textArea.setDataField("eu.open_ecvet.app.model.Confirmingrequirementlist.DESCRIPTION");
+		textArea.setDataField("eu.open_ecvet.app.model.Requirementlist.DESCRIPTION");
 		textArea.setTabIndex(6);
 		textArea.setMaxSignCount(Integer.MAX_VALUE);
 		nmListBox.setTabIndex(13);
 		label.setText("URI");
-		textField.setDataField("eu.open_ecvet.app.model.Confirmingrequirementlist.URI");
+		textField.setDataField("eu.open_ecvet.app.model.Requirementlist.URI");
 		textField.setTabIndex(7);
 		textField.setMaxSignCount(Integer.MAX_VALUE);
 		textField.setHorizontalAlignment(SwingConstants.LEFT);

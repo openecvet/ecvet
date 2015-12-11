@@ -149,7 +149,7 @@
                         },
                         "-autofillDataColumn": {
                             "value": {
-                                "expression": "LEARNINGOUTCOMELIST_TITLE"
+                                "expression": "LEARNINGOUTCOME_ID"
                             }
                         },
                         "-autofillWithData": {
@@ -575,7 +575,7 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "comboBox"
+                            "value": "qualificationFrameworkListomboBox"
                         },
                         "-virtualTable": {
                             "value": "eu.open_ecvet.app.model.Qualificationframeworklist"
