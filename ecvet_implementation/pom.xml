@@ -1,11 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>ecvet_implementation</artifactId>
+	 <version>0.0.1-SNAPSHOT</version>
 	<parent>
-		 <groupId>eu.open_ecvet</groupId>
-    <artifactId>ecvet</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+		<groupId>eu.open_ecvet</groupId>
+		<artifactId>ecvet</artifactId>
+		<version>0.0.2-SNAPSHOT</version>
 	</parent>
 	<repositories>
 		<repository>
@@ -15,12 +15,12 @@
 		</repository>
 	</repositories>
 	<dependencies>
-	<dependency>
-		<groupId>eu.open_ecvet</groupId>
-		<artifactId>ecvet_specification</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</dependency>
-	<dependency>
+		<dependency>
+			<groupId>eu.open_ecvet</groupId>
+			<artifactId>ecvet_specification</artifactId>
+			<version>0.0.2-SNAPSHOT</version>
+		</dependency>
+		<dependency>
 			<groupId>org.xdev</groupId>
 			<artifactId>xapi</artifactId>
 			<version>1.0.0</version>

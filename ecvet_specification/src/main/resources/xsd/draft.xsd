@@ -21,6 +21,7 @@
 				<annox:annotate target="field">
 					<Entity annox:class="javax.persistence.Entity"></Entity>
 					<Table annox:class="javax.persistence.Table" name="ecvetframework"></Table>
+					<XmlRootElement annox:class="javax.xml.bind.annotation.XmlRootElement" ></XmlRootElement>
 				</annox:annotate>
 			</xsd:appinfo>
 		</xsd:annotation>
@@ -1586,7 +1587,7 @@
 						<annox:annotate target="field">
 							<Id annox:class="javax.persistence.Id"></Id>
 							<GeneratedValue annox:class="javax.persistence.GeneratedValue" strategy="IDENTITY"></GeneratedValue>
-							<XmlTransient annox:class="javax.xml.bind.annotation.XmlTransient"></XmlTransient>
+<!-- 							<XmlTransient annox:class="javax.xml.bind.annotation.XmlTransient"></XmlTransient> -->
 						</annox:annotate>
 					</xsd:appinfo>
 				</xsd:annotation>

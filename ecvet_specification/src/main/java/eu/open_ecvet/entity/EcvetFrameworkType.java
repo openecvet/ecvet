@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.14 um 12:30:32 PM CET 
+// Generiert: 2015.12.14 um 04:50:16 PM CET 
 //
 
 
@@ -15,6 +15,7 @@ import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -51,6 +52,7 @@ import javax.xml.bind.annotation.XmlType;
 }, uniqueConstraints = {
 
 }, name = "ecvetframework")
+@XmlRootElement
 public class EcvetFrameworkType
     extends EcvetElement
     implements Serializable
