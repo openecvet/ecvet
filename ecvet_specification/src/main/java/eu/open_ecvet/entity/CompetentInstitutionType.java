@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.10 um 04:48:47 PM CET 
+// Generiert: 2015.12.14 um 08:45:37 AM CET 
 //
 
 
@@ -23,12 +23,14 @@ import javax.xml.bind.annotation.XmlType;
  * 				According to: C 155/14 Annex 1 - Definitions (e)
  * 				-- ‘Competent institution’ means an institution which is responsible
  * 				for designing and awarding qualifications or recognising
- * 				units or
+ * 				units
+ * 				or
  * 				other functions
  * 				linked to ECVET, such as allocation of ECVET points
  * 				to qualifications and units, assessment, validation and recognition
  * 				of learning outcomes, under the rules and practices
- * 				of participating
+ * 				of
+ * 				participating
  * 				countries
  * 			
  * 
@@ -42,7 +44,8 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="partnerList" type="{}partnerListType"/&gt;
- *         &lt;element name="legislation" type="{}legislationType"/&gt;
+ *         &lt;element name="legislationList" type="{}legislationListType"/&gt;
+ *         &lt;element name="procedureAndGuidelineList" type="{}procedureAndGuidelineListType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -54,7 +57,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "competentInstitutionType", propOrder = {
     "partnerList",
-    "legislation"
+    "legislationList",
+    "procedureAndGuidelineList"
 })
 @Entity
 @Table(indexes = {
@@ -73,10 +77,15 @@ public class CompetentInstitutionType
     })
     protected PartnerListType partnerList;
     @XmlElement(required = true)
-    @OneToOne(targetEntity = LegislationType.class, cascade = {
+    @OneToOne(targetEntity = LegislationListType.class, cascade = {
 
     })
-    protected LegislationType legislation;
+    protected LegislationListType legislationList;
+    @XmlElement(required = true)
+    @OneToOne(targetEntity = ProcedureAndGuidelineListType.class, cascade = {
+
+    })
+    protected ProcedureAndGuidelineListType procedureAndGuidelineList;
 
     /**
      * Ruft den Wert der partnerList-Eigenschaft ab.
@@ -103,27 +112,51 @@ public class CompetentInstitutionType
     }
 
     /**
-     * Ruft den Wert der legislation-Eigenschaft ab.
+     * Ruft den Wert der legislationList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link LegislationType }
+     *     {@link LegislationListType }
      *     
      */
-    public LegislationType getLegislation() {
-        return legislation;
+    public LegislationListType getLegislationList() {
+        return legislationList;
     }
 
     /**
-     * Legt den Wert der legislation-Eigenschaft fest.
+     * Legt den Wert der legislationList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link LegislationType }
+     *     {@link LegislationListType }
      *     
      */
-    public void setLegislation(LegislationType value) {
-        this.legislation = value;
+    public void setLegislationList(LegislationListType value) {
+        this.legislationList = value;
+    }
+
+    /**
+     * Ruft den Wert der procedureAndGuidelineList-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ProcedureAndGuidelineListType }
+     *     
+     */
+    public ProcedureAndGuidelineListType getProcedureAndGuidelineList() {
+        return procedureAndGuidelineList;
+    }
+
+    /**
+     * Legt den Wert der procedureAndGuidelineList-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ProcedureAndGuidelineListType }
+     *     
+     */
+    public void setProcedureAndGuidelineList(ProcedureAndGuidelineListType value) {
+        this.procedureAndGuidelineList = value;
     }
 
 }

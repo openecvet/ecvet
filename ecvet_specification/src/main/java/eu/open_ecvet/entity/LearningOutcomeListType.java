@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.10 um 04:48:47 PM CET 
+// Generiert: 2015.12.14 um 08:45:37 AM CET 
 //
 
 
@@ -29,12 +29,14 @@ import javax.xml.bind.annotation.XmlType;
  * 				According to: C 155/14 Annex 1 - Definitions (b)
  * 				-- ‘Learning outcomes’ means statements of what a learner knows,
  * 				understands and is able to do on completion of a learning
- * 				process and
+ * 				process
+ * 				and
  * 				which are defined in
  * 				terms of knowledge, skills and competence;
  * 
  * 				Developers comment: the terms can be specified by referencing them
- * 				to the qualificationlLevelListType which include the constants for
+ * 				to the qualificationlLevelListType which include the constants
+ * 				for
  * 				the terms
  * 			
  * 

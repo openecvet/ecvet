@@ -11,30 +11,26 @@ package eu.open_ecvet.entity;
 import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlIDREF;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für attachmentType complex type.
+ * <p>Java-Klasse für procedureAndGuidelineType complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>
- * &lt;complexType name="attachmentType"&gt;
+ * &lt;complexType name="procedureAndGuidelineType"&gt;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="attachmentUrl" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="idrefToken" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="assessment" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="validation" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="recognition" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *       &lt;/sequence&gt;
- *       &lt;attribute name="idref" use="required" type="{http://www.w3.org/2001/XMLSchema}IDREF" /&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
@@ -43,101 +39,99 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "attachmentType", propOrder = {
-    "attachmentUrl",
-    "idrefToken"
+@XmlType(name = "procedureAndGuidelineType", propOrder = {
+    "assessment",
+    "validation",
+    "recognition"
 })
 @Entity
 @Table(indexes = {
 
 }, uniqueConstraints = {
 
-}, name = "attachment")
-public class AttachmentType
+}, name = "procedureAndGuideline")
+public class ProcedureAndGuidelineType
     extends EcvetElement
     implements Serializable
 {
 
     @XmlElement(required = true)
-    protected String attachmentUrl;
+    protected String assessment;
     @XmlElement(required = true)
-    protected String idrefToken;
-    @XmlAttribute(name = "idref", required = true)
-    @XmlIDREF
-    @XmlSchemaType(name = "IDREF")
-    @Transient
-    protected Object idref;
+    protected String validation;
+    @XmlElement(required = true)
+    protected String recognition;
 
     /**
-     * Ruft den Wert der attachmentUrl-Eigenschaft ab.
+     * Ruft den Wert der assessment-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getAttachmentUrl() {
-        return attachmentUrl;
+    public String getAssessment() {
+        return assessment;
     }
 
     /**
-     * Legt den Wert der attachmentUrl-Eigenschaft fest.
+     * Legt den Wert der assessment-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setAttachmentUrl(String value) {
-        this.attachmentUrl = value;
+    public void setAssessment(String value) {
+        this.assessment = value;
     }
 
     /**
-     * Ruft den Wert der idrefToken-Eigenschaft ab.
+     * Ruft den Wert der validation-Eigenschaft ab.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getIdrefToken() {
-        return idrefToken;
+    public String getValidation() {
+        return validation;
     }
 
     /**
-     * Legt den Wert der idrefToken-Eigenschaft fest.
+     * Legt den Wert der validation-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setIdrefToken(String value) {
-        this.idrefToken = value;
+    public void setValidation(String value) {
+        this.validation = value;
     }
 
     /**
-     * Ruft den Wert der idref-Eigenschaft ab.
+     * Ruft den Wert der recognition-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link Object }
+     *     {@link String }
      *     
      */
-    public Object getIdref() {
-        return idref;
+    public String getRecognition() {
+        return recognition;
     }
 
     /**
-     * Legt den Wert der idref-Eigenschaft fest.
+     * Legt den Wert der recognition-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link Object }
+     *     {@link String }
      *     
      */
-    public void setIdref(Object value) {
-        this.idref = value;
+    public void setRecognition(String value) {
+        this.recognition = value;
     }
 
 }
