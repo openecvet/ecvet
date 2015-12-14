@@ -27,6 +27,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
+
 					<xsd:element name="competentInstitutionList" type="competentInstitutionListType">
 						<xsd:annotation>
 							<xsd:appinfo>
@@ -58,6 +59,19 @@
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
+	<xsd:complexType name="memorandumOfUnderstandingType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="memorandumofunderstanding"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetAttachment"></xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
 	<xsd:complexType name="qualificationType">
 		<xsd:annotation>
 			<xsd:appinfo>
@@ -85,6 +99,16 @@
 									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.UnitListType"></OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="wholeEcvetPoints" type="xsd:int">
+						<xsd:annotation>
+							<xsd:documentation>
+								reference value for a qualification is 60 points / year
+
+								To enable a common approach for the use of ECVET points, a convention is used
+								according to which 60 points are allocated to the learning outcomes expected to be achieved in a year of formal full time
+							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 				</xsd:sequence>
@@ -120,6 +144,35 @@
 							complementaryDocumentList (which allows to attach files etc)
 						</xsd:documentation>
 					</xsd:annotation>
+					<xsd:element name="memorandumOfUnderstanding" type="memorandumOfUnderstandingType">
+						<xsd:annotation>
+							<xsd:documentation>
+								provide a general framework of cooperation and networking between the partners, set out in Memoranda of
+								Understanding (MoU) through which a climate of mutual trust is
+								established,
+							</xsd:documentation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.MemorandumOfUnderstandingType"></OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="procedureAndGuidelineList" type="procedureAndGuidelineListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.ProcedureAndGuidelineListType"></OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+							<xsd:documentation>
+								Procedures and guidelines for the
+								assessment, validation, accumulation and recognition of units of learning outcomes are designed by the relevant
+								competent institutions and
+								partners involved in the training process
+							</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
 					<xsd:element name="learningAgreementList" type="learningAgreementListType">
 						<xsd:annotation>
 							<xsd:appinfo>
@@ -138,6 +191,17 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
+					<xsd:element name="creditTransferList" type="creditTransferListType">
+						<xsd:annotation>
+							<xsd:documentation>
+								<xsd:appinfo>
+									<annox:annotate target="field">
+										<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.CreditTransferListType"></OneToOne>
+									</annox:annotate>
+								</xsd:appinfo>
+							</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
 					<xsd:element name="userGuideList" type="userGuideListType">
 						<xsd:annotation>
 							<xsd:appinfo>
@@ -149,6 +213,60 @@
 					</xsd:element>
 				</xsd:sequence>
 			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="creditTransferListType">
+		<xsd:annotation>
+			<xsd:documentation>
+				The establishment of partnerships aims to:
+				— assist the partners in the design of specific arrangements for credit transfer for learners.
+			</xsd:documentation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="credittransferlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="creditTransfer" type="creditTransferType" maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="credittransferlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="credittransfer_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="creditTransferType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="credittransfer"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetAttachment"></xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
 	<xsd:complexType name="transcriptsOfRecordListType">
@@ -313,14 +431,8 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="credit" type="xsd:int">
-						<xsd:annotation>
-							<xsd:documentation>
-								TODO: JEMI possibly ambiguous
-							</xsd:documentation>
-						</xsd:annotation>
-					</xsd:element>
-					<xsd:element name="weightSum" type="xsd:int">
+					
+					<xsd:element name="ecvetPoints" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
 								According to: C 155/14 Annex 1 - Definitions
@@ -329,22 +441,14 @@
 								the
 								relative weight of units in
 								relation to the qualification.
-								This is the sum of all single weight elements which occure as
-								childs under learningOutcomeTerm
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="relativeWeight" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
-								According to: C 155/14 Annex 1 - Definitions
-								(i) ‘ECVET points’ means a numerical representation of the
-								overall weight of learning outcomes in a qualification and of
-								the
-								relative weight of units in
-								relation to the qualification.
-								Convenient field. The weightSum in relation to the overall
-								weight
+								convenient field = wholeEcvetPoints(from the qualification) / 100 * ecvetPoints  (from the unit)
+								
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
@@ -551,21 +655,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="credit" type="xsd:int">
-						<xsd:annotation>
-							<xsd:documentation>
-								According to: C 155/14 Annex 1 - Definitions
-								(d) -- ‘Credit for learning outcomes’ (credit) means a set of
-								learning outcomes of an individual which have been assessed and
-								which
-								can be accumulated
-								towards a qualification or transferred
-								to other learning programmes or qualifications
-							</xsd:documentation>
-						</xsd:annotation>
-					</xsd:element>
-
-					<xsd:element name="weight" type="xsd:int">
+					<xsd:element name="ecvetPoints" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
 								According to: C 155/14 Annex 1 - Definitions
@@ -574,6 +664,14 @@
 								the
 								relative weight of units in
 								relation to the qualification.
+							</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="relativeWeight" type="xsd:int">
+						<xsd:annotation>
+							<xsd:documentation>
+								convenient field = wholeEcvetPoints(from the qualification) / 100 * ecvetPoints  (from the unit)
+								
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
@@ -1084,21 +1182,6 @@
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="procedureAndGuidelineList" type="procedureAndGuidelineListType">
-						<xsd:annotation>
-							<xsd:appinfo>
-								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.ProcedureAndGuidelineListType"></OneToOne>
-								</annox:annotate>
-							</xsd:appinfo>
-							<xsd:documentation>
-								Procedures and guidelines for the
-								assessment, validation, accumulation and recognition of units of learning outcomes are designed by the relevant
-								competent institutions and
-								partners involved in the training process
-							</xsd:documentation>
-						</xsd:annotation>
-					</xsd:element>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
@@ -1266,13 +1349,31 @@
 					<Table annox:class="javax.persistence.Table" name="learningagreement"></Table>
 				</annox:annotate>
 			</xsd:appinfo>
+			<xsd:documentation>
+				— the ‘hosting’ institution assesses the learning outcomes achieved and awards credit to the learner; the learning
+				outcomes achieved and the corresponding ECVET points are
+				recorded in a learner's ‘personal transcript’ ( 1 ),
+				— the ‘home’ institution validates the credit as a suitable record of the learner's achievement,
+				— the ‘home’ institution then recognises the
+				learning outcomes that have been acquired; this recognition gives rise to the
+				award of the units and their corresponding ECVET points, according to the rules of the ‘home’ system.
+
+				( 1 ) The ‘home’
+				institution is the institution which will validate and recognise learning outcomes achieved by the learner. The ‘hosting’
+				institution is the one that delivers training for the learning outcomes
+				concerned and assesses the achieved learning outcomes.
+			</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexContent>
 			<xsd:extension base="ecvetAttachment">
-
+				<xsd:sequence>
+					<xsd:element name="hostingInstitutionURI" type="xsd:string"></xsd:element>
+					<xsd:element name="homeInstitutionURI" type="xsd:string"></xsd:element>
+				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
+
 	<xsd:complexType name="recognitionListType">
 		<xsd:annotation>
 			<xsd:appinfo>

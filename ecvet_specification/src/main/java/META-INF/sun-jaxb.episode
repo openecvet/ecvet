@@ -5,7 +5,7 @@
 Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-Generiert: 2015.12.14 um 08:45:37 AM CET 
+Generiert: 2015.12.14 um 12:30:32 PM CET 
 
   -->
   <jaxb:bindings scd="x-schema::">
@@ -15,11 +15,20 @@ Generiert: 2015.12.14 um 08:45:37 AM CET
     <jaxb:bindings scd="~ecvetFrameworkType">
       <jaxb:class ref="eu.open_ecvet.entity.EcvetFrameworkType"/>
     </jaxb:bindings>
+    <jaxb:bindings scd="~memorandumOfUnderstandingType">
+      <jaxb:class ref="eu.open_ecvet.entity.MemorandumOfUnderstandingType"/>
+    </jaxb:bindings>
     <jaxb:bindings scd="~qualificationType">
       <jaxb:class ref="eu.open_ecvet.entity.QualificationType"/>
     </jaxb:bindings>
     <jaxb:bindings scd="~complementaryDocumentsType">
       <jaxb:class ref="eu.open_ecvet.entity.ComplementaryDocumentsType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~creditTransferListType">
+      <jaxb:class ref="eu.open_ecvet.entity.CreditTransferListType"/>
+    </jaxb:bindings>
+    <jaxb:bindings scd="~creditTransferType">
+      <jaxb:class ref="eu.open_ecvet.entity.CreditTransferType"/>
     </jaxb:bindings>
     <jaxb:bindings scd="~transcriptsOfRecordListType">
       <jaxb:class ref="eu.open_ecvet.entity.TranscriptsOfRecordListType"/>

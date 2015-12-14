@@ -24,16 +24,21 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für userGuideListType complex type.
+ * 
+ * 				The establishment of partnerships aims to:
+ * 				— assist the partners in the design of specific arrangements for credit transfer for learners.
+ * 			
+ * 
+ * <p>Java-Klasse für creditTransferListType complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>
- * &lt;complexType name="userGuideListType"&gt;
+ * &lt;complexType name="creditTransferListType"&gt;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="userGuide" type="{}userGuideType" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="creditTransfer" type="{}creditTransferType" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -43,16 +48,16 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "userGuideListType", propOrder = {
-    "userGuide"
+@XmlType(name = "creditTransferListType", propOrder = {
+    "creditTransfer"
 })
 @Entity
 @Table(indexes = {
 
 }, uniqueConstraints = {
 
-}, name = "userguidelist")
-public class UserGuideListType
+}, name = "credittransferlist")
+public class CreditTransferListType
     extends EcvetElement
     implements Serializable
 {
@@ -64,43 +69,43 @@ public class UserGuideListType
         CascadeType.DETACH
     })
     @JoinTable(joinColumns = {
-        @JoinColumn(name = "userguidelist_id")
+        @JoinColumn(name = "credittransferlist_id")
     }, inverseJoinColumns = {
-        @JoinColumn(name = "userguide_id")
+        @JoinColumn(name = "credittransfer_id")
     }, indexes = {
 
     }, uniqueConstraints = {
 
     })
-    protected List<UserGuideType> userGuide;
+    protected List<CreditTransferType> creditTransfer;
 
     /**
-     * Gets the value of the userGuide property.
+     * Gets the value of the creditTransfer property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the userGuide property.
+     * This is why there is not a <CODE>set</CODE> method for the creditTransfer property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getUserGuide().add(newItem);
+     *    getCreditTransfer().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link UserGuideType }
+     * {@link CreditTransferType }
      * 
      * 
      */
-    public List<UserGuideType> getUserGuide() {
-        if (userGuide == null) {
-            userGuide = new ArrayList<UserGuideType>();
+    public List<CreditTransferType> getCreditTransfer() {
+        if (creditTransfer == null) {
+            creditTransfer = new ArrayList<CreditTransferType>();
         }
-        return this.userGuide;
+        return this.creditTransfer;
     }
 
 }

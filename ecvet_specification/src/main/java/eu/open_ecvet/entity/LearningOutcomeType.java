@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.14 um 08:45:37 AM CET 
+// Generiert: 2015.12.14 um 12:30:32 PM CET 
 //
 
 
@@ -34,8 +34,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="credit" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="weight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="ecvetPoints" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="relativeWeight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="evaluations" type="{}evaluationsType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
@@ -47,8 +47,8 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "learningOutcomeType", propOrder = {
-    "credit",
-    "weight",
+    "ecvetPoints",
+    "relativeWeight",
     "evaluations"
 })
 @Entity
@@ -62,8 +62,8 @@ public class LearningOutcomeType
     implements Serializable
 {
 
-    protected int credit;
-    protected int weight;
+    protected int ecvetPoints;
+    protected int relativeWeight;
     @XmlElement(required = true)
     @OneToOne(targetEntity = EvaluationsType.class, cascade = {
 
@@ -71,35 +71,35 @@ public class LearningOutcomeType
     protected EvaluationsType evaluations;
 
     /**
-     * Ruft den Wert der credit-Eigenschaft ab.
+     * Ruft den Wert der ecvetPoints-Eigenschaft ab.
      * 
      */
-    public int getCredit() {
-        return credit;
+    public int getEcvetPoints() {
+        return ecvetPoints;
     }
 
     /**
-     * Legt den Wert der credit-Eigenschaft fest.
+     * Legt den Wert der ecvetPoints-Eigenschaft fest.
      * 
      */
-    public void setCredit(int value) {
-        this.credit = value;
+    public void setEcvetPoints(int value) {
+        this.ecvetPoints = value;
     }
 
     /**
-     * Ruft den Wert der weight-Eigenschaft ab.
+     * Ruft den Wert der relativeWeight-Eigenschaft ab.
      * 
      */
-    public int getWeight() {
-        return weight;
+    public int getRelativeWeight() {
+        return relativeWeight;
     }
 
     /**
-     * Legt den Wert der weight-Eigenschaft fest.
+     * Legt den Wert der relativeWeight-Eigenschaft fest.
      * 
      */
-    public void setWeight(int value) {
-        this.weight = value;
+    public void setRelativeWeight(int value) {
+        this.relativeWeight = value;
     }
 
     /**

@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.14 um 08:45:37 AM CET 
+// Generiert: 2015.12.14 um 12:30:32 PM CET 
 //
 
 
@@ -40,8 +40,11 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
+ *         &lt;element name="memorandumOfUnderstanding" type="{}memorandumOfUnderstandingType"/&gt;
+ *         &lt;element name="procedureAndGuidelineList" type="{}procedureAndGuidelineListType"/&gt;
  *         &lt;element name="learningAgreementList" type="{}learningAgreementListType"/&gt;
  *         &lt;element name="transcriptsOfRecordList" type="{}transcriptsOfRecordListType"/&gt;
+ *         &lt;element name="creditTransferList" type="{}creditTransferListType"/&gt;
  *         &lt;element name="userGuideList" type="{}userGuideListType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
@@ -53,8 +56,11 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "complementaryDocumentsType", propOrder = {
+    "memorandumOfUnderstanding",
+    "procedureAndGuidelineList",
     "learningAgreementList",
     "transcriptsOfRecordList",
+    "creditTransferList",
     "userGuideList"
 })
 @Entity
@@ -69,6 +75,16 @@ public class ComplementaryDocumentsType
 {
 
     @XmlElement(required = true)
+    @OneToOne(targetEntity = MemorandumOfUnderstandingType.class, cascade = {
+
+    })
+    protected MemorandumOfUnderstandingType memorandumOfUnderstanding;
+    @XmlElement(required = true)
+    @OneToOne(targetEntity = ProcedureAndGuidelineListType.class, cascade = {
+
+    })
+    protected ProcedureAndGuidelineListType procedureAndGuidelineList;
+    @XmlElement(required = true)
     @OneToOne(targetEntity = LearningAgreementListType.class, cascade = {
 
     })
@@ -79,10 +95,60 @@ public class ComplementaryDocumentsType
     })
     protected TranscriptsOfRecordListType transcriptsOfRecordList;
     @XmlElement(required = true)
+    protected CreditTransferListType creditTransferList;
+    @XmlElement(required = true)
     @OneToOne(targetEntity = UserGuideListType.class, cascade = {
 
     })
     protected UserGuideListType userGuideList;
+
+    /**
+     * Ruft den Wert der memorandumOfUnderstanding-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link MemorandumOfUnderstandingType }
+     *     
+     */
+    public MemorandumOfUnderstandingType getMemorandumOfUnderstanding() {
+        return memorandumOfUnderstanding;
+    }
+
+    /**
+     * Legt den Wert der memorandumOfUnderstanding-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link MemorandumOfUnderstandingType }
+     *     
+     */
+    public void setMemorandumOfUnderstanding(MemorandumOfUnderstandingType value) {
+        this.memorandumOfUnderstanding = value;
+    }
+
+    /**
+     * Ruft den Wert der procedureAndGuidelineList-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ProcedureAndGuidelineListType }
+     *     
+     */
+    public ProcedureAndGuidelineListType getProcedureAndGuidelineList() {
+        return procedureAndGuidelineList;
+    }
+
+    /**
+     * Legt den Wert der procedureAndGuidelineList-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ProcedureAndGuidelineListType }
+     *     
+     */
+    public void setProcedureAndGuidelineList(ProcedureAndGuidelineListType value) {
+        this.procedureAndGuidelineList = value;
+    }
 
     /**
      * Ruft den Wert der learningAgreementList-Eigenschaft ab.
@@ -130,6 +196,30 @@ public class ComplementaryDocumentsType
      */
     public void setTranscriptsOfRecordList(TranscriptsOfRecordListType value) {
         this.transcriptsOfRecordList = value;
+    }
+
+    /**
+     * Ruft den Wert der creditTransferList-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link CreditTransferListType }
+     *     
+     */
+    public CreditTransferListType getCreditTransferList() {
+        return creditTransferList;
+    }
+
+    /**
+     * Legt den Wert der creditTransferList-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CreditTransferListType }
+     *     
+     */
+    public void setCreditTransferList(CreditTransferListType value) {
+        this.creditTransferList = value;
     }
 
     /**

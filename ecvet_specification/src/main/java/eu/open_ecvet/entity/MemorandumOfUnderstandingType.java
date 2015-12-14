@@ -17,14 +17,14 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für partnerType complex type.
+ * <p>Java-Klasse für memorandumOfUnderstandingType complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>
- * &lt;complexType name="partnerType"&gt;
+ * &lt;complexType name="memorandumOfUnderstandingType"&gt;
  *   &lt;complexContent&gt;
- *     &lt;extension base="{}ecvetElement"&gt;
+ *     &lt;extension base="{}ecvetAttachment"&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
@@ -33,15 +33,15 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "partnerType")
+@XmlType(name = "memorandumOfUnderstandingType")
 @Entity
 @Table(indexes = {
 
 }, uniqueConstraints = {
 
-}, name = "partner")
-public class PartnerType
-    extends EcvetElement
+}, name = "memorandumofunderstanding")
+public class MemorandumOfUnderstandingType
+    extends EcvetAttachment
     implements Serializable
 {
 

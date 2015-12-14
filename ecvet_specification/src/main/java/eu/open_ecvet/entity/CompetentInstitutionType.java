@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.14 um 08:45:37 AM CET 
+// Generiert: 2015.12.14 um 12:30:32 PM CET 
 //
 
 
@@ -45,7 +45,6 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element name="partnerList" type="{}partnerListType"/&gt;
  *         &lt;element name="legislationList" type="{}legislationListType"/&gt;
- *         &lt;element name="procedureAndGuidelineList" type="{}procedureAndGuidelineListType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -57,8 +56,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "competentInstitutionType", propOrder = {
     "partnerList",
-    "legislationList",
-    "procedureAndGuidelineList"
+    "legislationList"
 })
 @Entity
 @Table(indexes = {
@@ -81,11 +79,6 @@ public class CompetentInstitutionType
 
     })
     protected LegislationListType legislationList;
-    @XmlElement(required = true)
-    @OneToOne(targetEntity = ProcedureAndGuidelineListType.class, cascade = {
-
-    })
-    protected ProcedureAndGuidelineListType procedureAndGuidelineList;
 
     /**
      * Ruft den Wert der partnerList-Eigenschaft ab.
@@ -133,30 +126,6 @@ public class CompetentInstitutionType
      */
     public void setLegislationList(LegislationListType value) {
         this.legislationList = value;
-    }
-
-    /**
-     * Ruft den Wert der procedureAndGuidelineList-Eigenschaft ab.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ProcedureAndGuidelineListType }
-     *     
-     */
-    public ProcedureAndGuidelineListType getProcedureAndGuidelineList() {
-        return procedureAndGuidelineList;
-    }
-
-    /**
-     * Legt den Wert der procedureAndGuidelineList-Eigenschaft fest.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ProcedureAndGuidelineListType }
-     *     
-     */
-    public void setProcedureAndGuidelineList(ProcedureAndGuidelineListType value) {
-        this.procedureAndGuidelineList = value;
     }
 
 }
