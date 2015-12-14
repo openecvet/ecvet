@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>eu.open_ecvet</groupId>
     <artifactId>ecvet</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <modules>
         <module>ecvet_specification</module>
         <module>ecvet_implementation</module>
