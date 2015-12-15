@@ -2,13 +2,14 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.14 um 04:50:16 PM CET 
+// Generiert: 2015.12.15 um 05:07:17 PM CET 
 //
 
 
 package eu.open_ecvet.entity;
 
 import java.io.Serializable;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -76,18 +77,21 @@ public class UnitType
     protected int relativeWeight;
     @XmlElement(required = true)
     @OneToOne(targetEntity = LearningOutcomeListType.class, cascade = {
-
+        CascadeType.ALL
     })
     protected LearningOutcomeListType learningOutcomeList;
     @XmlElement(required = true)
     @OneToOne(targetEntity = QualificationFrameworkListType.class, cascade = {
-
+        CascadeType.ALL
     })
     protected QualificationFrameworkListType qualificationFrameworkList;
     @XmlElement(required = true)
+    @OneToOne(targetEntity = EvaluationsType.class, cascade = {
+        CascadeType.ALL
+    })
     protected EvaluationsType evaluations;
     @OneToOne(targetEntity = UnitListType.class, cascade = {
-
+        CascadeType.ALL
     })
     protected UnitListType unitList;
 

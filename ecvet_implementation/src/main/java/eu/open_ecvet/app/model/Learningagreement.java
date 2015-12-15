@@ -21,6 +21,8 @@ public class Learningagreement extends VirtualTable implements StaticInstanceSup
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
 	public final static VirtualTableColumn<Integer>	ID;
 	public final static VirtualTableColumn<String>	DESCRIPTION;
+	public final static VirtualTableColumn<String>	HOMEINSTITUTIONURI;
+	public final static VirtualTableColumn<String>	HOSTINGINSTITUTIONURI;
 	public final static VirtualTableColumn<String>	TITLE;
 	public final static VirtualTableColumn<String>	URI;
 	
@@ -42,6 +44,18 @@ public class Learningagreement extends VirtualTable implements StaticInstanceSup
 		DESCRIPTION.setPreferredWidth(100);
 		DESCRIPTION.setTextFormat(TextFormat.getPlainInstance());
 		
+		HOMEINSTITUTIONURI = new VirtualTableColumn<String>("HOMEINSTITUTIONURI");
+		HOMEINSTITUTIONURI.setType(DataType.VARCHAR,2147483647);
+		HOMEINSTITUTIONURI.setDefaultValue(null);
+		HOMEINSTITUTIONURI.setPreferredWidth(100);
+		HOMEINSTITUTIONURI.setTextFormat(TextFormat.getPlainInstance());
+		
+		HOSTINGINSTITUTIONURI = new VirtualTableColumn<String>("HOSTINGINSTITUTIONURI");
+		HOSTINGINSTITUTIONURI.setType(DataType.VARCHAR,2147483647);
+		HOSTINGINSTITUTIONURI.setDefaultValue(null);
+		HOSTINGINSTITUTIONURI.setPreferredWidth(100);
+		HOSTINGINSTITUTIONURI.setTextFormat(TextFormat.getPlainInstance());
+		
 		TITLE = new VirtualTableColumn<String>("TITLE");
 		TITLE.setType(DataType.VARCHAR,2147483647);
 		TITLE.setDefaultValue(null);
@@ -58,8 +72,8 @@ public class Learningagreement extends VirtualTable implements StaticInstanceSup
 	
 	public Learningagreement()
 	{
-		super(Learningagreement.class.getName(),"PUBLIC","LEARNINGAGREEMENT",ID,DESCRIPTION,TITLE,
-				URI);
+		super(Learningagreement.class.getName(),"PUBLIC","LEARNINGAGREEMENT",ID,DESCRIPTION,
+				HOMEINSTITUTIONURI,HOSTINGINSTITUTIONURI,TITLE,URI);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(TITLE);

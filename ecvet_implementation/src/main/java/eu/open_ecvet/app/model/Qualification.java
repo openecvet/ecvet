@@ -26,6 +26,7 @@ public class Qualification extends VirtualTable implements StaticInstanceSupport
 	public final static VirtualTableColumn<String>	DESCRIPTION;
 	public final static VirtualTableColumn<String>	TITLE;
 	public final static VirtualTableColumn<String>	URI;
+	public final static VirtualTableColumn<Integer>	WHOLEECVETPOINTS;
 	public final static VirtualTableColumn<Integer>	UNITLIST_ID;
 	public final static VirtualTableColumn<String>	UNITLIST_TITLE;
 	
@@ -59,6 +60,13 @@ public class Qualification extends VirtualTable implements StaticInstanceSupport
 		URI.setPreferredWidth(100);
 		URI.setTextFormat(TextFormat.getPlainInstance());
 		
+		WHOLEECVETPOINTS = new VirtualTableColumn<Integer>("WHOLEECVETPOINTS");
+		WHOLEECVETPOINTS.setType(DataType.INTEGER);
+		WHOLEECVETPOINTS.setDefaultValue(null);
+		WHOLEECVETPOINTS.setPreferredWidth(100);
+		WHOLEECVETPOINTS.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,
+				false,false));
+		
 		UNITLIST_ID = new VirtualTableColumn<Integer>("UNITLIST_ID");
 		UNITLIST_ID.setType(DataType.INTEGER);
 		UNITLIST_ID.setDefaultValue(null);
@@ -86,7 +94,7 @@ public class Qualification extends VirtualTable implements StaticInstanceSupport
 	public Qualification()
 	{
 		super(Qualification.class.getName(),"PUBLIC","QUALIFICATION",ID,DESCRIPTION,TITLE,URI,
-				UNITLIST_ID,UNITLIST_TITLE);
+				WHOLEECVETPOINTS,UNITLIST_ID,UNITLIST_TITLE);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(TITLE);

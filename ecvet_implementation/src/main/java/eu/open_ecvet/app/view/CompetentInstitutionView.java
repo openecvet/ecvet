@@ -23,8 +23,8 @@ import eu.open_ecvet.app.helper.UpdateView;
 import eu.open_ecvet.app.helper.UpdateViewHelper;
 import eu.open_ecvet.app.model.Competentinstitution;
 import eu.open_ecvet.app.model.Legislation;
+import eu.open_ecvet.app.model.Legislationlist;
 import eu.open_ecvet.app.model.Partnerlist;
-import eu.open_ecvet.app.model.Unitlist;
 
 
 public class CompetentInstitutionView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLASS}
@@ -46,7 +46,7 @@ public class CompetentInstitutionView extends XdevWindow // ${GENERATED-CODE-LI
 										{
 											partnerComboBox.setModel(Partnerlist.VT,"TITLE","ID",
 													true);
-											legislationComboBox.setModel(Legislation.VT,"TITLE",
+											legislationListComboBox.setModel(Legislation.VT,"TITLE",
 													"ID",true);
 											table.refresh();
 										}
@@ -97,23 +97,19 @@ public class CompetentInstitutionView extends XdevWindow // ${GENERATED-CODE-LI
 		UpdateViewHelper.instance().add(updateView);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
 	
-	
-	@EventHandlerDelegate
-	void cmdNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	@EventHandlerDelegate void cmdNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.reset(eu.open_ecvet.app.model.Competentinstitution.VT);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
-	@EventHandlerDelegate
-	void cmdReset_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void cmdReset_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.reset();
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
-	@EventHandlerDelegate
-	void cmdSave_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void cmdSave_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		if(formular.verifyFormularComponents())
 		{
@@ -127,10 +123,9 @@ public class CompetentInstitutionView extends XdevWindow // ${GENERATED-CODE-LI
 			}
 		}
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
-	@EventHandlerDelegate
-	void cmdSaveAndNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void cmdSaveAndNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		if(formular.verifyFormularComponents())
 		{
@@ -145,14 +140,14 @@ public class CompetentInstitutionView extends XdevWindow // ${GENERATED-CODE-LI
 			}
 		}
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
-	@EventHandlerDelegate
-	void cmdSearch_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void cmdSearch_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.search("AND",table);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
+
+
 	// Generated definitions, do not edit! ${GENERATED-CODE-BLOCK-START:DEFINITIONS}
 	XdevContainer	container, container3, container2;
 	XdevButton		legislationShortcut, partnerShortcut, cmdNew, cmdReset, cmdSave, cmdSaveAndNew,
@@ -161,7 +156,7 @@ public class CompetentInstitutionView extends XdevWindow // ${GENERATED-CODE-LI
 	XdevFormular	formular;
 	XdevTable		table;
 	XdevTextArea	textArea;
-	XdevComboBox	legislationComboBox, partnerComboBox;
+	XdevComboBox	legislationListComboBox, partnerComboBox;
 	XdevLabel		label2, label3, label4, label5, label;
 	// End generated definitions ${GENERATED-CODE-BLOCK-END:DEFINITIONS}
 	
@@ -178,7 +173,7 @@ public class CompetentInstitutionView extends XdevWindow // ${GENERATED-CODE-LI
 		label4 = new XdevLabel();
 		textField = new XdevTextField();
 		label5 = new XdevLabel();
-		legislationComboBox = new XdevComboBox();
+		legislationListComboBox = new XdevComboBox();
 		label = new XdevLabel();
 		partnerComboBox = new XdevComboBox();
 		container3 = new XdevContainer();
@@ -202,46 +197,44 @@ public class CompetentInstitutionView extends XdevWindow // ${GENERATED-CODE-LI
 		partnerShortcut.setEnabled(false);
 		table.setTabIndex(3);
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		table.setModel(Competentinstitution.VT,"TITLE, URI, LEGISLATION_TITLE, PARTNERLIST_TITLE",
-				true);
+		table.setModel(Competentinstitution.VT,"*",true);
 		label2.setText("TITLE");
 		label2.setName("label2");
 		textField2.setDataField("eu.open_ecvet.app.model.Competentinstitution.TITLE");
-		textField2.setTabIndex(5);
+		textField2.setTabIndex(16);
 		textField2.setMaxSignCount(Integer.MAX_VALUE);
 		textField2.setName("textField2");
 		textField2.setHorizontalAlignment(SwingConstants.LEFT);
 		label3.setText("DESCRIPTION");
 		label3.setName("label3");
 		textArea.setDataField("eu.open_ecvet.app.model.Competentinstitution.DESCRIPTION");
-		textArea.setTabIndex(6);
+		textArea.setTabIndex(17);
 		textArea.setMaxSignCount(Integer.MAX_VALUE);
 		label4.setText("URI");
 		label4.setName("label4");
 		textField.setDataField("eu.open_ecvet.app.model.Competentinstitution.URI");
-		textField.setTabIndex(7);
+		textField.setTabIndex(18);
 		textField.setMaxSignCount(Integer.MAX_VALUE);
 		textField.setHorizontalAlignment(SwingConstants.LEFT);
-		label5.setText("LEGISLATION_ID");
+		label5.setText("LEGISLATIONLIST_ID");
 		label5.setName("label5");
-		legislationComboBox
-				.setDataField("eu.open_ecvet.app.model.Competentinstitution.LEGISLATION_ID");
-		legislationComboBox.setTabIndex(8);
-		legislationComboBox.setName("comboBox2");
-		legislationComboBox.setModel(Legislation.VT,"TITLE","ID",true);
+		legislationListComboBox.setDataField("eu.open_ecvet.app.model.Competentinstitution.LEGISLATIONLIST_ID");
+		legislationListComboBox.setTabIndex(19);
+		legislationListComboBox.setName("comboBox2");
+		legislationListComboBox.setModel(Legislationlist.VT,"TITLE","ID",true);
 		label.setText("PARTNERLIST_ID");
 		partnerComboBox.setDataField("eu.open_ecvet.app.model.Competentinstitution.PARTNERLIST_ID");
-		partnerComboBox.setTabIndex(9);
+		partnerComboBox.setTabIndex(20);
 		partnerComboBox.setModel(Partnerlist.VT,"TITLE","ID",true);
-		cmdNew.setTabIndex(10);
+		cmdNew.setTabIndex(21);
 		cmdNew.setText("New");
-		cmdReset.setTabIndex(11);
+		cmdReset.setTabIndex(22);
 		cmdReset.setText("Reset");
-		cmdSave.setTabIndex(12);
+		cmdSave.setTabIndex(23);
 		cmdSave.setText("Save");
-		cmdSaveAndNew.setTabIndex(13);
+		cmdSaveAndNew.setTabIndex(24);
 		cmdSaveAndNew.setText("Save + New");
-		cmdSearch.setTabIndex(14);
+		cmdSearch.setTabIndex(25);
 		cmdSearch.setText("Search");
 		deleteButton.setTabIndex(4);
 		deleteButton.setText("Delete");
@@ -255,15 +248,13 @@ public class CompetentInstitutionView extends XdevWindow // ${GENERATED-CODE-LI
 		label4.saveState();
 		textField.saveState();
 		label5.saveState();
-		legislationComboBox.saveState();
+		legislationListComboBox.saveState();
 		label.saveState();
 		partnerComboBox.saveState();
 		
 		container.setLayout(new GridBagLayout());
-		container.add(legislationShortcut,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,
-				0,0),0,0));
-		container.add(partnerShortcut,new GBC(2,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,
-				new Insets(0,0,0,0),0,0));
+		container.add(legislationShortcut,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
+		container.add(partnerShortcut,new GBC(2,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
 		GBC.addSpacer(container,true,true);
 		container3.setLayout(new FlowLayout(FlowLayout.TRAILING,3,3));
 		container3.add(cmdNew);
@@ -272,43 +263,27 @@ public class CompetentInstitutionView extends XdevWindow // ${GENERATED-CODE-LI
 		container3.add(cmdSaveAndNew);
 		container3.add(cmdSearch);
 		formular.setLayout(new GridBagLayout());
-		formular.add(label2,new GBC(1,1,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(textField2,new GBC(2,1,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
-				new Insets(3,3,3,3),0,0));
-		formular.add(label3,new GBC(1,2,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		JScrollPane textArea_carrier = new XScrollPane(textArea,
-				XScrollPane.VERTICAL_SCROLLBAR_ALWAYS,XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-		formular.add(textArea_carrier,new GBC(2,2,1,1,1.0,1.0,GBC.BASELINE_LEADING,GBC.BOTH,
-				new Insets(3,3,3,3),0,0));
-		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
-				new Insets(3,3,3,3),0,0));
-		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(legislationComboBox,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,
-				GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(label,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,
-				new Insets(3,3,3,3),0,0));
-		formular.add(partnerComboBox,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
-				new Insets(3,3,3,3),0,0));
-		formular.add(container3,new GBC(1,6,2,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,
-				3),0,0));
+		formular.add(label2,new GBC(1,1,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(textField2,new GBC(2,1,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label3,new GBC(1,2,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		JScrollPane textArea_carrier = new XScrollPane(textArea,XScrollPane.VERTICAL_SCROLLBAR_ALWAYS,XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		formular.add(textArea_carrier,new GBC(2,2,1,1,1.0,1.0,GBC.BASELINE_LEADING,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(legislationListComboBox,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(partnerComboBox,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(container3,new GBC(1,6,2,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(formular,true,true);
 		container2.setLayout(new GridBagLayout());
-		container2.add(deleteButton,new GBC(1,1,1,1,0.0,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),
-				0,0));
+		container2.add(deleteButton,new GBC(1,1,1,1,0.0,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(container2,true,true);
 		this.setLayout(new GridBagLayout());
 		this.add(container,new GBC(1,1,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		JScrollPane table_carrier = new XScrollPane(table,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
-				XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		this.add(table_carrier,new GBC(1,2,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),
-				0,0));
-		this.add(formular,
-				new GBC(1,3,1,1,0.1,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(0,0,0,0),0,0));
+		JScrollPane table_carrier = new XScrollPane(table,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		this.add(table_carrier,new GBC(1,2,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		this.add(formular,new GBC(1,3,1,1,0.1,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(0,0,0,0),0,0));
 		this.add(container2,new GBC(1,4,1,1,0.1,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(this,true,true);
 		

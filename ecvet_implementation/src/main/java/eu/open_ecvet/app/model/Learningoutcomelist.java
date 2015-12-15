@@ -93,7 +93,7 @@ public class Learningoutcomelist extends VirtualTable implements StaticInstanceS
 				TITLE,URI,QUALIFICATIONFRAMEWORKLIST_ID,QUALIFICATIONFRAMEWORKLIST_TITLE);
 		
 		setDataSource(EcvetH2.DB);
-		setPrimaryColumn(ID);
+		setPrimaryColumn(TITLE);
 		
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"ID"));
 		addIndex(new Index("LEARNINGOUTCOMELIST_QUALIFICATIONFRAMEWORKLIST_ID_INDEX_1",

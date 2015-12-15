@@ -2,12 +2,27 @@
     "classpath": [
         {
             "exported": true,
-            "path": "MySQL JDBC",
-            "type": "USER_LIBRARY"
+            "path": "/home/tom/.m2/repository/eu/open_ecvet/ecvet_specification/0.0.2-SNAPSHOT/ecvet_specification-0.0.2-SNAPSHOT.jar",
+            "type": "EXTERNAL_JAR_FILE"
+        },
+        {
+            "exported": true,
+            "path": "/home/tom/.m2/repository/org/apache/logging/log4j/log4j-api/2.1/log4j-api-2.1.jar",
+            "type": "EXTERNAL_JAR_FILE"
+        },
+        {
+            "exported": true,
+            "path": "/home/tom/.m2/repository/org/eclipse/persistence/javax.persistence/2.1.0-RC1/javax.persistence-2.1.0-RC1.jar",
+            "type": "EXTERNAL_JAR_FILE"
         },
         {
             "exported": true,
             "path": "H2 JDBC",
+            "type": "USER_LIBRARY"
+        },
+        {
+            "exported": true,
+            "path": "MySQL JDBC",
             "type": "USER_LIBRARY"
         }
     ],

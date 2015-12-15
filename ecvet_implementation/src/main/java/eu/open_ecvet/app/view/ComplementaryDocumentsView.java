@@ -22,7 +22,10 @@ import javax.swing.SwingConstants;
 import eu.open_ecvet.app.helper.UpdateView;
 import eu.open_ecvet.app.helper.UpdateViewHelper;
 import eu.open_ecvet.app.model.Complementarydocuments;
+import eu.open_ecvet.app.model.Credittransferlist;
 import eu.open_ecvet.app.model.Learningagreementlist;
+import eu.open_ecvet.app.model.Memorandumofunderstanding;
+import eu.open_ecvet.app.model.Procedureandguidelinelist;
 import eu.open_ecvet.app.model.Transcriptsofrecordlist;
 import eu.open_ecvet.app.model.Userguidelist;
 
@@ -44,6 +47,9 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 										
 										public void update()
 										{
+											proceduresAndGuidelinesListComboBox.setModel(Procedureandguidelinelist.VT,"TITLE","ID",true);
+											memorandumOfUnderstandingComboBox.setModel(Memorandumofunderstanding.VT,"TITLE","ID",true);
+											creditTransferListComboBox.setModel(Credittransferlist.VT,"TITLE","ID",true);
 											learningAgreementListComboBox.setModel(
 													Learningagreementlist.VT,"TITLE","ID",true);
 											transcriptsOfRecordListComboBox.setModel(Transcriptsofrecordlist.VT,"TITLE","ID",true);
@@ -97,7 +103,8 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 	
 		UpdateViewHelper.instance().add(updateView);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
+
+
 	@EventHandlerDelegate void cmdNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.reset(eu.open_ecvet.app.model.Complementarydocuments.VT);
@@ -158,9 +165,10 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 	XdevFormular	formular;
 	XdevTable		table;
 	XdevTextArea	textArea;
-	XdevComboBox	learningAgreementListComboBox, transcriptsOfRecordListComboBox,
-			userGuideListComboBox;
-	XdevLabel		label2, label3, label4, label5, label6, label;
+	XdevComboBox	creditTransferListComboBox, learningAgreementListComboBox,
+			memorandumOfUnderstandingComboBox, proceduresAndGuidelinesListComboBox,
+			transcriptsOfRecordListComboBox, userGuideListComboBox;
+	XdevLabel		label2, label3, label4, label5, label6, label7, label8, label9, label;
 	// End generated definitions ${GENERATED-CODE-BLOCK-END:DEFINITIONS}
 	
 	{// Generated initializers, do not edit! ${GENERATED-CODE-BLOCK-START:INITIALIZERS}
@@ -177,8 +185,14 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 		label4 = new XdevLabel();
 		textField = new XdevTextField();
 		label5 = new XdevLabel();
-		learningAgreementListComboBox = new XdevComboBox();
+		creditTransferListComboBox = new XdevComboBox();
 		label6 = new XdevLabel();
+		learningAgreementListComboBox = new XdevComboBox();
+		label7 = new XdevLabel();
+		memorandumOfUnderstandingComboBox = new XdevComboBox();
+		label8 = new XdevLabel();
+		proceduresAndGuidelinesListComboBox = new XdevComboBox();
+		label9 = new XdevLabel();
 		transcriptsOfRecordListComboBox = new XdevComboBox();
 		label = new XdevLabel();
 		userGuideListComboBox = new XdevComboBox();
@@ -207,7 +221,7 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 		userGuideListShortcut.setEnabled(false);
 		table.setTabIndex(3);
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		table.setModel(Complementarydocuments.VT,"TITLE, URI, LEARNINGAGREEMENTLIST_TITLE, TRANSCRIPTSOFRECORDLIST_TITLE, USERGUIDELIST_TITLE",true);
+		table.setModel(Complementarydocuments.VT,"TITLE, URI, CREDITTRANSFERLIST_TITLE, LEARNINGAGREEMENTLIST_TITLE, MEMORANDUMOFUNDERSTANDING_TITLE, PROCEDUREANDGUIDELINELIST_TITLE, TRANSCRIPTSOFRECORDLIST_TITLE, USERGUIDELIST_TITLE",true);
 		label2.setText("TITLE");
 		label2.setName("label2");
 		textField2.setDataField("eu.open_ecvet.app.model.Complementarydocuments.TITLE");
@@ -226,31 +240,49 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 		textField.setTabIndex(20);
 		textField.setMaxSignCount(Integer.MAX_VALUE);
 		textField.setHorizontalAlignment(SwingConstants.LEFT);
-		label5.setText("LEARNINGAGREEMENTLIST_ID");
+		label5.setText("CREDITTRANSFERLIST_ID");
 		label5.setName("label5");
-		learningAgreementListComboBox.setDataField("eu.open_ecvet.app.model.Complementarydocuments.LEARNINGAGREEMENTLIST_ID");
-		learningAgreementListComboBox.setTabIndex(21);
-		learningAgreementListComboBox.setName("comboBox2");
-		learningAgreementListComboBox.setModel(Learningagreementlist.VT,"TITLE","ID",true);
-		label6.setText("TRANSCRIPTSOFRECORDLIST_ID");
+		creditTransferListComboBox.setDataField("eu.open_ecvet.app.model.Complementarydocuments.CREDITTRANSFERLIST_ID");
+		creditTransferListComboBox.setTabIndex(21);
+		creditTransferListComboBox.setName("comboBox2");
+		creditTransferListComboBox.setModel(Credittransferlist.VT,"TITLE","ID",true);
+		label6.setText("LEARNINGAGREEMENTLIST_ID");
 		label6.setName("label6");
+		learningAgreementListComboBox.setDataField("eu.open_ecvet.app.model.Complementarydocuments.LEARNINGAGREEMENTLIST_ID");
+		learningAgreementListComboBox.setTabIndex(22);
+		learningAgreementListComboBox.setName("comboBox3");
+		learningAgreementListComboBox.setModel(Learningagreementlist.VT,"TITLE","ID",true);
+		label7.setText("MEMORANDUMOFUNDERSTANDING_ID");
+		label7.setName("label7");
+		memorandumOfUnderstandingComboBox.setDataField("eu.open_ecvet.app.model.Complementarydocuments.MEMORANDUMOFUNDERSTANDING_ID");
+		memorandumOfUnderstandingComboBox.setTabIndex(23);
+		memorandumOfUnderstandingComboBox.setName("comboBox4");
+		memorandumOfUnderstandingComboBox.setModel(Memorandumofunderstanding.VT,"TITLE","ID",true);
+		label8.setText("PROCEDUREANDGUIDELINELIST_ID");
+		label8.setName("label8");
+		proceduresAndGuidelinesListComboBox.setDataField("eu.open_ecvet.app.model.Complementarydocuments.PROCEDUREANDGUIDELINELIST_ID");
+		proceduresAndGuidelinesListComboBox.setTabIndex(24);
+		proceduresAndGuidelinesListComboBox.setName("comboBox5");
+		proceduresAndGuidelinesListComboBox.setModel(Procedureandguidelinelist.VT,"TITLE","ID",true);
+		label9.setText("TRANSCRIPTSOFRECORDLIST_ID");
+		label9.setName("label9");
 		transcriptsOfRecordListComboBox.setDataField("eu.open_ecvet.app.model.Complementarydocuments.TRANSCRIPTSOFRECORDLIST_ID");
-		transcriptsOfRecordListComboBox.setTabIndex(22);
-		transcriptsOfRecordListComboBox.setName("comboBox3");
+		transcriptsOfRecordListComboBox.setTabIndex(25);
+		transcriptsOfRecordListComboBox.setName("comboBox6");
 		transcriptsOfRecordListComboBox.setModel(Transcriptsofrecordlist.VT,"TITLE","ID",true);
 		label.setText("USERGUIDELIST_ID");
 		userGuideListComboBox.setDataField("eu.open_ecvet.app.model.Complementarydocuments.USERGUIDELIST_ID");
-		userGuideListComboBox.setTabIndex(23);
+		userGuideListComboBox.setTabIndex(26);
 		userGuideListComboBox.setModel(Userguidelist.VT,"TITLE","ID",true);
-		cmdNew.setTabIndex(24);
+		cmdNew.setTabIndex(27);
 		cmdNew.setText("New");
-		cmdReset.setTabIndex(25);
+		cmdReset.setTabIndex(28);
 		cmdReset.setText("Reset");
-		cmdSave.setTabIndex(26);
+		cmdSave.setTabIndex(29);
 		cmdSave.setText("Save");
-		cmdSaveAndNew.setTabIndex(27);
+		cmdSaveAndNew.setTabIndex(30);
 		cmdSaveAndNew.setText("Save + New");
-		cmdSearch.setTabIndex(28);
+		cmdSearch.setTabIndex(31);
 		cmdSearch.setText("Search");
 		deleteButton.setTabIndex(4);
 		deleteButton.setText("Delete");
@@ -264,8 +296,14 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 		label4.saveState();
 		textField.saveState();
 		label5.saveState();
-		learningAgreementListComboBox.saveState();
+		creditTransferListComboBox.saveState();
 		label6.saveState();
+		learningAgreementListComboBox.saveState();
+		label7.saveState();
+		memorandumOfUnderstandingComboBox.saveState();
+		label8.saveState();
+		proceduresAndGuidelinesListComboBox.saveState();
+		label9.saveState();
 		transcriptsOfRecordListComboBox.saveState();
 		label.saveState();
 		userGuideListComboBox.saveState();
@@ -284,18 +322,24 @@ public class ComplementaryDocumentsView extends XdevWindow // ${GENERATED-CODE-
 		formular.setLayout(new GridBagLayout());
 		formular.add(label2,new GBC(1,1,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(textField2,new GBC(2,1,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(label3,new GBC(1,2,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(label3,new GBC(1,2,1,1,0.1,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		JScrollPane textArea_carrier = new XScrollPane(textArea,XScrollPane.VERTICAL_SCROLLBAR_ALWAYS,XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		formular.add(textArea_carrier,new GBC(2,2,1,1,1.0,1.0,GBC.BASELINE_LEADING,GBC.BOTH,new Insets(3,3,3,3),0,0));
 		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(learningAgreementListComboBox,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(creditTransferListComboBox,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label6,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(transcriptsOfRecordListComboBox,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(label,new GBC(1,6,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(userGuideListComboBox,new GBC(2,6,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(container3,new GBC(1,7,2,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(learningAgreementListComboBox,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label7,new GBC(1,6,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(memorandumOfUnderstandingComboBox,new GBC(2,6,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label8,new GBC(1,7,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(proceduresAndGuidelinesListComboBox,new GBC(2,7,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label9,new GBC(1,8,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(transcriptsOfRecordListComboBox,new GBC(2,8,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label,new GBC(1,9,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(userGuideListComboBox,new GBC(2,9,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(container3,new GBC(1,10,2,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(formular,true,true);
 		container2.setLayout(new GridBagLayout());
 		container2.add(deleteButton,new GBC(1,1,1,1,0.0,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));

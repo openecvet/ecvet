@@ -183,7 +183,7 @@
             "length": 10,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "LEGISLATION_ID",
+            "name": "LEGISLATIONLIST_ID",
             "nullable": true,
             "persistent": true,
             "preferredWidth": 100,
@@ -221,23 +221,23 @@
             "length": 2147483647,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "LEGISLATION_TITLE",
+            "name": "LEGISLATIONLIST_TITLE",
             "nullable": true,
             "persistent": false,
             "preferredWidth": 100,
             "scale": 0,
             "tableColumnLink": {
                 "linkedColumn": "TITLE",
-                "linkedTable": "eu.open_ecvet.app.model.Legislation",
+                "linkedTable": "eu.open_ecvet.app.model.Legislationlist",
                 "path": [{
                     "first": {
                         "cardinality": "ONE",
                         "columns": ["ID"],
-                        "table": "eu.open_ecvet.app.model.Legislation"
+                        "table": "eu.open_ecvet.app.model.Legislationlist"
                     },
                     "second": {
                         "cardinality": "MANY",
-                        "columns": ["LEGISLATION_ID"],
+                        "columns": ["LEGISLATIONLIST_ID"],
                         "table": "eu.open_ecvet.app.model.Competentinstitution"
                     }
                 }]
@@ -343,6 +343,11 @@
     "dataSourceTable": "COMPETENTINSTITUTION",
     "indices": [
         {
+            "columns": ["LEGISLATIONLIST_ID"],
+            "name": "FK_COMPETENTINSTITUTION_LEGISLATIONLIST_ID_INDEX_7",
+            "type": "NORMAL"
+        },
+        {
             "columns": ["ID"],
             "name": "PRIMARY_KEY",
             "type": "PRIMARY_KEY"
@@ -350,11 +355,6 @@
         {
             "columns": ["PARTNERLIST_ID"],
             "name": "FK_COMPETENTINSTITUTION_PARTNERLIST_ID_INDEX_7",
-            "type": "NORMAL"
-        },
-        {
-            "columns": ["LEGISLATION_ID"],
-            "name": "FK_COMPETENTINSTITUTION_LEGISLATION_ID_INDEX_7",
             "type": "NORMAL"
         }
     ],

@@ -183,6 +183,98 @@
             "length": 10,
             "maxWidth": 0,
             "minWidth": 0,
+            "name": "CREDITTRANSFERLIST_ID",
+            "nullable": true,
+            "persistent": true,
+            "preferredWidth": 100,
+            "scale": 0,
+            "type": "INTEGER",
+            "visible": false
+        },
+        {
+            "autoIncrement": false,
+            "autoTruncate": true,
+            "caption": "TITLE",
+            "dataFlavor": "UNDEFINED",
+            "editable": true,
+            "format": {
+                "dateFormat": "MEDIUM",
+                "dateSet": "DATE",
+                "groupingUsed": true,
+                "locale": "%",
+                "maxFractionDigits": 2,
+                "minFractionDigits": 2,
+                "pattern": [
+                    "",
+                    "yyyy-MM-dd",
+                    "#,##0.###;-#,##0.###",
+                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0%"
+                ],
+                "signedColor": "255,0,0",
+                "suppressZero": false,
+                "timeFormat": "MEDIUM",
+                "type": "NONE",
+                "useSignedColor": false
+            },
+            "horizontalAlign": "LEFT",
+            "length": 2147483647,
+            "maxWidth": 0,
+            "minWidth": 0,
+            "name": "CREDITTRANSFERLIST_TITLE",
+            "nullable": true,
+            "persistent": false,
+            "preferredWidth": 100,
+            "scale": 0,
+            "tableColumnLink": {
+                "linkedColumn": "TITLE",
+                "linkedTable": "eu.open_ecvet.app.model.Credittransferlist",
+                "path": [{
+                    "first": {
+                        "cardinality": "ONE",
+                        "columns": ["ID"],
+                        "table": "eu.open_ecvet.app.model.Credittransferlist"
+                    },
+                    "second": {
+                        "cardinality": "MANY",
+                        "columns": ["CREDITTRANSFERLIST_ID"],
+                        "table": "eu.open_ecvet.app.model.Complementarydocuments"
+                    }
+                }]
+            },
+            "type": "VARCHAR",
+            "visible": true
+        },
+        {
+            "autoIncrement": false,
+            "autoTruncate": true,
+            "caption": "",
+            "dataFlavor": "UNDEFINED",
+            "editable": true,
+            "format": {
+                "dateFormat": "MEDIUM",
+                "dateSet": "DATE",
+                "groupingUsed": false,
+                "locale": "%",
+                "maxFractionDigits": 0,
+                "minFractionDigits": 0,
+                "pattern": [
+                    "",
+                    "yyyy-MM-dd",
+                    "#,##0.###;-#,##0.###",
+                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0%"
+                ],
+                "signedColor": "255,0,0",
+                "suppressZero": false,
+                "timeFormat": "MEDIUM",
+                "type": "NUMBER",
+                "useSignedColor": false
+            },
+            "horizontalAlign": "LEFT",
+            "length": 10,
+            "maxWidth": 0,
+            "minWidth": 0,
             "name": "LEARNINGAGREEMENTLIST_ID",
             "nullable": true,
             "persistent": true,
@@ -238,6 +330,190 @@
                     "second": {
                         "cardinality": "MANY",
                         "columns": ["LEARNINGAGREEMENTLIST_ID"],
+                        "table": "eu.open_ecvet.app.model.Complementarydocuments"
+                    }
+                }]
+            },
+            "type": "VARCHAR",
+            "visible": true
+        },
+        {
+            "autoIncrement": false,
+            "autoTruncate": true,
+            "caption": "",
+            "dataFlavor": "UNDEFINED",
+            "editable": true,
+            "format": {
+                "dateFormat": "MEDIUM",
+                "dateSet": "DATE",
+                "groupingUsed": false,
+                "locale": "%",
+                "maxFractionDigits": 0,
+                "minFractionDigits": 0,
+                "pattern": [
+                    "",
+                    "yyyy-MM-dd",
+                    "#,##0.###;-#,##0.###",
+                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0%"
+                ],
+                "signedColor": "255,0,0",
+                "suppressZero": false,
+                "timeFormat": "MEDIUM",
+                "type": "NUMBER",
+                "useSignedColor": false
+            },
+            "horizontalAlign": "LEFT",
+            "length": 10,
+            "maxWidth": 0,
+            "minWidth": 0,
+            "name": "MEMORANDUMOFUNDERSTANDING_ID",
+            "nullable": true,
+            "persistent": true,
+            "preferredWidth": 100,
+            "scale": 0,
+            "type": "INTEGER",
+            "visible": false
+        },
+        {
+            "autoIncrement": false,
+            "autoTruncate": true,
+            "caption": "TITLE",
+            "dataFlavor": "UNDEFINED",
+            "editable": true,
+            "format": {
+                "dateFormat": "MEDIUM",
+                "dateSet": "DATE",
+                "groupingUsed": true,
+                "locale": "%",
+                "maxFractionDigits": 2,
+                "minFractionDigits": 2,
+                "pattern": [
+                    "",
+                    "yyyy-MM-dd",
+                    "#,##0.###;-#,##0.###",
+                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0%"
+                ],
+                "signedColor": "255,0,0",
+                "suppressZero": false,
+                "timeFormat": "MEDIUM",
+                "type": "NONE",
+                "useSignedColor": false
+            },
+            "horizontalAlign": "LEFT",
+            "length": 2147483647,
+            "maxWidth": 0,
+            "minWidth": 0,
+            "name": "MEMORANDUMOFUNDERSTANDING_TITLE",
+            "nullable": true,
+            "persistent": false,
+            "preferredWidth": 100,
+            "scale": 0,
+            "tableColumnLink": {
+                "linkedColumn": "TITLE",
+                "linkedTable": "eu.open_ecvet.app.model.Memorandumofunderstanding",
+                "path": [{
+                    "first": {
+                        "cardinality": "ONE",
+                        "columns": ["ID"],
+                        "table": "eu.open_ecvet.app.model.Memorandumofunderstanding"
+                    },
+                    "second": {
+                        "cardinality": "MANY",
+                        "columns": ["MEMORANDUMOFUNDERSTANDING_ID"],
+                        "table": "eu.open_ecvet.app.model.Complementarydocuments"
+                    }
+                }]
+            },
+            "type": "VARCHAR",
+            "visible": true
+        },
+        {
+            "autoIncrement": false,
+            "autoTruncate": true,
+            "caption": "",
+            "dataFlavor": "UNDEFINED",
+            "editable": true,
+            "format": {
+                "dateFormat": "MEDIUM",
+                "dateSet": "DATE",
+                "groupingUsed": false,
+                "locale": "%",
+                "maxFractionDigits": 0,
+                "minFractionDigits": 0,
+                "pattern": [
+                    "",
+                    "yyyy-MM-dd",
+                    "#,##0.###;-#,##0.###",
+                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0%"
+                ],
+                "signedColor": "255,0,0",
+                "suppressZero": false,
+                "timeFormat": "MEDIUM",
+                "type": "NUMBER",
+                "useSignedColor": false
+            },
+            "horizontalAlign": "LEFT",
+            "length": 10,
+            "maxWidth": 0,
+            "minWidth": 0,
+            "name": "PROCEDUREANDGUIDELINELIST_ID",
+            "nullable": true,
+            "persistent": true,
+            "preferredWidth": 100,
+            "scale": 0,
+            "type": "INTEGER",
+            "visible": false
+        },
+        {
+            "autoIncrement": false,
+            "autoTruncate": true,
+            "caption": "TITLE",
+            "dataFlavor": "UNDEFINED",
+            "editable": true,
+            "format": {
+                "dateFormat": "MEDIUM",
+                "dateSet": "DATE",
+                "groupingUsed": true,
+                "locale": "%",
+                "maxFractionDigits": 2,
+                "minFractionDigits": 2,
+                "pattern": [
+                    "",
+                    "yyyy-MM-dd",
+                    "#,##0.###;-#,##0.###",
+                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0%"
+                ],
+                "signedColor": "255,0,0",
+                "suppressZero": false,
+                "timeFormat": "MEDIUM",
+                "type": "NONE",
+                "useSignedColor": false
+            },
+            "horizontalAlign": "LEFT",
+            "length": 2147483647,
+            "maxWidth": 0,
+            "minWidth": 0,
+            "name": "PROCEDUREANDGUIDELINELIST_TITLE",
+            "nullable": true,
+            "persistent": false,
+            "preferredWidth": 100,
+            "scale": 0,
+            "tableColumnLink": {
+                "linkedColumn": "TITLE",
+                "linkedTable": "eu.open_ecvet.app.model.Procedureandguidelinelist",
+                "path": [{
+                    "first": {
+                        "cardinality": "ONE",
+                        "columns": ["ID"],
+                        "table": "eu.open_ecvet.app.model.Procedureandguidelinelist"
+                    },
+                    "second": {
+                        "cardinality": "MANY",
+                        "columns": ["PROCEDUREANDGUIDELINELIST_ID"],
                         "table": "eu.open_ecvet.app.model.Complementarydocuments"
                     }
                 }]
@@ -435,6 +711,11 @@
     "dataSourceTable": "COMPLEMENTARYDOCUMENTS",
     "indices": [
         {
+            "columns": ["CREDITTRANSFERLIST_ID"],
+            "name": "FK_COMPLEMENTARYDOCUMENTS_CREDITTRANSFERLIST_ID_INDEX_B",
+            "type": "NORMAL"
+        },
+        {
             "columns": ["USERGUIDELIST_ID"],
             "name": "FK_COMPLEMENTARYDOCUMENTS_USERGUIDELIST_ID_INDEX_B",
             "type": "NORMAL"
@@ -448,6 +729,16 @@
             "columns": ["ID"],
             "name": "PRIMARY_KEY",
             "type": "PRIMARY_KEY"
+        },
+        {
+            "columns": ["PROCEDUREANDGUIDELINELIST_ID"],
+            "name": "COMPLEMENTARYDOCUMENTSPROCEDUREANDGUIDELINELIST_ID_INDEX_B",
+            "type": "NORMAL"
+        },
+        {
+            "columns": ["MEMORANDUMOFUNDERSTANDING_ID"],
+            "name": "COMPLEMENTARYDOCUMENTSMEMORANDUMOFUNDERSTANDING_ID_INDEX_B",
+            "type": "NORMAL"
         },
         {
             "columns": ["TRANSCRIPTSOFRECORDLIST_ID"],

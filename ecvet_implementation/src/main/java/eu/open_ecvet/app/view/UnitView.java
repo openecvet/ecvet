@@ -158,15 +158,9 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
 
 
-	@EventHandlerDelegate void qualificationFrameworkListComboBox_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
-
 	// Generated definitions, do not edit! ${GENERATED-CODE-BLOCK-START:DEFINITIONS}
 	XdevContainer	container, container3, container2;
-	XdevFormattedTextField	formattedTextField2, formattedTextField3, formattedTextField;
+	XdevFormattedTextField	formattedTextField2, formattedTextField;
 	XdevButton				evaluationShortcut, learningOutcomeListShortcut,
 			qualificationFrameworkShortcut, unitListShortcut, cmdNew, cmdReset, cmdSave,
 			cmdSaveAndNew, cmdSearch, deleteButton;
@@ -176,8 +170,7 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 	XdevTextArea			textArea;
 	XdevComboBox			evaluationsComboBox, learningOutcomeListComboBox,
 			qualificationFrameworkListComboBox, unitListComboBox;
-	XdevLabel				label2, label3, label4, label5, label6, label7, label8, label9,
-			label10, label;
+	XdevLabel				label2, label3, label4, label5, label6, label7, label8, label9, label;
 	// End generated definitions ${GENERATED-CODE-BLOCK-END:DEFINITIONS}
 	
 	{// Generated initializers, do not edit! ${GENERATED-CODE-BLOCK-START:INITIALIZERS}
@@ -195,16 +188,14 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		label4 = new XdevLabel();
 		formattedTextField2 = new XdevFormattedTextField();
 		label5 = new XdevLabel();
-		formattedTextField3 = new XdevFormattedTextField();
+		formattedTextField = new XdevFormattedTextField();
 		label6 = new XdevLabel();
 		textField = new XdevTextField();
 		label7 = new XdevLabel();
-		formattedTextField = new XdevFormattedTextField();
-		label8 = new XdevLabel();
 		evaluationsComboBox = new XdevComboBox();
-		label9 = new XdevLabel();
+		label8 = new XdevLabel();
 		learningOutcomeListComboBox = new XdevComboBox();
-		label10 = new XdevLabel();
+		label9 = new XdevLabel();
 		qualificationFrameworkListComboBox = new XdevComboBox();
 		label = new XdevLabel();
 		unitListComboBox = new XdevComboBox();
@@ -249,63 +240,56 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		textArea.setDataField("eu.open_ecvet.app.model.Unit.DESCRIPTION");
 		textArea.setTabIndex(40);
 		textArea.setMaxSignCount(Integer.MAX_VALUE);
-		label4.setText("CREDIT");
+		label4.setText("ECVETPOINTS");
 		label4.setName("label4");
-		formattedTextField2.setDataField("eu.open_ecvet.app.model.Unit.CREDIT");
+		formattedTextField2.setDataField("eu.open_ecvet.app.model.Unit.ECVETPOINTS");
 		formattedTextField2.setTabIndex(41);
 		formattedTextField2.setName("formattedTextField2");
 		formattedTextField2.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
 		formattedTextField2.setHorizontalAlignment(SwingConstants.LEFT);
 		label5.setText("RELATIVEWEIGHT");
 		label5.setName("label5");
-		formattedTextField3.setDataField("eu.open_ecvet.app.model.Unit.RELATIVEWEIGHT");
-		formattedTextField3.setTabIndex(42);
-		formattedTextField3.setName("formattedTextField3");
-		formattedTextField3.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
-		formattedTextField3.setHorizontalAlignment(SwingConstants.LEFT);
+		formattedTextField.setDataField("eu.open_ecvet.app.model.Unit.RELATIVEWEIGHT");
+		formattedTextField.setTabIndex(42);
+		formattedTextField.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
+		formattedTextField.setHorizontalAlignment(SwingConstants.LEFT);
 		label6.setText("URI");
 		label6.setName("label6");
 		textField.setDataField("eu.open_ecvet.app.model.Unit.URI");
 		textField.setTabIndex(43);
 		textField.setMaxSignCount(Integer.MAX_VALUE);
 		textField.setHorizontalAlignment(SwingConstants.LEFT);
-		label7.setText("WEIGHTSUM");
+		label7.setText("EVALUATIONS_ID");
 		label7.setName("label7");
-		formattedTextField.setDataField("eu.open_ecvet.app.model.Unit.WEIGHTSUM");
-		formattedTextField.setTabIndex(44);
-		formattedTextField.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
-		formattedTextField.setHorizontalAlignment(SwingConstants.LEFT);
-		label8.setText("EVALUATIONS_ID");
-		label8.setName("label8");
 		evaluationsComboBox.setDataField("eu.open_ecvet.app.model.Unit.EVALUATIONS_ID");
-		evaluationsComboBox.setTabIndex(45);
+		evaluationsComboBox.setTabIndex(44);
 		evaluationsComboBox.setName("comboBox2");
 		evaluationsComboBox.setModel(Evaluations.VT,"TITLE","ID",true);
-		label9.setText("LEARNINGOUTCOMELIST_ID");
-		label9.setName("label9");
+		label8.setText("LEARNINGOUTCOMELIST_ID");
+		label8.setName("label8");
 		learningOutcomeListComboBox.setDataField("eu.open_ecvet.app.model.Unit.LEARNINGOUTCOMELIST_ID");
-		learningOutcomeListComboBox.setTabIndex(46);
+		learningOutcomeListComboBox.setTabIndex(45);
 		learningOutcomeListComboBox.setName("comboBox3");
-		learningOutcomeListComboBox.setModel(Learningoutcomelist.VT,"ID","ID",true);
-		label10.setText("QUALIFICATIONFRAMEWORKLIST_ID");
-		label10.setName("label10");
+		learningOutcomeListComboBox.setModel(Learningoutcomelist.VT,"TITLE","ID",true);
+		label9.setText("QUALIFICATIONFRAMEWORKLIST_ID");
+		label9.setName("label9");
 		qualificationFrameworkListComboBox.setDataField("eu.open_ecvet.app.model.Unit.QUALIFICATIONFRAMEWORKLIST_ID");
-		qualificationFrameworkListComboBox.setTabIndex(47);
+		qualificationFrameworkListComboBox.setTabIndex(46);
 		qualificationFrameworkListComboBox.setName("comboBox4");
 		qualificationFrameworkListComboBox.setModel(Qualificationframeworklist.VT,"TITLE","ID",true);
 		label.setText("UNITLIST_ID");
 		unitListComboBox.setDataField("eu.open_ecvet.app.model.Unit.UNITLIST_ID");
-		unitListComboBox.setTabIndex(48);
+		unitListComboBox.setTabIndex(47);
 		unitListComboBox.setModel(Unitlist.VT,"TITLE","ID",true);
-		cmdNew.setTabIndex(49);
+		cmdNew.setTabIndex(48);
 		cmdNew.setText("New");
-		cmdReset.setTabIndex(50);
+		cmdReset.setTabIndex(49);
 		cmdReset.setText("Reset");
-		cmdSave.setTabIndex(51);
+		cmdSave.setTabIndex(50);
 		cmdSave.setText("Save");
-		cmdSaveAndNew.setTabIndex(52);
+		cmdSaveAndNew.setTabIndex(51);
 		cmdSaveAndNew.setText("Save + New");
-		cmdSearch.setTabIndex(53);
+		cmdSearch.setTabIndex(52);
 		cmdSearch.setText("Search");
 		deleteButton.setTabIndex(4);
 		deleteButton.setText("Delete");
@@ -319,16 +303,14 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		label4.saveState();
 		formattedTextField2.saveState();
 		label5.saveState();
-		formattedTextField3.saveState();
+		formattedTextField.saveState();
 		label6.saveState();
 		textField.saveState();
 		label7.saveState();
-		formattedTextField.saveState();
-		label8.saveState();
 		evaluationsComboBox.saveState();
-		label9.saveState();
+		label8.saveState();
 		learningOutcomeListComboBox.saveState();
-		label10.saveState();
+		label9.saveState();
 		qualificationFrameworkListComboBox.saveState();
 		label.saveState();
 		unitListComboBox.saveState();
@@ -354,20 +336,18 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(formattedTextField2,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(formattedTextField3,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(formattedTextField,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label6,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(textField,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label7,new GBC(1,6,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(formattedTextField,new GBC(2,6,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(evaluationsComboBox,new GBC(2,6,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label8,new GBC(1,7,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(evaluationsComboBox,new GBC(2,7,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(learningOutcomeListComboBox,new GBC(2,7,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label9,new GBC(1,8,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(learningOutcomeListComboBox,new GBC(2,8,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(label10,new GBC(1,9,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(qualificationFrameworkListComboBox,new GBC(2,9,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(label,new GBC(1,10,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(unitListComboBox,new GBC(2,10,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(container3,new GBC(1,11,2,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(qualificationFrameworkListComboBox,new GBC(2,8,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label,new GBC(1,9,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(unitListComboBox,new GBC(2,9,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(container3,new GBC(1,10,2,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(formular,true,true);
 		container2.setLayout(new GridBagLayout());
 		container2.add(deleteButton,new GBC(1,1,1,1,0.0,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
@@ -389,7 +369,6 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 			}
 		});
 		unitListShortcut.addActionListener(e -> unitListShortcut_actionPerformed(e));
-		qualificationFrameworkListComboBox.addActionListener(e -> qualificationFrameworkListComboBox_actionPerformed(e));
 		cmdNew.addActionListener(e -> cmdNew_actionPerformed(e));
 		cmdReset.addActionListener(e -> cmdReset_actionPerformed(e));
 		cmdSave.addActionListener(e -> cmdSave_actionPerformed(e));

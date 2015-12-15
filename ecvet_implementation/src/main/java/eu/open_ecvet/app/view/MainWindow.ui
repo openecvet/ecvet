@@ -113,7 +113,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -132,7 +132,7 @@
                             "value": "frameworkTab"
                         },
                         "index": {
-                            "value": 1
+                            "value": 2
                         },
                         "layout": {
                             "value": {
@@ -178,7 +178,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -196,14 +196,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 35
+                                "zpos": 41
                             }
                         },
                         "-fieldName": {
                             "value": "qualificationTab"
                         },
                         "index": {
-                            "value": 14
+                            "value": 20
                         },
                         "layout": {
                             "value": {
@@ -249,7 +249,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -267,14 +267,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 34
+                                "zpos": 40
                             }
                         },
                         "-fieldName": {
                             "value": "unitListTab"
                         },
                         "index": {
-                            "value": 15
+                            "value": 21
                         },
                         "layout": {
                             "value": {
@@ -320,7 +320,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -338,14 +338,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 33
+                                "zpos": 39
                             }
                         },
                         "-fieldName": {
                             "value": "unitTab"
                         },
                         "index": {
-                            "value": 16
+                            "value": 22
                         },
                         "layout": {
                             "value": {
@@ -391,7 +391,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -409,14 +409,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 31
+                                "zpos": 37
                             }
                         },
                         "-fieldName": {
                             "value": "learningOutcomeListTab"
                         },
                         "index": {
-                            "value": 17
+                            "value": 23
                         },
                         "layout": {
                             "value": {
@@ -462,7 +462,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -480,14 +480,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 32
+                                "zpos": 38
                             }
                         },
                         "-fieldName": {
                             "value": "qualificationFrameworkListTab"
                         },
                         "index": {
-                            "value": 33
+                            "value": 39
                         },
                         "layout": {
                             "value": {
@@ -533,7 +533,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -551,14 +551,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 30
+                                "zpos": 36
                             }
                         },
                         "-fieldName": {
                             "value": "learningOutcomeTab"
                         },
                         "index": {
-                            "value": 18
+                            "value": 24
                         },
                         "layout": {
                             "value": {
@@ -604,7 +604,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -622,14 +622,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 29
+                                "zpos": 35
                             }
                         },
                         "-fieldName": {
                             "value": "qualificationFrameworkTab"
                         },
                         "index": {
-                            "value": 34
+                            "value": 40
                         },
                         "layout": {
                             "value": {
@@ -675,7 +675,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -693,14 +693,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 28
+                                "zpos": 34
                             }
                         },
                         "-fieldName": {
                             "value": "evaluationsTab"
                         },
                         "index": {
-                            "value": 19
+                            "value": 25
                         },
                         "layout": {
                             "value": {
@@ -746,7 +746,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -764,14 +764,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 17
+                                "zpos": 23
                             }
                         },
                         "-fieldName": {
                             "value": "assessmentListTab"
                         },
                         "index": {
-                            "value": 20
+                            "value": 26
                         },
                         "layout": {
                             "value": {
@@ -817,7 +817,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -835,14 +835,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 18
+                                "zpos": 24
                             }
                         },
                         "-fieldName": {
                             "value": "validationListTab"
                         },
                         "index": {
-                            "value": 26
+                            "value": 32
                         },
                         "layout": {
                             "value": {
@@ -888,7 +888,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -906,14 +906,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 19
+                                "zpos": 25
                             }
                         },
                         "-fieldName": {
                             "value": "recognitionListTab"
                         },
                         "index": {
-                            "value": 30
+                            "value": 36
                         },
                         "layout": {
                             "value": {
@@ -959,7 +959,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -977,14 +977,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 20
+                                "zpos": 26
                             }
                         },
                         "-fieldName": {
                             "value": "assessmentTab"
                         },
                         "index": {
-                            "value": 21
+                            "value": 27
                         },
                         "layout": {
                             "value": {
@@ -1030,7 +1030,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -1048,14 +1048,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 21
+                                "zpos": 27
                             }
                         },
                         "-fieldName": {
                             "value": "methodListTab"
                         },
                         "index": {
-                            "value": 22
+                            "value": 28
                         },
                         "layout": {
                             "value": {
@@ -1101,7 +1101,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -1119,14 +1119,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 22
+                                "zpos": 28
                             }
                         },
                         "-fieldName": {
                             "value": "methodTab"
                         },
                         "index": {
-                            "value": 23
+                            "value": 29
                         },
                         "layout": {
                             "value": {
@@ -1172,7 +1172,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -1190,14 +1190,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 23
+                                "zpos": 29
                             }
                         },
                         "-fieldName": {
                             "value": "processListTab"
                         },
                         "index": {
-                            "value": 24
+                            "value": 30
                         },
                         "layout": {
                             "value": {
@@ -1243,7 +1243,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -1261,14 +1261,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 24
+                                "zpos": 30
                             }
                         },
                         "-fieldName": {
                             "value": "processTab"
                         },
                         "index": {
-                            "value": 25
+                            "value": 31
                         },
                         "layout": {
                             "value": {
@@ -1314,7 +1314,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -1332,14 +1332,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 25
+                                "zpos": 31
                             }
                         },
                         "-fieldName": {
                             "value": "validationTab"
                         },
                         "index": {
-                            "value": 27
+                            "value": 33
                         },
                         "layout": {
                             "value": {
@@ -1385,7 +1385,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -1403,14 +1403,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 26
+                                "zpos": 32
                             }
                         },
                         "-fieldName": {
                             "value": "requirementListTab"
                         },
                         "index": {
-                            "value": 28
+                            "value": 34
                         },
                         "layout": {
                             "value": {
@@ -1456,7 +1456,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -1474,14 +1474,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 27
+                                "zpos": 33
                             }
                         },
                         "-fieldName": {
                             "value": "requirementTab"
                         },
                         "index": {
-                            "value": 29
+                            "value": 35
                         },
                         "layout": {
                             "value": {
@@ -1527,7 +1527,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -1545,14 +1545,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 16
+                                "zpos": 22
                             }
                         },
                         "-fieldName": {
                             "value": "recognitionTab"
                         },
                         "index": {
-                            "value": 31
+                            "value": 37
                         },
                         "layout": {
                             "value": {
@@ -1598,7 +1598,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -1616,14 +1616,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 15
+                                "zpos": 21
                             }
                         },
                         "-fieldName": {
                             "value": "certificateTemplateTab"
                         },
                         "index": {
-                            "value": 32
+                            "value": 38
                         },
                         "layout": {
                             "value": {
@@ -1669,7 +1669,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -1687,14 +1687,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 9
+                                "zpos": 15
                             }
                         },
                         "-fieldName": {
                             "value": "competentInstitutionListTab"
                         },
                         "index": {
-                            "value": 2
+                            "value": 3
                         },
                         "layout": {
                             "value": {
@@ -1740,7 +1740,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -1758,14 +1758,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 10
+                                "zpos": 16
                             }
                         },
                         "-fieldName": {
                             "value": "competentInstitutionTab"
                         },
                         "index": {
-                            "value": 3
+                            "value": 4
                         },
                         "layout": {
                             "value": {
@@ -1811,7 +1811,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -1829,14 +1829,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 11
+                                "zpos": 17
                             }
                         },
                         "-fieldName": {
                             "value": "partnerListTab"
                         },
                         "index": {
-                            "value": 4
+                            "value": 5
                         },
                         "layout": {
                             "value": {
@@ -1882,7 +1882,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -1900,14 +1900,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 12
+                                "zpos": 18
                             }
                         },
                         "-fieldName": {
                             "value": "partnerTab"
                         },
                         "index": {
-                            "value": 5
+                            "value": 6
                         },
                         "layout": {
                             "value": {
@@ -1953,7 +1953,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -1971,14 +1971,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 13
+                                "zpos": 19
                             }
                         },
                         "-fieldName": {
                             "value": "legislationTab"
                         },
                         "index": {
-                            "value": 6
+                            "value": 8
                         },
                         "layout": {
                             "value": {
@@ -2024,7 +2024,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -2042,14 +2042,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 14
+                                "zpos": 20
                             }
                         },
                         "-fieldName": {
                             "value": "complementaryDocumentsTab"
                         },
                         "index": {
-                            "value": 7
+                            "value": 9
                         },
                         "layout": {
                             "value": {
@@ -2095,7 +2095,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -2113,14 +2113,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 7
+                                "zpos": 13
                             }
                         },
                         "-fieldName": {
                             "value": "learningAgreementListTab"
                         },
                         "index": {
-                            "value": 8
+                            "value": 10
                         },
                         "layout": {
                             "value": {
@@ -2166,7 +2166,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -2184,14 +2184,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 8
+                                "zpos": 14
                             }
                         },
                         "-fieldName": {
                             "value": "learningAgreementTab"
                         },
                         "index": {
-                            "value": 9
+                            "value": 11
                         },
                         "layout": {
                             "value": {
@@ -2237,7 +2237,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -2255,14 +2255,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 6
+                                "zpos": 12
                             }
                         },
                         "-fieldName": {
                             "value": "attachmentTab"
                         },
                         "index": {
-                            "value": 35
+                            "value": 41
                         },
                         "layout": {
                             "value": {
@@ -2308,7 +2308,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -2326,14 +2326,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 5
+                                "zpos": 11
                             }
                         },
                         "-fieldName": {
                             "value": "transcriptsOfRecordTab"
                         },
                         "index": {
-                            "value": 11
+                            "value": 15
                         },
                         "layout": {
                             "value": {
@@ -2379,7 +2379,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -2397,14 +2397,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 1
+                                "zpos": 7
                             }
                         },
                         "-fieldName": {
                             "value": "transcriptsOfRecordListTab"
                         },
                         "index": {
-                            "value": 10
+                            "value": 14
                         },
                         "layout": {
                             "value": {
@@ -2450,7 +2450,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -2468,14 +2468,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 2
+                                "zpos": 8
                             }
                         },
                         "-fieldName": {
                             "value": "userGuideListTab"
                         },
                         "index": {
-                            "value": 12
+                            "value": 18
                         },
                         "layout": {
                             "value": {
@@ -2521,7 +2521,7 @@
                                 }
                             },
                             "width": {
-                                "value": 595
+                                "value": 576
                             },
                             "x": {
                                 "value": 3
@@ -2539,14 +2539,14 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 3
+                                "zpos": 9
                             }
                         },
                         "-fieldName": {
                             "value": "userGuideTab"
                         },
                         "index": {
-                            "value": 13
+                            "value": 19
                         },
                         "layout": {
                             "value": {
@@ -2593,7 +2593,7 @@
                                     "value": 145
                                 },
                                 "x": {
-                                    "value": 228
+                                    "value": 218
                                 },
                                 "y": {
                                     "value": 148
@@ -2639,7 +2639,7 @@
                                     "value": 457
                                 },
                                 "x": {
-                                    "value": 72
+                                    "value": 62
                                 },
                                 "y": {
                                     "value": 3
@@ -2684,7 +2684,7 @@
                                     "value": 300
                                 },
                                 "x": {
-                                    "value": 150
+                                    "value": 141
                                 },
                                 "y": {
                                     "value": 38
@@ -2697,7 +2697,7 @@
                         "-constraints": {
                             "value": {
                                 "type": "NULL",
-                                "zpos": 4
+                                "zpos": 10
                             }
                         },
                         "-fieldName": {
@@ -2714,6 +2714,429 @@
                         },
                         "title": {
                             "value": "Welcome"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "legislationListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 576
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new LegislationListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 6
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "legislationListTab"
+                        },
+                        "index": {
+                            "value": 7
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Legislation List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "creditTransferListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 576
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 5
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "creditTransferListTab"
+                        },
+                        "index": {
+                            "value": 16
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Credit Transfer List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "creditTransferWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 576
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new CreditTransferView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 4
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "creditTransferTab"
+                        },
+                        "index": {
+                            "value": 17
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Credit Transfer"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "procedureAndGuidelineListWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 576
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new ProcedureAndGuidelineListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 3
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "procedureAndGuidelineListTab"
+                        },
+                        "index": {
+                            "value": 12
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Procedure and Guideline List"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "windowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 576
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new ProcedureAndGuidelineView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 1
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "procedureAndGuidelineTab"
+                        },
+                        "index": {
+                            "value": 13
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Procedure and Guideline"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "memorandumOfUnderstandingWindowContainer"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 576
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new MemorandumOfUnderstandingView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "type": "NULL",
+                                "zpos": 2
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "memorandumOfUnderstandingTab"
+                        },
+                        "index": {
+                            "value": 1
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Memorandum of Understanding"
                         }
                     }
                 }

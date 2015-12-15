@@ -2,13 +2,14 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.14 um 04:50:16 PM CET 
+// Generiert: 2015.12.15 um 05:07:17 PM CET 
 //
 
 
 package eu.open_ecvet.entity;
 
 import java.io.Serializable;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -58,17 +59,17 @@ public class EvaluationsType
 
     @XmlElement(required = true)
     @OneToOne(targetEntity = AssessmentListType.class, cascade = {
-
+        CascadeType.ALL
     })
     protected AssessmentListType assessmentList;
     @XmlElement(required = true)
     @OneToOne(targetEntity = ValidationListType.class, cascade = {
-
+        CascadeType.ALL
     })
     protected ValidationListType validationList;
     @XmlElement(required = true)
     @OneToOne(targetEntity = RecognitionListType.class, cascade = {
-
+        CascadeType.ALL
     })
     protected RecognitionListType recognitionList;
 

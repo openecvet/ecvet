@@ -92,7 +92,8 @@ public class LearningAgreementView extends XdevWindow // ${GENERATED-CODE-LINE:
 	
 		UpdateViewHelper.instance().add(updateView);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
+
+
 	@EventHandlerDelegate void cmdNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.reset(eu.open_ecvet.app.model.Learningagreement.VT);
@@ -147,11 +148,11 @@ public class LearningAgreementView extends XdevWindow // ${GENERATED-CODE-LINE:
 	// Generated definitions, do not edit! ${GENERATED-CODE-BLOCK-START:DEFINITIONS}
 	XdevContainer	container, container3, container2;
 	XdevButton		xShortcut, cmdNew, cmdReset, cmdSave, cmdSaveAndNew, cmdSearch, deleteButton;
-	XdevTextField	textField2, textField;
+	XdevTextField	textField2, textField3, textField4, textField;
 	XdevFormular	formular;
 	XdevTable		table;
 	XdevTextArea	textArea;
-	XdevLabel		label2, label4, label3, label;
+	XdevLabel		label2, label6, label3, label4, label5, label;
 	XdevNmListBox	nmListBox;
 	// End generated definitions ${GENERATED-CODE-BLOCK-END:DEFINITIONS}
 	
@@ -162,10 +163,14 @@ public class LearningAgreementView extends XdevWindow // ${GENERATED-CODE-LINE:
 		formular = new XdevFormular();
 		label2 = new XdevLabel();
 		textField2 = new XdevTextField();
-		label4 = new XdevLabel();
+		label6 = new XdevLabel();
 		label3 = new XdevLabel();
 		textArea = new XdevTextArea();
 		nmListBox = new XdevNmListBox();
+		label4 = new XdevLabel();
+		textField3 = new XdevTextField();
+		label5 = new XdevLabel();
+		textField4 = new XdevTextField();
 		label = new XdevLabel();
 		textField = new XdevTextField();
 		container3 = new XdevContainer();
@@ -193,27 +198,41 @@ public class LearningAgreementView extends XdevWindow // ${GENERATED-CODE-LINE:
 		textField2.setMaxSignCount(Integer.MAX_VALUE);
 		textField2.setName("textField2");
 		textField2.setHorizontalAlignment(SwingConstants.LEFT);
-		label4.setText("Attachment");
+		label6.setText("Label");
 		label3.setText("DESCRIPTION");
 		label3.setName("label3");
 		textArea.setDataField("eu.open_ecvet.app.model.Learningagreement.DESCRIPTION");
 		textArea.setTabIndex(6);
 		textArea.setMaxSignCount(Integer.MAX_VALUE);
-		nmListBox.setTabIndex(13);
+		nmListBox.setTabIndex(15);
+		label4.setText("HOMEINSTITUTIONURI");
+		label4.setName("label4");
+		textField3.setDataField("eu.open_ecvet.app.model.Learningagreement.HOMEINSTITUTIONURI");
+		textField3.setTabIndex(7);
+		textField3.setMaxSignCount(Integer.MAX_VALUE);
+		textField3.setName("textField3");
+		textField3.setHorizontalAlignment(SwingConstants.LEFT);
+		label5.setText("HOSTINGINSTITUTIONURI");
+		label5.setName("label5");
+		textField4.setDataField("eu.open_ecvet.app.model.Learningagreement.HOSTINGINSTITUTIONURI");
+		textField4.setTabIndex(8);
+		textField4.setMaxSignCount(Integer.MAX_VALUE);
+		textField4.setName("textField4");
+		textField4.setHorizontalAlignment(SwingConstants.LEFT);
 		label.setText("URI");
 		textField.setDataField("eu.open_ecvet.app.model.Learningagreement.URI");
-		textField.setTabIndex(7);
+		textField.setTabIndex(9);
 		textField.setMaxSignCount(Integer.MAX_VALUE);
 		textField.setHorizontalAlignment(SwingConstants.LEFT);
-		cmdNew.setTabIndex(8);
+		cmdNew.setTabIndex(10);
 		cmdNew.setText("New");
-		cmdReset.setTabIndex(9);
+		cmdReset.setTabIndex(11);
 		cmdReset.setText("Reset");
-		cmdSave.setTabIndex(10);
+		cmdSave.setTabIndex(12);
 		cmdSave.setText("Save");
-		cmdSaveAndNew.setTabIndex(11);
+		cmdSaveAndNew.setTabIndex(13);
 		cmdSaveAndNew.setText("Save + New");
-		cmdSearch.setTabIndex(12);
+		cmdSearch.setTabIndex(14);
 		cmdSearch.setText("Search");
 		deleteButton.setTabIndex(4);
 		deleteButton.setText("Delete");
@@ -222,10 +241,14 @@ public class LearningAgreementView extends XdevWindow // ${GENERATED-CODE-LINE:
 		MasterDetail.connect(table,formular);
 		label2.saveState();
 		textField2.saveState();
-		label4.saveState();
+		label6.saveState();
 		label3.saveState();
 		textArea.saveState();
 		nmListBox.saveState();
+		label4.saveState();
+		textField3.saveState();
+		label5.saveState();
+		textField4.saveState();
 		label.saveState();
 		textField.saveState();
 		
@@ -241,15 +264,19 @@ public class LearningAgreementView extends XdevWindow // ${GENERATED-CODE-LINE:
 		formular.setLayout(new GridBagLayout());
 		formular.add(label2,new GBC(1,1,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(textField2,new GBC(2,1,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(label4,new GBC(3,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(label6,new GBC(3,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(label3,new GBC(1,2,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		JScrollPane textArea_carrier = new XScrollPane(textArea,XScrollPane.VERTICAL_SCROLLBAR_ALWAYS,XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		formular.add(textArea_carrier,new GBC(2,2,1,1,1.0,1.0,GBC.BASELINE_LEADING,GBC.BOTH,new Insets(3,3,3,3),0,0));
 		JScrollPane nmListBox_carrier = new XScrollPane(nmListBox,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		formular.add(nmListBox_carrier,new GBC(3,2,1,2,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
-		formular.add(label,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(container3,new GBC(1,4,3,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(nmListBox_carrier,new GBC(3,2,1,4,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(textField3,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(textField4,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(textField,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(container3,new GBC(1,6,3,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(formular,true,true);
 		container2.setLayout(new GridBagLayout());
 		container2.add(deleteButton,new GBC(1,1,1,1,0.0,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));

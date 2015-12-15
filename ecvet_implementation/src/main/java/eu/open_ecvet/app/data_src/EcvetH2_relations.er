@@ -2,427 +2,515 @@
     "entities": [
         {
             "background": "189,205,222",
-            "height": 0,
+            "height": 60,
             "name": "eu.open_ecvet.app.model.CompetentinstitutionlistCompetentinstitution",
-            "width": 0,
-            "x": 2005,
-            "y": 367
+            "width": 310,
+            "x": 3721,
+            "y": 525
         },
         {
             "background": "189,205,222",
-            "height": 0,
+            "height": 100,
             "name": "eu.open_ecvet.app.model.Validationlist",
-            "width": 0,
-            "x": 866,
-            "y": 587
+            "width": 100,
+            "x": 585,
+            "y": 40
         },
         {
             "background": "189,205,222",
-            "height": 0,
+            "height": 100,
             "name": "eu.open_ecvet.app.model.Transcriptsofrecord",
-            "width": 0,
-            "x": 889,
-            "y": 137
+            "width": 140,
+            "x": 1145,
+            "y": 40
         },
         {
             "background": "189,205,222",
-            "height": 0,
+            "height": 60,
             "name": "eu.open_ecvet.app.model.UnitlistUnit",
-            "width": 0,
-            "x": 38,
-            "y": 900
+            "width": 90,
+            "x": 1943,
+            "y": 700
         },
         {
             "background": "189,205,222",
-            "height": 0,
+            "height": 140,
             "name": "eu.open_ecvet.app.model.Learningoutcome",
-            "width": 0,
-            "x": 439,
-            "y": 478
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Legislation",
-            "width": 0,
-            "x": 2181,
-            "y": 825
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.UserguideAttachment",
-            "width": 0,
-            "x": 1241,
-            "y": 101
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Attachment",
-            "width": 0,
-            "x": 1071,
-            "y": 184
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Complementarydocuments",
-            "width": 0,
-            "x": 1336,
-            "y": 616
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Certificatetemplate",
-            "width": 0,
-            "x": 533,
-            "y": 882
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Qualificationframework",
-            "width": 0,
-            "x": 888,
-            "y": 851
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Recognitionlist",
-            "width": 0,
-            "x": 565,
-            "y": 701
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Competentinstitutionlist",
-            "width": 0,
-            "x": 1665,
-            "y": 243
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Unitlist",
-            "width": 0,
-            "x": 10,
-            "y": 692
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Method",
-            "width": 0,
-            "x": 2756,
-            "y": 566
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Recognition",
-            "width": 0,
-            "x": 581,
-            "y": 1066
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Validation",
-            "width": 0,
-            "x": 1191,
-            "y": 680
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.LearningoutcomelistLearningoutcome",
-            "width": 0,
-            "x": 272,
-            "y": 391
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.LearningagreementlistLearningagreement",
-            "width": 0,
-            "x": 1395,
-            "y": 968
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Qualificationframeworklist",
-            "width": 0,
-            "x": 373,
-            "y": 709
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.RequirementlistRequirement",
-            "width": 0,
-            "x": 1948,
-            "y": 772
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.TranscriptsofrecordlistTranscriptsofrecord",
-            "width": 0,
-            "x": 964,
-            "y": 332
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Assessmentlist",
-            "width": 0,
-            "x": 1430,
-            "y": 396
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Evaluations",
-            "width": 0,
-            "x": 680,
-            "y": 560
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.QualificationframeworklistQualificationframework",
-            "width": 0,
-            "x": 727,
-            "y": 754
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Processlist",
-            "width": 0,
-            "x": 2038,
-            "y": 938
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Unit",
-            "width": 0,
-            "x": 172,
-            "y": 761
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.LearningagreementAttachment",
-            "width": 0,
-            "x": 1267,
-            "y": 464
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Requirementlist",
-            "width": 0,
-            "x": 1750,
-            "y": 650
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Userguide",
-            "width": 0,
-            "x": 1380,
-            "y": 226
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Partner",
-            "width": 0,
-            "x": 2600,
-            "y": 653
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Competentinstitution",
-            "width": 0,
-            "x": 2226,
-            "y": 648
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Process",
-            "width": 0,
-            "x": 2018,
-            "y": 1389
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Ecvetframework",
-            "width": 0,
-            "x": 1172,
-            "y": 329
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.RecognitionlistRecognition",
-            "width": 0,
-            "x": 702,
-            "y": 933
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Learningoutcomelist",
-            "width": 0,
-            "x": 225,
-            "y": 593
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.UserguidelistUserguide",
-            "width": 0,
-            "x": 1529,
-            "y": 535
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.ProcesslistProcess",
-            "width": 0,
-            "x": 2020,
-            "y": 1179
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.PartnerlistPartner",
-            "width": 0,
-            "x": 2532,
-            "y": 801
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Partnerlist",
-            "width": 0,
-            "x": 2358,
-            "y": 775
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Learningagreementlist",
-            "width": 0,
-            "x": 1247,
-            "y": 866
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Requirement",
-            "width": 0,
-            "x": 1833,
-            "y": 929
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Userguidelist",
-            "width": 0,
-            "x": 1565,
-            "y": 699
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.ValidationlistValidation",
-            "width": 0,
-            "x": 1017,
-            "y": 687
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.AssessmentlistAssessment",
-            "width": 0,
-            "x": 1822,
-            "y": 416
-        },
-        {
-            "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.MethodlistMethod",
-            "width": 0,
-            "x": 2525,
+            "width": 130,
+            "x": 2436,
             "y": 485
         },
         {
             "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.TranscriptsofrecordAttachment",
-            "width": 0,
-            "x": 1028,
+            "height": 130,
+            "name": "eu.open_ecvet.app.model.Legislation",
+            "width": 90,
+            "x": 6970,
+            "y": 25
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.UserguideAttachment",
+            "width": 150,
+            "x": 2260,
+            "y": 285
+        },
+        {
+            "background": "189,205,222",
+            "height": 130,
+            "name": "eu.open_ecvet.app.model.Attachment",
+            "width": 110,
+            "x": 870,
+            "y": 25
+        },
+        {
+            "background": "189,205,222",
+            "height": 190,
+            "name": "eu.open_ecvet.app.model.Complementarydocuments",
+            "width": 220,
+            "x": 5585,
+            "y": 220
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Certificatetemplate",
+            "width": 140,
+            "x": 1435,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 160,
+            "name": "eu.open_ecvet.app.model.Qualificationframework",
+            "width": 170,
+            "x": 5770,
             "y": 10
         },
         {
             "background": "189,205,222",
-            "height": 0,
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Recognitionlist",
+            "width": 110,
+            "x": 1740,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 140,
+            "name": "eu.open_ecvet.app.model.Procedureandguideline",
+            "width": 160,
+            "x": 8095,
+            "y": 20
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Competentinstitutionlist",
+            "width": 170,
+            "x": 2000,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Unitlist",
+            "width": 90,
+            "x": 10,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Method",
+            "width": 90,
+            "x": 8420,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 130,
+            "name": "eu.open_ecvet.app.model.Recognition",
+            "width": 170,
+            "x": 1960,
+            "y": 250
+        },
+        {
+            "background": "189,205,222",
+            "height": 130,
+            "name": "eu.open_ecvet.app.model.Validation",
+            "width": 130,
+            "x": 3380,
+            "y": 250
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.LearningoutcomelistLearningoutcome",
+            "width": 260,
+            "x": 2163,
+            "y": 700
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.ProcedureandguidelinelistProcedureandguideline",
+            "width": 330,
+            "x": 7660,
+            "y": 285
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.LearningagreementlistLearningagreement",
+            "width": 280,
+            "x": 6450,
+            "y": 285
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Qualificationframeworklist",
+            "width": 190,
+            "x": 250,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.RequirementlistRequirement",
+            "width": 200,
+            "x": 7095,
+            "y": 285
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.TranscriptsofrecordlistTranscriptsofrecord",
+            "width": 290,
+            "x": 3960,
+            "y": 285
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Assessmentlist",
+            "width": 110,
+            "x": 2320,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 140,
+            "name": "eu.open_ecvet.app.model.Evaluations",
+            "width": 130,
+            "x": 1690,
+            "y": 245
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.QualificationframeworklistQualificationframework",
+            "width": 340,
+            "x": 4600,
+            "y": 285
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Processlist",
+            "width": 90,
+            "x": 3200,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 190,
+            "name": "eu.open_ecvet.app.model.Unit",
+            "width": 210,
+            "x": 2106,
+            "y": 460
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.CredittransferAttachment",
+            "width": 180,
+            "x": 2775,
+            "y": 285
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.LearningagreementAttachment",
+            "width": 210,
+            "x": 3050,
+            "y": 285
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Requirementlist",
+            "width": 120,
+            "x": 3475,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Legislationlist",
+            "width": 110,
+            "x": 4060,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Userguide",
+            "width": 90,
+            "x": 2620,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Partner",
+            "width": 90,
+            "x": 7840,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 130,
+            "name": "eu.open_ecvet.app.model.Competentinstitution",
+            "width": 150,
+            "x": 4350,
+            "y": 250
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Credittransferlist",
+            "width": 120,
+            "x": 4345,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.LegislationlistLegislation",
+            "width": 180,
+            "x": 6185,
+            "y": 285
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.CredittransferlistCredittransfer",
+            "width": 210,
+            "x": 5300,
+            "y": 285
+        },
+        {
+            "background": "189,205,222",
+            "height": 140,
+            "name": "eu.open_ecvet.app.model.Ecvetframework",
+            "width": 200,
+            "x": 3156,
+            "y": 485
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.RecognitionlistRecognition",
+            "width": 190,
+            "x": 2871,
+            "y": 525
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Process",
+            "width": 90,
+            "x": 7260,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.UserguidelistUserguide",
+            "width": 160,
+            "x": 5035,
+            "y": 285
+        },
+        {
+            "background": "189,205,222",
+            "height": 110,
+            "name": "eu.open_ecvet.app.model.Learningoutcomelist",
+            "width": 210,
+            "x": 370,
+            "y": 260
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.ProcesslistProcess",
+            "width": 130,
+            "x": 6840,
+            "y": 285
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Partnerlist",
+            "width": 90,
+            "x": 4650,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.PartnerlistPartner",
+            "width": 130,
+            "x": 7420,
+            "y": 285
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.MemorandumofunderstandingAttachment",
+            "width": 280,
+            "x": 3620,
+            "y": 285
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Learningagreementlist",
+            "width": 160,
+            "x": 6065,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Procedureandguidelinelist",
+            "width": 180,
+            "x": 6345,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 110,
+            "name": "eu.open_ecvet.app.model.Requirement",
+            "width": 150,
+            "x": 7520,
+            "y": 35
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.ValidationlistValidation",
+            "width": 160,
+            "x": 3466,
+            "y": 525
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Userguidelist",
+            "width": 100,
+            "x": 4935,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.AssessmentlistAssessment",
+            "width": 190,
+            "x": 4242,
+            "y": 525
+        },
+        {
+            "background": "189,205,222",
+            "height": 60,
             "name": "eu.open_ecvet.app.model.CertificatetemplateAttachment",
-            "width": 0,
-            "x": 795,
-            "y": 410
+            "width": 210,
+            "x": 1360,
+            "y": 285
         },
         {
             "background": "189,205,222",
-            "height": 0,
-            "name": "eu.open_ecvet.app.model.Assessment",
-            "width": 0,
-            "x": 2081,
-            "y": 558
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.TranscriptsofrecordAttachment",
+            "width": 210,
+            "x": 1070,
+            "y": 285
         },
         {
             "background": "189,205,222",
-            "height": 0,
+            "height": 60,
+            "name": "eu.open_ecvet.app.model.MethodlistMethod",
+            "width": 130,
+            "x": 8100,
+            "y": 285
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
             "name": "eu.open_ecvet.app.model.Transcriptsofrecordlist",
-            "width": 0,
-            "x": 1085,
-            "y": 499
+            "width": 160,
+            "x": 3745,
+            "y": 40
         },
         {
             "background": "189,205,222",
-            "height": 0,
+            "height": 130,
+            "name": "eu.open_ecvet.app.model.Assessment",
+            "width": 110,
+            "x": 5930,
+            "y": 250
+        },
+        {
+            "background": "189,205,222",
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Credittransfer",
+            "width": 100,
+            "x": 2905,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 130,
             "name": "eu.open_ecvet.app.model.Learningagreement",
-            "width": 0,
-            "x": 1412,
-            "y": 781
+            "width": 160,
+            "x": 5195,
+            "y": 25
         },
         {
             "background": "189,205,222",
-            "height": 0,
+            "height": 100,
+            "name": "eu.open_ecvet.app.model.Memorandumofunderstanding",
+            "width": 210,
+            "x": 5460,
+            "y": 40
+        },
+        {
+            "background": "189,205,222",
+            "height": 130,
             "name": "eu.open_ecvet.app.model.Qualification",
-            "width": 0,
-            "x": 598,
-            "y": 394
+            "width": 130,
+            "x": 700,
+            "y": 250
         },
         {
             "background": "189,205,222",
-            "height": 0,
+            "height": 100,
             "name": "eu.open_ecvet.app.model.Methodlist",
-            "width": 0,
-            "x": 2310,
-            "y": 470
+            "width": 90,
+            "x": 6680,
+            "y": 40
         }
     ],
     "pageSetup": {
@@ -459,6 +547,18 @@
             "first": {
                 "cardinality": "ONE",
                 "columns": ["ID"],
+                "table": "eu.open_ecvet.app.model.Memorandumofunderstanding"
+            },
+            "second": {
+                "cardinality": "MANY",
+                "columns": ["MEMORANDUMOFUNDERSTANDING_ID"],
+                "table": "eu.open_ecvet.app.model.Complementarydocuments"
+            }
+        },
+        {
+            "first": {
+                "cardinality": "ONE",
+                "columns": ["ID"],
                 "table": "eu.open_ecvet.app.model.Transcriptsofrecord"
             },
             "second": {
@@ -477,6 +577,18 @@
                 "cardinality": "MANY",
                 "columns": ["ATTACHMENT_ID"],
                 "table": "eu.open_ecvet.app.model.UserguideAttachment"
+            }
+        },
+        {
+            "first": {
+                "cardinality": "ONE",
+                "columns": ["ID"],
+                "table": "eu.open_ecvet.app.model.Legislation"
+            },
+            "second": {
+                "cardinality": "MANY",
+                "columns": ["LEGISLATION_ID"],
+                "table": "eu.open_ecvet.app.model.LegislationlistLegislation"
             }
         },
         {
@@ -537,6 +649,30 @@
                 "cardinality": "MANY",
                 "columns": ["PARTNER_ID"],
                 "table": "eu.open_ecvet.app.model.PartnerlistPartner"
+            }
+        },
+        {
+            "first": {
+                "cardinality": "ONE",
+                "columns": ["ID"],
+                "table": "eu.open_ecvet.app.model.Procedureandguidelinelist"
+            },
+            "second": {
+                "cardinality": "MANY",
+                "columns": ["PROCEDUREANDGUIDELINELIST_ID"],
+                "table": "eu.open_ecvet.app.model.ProcedureandguidelinelistProcedureandguideline"
+            }
+        },
+        {
+            "first": {
+                "cardinality": "ONE",
+                "columns": ["ID"],
+                "table": "eu.open_ecvet.app.model.Credittransfer"
+            },
+            "second": {
+                "cardinality": "MANY",
+                "columns": ["ATTACHMENTS_ID"],
+                "table": "eu.open_ecvet.app.model.CredittransferAttachment"
             }
         },
         {
@@ -627,6 +763,18 @@
             "first": {
                 "cardinality": "ONE",
                 "columns": ["ID"],
+                "table": "eu.open_ecvet.app.model.Attachment"
+            },
+            "second": {
+                "cardinality": "MANY",
+                "columns": ["ATTACHMENT_ID"],
+                "table": "eu.open_ecvet.app.model.MemorandumofunderstandingAttachment"
+            }
+        },
+        {
+            "first": {
+                "cardinality": "ONE",
+                "columns": ["ID"],
                 "table": "eu.open_ecvet.app.model.Competentinstitutionlist"
             },
             "second": {
@@ -675,12 +823,36 @@
             "first": {
                 "cardinality": "ONE",
                 "columns": ["ID"],
+                "table": "eu.open_ecvet.app.model.Attachment"
+            },
+            "second": {
+                "cardinality": "MANY",
+                "columns": ["ATTACHMENT_ID"],
+                "table": "eu.open_ecvet.app.model.CredittransferAttachment"
+            }
+        },
+        {
+            "first": {
+                "cardinality": "ONE",
+                "columns": ["ID"],
                 "table": "eu.open_ecvet.app.model.Transcriptsofrecordlist"
             },
             "second": {
                 "cardinality": "MANY",
                 "columns": ["TRANSCRIPTSOFRECORDLIST_ID"],
                 "table": "eu.open_ecvet.app.model.Complementarydocuments"
+            }
+        },
+        {
+            "first": {
+                "cardinality": "ONE",
+                "columns": ["ID"],
+                "table": "eu.open_ecvet.app.model.Credittransferlist"
+            },
+            "second": {
+                "cardinality": "MANY",
+                "columns": ["CREDITTRANSFERLIST_ID"],
+                "table": "eu.open_ecvet.app.model.CredittransferlistCredittransfer"
             }
         },
         {
@@ -795,6 +967,18 @@
             "first": {
                 "cardinality": "ONE",
                 "columns": ["ID"],
+                "table": "eu.open_ecvet.app.model.Credittransfer"
+            },
+            "second": {
+                "cardinality": "MANY",
+                "columns": ["CREDITTRANSFER_ID"],
+                "table": "eu.open_ecvet.app.model.CredittransferlistCredittransfer"
+            }
+        },
+        {
+            "first": {
+                "cardinality": "ONE",
+                "columns": ["ID"],
                 "table": "eu.open_ecvet.app.model.Learningagreementlist"
             },
             "second": {
@@ -813,6 +997,18 @@
                 "cardinality": "MANY",
                 "columns": ["LEARNINGOUTCOMELIST_ID"],
                 "table": "eu.open_ecvet.app.model.Unit"
+            }
+        },
+        {
+            "first": {
+                "cardinality": "ONE",
+                "columns": ["ID"],
+                "table": "eu.open_ecvet.app.model.Procedureandguideline"
+            },
+            "second": {
+                "cardinality": "MANY",
+                "columns": ["PROCEDUREANDGUIDELINE_ID"],
+                "table": "eu.open_ecvet.app.model.ProcedureandguidelinelistProcedureandguideline"
             }
         },
         {
@@ -849,6 +1045,18 @@
                 "cardinality": "MANY",
                 "columns": ["RECOGNITIONLIST_ID"],
                 "table": "eu.open_ecvet.app.model.RecognitionlistRecognition"
+            }
+        },
+        {
+            "first": {
+                "cardinality": "ONE",
+                "columns": ["ID"],
+                "table": "eu.open_ecvet.app.model.Credittransferlist"
+            },
+            "second": {
+                "cardinality": "MANY",
+                "columns": ["CREDITTRANSFERLIST_ID"],
+                "table": "eu.open_ecvet.app.model.Complementarydocuments"
             }
         },
         {
@@ -939,18 +1147,6 @@
             "first": {
                 "cardinality": "ONE",
                 "columns": ["ID"],
-                "table": "eu.open_ecvet.app.model.Legislation"
-            },
-            "second": {
-                "cardinality": "MANY",
-                "columns": ["LEGISLATION_ID"],
-                "table": "eu.open_ecvet.app.model.Competentinstitution"
-            }
-        },
-        {
-            "first": {
-                "cardinality": "ONE",
-                "columns": ["ID"],
                 "table": "eu.open_ecvet.app.model.Learningagreement"
             },
             "second": {
@@ -981,6 +1177,18 @@
                 "cardinality": "MANY",
                 "columns": ["ASSESSMENT_ID"],
                 "table": "eu.open_ecvet.app.model.AssessmentlistAssessment"
+            }
+        },
+        {
+            "first": {
+                "cardinality": "ONE",
+                "columns": ["ID"],
+                "table": "eu.open_ecvet.app.model.Legislationlist"
+            },
+            "second": {
+                "cardinality": "MANY",
+                "columns": ["LEGISLATIONLIST_ID"],
+                "table": "eu.open_ecvet.app.model.LegislationlistLegislation"
             }
         },
         {
@@ -1047,6 +1255,18 @@
             "first": {
                 "cardinality": "ONE",
                 "columns": ["ID"],
+                "table": "eu.open_ecvet.app.model.Procedureandguidelinelist"
+            },
+            "second": {
+                "cardinality": "MANY",
+                "columns": ["PROCEDUREANDGUIDELINELIST_ID"],
+                "table": "eu.open_ecvet.app.model.Complementarydocuments"
+            }
+        },
+        {
+            "first": {
+                "cardinality": "ONE",
+                "columns": ["ID"],
                 "table": "eu.open_ecvet.app.model.Certificatetemplate"
             },
             "second": {
@@ -1095,6 +1315,18 @@
             "first": {
                 "cardinality": "ONE",
                 "columns": ["ID"],
+                "table": "eu.open_ecvet.app.model.Legislationlist"
+            },
+            "second": {
+                "cardinality": "MANY",
+                "columns": ["LEGISLATIONLIST_ID"],
+                "table": "eu.open_ecvet.app.model.Competentinstitution"
+            }
+        },
+        {
+            "first": {
+                "cardinality": "ONE",
+                "columns": ["ID"],
                 "table": "eu.open_ecvet.app.model.Processlist"
             },
             "second": {
@@ -1113,6 +1345,18 @@
                 "cardinality": "MANY",
                 "columns": ["QUALIFICATIONFRAMEWORK_ID"],
                 "table": "eu.open_ecvet.app.model.QualificationframeworklistQualificationframework"
+            }
+        },
+        {
+            "first": {
+                "cardinality": "ONE",
+                "columns": ["ID"],
+                "table": "eu.open_ecvet.app.model.Memorandumofunderstanding"
+            },
+            "second": {
+                "cardinality": "MANY",
+                "columns": ["ATTACHMENTS_ID"],
+                "table": "eu.open_ecvet.app.model.MemorandumofunderstandingAttachment"
             }
         },
         {

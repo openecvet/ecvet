@@ -47,7 +47,7 @@
                         "gridHeight": 1,
                         "gridWidth": 1,
                         "gridx": 1,
-                        "gridy": 1,
+                        "gridy": 2,
                         "insets": "3,3,3,3",
                         "ipadx": 0,
                         "ipady": 0,
@@ -75,7 +75,7 @@
                     "value": 3
                 },
                 "y": {
-                    "value": 3
+                    "value": 165
                 }
             }
         },
@@ -100,7 +100,7 @@
                         "gridHeight": 1,
                         "gridWidth": 1,
                         "gridx": 1,
-                        "gridy": 2,
+                        "gridy": 1,
                         "insets": "3,3,3,3",
                         "ipadx": 0,
                         "ipady": 0,
@@ -131,7 +131,92 @@
                     "value": 3
                 },
                 "y": {
-                    "value": 32
+                    "value": 3
+                }
+            }
+        },
+        {
+            "children": [{
+                "class": "xdev.ui.XdevButton",
+                "events": ["action.actionPerformed"],
+                "properties": {
+                    "-constraints": {
+                        "value": {
+                            "anchor": "EAST",
+                            "fill": "NONE",
+                            "gridHeight": 1,
+                            "gridWidth": 1,
+                            "gridx": 1,
+                            "gridy": 1,
+                            "insets": "3,3,3,3",
+                            "ipadx": 0,
+                            "ipady": 0,
+                            "type": "XDEV_TABLELAYOUT",
+                            "weightx": 0,
+                            "weighty": 0
+                        }
+                    },
+                    "-fieldName": {
+                        "value": "deleteButton"
+                    },
+                    "height": {
+                        "value": 22
+                    },
+                    "tabIndex": {
+                        "value": 4
+                    },
+                    "text": {
+                        "value": "Delete"
+                    },
+                    "width": {
+                        "value": 64
+                    },
+                    "x": {
+                        "value": 3
+                    },
+                    "y": {
+                        "value": 3
+                    }
+                }
+            }],
+            "class": "xdev.ui.XdevContainer",
+            "properties": {
+                "-constraints": {
+                    "value": {
+                        "anchor": "EAST",
+                        "fill": "NONE",
+                        "gridHeight": 1,
+                        "gridWidth": 1,
+                        "gridx": 1,
+                        "gridy": 4,
+                        "insets": "3,3,3,3",
+                        "ipadx": 0,
+                        "ipady": 0,
+                        "type": "XDEV_TABLELAYOUT",
+                        "weightx": 0.1,
+                        "weighty": 0
+                    }
+                },
+                "-fieldName": {
+                    "value": "container2"
+                },
+                "height": {
+                    "value": 29
+                },
+                "layout": {
+                    "value": {
+                        "autoFill": "AUTO_FILL_BOTH",
+                        "type": "XDEV_TABLELAYOUT"
+                    }
+                },
+                "width": {
+                    "value": 71
+                },
+                "x": {
+                    "value": 726
+                },
+                "y": {
+                    "value": 401
                 }
             }
         },
@@ -220,10 +305,10 @@
                             "value": 5
                         },
                         "width": {
-                            "value": 711
+                            "value": 669
                         },
                         "x": {
-                            "value": 86
+                            "value": 128
                         },
                         "y": {
                             "value": 3
@@ -278,7 +363,7 @@
                         "-constraints": {
                             "value": {
                                 "anchor": "BASELINE_LEADING",
-                                "fill": "HORIZONTAL",
+                                "fill": "BOTH",
                                 "gridHeight": 1,
                                 "gridWidth": 1,
                                 "gridx": 2,
@@ -287,8 +372,8 @@
                                 "ipadx": 0,
                                 "ipady": 0,
                                 "type": "XDEV_TABLELAYOUT",
-                                "weightx": 0.1,
-                                "weighty": 0
+                                "weightx": 1,
+                                "weighty": 1
                             }
                         },
                         "-fieldName": {
@@ -307,10 +392,10 @@
                             "value": 6
                         },
                         "width": {
-                            "value": 711
+                            "value": 669
                         },
                         "x": {
-                            "value": 86
+                            "value": 128
                         },
                         "y": {
                             "value": 30
@@ -397,10 +482,10 @@
                             "value": 7
                         },
                         "width": {
-                            "value": 711
+                            "value": 669
                         },
                         "x": {
-                            "value": 86
+                            "value": 128
                         },
                         "y": {
                             "value": 98
@@ -427,6 +512,115 @@
                             }
                         },
                         "-fieldName": {
+                            "value": "label5"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "name": {
+                            "value": "label5"
+                        },
+                        "text": {
+                            "value": "WHOLEECVETPOINTS"
+                        },
+                        "width": {
+                            "value": 119
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 126
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevFormattedTextField",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 4,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "formattedTextField"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Qualification.WHOLEECVETPOINTS"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "horizontalAlignment": {
+                            "value": "LEFT"
+                        },
+                        "tabIndex": {
+                            "value": 8
+                        },
+                        "textFormat": {
+                            "value": {
+                                "dateFormat": "MEDIUM",
+                                "dateSet": "DATE",
+                                "groupingUsed": false,
+                                "locale": "%",
+                                "maxFractionDigits": 0,
+                                "minFractionDigits": 0,
+                                "pattern": [
+                                    "",
+                                    "yyyy-MM-dd",
+                                    "#,##0.###;-#,##0.###",
+                                    "¤#,##0.00;-¤#,##0.00",
+                                    "#,##0%"
+                                ],
+                                "signedColor": "255,0,0",
+                                "suppressZero": false,
+                                "timeFormat": "MEDIUM",
+                                "type": "NUMBER",
+                                "useSignedColor": false
+                            }
+                        },
+                        "width": {
+                            "value": 669
+                        },
+                        "x": {
+                            "value": 128
+                        },
+                        "y": {
+                            "value": 124
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 5,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
                             "value": "label"
                         },
                         "height": {
@@ -442,7 +636,7 @@
                             "value": 3
                         },
                         "y": {
-                            "value": 126
+                            "value": 152
                         }
                     }
                 },
@@ -469,7 +663,7 @@
                                 "gridHeight": 1,
                                 "gridWidth": 1,
                                 "gridx": 2,
-                                "gridy": 4,
+                                "gridy": 5,
                                 "insets": "3,3,3,3",
                                 "ipadx": 0,
                                 "ipady": 0,
@@ -491,16 +685,16 @@
                             "value": 20
                         },
                         "tabIndex": {
-                            "value": 8
+                            "value": 9
                         },
                         "width": {
-                            "value": 711
+                            "value": 669
                         },
                         "x": {
-                            "value": 86
+                            "value": 128
                         },
                         "y": {
-                            "value": 124
+                            "value": 150
                         }
                     }
                 },
@@ -523,7 +717,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 9
+                                    "value": 10
                                 },
                                 "text": {
                                     "value": "New"
@@ -546,7 +740,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 1
+                                        "zpos": 0
                                     }
                                 },
                                 "-fieldName": {
@@ -556,7 +750,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 10
+                                    "value": 11
                                 },
                                 "text": {
                                     "value": "Reset"
@@ -579,7 +773,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 2
+                                        "zpos": 0
                                     }
                                 },
                                 "-fieldName": {
@@ -589,7 +783,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 11
+                                    "value": 12
                                 },
                                 "text": {
                                     "value": "Save"
@@ -612,7 +806,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 3
+                                        "zpos": 0
                                     }
                                 },
                                 "-fieldName": {
@@ -622,7 +816,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 12
+                                    "value": 13
                                 },
                                 "text": {
                                     "value": "Save + New"
@@ -645,7 +839,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 4
+                                        "zpos": 0
                                     }
                                 },
                                 "-fieldName": {
@@ -655,7 +849,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 13
+                                    "value": 14
                                 },
                                 "text": {
                                     "value": "Search"
@@ -681,7 +875,7 @@
                                 "gridHeight": 1,
                                 "gridWidth": 2,
                                 "gridx": 1,
-                                "gridy": 5,
+                                "gridy": 6,
                                 "insets": "3,3,3,3",
                                 "ipadx": 0,
                                 "ipady": 0,
@@ -712,7 +906,7 @@
                             "value": 3
                         },
                         "y": {
-                            "value": 150
+                            "value": 176
                         }
                     }
                 }
@@ -739,7 +933,7 @@
                     "value": "formular"
                 },
                 "height": {
-                    "value": 182
+                    "value": 207
                 },
                 "layout": {
                     "value": {
@@ -752,91 +946,6 @@
                 },
                 "y": {
                     "value": 191
-                }
-            }
-        },
-        {
-            "children": [{
-                "class": "xdev.ui.XdevButton",
-                "events": ["action.actionPerformed"],
-                "properties": {
-                    "-constraints": {
-                        "value": {
-                            "anchor": "EAST",
-                            "fill": "NONE",
-                            "gridHeight": 1,
-                            "gridWidth": 1,
-                            "gridx": 1,
-                            "gridy": 1,
-                            "insets": "3,3,3,3",
-                            "ipadx": 0,
-                            "ipady": 0,
-                            "type": "XDEV_TABLELAYOUT",
-                            "weightx": 0,
-                            "weighty": 0
-                        }
-                    },
-                    "-fieldName": {
-                        "value": "deleteButton"
-                    },
-                    "height": {
-                        "value": 22
-                    },
-                    "tabIndex": {
-                        "value": 4
-                    },
-                    "text": {
-                        "value": "Delete"
-                    },
-                    "width": {
-                        "value": 64
-                    },
-                    "x": {
-                        "value": 3
-                    },
-                    "y": {
-                        "value": 3
-                    }
-                }
-            }],
-            "class": "xdev.ui.XdevContainer",
-            "properties": {
-                "-constraints": {
-                    "value": {
-                        "anchor": "EAST",
-                        "fill": "NONE",
-                        "gridHeight": 1,
-                        "gridWidth": 1,
-                        "gridx": 1,
-                        "gridy": 4,
-                        "insets": "3,3,3,3",
-                        "ipadx": 0,
-                        "ipady": 0,
-                        "type": "XDEV_TABLELAYOUT",
-                        "weightx": 0.1,
-                        "weighty": 0
-                    }
-                },
-                "-fieldName": {
-                    "value": "container2"
-                },
-                "height": {
-                    "value": 29
-                },
-                "layout": {
-                    "value": {
-                        "autoFill": "AUTO_FILL_BOTH",
-                        "type": "XDEV_TABLELAYOUT"
-                    }
-                },
-                "width": {
-                    "value": 71
-                },
-                "x": {
-                    "value": 726
-                },
-                "y": {
-                    "value": 376
                 }
             }
         }

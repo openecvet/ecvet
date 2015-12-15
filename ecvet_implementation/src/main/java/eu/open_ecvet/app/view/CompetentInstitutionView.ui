@@ -133,7 +133,7 @@
             "properties": {
                 "-autofillColumns": {
                     "value": {
-                        "expression": "TITLE, URI, LEGISLATION_TITLE, PARTNERLIST_TITLE"
+                        "expression": "*"
                     }
                 },
                 "-autofillWithData": {
@@ -351,13 +351,13 @@
                             "value": "textField2"
                         },
                         "tabIndex": {
-                            "value": 5
+                            "value": 16
                         },
                         "width": {
-                            "value": 695
+                            "value": 672
                         },
                         "x": {
-                            "value": 102
+                            "value": 125
                         },
                         "y": {
                             "value": 3
@@ -438,13 +438,13 @@
                             "value": 2147483647
                         },
                         "tabIndex": {
-                            "value": 6
+                            "value": 17
                         },
                         "width": {
-                            "value": 695
+                            "value": 672
                         },
                         "x": {
-                            "value": 102
+                            "value": 125
                         },
                         "y": {
                             "value": 30
@@ -528,13 +528,13 @@
                             "value": 2147483647
                         },
                         "tabIndex": {
-                            "value": 7
+                            "value": 18
                         },
                         "width": {
-                            "value": 695
+                            "value": 672
                         },
                         "x": {
-                            "value": 102
+                            "value": 125
                         },
                         "y": {
                             "value": 98
@@ -570,10 +570,10 @@
                             "value": "label5"
                         },
                         "text": {
-                            "value": "LEGISLATION_ID"
+                            "value": "LEGISLATIONLIST_ID"
                         },
                         "width": {
-                            "value": 92
+                            "value": 116
                         },
                         "x": {
                             "value": 3
@@ -616,13 +616,13 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "legislationComboBox"
+                            "value": "legislationListComboBox"
                         },
                         "-virtualTable": {
-                            "value": "eu.open_ecvet.app.model.Legislation"
+                            "value": "eu.open_ecvet.app.model.Legislationlist"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Competentinstitution.LEGISLATION_ID"
+                            "value": "eu.open_ecvet.app.model.Competentinstitution.LEGISLATIONLIST_ID"
                         },
                         "height": {
                             "value": 20
@@ -631,13 +631,13 @@
                             "value": "comboBox2"
                         },
                         "tabIndex": {
-                            "value": 8
+                            "value": 19
                         },
                         "width": {
-                            "value": 695
+                            "value": 672
                         },
                         "x": {
-                            "value": 102
+                            "value": 125
                         },
                         "y": {
                             "value": 124
@@ -728,13 +728,13 @@
                             "value": 20
                         },
                         "tabIndex": {
-                            "value": 9
+                            "value": 20
                         },
                         "width": {
-                            "value": 695
+                            "value": 672
                         },
                         "x": {
-                            "value": 102
+                            "value": 125
                         },
                         "y": {
                             "value": 150
@@ -760,7 +760,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 10
+                                    "value": 21
                                 },
                                 "text": {
                                     "value": "New"
@@ -793,7 +793,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 11
+                                    "value": 22
                                 },
                                 "text": {
                                     "value": "Reset"
@@ -826,7 +826,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 12
+                                    "value": 23
                                 },
                                 "text": {
                                     "value": "Save"
@@ -859,7 +859,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 13
+                                    "value": 24
                                 },
                                 "text": {
                                     "value": "Save + New"
@@ -892,7 +892,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 14
+                                    "value": 25
                                 },
                                 "text": {
                                     "value": "Search"

@@ -26,8 +26,8 @@ public class Competentinstitution extends VirtualTable implements StaticInstance
 	public final static VirtualTableColumn<String>	DESCRIPTION;
 	public final static VirtualTableColumn<String>	TITLE;
 	public final static VirtualTableColumn<String>	URI;
-	public final static VirtualTableColumn<Integer>	LEGISLATION_ID;
-	public final static VirtualTableColumn<String>	LEGISLATION_TITLE;
+	public final static VirtualTableColumn<Integer>	LEGISLATIONLIST_ID;
+	public final static VirtualTableColumn<String>	LEGISLATIONLIST_TITLE;
 	public final static VirtualTableColumn<Integer>	PARTNERLIST_ID;
 	public final static VirtualTableColumn<String>	PARTNERLIST_TITLE;
 	
@@ -61,20 +61,20 @@ public class Competentinstitution extends VirtualTable implements StaticInstance
 		URI.setPreferredWidth(100);
 		URI.setTextFormat(TextFormat.getPlainInstance());
 		
-		LEGISLATION_ID = new VirtualTableColumn<Integer>("LEGISLATION_ID");
-		LEGISLATION_ID.setType(DataType.INTEGER);
-		LEGISLATION_ID.setDefaultValue(null);
-		LEGISLATION_ID.setVisible(false);
-		LEGISLATION_ID.setPreferredWidth(100);
-		LEGISLATION_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,
+		LEGISLATIONLIST_ID = new VirtualTableColumn<Integer>("LEGISLATIONLIST_ID");
+		LEGISLATIONLIST_ID.setType(DataType.INTEGER);
+		LEGISLATIONLIST_ID.setDefaultValue(null);
+		LEGISLATIONLIST_ID.setVisible(false);
+		LEGISLATIONLIST_ID.setPreferredWidth(100);
+		LEGISLATIONLIST_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,
 				false,false));
 		
-		LEGISLATION_TITLE = new VirtualTableColumn<String>("LEGISLATION_TITLE");
-		LEGISLATION_TITLE.setType(DataType.VARCHAR,2147483647);
-		LEGISLATION_TITLE.setDefaultValue(null);
-		LEGISLATION_TITLE.setCaption("TITLE");
-		LEGISLATION_TITLE.setPreferredWidth(100);
-		LEGISLATION_TITLE.setTextFormat(TextFormat.getPlainInstance());
+		LEGISLATIONLIST_TITLE = new VirtualTableColumn<String>("LEGISLATIONLIST_TITLE");
+		LEGISLATIONLIST_TITLE.setType(DataType.VARCHAR,2147483647);
+		LEGISLATIONLIST_TITLE.setDefaultValue(null);
+		LEGISLATIONLIST_TITLE.setCaption("TITLE");
+		LEGISLATIONLIST_TITLE.setPreferredWidth(100);
+		LEGISLATIONLIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
 		
 		PARTNERLIST_ID = new VirtualTableColumn<Integer>("PARTNERLIST_ID");
 		PARTNERLIST_ID.setType(DataType.INTEGER);
@@ -91,13 +91,12 @@ public class Competentinstitution extends VirtualTable implements StaticInstance
 		PARTNERLIST_TITLE.setPreferredWidth(100);
 		PARTNERLIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
 		
-		LEGISLATION_TITLE.setPersistent(false);
-		LEGISLATION_TITLE.setTableColumnLink(new TableColumnLink(Legislation.class.getName(),
-				Legislation.TITLE.getName(),new EntityRelationship(Legislation.class.getName(),
-						new String[]{Legislation.ID.getName()},Cardinality.ONE,
-						Competentinstitution.class.getName(),
-						new String[]{Competentinstitution.LEGISLATION_ID.getName()},
-						Cardinality.MANY)));
+		LEGISLATIONLIST_TITLE.setPersistent(false);
+		LEGISLATIONLIST_TITLE.setTableColumnLink(new TableColumnLink(Legislationlist.class
+				.getName(),Legislationlist.TITLE.getName(),new EntityRelationship(
+				Legislationlist.class.getName(),new String[]{Legislationlist.ID.getName()},
+				Cardinality.ONE,Competentinstitution.class.getName(),
+				new String[]{Competentinstitution.LEGISLATIONLIST_ID.getName()},Cardinality.MANY)));
 		
 		PARTNERLIST_TITLE.setPersistent(false);
 		PARTNERLIST_TITLE.setTableColumnLink(new TableColumnLink(Partnerlist.class.getName(),
@@ -112,16 +111,16 @@ public class Competentinstitution extends VirtualTable implements StaticInstance
 	public Competentinstitution()
 	{
 		super(Competentinstitution.class.getName(),"PUBLIC","COMPETENTINSTITUTION",ID,DESCRIPTION,
-				TITLE,URI,LEGISLATION_ID,LEGISLATION_TITLE,PARTNERLIST_ID,PARTNERLIST_TITLE);
+				TITLE,URI,LEGISLATIONLIST_ID,LEGISLATIONLIST_TITLE,PARTNERLIST_ID,PARTNERLIST_TITLE);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(TITLE);
 		
+		addIndex(new Index("FK_COMPETENTINSTITUTION_LEGISLATIONLIST_ID_INDEX_7",IndexType.NORMAL,
+				"LEGISLATIONLIST_ID"));
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"ID"));
 		addIndex(new Index("FK_COMPETENTINSTITUTION_PARTNERLIST_ID_INDEX_7",IndexType.NORMAL,
 				"PARTNERLIST_ID"));
-		addIndex(new Index("FK_COMPETENTINSTITUTION_LEGISLATION_ID_INDEX_7",IndexType.NORMAL,
-				"LEGISLATION_ID"));
 	}
 	
 	public final static Competentinstitution	VT	= new Competentinstitution();

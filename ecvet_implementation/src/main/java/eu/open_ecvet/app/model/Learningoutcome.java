@@ -23,11 +23,11 @@ public class Learningoutcome extends VirtualTable implements StaticInstanceSuppo
 	
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
 	public final static VirtualTableColumn<Integer>	ID;
-	public final static VirtualTableColumn<Integer>	CREDIT;
 	public final static VirtualTableColumn<String>	DESCRIPTION;
+	public final static VirtualTableColumn<Integer>	ECVETPOINTS;
+	public final static VirtualTableColumn<Integer>	RELATIVEWEIGHT;
 	public final static VirtualTableColumn<String>	TITLE;
 	public final static VirtualTableColumn<String>	URI;
-	public final static VirtualTableColumn<Integer>	WEIGHT;
 	public final static VirtualTableColumn<Integer>	EVALUATIONS_ID;
 	public final static VirtualTableColumn<String>	EVALUATIONS_TITLE;
 	
@@ -43,17 +43,25 @@ public class Learningoutcome extends VirtualTable implements StaticInstanceSuppo
 		ID.setPreferredWidth(100);
 		ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
 		
-		CREDIT = new VirtualTableColumn<Integer>("CREDIT");
-		CREDIT.setType(DataType.INTEGER);
-		CREDIT.setDefaultValue(null);
-		CREDIT.setPreferredWidth(100);
-		CREDIT.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
-		
 		DESCRIPTION = new VirtualTableColumn<String>("DESCRIPTION");
 		DESCRIPTION.setType(DataType.VARCHAR,2147483647);
 		DESCRIPTION.setDefaultValue(null);
 		DESCRIPTION.setPreferredWidth(100);
 		DESCRIPTION.setTextFormat(TextFormat.getPlainInstance());
+		
+		ECVETPOINTS = new VirtualTableColumn<Integer>("ECVETPOINTS");
+		ECVETPOINTS.setType(DataType.INTEGER);
+		ECVETPOINTS.setDefaultValue(null);
+		ECVETPOINTS.setPreferredWidth(100);
+		ECVETPOINTS.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,
+				false));
+		
+		RELATIVEWEIGHT = new VirtualTableColumn<Integer>("RELATIVEWEIGHT");
+		RELATIVEWEIGHT.setType(DataType.INTEGER);
+		RELATIVEWEIGHT.setDefaultValue(null);
+		RELATIVEWEIGHT.setPreferredWidth(100);
+		RELATIVEWEIGHT.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,
+				false,false));
 		
 		TITLE = new VirtualTableColumn<String>("TITLE");
 		TITLE.setType(DataType.VARCHAR,2147483647);
@@ -66,12 +74,6 @@ public class Learningoutcome extends VirtualTable implements StaticInstanceSuppo
 		URI.setDefaultValue(null);
 		URI.setPreferredWidth(100);
 		URI.setTextFormat(TextFormat.getPlainInstance());
-		
-		WEIGHT = new VirtualTableColumn<Integer>("WEIGHT");
-		WEIGHT.setType(DataType.INTEGER);
-		WEIGHT.setDefaultValue(null);
-		WEIGHT.setPreferredWidth(100);
-		WEIGHT.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
 		
 		EVALUATIONS_ID = new VirtualTableColumn<Integer>("EVALUATIONS_ID");
 		EVALUATIONS_ID.setType(DataType.INTEGER);
@@ -99,8 +101,8 @@ public class Learningoutcome extends VirtualTable implements StaticInstanceSuppo
 	
 	public Learningoutcome()
 	{
-		super(Learningoutcome.class.getName(),"PUBLIC","LEARNINGOUTCOME",ID,CREDIT,DESCRIPTION,
-				TITLE,URI,WEIGHT,EVALUATIONS_ID,EVALUATIONS_TITLE);
+		super(Learningoutcome.class.getName(),"PUBLIC","LEARNINGOUTCOME",ID,DESCRIPTION,
+				ECVETPOINTS,RELATIVEWEIGHT,TITLE,URI,EVALUATIONS_ID,EVALUATIONS_TITLE);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(TITLE);

@@ -95,7 +95,8 @@ public class LearningOutcomeView extends XdevWindow // ${GENERATED-CODE-LINE:BE
 	
 		UpdateViewHelper.instance().add(updateView);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
+
+
 	@EventHandlerDelegate void cmdNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.reset(eu.open_ecvet.app.model.Learningoutcome.VT);
@@ -172,9 +173,9 @@ public class LearningOutcomeView extends XdevWindow // ${GENERATED-CODE-LINE:BE
 		label4 = new XdevLabel();
 		formattedTextField2 = new XdevFormattedTextField();
 		label5 = new XdevLabel();
-		textField = new XdevTextField();
-		label6 = new XdevLabel();
 		formattedTextField = new XdevFormattedTextField();
+		label6 = new XdevLabel();
+		textField = new XdevTextField();
 		label = new XdevLabel();
 		evaluationsComboBox = new XdevComboBox();
 		container3 = new XdevContainer();
@@ -207,25 +208,25 @@ public class LearningOutcomeView extends XdevWindow // ${GENERATED-CODE-LINE:BE
 		textArea.setDataField("eu.open_ecvet.app.model.Learningoutcome.DESCRIPTION");
 		textArea.setTabIndex(6);
 		textArea.setMaxSignCount(Integer.MAX_VALUE);
-		label4.setText("CREDIT");
+		label4.setText("ECVETPOINTS");
 		label4.setName("label4");
-		formattedTextField2.setDataField("eu.open_ecvet.app.model.Learningoutcome.CREDIT");
+		formattedTextField2.setDataField("eu.open_ecvet.app.model.Learningoutcome.ECVETPOINTS");
 		formattedTextField2.setTabIndex(7);
 		formattedTextField2.setName("formattedTextField2");
 		formattedTextField2.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
 		formattedTextField2.setHorizontalAlignment(SwingConstants.LEFT);
-		label5.setText("URI");
+		label5.setText("RELATIVEWEIGHT");
 		label5.setName("label5");
-		textField.setDataField("eu.open_ecvet.app.model.Learningoutcome.URI");
-		textField.setTabIndex(8);
-		textField.setMaxSignCount(Integer.MAX_VALUE);
-		textField.setHorizontalAlignment(SwingConstants.LEFT);
-		label6.setText("WEIGHT");
-		label6.setName("label6");
-		formattedTextField.setDataField("eu.open_ecvet.app.model.Learningoutcome.WEIGHT");
-		formattedTextField.setTabIndex(9);
+		formattedTextField.setDataField("eu.open_ecvet.app.model.Learningoutcome.RELATIVEWEIGHT");
+		formattedTextField.setTabIndex(8);
 		formattedTextField.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,false));
 		formattedTextField.setHorizontalAlignment(SwingConstants.LEFT);
+		label6.setText("URI");
+		label6.setName("label6");
+		textField.setDataField("eu.open_ecvet.app.model.Learningoutcome.URI");
+		textField.setTabIndex(9);
+		textField.setMaxSignCount(Integer.MAX_VALUE);
+		textField.setHorizontalAlignment(SwingConstants.LEFT);
 		label.setText("EVALUATIONS_ID");
 		evaluationsComboBox.setDataField("eu.open_ecvet.app.model.Learningoutcome.EVALUATIONS_ID");
 		evaluationsComboBox.setTabIndex(10);
@@ -252,9 +253,9 @@ public class LearningOutcomeView extends XdevWindow // ${GENERATED-CODE-LINE:BE
 		label4.saveState();
 		formattedTextField2.saveState();
 		label5.saveState();
-		textField.saveState();
-		label6.saveState();
 		formattedTextField.saveState();
+		label6.saveState();
+		textField.saveState();
 		label.saveState();
 		evaluationsComboBox.saveState();
 		
@@ -276,9 +277,9 @@ public class LearningOutcomeView extends XdevWindow // ${GENERATED-CODE-LINE:BE
 		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(formattedTextField2,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(textField,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(formattedTextField,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label6,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(formattedTextField,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(textField,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label,new GBC(1,6,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(evaluationsComboBox,new GBC(2,6,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(container3,new GBC(1,7,2,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));

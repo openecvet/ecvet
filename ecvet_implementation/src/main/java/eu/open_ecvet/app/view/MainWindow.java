@@ -41,17 +41,24 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 	@EventHandlerDelegate
 	void this_init() // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		memorandumOfUnderstandingTab.setName(MemorandumOfUnderstandingView.class.getSimpleName());
 		frameworkTab.setName(FrameworkView.class.getSimpleName());
 		competentInstitutionListTab.setName(CompetentInstitutionListView.class.getSimpleName());
 		competentInstitutionTab.setName(CompetentInstitutionView.class.getSimpleName());
 		partnerListTab.setName(PartnerListView.class.getSimpleName());
 		partnerTab.setName(PartnerView.class.getSimpleName());
+		legislationListTab.setName(LegislationListView.class.getSimpleName());
 		legislationTab.setName(LegislationView.class.getSimpleName());
 		complementaryDocumentsTab.setName(ComplementaryDocumentsView.class.getSimpleName());
+		procedureAndGuidelineListTab.setName(ProcedureAndGuidelineListView.class.getSimpleName());
+		procedureAndGuidelineTab.setName(ProcedureAndGuidelineView.class.getSimpleName());
 		learningAgreementListTab.setName(LearningAgreementListView.class.getSimpleName());
 		learningAgreementTab.setName(LearningAgreementView.class.getSimpleName());
 		transcriptsOfRecordListTab.setName(TranscriptsOfRecordListView.class.getSimpleName());
 		transcriptsOfRecordTab.setName(TranscriptsOfRecordView.class.getSimpleName());
+		
+		creditTransferListTab.setName(CreditTransferListView.class.getSimpleName());
+		creditTransferTab.setName(CreditTransferView.class.getSimpleName());
 		userGuideListTab.setName(UserGuideListView.class.getSimpleName());
 		userGuideTab.setName(UserGuideView.class.getSimpleName());
 		qualificationTab.setName(QualificationView.class.getSimpleName());
@@ -97,10 +104,12 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 	// Generated definitions, do not edit! ${GENERATED-CODE-BLOCK-START:DEFINITIONS}
 	XdevPicture	picture;
 	XdevMenuBar	menuBar;
-	XdevTab		tab, frameworkTab, competentInstitutionListTab, competentInstitutionTab,
-			partnerListTab, partnerTab, legislationTab, complementaryDocumentsTab,
-			learningAgreementListTab, learningAgreementTab, transcriptsOfRecordListTab,
-			transcriptsOfRecordTab, userGuideListTab, userGuideTab, qualificationTab, unitListTab,
+	XdevTab		tab, memorandumOfUnderstandingTab, frameworkTab, competentInstitutionListTab,
+			competentInstitutionTab, partnerListTab, partnerTab, legislationListTab,
+			legislationTab, complementaryDocumentsTab, learningAgreementListTab,
+			learningAgreementTab, procedureAndGuidelineListTab, procedureAndGuidelineTab,
+			transcriptsOfRecordListTab, transcriptsOfRecordTab, creditTransferListTab,
+			creditTransferTab, userGuideListTab, userGuideTab, qualificationTab, unitListTab,
 			unitTab, learningOutcomeListTab, learningOutcomeTab, evaluationsTab, assessmentListTab,
 			assessmentTab, methodListTab, methodTab, processListTab, processTab, validationListTab,
 			validationTab, requirementListTab, requirementTab, recognitionListTab, recognitionTab,
@@ -108,17 +117,20 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 			attachmentTab;
 	XdevMenuItem	menuItem, menuItem2;
 	XdevTabbedPane	tabbedPane;
-	XdevWindowContainer	frameworkContainer, competentInstitutionListWindowContainer,
-			competentInstitutionWindowContainer, partnerListWindowContainer,
-			partnerWindowContainer, legislationWindowContainer,
-			complementaryDocumentsWindowContainer, learningAgreementListWindowContainer,
-			learningAgreementWindowContainer, transcriptsOfRecordListWindowContainer,
-			transcriptsOfRecordWindowContainer, userGuideListWindowContainer,
-			userGuideWindowContainer, qualificationContainer, unitsContainer, unitContainer,
-			learningOutcomeListWindowContainer, learningOutcomeWindowContainer,
-			evaluationsWindowContainer, assessmentListWindowContainer, asssessmentWindowContainer,
-			methodListWindowContainer, methodWindowContainer, processListWindowContainer,
-			processWindowContainer, validationListWindowContainer, validationWindowContainer,
+	XdevWindowContainer	memorandumOfUnderstandingWindowContainer, frameworkContainer,
+			competentInstitutionListWindowContainer, competentInstitutionWindowContainer,
+			partnerListWindowContainer, partnerWindowContainer, legislationListWindowContainer,
+			legislationWindowContainer, complementaryDocumentsWindowContainer,
+			learningAgreementListWindowContainer, learningAgreementWindowContainer,
+			procedureAndGuidelineListWindowContainer, windowContainer,
+			transcriptsOfRecordListWindowContainer, transcriptsOfRecordWindowContainer,
+			creditTransferListWindowContainer, creditTransferWindowContainer,
+			userGuideListWindowContainer, userGuideWindowContainer, qualificationContainer,
+			unitsContainer, unitContainer, learningOutcomeListWindowContainer,
+			learningOutcomeWindowContainer, evaluationsWindowContainer,
+			assessmentListWindowContainer, asssessmentWindowContainer, methodListWindowContainer,
+			methodWindowContainer, processListWindowContainer, processWindowContainer,
+			validationListWindowContainer, validationWindowContainer,
 			requirementListWindowContainer, requirementWindowContainer,
 			recognitionListWindowContainer, recognitionWindowContainer,
 			certificateTemplateWindowContainer, qualificationFrameworkListWindowContainer,
@@ -139,6 +151,8 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		label = new XdevLabel();
 		picture = new XdevPicture();
 		label2 = new XdevLabel();
+		memorandumOfUnderstandingTab = new XdevTab();
+		memorandumOfUnderstandingWindowContainer = new XdevWindowContainer();
 		frameworkTab = new XdevTab();
 		frameworkContainer = new XdevWindowContainer();
 		competentInstitutionListTab = new XdevTab();
@@ -149,6 +163,8 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		partnerListWindowContainer = new XdevWindowContainer();
 		partnerTab = new XdevTab();
 		partnerWindowContainer = new XdevWindowContainer();
+		legislationListTab = new XdevTab();
+		legislationListWindowContainer = new XdevWindowContainer();
 		legislationTab = new XdevTab();
 		legislationWindowContainer = new XdevWindowContainer();
 		complementaryDocumentsTab = new XdevTab();
@@ -157,10 +173,18 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		learningAgreementListWindowContainer = new XdevWindowContainer();
 		learningAgreementTab = new XdevTab();
 		learningAgreementWindowContainer = new XdevWindowContainer();
+		procedureAndGuidelineListTab = new XdevTab();
+		procedureAndGuidelineListWindowContainer = new XdevWindowContainer();
+		procedureAndGuidelineTab = new XdevTab();
+		windowContainer = new XdevWindowContainer();
 		transcriptsOfRecordListTab = new XdevTab();
 		transcriptsOfRecordListWindowContainer = new XdevWindowContainer();
 		transcriptsOfRecordTab = new XdevTab();
 		transcriptsOfRecordWindowContainer = new XdevWindowContainer();
+		creditTransferListTab = new XdevTab();
+		creditTransferListWindowContainer = new XdevWindowContainer();
+		creditTransferTab = new XdevTab();
+		creditTransferWindowContainer = new XdevWindowContainer();
 		userGuideListTab = new XdevTab();
 		userGuideListWindowContainer = new XdevWindowContainer();
 		userGuideTab = new XdevTab();
@@ -223,110 +247,127 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		label.setFont(new Font("Arial Black",Font.PLAIN,19));
 		picture.setImagePath("res/impact_logo.png");
 		label2.setText("see: http://open-ecvet.eu");
+		memorandumOfUnderstandingTab.setTitle("Memorandum of Understanding");
+		memorandumOfUnderstandingTab.setIndex(1);
+		memorandumOfUnderstandingWindowContainer.setXdevWindow(new MemorandumOfUnderstandingView(self));
 		frameworkTab.setTitle("Framework");
-		frameworkTab.setIndex(1);
+		frameworkTab.setIndex(2);
 		frameworkContainer.setXdevWindow(new FrameworkView(self));
 		competentInstitutionListTab.setTitle("Competent Institution List");
-		competentInstitutionListTab.setIndex(2);
+		competentInstitutionListTab.setIndex(3);
 		competentInstitutionListWindowContainer.setXdevWindow(new CompetentInstitutionListView(self));
 		competentInstitutionTab.setTitle("Competent Institution");
-		competentInstitutionTab.setIndex(3);
+		competentInstitutionTab.setIndex(4);
 		competentInstitutionWindowContainer.setXdevWindow(new CompetentInstitutionView(self));
 		partnerListTab.setTitle("Partner List");
-		partnerListTab.setIndex(4);
+		partnerListTab.setIndex(5);
 		partnerListWindowContainer.setXdevWindow(new PartnerListView(self));
 		partnerTab.setTitle("Partner");
-		partnerTab.setIndex(5);
+		partnerTab.setIndex(6);
 		partnerWindowContainer.setXdevWindow(new PartnerView(self));
+		legislationListTab.setTitle("Legislation List");
+		legislationListTab.setIndex(7);
+		legislationListWindowContainer.setXdevWindow(new LegislationListView(self));
 		legislationTab.setTitle("Legislation");
-		legislationTab.setIndex(6);
+		legislationTab.setIndex(8);
 		legislationWindowContainer.setXdevWindow(new LegislationView(self));
 		complementaryDocumentsTab.setTitle("Complementary Documents");
-		complementaryDocumentsTab.setIndex(7);
+		complementaryDocumentsTab.setIndex(9);
 		complementaryDocumentsWindowContainer.setXdevWindow(new ComplementaryDocumentsView(self));
 		learningAgreementListTab.setTitle("Learning Agreement List");
-		learningAgreementListTab.setIndex(8);
+		learningAgreementListTab.setIndex(10);
 		learningAgreementListWindowContainer.setXdevWindow(new LearningAgreementListView(self));
 		learningAgreementTab.setTitle("Learning Agreement");
-		learningAgreementTab.setIndex(9);
+		learningAgreementTab.setIndex(11);
 		learningAgreementWindowContainer.setXdevWindow(new LearningAgreementView(self));
+		procedureAndGuidelineListTab.setTitle("Procedure and Guideline List");
+		procedureAndGuidelineListTab.setIndex(12);
+		procedureAndGuidelineListWindowContainer.setXdevWindow(new ProcedureAndGuidelineListView(self));
+		procedureAndGuidelineTab.setTitle("Procedure and Guideline");
+		procedureAndGuidelineTab.setIndex(13);
+		windowContainer.setXdevWindow(new ProcedureAndGuidelineView(self));
 		transcriptsOfRecordListTab.setTitle("Transcripts of Record List");
-		transcriptsOfRecordListTab.setIndex(10);
+		transcriptsOfRecordListTab.setIndex(14);
 		transcriptsOfRecordListWindowContainer.setXdevWindow(new TranscriptsOfRecordListView(self));
 		transcriptsOfRecordTab.setTitle("Transcripts of Record");
-		transcriptsOfRecordTab.setIndex(11);
+		transcriptsOfRecordTab.setIndex(15);
 		transcriptsOfRecordWindowContainer.setXdevWindow(new TranscriptsOfRecordView(self));
+		creditTransferListTab.setTitle("Credit Transfer List");
+		creditTransferListTab.setIndex(16);
+		creditTransferTab.setTitle("Credit Transfer");
+		creditTransferTab.setIndex(17);
+		creditTransferWindowContainer.setXdevWindow(new CreditTransferView(self));
 		userGuideListTab.setTitle("User Guide List");
-		userGuideListTab.setIndex(12);
+		userGuideListTab.setIndex(18);
 		userGuideListWindowContainer.setXdevWindow(new UserGuideListView(self));
 		userGuideTab.setTitle("User Guide");
-		userGuideTab.setIndex(13);
+		userGuideTab.setIndex(19);
 		userGuideWindowContainer.setXdevWindow(new UserGuideView(self));
 		qualificationTab.setTitle("Qualification");
-		qualificationTab.setIndex(14);
+		qualificationTab.setIndex(20);
 		qualificationContainer.setXdevWindow(new QualificationView(self));
 		unitListTab.setTitle("Unit List");
-		unitListTab.setIndex(15);
+		unitListTab.setIndex(21);
 		unitsContainer.setXdevWindow(new UnitListView(self));
 		unitTab.setTitle("Unit");
-		unitTab.setIndex(16);
+		unitTab.setIndex(22);
 		unitContainer.setXdevWindow(new UnitView(self));
 		learningOutcomeListTab.setTitle("Learning Outcome List");
-		learningOutcomeListTab.setIndex(17);
+		learningOutcomeListTab.setIndex(23);
 		learningOutcomeListWindowContainer.setXdevWindow(new LearningOutcomeListView(self));
 		learningOutcomeTab.setTitle("Learning Outcome");
-		learningOutcomeTab.setIndex(18);
+		learningOutcomeTab.setIndex(24);
 		learningOutcomeWindowContainer.setXdevWindow(new LearningOutcomeView(self));
 		evaluationsTab.setTitle("Evaluations");
-		evaluationsTab.setIndex(19);
+		evaluationsTab.setIndex(25);
 		evaluationsWindowContainer.setXdevWindow(new EvaluationsView(self));
 		assessmentListTab.setTitle("Assessment List");
-		assessmentListTab.setIndex(20);
+		assessmentListTab.setIndex(26);
 		assessmentListWindowContainer.setXdevWindow(new AssessmentListView(self));
 		assessmentTab.setTitle("Assessment");
-		assessmentTab.setIndex(21);
+		assessmentTab.setIndex(27);
 		asssessmentWindowContainer.setXdevWindow(new AssessmentView(self));
 		methodListTab.setTitle("Method List");
-		methodListTab.setIndex(22);
+		methodListTab.setIndex(28);
 		methodListWindowContainer.setXdevWindow(new MethodListView(self));
 		methodTab.setTitle("Method");
-		methodTab.setIndex(23);
+		methodTab.setIndex(29);
 		methodWindowContainer.setXdevWindow(new MethodView(self));
 		processListTab.setTitle("Process List");
-		processListTab.setIndex(24);
+		processListTab.setIndex(30);
 		processListWindowContainer.setXdevWindow(new ProcessListView(self));
 		processTab.setTitle("Process");
-		processTab.setIndex(25);
+		processTab.setIndex(31);
 		processWindowContainer.setXdevWindow(new ProcessView(self));
 		validationListTab.setTitle("Validation List");
-		validationListTab.setIndex(26);
+		validationListTab.setIndex(32);
 		validationListWindowContainer.setXdevWindow(new ValidationListView(self));
 		validationTab.setTitle("Validation");
-		validationTab.setIndex(27);
+		validationTab.setIndex(33);
 		validationWindowContainer.setXdevWindow(new ValidationView(self));
 		requirementListTab.setTitle("Requirement List");
-		requirementListTab.setIndex(28);
+		requirementListTab.setIndex(34);
 		requirementListWindowContainer.setXdevWindow(new RequirementListView(self));
 		requirementTab.setTitle("Requirement");
-		requirementTab.setIndex(29);
+		requirementTab.setIndex(35);
 		requirementWindowContainer.setXdevWindow(new RequirementView(self));
 		recognitionListTab.setTitle("Recognition List");
-		recognitionListTab.setIndex(30);
+		recognitionListTab.setIndex(36);
 		recognitionListWindowContainer.setXdevWindow(new RecognitionListView(self));
 		recognitionTab.setTitle("Recognition");
-		recognitionTab.setIndex(31);
+		recognitionTab.setIndex(37);
 		recognitionWindowContainer.setXdevWindow(new RecognitionView(self));
 		certificateTemplateTab.setTitle("Certificate Template");
-		certificateTemplateTab.setIndex(32);
+		certificateTemplateTab.setIndex(38);
 		certificateTemplateWindowContainer.setXdevWindow(new CertificateTemplateView(self));
 		qualificationFrameworkListTab.setTitle("Qualification Framework List");
-		qualificationFrameworkListTab.setIndex(33);
+		qualificationFrameworkListTab.setIndex(39);
 		qualificationFrameworkListWindowContainer.setXdevWindow(new QualificationFrameworkListView(self));
 		qualificationFrameworkTab.setTitle("Qualification Framework");
-		qualificationFrameworkTab.setIndex(34);
+		qualificationFrameworkTab.setIndex(40);
 		referenceLevelWindowContainer.setXdevWindow(new QualificationFrameworkView(self));
 		attachmentTab.setTitle("Attachment");
-		attachmentTab.setIndex(35);
+		attachmentTab.setIndex(41);
 		attachmentWindowContainer.setXdevWindow(new AttachmentView(self));
 		
 		label.saveState();
@@ -342,6 +383,10 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		tab.add(picture,new GBC(1,2,1,1,0.1,0.0,GBC.CENTER,GBC.NONE,new Insets(3,3,3,3),0,0));
 		tab.add(label2,new GBC(1,3,1,1,0.0,0.0,GBC.CENTER,GBC.NONE,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(tab,true,true);
+		memorandumOfUnderstandingTab.setLayout(new GridBagLayout());
+		memorandumOfUnderstandingWindowContainer.setPreferredSize(new Dimension(200,200));
+		memorandumOfUnderstandingTab.add(memorandumOfUnderstandingWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		GBC.addSpacer(memorandumOfUnderstandingTab,true,true);
 		frameworkTab.setLayout(new GridBagLayout());
 		frameworkContainer.setPreferredSize(new Dimension(200,200));
 		frameworkTab.add(frameworkContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
@@ -362,6 +407,10 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		partnerWindowContainer.setPreferredSize(new Dimension(200,200));
 		partnerTab.add(partnerWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(partnerTab,true,true);
+		legislationListTab.setLayout(new GridBagLayout());
+		legislationListWindowContainer.setPreferredSize(new Dimension(200,200));
+		legislationListTab.add(legislationListWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		GBC.addSpacer(legislationListTab,true,true);
 		legislationTab.setLayout(new GridBagLayout());
 		legislationWindowContainer.setPreferredSize(new Dimension(200,200));
 		legislationTab.add(legislationWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
@@ -378,6 +427,14 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		learningAgreementWindowContainer.setPreferredSize(new Dimension(200,200));
 		learningAgreementTab.add(learningAgreementWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(learningAgreementTab,true,true);
+		procedureAndGuidelineListTab.setLayout(new GridBagLayout());
+		procedureAndGuidelineListWindowContainer.setPreferredSize(new Dimension(200,200));
+		procedureAndGuidelineListTab.add(procedureAndGuidelineListWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		GBC.addSpacer(procedureAndGuidelineListTab,true,true);
+		procedureAndGuidelineTab.setLayout(new GridBagLayout());
+		windowContainer.setPreferredSize(new Dimension(200,200));
+		procedureAndGuidelineTab.add(windowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		GBC.addSpacer(procedureAndGuidelineTab,true,true);
 		transcriptsOfRecordListTab.setLayout(new GridBagLayout());
 		transcriptsOfRecordListWindowContainer.setPreferredSize(new Dimension(200,200));
 		transcriptsOfRecordListTab.add(transcriptsOfRecordListWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
@@ -386,6 +443,14 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		transcriptsOfRecordWindowContainer.setPreferredSize(new Dimension(200,200));
 		transcriptsOfRecordTab.add(transcriptsOfRecordWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(transcriptsOfRecordTab,true,true);
+		creditTransferListTab.setLayout(new GridBagLayout());
+		creditTransferListWindowContainer.setPreferredSize(new Dimension(200,200));
+		creditTransferListTab.add(creditTransferListWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		GBC.addSpacer(creditTransferListTab,true,true);
+		creditTransferTab.setLayout(new GridBagLayout());
+		creditTransferWindowContainer.setPreferredSize(new Dimension(200,200));
+		creditTransferTab.add(creditTransferWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		GBC.addSpacer(creditTransferTab,true,true);
 		userGuideListTab.setLayout(new GridBagLayout());
 		userGuideListWindowContainer.setPreferredSize(new Dimension(200,200));
 		userGuideListTab.add(userGuideListWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
@@ -483,17 +548,23 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		attachmentTab.add(attachmentWindowContainer,new GBC(1,1,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(attachmentTab,true,true);
 		tabbedPane.addTab(tab);
+		tabbedPane.addTab(memorandumOfUnderstandingTab);
 		tabbedPane.addTab(frameworkTab);
 		tabbedPane.addTab(competentInstitutionListTab);
 		tabbedPane.addTab(competentInstitutionTab);
 		tabbedPane.addTab(partnerListTab);
 		tabbedPane.addTab(partnerTab);
+		tabbedPane.addTab(legislationListTab);
 		tabbedPane.addTab(legislationTab);
 		tabbedPane.addTab(complementaryDocumentsTab);
 		tabbedPane.addTab(learningAgreementListTab);
 		tabbedPane.addTab(learningAgreementTab);
+		tabbedPane.addTab(procedureAndGuidelineListTab);
+		tabbedPane.addTab(procedureAndGuidelineTab);
 		tabbedPane.addTab(transcriptsOfRecordListTab);
 		tabbedPane.addTab(transcriptsOfRecordTab);
+		tabbedPane.addTab(creditTransferListTab);
+		tabbedPane.addTab(creditTransferTab);
 		tabbedPane.addTab(userGuideListTab);
 		tabbedPane.addTab(userGuideTab);
 		tabbedPane.addTab(qualificationTab);

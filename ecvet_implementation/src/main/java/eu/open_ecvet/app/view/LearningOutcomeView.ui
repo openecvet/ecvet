@@ -433,10 +433,10 @@
                             "value": "label4"
                         },
                         "text": {
-                            "value": "CREDIT"
+                            "value": "ECVETPOINTS"
                         },
                         "width": {
-                            "value": 42
+                            "value": 80
                         },
                         "x": {
                             "value": 3
@@ -469,7 +469,7 @@
                             "value": "formattedTextField2"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Learningoutcome.CREDIT"
+                            "value": "eu.open_ecvet.app.model.Learningoutcome.ECVETPOINTS"
                         },
                         "height": {
                             "value": 20
@@ -545,10 +545,10 @@
                             "value": "label5"
                         },
                         "text": {
-                            "value": "URI"
+                            "value": "RELATIVEWEIGHT"
                         },
                         "width": {
-                            "value": 20
+                            "value": 96
                         },
                         "x": {
                             "value": 3
@@ -559,7 +559,7 @@
                     }
                 },
                 {
-                    "class": "xdev.ui.XdevTextField",
+                    "class": "xdev.ui.XdevFormattedTextField",
                     "properties": {
                         "-constraints": {
                             "value": {
@@ -578,10 +578,10 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "textField"
+                            "value": "formattedTextField"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Learningoutcome.URI"
+                            "value": "eu.open_ecvet.app.model.Learningoutcome.RELATIVEWEIGHT"
                         },
                         "height": {
                             "value": 20
@@ -589,11 +589,30 @@
                         "horizontalAlignment": {
                             "value": "LEFT"
                         },
-                        "maxSignCount": {
-                            "value": 2147483647
-                        },
                         "tabIndex": {
                             "value": 8
+                        },
+                        "textFormat": {
+                            "value": {
+                                "dateFormat": "MEDIUM",
+                                "dateSet": "DATE",
+                                "groupingUsed": false,
+                                "locale": "%",
+                                "maxFractionDigits": 0,
+                                "minFractionDigits": 0,
+                                "pattern": [
+                                    "",
+                                    "yyyy-MM-dd",
+                                    "#,##0.###;-#,##0.###",
+                                    "¤#,##0.00;-¤#,##0.00",
+                                    "#,##0%"
+                                ],
+                                "signedColor": "255,0,0",
+                                "suppressZero": false,
+                                "timeFormat": "MEDIUM",
+                                "type": "NUMBER",
+                                "useSignedColor": false
+                            }
                         },
                         "width": {
                             "value": 692
@@ -635,10 +654,10 @@
                             "value": "label6"
                         },
                         "text": {
-                            "value": "WEIGHT"
+                            "value": "URI"
                         },
                         "width": {
-                            "value": 45
+                            "value": 20
                         },
                         "x": {
                             "value": 3
@@ -649,7 +668,7 @@
                     }
                 },
                 {
-                    "class": "xdev.ui.XdevFormattedTextField",
+                    "class": "xdev.ui.XdevTextField",
                     "properties": {
                         "-constraints": {
                             "value": {
@@ -668,10 +687,10 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "formattedTextField"
+                            "value": "textField"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Learningoutcome.WEIGHT"
+                            "value": "eu.open_ecvet.app.model.Learningoutcome.URI"
                         },
                         "height": {
                             "value": 20
@@ -679,30 +698,11 @@
                         "horizontalAlignment": {
                             "value": "LEFT"
                         },
+                        "maxSignCount": {
+                            "value": 2147483647
+                        },
                         "tabIndex": {
                             "value": 9
-                        },
-                        "textFormat": {
-                            "value": {
-                                "dateFormat": "MEDIUM",
-                                "dateSet": "DATE",
-                                "groupingUsed": false,
-                                "locale": "%",
-                                "maxFractionDigits": 0,
-                                "minFractionDigits": 0,
-                                "pattern": [
-                                    "",
-                                    "yyyy-MM-dd",
-                                    "#,##0.###;-#,##0.###",
-                                    "¤#,##0.00;-¤#,##0.00",
-                                    "#,##0%"
-                                ],
-                                "signedColor": "255,0,0",
-                                "suppressZero": false,
-                                "timeFormat": "MEDIUM",
-                                "type": "NUMBER",
-                                "useSignedColor": false
-                            }
                         },
                         "width": {
                             "value": 692

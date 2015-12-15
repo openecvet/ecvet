@@ -178,7 +178,7 @@
             "properties": {
                 "-autofillColumns": {
                     "value": {
-                        "expression": "TITLE, URI, LEARNINGAGREEMENTLIST_TITLE, TRANSCRIPTSOFRECORDLIST_TITLE, USERGUIDELIST_TITLE"
+                        "expression": "TITLE, URI, CREDITTRANSFERLIST_TITLE, LEARNINGAGREEMENTLIST_TITLE, MEMORANDUMOFUNDERSTANDING_TITLE, PROCEDUREANDGUIDELINELIST_TITLE, TRANSCRIPTSOFRECORDLIST_TITLE, USERGUIDELIST_TITLE"
                     }
                 },
                 "-autofillWithData": {
@@ -310,7 +310,7 @@
                     "value": 726
                 },
                 "y": {
-                    "value": 427
+                    "value": 505
                 }
             }
         },
@@ -399,10 +399,10 @@
                             "value": 18
                         },
                         "width": {
-                            "value": 607
+                            "value": 546
                         },
                         "x": {
-                            "value": 190
+                            "value": 250
                         },
                         "y": {
                             "value": 3
@@ -415,7 +415,7 @@
                         "-constraints": {
                             "value": {
                                 "anchor": "BASELINE_LEADING",
-                                "fill": "NONE",
+                                "fill": "HORIZONTAL",
                                 "gridHeight": 1,
                                 "gridWidth": 1,
                                 "gridx": 1,
@@ -424,7 +424,7 @@
                                 "ipadx": 0,
                                 "ipady": 0,
                                 "type": "XDEV_TABLELAYOUT",
-                                "weightx": 0,
+                                "weightx": 0.1,
                                 "weighty": 0
                             }
                         },
@@ -441,7 +441,7 @@
                             "value": "DESCRIPTION"
                         },
                         "width": {
-                            "value": 77
+                            "value": 241
                         },
                         "x": {
                             "value": 3
@@ -486,10 +486,10 @@
                             "value": 19
                         },
                         "width": {
-                            "value": 607
+                            "value": 546
                         },
                         "x": {
-                            "value": 190
+                            "value": 250
                         },
                         "y": {
                             "value": 30
@@ -576,10 +576,10 @@
                             "value": 20
                         },
                         "width": {
-                            "value": 607
+                            "value": 546
                         },
                         "x": {
-                            "value": 190
+                            "value": 250
                         },
                         "y": {
                             "value": 98
@@ -615,10 +615,10 @@
                             "value": "label5"
                         },
                         "text": {
-                            "value": "LEARNINGAGREEMENTLIST_ID"
+                            "value": "CREDITTRANSFERLIST_ID"
                         },
                         "width": {
-                            "value": 166
+                            "value": 140
                         },
                         "x": {
                             "value": 3
@@ -661,13 +661,13 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "learningAgreementListComboBox"
+                            "value": "creditTransferListComboBox"
                         },
                         "-virtualTable": {
-                            "value": "eu.open_ecvet.app.model.Learningagreementlist"
+                            "value": "eu.open_ecvet.app.model.Credittransferlist"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Complementarydocuments.LEARNINGAGREEMENTLIST_ID"
+                            "value": "eu.open_ecvet.app.model.Complementarydocuments.CREDITTRANSFERLIST_ID"
                         },
                         "height": {
                             "value": 20
@@ -679,10 +679,10 @@
                             "value": 21
                         },
                         "width": {
-                            "value": 607
+                            "value": 546
                         },
                         "x": {
-                            "value": 190
+                            "value": 250
                         },
                         "y": {
                             "value": 124
@@ -718,10 +718,10 @@
                             "value": "label6"
                         },
                         "text": {
-                            "value": "TRANSCRIPTSOFRECORDLIST_ID"
+                            "value": "LEARNINGAGREEMENTLIST_ID"
                         },
                         "width": {
-                            "value": 181
+                            "value": 166
                         },
                         "x": {
                             "value": 3
@@ -764,13 +764,13 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "transcriptsOfRecordListComboBox"
+                            "value": "learningAgreementListComboBox"
                         },
                         "-virtualTable": {
-                            "value": "eu.open_ecvet.app.model.Transcriptsofrecordlist"
+                            "value": "eu.open_ecvet.app.model.Learningagreementlist"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Complementarydocuments.TRANSCRIPTSOFRECORDLIST_ID"
+                            "value": "eu.open_ecvet.app.model.Complementarydocuments.LEARNINGAGREEMENTLIST_ID"
                         },
                         "height": {
                             "value": 20
@@ -782,10 +782,10 @@
                             "value": 22
                         },
                         "width": {
-                            "value": 607
+                            "value": 546
                         },
                         "x": {
-                            "value": 190
+                            "value": 250
                         },
                         "y": {
                             "value": 150
@@ -812,16 +812,19 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "label"
+                            "value": "label7"
                         },
                         "height": {
                             "value": 16
                         },
+                        "name": {
+                            "value": "label7"
+                        },
                         "text": {
-                            "value": "USERGUIDELIST_ID"
+                            "value": "MEMORANDUMOFUNDERSTANDING_ID"
                         },
                         "width": {
-                            "value": 108
+                            "value": 211
                         },
                         "x": {
                             "value": 3
@@ -864,6 +867,312 @@
                             }
                         },
                         "-fieldName": {
+                            "value": "memorandumOfUnderstandingComboBox"
+                        },
+                        "-virtualTable": {
+                            "value": "eu.open_ecvet.app.model.Memorandumofunderstanding"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Complementarydocuments.MEMORANDUMOFUNDERSTANDING_ID"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "name": {
+                            "value": "comboBox4"
+                        },
+                        "tabIndex": {
+                            "value": 23
+                        },
+                        "width": {
+                            "value": 546
+                        },
+                        "x": {
+                            "value": 250
+                        },
+                        "y": {
+                            "value": 176
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 7,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label8"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "name": {
+                            "value": "label8"
+                        },
+                        "text": {
+                            "value": "PROCEDUREANDGUIDELINELIST_ID"
+                        },
+                        "width": {
+                            "value": 193
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 204
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevComboBox",
+                    "properties": {
+                        "-autofillColumns": {
+                            "value": {
+                                "expression": "TITLE"
+                            }
+                        },
+                        "-autofillDataColumn": {
+                            "value": {
+                                "expression": "ID"
+                            }
+                        },
+                        "-autofillWithData": {
+                            "value": true
+                        },
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 7,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "proceduresAndGuidelinesListComboBox"
+                        },
+                        "-virtualTable": {
+                            "value": "eu.open_ecvet.app.model.Procedureandguidelinelist"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Complementarydocuments.PROCEDUREANDGUIDELINELIST_ID"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "name": {
+                            "value": "comboBox5"
+                        },
+                        "tabIndex": {
+                            "value": 24
+                        },
+                        "width": {
+                            "value": 546
+                        },
+                        "x": {
+                            "value": 250
+                        },
+                        "y": {
+                            "value": 202
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 8,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label9"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "name": {
+                            "value": "label9"
+                        },
+                        "text": {
+                            "value": "TRANSCRIPTSOFRECORDLIST_ID"
+                        },
+                        "width": {
+                            "value": 181
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 230
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevComboBox",
+                    "properties": {
+                        "-autofillColumns": {
+                            "value": {
+                                "expression": "TITLE"
+                            }
+                        },
+                        "-autofillDataColumn": {
+                            "value": {
+                                "expression": "ID"
+                            }
+                        },
+                        "-autofillWithData": {
+                            "value": true
+                        },
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 8,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "transcriptsOfRecordListComboBox"
+                        },
+                        "-virtualTable": {
+                            "value": "eu.open_ecvet.app.model.Transcriptsofrecordlist"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Complementarydocuments.TRANSCRIPTSOFRECORDLIST_ID"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "name": {
+                            "value": "comboBox6"
+                        },
+                        "tabIndex": {
+                            "value": 25
+                        },
+                        "width": {
+                            "value": 546
+                        },
+                        "x": {
+                            "value": 250
+                        },
+                        "y": {
+                            "value": 228
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 9,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "text": {
+                            "value": "USERGUIDELIST_ID"
+                        },
+                        "width": {
+                            "value": 108
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 256
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevComboBox",
+                    "properties": {
+                        "-autofillColumns": {
+                            "value": {
+                                "expression": "TITLE"
+                            }
+                        },
+                        "-autofillDataColumn": {
+                            "value": {
+                                "expression": "ID"
+                            }
+                        },
+                        "-autofillWithData": {
+                            "value": true
+                        },
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 9,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
                             "value": "userGuideListComboBox"
                         },
                         "-virtualTable": {
@@ -876,16 +1185,16 @@
                             "value": 20
                         },
                         "tabIndex": {
-                            "value": 23
+                            "value": 26
                         },
                         "width": {
-                            "value": 607
+                            "value": 546
                         },
                         "x": {
-                            "value": 190
+                            "value": 250
                         },
                         "y": {
-                            "value": 176
+                            "value": 254
                         }
                     }
                 },
@@ -908,7 +1217,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 24
+                                    "value": 27
                                 },
                                 "text": {
                                     "value": "New"
@@ -917,7 +1226,7 @@
                                     "value": 52
                                 },
                                 "x": {
-                                    "value": 446
+                                    "value": 445
                                 },
                                 "y": {
                                     "value": 3
@@ -941,7 +1250,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 25
+                                    "value": 28
                                 },
                                 "text": {
                                     "value": "Reset"
@@ -950,7 +1259,7 @@
                                     "value": 60
                                 },
                                 "x": {
-                                    "value": 501
+                                    "value": 500
                                 },
                                 "y": {
                                     "value": 3
@@ -974,7 +1283,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 26
+                                    "value": 29
                                 },
                                 "text": {
                                     "value": "Save"
@@ -983,7 +1292,7 @@
                                     "value": 56
                                 },
                                 "x": {
-                                    "value": 564
+                                    "value": 563
                                 },
                                 "y": {
                                     "value": 3
@@ -1007,7 +1316,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 27
+                                    "value": 30
                                 },
                                 "text": {
                                     "value": "Save + New"
@@ -1016,7 +1325,7 @@
                                     "value": 97
                                 },
                                 "x": {
-                                    "value": 623
+                                    "value": 622
                                 },
                                 "y": {
                                     "value": 3
@@ -1040,7 +1349,7 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 28
+                                    "value": 31
                                 },
                                 "text": {
                                     "value": "Search"
@@ -1049,7 +1358,7 @@
                                     "value": 68
                                 },
                                 "x": {
-                                    "value": 723
+                                    "value": 722
                                 },
                                 "y": {
                                     "value": 3
@@ -1066,7 +1375,7 @@
                                 "gridHeight": 1,
                                 "gridWidth": 2,
                                 "gridx": 1,
-                                "gridy": 7,
+                                "gridy": 10,
                                 "insets": "3,3,3,3",
                                 "ipadx": 0,
                                 "ipady": 0,
@@ -1091,13 +1400,13 @@
                             }
                         },
                         "width": {
-                            "value": 794
+                            "value": 793
                         },
                         "x": {
                             "value": 3
                         },
                         "y": {
-                            "value": 202
+                            "value": 280
                         }
                     }
                 }
@@ -1124,7 +1433,7 @@
                     "value": "formular"
                 },
                 "height": {
-                    "value": 233
+                    "value": 311
                 },
                 "layout": {
                     "value": {
