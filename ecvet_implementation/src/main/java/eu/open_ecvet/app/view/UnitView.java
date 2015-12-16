@@ -25,6 +25,7 @@ import eu.open_ecvet.app.helper.UpdateView;
 import eu.open_ecvet.app.helper.UpdateViewHelper;
 import eu.open_ecvet.app.model.Evaluations;
 import eu.open_ecvet.app.model.Learningoutcomelist;
+import eu.open_ecvet.app.model.Learningoutcomelistlist;
 import eu.open_ecvet.app.model.Qualificationframeworklist;
 import eu.open_ecvet.app.model.Unit;
 import eu.open_ecvet.app.model.Unitlist;
@@ -49,7 +50,7 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 										public void update()
 										{
 											evaluationsComboBox.setModel(Evaluations.VT,"TITLE","ID",true);
-											learningOutcomeListComboBox.setModel(Learningoutcomelist.VT,"TITLE","ID",true);
+											learningOutcomeListListComboBox.setModel(Learningoutcomelist.VT,"TITLE","ID",true);
 											qualificationFrameworkListComboBox.setModel(Qualificationframeworklist.VT,"TITLE","ID",true);
 											unitListComboBox.setModel(Unitlist.VT,"TITLE","ID",true);
 											
@@ -168,7 +169,7 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 	XdevFormular			formular;
 	XdevTable				table;
 	XdevTextArea			textArea;
-	XdevComboBox			evaluationsComboBox, learningOutcomeListComboBox,
+	XdevComboBox			evaluationsComboBox, learningOutcomeListListComboBox,
 			qualificationFrameworkListComboBox, unitListComboBox;
 	XdevLabel				label2, label3, label4, label5, label6, label7, label8, label9, label;
 	// End generated definitions ${GENERATED-CODE-BLOCK-END:DEFINITIONS}
@@ -194,7 +195,7 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		label7 = new XdevLabel();
 		evaluationsComboBox = new XdevComboBox();
 		label8 = new XdevLabel();
-		learningOutcomeListComboBox = new XdevComboBox();
+		learningOutcomeListListComboBox = new XdevComboBox();
 		label9 = new XdevLabel();
 		qualificationFrameworkListComboBox = new XdevComboBox();
 		label = new XdevLabel();
@@ -227,7 +228,7 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		unitListShortcut.setName("xShortcut4");
 		table.setTabIndex(38);
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		table.setModel(Unit.VT,"TITLE, URI, EVALUATIONS_TITLE, LEARNINGOUTCOMELIST_TITLE, QUALIFICATIONFRAMEWORKLIST_TITLE, UNITLIST_TITLE",true);
+		table.setModel(Unit.VT,"TITLE, URI, EVALUATIONS_TITLE, LEARNINGOUTCOMELISTLIST_TITLE, QUALIFICATIONFRAMEWORKLIST_TITLE, UNITLIST_TITLE",false);
 		label2.setText("TITLE");
 		label2.setName("label2");
 		textField2.setDataField("eu.open_ecvet.app.model.Unit.TITLE");
@@ -265,12 +266,12 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		evaluationsComboBox.setTabIndex(44);
 		evaluationsComboBox.setName("comboBox2");
 		evaluationsComboBox.setModel(Evaluations.VT,"TITLE","ID",true);
-		label8.setText("LEARNINGOUTCOMELIST_ID");
+		label8.setText("LEARNINGOUTCOMELISTLIST_ID");
 		label8.setName("label8");
-		learningOutcomeListComboBox.setDataField("eu.open_ecvet.app.model.Unit.LEARNINGOUTCOMELIST_ID");
-		learningOutcomeListComboBox.setTabIndex(45);
-		learningOutcomeListComboBox.setName("comboBox3");
-		learningOutcomeListComboBox.setModel(Learningoutcomelist.VT,"TITLE","ID",true);
+		learningOutcomeListListComboBox.setDataField("eu.open_ecvet.app.model.Unit.LEARNINGOUTCOMELISTLIST_ID");
+		learningOutcomeListListComboBox.setTabIndex(45);
+		learningOutcomeListListComboBox.setName("comboBox3");
+		learningOutcomeListListComboBox.setModel(Learningoutcomelistlist.VT,"TITLE","ID",true);
 		label9.setText("QUALIFICATIONFRAMEWORKLIST_ID");
 		label9.setName("label9");
 		qualificationFrameworkListComboBox.setDataField("eu.open_ecvet.app.model.Unit.QUALIFICATIONFRAMEWORKLIST_ID");
@@ -309,7 +310,7 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		label7.saveState();
 		evaluationsComboBox.saveState();
 		label8.saveState();
-		learningOutcomeListComboBox.saveState();
+		learningOutcomeListListComboBox.saveState();
 		label9.saveState();
 		qualificationFrameworkListComboBox.saveState();
 		label.saveState();
@@ -342,7 +343,7 @@ public class UnitView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		formular.add(label7,new GBC(1,6,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(evaluationsComboBox,new GBC(2,6,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label8,new GBC(1,7,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(learningOutcomeListComboBox,new GBC(2,7,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(learningOutcomeListListComboBox,new GBC(2,7,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label9,new GBC(1,8,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
 		formular.add(qualificationFrameworkListComboBox,new GBC(2,8,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label,new GBC(1,9,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));

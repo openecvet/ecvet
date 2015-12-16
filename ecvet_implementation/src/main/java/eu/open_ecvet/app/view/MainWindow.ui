@@ -416,7 +416,7 @@
                             "value": "learningOutcomeListTab"
                         },
                         "index": {
-                            "value": 23
+                            "value": 24
                         },
                         "layout": {
                             "value": {
@@ -487,7 +487,7 @@
                             "value": "qualificationFrameworkListTab"
                         },
                         "index": {
-                            "value": 39
+                            "value": 40
                         },
                         "layout": {
                             "value": {
@@ -558,7 +558,7 @@
                             "value": "learningOutcomeTab"
                         },
                         "index": {
-                            "value": 24
+                            "value": 25
                         },
                         "layout": {
                             "value": {
@@ -629,7 +629,7 @@
                             "value": "qualificationFrameworkTab"
                         },
                         "index": {
-                            "value": 40
+                            "value": 41
                         },
                         "layout": {
                             "value": {
@@ -700,7 +700,7 @@
                             "value": "evaluationsTab"
                         },
                         "index": {
-                            "value": 25
+                            "value": 26
                         },
                         "layout": {
                             "value": {
@@ -771,7 +771,7 @@
                             "value": "assessmentListTab"
                         },
                         "index": {
-                            "value": 26
+                            "value": 27
                         },
                         "layout": {
                             "value": {
@@ -842,7 +842,7 @@
                             "value": "validationListTab"
                         },
                         "index": {
-                            "value": 32
+                            "value": 33
                         },
                         "layout": {
                             "value": {
@@ -913,7 +913,7 @@
                             "value": "recognitionListTab"
                         },
                         "index": {
-                            "value": 36
+                            "value": 37
                         },
                         "layout": {
                             "value": {
@@ -984,7 +984,7 @@
                             "value": "assessmentTab"
                         },
                         "index": {
-                            "value": 27
+                            "value": 28
                         },
                         "layout": {
                             "value": {
@@ -1055,7 +1055,7 @@
                             "value": "methodListTab"
                         },
                         "index": {
-                            "value": 28
+                            "value": 29
                         },
                         "layout": {
                             "value": {
@@ -1126,7 +1126,7 @@
                             "value": "methodTab"
                         },
                         "index": {
-                            "value": 29
+                            "value": 30
                         },
                         "layout": {
                             "value": {
@@ -1197,7 +1197,7 @@
                             "value": "processListTab"
                         },
                         "index": {
-                            "value": 30
+                            "value": 31
                         },
                         "layout": {
                             "value": {
@@ -1268,7 +1268,7 @@
                             "value": "processTab"
                         },
                         "index": {
-                            "value": 31
+                            "value": 32
                         },
                         "layout": {
                             "value": {
@@ -1339,7 +1339,7 @@
                             "value": "validationTab"
                         },
                         "index": {
-                            "value": 33
+                            "value": 34
                         },
                         "layout": {
                             "value": {
@@ -1410,7 +1410,7 @@
                             "value": "requirementListTab"
                         },
                         "index": {
-                            "value": 34
+                            "value": 35
                         },
                         "layout": {
                             "value": {
@@ -1481,7 +1481,7 @@
                             "value": "requirementTab"
                         },
                         "index": {
-                            "value": 35
+                            "value": 36
                         },
                         "layout": {
                             "value": {
@@ -1552,7 +1552,7 @@
                             "value": "recognitionTab"
                         },
                         "index": {
-                            "value": 37
+                            "value": 38
                         },
                         "layout": {
                             "value": {
@@ -1623,7 +1623,7 @@
                             "value": "certificateTemplateTab"
                         },
                         "index": {
-                            "value": 38
+                            "value": 39
                         },
                         "layout": {
                             "value": {
@@ -2262,7 +2262,7 @@
                             "value": "attachmentTab"
                         },
                         "index": {
-                            "value": 41
+                            "value": 42
                         },
                         "layout": {
                             "value": {
@@ -3137,6 +3137,71 @@
                         },
                         "title": {
                             "value": "Memorandum of Understanding"
+                        }
+                    }
+                },
+                {
+                    "children": [{
+                        "class": "xdev.ui.XdevWindowContainer",
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "anchor": "WEST",
+                                    "fill": "BOTH",
+                                    "gridHeight": 1,
+                                    "gridWidth": 1,
+                                    "gridx": 1,
+                                    "gridy": 1,
+                                    "insets": "3,3,3,3",
+                                    "ipadx": 0,
+                                    "ipady": 0,
+                                    "type": "XDEV_TABLELAYOUT",
+                                    "weightx": 1,
+                                    "weighty": 1
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "learningOutcomeListListWindowContainer2"
+                            },
+                            "height": {
+                                "value": 558
+                            },
+                            "preferredSize": {
+                                "value": {
+                                    "height": 200,
+                                    "width": 200
+                                }
+                            },
+                            "width": {
+                                "value": 576
+                            },
+                            "x": {
+                                "value": 3
+                            },
+                            "xdevWindow": {
+                                "code": "new LearningOutcomeListListView(self)"
+                            },
+                            "y": {
+                                "value": 3
+                            }
+                        }
+                    }],
+                    "class": "xdev.ui.XdevTab",
+                    "properties": {
+                        "-fieldName": {
+                            "value": "learningOutcomeListListTab"
+                        },
+                        "index": {
+                            "value": 23
+                        },
+                        "layout": {
+                            "value": {
+                                "autoFill": "AUTO_FILL_BOTH",
+                                "type": "XDEV_TABLELAYOUT"
+                            }
+                        },
+                        "title": {
+                            "value": "Learning Outcome List List"
                         }
                     }
                 }

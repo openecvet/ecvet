@@ -30,8 +30,8 @@ public class Unit extends VirtualTable implements StaticInstanceSupport // ${GE
 	public final static VirtualTableColumn<String>	URI;
 	public final static VirtualTableColumn<Integer>	EVALUATIONS_ID;
 	public final static VirtualTableColumn<String>	EVALUATIONS_TITLE;
-	public final static VirtualTableColumn<Integer>	LEARNINGOUTCOMELIST_ID;
-	public final static VirtualTableColumn<String>	LEARNINGOUTCOMELIST_TITLE;
+	public final static VirtualTableColumn<Integer>	LEARNINGOUTCOMELISTLIST_ID;
+	public final static VirtualTableColumn<String>	LEARNINGOUTCOMELISTLIST_TITLE;
 	public final static VirtualTableColumn<Integer>	QUALIFICATIONFRAMEWORKLIST_ID;
 	public final static VirtualTableColumn<String>	QUALIFICATIONFRAMEWORKLIST_TITLE;
 	public final static VirtualTableColumn<Integer>	UNITLIST_ID;
@@ -96,20 +96,21 @@ public class Unit extends VirtualTable implements StaticInstanceSupport // ${GE
 		EVALUATIONS_TITLE.setPreferredWidth(100);
 		EVALUATIONS_TITLE.setTextFormat(TextFormat.getPlainInstance());
 		
-		LEARNINGOUTCOMELIST_ID = new VirtualTableColumn<Integer>("LEARNINGOUTCOMELIST_ID");
-		LEARNINGOUTCOMELIST_ID.setType(DataType.INTEGER);
-		LEARNINGOUTCOMELIST_ID.setDefaultValue(null);
-		LEARNINGOUTCOMELIST_ID.setVisible(false);
-		LEARNINGOUTCOMELIST_ID.setPreferredWidth(100);
-		LEARNINGOUTCOMELIST_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,
-				0,0,false,false));
+		LEARNINGOUTCOMELISTLIST_ID = new VirtualTableColumn<Integer>("LEARNINGOUTCOMELISTLIST_ID");
+		LEARNINGOUTCOMELISTLIST_ID.setType(DataType.INTEGER);
+		LEARNINGOUTCOMELISTLIST_ID.setDefaultValue(null);
+		LEARNINGOUTCOMELISTLIST_ID.setVisible(false);
+		LEARNINGOUTCOMELISTLIST_ID.setPreferredWidth(100);
+		LEARNINGOUTCOMELISTLIST_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),
+				null,0,0,false,false));
 		
-		LEARNINGOUTCOMELIST_TITLE = new VirtualTableColumn<String>("LEARNINGOUTCOMELIST_TITLE");
-		LEARNINGOUTCOMELIST_TITLE.setType(DataType.VARCHAR,2147483647);
-		LEARNINGOUTCOMELIST_TITLE.setDefaultValue(null);
-		LEARNINGOUTCOMELIST_TITLE.setCaption("TITLE");
-		LEARNINGOUTCOMELIST_TITLE.setPreferredWidth(100);
-		LEARNINGOUTCOMELIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
+		LEARNINGOUTCOMELISTLIST_TITLE = new VirtualTableColumn<String>(
+				"LEARNINGOUTCOMELISTLIST_TITLE");
+		LEARNINGOUTCOMELISTLIST_TITLE.setType(DataType.VARCHAR,2147483647);
+		LEARNINGOUTCOMELISTLIST_TITLE.setDefaultValue(null);
+		LEARNINGOUTCOMELISTLIST_TITLE.setCaption("TITLE");
+		LEARNINGOUTCOMELISTLIST_TITLE.setPreferredWidth(100);
+		LEARNINGOUTCOMELISTLIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
 		
 		QUALIFICATIONFRAMEWORKLIST_ID = new VirtualTableColumn<Integer>(
 				"QUALIFICATIONFRAMEWORKLIST_ID");
@@ -150,12 +151,13 @@ public class Unit extends VirtualTable implements StaticInstanceSupport // ${GE
 						Unit.class.getName(),new String[]{Unit.EVALUATIONS_ID.getName()},
 						Cardinality.MANY)));
 		
-		LEARNINGOUTCOMELIST_TITLE.setPersistent(false);
-		LEARNINGOUTCOMELIST_TITLE.setTableColumnLink(new TableColumnLink(Learningoutcomelist.class
-				.getName(),Learningoutcomelist.TITLE.getName(),new EntityRelationship(
-				Learningoutcomelist.class.getName(),new String[]{Learningoutcomelist.ID.getName()},
-				Cardinality.ONE,Unit.class.getName(),new String[]{Unit.LEARNINGOUTCOMELIST_ID
-						.getName()},Cardinality.MANY)));
+		LEARNINGOUTCOMELISTLIST_TITLE.setPersistent(false);
+		LEARNINGOUTCOMELISTLIST_TITLE.setTableColumnLink(new TableColumnLink(
+				Learningoutcomelistlist.class.getName(),Learningoutcomelistlist.TITLE.getName(),
+				new EntityRelationship(Learningoutcomelistlist.class.getName(),
+						new String[]{Learningoutcomelistlist.ID.getName()},Cardinality.ONE,
+						Unit.class.getName(),
+						new String[]{Unit.LEARNINGOUTCOMELISTLIST_ID.getName()},Cardinality.MANY)));
 		
 		QUALIFICATIONFRAMEWORKLIST_TITLE.setPersistent(false);
 		QUALIFICATIONFRAMEWORKLIST_TITLE.setTableColumnLink(new TableColumnLink(
@@ -177,20 +179,20 @@ public class Unit extends VirtualTable implements StaticInstanceSupport // ${GE
 	public Unit()
 	{
 		super(Unit.class.getName(),"PUBLIC","UNIT",ID,DESCRIPTION,ECVETPOINTS,RELATIVEWEIGHT,TITLE,
-				URI,EVALUATIONS_ID,EVALUATIONS_TITLE,LEARNINGOUTCOMELIST_ID,
-				LEARNINGOUTCOMELIST_TITLE,QUALIFICATIONFRAMEWORKLIST_ID,
+				URI,EVALUATIONS_ID,EVALUATIONS_TITLE,LEARNINGOUTCOMELISTLIST_ID,
+				LEARNINGOUTCOMELISTLIST_TITLE,QUALIFICATIONFRAMEWORKLIST_ID,
 				QUALIFICATIONFRAMEWORKLIST_TITLE,UNITLIST_ID,UNITLIST_TITLE);
 		
 		setDataSource(EcvetH2.DB);
-		setPrimaryColumn(TITLE);
+		setPrimaryColumn(ID);
 		
+		addIndex(new Index("FK_UNIT_LEARNINGOUTCOMELISTLIST_ID_INDEX_2",IndexType.NORMAL,
+				"LEARNINGOUTCOMELISTLIST_ID"));
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"ID"));
 		addIndex(new Index("FK_UNIT_QUALIFICATIONFRAMEWORKLIST_ID_INDEX_2",IndexType.NORMAL,
 				"QUALIFICATIONFRAMEWORKLIST_ID"));
 		addIndex(new Index("FK_UNIT_EVALUATIONS_ID_INDEX_2",IndexType.NORMAL,"EVALUATIONS_ID"));
 		addIndex(new Index("FK_UNIT_UNITLIST_ID_INDEX_2",IndexType.NORMAL,"UNITLIST_ID"));
-		addIndex(new Index("FK_UNIT_LEARNINGOUTCOMELIST_ID_INDEX_2",IndexType.NORMAL,
-				"LEARNINGOUTCOMELIST_ID"));
 	}
 	
 	public final static Unit	VT	= new Unit();

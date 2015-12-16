@@ -351,7 +351,7 @@
             "length": 10,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "LEARNINGOUTCOMELIST_ID",
+            "name": "LEARNINGOUTCOMELISTLIST_ID",
             "nullable": true,
             "persistent": true,
             "preferredWidth": 100,
@@ -389,23 +389,23 @@
             "length": 2147483647,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "LEARNINGOUTCOMELIST_TITLE",
+            "name": "LEARNINGOUTCOMELISTLIST_TITLE",
             "nullable": true,
             "persistent": false,
             "preferredWidth": 100,
             "scale": 0,
             "tableColumnLink": {
                 "linkedColumn": "TITLE",
-                "linkedTable": "eu.open_ecvet.app.model.Learningoutcomelist",
+                "linkedTable": "eu.open_ecvet.app.model.Learningoutcomelistlist",
                 "path": [{
                     "first": {
                         "cardinality": "ONE",
                         "columns": ["ID"],
-                        "table": "eu.open_ecvet.app.model.Learningoutcomelist"
+                        "table": "eu.open_ecvet.app.model.Learningoutcomelistlist"
                     },
                     "second": {
                         "cardinality": "MANY",
-                        "columns": ["LEARNINGOUTCOMELIST_ID"],
+                        "columns": ["LEARNINGOUTCOMELISTLIST_ID"],
                         "table": "eu.open_ecvet.app.model.Unit"
                     }
                 }]
@@ -603,6 +603,11 @@
     "dataSourceTable": "UNIT",
     "indices": [
         {
+            "columns": ["LEARNINGOUTCOMELISTLIST_ID"],
+            "name": "FK_UNIT_LEARNINGOUTCOMELISTLIST_ID_INDEX_2",
+            "type": "NORMAL"
+        },
+        {
             "columns": ["ID"],
             "name": "PRIMARY_KEY",
             "type": "PRIMARY_KEY"
@@ -621,12 +626,7 @@
             "columns": ["UNITLIST_ID"],
             "name": "FK_UNIT_UNITLIST_ID_INDEX_2",
             "type": "NORMAL"
-        },
-        {
-            "columns": ["LEARNINGOUTCOMELIST_ID"],
-            "name": "FK_UNIT_LEARNINGOUTCOMELIST_ID_INDEX_2",
-            "type": "NORMAL"
         }
     ],
-    "primaryColumn": "TITLE"
+    "primaryColumn": "ID"
 }

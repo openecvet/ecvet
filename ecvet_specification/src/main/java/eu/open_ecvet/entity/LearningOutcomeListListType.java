@@ -24,16 +24,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für methodListType complex type.
+ * <p>Java-Klasse für learningOutcomeListListType complex type.
  * 
  * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
  * 
  * <pre>
- * &lt;complexType name="methodListType"&gt;
+ * &lt;complexType name="learningOutcomeListListType"&gt;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="method" type="{}methodType" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="learningOutcomeList" type="{}learningOutcomeListType" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -43,16 +43,16 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "methodListType", propOrder = {
-    "method"
+@XmlType(name = "learningOutcomeListListType", propOrder = {
+    "learningOutcomeList"
 })
 @Entity
 @Table(indexes = {
 
 }, uniqueConstraints = {
 
-}, name = "methodlist")
-public class MethodListType
+}, name = "learningoutcomelistlist")
+public class LearningOutcomeListListType
     extends EcvetElement
     implements Serializable
 {
@@ -64,43 +64,43 @@ public class MethodListType
         CascadeType.DETACH
     })
     @JoinTable(joinColumns = {
-        @JoinColumn(name = "methodlist_id")
+        @JoinColumn(name = "learningoutcomelistlist_id")
     }, inverseJoinColumns = {
-        @JoinColumn(name = "method_id")
+        @JoinColumn(name = "learningoutcomelist_id")
     }, indexes = {
 
     }, uniqueConstraints = {
 
     })
-    protected List<MethodType> method;
+    protected List<LearningOutcomeListType> learningOutcomeList;
 
     /**
-     * Gets the value of the method property.
+     * Gets the value of the learningOutcomeList property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the method property.
+     * This is why there is not a <CODE>set</CODE> method for the learningOutcomeList property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getMethod().add(newItem);
+     *    getLearningOutcomeList().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link MethodType }
+     * {@link LearningOutcomeListType }
      * 
      * 
      */
-    public List<MethodType> getMethod() {
-        if (method == null) {
-            method = new ArrayList<MethodType>();
+    public List<LearningOutcomeListType> getLearningOutcomeList() {
+        if (learningOutcomeList == null) {
+            learningOutcomeList = new ArrayList<LearningOutcomeListType>();
         }
-        return this.method;
+        return this.learningOutcomeList;
     }
 
 }

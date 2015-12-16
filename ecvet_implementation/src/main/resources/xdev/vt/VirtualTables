@@ -23,6 +23,8 @@
     <vt class="eu.open_ecvet.app.model.Learningoutcome" />
     <vt class="eu.open_ecvet.app.model.Learningoutcomelist" />
     <vt class="eu.open_ecvet.app.model.LearningoutcomelistLearningoutcome" />
+    <vt class="eu.open_ecvet.app.model.Learningoutcomelistlist" />
+    <vt class="eu.open_ecvet.app.model.LearningoutcomelistlistLearningoutcomelist" />
     <vt class="eu.open_ecvet.app.model.Legislation" />
     <vt class="eu.open_ecvet.app.model.Legislationlist" />
     <vt class="eu.open_ecvet.app.model.LegislationlistLegislation" />

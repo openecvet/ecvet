@@ -221,11 +221,8 @@
             "properties": {
                 "-autofillColumns": {
                     "value": {
-                        "expression": "TITLE, URI, EVALUATIONS_TITLE, LEARNINGOUTCOMELIST_TITLE, QUALIFICATIONFRAMEWORKLIST_TITLE, UNITLIST_TITLE"
+                        "expression": "TITLE, URI, EVALUATIONS_TITLE, LEARNINGOUTCOMELISTLIST_TITLE, QUALIFICATIONFRAMEWORKLIST_TITLE, UNITLIST_TITLE"
                     }
-                },
-                "-autofillWithData": {
-                    "value": true
                 },
                 "-connectedFormular": {
                     "value": "formular"
@@ -982,10 +979,10 @@
                             "value": "label8"
                         },
                         "text": {
-                            "value": "LEARNINGOUTCOMELIST_ID"
+                            "value": "LEARNINGOUTCOMELISTLIST_ID"
                         },
                         "width": {
-                            "value": 155
+                            "value": 179
                         },
                         "x": {
                             "value": 3
@@ -1028,13 +1025,13 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "learningOutcomeListComboBox"
+                            "value": "learningOutcomeListListComboBox"
                         },
                         "-virtualTable": {
-                            "value": "eu.open_ecvet.app.model.Learningoutcomelist"
+                            "value": "eu.open_ecvet.app.model.Learningoutcomelistlist"
                         },
                         "dataField": {
-                            "value": "eu.open_ecvet.app.model.Unit.LEARNINGOUTCOMELIST_ID"
+                            "value": "eu.open_ecvet.app.model.Unit.LEARNINGOUTCOMELISTLIST_ID"
                         },
                         "height": {
                             "value": 20

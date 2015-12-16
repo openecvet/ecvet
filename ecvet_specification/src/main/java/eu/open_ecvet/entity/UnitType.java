@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.15 um 05:07:17 PM CET 
+// Generiert: 2015.12.16 um 01:14:59 PM CET 
 //
 
 
@@ -41,7 +41,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element name="ecvetPoints" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="relativeWeight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="learningOutcomeList" type="{}learningOutcomeListType"/&gt;
+ *         &lt;element name="learningOutcomeListList" type="{}learningOutcomeListListType"/&gt;
  *         &lt;element name="qualificationFrameworkList" type="{}qualificationFrameworkListType"/&gt;
  *         &lt;element name="evaluations" type="{}evaluationsType"/&gt;
  *         &lt;element name="unitList" type="{}unitListType" minOccurs="0"/&gt;
@@ -57,7 +57,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "unitType", propOrder = {
     "ecvetPoints",
     "relativeWeight",
-    "learningOutcomeList",
+    "learningOutcomeListList",
     "qualificationFrameworkList",
     "evaluations",
     "unitList"
@@ -76,10 +76,10 @@ public class UnitType
     protected int ecvetPoints;
     protected int relativeWeight;
     @XmlElement(required = true)
-    @OneToOne(targetEntity = LearningOutcomeListType.class, cascade = {
+    @OneToOne(targetEntity = LearningOutcomeListListType.class, cascade = {
         CascadeType.ALL
     })
-    protected LearningOutcomeListType learningOutcomeList;
+    protected LearningOutcomeListListType learningOutcomeListList;
     @XmlElement(required = true)
     @OneToOne(targetEntity = QualificationFrameworkListType.class, cascade = {
         CascadeType.ALL
@@ -128,27 +128,27 @@ public class UnitType
     }
 
     /**
-     * Ruft den Wert der learningOutcomeList-Eigenschaft ab.
+     * Ruft den Wert der learningOutcomeListList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link LearningOutcomeListType }
+     *     {@link LearningOutcomeListListType }
      *     
      */
-    public LearningOutcomeListType getLearningOutcomeList() {
-        return learningOutcomeList;
+    public LearningOutcomeListListType getLearningOutcomeListList() {
+        return learningOutcomeListList;
     }
 
     /**
-     * Legt den Wert der learningOutcomeList-Eigenschaft fest.
+     * Legt den Wert der learningOutcomeListList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link LearningOutcomeListType }
+     *     {@link LearningOutcomeListListType }
      *     
      */
-    public void setLearningOutcomeList(LearningOutcomeListType value) {
-        this.learningOutcomeList = value;
+    public void setLearningOutcomeListList(LearningOutcomeListListType value) {
+        this.learningOutcomeListList = value;
     }
 
     /**

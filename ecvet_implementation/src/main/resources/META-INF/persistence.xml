@@ -20,6 +20,7 @@
 		<class>eu.open_ecvet.entity.FileDataType</class>
 		<class>eu.open_ecvet.entity.LearningAgreementListType</class>
 		<class>eu.open_ecvet.entity.LearningAgreementType</class>
+		<class>eu.open_ecvet.entity.LearningOutcomeListListType</class>
 		<class>eu.open_ecvet.entity.LearningOutcomeListType</class>
 		<class>eu.open_ecvet.entity.LearningOutcomeType</class>
 		<class>eu.open_ecvet.entity.LegislationListType</class>

@@ -110,6 +110,11 @@ public class EcvetH2_relations extends EntityRelationshipModel implements Static
 				MemorandumofunderstandingAttachment.class.getName(),
 				new String[]{MemorandumofunderstandingAttachment.ATTACHMENT_ID.getName()},
 				Cardinality.MANY);
+		add(Learningoutcomelistlist.class.getName(),
+				new String[]{Learningoutcomelistlist.ID.getName()},Cardinality.ONE,
+				LearningoutcomelistlistLearningoutcomelist.class.getName(),
+				new String[]{LearningoutcomelistlistLearningoutcomelist.LEARNINGOUTCOMELISTLIST_ID
+						.getName()},Cardinality.MANY);
 		add(Competentinstitutionlist.class.getName(),
 				new String[]{Competentinstitutionlist.ID.getName()},Cardinality.ONE,
 				Ecvetframework.class.getName(),
@@ -164,6 +169,10 @@ public class EcvetH2_relations extends EntityRelationshipModel implements Static
 		add(Process.class.getName(),new String[]{Process.ID.getName()},Cardinality.ONE,
 				ProcesslistProcess.class.getName(),
 				new String[]{ProcesslistProcess.PROCESS_ID.getName()},Cardinality.MANY);
+		add(Learningoutcomelistlist.class.getName(),
+				new String[]{Learningoutcomelistlist.ID.getName()},Cardinality.ONE,
+				Unit.class.getName(),new String[]{Unit.LEARNINGOUTCOMELISTLIST_ID.getName()},
+				Cardinality.MANY);
 		add(Assessmentlist.class.getName(),new String[]{Assessmentlist.ID.getName()},
 				Cardinality.ONE,AssessmentlistAssessment.class.getName(),
 				new String[]{AssessmentlistAssessment.ASSESSMENTLIST_ID.getName()},Cardinality.MANY);
@@ -175,9 +184,6 @@ public class EcvetH2_relations extends EntityRelationshipModel implements Static
 				Cardinality.ONE,Complementarydocuments.class.getName(),
 				new String[]{Complementarydocuments.LEARNINGAGREEMENTLIST_ID.getName()},
 				Cardinality.MANY);
-		add(Learningoutcomelist.class.getName(),new String[]{Learningoutcomelist.ID.getName()},
-				Cardinality.ONE,Unit.class.getName(),
-				new String[]{Unit.LEARNINGOUTCOMELIST_ID.getName()},Cardinality.MANY);
 		add(Procedureandguideline.class.getName(),
 				new String[]{Procedureandguideline.ID.getName()},
 				Cardinality.ONE,
@@ -253,6 +259,10 @@ public class EcvetH2_relations extends EntityRelationshipModel implements Static
 				new String[]{Complementarydocuments.ID.getName()},Cardinality.ONE,
 				Ecvetframework.class.getName(),
 				new String[]{Ecvetframework.COMPLEMENTARYDOCUMENTS_ID.getName()},Cardinality.MANY);
+		add(Learningoutcomelist.class.getName(),new String[]{Learningoutcomelist.ID.getName()},
+				Cardinality.ONE,LearningoutcomelistlistLearningoutcomelist.class.getName(),
+				new String[]{LearningoutcomelistlistLearningoutcomelist.LEARNINGOUTCOMELIST_ID
+						.getName()},Cardinality.MANY);
 		add(Evaluations.class.getName(),new String[]{Evaluations.ID.getName()},Cardinality.ONE,
 				Learningoutcome.class.getName(),
 				new String[]{Learningoutcome.EVALUATIONS_ID.getName()},Cardinality.MANY);

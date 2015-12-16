@@ -21,7 +21,7 @@
 				<annox:annotate target="field">
 					<Entity annox:class="javax.persistence.Entity"></Entity>
 					<Table annox:class="javax.persistence.Table" name="ecvetframework"></Table>
-					<XmlRootElement annox:class="javax.xml.bind.annotation.XmlRootElement" ></XmlRootElement>
+					<XmlRootElement annox:class="javax.xml.bind.annotation.XmlRootElement"></XmlRootElement>
 				</annox:annotate>
 			</xsd:appinfo>
 		</xsd:annotation>
@@ -33,7 +33,9 @@
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.CompetentInstitutionListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.CompetentInstitutionListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -42,7 +44,9 @@
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.ComplementaryDocumentsType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.ComplementaryDocumentsType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -51,7 +55,9 @@
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.QualificationType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.QualificationType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -97,7 +103,9 @@
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.UnitListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.UnitListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -108,7 +116,8 @@
 								reference value for a qualification is 60 points / year
 
 								To enable a common approach for the use of ECVET points, a convention is used
-								according to which 60 points are allocated to the learning outcomes expected to be achieved in a year of formal full time
+								according to which 60 points are allocated
+								to the learning outcomes expected to be achieved in a year of formal full time
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
@@ -154,7 +163,9 @@
 							</xsd:documentation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.MemorandumOfUnderstandingType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.MemorandumOfUnderstandingType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -163,7 +174,9 @@
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.ProcedureAndGuidelineListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.ProcedureAndGuidelineListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 							<xsd:documentation>
@@ -178,7 +191,9 @@
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.LearningAgreementListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.LearningAgreementListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -187,7 +202,9 @@
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.TranscriptsOfRecordListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.TranscriptsOfRecordListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -197,7 +214,9 @@
 							<xsd:documentation>
 								<xsd:appinfo>
 									<annox:annotate target="field">
-										<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.CreditTransferListType"><cascade>ALL</cascade></OneToOne>
+										<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.CreditTransferListType">
+											<cascade>ALL</cascade>
+										</OneToOne>
 									</annox:annotate>
 								</xsd:appinfo>
 							</xsd:documentation>
@@ -207,7 +226,9 @@
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.UserGuideListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.UserGuideListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -432,7 +453,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					
+
 					<xsd:element name="ecvetPoints" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
@@ -448,16 +469,18 @@
 					<xsd:element name="relativeWeight" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
-								convenient field = wholeEcvetPoints(from the qualification) / 100 * ecvetPoints  (from the unit)
-								
+								convenient field = wholeEcvetPoints(from the qualification) / 100 * ecvetPoints (from the unit)
+
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="learningOutcomeList" type="learningOutcomeListType">
+					<xsd:element name="learningOutcomeListList" type="learningOutcomeListListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.LearningOutcomeListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.LearningOutcomeListListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -466,16 +489,20 @@
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.QualificationFrameworkListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.QualificationFrameworkListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
 					<xsd:element name="evaluations" type="evaluationsType">
-					<xsd:annotation>
+						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.EvaluationsType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.EvaluationsType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -489,7 +516,9 @@
 							</xsd:documentation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.UnitListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.UnitListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -508,6 +537,44 @@
 			</xsd:extension>
 		</xsd:complexContent>
 	</xsd:complexType>
+	<xsd:complexType name="learningOutcomeListListType">
+	<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="learningoutcomelistlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="learningOutcomeList" type="learningOutcomeListType" maxOccurs="unbounded">
+					<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="learningoutcomelistlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn" name="learningoutcomelist_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
 	<xsd:complexType name="qualificationFrameworkListType">
 		<xsd:annotation>
 			<xsd:appinfo>
@@ -638,7 +705,9 @@
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.QualificationFrameworkListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.QualificationFrameworkListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -679,8 +748,8 @@
 					<xsd:element name="relativeWeight" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
-								convenient field = wholeEcvetPoints(from the qualification) / 100 * ecvetPoints  (from the unit)
-								
+								convenient field = wholeEcvetPoints(from the qualification) / 100 * ecvetPoints (from the unit)
+
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
@@ -698,7 +767,9 @@
 							</xsd:documentation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.EvaluationsType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.EvaluationsType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -735,7 +806,9 @@
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.AssessmentListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.AssessmentListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -744,7 +817,9 @@
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.ValidationListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.ValidationListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -753,7 +828,9 @@
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.RecognitionListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.RecognitionListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -832,7 +909,9 @@
 							</xsd:documentation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.RequirementListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.RequirementListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -971,7 +1050,9 @@
 							</xsd:documentation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.MethodListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.MethodListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -984,7 +1065,9 @@
 							</xsd:documentation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.ProcessListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.ProcessListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -1165,7 +1248,9 @@
 							</xsd:documentation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.PartnerListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.PartnerListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -1174,7 +1259,9 @@
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.LegislationListType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.LegislationListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 							<xsd:documentation>
@@ -1446,7 +1533,9 @@
 							</xsd:documentation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
-									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.CertificateTemplateType"><cascade>ALL</cascade></OneToOne>
+									<OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.CertificateTemplateType">
+										<cascade>ALL</cascade>
+									</OneToOne>
 								</annox:annotate>
 							</xsd:appinfo>
 						</xsd:annotation>
@@ -1595,7 +1684,7 @@
 						<annox:annotate target="field">
 							<Id annox:class="javax.persistence.Id"></Id>
 							<GeneratedValue annox:class="javax.persistence.GeneratedValue" strategy="IDENTITY"></GeneratedValue>
-<!-- 							<XmlTransient annox:class="javax.xml.bind.annotation.XmlTransient"></XmlTransient> -->
+							<!-- <XmlTransient annox:class="javax.xml.bind.annotation.XmlTransient"></XmlTransient> -->
 						</annox:annotate>
 					</xsd:appinfo>
 				</xsd:annotation>

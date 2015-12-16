@@ -21,7 +21,7 @@ public class JaxBHelper
 		EntityTransaction tx = entityManager.getTransaction();
 
 		tx.begin();
-//
+
 //		TypedQuery<EcvetFrameworkType> query = entityManager.createQuery("SELECT entity FROM EcvetFrameworkType entity", EcvetFrameworkType.class);
 //
 //		List<EcvetFrameworkType> frameworks = query.getResultList();
@@ -31,14 +31,14 @@ public class JaxBHelper
 //			LogManager.getLogger(JaxBHelper.class).debug(framework.getId());
 //		}
 //		EcvetFrameworkType singleFramework = frameworks.get(0);
-//		
+		
 		JAXBContext jc = JAXBContext.newInstance(EcvetFrameworkType.class);
 		Unmarshaller unmarshaller = jc.createUnmarshaller();
 		EcvetFrameworkType ecvetFramework = (EcvetFrameworkType)unmarshaller.unmarshal(new File("res/clay.xml"));
-//		
-		entityManager.persist(ecvetFramework);
 		
+		entityManager.persist(ecvetFramework);
 		tx.commit();
+		
 //		Marshaller m = jc.createMarshaller();
 //		m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 //		m.marshal( singleFramework, System.out );
