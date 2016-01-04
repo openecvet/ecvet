@@ -2,17 +2,17 @@
     "classpath": [
         {
             "exported": true,
-            "path": "/home/tom/.m2/repository/eu/open_ecvet/ecvet_specification/0.0.2-SNAPSHOT/ecvet_specification-0.0.2-SNAPSHOT.jar",
+            "path": "/home/tgrabietz/.m2/repository/eu/open_ecvet/ecvet_specification/0.0.2-SNAPSHOT/ecvet_specification-0.0.2-SNAPSHOT.jar",
             "type": "EXTERNAL_JAR_FILE"
         },
         {
             "exported": true,
-            "path": "/home/tom/.m2/repository/org/apache/logging/log4j/log4j-api/2.1/log4j-api-2.1.jar",
+            "path": "/home/tgrabietz/.m2/repository/org/eclipse/persistence/eclipselink/2.5.0-RC1/eclipselink-2.5.0-RC1.jar",
             "type": "EXTERNAL_JAR_FILE"
         },
         {
             "exported": true,
-            "path": "/home/tom/.m2/repository/org/eclipse/persistence/javax.persistence/2.1.0-RC1/javax.persistence-2.1.0-RC1.jar",
+            "path": "/home/tgrabietz/.m2/repository/org/eclipse/persistence/javax.persistence/2.1.0-RC1/javax.persistence-2.1.0-RC1.jar",
             "type": "EXTERNAL_JAR_FILE"
         },
         {

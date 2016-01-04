@@ -79,8 +79,8 @@ DROP TABLE procedureandguidelinelist
 DROP TABLE methodlist
 DROP TABLE transcriptsofrecordlist
 DROP TABLE processlist
-DROP TABLE userguide
 DROP TABLE partner
+DROP TABLE userguide
 DROP TABLE validationlist
 DROP TABLE legislationlist
 DROP TABLE unit
@@ -104,8 +104,8 @@ DROP TABLE unitlist
 DROP TABLE attachment
 DROP TABLE ecvetframework
 DROP TABLE complementarydocuments
-DROP TABLE partnerlist
 DROP TABLE assessment
+DROP TABLE partnerlist
 DROP TABLE learningagreement
 DROP TABLE recognitionlist
 DROP TABLE legislation
