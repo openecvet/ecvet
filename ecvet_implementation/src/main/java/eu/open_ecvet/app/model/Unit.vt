@@ -18,7 +18,7 @@
                     "",
                     "yyyy-MM-dd",
                     "#,##0.###;-#,##0.###",
-                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0.00 ¤;-#,##0.00 ¤",
                     "#,##0%"
                 ],
                 "signedColor": "255,0,0",
@@ -56,7 +56,7 @@
                     "",
                     "yyyy-MM-dd",
                     "#,##0.###;-#,##0.###",
-                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0.00 ¤;-#,##0.00 ¤",
                     "#,##0%"
                 ],
                 "signedColor": "255,0,0",
@@ -94,7 +94,7 @@
                     "",
                     "yyyy-MM-dd",
                     "#,##0.###;-#,##0.###",
-                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0.00 ¤;-#,##0.00 ¤",
                     "#,##0%"
                 ],
                 "signedColor": "255,0,0",
@@ -132,7 +132,7 @@
                     "",
                     "yyyy-MM-dd",
                     "#,##0.###;-#,##0.###",
-                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0.00 ¤;-#,##0.00 ¤",
                     "#,##0%"
                 ],
                 "signedColor": "255,0,0",
@@ -170,7 +170,7 @@
                     "",
                     "yyyy-MM-dd",
                     "#,##0.###;-#,##0.###",
-                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0.00 ¤;-#,##0.00 ¤",
                     "#,##0%"
                 ],
                 "signedColor": "255,0,0",
@@ -208,7 +208,7 @@
                     "",
                     "yyyy-MM-dd",
                     "#,##0.###;-#,##0.###",
-                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0.00 ¤;-#,##0.00 ¤",
                     "#,##0%"
                 ],
                 "signedColor": "255,0,0",
@@ -246,7 +246,7 @@
                     "",
                     "yyyy-MM-dd",
                     "#,##0.###;-#,##0.###",
-                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0.00 ¤;-#,##0.00 ¤",
                     "#,##0%"
                 ],
                 "signedColor": "255,0,0",
@@ -338,7 +338,7 @@
                     "",
                     "yyyy-MM-dd",
                     "#,##0.###;-#,##0.###",
-                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0.00 ¤;-#,##0.00 ¤",
                     "#,##0%"
                 ],
                 "signedColor": "255,0,0",
@@ -351,7 +351,7 @@
             "length": 10,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "LEARNINGOUTCOMELISTLIST_ID",
+            "name": "LEARNINGOUTCOMELIST_ID",
             "nullable": true,
             "persistent": true,
             "preferredWidth": 100,
@@ -376,7 +376,7 @@
                     "",
                     "yyyy-MM-dd",
                     "#,##0.###;-#,##0.###",
-                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0.00 ¤;-#,##0.00 ¤",
                     "#,##0%"
                 ],
                 "signedColor": "255,0,0",
@@ -389,23 +389,23 @@
             "length": 2147483647,
             "maxWidth": 0,
             "minWidth": 0,
-            "name": "LEARNINGOUTCOMELISTLIST_TITLE",
+            "name": "LEARNINGOUTCOMELIST_TITLE",
             "nullable": true,
             "persistent": false,
             "preferredWidth": 100,
             "scale": 0,
             "tableColumnLink": {
                 "linkedColumn": "TITLE",
-                "linkedTable": "eu.open_ecvet.app.model.Learningoutcomelistlist",
+                "linkedTable": "eu.open_ecvet.app.model.Learningoutcomelist",
                 "path": [{
                     "first": {
                         "cardinality": "ONE",
                         "columns": ["ID"],
-                        "table": "eu.open_ecvet.app.model.Learningoutcomelistlist"
+                        "table": "eu.open_ecvet.app.model.Learningoutcomelist"
                     },
                     "second": {
                         "cardinality": "MANY",
-                        "columns": ["LEARNINGOUTCOMELISTLIST_ID"],
+                        "columns": ["LEARNINGOUTCOMELIST_ID"],
                         "table": "eu.open_ecvet.app.model.Unit"
                     }
                 }]
@@ -430,7 +430,7 @@
                     "",
                     "yyyy-MM-dd",
                     "#,##0.###;-#,##0.###",
-                    "¤#,##0.00;-¤#,##0.00",
+                    "#,##0.00 ¤;-#,##0.00 ¤",
                     "#,##0%"
                 ],
                 "signedColor": "255,0,0",
@@ -504,109 +504,12 @@
             },
             "type": "VARCHAR",
             "visible": true
-        },
-        {
-            "autoIncrement": false,
-            "autoTruncate": true,
-            "caption": "",
-            "dataFlavor": "UNDEFINED",
-            "editable": true,
-            "format": {
-                "dateFormat": "MEDIUM",
-                "dateSet": "DATE",
-                "groupingUsed": false,
-                "locale": "%",
-                "maxFractionDigits": 0,
-                "minFractionDigits": 0,
-                "pattern": [
-                    "",
-                    "yyyy-MM-dd",
-                    "#,##0.###;-#,##0.###",
-                    "¤#,##0.00;-¤#,##0.00",
-                    "#,##0%"
-                ],
-                "signedColor": "255,0,0",
-                "suppressZero": false,
-                "timeFormat": "MEDIUM",
-                "type": "NUMBER",
-                "useSignedColor": false
-            },
-            "horizontalAlign": "LEFT",
-            "length": 10,
-            "maxWidth": 0,
-            "minWidth": 0,
-            "name": "UNITLIST_ID",
-            "nullable": true,
-            "persistent": true,
-            "preferredWidth": 100,
-            "scale": 0,
-            "type": "INTEGER",
-            "visible": false
-        },
-        {
-            "autoIncrement": false,
-            "autoTruncate": true,
-            "caption": "TITLE",
-            "dataFlavor": "UNDEFINED",
-            "editable": true,
-            "format": {
-                "dateFormat": "MEDIUM",
-                "dateSet": "DATE",
-                "groupingUsed": true,
-                "locale": "%",
-                "maxFractionDigits": 2,
-                "minFractionDigits": 2,
-                "pattern": [
-                    "",
-                    "yyyy-MM-dd",
-                    "#,##0.###;-#,##0.###",
-                    "¤#,##0.00;-¤#,##0.00",
-                    "#,##0%"
-                ],
-                "signedColor": "255,0,0",
-                "suppressZero": false,
-                "timeFormat": "MEDIUM",
-                "type": "NONE",
-                "useSignedColor": false
-            },
-            "horizontalAlign": "LEFT",
-            "length": 2147483647,
-            "maxWidth": 0,
-            "minWidth": 0,
-            "name": "UNITLIST_TITLE",
-            "nullable": true,
-            "persistent": false,
-            "preferredWidth": 100,
-            "scale": 0,
-            "tableColumnLink": {
-                "linkedColumn": "TITLE",
-                "linkedTable": "eu.open_ecvet.app.model.Unitlist",
-                "path": [{
-                    "first": {
-                        "cardinality": "ONE",
-                        "columns": ["ID"],
-                        "table": "eu.open_ecvet.app.model.Unitlist"
-                    },
-                    "second": {
-                        "cardinality": "MANY",
-                        "columns": ["UNITLIST_ID"],
-                        "table": "eu.open_ecvet.app.model.Unit"
-                    }
-                }]
-            },
-            "type": "VARCHAR",
-            "visible": true
         }
     ],
     "dataSource": "eu.open_ecvet.app.data_src.EcvetH2",
     "dataSourceSchema": "PUBLIC",
     "dataSourceTable": "UNIT",
     "indices": [
-        {
-            "columns": ["LEARNINGOUTCOMELISTLIST_ID"],
-            "name": "FK_UNIT_LEARNINGOUTCOMELISTLIST_ID_INDEX_2",
-            "type": "NORMAL"
-        },
         {
             "columns": ["ID"],
             "name": "PRIMARY_KEY",
@@ -623,10 +526,10 @@
             "type": "NORMAL"
         },
         {
-            "columns": ["UNITLIST_ID"],
-            "name": "FK_UNIT_UNITLIST_ID_INDEX_2",
+            "columns": ["LEARNINGOUTCOMELIST_ID"],
+            "name": "FK_UNIT_LEARNINGOUTCOMELIST_ID_INDEX_2",
             "type": "NORMAL"
         }
     ],
-    "primaryColumn": "ID"
+    "primaryColumn": "TITLE"
 }

@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.17 um 02:48:56 PM CET 
+// Generiert: 2016.01.05 um 05:54:26 PM CET 
 //
 
 
@@ -19,18 +19,28 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- * 				— the ‘hosting’ institution assesses the learning outcomes achieved and awards credit to the learner; the learning
+ * 				— the ‘hosting’ institution assesses the learning
+ * 				outcomes achieved and awards credit to the learner; the learning
  * 				outcomes achieved and the corresponding ECVET points are
- * 				recorded in a learner's ‘personal transcript’ ( 1 ),
- * 				— the ‘home’ institution validates the credit as a suitable record of the learner's achievement,
+ * 				recorded in
+ * 				a learner's ‘personal transcript’ ( 1 ),
+ * 				— the ‘home’ institution
+ * 				validates the credit as a suitable record of the learner's
+ * 				achievement,
  * 				— the ‘home’ institution then recognises the
- * 				learning outcomes that have been acquired; this recognition gives rise to the
- * 				award of the units and their corresponding ECVET points, according to the rules of the ‘home’ system.
+ * 				learning
+ * 				outcomes that have been acquired; this recognition gives rise to the
+ * 				award of the units and their corresponding ECVET points, according
+ * 				to the rules of the ‘home’ system.
  * 
  * 				( 1 ) The ‘home’
- * 				institution is the institution which will validate and recognise learning outcomes achieved by the learner. The ‘hosting’
- * 				institution is the one that delivers training for the learning outcomes
- * 				concerned and assesses the achieved learning outcomes.
+ * 				institution is the
+ * 				institution which will validate and recognise learning outcomes
+ * 				achieved by the learner. The ‘hosting’
+ * 				institution is the one that
+ * 				delivers training for the learning outcomes
+ * 				concerned and assesses
+ * 				the achieved learning outcomes.
  * 			
  * 
  * <p>Java-Klasse für learningAgreementType complex type.

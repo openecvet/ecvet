@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 
-	<persistence-unit name="ecvet_h2_data" transaction-type="RESOURCE_LOCAL">
+	<persistence-unit name="ecvet_h2_data"
+		transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 
 		<class>eu.open_ecvet.entity.AssessmentListType</class>
@@ -20,7 +23,6 @@
 		<class>eu.open_ecvet.entity.FileDataType</class>
 		<class>eu.open_ecvet.entity.LearningAgreementListType</class>
 		<class>eu.open_ecvet.entity.LearningAgreementType</class>
-		<class>eu.open_ecvet.entity.LearningOutcomeListListType</class>
 		<class>eu.open_ecvet.entity.LearningOutcomeListType</class>
 		<class>eu.open_ecvet.entity.LearningOutcomeType</class>
 		<class>eu.open_ecvet.entity.LegislationListType</class>
@@ -28,7 +30,6 @@
 		<class>eu.open_ecvet.entity.MemorandumOfUnderstandingType</class>
 		<class>eu.open_ecvet.entity.MethodListType</class>
 		<class>eu.open_ecvet.entity.MethodType</class>
-		<class>eu.open_ecvet.entity.ObjectFactory</class>
 		<class>eu.open_ecvet.entity.PartnerListType</class>
 		<class>eu.open_ecvet.entity.PartnerType</class>
 		<class>eu.open_ecvet.entity.ProcedureAndGuidelineListType</class>
@@ -51,15 +52,20 @@
 		<class>eu.open_ecvet.entity.ValidationListType</class>
 		<class>eu.open_ecvet.entity.ValidationType</class>
 
+
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:h2:./res/ecvet_draft;MV_STORE=FALSE;MVCC=FALSE" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:h2:./res/ecvet_draft;MV_STORE=FALSE;MVCC=FALSE" />
 			<property name="javax.persistence.jdbc.user" value="sa" />
-			<property name="eclipselink.target-database" value="org.eclipse.persistence.platform.database.H2Platform" />
-			<!-- <property name="eclipselink.ddl-generation" value="drop-and-create-tables" /> -->
-			<property name="eclipselink.ddl-generation.output-mode" value="both" />
+			<property name="eclipselink.target-database"
+				value="org.eclipse.persistence.platform.database.H2Platform" />
+			<!-- <property name="eclipselink.ddl-generation" value="drop-and-create-tables" 
+				/> -->
+			<property name="eclipselink.ddl-generation.output-mode"
+				value="both" />
 			<property name="eclipselink.logging.level" value="info" />
 			<property name="eclipselink.application-location" value="./src/main/resources/h2/" />
 		</properties>

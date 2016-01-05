@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.17 um 02:48:56 PM CET 
+// Generiert: 2016.01.05 um 05:54:26 PM CET 
 //
 
 
@@ -37,6 +37,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element name="ecvetPoints" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="relativeWeight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="qualificationFrameworkList" type="{}qualificationFrameworkListType"/&gt;
  *         &lt;element name="evaluations" type="{}evaluationsType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
@@ -50,6 +51,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "learningOutcomeType", propOrder = {
     "ecvetPoints",
     "relativeWeight",
+    "qualificationFrameworkList",
     "evaluations"
 })
 @Entity
@@ -65,6 +67,11 @@ public class LearningOutcomeType
 
     protected int ecvetPoints;
     protected int relativeWeight;
+    @XmlElement(required = true)
+    @OneToOne(targetEntity = QualificationFrameworkListType.class, cascade = {
+        CascadeType.ALL
+    })
+    protected QualificationFrameworkListType qualificationFrameworkList;
     @XmlElement(required = true)
     @OneToOne(targetEntity = EvaluationsType.class, cascade = {
         CascadeType.ALL
@@ -101,6 +108,30 @@ public class LearningOutcomeType
      */
     public void setRelativeWeight(int value) {
         this.relativeWeight = value;
+    }
+
+    /**
+     * Ruft den Wert der qualificationFrameworkList-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link QualificationFrameworkListType }
+     *     
+     */
+    public QualificationFrameworkListType getQualificationFrameworkList() {
+        return qualificationFrameworkList;
+    }
+
+    /**
+     * Legt den Wert der qualificationFrameworkList-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link QualificationFrameworkListType }
+     *     
+     */
+    public void setQualificationFrameworkList(QualificationFrameworkListType value) {
+        this.qualificationFrameworkList = value;
     }
 
     /**

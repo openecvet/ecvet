@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.17 um 02:48:56 PM CET 
+// Generiert: 2016.01.05 um 05:54:26 PM CET 
 //
 
 
@@ -41,10 +41,9 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element name="ecvetPoints" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="relativeWeight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="learningOutcomeListList" type="{}learningOutcomeListListType"/&gt;
+ *         &lt;element name="learningOutcomeList" type="{}learningOutcomeListType"/&gt;
  *         &lt;element name="qualificationFrameworkList" type="{}qualificationFrameworkListType"/&gt;
  *         &lt;element name="evaluations" type="{}evaluationsType"/&gt;
- *         &lt;element name="unitList" type="{}unitListType" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -57,10 +56,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "unitType", propOrder = {
     "ecvetPoints",
     "relativeWeight",
-    "learningOutcomeListList",
+    "learningOutcomeList",
     "qualificationFrameworkList",
-    "evaluations",
-    "unitList"
+    "evaluations"
 })
 @Entity
 @Table(indexes = {
@@ -76,10 +74,10 @@ public class UnitType
     protected int ecvetPoints;
     protected int relativeWeight;
     @XmlElement(required = true)
-    @OneToOne(targetEntity = LearningOutcomeListListType.class, cascade = {
+    @OneToOne(targetEntity = LearningOutcomeListType.class, cascade = {
         CascadeType.ALL
     })
-    protected LearningOutcomeListListType learningOutcomeListList;
+    protected LearningOutcomeListType learningOutcomeList;
     @XmlElement(required = true)
     @OneToOne(targetEntity = QualificationFrameworkListType.class, cascade = {
         CascadeType.ALL
@@ -90,10 +88,6 @@ public class UnitType
         CascadeType.ALL
     })
     protected EvaluationsType evaluations;
-    @OneToOne(targetEntity = UnitListType.class, cascade = {
-        CascadeType.ALL
-    })
-    protected UnitListType unitList;
 
     /**
      * Ruft den Wert der ecvetPoints-Eigenschaft ab.
@@ -128,27 +122,27 @@ public class UnitType
     }
 
     /**
-     * Ruft den Wert der learningOutcomeListList-Eigenschaft ab.
+     * Ruft den Wert der learningOutcomeList-Eigenschaft ab.
      * 
      * @return
      *     possible object is
-     *     {@link LearningOutcomeListListType }
+     *     {@link LearningOutcomeListType }
      *     
      */
-    public LearningOutcomeListListType getLearningOutcomeListList() {
-        return learningOutcomeListList;
+    public LearningOutcomeListType getLearningOutcomeList() {
+        return learningOutcomeList;
     }
 
     /**
-     * Legt den Wert der learningOutcomeListList-Eigenschaft fest.
+     * Legt den Wert der learningOutcomeList-Eigenschaft fest.
      * 
      * @param value
      *     allowed object is
-     *     {@link LearningOutcomeListListType }
+     *     {@link LearningOutcomeListType }
      *     
      */
-    public void setLearningOutcomeListList(LearningOutcomeListListType value) {
-        this.learningOutcomeListList = value;
+    public void setLearningOutcomeList(LearningOutcomeListType value) {
+        this.learningOutcomeList = value;
     }
 
     /**
@@ -197,30 +191,6 @@ public class UnitType
      */
     public void setEvaluations(EvaluationsType value) {
         this.evaluations = value;
-    }
-
-    /**
-     * Ruft den Wert der unitList-Eigenschaft ab.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UnitListType }
-     *     
-     */
-    public UnitListType getUnitList() {
-        return unitList;
-    }
-
-    /**
-     * Legt den Wert der unitList-Eigenschaft fest.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UnitListType }
-     *     
-     */
-    public void setUnitList(UnitListType value) {
-        this.unitList = value;
     }
 
 }

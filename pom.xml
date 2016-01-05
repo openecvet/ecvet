@@ -8,7 +8,7 @@
         <module>ecvet_implementation</module>
     </modules>
     <packaging>pom</packaging>
-   <repositories>
+    <repositories>
         <repository>
             <id>oss.sonatype.org</id>
             <name>OSS Sonatype Staging</name>
@@ -54,7 +54,6 @@
         </dependency>
     </dependencies>
     <build>
-        
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>

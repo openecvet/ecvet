@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0"
-            xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
-            xmlns:annox="http://annox.dev.java.net" jxb:extensionBindingPrefixes="annox">
-  <!-- jxb:extensionBindingPrefixes="annox" -->
-  <xsd:element name="ecvetFramework" type="ecvetFrameworkType">
-    <xsd:annotation>
-      <xsd:documentation>ECVET is a technical framework for the transfer,
+<xsd:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" version="1.0"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:annox="http://annox.dev.java.net" jxb:extensionBindingPrefixes="annox">
+	<!-- jxb:extensionBindingPrefixes="annox" -->
+	<xsd:element name="ecvetFramework" type="ecvetFrameworkType">
+		<xsd:annotation>
+			<xsd:documentation>ECVET is a technical framework for the transfer,
 				recognition and, where appropriate, accumulation of individuals’
 				learningoutcomes with a view to achieving a qualification. ECVET
 				tools and methodology comprise the description of qualifi­cations in
@@ -14,83 +15,83 @@
 				as
 				learning agreements, transcripts of records and ECVET users’ guides.
 			</xsd:documentation>
-    </xsd:annotation>
-  </xsd:element>
-  <xsd:complexType name="ecvetFrameworkType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="ecvetframework"></Table>
-          <XmlRootElement annox:class="javax.xml.bind.annotation.XmlRootElement"></XmlRootElement>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="competentInstitutionList" type="competentInstitutionListType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.CompetentInstitutionListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="complementaryDocuments" type="complementaryDocumentsType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.ComplementaryDocumentsType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="qualification" type="qualificationType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.QualificationType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="memorandumOfUnderstandingType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="memorandumofunderstanding"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetAttachment"></xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="qualificationType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="qualification"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-      <xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="ecvetFrameworkType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="ecvetframework"></Table>
+					<XmlRootElement annox:class="javax.xml.bind.annotation.XmlRootElement"></XmlRootElement>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="competentInstitutionList" type="competentInstitutionListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.CompetentInstitutionListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="complementaryDocuments" type="complementaryDocumentsType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.ComplementaryDocumentsType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="qualification" type="qualificationType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.QualificationType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="memorandumOfUnderstandingType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="memorandumofunderstanding"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetAttachment"></xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="qualificationType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="qualification"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+			<xsd:documentation>
 				According to: C 155/14 Annex 1 - Definitions (a)
 				-- 'Qualification’ means a formal outcome of an assessment and
 				validation process which is obtained when a competent institution
@@ -98,39 +99,44 @@
 				individual has achieved learning outcomes to given
 				standards
 			</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="unitList" type="unitListType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.UnitListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="wholeEcvetPoints" type="xsd:int">
-            <xsd:annotation>
-              <xsd:documentation>
-								reference value for a qualification is 60 points / year
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="unitList" type="unitListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.UnitListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="wholeEcvetPoints" type="xsd:int">
+						<xsd:annotation>
+							<xsd:documentation>
+								reference value for a qualification is 60
+								points / year
 
-								To enable a common approach for the use of ECVET points, a convention is used
-								according to which 60 points are allocated
-								to the learning outcomes expected to be achieved in a year of formal full time
+								To enable a common approach for the use of ECVET
+								points, a convention is used
+								according to which 60 points are
+								allocated
+								to the learning outcomes expected to be achieved in a
+								year of formal full time
 							</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="complementaryDocumentsType">
-    <xsd:annotation>
-      <xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="complementaryDocumentsType">
+		<xsd:annotation>
+			<xsd:documentation>
 				ANNEX II ECVET — PRINCIPLES AND TECHNICAL
 				SPECIFICATIONS -- ECVET tools and methodology comprise the
 				description of qualifi­cations in terms of units of learning
@@ -141,311 +147,392 @@
 				of records and ECVET users’ guides. TODO: own type with file
 				attachments
 			</xsd:documentation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="complementarydocuments"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:annotation>
-            <xsd:documentation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="complementarydocuments"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:annotation>
+						<xsd:documentation>
 							TODO: all this elements must extend
 							complementaryDocumentList (which allows to attach files etc)
 						</xsd:documentation>
-          </xsd:annotation>
-          <xsd:element name="memorandumOfUnderstanding" type="memorandumOfUnderstandingType">
-            <xsd:annotation>
-              <xsd:documentation>
-								provide a general framework of cooperation and networking between the partners, set out in Memoranda of
+					</xsd:annotation>
+					<xsd:element name="memorandumOfUnderstanding" type="memorandumOfUnderstandingType">
+						<xsd:annotation>
+							<xsd:documentation>
+								provide a general framework of cooperation and
+								networking between the partners, set out in Memoranda of
 								Understanding (MoU) through which a climate of mutual trust is
 								established,
 							</xsd:documentation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.MemorandumOfUnderstandingType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="procedureAndGuidelineList" type="procedureAndGuidelineListType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.ProcedureAndGuidelineListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-              <xsd:documentation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.MemorandumOfUnderstandingType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="procedureAndGuidelineList" type="procedureAndGuidelineListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.ProcedureAndGuidelineListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+							<xsd:documentation>
 								Procedures and guidelines for the
-								assessment, validation, accumulation and recognition of units of learning outcomes are designed by the relevant
+								assessment,
+								validation, accumulation and recognition of units of learning
+								outcomes are designed by the relevant
 								competent institutions and
 								partners involved in the training process
 							</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="learningAgreementList" type="learningAgreementListType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.LearningAgreementListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="transcriptsOfRecordList" type="transcriptsOfRecordListType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.TranscriptsOfRecordListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="creditTransferList" type="creditTransferListType">
-            <xsd:annotation>
-              <xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="learningAgreementList" type="learningAgreementListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.LearningAgreementListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="transcriptsOfRecordList" type="transcriptsOfRecordListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.TranscriptsOfRecordListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="creditTransferList" type="creditTransferListType">
+						<xsd:annotation>
+							<xsd:documentation>
 								<xsd:appinfo>
-                  <annox:annotate target="field">
-                    <OneToOne annox:class="javax.persistence.OneToOne"
-                              targetEntity="eu.open_ecvet.entity.CreditTransferListType">
-                      <cascade>ALL</cascade>
-                    </OneToOne>
-                  </annox:annotate>
-                </xsd:appinfo>
+									<annox:annotate target="field">
+										<OneToOne annox:class="javax.persistence.OneToOne"
+											targetEntity="eu.open_ecvet.entity.CreditTransferListType">
+											<cascade>ALL</cascade>
+										</OneToOne>
+									</annox:annotate>
+								</xsd:appinfo>
 							</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="userGuideList" type="userGuideListType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.UserGuideListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="creditTransferListType">
-    <xsd:annotation>
-      <xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="userGuideList" type="userGuideListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.UserGuideListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="creditTransferListType">
+		<xsd:annotation>
+			<xsd:documentation>
 				The establishment of partnerships aims to:
-				— assist the partners in the design of specific arrangements for credit transfer for learners.
+				— assist
+				the partners in the design of specific arrangements for credit
+				transfer for learners.
 			</xsd:documentation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="credittransferlist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="creditTransfer" type="creditTransferType" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="credittransferlist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="credittransfer_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="creditTransferType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="credittransfer"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetAttachment"></xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="transcriptsOfRecordListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="transcriptsofrecordlist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element maxOccurs="unbounded" name="transcriptsOfRecord" type="transcriptsOfRecordType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="transcriptsofrecordlist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="transcriptsofrecord_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="userGuideListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="userguidelist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element maxOccurs="unbounded" name="userGuide" type="userGuideType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="userguidelist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="userguide_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="transcriptsOfRecordType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="transcriptsofrecord"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetAttachment"></xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="userGuideType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="userguide"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetAttachment"></xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="unitListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="unitlist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="unit" type="unitType" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="unitlist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="unit_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="unitType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="unit"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-      <xsd:documentation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="credittransferlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="creditTransfer" type="creditTransferType"
+						maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="credittransferlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="credittransfer_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="creditTransferType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="credittransfer"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetAttachment"></xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="transcriptsOfRecordListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="transcriptsofrecordlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" name="transcriptsOfRecord"
+						type="transcriptsOfRecordType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="transcriptsofrecordlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="transcriptsofrecord_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="userGuideListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="userguidelist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" name="userGuide"
+						type="userGuideType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="userguidelist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="userguide_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="transcriptsOfRecordType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="transcriptsofrecord"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetAttachment"></xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="userGuideType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="userguide"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetAttachment"></xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="unitListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="unitlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="unitList" type="unitListType"
+						minOccurs="0" maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:documentation>
+								not explicitly recommended but useful to
+								organize the content and also used in pilot projects (we can
+								comment out this in the first draft)
+							</xsd:documentation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="unitlistparent_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="unitlist_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+
+					<xsd:element name="unit" type="unitType" minOccurs="0"
+						maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="unitlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="unit_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="qualificationFrameworkList" type="qualificationFrameworkListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.QualificationFrameworkListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="evaluations" type="evaluationsType">
+						<xsd:annotation>
+							<xsd:documentation>
+								constructed in a way that enables discrete
+								assessment and validation of learning outcomes contained in the
+								unit. review tom: discrete means in the context separated from
+								each
+								other (and the German
+								translation agrees with me) so the
+								assessement and validation elements make more senseto assign this to the child elements 
+							</xsd:documentation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.EvaluationsType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="unitType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="unit"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+			<xsd:documentation>
 				According to: C 155/14 Annex 1 - Definitions (c)
 				-- ‘Unit of learning outcomes’ (unit) means a component of a
 				qualification, consisting of a coherent set of knowledge, skills and
@@ -454,13 +541,13 @@
 				-&gt; the child element which follow here is a set of
 				learningOutcomes (which represent the KSC terms)
 			</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="ecvetPoints" type="xsd:int">
-            <xsd:annotation>
-              <xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="ecvetPoints" type="xsd:int">
+						<xsd:annotation>
+							<xsd:documentation>
 								According to: C 155/14 Annex 1 - Definitions
 								(i) ‘ECVET points’ means a numerical representation of the
 								overall weight of learning outcomes in a qualification and of
@@ -468,215 +555,173 @@
 								relative weight of units in
 								relation to the qualification.
 							</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="relativeWeight" type="xsd:int">
-            <xsd:annotation>
-              <xsd:documentation>
-								convenient field = wholeEcvetPoints(from the qualification) / 100 * ecvetPoints (from the unit)
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="relativeWeight" type="xsd:int">
+						<xsd:annotation>
+							<xsd:documentation>
+								convenient field = wholeEcvetPoints(from the
+								qualification) / 100 * ecvetPoints (from the unit)
 
 							</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="learningOutcomeListList" type="learningOutcomeListListType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.LearningOutcomeListListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="qualificationFrameworkList" type="qualificationFrameworkListType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.QualificationFrameworkListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="evaluations" type="evaluationsType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.EvaluationsType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="unitList" type="unitListType" minOccurs="0">
-            <xsd:annotation>
-              <xsd:documentation>
-								not explicitly recommended but useful to
-								organize the content and also used in pilot projects (we can
-								comment out this in the first draft)
-							</xsd:documentation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.UnitListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <!-- <xsd:element name="validityInTime" type="xsd:duration"> -->
-          <!-- <xsd:annotation> -->
-          <!-- <xsd:documentation> -->
-          <!-- ECVET — PRINCIPLES AND TECHNICAL SPECIFICATIONS -->
-          <!-- — 1. Units of learning -->
-          <!-- outcomes — the validity in time of the -->
-          <!-- unit, where relevant. -->
-          <!-- </xsd:documentation> -->
-          <!-- </xsd:annotation> -->
-          <!-- </xsd:element> -->
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="learningOutcomeListListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="learningoutcomelistlist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="learningOutcomeList" type="learningOutcomeListType" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="learningoutcomelistlist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="learningoutcomelist_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="qualificationFrameworkListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="qualificationframeworklist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-      <xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="learningOutcomeList" type="learningOutcomeListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.LearningOutcomeListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+
+					<xsd:element name="qualificationFrameworkList" type="qualificationFrameworkListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.QualificationFrameworkListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="evaluations" type="evaluationsType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.EvaluationsType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+
+					<!-- <xsd:element name="validityInTime" type="xsd:duration"> -->
+					<!-- <xsd:annotation> -->
+					<!-- <xsd:documentation> -->
+					<!-- ECVET — PRINCIPLES AND TECHNICAL SPECIFICATIONS -->
+					<!-- — 1. Units of learning -->
+					<!-- outcomes — the validity in time of the -->
+					<!-- unit, where relevant. -->
+					<!-- </xsd:documentation> -->
+					<!-- </xsd:annotation> -->
+					<!-- </xsd:element> -->
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="qualificationFrameworkListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="qualificationframeworklist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+			<xsd:documentation>
 			</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="qualificationFramework" type="qualificationFrameworkType" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="qualificationframeworklist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="qualificationframework_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="qualificationFrameworkType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="qualificationframework"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="indicator" type="xsd:string">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <xsd:documentation>
-                  this field is not used in the recommendation. You can specify here the generic description of the EQF, e.q what this especialy means for your qualification 
-                </xsd:documentation>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-        <xsd:attribute name="framework" type="frameworkType">
-          <xsd:annotation>
-            <xsd:appinfo>
-              <annox:annotate target="field">
-                <Enumerated annox:class="javax.persistence.Enumerated">
-                  <EnumType>STRING</EnumType>
-                </Enumerated>
-              </annox:annotate>
-            </xsd:appinfo>
-          </xsd:annotation>
-        </xsd:attribute>
-        <xsd:attribute name="frameworkLevel" type="frameworkLevelType"></xsd:attribute>
-        <xsd:attribute name="frameworkTerm" type="frameworkTermType">
-          <xsd:annotation>
-            <xsd:appinfo>
-              <annox:annotate target="field">
-                <Enumerated annox:class="javax.persistence.Enumerated">
-                  <EnumType>STRING</EnumType>
-                </Enumerated>
-              </annox:annotate>
-            </xsd:appinfo>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="learningOutcomeListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="learningoutcomelist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-      <xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="qualificationFramework" type="qualificationFrameworkType"
+						maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="qualificationframeworklist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="qualificationframework_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="qualificationFrameworkType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="qualificationframework"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="indicator" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<xsd:documentation>
+									this field is not used in the recommendation.
+									You can specify here
+									the generic description of the EQF, e.q
+									what this especialy
+									means for your qualification
+								</xsd:documentation>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+				<xsd:attribute name="framework" type="frameworkType">
+					<xsd:annotation>
+						<xsd:appinfo>
+							<annox:annotate target="field">
+								<Enumerated annox:class="javax.persistence.Enumerated">
+									<EnumType>STRING</EnumType>
+								</Enumerated>
+							</annox:annotate>
+						</xsd:appinfo>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="frameworkLevel" type="frameworkLevelType"></xsd:attribute>
+				<xsd:attribute name="frameworkTerm" type="frameworkTermType">
+					<xsd:annotation>
+						<xsd:appinfo>
+							<annox:annotate target="field">
+								<Enumerated annox:class="javax.persistence.Enumerated">
+									<EnumType>STRING</EnumType>
+								</Enumerated>
+							</annox:annotate>
+						</xsd:appinfo>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="learningOutcomeListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="learningoutcomelist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+			<xsd:documentation>
 				According to: C 155/14 Annex 1 - Definitions (b)
 				-- ‘Learning outcomes’ means statements of what a learner knows,
 				understands and is able to do on completion of a learning
@@ -690,67 +735,115 @@
 				for
 				the terms
 			</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="learningOutcome" type="learningOutcomeType" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="learningoutcomelist_id"></JoinColumn>
-                    </inverseJoinColumns>
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="learningoutcome_id"></JoinColumn>
-                    </joinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="qualificationFrameworkList" type="qualificationFrameworkListType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.QualificationFrameworkListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="learningOutcomeType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="learningoutcome"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-      <xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="learningOutcomeList" type="learningOutcomeListType"
+						minOccurs="0" maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="learningoutcomelistparent_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="learningoutcomelist_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="learningOutcome" type="learningOutcomeType"
+						minOccurs="0" maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="learningoutcomelist_id"></JoinColumn>
+										</inverseJoinColumns>
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="learningoutcome_id"></JoinColumn>
+										</joinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="qualificationFrameworkList" type="qualificationFrameworkListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.QualificationFrameworkListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="evaluations" type="evaluationsType">
+						<xsd:annotation>
+							<xsd:documentation>
+								constructed in a way that enables discrete
+								assessment and validation of learning outcomes contained in the
+								unit. review tom: discrete means in the context separated from
+								each
+								other (and the German
+								translation agrees with me) so the
+								assessement and validation elements make more sense to assign this to the child elements 
+							</xsd:documentation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.EvaluationsType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="learningOutcomeType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="learningoutcome"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+			<xsd:documentation>
 				According to: C 155/14 Annex 1 - Definitions (b)
 				-- a single learning outcome represents the statement, which is
 				described in the defintion
 			</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="ecvetPoints" type="xsd:int">
-            <xsd:annotation>
-              <xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="ecvetPoints" type="xsd:int">
+						<xsd:annotation>
+							<xsd:documentation>
 								According to: C 155/14 Annex 1 - Definitions
 								(i) ‘ECVET points’ means a numerical representation of the
 								overall weight of learning outcomes in a qualification and of
@@ -758,56 +851,68 @@
 								relative weight of units in
 								relation to the qualification.
 							</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="relativeWeight" type="xsd:int">
-            <xsd:annotation>
-              <xsd:documentation>
-								convenient field = wholeEcvetPoints(from the qualification) / 100 * ecvetPoints (from the unit)
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="relativeWeight" type="xsd:int">
+						<xsd:annotation>
+							<xsd:documentation>
+								convenient field = wholeEcvetPoints(from the
+								qualification) / 100 * ecvetPoints (from the unit)
 
 							</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="evaluations" type="evaluationsType">
-            <xsd:annotation>
-              <xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="qualificationFrameworkList" type="qualificationFrameworkListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.QualificationFrameworkListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="evaluations" type="evaluationsType">
+						<xsd:annotation>
+							<xsd:documentation>
 								constructed in a way that enables discrete
 								assessment and validation of learning outcomes contained in the
 								unit. review tom: discrete means in the context separated from
 								each
 								other (and the German
 								translation agrees with me) so the
-								assessement and validation elements make more sense here and
-								rather attached to units
+								assessement and validation elements make more sense to assign this to the child elements 
 							</xsd:documentation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.EvaluationsType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="evaluationsType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="evaluations"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:annotation>
-            <xsd:documentation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.EvaluationsType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="evaluationsType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="evaluations"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:annotation>
+						<xsd:documentation>
 							A unit is a component of a qualification,
 							consisting of a coherent set of knowledge, skills and competence
 							that can be assessed and validated with a number of associated
@@ -816,91 +921,94 @@
 							is a container to make the consisting
 							types (re)usable for unit / learningOutcome
 						</xsd:documentation>
-          </xsd:annotation>
-          <xsd:element name="assessmentList" type="assessmentListType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.AssessmentListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="validationList" type="validationListType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.ValidationListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="recognitionList" type="recognitionListType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.RecognitionListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="validationListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="validationlist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="validation" type="validationType" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:documentation>
+					</xsd:annotation>
+					<xsd:element name="assessmentList" type="assessmentListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.AssessmentListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="validationList" type="validationListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.ValidationListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="recognitionList" type="recognitionListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.RecognitionListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="validationListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="validationlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="validation" type="validationType"
+						maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:documentation>
 								the 'particular' validation of the
 								learningOutcome @see validationType
 							</xsd:documentation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="validationlist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="validation_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="validationType">
-    <xsd:annotation>
-      <xsd:documentation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="validationlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="validation_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="validationType">
+		<xsd:annotation>
+			<xsd:documentation>
 				According to: C 155/14 Annex 1 - Definitions (g)
 				--- ‘Validation of learning outcomes’ means the process of
 				confirming that certain assessed learning outcomes achieved by a
@@ -909,142 +1017,148 @@
 				outcomes which may be required for a
 				unit or a qualification
 			</xsd:documentation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="validation"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="requirementList" type="requirementListType">
-            <xsd:annotation>
-              <xsd:documentation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="validation"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="requirementList" type="requirementListType">
+						<xsd:annotation>
+							<xsd:documentation>
 								According to: C 155/14 Annex 1 - Definitions
 								(g) --- ... confirming ... which may be required ...
 							</xsd:documentation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.RequirementListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="assessmentURI" type="xsd:string">
-            <!-- TODO: id ref ? -->
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="requirementListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="requirementlist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="requirement" type="requirementType" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="requirementlist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="requirement_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="requirementType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="requirement"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="achievementCriterion" type="xsd:string"/>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="assessmentListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="assessmentlist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="assessment" type="assessmentType" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="assessmentlist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="assessment_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-              <xsd:documentation>the procedures and criteria for assessment of
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.RequirementListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="assessmentURI" type="xsd:string">
+						<!-- TODO: id ref ? -->
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="requirementListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="requirementlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="requirement" type="requirementType"
+						maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="requirementlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="requirement_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="requirementType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="requirement"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="achievementCriterion" type="xsd:string" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="assessmentListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="assessmentlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="assessment" type="assessmentType"
+						maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="assessmentlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="assessment_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+							<xsd:documentation>the procedures and criteria for assessment of
 								these learning outcomes,
 							</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="assessmentType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="assessment"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-      <xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="assessmentType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="assessment"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+			<xsd:documentation>
 				According to: C 155/14 Annex 1 - Definitions (f)
 				--- ‘Assessment of learning outcomes’ means methods and processes
 				used to establish the extent to which a learner has in fact
@@ -1052,185 +1166,194 @@
 				particular knowledge,
 				skills and competence
 			</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="methodList" type="methodListType">
-            <xsd:annotation>
-              <xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="methodList" type="methodListType">
+						<xsd:annotation>
+							<xsd:documentation>
 								According to: C 155/14 Annex 1 - Definitions
 								(f) --- The methods used to establish
 							</xsd:documentation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne" targetEntity="eu.open_ecvet.entity.MethodListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="processList" type="processListType">
-            <xsd:annotation>
-              <xsd:documentation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.MethodListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="processList" type="processListType">
+						<xsd:annotation>
+							<xsd:documentation>
 								According to: C 155/14 Annex 1 - Definitions
 								(f) --- The processes used to establish
 							</xsd:documentation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.ProcessListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="processListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="processlist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="process" type="processType" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="processlist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="process_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="processType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="process"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement"></xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="methodListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="methodlist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="method" type="methodType" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="methodlist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="method_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="methodType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="method"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement"></xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="competentInstitutionListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="competentinstitutionlist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element maxOccurs="unbounded" name="competentInstitution" type="competentInstitutionType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="competentinstitutionlist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="competentinstitution_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="competentInstitutionType">
-    <xsd:annotation>
-      <xsd:documentation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.ProcessListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="processListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="processlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="process" type="processType"
+						maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="processlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="process_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="processType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="process"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement"></xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="methodListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="methodlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="method" type="methodType" maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="methodlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="method_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="methodType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="method"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement"></xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="competentInstitutionListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="competentinstitutionlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" name="competentInstitution"
+						type="competentInstitutionType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="competentinstitutionlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="competentinstitution_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="competentInstitutionType">
+		<xsd:annotation>
+			<xsd:documentation>
 				According to: C 155/14 Annex 1 - Definitions (e)
 				-- ‘Competent institution’ means an institution which is responsible
 				for designing and awarding qualifications or recognising
@@ -1244,44 +1367,44 @@
 				participating
 				countries
 			</xsd:documentation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="competentinstitution"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="partnerList" type="partnerListType">
-            <xsd:annotation>
-              <xsd:documentation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="competentinstitution"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="partnerList" type="partnerListType">
+						<xsd:annotation>
+							<xsd:documentation>
 								ANNEX II ECVET — PRINCIPLES AND TECHNICAL
 								SPECIFICATIONS ... are defined by competent institutions and
 								partners involved in the training process...
 							</xsd:documentation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.PartnerListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="legislationList" type="legislationListType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.LegislationListType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-              <xsd:documentation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.PartnerListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="legislationList" type="legislationListType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.LegislationListType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+							<xsd:documentation>
 								ANNEX II
 								ECVET — PRINCIPLES AND TECHNICAL
 								SPECIFICATIONS
@@ -1293,515 +1416,547 @@
 								based on the following principles and
 								technical specification
 							</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="procedureAndGuidelineListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="procedureandguidelinelist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="procedureAndGuideline" type="procedureAndGuidelineType" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="procedureandguidelinelist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="procedureandguideline_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="procedureAndGuidelineType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="procedureAndGuideline"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="assessment" type="xsd:string"></xsd:element>
-          <xsd:element name="validation" type="xsd:string"></xsd:element>
-          <xsd:element name="recognition" type="xsd:string"></xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="legislationListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="legislationlist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="legislation" type="legislationType" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="legislationlist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="legislation_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="legislationType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="legislation"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:annotation>
-            <xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="procedureAndGuidelineListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="procedureandguidelinelist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="procedureAndGuideline" type="procedureAndGuidelineType"
+						maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="procedureandguidelinelist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="procedureandguideline_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="procedureAndGuidelineType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="procedureAndGuideline"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="assessment" type="xsd:string"></xsd:element>
+					<xsd:element name="validation" type="xsd:string"></xsd:element>
+					<xsd:element name="recognition" type="xsd:string"></xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="legislationListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="legislationlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="legislation" type="legislationType"
+						maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="legislationlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="legislation_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="legislationType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="legislation"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:annotation>
+						<xsd:documentation>
 							description of the specific rules and practices
 							for this qualification in the country (references to the
 							definition in (e))
 						</xsd:documentation>
-          </xsd:annotation>
-          <xsd:element name="rules" type="xsd:string"></xsd:element>
-          <xsd:element name="practices" type="xsd:string"></xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="learningAgreementListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="learningagreementlist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element maxOccurs="unbounded" name="learningAgreement" type="learningAgreementType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="learningagreementlist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="learningagreement_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="learningAgreementType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="learningagreement"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-      <xsd:documentation>
-				— the ‘hosting’ institution assesses the learning outcomes achieved and awards credit to the learner; the learning
+					</xsd:annotation>
+					<xsd:element name="rules" type="xsd:string"></xsd:element>
+					<xsd:element name="practices" type="xsd:string"></xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="learningAgreementListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="learningagreementlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" name="learningAgreement"
+						type="learningAgreementType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="learningagreementlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="learningagreement_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="learningAgreementType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="learningagreement"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+			<xsd:documentation>
+				— the ‘hosting’ institution assesses the learning
+				outcomes achieved and awards credit to the learner; the learning
 				outcomes achieved and the corresponding ECVET points are
-				recorded in a learner's ‘personal transcript’ ( 1 ),
-				— the ‘home’ institution validates the credit as a suitable record of the learner's achievement,
+				recorded in
+				a learner's ‘personal transcript’ ( 1 ),
+				— the ‘home’ institution
+				validates the credit as a suitable record of the learner's
+				achievement,
 				— the ‘home’ institution then recognises the
-				learning outcomes that have been acquired; this recognition gives rise to the
-				award of the units and their corresponding ECVET points, according to the rules of the ‘home’ system.
+				learning
+				outcomes that have been acquired; this recognition gives rise to the
+				award of the units and their corresponding ECVET points, according
+				to the rules of the ‘home’ system.
 
 				( 1 ) The ‘home’
-				institution is the institution which will validate and recognise learning outcomes achieved by the learner. The ‘hosting’
-				institution is the one that delivers training for the learning outcomes
-				concerned and assesses the achieved learning outcomes.
+				institution is the
+				institution which will validate and recognise learning outcomes
+				achieved by the learner. The ‘hosting’
+				institution is the one that
+				delivers training for the learning outcomes
+				concerned and assesses
+				the achieved learning outcomes.
 			</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetAttachment">
-        <xsd:sequence>
-          <xsd:element name="hostingInstitutionURI" type="xsd:string"></xsd:element>
-          <xsd:element name="homeInstitutionURI" type="xsd:string"></xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="recognitionListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="recognitionlist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element maxOccurs="unbounded" name="recognition" type="recognitionType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="recognitionlist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="recognition_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="recognitionType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="recognition"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="competentInstitutionURI" type="xsd:string">
-            <xsd:annotation>
-              <xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetAttachment">
+				<xsd:sequence>
+					<xsd:element name="hostingInstitutionURI" type="xsd:string"></xsd:element>
+					<xsd:element name="homeInstitutionURI" type="xsd:string"></xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="recognitionListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="recognitionlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" name="recognition"
+						type="recognitionType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="recognitionlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="recognition_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="recognitionType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="recognition"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="competentInstitutionURI" type="xsd:string">
+						<xsd:annotation>
+							<xsd:documentation>
 								references to the competentInstitutionType URI
 							</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="certificateTemplate" type="certificateTemplateType">
-            <xsd:annotation>
-              <xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="certificateTemplate" type="certificateTemplateType">
+						<xsd:annotation>
+							<xsd:documentation>
 								digital content can be attached
 							</xsd:documentation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <OneToOne annox:class="javax.persistence.OneToOne"
-                            targetEntity="eu.open_ecvet.entity.CertificateTemplateType">
-                    <cascade>ALL</cascade>
-                  </OneToOne>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="certificateTemplateType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="certificatetemplate"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetAttachment"></xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="partnerListType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="partnerlist"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element maxOccurs="unbounded" name="partner" type="partnerType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="partnerlist_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="partner_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="partnerType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="partner"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement"></xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="attachmentType">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <Entity annox:class="javax.persistence.Entity"></Entity>
-          <Table annox:class="javax.persistence.Table" name="attachment"></Table>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="attachmentUrl" type="xsd:string"></xsd:element>
-          <xsd:element name="idrefToken" type="xsd:string">
-            <xsd:annotation>
-              <xsd:documentation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<OneToOne annox:class="javax.persistence.OneToOne"
+										targetEntity="eu.open_ecvet.entity.CertificateTemplateType">
+										<cascade>ALL</cascade>
+									</OneToOne>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="certificateTemplateType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="certificatetemplate"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetAttachment"></xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="partnerListType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="partnerlist"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element maxOccurs="unbounded" name="partner" type="partnerType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="partnerlist_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="partner_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="partnerType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="partner"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement"></xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="attachmentType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<Entity annox:class="javax.persistence.Entity"></Entity>
+					<Table annox:class="javax.persistence.Table" name="attachment"></Table>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="attachmentUrl" type="xsd:string"></xsd:element>
+					<xsd:element name="idrefToken" type="xsd:string">
+						<xsd:annotation>
+							<xsd:documentation>
 								Dummy: to store binaries outside the DB
 							</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-        <xsd:attribute name="idref" type="xsd:IDREF" use="required">
-          <xsd:annotation>
-            <xsd:appinfo>
-              <annox:annotate target="field">
-                <Transient annox:class="javax.persistence.Transient"></Transient>
-              </annox:annotate>
-            </xsd:appinfo>
-          </xsd:annotation>
-        </xsd:attribute>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="fileDataType">
-    <xsd:sequence>
-      <xsd:element name="originalFileName" type="xsd:string" minOccurs="0"></xsd:element>
-      <xsd:element name="mimeType" type="mimeTypeEnumeration"></xsd:element>
-      <xsd:element name="fileSize" type="xsd:long">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+				<xsd:attribute name="idref" type="xsd:IDREF" use="required">
+					<xsd:annotation>
+						<xsd:appinfo>
+							<annox:annotate target="field">
+								<Transient annox:class="javax.persistence.Transient"></Transient>
+							</annox:annotate>
+						</xsd:appinfo>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="fileDataType">
+		<xsd:sequence>
+			<xsd:element name="originalFileName" type="xsd:string"
+				minOccurs="0"></xsd:element>
+			<xsd:element name="mimeType" type="mimeTypeEnumeration"></xsd:element>
+			<xsd:element name="fileSize" type="xsd:long">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
 						the file size in
 						bytes
 					</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
-      <xsd:element name="data" type="xsd:base64Binary">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="data" type="xsd:base64Binary">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">
 						Includes the raw
 						base-64 encoded bytes of the document.
 					</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
-    </xsd:sequence>
-    <xsd:attribute name="id" type="xsd:ID" use="required"/>
-  </xsd:complexType>
-  <xsd:complexType name="ecvetElement">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <MappedSuperclass annox:class="javax.persistence.MappedSuperclass"></MappedSuperclass>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:sequence>
-      <xsd:element name="id" nillable="true" type="xsd:int">
-        <xsd:annotation>
-          <xsd:appinfo>
-            <annox:annotate target="field">
-              <Id annox:class="javax.persistence.Id"></Id>
-              <GeneratedValue annox:class="javax.persistence.GeneratedValue" strategy="IDENTITY"></GeneratedValue>
-              <!-- <XmlTransient annox:class="javax.xml.bind.annotation.XmlTransient"></XmlTransient> -->
-            </annox:annotate>
-          </xsd:appinfo>
-        </xsd:annotation>
-      </xsd:element>
-      <xsd:element name="title" type="xsd:string">
-        <xsd:annotation>
-          <xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:ID" use="required" />
+	</xsd:complexType>
+	<xsd:complexType name="ecvetElement">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<MappedSuperclass annox:class="javax.persistence.MappedSuperclass"></MappedSuperclass>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="id" nillable="true" type="xsd:int">
+				<xsd:annotation>
+					<xsd:appinfo>
+						<annox:annotate target="field">
+							<Id annox:class="javax.persistence.Id"></Id>
+							<GeneratedValue annox:class="javax.persistence.GeneratedValue"
+								strategy="IDENTITY"></GeneratedValue>
+							<!-- <XmlTransient annox:class="javax.xml.bind.annotation.XmlTransient"></XmlTransient> -->
+						</annox:annotate>
+					</xsd:appinfo>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="title" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>
 						qualification and unit must have a title, this
 						might be unsefull also for other elements
 					</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
-      <xsd:element name="description" type="xsd:string">
-        <xsd:annotation>
-          <xsd:appinfo>
-            <annox:annotate target="field">
-              <Lob annox:class="javax.persistence.Lob"></Lob>
-            </annox:annotate>
-          </xsd:appinfo>
-          <xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="description" type="xsd:string">
+				<xsd:annotation>
+					<xsd:appinfo>
+						<annox:annotate target="field">
+							<Lob annox:class="javax.persistence.Lob"></Lob>
+						</annox:annotate>
+					</xsd:appinfo>
+					<xsd:documentation>
 						not recommended, but usefull to give further
 						explanations to the title
 					</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
-    </xsd:sequence>
-    <xsd:attribute name="URI" type="xsd:string"/>
-  </xsd:complexType>
-  <xsd:complexType name="ecvetAttachment">
-    <xsd:annotation>
-      <xsd:appinfo>
-        <annox:annotate target="field">
-          <MappedSuperclass annox:class="javax.persistence.MappedSuperclass"></MappedSuperclass>
-        </annox:annotate>
-      </xsd:appinfo>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="ecvetElement">
-        <xsd:sequence>
-          <xsd:element name="attachment" maxOccurs="unbounded" type="attachmentType">
-            <xsd:annotation>
-              <xsd:appinfo>
-                <annox:annotate target="field">
-                  <ManyToMany annox:class="javax.persistence.ManyToMany">
-                    <cascade>PERSIST</cascade>
-                    <cascade>MERGE</cascade>
-                    <cascade>DETACH</cascade>
-                  </ManyToMany>
-                  <JoinTable annox:class="javax.persistence.JoinTable">
-                    <joinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="attachments_id"></JoinColumn>
-                    </joinColumns>
-                    <inverseJoinColumns>
-                      <JoinColumn annox:class="javax.persistence.JoinColumn" name="attachment_id"></JoinColumn>
-                    </inverseJoinColumns>
-                  </JoinTable>
-                </annox:annotate>
-              </xsd:appinfo>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:simpleType name="frameworkType">
-    <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="EQF"/>
-      <xsd:enumeration value="DQF"/>
-    </xsd:restriction>
-  </xsd:simpleType>
-  <xsd:simpleType name="frameworkLevelType">
-    <xsd:annotation>
-      <xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="URI" type="xsd:string" />
+	</xsd:complexType>
+	<xsd:complexType name="ecvetAttachment">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<annox:annotate target="field">
+					<MappedSuperclass annox:class="javax.persistence.MappedSuperclass"></MappedSuperclass>
+				</annox:annotate>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ecvetElement">
+				<xsd:sequence>
+					<xsd:element name="attachment" maxOccurs="unbounded"
+						type="attachmentType">
+						<xsd:annotation>
+							<xsd:appinfo>
+								<annox:annotate target="field">
+									<ManyToMany annox:class="javax.persistence.ManyToMany">
+										<cascade>PERSIST</cascade>
+										<cascade>MERGE</cascade>
+										<cascade>DETACH</cascade>
+									</ManyToMany>
+									<JoinTable annox:class="javax.persistence.JoinTable">
+										<joinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="attachments_id"></JoinColumn>
+										</joinColumns>
+										<inverseJoinColumns>
+											<JoinColumn annox:class="javax.persistence.JoinColumn"
+												name="attachment_id"></JoinColumn>
+										</inverseJoinColumns>
+									</JoinTable>
+								</annox:annotate>
+							</xsd:appinfo>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:simpleType name="frameworkType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="EQF" />
+			<xsd:enumeration value="DQF" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="frameworkLevelType">
+		<xsd:annotation>
+			<xsd:documentation>
 				0 means no level
 			</xsd:documentation>
-    </xsd:annotation>
-    <xsd:restriction base="xsd:int">
-      <xsd:minInclusive value="0"/>
-      <xsd:maxInclusive value="8"/>
-    </xsd:restriction>
-  </xsd:simpleType>
-  <xsd:simpleType name="frameworkTermType">
-    <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="all"/>
-      <xsd:enumeration value="knowledge"/>
-      <xsd:enumeration value="skills"/>
-      <xsd:enumeration value="competences"/>
-    </xsd:restriction>
-  </xsd:simpleType>
-  <xsd:simpleType name="mimeTypeEnumeration">
-    <xsd:annotation>
-      <xsd:documentation xml:lang="en">
+		</xsd:annotation>
+		<xsd:restriction base="xsd:int">
+			<xsd:minInclusive value="0" />
+			<xsd:maxInclusive value="8" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="frameworkTermType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="all" />
+			<xsd:enumeration value="knowledge" />
+			<xsd:enumeration value="skills" />
+			<xsd:enumeration value="competences" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="mimeTypeEnumeration">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
 				Restricts the string by
 				defining an enumeration of allowed file mime types.
 			</xsd:documentation>
-    </xsd:annotation>
-    <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="image/jpeg"/>
-      <xsd:enumeration value="image/pjpeg"/>
-      <xsd:enumeration value="image/png"/>
-      <xsd:enumeration value="image/x-png"/>
-      <xsd:enumeration value="application/pdf"/>
-    </xsd:restriction>
-  </xsd:simpleType>
-  <!-- TODO: consider this -->
-  <!-- <xsd:complexType name="eqfType"> <xsd:sequence> <xsd:element name="terms" type="termsType"></xsd:element> </xsd:sequence> </xsd:complexType> <xsd:complexType name="termsType"> <xsd:sequence> <xsd:element 
-		name="knowledge" type="knowledgeType"> TODO: consider all this types extend levelType </xsd:element> <xsd:element name="skills" type="skillsType"></xsd:element> <xsd:element name="competences" type="competencesType"></xsd:element> 
-		</xsd:sequence> </xsd:complexType> -->
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="image/jpeg" />
+			<xsd:enumeration value="image/pjpeg" />
+			<xsd:enumeration value="image/png" />
+			<xsd:enumeration value="image/x-png" />
+			<xsd:enumeration value="application/pdf" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- TODO: consider this -->
+	<!-- <xsd:complexType name="eqfType"> <xsd:sequence> <xsd:element name="terms" 
+		type="termsType"></xsd:element> </xsd:sequence> </xsd:complexType> <xsd:complexType 
+		name="termsType"> <xsd:sequence> <xsd:element name="knowledge" type="knowledgeType"> 
+		TODO: consider all this types extend levelType </xsd:element> <xsd:element 
+		name="skills" type="skillsType"></xsd:element> <xsd:element name="competences" 
+		type="competencesType"></xsd:element> </xsd:sequence> </xsd:complexType> -->
 </xsd:schema>

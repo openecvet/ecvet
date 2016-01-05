@@ -136,6 +136,91 @@
             }
         },
         {
+            "children": [{
+                "class": "xdev.ui.XdevButton",
+                "events": ["action.actionPerformed"],
+                "properties": {
+                    "-constraints": {
+                        "value": {
+                            "anchor": "EAST",
+                            "fill": "NONE",
+                            "gridHeight": 1,
+                            "gridWidth": 1,
+                            "gridx": 1,
+                            "gridy": 1,
+                            "insets": "3,3,3,3",
+                            "ipadx": 0,
+                            "ipady": 0,
+                            "type": "XDEV_TABLELAYOUT",
+                            "weightx": 0,
+                            "weighty": 0
+                        }
+                    },
+                    "-fieldName": {
+                        "value": "deleteButton"
+                    },
+                    "height": {
+                        "value": 22
+                    },
+                    "tabIndex": {
+                        "value": 4
+                    },
+                    "text": {
+                        "value": "Delete"
+                    },
+                    "width": {
+                        "value": 64
+                    },
+                    "x": {
+                        "value": 3
+                    },
+                    "y": {
+                        "value": 3
+                    }
+                }
+            }],
+            "class": "xdev.ui.XdevContainer",
+            "properties": {
+                "-constraints": {
+                    "value": {
+                        "anchor": "EAST",
+                        "fill": "NONE",
+                        "gridHeight": 1,
+                        "gridWidth": 1,
+                        "gridx": 1,
+                        "gridy": 3,
+                        "insets": "3,3,3,3",
+                        "ipadx": 0,
+                        "ipady": 0,
+                        "type": "XDEV_TABLELAYOUT",
+                        "weightx": 0.1,
+                        "weighty": 0
+                    }
+                },
+                "-fieldName": {
+                    "value": "container2"
+                },
+                "height": {
+                    "value": 29
+                },
+                "layout": {
+                    "value": {
+                        "autoFill": "AUTO_FILL_BOTH",
+                        "type": "XDEV_TABLELAYOUT"
+                    }
+                },
+                "width": {
+                    "value": 71
+                },
+                "x": {
+                    "value": 726
+                },
+                "y": {
+                    "value": 359
+                }
+            }
+        },
+        {
             "children": [
                 {
                     "class": "xdev.ui.XdevNmListBox",
@@ -160,6 +245,100 @@
                                 "gridHeight": 2,
                                 "gridWidth": 1,
                                 "gridx": 3,
+                                "gridy": 4,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 1
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "unitNmListBox"
+                        },
+                        "-virtualTable": {
+                            "value": "eu.open_ecvet.app.model.UnitlistUnit"
+                        },
+                        "height": {
+                            "value": 134
+                        },
+                        "tabIndex": {
+                            "value": 16
+                        },
+                        "width": {
+                            "value": 250
+                        },
+                        "x": {
+                            "value": 547
+                        },
+                        "y": {
+                            "value": 195
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "WEST",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 3,
+                                "gridy": 3,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label7"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "text": {
+                            "value": "Unit"
+                        },
+                        "width": {
+                            "value": 24
+                        },
+                        "x": {
+                            "value": 547
+                        },
+                        "y": {
+                            "value": 171
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevNmListBox",
+                    "properties": {
+                        "-autofillColumns": {
+                            "value": {
+                                "expression": "{$UNITLIST_TITLE}"
+                            }
+                        },
+                        "-autofillDataColumn": {
+                            "value": {
+                                "expression": "UNITLIST_ID"
+                            }
+                        },
+                        "-autofillWithData": {
+                            "value": true
+                        },
+                        "-constraints": {
+                            "value": {
+                                "anchor": "WEST",
+                                "fill": "BOTH",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 3,
                                 "gridy": 2,
                                 "insets": "3,3,3,3",
                                 "ipadx": 0,
@@ -170,10 +349,10 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "nmListBox"
+                            "value": "unitListNmListBox"
                         },
                         "-virtualTable": {
-                            "value": "eu.open_ecvet.app.model.UnitlistUnit"
+                            "value": "eu.open_ecvet.app.model.UnitlistUnitlist"
                         },
                         "height": {
                             "value": 134
@@ -182,10 +361,10 @@
                             "value": 15
                         },
                         "width": {
-                            "value": 309
+                            "value": 250
                         },
                         "x": {
-                            "value": 488
+                            "value": 547
                         },
                         "y": {
                             "value": 29
@@ -212,19 +391,19 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "label4"
+                            "value": "label6"
                         },
                         "height": {
                             "value": 16
                         },
                         "text": {
-                            "value": "Assigned Units"
+                            "value": "Units"
                         },
                         "width": {
-                            "value": 87
+                            "value": 31
                         },
                         "x": {
-                            "value": 488
+                            "value": 547
                         },
                         "y": {
                             "value": 5
@@ -314,10 +493,10 @@
                             "value": 5
                         },
                         "width": {
-                            "value": 396
+                            "value": 337
                         },
                         "x": {
-                            "value": 86
+                            "value": 204
                         },
                         "y": {
                             "value": 3
@@ -392,7 +571,7 @@
                             "value": "eu.open_ecvet.app.model.Unitlist.DESCRIPTION"
                         },
                         "height": {
-                            "value": 107
+                            "value": 133
                         },
                         "maxSignCount": {
                             "value": 2147483647
@@ -401,10 +580,10 @@
                             "value": 6
                         },
                         "width": {
-                            "value": 396
+                            "value": 337
                         },
                         "x": {
-                            "value": 86
+                            "value": 204
                         },
                         "y": {
                             "value": 30
@@ -431,10 +610,13 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "label"
+                            "value": "label4"
                         },
                         "height": {
                             "value": 16
+                        },
+                        "name": {
+                            "value": "label4"
                         },
                         "text": {
                             "value": "URI"
@@ -446,7 +628,7 @@
                             "value": 3
                         },
                         "y": {
-                            "value": 145
+                            "value": 171
                         }
                     }
                 },
@@ -488,13 +670,213 @@
                             "value": 7
                         },
                         "width": {
-                            "value": 396
+                            "value": 337
                         },
                         "x": {
-                            "value": 86
+                            "value": 204
                         },
                         "y": {
-                            "value": 143
+                            "value": 169
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 4,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label5"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "name": {
+                            "value": "label5"
+                        },
+                        "text": {
+                            "value": "EVALUATIONS_ID"
+                        },
+                        "width": {
+                            "value": 96
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 197
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevComboBox",
+                    "properties": {
+                        "-autofillColumns": {
+                            "value": {
+                                "expression": "TITLE"
+                            }
+                        },
+                        "-autofillDataColumn": {
+                            "value": {
+                                "expression": "ID"
+                            }
+                        },
+                        "-autofillWithData": {
+                            "value": true
+                        },
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 4,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "comboBox2"
+                        },
+                        "-virtualTable": {
+                            "value": "eu.open_ecvet.app.model.Evaluations"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Unitlist.EVALUATIONS_ID"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "name": {
+                            "value": "comboBox2"
+                        },
+                        "tabIndex": {
+                            "value": 8
+                        },
+                        "width": {
+                            "value": 337
+                        },
+                        "x": {
+                            "value": 204
+                        },
+                        "y": {
+                            "value": 195
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 5,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "text": {
+                            "value": "QUALIFICATIONFRAMEWORKLIST_ID"
+                        },
+                        "width": {
+                            "value": 195
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 223
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevComboBox",
+                    "properties": {
+                        "-autofillColumns": {
+                            "value": {
+                                "expression": "TITLE"
+                            }
+                        },
+                        "-autofillDataColumn": {
+                            "value": {
+                                "expression": "ID"
+                            }
+                        },
+                        "-autofillWithData": {
+                            "value": true
+                        },
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 5,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "comboBox"
+                        },
+                        "-virtualTable": {
+                            "value": "eu.open_ecvet.app.model.Qualificationframeworklist"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Unitlist.QUALIFICATIONFRAMEWORKLIST_ID"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "tabIndex": {
+                            "value": 9
+                        },
+                        "width": {
+                            "value": 337
+                        },
+                        "x": {
+                            "value": 204
+                        },
+                        "y": {
+                            "value": 221
                         }
                     }
                 },
@@ -517,16 +899,16 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 8
+                                    "value": 10
                                 },
                                 "text": {
-                                    "value": "New"
+                                    "value": "Neu"
                                 },
                                 "width": {
-                                    "value": 52
+                                    "value": 50
                                 },
                                 "x": {
-                                    "value": 446
+                                    "value": 352
                                 },
                                 "y": {
                                     "value": 3
@@ -540,7 +922,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 1
+                                        "zpos": 0
                                     }
                                 },
                                 "-fieldName": {
@@ -550,16 +932,16 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 9
+                                    "value": 11
                                 },
                                 "text": {
-                                    "value": "Reset"
+                                    "value": "Zurücksetzen"
                                 },
                                 "width": {
-                                    "value": 60
+                                    "value": 105
                                 },
                                 "x": {
-                                    "value": 501
+                                    "value": 405
                                 },
                                 "y": {
                                     "value": 3
@@ -573,7 +955,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 2
+                                        "zpos": 0
                                     }
                                 },
                                 "-fieldName": {
@@ -583,16 +965,16 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 10
+                                    "value": 12
                                 },
                                 "text": {
-                                    "value": "Save"
+                                    "value": "Speichern"
                                 },
                                 "width": {
-                                    "value": 56
+                                    "value": 85
                                 },
                                 "x": {
-                                    "value": 564
+                                    "value": 513
                                 },
                                 "y": {
                                     "value": 3
@@ -606,7 +988,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 3
+                                        "zpos": 0
                                     }
                                 },
                                 "-fieldName": {
@@ -616,16 +998,16 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 11
+                                    "value": 13
                                 },
                                 "text": {
-                                    "value": "Save + New"
+                                    "value": "Speichern + Neu"
                                 },
                                 "width": {
-                                    "value": 97
+                                    "value": 124
                                 },
                                 "x": {
-                                    "value": 623
+                                    "value": 601
                                 },
                                 "y": {
                                     "value": 3
@@ -639,7 +1021,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 4
+                                        "zpos": 0
                                     }
                                 },
                                 "-fieldName": {
@@ -649,16 +1031,16 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 12
+                                    "value": 14
                                 },
                                 "text": {
-                                    "value": "Search"
+                                    "value": "Suche"
                                 },
                                 "width": {
-                                    "value": 68
+                                    "value": 63
                                 },
                                 "x": {
-                                    "value": 723
+                                    "value": 728
                                 },
                                 "y": {
                                     "value": 3
@@ -670,12 +1052,12 @@
                     "properties": {
                         "-constraints": {
                             "value": {
-                                "anchor": "WEST",
+                                "anchor": "CENTER",
                                 "fill": "HORIZONTAL",
                                 "gridHeight": 1,
                                 "gridWidth": 3,
                                 "gridx": 1,
-                                "gridy": 4,
+                                "gridy": 6,
                                 "insets": "3,3,3,3",
                                 "ipadx": 0,
                                 "ipady": 0,
@@ -706,7 +1088,7 @@
                             "value": 3
                         },
                         "y": {
-                            "value": 169
+                            "value": 335
                         }
                     }
                 }
@@ -733,7 +1115,7 @@
                     "value": "formular"
                 },
                 "height": {
-                    "value": 200
+                    "value": 366
                 },
                 "layout": {
                     "value": {
@@ -746,91 +1128,6 @@
                 },
                 "y": {
                     "value": 191
-                }
-            }
-        },
-        {
-            "children": [{
-                "class": "xdev.ui.XdevButton",
-                "events": ["action.actionPerformed"],
-                "properties": {
-                    "-constraints": {
-                        "value": {
-                            "anchor": "EAST",
-                            "fill": "NONE",
-                            "gridHeight": 1,
-                            "gridWidth": 1,
-                            "gridx": 1,
-                            "gridy": 1,
-                            "insets": "3,3,3,3",
-                            "ipadx": 0,
-                            "ipady": 0,
-                            "type": "XDEV_TABLELAYOUT",
-                            "weightx": 0,
-                            "weighty": 0
-                        }
-                    },
-                    "-fieldName": {
-                        "value": "deleteButton"
-                    },
-                    "height": {
-                        "value": 22
-                    },
-                    "tabIndex": {
-                        "value": 4
-                    },
-                    "text": {
-                        "value": "Delete"
-                    },
-                    "width": {
-                        "value": 64
-                    },
-                    "x": {
-                        "value": 3
-                    },
-                    "y": {
-                        "value": 3
-                    }
-                }
-            }],
-            "class": "xdev.ui.XdevContainer",
-            "properties": {
-                "-constraints": {
-                    "value": {
-                        "anchor": "EAST",
-                        "fill": "NONE",
-                        "gridHeight": 1,
-                        "gridWidth": 1,
-                        "gridx": 1,
-                        "gridy": 4,
-                        "insets": "3,3,3,3",
-                        "ipadx": 0,
-                        "ipady": 0,
-                        "type": "XDEV_TABLELAYOUT",
-                        "weightx": 0.1,
-                        "weighty": 0
-                    }
-                },
-                "-fieldName": {
-                    "value": "container2"
-                },
-                "height": {
-                    "value": 29
-                },
-                "layout": {
-                    "value": {
-                        "autoFill": "AUTO_FILL_BOTH",
-                        "type": "XDEV_TABLELAYOUT"
-                    }
-                },
-                "width": {
-                    "value": 71
-                },
-                "x": {
-                    "value": 726
-                },
-                "y": {
-                    "value": 394
                 }
             }
         }

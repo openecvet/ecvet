@@ -23,6 +23,7 @@
     <vt class="eu.open_ecvet.app.model.Learningoutcome" />
     <vt class="eu.open_ecvet.app.model.Learningoutcomelist" />
     <vt class="eu.open_ecvet.app.model.LearningoutcomelistLearningoutcome" />
+    <vt class="eu.open_ecvet.app.model.LearningoutcomelistLearningoutcomelist" />
     <vt class="eu.open_ecvet.app.model.Learningoutcomelistlist" />
     <vt class="eu.open_ecvet.app.model.LearningoutcomelistlistLearningoutcomelist" />
     <vt class="eu.open_ecvet.app.model.Legislation" />
@@ -57,8 +58,10 @@
     <vt class="eu.open_ecvet.app.model.Transcriptsofrecordlist" />
     <vt class="eu.open_ecvet.app.model.TranscriptsofrecordlistTranscriptsofrecord" />
     <vt class="eu.open_ecvet.app.model.Unit" />
+    <vt class="eu.open_ecvet.app.model.UnitLearningoutcomelist" />
     <vt class="eu.open_ecvet.app.model.Unitlist" />
     <vt class="eu.open_ecvet.app.model.UnitlistUnit" />
+    <vt class="eu.open_ecvet.app.model.UnitlistUnitlist" />
     <vt class="eu.open_ecvet.app.model.Userguide" />
     <vt class="eu.open_ecvet.app.model.UserguideAttachment" />
     <vt class="eu.open_ecvet.app.model.Userguidelist" />

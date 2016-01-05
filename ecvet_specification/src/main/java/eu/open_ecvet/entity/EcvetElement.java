@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2015.12.17 um 02:48:56 PM CET 
+// Generiert: 2016.01.05 um 05:54:26 PM CET 
 //
 
 
@@ -59,7 +59,6 @@ import javax.xml.bind.annotation.XmlType;
     UserGuideListType.class,
     UnitListType.class,
     UnitType.class,
-    LearningOutcomeListListType.class,
     QualificationFrameworkListType.class,
     QualificationFrameworkType.class,
     LearningOutcomeListType.class,

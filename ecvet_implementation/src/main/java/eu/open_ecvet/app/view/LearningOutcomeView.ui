@@ -86,7 +86,7 @@
             "properties": {
                 "-autofillColumns": {
                     "value": {
-                        "expression": "TITLE, URI, EVALUATIONS_TITLE"
+                        "expression": "TITLE, URI, EVALUATIONS_TITLE, QUALIFICATIONFRAMEWORKLIST_TITLE"
                     }
                 },
                 "-autofillWithData": {
@@ -218,7 +218,7 @@
                     "value": 726
                 },
                 "y": {
-                    "value": 427
+                    "value": 453
                 }
             }
         },
@@ -307,10 +307,10 @@
                             "value": 5
                         },
                         "width": {
-                            "value": 692
+                            "value": 593
                         },
                         "x": {
-                            "value": 105
+                            "value": 204
                         },
                         "y": {
                             "value": 3
@@ -394,10 +394,10 @@
                             "value": 6
                         },
                         "width": {
-                            "value": 692
+                            "value": 593
                         },
                         "x": {
-                            "value": 105
+                            "value": 204
                         },
                         "y": {
                             "value": 30
@@ -495,7 +495,7 @@
                                     "",
                                     "yyyy-MM-dd",
                                     "#,##0.###;-#,##0.###",
-                                    "¤#,##0.00;-¤#,##0.00",
+                                    "#,##0.00 ¤;-#,##0.00 ¤",
                                     "#,##0%"
                                 ],
                                 "signedColor": "255,0,0",
@@ -506,10 +506,10 @@
                             }
                         },
                         "width": {
-                            "value": 692
+                            "value": 593
                         },
                         "x": {
-                            "value": 105
+                            "value": 204
                         },
                         "y": {
                             "value": 98
@@ -604,7 +604,7 @@
                                     "",
                                     "yyyy-MM-dd",
                                     "#,##0.###;-#,##0.###",
-                                    "¤#,##0.00;-¤#,##0.00",
+                                    "#,##0.00 ¤;-#,##0.00 ¤",
                                     "#,##0%"
                                 ],
                                 "signedColor": "255,0,0",
@@ -615,10 +615,10 @@
                             }
                         },
                         "width": {
-                            "value": 692
+                            "value": 593
                         },
                         "x": {
-                            "value": 105
+                            "value": 204
                         },
                         "y": {
                             "value": 124
@@ -705,10 +705,10 @@
                             "value": 9
                         },
                         "width": {
-                            "value": 692
+                            "value": 593
                         },
                         "x": {
-                            "value": 105
+                            "value": 204
                         },
                         "y": {
                             "value": 150
@@ -735,10 +735,13 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "label"
+                            "value": "label7"
                         },
                         "height": {
                             "value": 16
+                        },
+                        "name": {
+                            "value": "label7"
                         },
                         "text": {
                             "value": "EVALUATIONS_ID"
@@ -798,17 +801,117 @@
                         "height": {
                             "value": 20
                         },
+                        "name": {
+                            "value": "comboBox2"
+                        },
                         "tabIndex": {
                             "value": 10
                         },
                         "width": {
-                            "value": 692
+                            "value": 593
                         },
                         "x": {
-                            "value": 105
+                            "value": 204
                         },
                         "y": {
                             "value": 176
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevLabel",
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 7,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "label"
+                        },
+                        "height": {
+                            "value": 16
+                        },
+                        "text": {
+                            "value": "QUALIFICATIONFRAMEWORKLIST_ID"
+                        },
+                        "width": {
+                            "value": 195
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 204
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevComboBox",
+                    "properties": {
+                        "-autofillColumns": {
+                            "value": {
+                                "expression": "TITLE"
+                            }
+                        },
+                        "-autofillDataColumn": {
+                            "value": {
+                                "expression": "ID"
+                            }
+                        },
+                        "-autofillWithData": {
+                            "value": true
+                        },
+                        "-constraints": {
+                            "value": {
+                                "anchor": "BASELINE_LEADING",
+                                "fill": "HORIZONTAL",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 7,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "qualificationFramworkListcomboBox"
+                        },
+                        "-virtualTable": {
+                            "value": "eu.open_ecvet.app.model.Qualificationframeworklist"
+                        },
+                        "dataField": {
+                            "value": "eu.open_ecvet.app.model.Learningoutcome.QUALIFICATIONFRAMEWORKLIST_ID"
+                        },
+                        "height": {
+                            "value": 20
+                        },
+                        "tabIndex": {
+                            "value": 11
+                        },
+                        "width": {
+                            "value": 593
+                        },
+                        "x": {
+                            "value": 204
+                        },
+                        "y": {
+                            "value": 202
                         }
                     }
                 },
@@ -831,16 +934,16 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 11
+                                    "value": 12
                                 },
                                 "text": {
-                                    "value": "New"
+                                    "value": "Neu"
                                 },
                                 "width": {
-                                    "value": 52
+                                    "value": 50
                                 },
                                 "x": {
-                                    "value": 446
+                                    "value": 352
                                 },
                                 "y": {
                                     "value": 3
@@ -864,16 +967,16 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 12
+                                    "value": 13
                                 },
                                 "text": {
-                                    "value": "Reset"
+                                    "value": "Zurücksetzen"
                                 },
                                 "width": {
-                                    "value": 60
+                                    "value": 105
                                 },
                                 "x": {
-                                    "value": 501
+                                    "value": 405
                                 },
                                 "y": {
                                     "value": 3
@@ -897,16 +1000,16 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 13
+                                    "value": 14
                                 },
                                 "text": {
-                                    "value": "Save"
+                                    "value": "Speichern"
                                 },
                                 "width": {
-                                    "value": 56
+                                    "value": 85
                                 },
                                 "x": {
-                                    "value": 564
+                                    "value": 513
                                 },
                                 "y": {
                                     "value": 3
@@ -930,16 +1033,16 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 14
+                                    "value": 15
                                 },
                                 "text": {
-                                    "value": "Save + New"
+                                    "value": "Speichern + Neu"
                                 },
                                 "width": {
-                                    "value": 97
+                                    "value": 124
                                 },
                                 "x": {
-                                    "value": 623
+                                    "value": 601
                                 },
                                 "y": {
                                     "value": 3
@@ -963,16 +1066,16 @@
                                     "value": 22
                                 },
                                 "tabIndex": {
-                                    "value": 15
+                                    "value": 16
                                 },
                                 "text": {
-                                    "value": "Search"
+                                    "value": "Suche"
                                 },
                                 "width": {
-                                    "value": 68
+                                    "value": 63
                                 },
                                 "x": {
-                                    "value": 723
+                                    "value": 728
                                 },
                                 "y": {
                                     "value": 3
@@ -989,7 +1092,7 @@
                                 "gridHeight": 1,
                                 "gridWidth": 2,
                                 "gridx": 1,
-                                "gridy": 7,
+                                "gridy": 8,
                                 "insets": "3,3,3,3",
                                 "ipadx": 0,
                                 "ipady": 0,
@@ -1020,7 +1123,7 @@
                             "value": 3
                         },
                         "y": {
-                            "value": 202
+                            "value": 228
                         }
                     }
                 }
@@ -1047,7 +1150,7 @@
                     "value": "formular"
                 },
                 "height": {
-                    "value": 233
+                    "value": 259
                 },
                 "layout": {
                     "value": {
