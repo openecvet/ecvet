@@ -46,8 +46,8 @@ public class UnitListView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPE
 										{
 											unitListNmListBox.setModel(UnitlistUnitlist.VT,
 													"{$UNITLIST_TITLE}","UNITLIST_ID",true);
-											unitNmListBox.setModel(UnitlistUnit.VT,"{$UNIT_TITLE}",
-													"UNIT_ID",true);
+//											unitNmListBox.setModel(UnitlistUnit.VT,"{$UNIT_TITLE}",
+//													"UNIT_ID",true);
 											table.refresh();
 										}
 									};
@@ -158,7 +158,8 @@ public class UnitListView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPE
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.search("AND",table);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
+
+
 	// Generated definitions, do not edit! ${GENERATED-CODE-BLOCK-START:DEFINITIONS}
 	XdevContainer	container, container2, container3;
 	XdevButton		unitShortcut, deleteButton, cmdNew, cmdReset, cmdSave, cmdSaveAndNew,
@@ -169,7 +170,7 @@ public class UnitListView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPE
 	XdevTextArea	textArea;
 	XdevComboBox	comboBox2, comboBox;
 	XdevLabel		label2, label6, label3, label4, label7, label5, label;
-	XdevNmListBox	unitListNmListBox, unitNmListBox;
+	XdevNmListBox	unitListNmListBox;
 	// End generated definitions ${GENERATED-CODE-BLOCK-END:DEFINITIONS}
 	
 	{// Generated initializers, do not edit! ${GENERATED-CODE-BLOCK-START:INITIALIZERS}
@@ -190,7 +191,6 @@ public class UnitListView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPE
 		label7 = new XdevLabel();
 		label5 = new XdevLabel();
 		comboBox2 = new XdevComboBox();
-		unitNmListBox = new XdevNmListBox();
 		label = new XdevLabel();
 		comboBox = new XdevComboBox();
 		container3 = new XdevContainer();
@@ -237,7 +237,6 @@ public class UnitListView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPE
 		comboBox2.setTabIndex(8);
 		comboBox2.setName("comboBox2");
 		comboBox2.setModel(Evaluations.VT,"TITLE","ID",true);
-		unitNmListBox.setTabIndex(16);
 		label.setText("QUALIFICATIONFRAMEWORKLIST_ID");
 		comboBox.setDataField("eu.open_ecvet.app.model.Unitlist.QUALIFICATIONFRAMEWORKLIST_ID");
 		comboBox.setTabIndex(9);
@@ -266,17 +265,14 @@ public class UnitListView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPE
 		label7.saveState();
 		label5.saveState();
 		comboBox2.saveState();
-		unitNmListBox.saveState();
 		label.saveState();
 		comboBox.saveState();
 		
 		container.setLayout(new GridBagLayout());
-		container.add(unitShortcut,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,
-				0));
+		container.add(unitShortcut,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
 		GBC.addSpacer(container,true,true);
 		container2.setLayout(new GridBagLayout());
-		container2.add(deleteButton,new GBC(1,1,1,1,0.0,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),
-				0,0));
+		container2.add(deleteButton,new GBC(1,1,1,1,0.0,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(container2,true,true);
 		container3.setLayout(new FlowLayout(FlowLayout.TRAILING,3,3));
 		container3.add(cmdNew);
@@ -285,54 +281,32 @@ public class UnitListView extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPE
 		container3.add(cmdSaveAndNew);
 		container3.add(cmdSearch);
 		formular.setLayout(new GridBagLayout());
-		formular.add(label2,new GBC(1,1,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(textField2,new GBC(2,1,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
-				new Insets(3,3,3,3),0,0));
+		formular.add(label2,new GBC(1,1,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(textField2,new GBC(2,1,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label6,new GBC(3,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(label3,new GBC(1,2,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		JScrollPane textArea_carrier = new XScrollPane(textArea,
-				XScrollPane.VERTICAL_SCROLLBAR_ALWAYS,XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-		formular.add(textArea_carrier,new GBC(2,2,1,1,1.0,1.0,GBC.BASELINE_LEADING,GBC.BOTH,
-				new Insets(3,3,3,3),0,0));
-		JScrollPane unitListNmListBox_carrier = new XScrollPane(unitListNmListBox,
-				XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		formular.add(unitListNmListBox_carrier,new GBC(3,2,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,
-				new Insets(3,3,3,3),0,0));
-		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
-				new Insets(3,3,3,3),0,0));
+		formular.add(label3,new GBC(1,2,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		JScrollPane textArea_carrier = new XScrollPane(textArea,XScrollPane.VERTICAL_SCROLLBAR_ALWAYS,XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		formular.add(textArea_carrier,new GBC(2,2,1,1,1.0,1.0,GBC.BASELINE_LEADING,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		JScrollPane unitListNmListBox_carrier = new XScrollPane(unitListNmListBox,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		formular.add(unitListNmListBox_carrier,new GBC(3,2,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label7,new GBC(3,3,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(comboBox2,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
-				new Insets(3,3,3,3),0,0));
-		JScrollPane unitNmListBox_carrier = new XScrollPane(unitNmListBox,
-				XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		formular.add(unitNmListBox_carrier,new GBC(3,4,1,2,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,
-				3,3,3),0,0));
-		formular.add(label,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,
-				new Insets(3,3,3,3),0,0));
-		formular.add(comboBox,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
-				new Insets(3,3,3,3),0,0));
-		formular.add(container3,new GBC(1,6,3,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,
-				3),0,0));
+		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(comboBox2,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(comboBox,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(container3,new GBC(1,6,3,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(formular,true,true);
 		this.setLayout(new GridBagLayout());
 		this.add(container,new GBC(1,1,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		JScrollPane table_carrier = new XScrollPane(table,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
-				XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		this.add(table_carrier,new GBC(1,2,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),
-				0,0));
+		JScrollPane table_carrier = new XScrollPane(table,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		this.add(table_carrier,new GBC(1,2,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		this.add(container2,new GBC(1,3,1,1,0.1,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
-		this.add(formular,
-				new GBC(1,3,1,1,0.1,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(0,0,0,0),0,0));
+		this.add(formular,new GBC(1,3,1,1,0.1,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(0,0,0,0),0,0));
 		GBC.addSpacer(this,true,true);
 		
-		unitListNmListBox.setModel(UnitlistUnitlist.VT,"{$UNITLIST_TITLE}","UNITLIST_ID",true);
-		unitNmListBox.setModel(UnitlistUnit.VT,"{$UNIT_TITLE}","UNIT_ID",true);
+		unitListNmListBox.setModel(UnitlistUnitlist.VT,"{$UNITLIST_TITLE2}","UNITLIST_ID",true);
 		
 		this.addWindowListener(new WindowAdapter()
 		{

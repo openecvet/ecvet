@@ -92,8 +92,8 @@ DROP TABLE learningoutcome
 DROP TABLE transcriptsofrecordlist
 DROP TABLE requirement
 DROP TABLE processlist
-DROP TABLE partner
 DROP TABLE userguide
+DROP TABLE partner
 DROP TABLE validation
 DROP TABLE validationlist
 DROP TABLE legislationlist
@@ -102,8 +102,8 @@ DROP TABLE unit
 DROP TABLE attachment
 DROP TABLE ecvetframework
 DROP TABLE complementarydocuments
-DROP TABLE assessment
 DROP TABLE partnerlist
+DROP TABLE assessment
 DROP TABLE evaluations
 DROP TABLE learningagreement
 DROP TABLE recognitionlist

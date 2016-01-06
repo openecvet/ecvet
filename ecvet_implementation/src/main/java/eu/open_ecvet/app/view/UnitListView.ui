@@ -216,67 +216,12 @@
                     "value": 726
                 },
                 "y": {
-                    "value": 359
+                    "value": 315
                 }
             }
         },
         {
             "children": [
-                {
-                    "class": "xdev.ui.XdevNmListBox",
-                    "properties": {
-                        "-autofillColumns": {
-                            "value": {
-                                "expression": "{$UNIT_TITLE}"
-                            }
-                        },
-                        "-autofillDataColumn": {
-                            "value": {
-                                "expression": "UNIT_ID"
-                            }
-                        },
-                        "-autofillWithData": {
-                            "value": true
-                        },
-                        "-constraints": {
-                            "value": {
-                                "anchor": "WEST",
-                                "fill": "BOTH",
-                                "gridHeight": 2,
-                                "gridWidth": 1,
-                                "gridx": 3,
-                                "gridy": 4,
-                                "insets": "3,3,3,3",
-                                "ipadx": 0,
-                                "ipady": 0,
-                                "type": "XDEV_TABLELAYOUT",
-                                "weightx": 1,
-                                "weighty": 1
-                            }
-                        },
-                        "-fieldName": {
-                            "value": "unitNmListBox"
-                        },
-                        "-virtualTable": {
-                            "value": "eu.open_ecvet.app.model.UnitlistUnit"
-                        },
-                        "height": {
-                            "value": 134
-                        },
-                        "tabIndex": {
-                            "value": 16
-                        },
-                        "width": {
-                            "value": 250
-                        },
-                        "x": {
-                            "value": 547
-                        },
-                        "y": {
-                            "value": 195
-                        }
-                    }
-                },
                 {
                     "class": "xdev.ui.XdevLabel",
                     "properties": {
@@ -321,7 +266,7 @@
                     "properties": {
                         "-autofillColumns": {
                             "value": {
-                                "expression": "{$UNITLIST_TITLE}"
+                                "expression": "{$UNITLIST_TITLE2}"
                             }
                         },
                         "-autofillDataColumn": {
@@ -922,7 +867,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 0
+                                        "zpos": 1
                                     }
                                 },
                                 "-fieldName": {
@@ -955,7 +900,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 0
+                                        "zpos": 2
                                     }
                                 },
                                 "-fieldName": {
@@ -988,7 +933,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 0
+                                        "zpos": 3
                                     }
                                 },
                                 "-fieldName": {
@@ -1021,7 +966,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 0
+                                        "zpos": 4
                                     }
                                 },
                                 "-fieldName": {
@@ -1088,7 +1033,7 @@
                             "value": 3
                         },
                         "y": {
-                            "value": 335
+                            "value": 247
                         }
                     }
                 }
@@ -1115,7 +1060,7 @@
                     "value": "formular"
                 },
                 "height": {
-                    "value": 366
+                    "value": 278
                 },
                 "layout": {
                     "value": {

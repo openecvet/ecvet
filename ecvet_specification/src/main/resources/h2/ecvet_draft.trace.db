@@ -1,1632 +1,1632 @@
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTION" nicht gefunden
 Table "COMPETENTINSTITUTION" not found; SQL statement:
 ALTER TABLE competentinstitution DROP CONSTRAINT FK_competentinstitution_LEGISLATIONLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTION" nicht gefunden
 Table "COMPETENTINSTITUTION" not found; SQL statement:
 ALTER TABLE competentinstitution DROP CONSTRAINT FK_competentinstitution_PARTNERLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATION" nicht gefunden
 Table "QUALIFICATION" not found; SQL statement:
 ALTER TABLE qualification DROP CONSTRAINT FK_qualification_UNITLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOME" not found; SQL statement:
 ALTER TABLE learningoutcome DROP CONSTRAINT FK_learningoutcome_QUALIFICATIONFRAMEWORKLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOME" not found; SQL statement:
 ALTER TABLE learningoutcome DROP CONSTRAINT FK_learningoutcome_EVALUATIONS_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATION" nicht gefunden
 Table "VALIDATION" not found; SQL statement:
 ALTER TABLE validation DROP CONSTRAINT FK_validation_REQUIREMENTLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST" nicht gefunden
 Table "UNITLIST" not found; SQL statement:
 ALTER TABLE unitlist DROP CONSTRAINT FK_unitlist_QUALIFICATIONFRAMEWORKLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST" nicht gefunden
 Table "UNITLIST" not found; SQL statement:
 ALTER TABLE unitlist DROP CONSTRAINT FK_unitlist_EVALUATIONS_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 ALTER TABLE unit DROP CONSTRAINT FK_unit_EVALUATIONS_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 ALTER TABLE unit DROP CONSTRAINT FK_unit_LEARNINGOUTCOMELIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 ALTER TABLE unit DROP CONSTRAINT FK_unit_QUALIFICATIONFRAMEWORKLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ECVETFRAMEWORK" nicht gefunden
 Table "ECVETFRAMEWORK" not found; SQL statement:
 ALTER TABLE ecvetframework DROP CONSTRAINT FK_ecvetframework_COMPETENTINSTITUTIONLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ECVETFRAMEWORK" nicht gefunden
 Table "ECVETFRAMEWORK" not found; SQL statement:
 ALTER TABLE ecvetframework DROP CONSTRAINT FK_ecvetframework_QUALIFICATION_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ECVETFRAMEWORK" nicht gefunden
 Table "ECVETFRAMEWORK" not found; SQL statement:
 ALTER TABLE ecvetframework DROP CONSTRAINT FK_ecvetframework_COMPLEMENTARYDOCUMENTS_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTS" nicht gefunden
 Table "COMPLEMENTARYDOCUMENTS" not found; SQL statement:
 ALTER TABLE complementarydocuments DROP CONSTRAINT complementarydocumentsPROCEDUREANDGUIDELINELIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTS" nicht gefunden
 Table "COMPLEMENTARYDOCUMENTS" not found; SQL statement:
 ALTER TABLE complementarydocuments DROP CONSTRAINT complementarydocuments_TRANSCRIPTSOFRECORDLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTS" nicht gefunden
 Table "COMPLEMENTARYDOCUMENTS" not found; SQL statement:
 ALTER TABLE complementarydocuments DROP CONSTRAINT FK_complementarydocuments_CREDITTRANSFERLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTS" nicht gefunden
 Table "COMPLEMENTARYDOCUMENTS" not found; SQL statement:
 ALTER TABLE complementarydocuments DROP CONSTRAINT FK_complementarydocuments_LEARNINGAGREEMENTLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTS" nicht gefunden
 Table "COMPLEMENTARYDOCUMENTS" not found; SQL statement:
 ALTER TABLE complementarydocuments DROP CONSTRAINT FK_complementarydocuments_USERGUIDELIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTS" nicht gefunden
 Table "COMPLEMENTARYDOCUMENTS" not found; SQL statement:
 ALTER TABLE complementarydocuments DROP CONSTRAINT complementarydocumentsMEMORANDUMOFUNDERSTANDING_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENT" nicht gefunden
 Table "ASSESSMENT" not found; SQL statement:
 ALTER TABLE assessment DROP CONSTRAINT FK_assessment_PROCESSLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENT" nicht gefunden
 Table "ASSESSMENT" not found; SQL statement:
 ALTER TABLE assessment DROP CONSTRAINT FK_assessment_METHODLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "EVALUATIONS" nicht gefunden
 Table "EVALUATIONS" not found; SQL statement:
 ALTER TABLE evaluations DROP CONSTRAINT FK_evaluations_VALIDATIONLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "EVALUATIONS" nicht gefunden
 Table "EVALUATIONS" not found; SQL statement:
 ALTER TABLE evaluations DROP CONSTRAINT FK_evaluations_RECOGNITIONLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "EVALUATIONS" nicht gefunden
 Table "EVALUATIONS" not found; SQL statement:
 ALTER TABLE evaluations DROP CONSTRAINT FK_evaluations_ASSESSMENTLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST" not found; SQL statement:
 ALTER TABLE learningoutcomelist DROP CONSTRAINT FK_learningoutcomelist_EVALUATIONS_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST" not found; SQL statement:
 ALTER TABLE learningoutcomelist DROP CONSTRAINT learningoutcomelist_QUALIFICATIONFRAMEWORKLIST_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITION" nicht gefunden
 Table "RECOGNITION" not found; SQL statement:
 ALTER TABLE recognition DROP CONSTRAINT FK_recognition_CERTIFICATETEMPLATE_ID [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORD_ATTACHMENT" nicht gefunden
 Table "TRANSCRIPTSOFRECORD_ATTACHMENT" not found; SQL statement:
 ALTER TABLE transcriptsofrecord_attachment DROP CONSTRAINT FK_transcriptsofrecord_attachment_attachment_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORD_ATTACHMENT" nicht gefunden
 Table "TRANSCRIPTSOFRECORD_ATTACHMENT" not found; SQL statement:
 ALTER TABLE transcriptsofrecord_attachment DROP CONSTRAINT FK_transcriptsofrecord_attachment_attachments_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFER_ATTACHMENT" nicht gefunden
 Table "CREDITTRANSFER_ATTACHMENT" not found; SQL statement:
 ALTER TABLE credittransfer_attachment DROP CONSTRAINT FK_credittransfer_attachment_attachment_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFER_ATTACHMENT" nicht gefunden
 Table "CREDITTRANSFER_ATTACHMENT" not found; SQL statement:
 ALTER TABLE credittransfer_attachment DROP CONSTRAINT FK_credittransfer_attachment_attachments_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENTLIST_ASSESSMENT" nicht gefunden
 Table "ASSESSMENTLIST_ASSESSMENT" not found; SQL statement:
 ALTER TABLE assessmentlist_assessment DROP CONSTRAINT FK_assessmentlist_assessment_assessment_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENTLIST_ASSESSMENT" nicht gefunden
 Table "ASSESSMENTLIST_ASSESSMENT" not found; SQL statement:
 ALTER TABLE assessmentlist_assessment DROP CONSTRAINT FK_assessmentlist_assessment_assessmentlist_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "MEMORANDUMOFUNDERSTANDING_ATTACHMENT" nicht gefunden
 Table "MEMORANDUMOFUNDERSTANDING_ATTACHMENT" not found; SQL statement:
 ALTER TABLE memorandumofunderstanding_attachment DROP CONSTRAINT memorandumofunderstanding_attachmentattachments_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "MEMORANDUMOFUNDERSTANDING_ATTACHMENT" nicht gefunden
 Table "MEMORANDUMOFUNDERSTANDING_ATTACHMENT" not found; SQL statement:
 ALTER TABLE memorandumofunderstanding_attachment DROP CONSTRAINT memorandumofunderstanding_attachment_attachment_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDELIST_USERGUIDE" nicht gefunden
 Table "USERGUIDELIST_USERGUIDE" not found; SQL statement:
 ALTER TABLE userguidelist_userguide DROP CONSTRAINT FK_userguidelist_userguide_userguide_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDELIST_USERGUIDE" nicht gefunden
 Table "USERGUIDELIST_USERGUIDE" not found; SQL statement:
 ALTER TABLE userguidelist_userguide DROP CONSTRAINT FK_userguidelist_userguide_userguidelist_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINELIST_PROCEDUREANDGUIDELINE" nicht gefunden
 Table "PROCEDUREANDGUIDELINELIST_PROCEDUREANDGUIDELINE" not found; SQL statement:
 ALTER TABLE procedureandguidelinelist_procedureAndGuideline DROP CONSTRAINT prcdrndgdlnlistprocedureAndGuidelineprcdrndgdlneid [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINELIST_PROCEDUREANDGUIDELINE" nicht gefunden
 Table "PROCEDUREANDGUIDELINELIST_PROCEDUREANDGUIDELINE" not found; SQL statement:
 ALTER TABLE procedureandguidelinelist_procedureAndGuideline DROP CONSTRAINT prcdrndgdlnlstprocedureAndGuidelineprcdrndgdlnlstd [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFERLIST_CREDITTRANSFER" nicht gefunden
 Table "CREDITTRANSFERLIST_CREDITTRANSFER" not found; SQL statement:
 ALTER TABLE credittransferlist_credittransfer DROP CONSTRAINT credittransferlist_credittransfercredittransfer_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFERLIST_CREDITTRANSFER" nicht gefunden
 Table "CREDITTRANSFERLIST_CREDITTRANSFER" not found; SQL statement:
 ALTER TABLE credittransferlist_credittransfer DROP CONSTRAINT crdittransferlistcredittransfercrdittransferlistid [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORKLIST_QUALIFICATIONFRAMEWORK" nicht gefunden
 Table "QUALIFICATIONFRAMEWORKLIST_QUALIFICATIONFRAMEWORK" not found; SQL statement:
 ALTER TABLE qualificationframeworklist_qualificationframework DROP CONSTRAINT qlfctnfrmwrklstqlficationframeworkqlfctnfrmwrklstd [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORKLIST_QUALIFICATIONFRAMEWORK" nicht gefunden
 Table "QUALIFICATIONFRAMEWORKLIST_QUALIFICATIONFRAMEWORK" not found; SQL statement:
 ALTER TABLE qualificationframeworklist_qualificationframework DROP CONSTRAINT qlfctnfrmwrklstqualificationframeworkqlfctnfrmwrkd [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHODLIST_METHOD" nicht gefunden
 Table "METHODLIST_METHOD" not found; SQL statement:
 ALTER TABLE methodlist_method DROP CONSTRAINT FK_methodlist_method_methodlist_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHODLIST_METHOD" nicht gefunden
 Table "METHODLIST_METHOD" not found; SQL statement:
 ALTER TABLE methodlist_method DROP CONSTRAINT FK_methodlist_method_method_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORDLIST_TRANSCRIPTSOFRECORD" nicht gefunden
 Table "TRANSCRIPTSOFRECORDLIST_TRANSCRIPTSOFRECORD" not found; SQL statement:
 ALTER TABLE transcriptsofrecordlist_transcriptsofrecord DROP CONSTRAINT trnscrptsfrcrdlsttrnscrptsfrcordtrnscrptsfrcrdlstd [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORDLIST_TRANSCRIPTSOFRECORD" nicht gefunden
 Table "TRANSCRIPTSOFRECORDLIST_TRANSCRIPTSOFRECORD" not found; SQL statement:
 ALTER TABLE transcriptsofrecordlist_transcriptsofrecord DROP CONSTRAINT trnscrptsfrcrdlsttrnscriptsofrecordtrnscrptsfrcrdd [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESSLIST_PROCESS" nicht gefunden
 Table "PROCESSLIST_PROCESS" not found; SQL statement:
 ALTER TABLE processlist_process DROP CONSTRAINT FK_processlist_process_processlist_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESSLIST_PROCESS" nicht gefunden
 Table "PROCESSLIST_PROCESS" not found; SQL statement:
 ALTER TABLE processlist_process DROP CONSTRAINT FK_processlist_process_process_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDE_ATTACHMENT" nicht gefunden
 Table "USERGUIDE_ATTACHMENT" not found; SQL statement:
 ALTER TABLE userguide_attachment DROP CONSTRAINT FK_userguide_attachment_attachment_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDE_ATTACHMENT" nicht gefunden
 Table "USERGUIDE_ATTACHMENT" not found; SQL statement:
 ALTER TABLE userguide_attachment DROP CONSTRAINT FK_userguide_attachment_attachments_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATIONLIST_VALIDATION" nicht gefunden
 Table "VALIDATIONLIST_VALIDATION" not found; SQL statement:
 ALTER TABLE validationlist_validation DROP CONSTRAINT FK_validationlist_validation_validation_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATIONLIST_VALIDATION" nicht gefunden
 Table "VALIDATIONLIST_VALIDATION" not found; SQL statement:
 ALTER TABLE validationlist_validation DROP CONSTRAINT FK_validationlist_validation_validationlist_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATIONLIST_LEGISLATION" nicht gefunden
 Table "LEGISLATIONLIST_LEGISLATION" not found; SQL statement:
 ALTER TABLE legislationlist_legislation DROP CONSTRAINT FK_legislationlist_legislation_legislation_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATIONLIST_LEGISLATION" nicht gefunden
 Table "LEGISLATIONLIST_LEGISLATION" not found; SQL statement:
 ALTER TABLE legislationlist_legislation DROP CONSTRAINT FK_legislationlist_legislation_legislationlist_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNIT" nicht gefunden
 Table "UNITLIST_UNIT" not found; SQL statement:
 ALTER TABLE unitlist_unit DROP CONSTRAINT FK_unitlist_unit_unit_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNIT" nicht gefunden
 Table "UNITLIST_UNIT" not found; SQL statement:
 ALTER TABLE unitlist_unit DROP CONSTRAINT FK_unitlist_unit_unitlist_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNITLIST" nicht gefunden
 Table "UNITLIST_UNITLIST" not found; SQL statement:
 ALTER TABLE unitlist_unitlist DROP CONSTRAINT FK_unitlist_unitlist_unitlistparent_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNITLIST" nicht gefunden
 Table "UNITLIST_UNITLIST" not found; SQL statement:
 ALTER TABLE unitlist_unitlist DROP CONSTRAINT FK_unitlist_unitlist_unitlist_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST_PARTNER" nicht gefunden
 Table "PARTNERLIST_PARTNER" not found; SQL statement:
 ALTER TABLE partnerlist_partner DROP CONSTRAINT FK_partnerlist_partner_partner_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST_PARTNER" nicht gefunden
 Table "PARTNERLIST_PARTNER" not found; SQL statement:
 ALTER TABLE partnerlist_partner DROP CONSTRAINT FK_partnerlist_partner_partnerlist_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT_ATTACHMENT" nicht gefunden
 Table "LEARNINGAGREEMENT_ATTACHMENT" not found; SQL statement:
 ALTER TABLE learningagreement_attachment DROP CONSTRAINT FK_learningagreement_attachment_attachments_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT_ATTACHMENT" nicht gefunden
 Table "LEARNINGAGREEMENT_ATTACHMENT" not found; SQL statement:
 ALTER TABLE learningagreement_attachment DROP CONSTRAINT FK_learningagreement_attachment_attachment_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITIONLIST_RECOGNITION" nicht gefunden
 Table "RECOGNITIONLIST_RECOGNITION" not found; SQL statement:
 ALTER TABLE recognitionlist_recognition DROP CONSTRAINT FK_recognitionlist_recognition_recognitionlist_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITIONLIST_RECOGNITION" nicht gefunden
 Table "RECOGNITIONLIST_RECOGNITION" not found; SQL statement:
 ALTER TABLE recognitionlist_recognition DROP CONSTRAINT FK_recognitionlist_recognition_recognition_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" not found; SQL statement:
 ALTER TABLE learningoutcomelist_learningoutcome DROP CONSTRAINT lrnngoutcomelistlearningoutcomelrningoutcomelistid [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" not found; SQL statement:
 ALTER TABLE learningoutcomelist_learningoutcome DROP CONSTRAINT larningoutcomelistlearningoutcomelearningoutcomeid [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST" not found; SQL statement:
 ALTER TABLE learningoutcomelist_learningoutcomelist DROP CONSTRAINT lrnngtcomelistlearningoutcomelistlrnngutcomelistid [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST" not found; SQL statement:
 ALTER TABLE learningoutcomelist_learningoutcomelist DROP CONSTRAINT lrnngtcmlstlearningoutcomelistlrnngtcmlistparentid [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" nicht gefunden
 Table "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" not found; SQL statement:
 ALTER TABLE competentinstitutionlist_competentinstitution DROP CONSTRAINT cmptntnstttnlistcompetentinstitutioncmptntnstttnid [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" nicht gefunden
 Table "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" not found; SQL statement:
 ALTER TABLE competentinstitutionlist_competentinstitution DROP CONSTRAINT cmptntnstttnlstcmpetentinstitutioncmptntnstttnlstd [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" nicht gefunden
 Table "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" not found; SQL statement:
 ALTER TABLE learningagreementlist_learningagreement DROP CONSTRAINT lrnnggrmentlistlearningagreementlrnnggrementlistid [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" nicht gefunden
 Table "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" not found; SQL statement:
 ALTER TABLE learningagreementlist_learningagreement DROP CONSTRAINT lrnnggreementlistlearningagreementlrnngagreementid [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CERTIFICATETEMPLATE_ATTACHMENT" nicht gefunden
 Table "CERTIFICATETEMPLATE_ATTACHMENT" not found; SQL statement:
 ALTER TABLE certificatetemplate_attachment DROP CONSTRAINT FK_certificatetemplate_attachment_attachment_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CERTIFICATETEMPLATE_ATTACHMENT" nicht gefunden
 Table "CERTIFICATETEMPLATE_ATTACHMENT" not found; SQL statement:
 ALTER TABLE certificatetemplate_attachment DROP CONSTRAINT FK_certificatetemplate_attachment_attachments_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENTLIST_REQUIREMENT" nicht gefunden
 Table "REQUIREMENTLIST_REQUIREMENT" not found; SQL statement:
 ALTER TABLE requirementlist_requirement DROP CONSTRAINT FK_requirementlist_requirement_requirement_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENTLIST_REQUIREMENT" nicht gefunden
 Table "REQUIREMENTLIST_REQUIREMENT" not found; SQL statement:
 ALTER TABLE requirementlist_requirement DROP CONSTRAINT FK_requirementlist_requirement_requirementlist_id [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORD" nicht gefunden
 Table "TRANSCRIPTSOFRECORD" not found; SQL statement:
 DROP TABLE transcriptsofrecord [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORK" nicht gefunden
 Table "QUALIFICATIONFRAMEWORK" not found; SQL statement:
 DROP TABLE qualificationframework [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFER" nicht gefunden
 Table "CREDITTRANSFER" not found; SQL statement:
 DROP TABLE credittransfer [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENTLIST" nicht gefunden
 Table "ASSESSMENTLIST" not found; SQL statement:
 DROP TABLE assessmentlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTION" nicht gefunden
 Table "COMPETENTINSTITUTION" not found; SQL statement:
 DROP TABLE competentinstitution [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATION" nicht gefunden
 Table "QUALIFICATION" not found; SQL statement:
 DROP TABLE qualification [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "MEMORANDUMOFUNDERSTANDING" nicht gefunden
 Table "MEMORANDUMOFUNDERSTANDING" not found; SQL statement:
 DROP TABLE memorandumofunderstanding [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDELIST" nicht gefunden
 Table "USERGUIDELIST" not found; SQL statement:
 DROP TABLE userguidelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINELIST" nicht gefunden
 Table "PROCEDUREANDGUIDELINELIST" not found; SQL statement:
 DROP TABLE procedureandguidelinelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFERLIST" nicht gefunden
 Table "CREDITTRANSFERLIST" not found; SQL statement:
 DROP TABLE credittransferlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORKLIST" nicht gefunden
 Table "QUALIFICATIONFRAMEWORKLIST" not found; SQL statement:
 DROP TABLE qualificationframeworklist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHODLIST" nicht gefunden
 Table "METHODLIST" not found; SQL statement:
 DROP TABLE methodlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOME" not found; SQL statement:
 DROP TABLE learningoutcome [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORDLIST" nicht gefunden
 Table "TRANSCRIPTSOFRECORDLIST" not found; SQL statement:
 DROP TABLE transcriptsofrecordlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENT" nicht gefunden
 Table "REQUIREMENT" not found; SQL statement:
 DROP TABLE requirement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESSLIST" nicht gefunden
 Table "PROCESSLIST" not found; SQL statement:
 DROP TABLE processlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Tabelle "PARTNER" nicht gefunden
-Table "PARTNER" not found; SQL statement:
-DROP TABLE partner [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDE" nicht gefunden
 Table "USERGUIDE" not found; SQL statement:
 DROP TABLE userguide [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNER" nicht gefunden
+Table "PARTNER" not found; SQL statement:
+DROP TABLE partner [42102-190]
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATION" nicht gefunden
 Table "VALIDATION" not found; SQL statement:
 DROP TABLE validation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATIONLIST" nicht gefunden
 Table "VALIDATIONLIST" not found; SQL statement:
 DROP TABLE validationlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATIONLIST" nicht gefunden
 Table "LEGISLATIONLIST" not found; SQL statement:
 DROP TABLE legislationlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST" nicht gefunden
 Table "UNITLIST" not found; SQL statement:
 DROP TABLE unitlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 DROP TABLE unit [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ATTACHMENT" nicht gefunden
 Table "ATTACHMENT" not found; SQL statement:
 DROP TABLE attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ECVETFRAMEWORK" nicht gefunden
 Table "ECVETFRAMEWORK" not found; SQL statement:
 DROP TABLE ecvetframework [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTS" nicht gefunden
 Table "COMPLEMENTARYDOCUMENTS" not found; SQL statement:
 DROP TABLE complementarydocuments [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENT" nicht gefunden
-Table "ASSESSMENT" not found; SQL statement:
-DROP TABLE assessment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST" nicht gefunden
 Table "PARTNERLIST" not found; SQL statement:
 DROP TABLE partnerlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENT" nicht gefunden
+Table "ASSESSMENT" not found; SQL statement:
+DROP TABLE assessment [42102-190]
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "EVALUATIONS" nicht gefunden
 Table "EVALUATIONS" not found; SQL statement:
 DROP TABLE evaluations [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT" nicht gefunden
 Table "LEARNINGAGREEMENT" not found; SQL statement:
 DROP TABLE learningagreement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITIONLIST" nicht gefunden
 Table "RECOGNITIONLIST" not found; SQL statement:
 DROP TABLE recognitionlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATION" nicht gefunden
 Table "LEGISLATION" not found; SQL statement:
 DROP TABLE legislation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST" not found; SQL statement:
 DROP TABLE learningoutcomelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINE" nicht gefunden
 Table "PROCEDUREANDGUIDELINE" not found; SQL statement:
 DROP TABLE procedureAndGuideline [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST" nicht gefunden
 Table "COMPETENTINSTITUTIONLIST" not found; SQL statement:
 DROP TABLE competentinstitutionlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESS" nicht gefunden
 Table "PROCESS" not found; SQL statement:
 DROP TABLE process [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITION" nicht gefunden
 Table "RECOGNITION" not found; SQL statement:
 DROP TABLE recognition [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST" nicht gefunden
 Table "LEARNINGAGREEMENTLIST" not found; SQL statement:
 DROP TABLE learningagreementlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CERTIFICATETEMPLATE" nicht gefunden
 Table "CERTIFICATETEMPLATE" not found; SQL statement:
 DROP TABLE certificatetemplate [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHOD" nicht gefunden
 Table "METHOD" not found; SQL statement:
 DROP TABLE method [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENTLIST" nicht gefunden
 Table "REQUIREMENTLIST" not found; SQL statement:
 DROP TABLE requirementlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORD_ATTACHMENT" nicht gefunden
 Table "TRANSCRIPTSOFRECORD_ATTACHMENT" not found; SQL statement:
 DROP TABLE transcriptsofrecord_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFER_ATTACHMENT" nicht gefunden
 Table "CREDITTRANSFER_ATTACHMENT" not found; SQL statement:
 DROP TABLE credittransfer_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENTLIST_ASSESSMENT" nicht gefunden
 Table "ASSESSMENTLIST_ASSESSMENT" not found; SQL statement:
 DROP TABLE assessmentlist_assessment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "MEMORANDUMOFUNDERSTANDING_ATTACHMENT" nicht gefunden
 Table "MEMORANDUMOFUNDERSTANDING_ATTACHMENT" not found; SQL statement:
 DROP TABLE memorandumofunderstanding_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDELIST_USERGUIDE" nicht gefunden
 Table "USERGUIDELIST_USERGUIDE" not found; SQL statement:
 DROP TABLE userguidelist_userguide [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINELIST_PROCEDUREANDGUIDELINE" nicht gefunden
 Table "PROCEDUREANDGUIDELINELIST_PROCEDUREANDGUIDELINE" not found; SQL statement:
 DROP TABLE procedureandguidelinelist_procedureAndGuideline [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFERLIST_CREDITTRANSFER" nicht gefunden
 Table "CREDITTRANSFERLIST_CREDITTRANSFER" not found; SQL statement:
 DROP TABLE credittransferlist_credittransfer [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORKLIST_QUALIFICATIONFRAMEWORK" nicht gefunden
 Table "QUALIFICATIONFRAMEWORKLIST_QUALIFICATIONFRAMEWORK" not found; SQL statement:
 DROP TABLE qualificationframeworklist_qualificationframework [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHODLIST_METHOD" nicht gefunden
 Table "METHODLIST_METHOD" not found; SQL statement:
 DROP TABLE methodlist_method [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORDLIST_TRANSCRIPTSOFRECORD" nicht gefunden
 Table "TRANSCRIPTSOFRECORDLIST_TRANSCRIPTSOFRECORD" not found; SQL statement:
 DROP TABLE transcriptsofrecordlist_transcriptsofrecord [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESSLIST_PROCESS" nicht gefunden
 Table "PROCESSLIST_PROCESS" not found; SQL statement:
 DROP TABLE processlist_process [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDE_ATTACHMENT" nicht gefunden
 Table "USERGUIDE_ATTACHMENT" not found; SQL statement:
 DROP TABLE userguide_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATIONLIST_VALIDATION" nicht gefunden
 Table "VALIDATIONLIST_VALIDATION" not found; SQL statement:
 DROP TABLE validationlist_validation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATIONLIST_LEGISLATION" nicht gefunden
 Table "LEGISLATIONLIST_LEGISLATION" not found; SQL statement:
 DROP TABLE legislationlist_legislation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNIT" nicht gefunden
 Table "UNITLIST_UNIT" not found; SQL statement:
 DROP TABLE unitlist_unit [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNITLIST" nicht gefunden
 Table "UNITLIST_UNITLIST" not found; SQL statement:
 DROP TABLE unitlist_unitlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST_PARTNER" nicht gefunden
 Table "PARTNERLIST_PARTNER" not found; SQL statement:
 DROP TABLE partnerlist_partner [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT_ATTACHMENT" nicht gefunden
 Table "LEARNINGAGREEMENT_ATTACHMENT" not found; SQL statement:
 DROP TABLE learningagreement_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITIONLIST_RECOGNITION" nicht gefunden
 Table "RECOGNITIONLIST_RECOGNITION" not found; SQL statement:
 DROP TABLE recognitionlist_recognition [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" not found; SQL statement:
 DROP TABLE learningoutcomelist_learningoutcome [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST" not found; SQL statement:
 DROP TABLE learningoutcomelist_learningoutcomelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" nicht gefunden
 Table "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" not found; SQL statement:
 DROP TABLE competentinstitutionlist_competentinstitution [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" nicht gefunden
 Table "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" not found; SQL statement:
 DROP TABLE learningagreementlist_learningagreement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CERTIFICATETEMPLATE_ATTACHMENT" nicht gefunden
 Table "CERTIFICATETEMPLATE_ATTACHMENT" not found; SQL statement:
 DROP TABLE certificatetemplate_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENTLIST_REQUIREMENT" nicht gefunden
 Table "REQUIREMENTLIST_REQUIREMENT" not found; SQL statement:
 DROP TABLE requirementlist_requirement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORD" nicht gefunden
 Table "TRANSCRIPTSOFRECORD" not found; SQL statement:
 DROP TABLE transcriptsofrecord [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORK" nicht gefunden
 Table "QUALIFICATIONFRAMEWORK" not found; SQL statement:
 DROP TABLE qualificationframework [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFER" nicht gefunden
 Table "CREDITTRANSFER" not found; SQL statement:
 DROP TABLE credittransfer [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENTLIST" nicht gefunden
 Table "ASSESSMENTLIST" not found; SQL statement:
 DROP TABLE assessmentlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTION" nicht gefunden
 Table "COMPETENTINSTITUTION" not found; SQL statement:
 DROP TABLE competentinstitution [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATION" nicht gefunden
 Table "QUALIFICATION" not found; SQL statement:
 DROP TABLE qualification [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "MEMORANDUMOFUNDERSTANDING" nicht gefunden
 Table "MEMORANDUMOFUNDERSTANDING" not found; SQL statement:
 DROP TABLE memorandumofunderstanding [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDELIST" nicht gefunden
 Table "USERGUIDELIST" not found; SQL statement:
 DROP TABLE userguidelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINELIST" nicht gefunden
 Table "PROCEDUREANDGUIDELINELIST" not found; SQL statement:
 DROP TABLE procedureandguidelinelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFERLIST" nicht gefunden
 Table "CREDITTRANSFERLIST" not found; SQL statement:
 DROP TABLE credittransferlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORKLIST" nicht gefunden
 Table "QUALIFICATIONFRAMEWORKLIST" not found; SQL statement:
 DROP TABLE qualificationframeworklist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHODLIST" nicht gefunden
 Table "METHODLIST" not found; SQL statement:
 DROP TABLE methodlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOME" not found; SQL statement:
 DROP TABLE learningoutcome [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORDLIST" nicht gefunden
 Table "TRANSCRIPTSOFRECORDLIST" not found; SQL statement:
 DROP TABLE transcriptsofrecordlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENT" nicht gefunden
 Table "REQUIREMENT" not found; SQL statement:
 DROP TABLE requirement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESSLIST" nicht gefunden
 Table "PROCESSLIST" not found; SQL statement:
 DROP TABLE processlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Tabelle "PARTNER" nicht gefunden
-Table "PARTNER" not found; SQL statement:
-DROP TABLE partner [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDE" nicht gefunden
 Table "USERGUIDE" not found; SQL statement:
 DROP TABLE userguide [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNER" nicht gefunden
+Table "PARTNER" not found; SQL statement:
+DROP TABLE partner [42102-190]
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATION" nicht gefunden
 Table "VALIDATION" not found; SQL statement:
 DROP TABLE validation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATIONLIST" nicht gefunden
 Table "VALIDATIONLIST" not found; SQL statement:
 DROP TABLE validationlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATIONLIST" nicht gefunden
 Table "LEGISLATIONLIST" not found; SQL statement:
 DROP TABLE legislationlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST" nicht gefunden
 Table "UNITLIST" not found; SQL statement:
 DROP TABLE unitlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 DROP TABLE unit [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ATTACHMENT" nicht gefunden
 Table "ATTACHMENT" not found; SQL statement:
 DROP TABLE attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ECVETFRAMEWORK" nicht gefunden
 Table "ECVETFRAMEWORK" not found; SQL statement:
 DROP TABLE ecvetframework [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTS" nicht gefunden
 Table "COMPLEMENTARYDOCUMENTS" not found; SQL statement:
 DROP TABLE complementarydocuments [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENT" nicht gefunden
-Table "ASSESSMENT" not found; SQL statement:
-DROP TABLE assessment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST" nicht gefunden
 Table "PARTNERLIST" not found; SQL statement:
 DROP TABLE partnerlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENT" nicht gefunden
+Table "ASSESSMENT" not found; SQL statement:
+DROP TABLE assessment [42102-190]
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "EVALUATIONS" nicht gefunden
 Table "EVALUATIONS" not found; SQL statement:
 DROP TABLE evaluations [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT" nicht gefunden
 Table "LEARNINGAGREEMENT" not found; SQL statement:
 DROP TABLE learningagreement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITIONLIST" nicht gefunden
 Table "RECOGNITIONLIST" not found; SQL statement:
 DROP TABLE recognitionlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATION" nicht gefunden
 Table "LEGISLATION" not found; SQL statement:
 DROP TABLE legislation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST" not found; SQL statement:
 DROP TABLE learningoutcomelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINE" nicht gefunden
 Table "PROCEDUREANDGUIDELINE" not found; SQL statement:
 DROP TABLE procedureAndGuideline [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST" nicht gefunden
 Table "COMPETENTINSTITUTIONLIST" not found; SQL statement:
 DROP TABLE competentinstitutionlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESS" nicht gefunden
 Table "PROCESS" not found; SQL statement:
 DROP TABLE process [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITION" nicht gefunden
 Table "RECOGNITION" not found; SQL statement:
 DROP TABLE recognition [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST" nicht gefunden
 Table "LEARNINGAGREEMENTLIST" not found; SQL statement:
 DROP TABLE learningagreementlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CERTIFICATETEMPLATE" nicht gefunden
 Table "CERTIFICATETEMPLATE" not found; SQL statement:
 DROP TABLE certificatetemplate [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHOD" nicht gefunden
 Table "METHOD" not found; SQL statement:
 DROP TABLE method [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENTLIST" nicht gefunden
 Table "REQUIREMENTLIST" not found; SQL statement:
 DROP TABLE requirementlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORD_ATTACHMENT" nicht gefunden
 Table "TRANSCRIPTSOFRECORD_ATTACHMENT" not found; SQL statement:
 DROP TABLE transcriptsofrecord_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFER_ATTACHMENT" nicht gefunden
 Table "CREDITTRANSFER_ATTACHMENT" not found; SQL statement:
 DROP TABLE credittransfer_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENTLIST_ASSESSMENT" nicht gefunden
 Table "ASSESSMENTLIST_ASSESSMENT" not found; SQL statement:
 DROP TABLE assessmentlist_assessment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "MEMORANDUMOFUNDERSTANDING_ATTACHMENT" nicht gefunden
 Table "MEMORANDUMOFUNDERSTANDING_ATTACHMENT" not found; SQL statement:
 DROP TABLE memorandumofunderstanding_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDELIST_USERGUIDE" nicht gefunden
 Table "USERGUIDELIST_USERGUIDE" not found; SQL statement:
 DROP TABLE userguidelist_userguide [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINELIST_PROCEDUREANDGUIDELINE" nicht gefunden
 Table "PROCEDUREANDGUIDELINELIST_PROCEDUREANDGUIDELINE" not found; SQL statement:
 DROP TABLE procedureandguidelinelist_procedureAndGuideline [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFERLIST_CREDITTRANSFER" nicht gefunden
 Table "CREDITTRANSFERLIST_CREDITTRANSFER" not found; SQL statement:
 DROP TABLE credittransferlist_credittransfer [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORKLIST_QUALIFICATIONFRAMEWORK" nicht gefunden
 Table "QUALIFICATIONFRAMEWORKLIST_QUALIFICATIONFRAMEWORK" not found; SQL statement:
 DROP TABLE qualificationframeworklist_qualificationframework [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHODLIST_METHOD" nicht gefunden
 Table "METHODLIST_METHOD" not found; SQL statement:
 DROP TABLE methodlist_method [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORDLIST_TRANSCRIPTSOFRECORD" nicht gefunden
 Table "TRANSCRIPTSOFRECORDLIST_TRANSCRIPTSOFRECORD" not found; SQL statement:
 DROP TABLE transcriptsofrecordlist_transcriptsofrecord [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESSLIST_PROCESS" nicht gefunden
 Table "PROCESSLIST_PROCESS" not found; SQL statement:
 DROP TABLE processlist_process [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDE_ATTACHMENT" nicht gefunden
 Table "USERGUIDE_ATTACHMENT" not found; SQL statement:
 DROP TABLE userguide_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATIONLIST_VALIDATION" nicht gefunden
 Table "VALIDATIONLIST_VALIDATION" not found; SQL statement:
 DROP TABLE validationlist_validation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATIONLIST_LEGISLATION" nicht gefunden
 Table "LEGISLATIONLIST_LEGISLATION" not found; SQL statement:
 DROP TABLE legislationlist_legislation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNIT" nicht gefunden
 Table "UNITLIST_UNIT" not found; SQL statement:
 DROP TABLE unitlist_unit [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNITLIST" nicht gefunden
 Table "UNITLIST_UNITLIST" not found; SQL statement:
 DROP TABLE unitlist_unitlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST_PARTNER" nicht gefunden
 Table "PARTNERLIST_PARTNER" not found; SQL statement:
 DROP TABLE partnerlist_partner [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT_ATTACHMENT" nicht gefunden
 Table "LEARNINGAGREEMENT_ATTACHMENT" not found; SQL statement:
 DROP TABLE learningagreement_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITIONLIST_RECOGNITION" nicht gefunden
 Table "RECOGNITIONLIST_RECOGNITION" not found; SQL statement:
 DROP TABLE recognitionlist_recognition [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" not found; SQL statement:
 DROP TABLE learningoutcomelist_learningoutcome [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST" not found; SQL statement:
 DROP TABLE learningoutcomelist_learningoutcomelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" nicht gefunden
 Table "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" not found; SQL statement:
 DROP TABLE competentinstitutionlist_competentinstitution [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" nicht gefunden
 Table "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" not found; SQL statement:
 DROP TABLE learningagreementlist_learningagreement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CERTIFICATETEMPLATE_ATTACHMENT" nicht gefunden
 Table "CERTIFICATETEMPLATE_ATTACHMENT" not found; SQL statement:
 DROP TABLE certificatetemplate_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENTLIST_REQUIREMENT" nicht gefunden
 Table "REQUIREMENTLIST_REQUIREMENT" not found; SQL statement:
 DROP TABLE requirementlist_requirement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORD" nicht gefunden
 Table "TRANSCRIPTSOFRECORD" not found; SQL statement:
 DROP TABLE transcriptsofrecord [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORK" nicht gefunden
 Table "QUALIFICATIONFRAMEWORK" not found; SQL statement:
 DROP TABLE qualificationframework [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFER" nicht gefunden
 Table "CREDITTRANSFER" not found; SQL statement:
 DROP TABLE credittransfer [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENTLIST" nicht gefunden
 Table "ASSESSMENTLIST" not found; SQL statement:
 DROP TABLE assessmentlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTION" nicht gefunden
 Table "COMPETENTINSTITUTION" not found; SQL statement:
 DROP TABLE competentinstitution [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATION" nicht gefunden
 Table "QUALIFICATION" not found; SQL statement:
 DROP TABLE qualification [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "MEMORANDUMOFUNDERSTANDING" nicht gefunden
 Table "MEMORANDUMOFUNDERSTANDING" not found; SQL statement:
 DROP TABLE memorandumofunderstanding [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDELIST" nicht gefunden
 Table "USERGUIDELIST" not found; SQL statement:
 DROP TABLE userguidelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINELIST" nicht gefunden
 Table "PROCEDUREANDGUIDELINELIST" not found; SQL statement:
 DROP TABLE procedureandguidelinelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFERLIST" nicht gefunden
 Table "CREDITTRANSFERLIST" not found; SQL statement:
 DROP TABLE credittransferlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORKLIST" nicht gefunden
 Table "QUALIFICATIONFRAMEWORKLIST" not found; SQL statement:
 DROP TABLE qualificationframeworklist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHODLIST" nicht gefunden
 Table "METHODLIST" not found; SQL statement:
 DROP TABLE methodlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOME" not found; SQL statement:
 DROP TABLE learningoutcome [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORDLIST" nicht gefunden
 Table "TRANSCRIPTSOFRECORDLIST" not found; SQL statement:
 DROP TABLE transcriptsofrecordlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENT" nicht gefunden
 Table "REQUIREMENT" not found; SQL statement:
 DROP TABLE requirement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESSLIST" nicht gefunden
 Table "PROCESSLIST" not found; SQL statement:
 DROP TABLE processlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Tabelle "PARTNER" nicht gefunden
-Table "PARTNER" not found; SQL statement:
-DROP TABLE partner [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDE" nicht gefunden
 Table "USERGUIDE" not found; SQL statement:
 DROP TABLE userguide [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNER" nicht gefunden
+Table "PARTNER" not found; SQL statement:
+DROP TABLE partner [42102-190]
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATION" nicht gefunden
 Table "VALIDATION" not found; SQL statement:
 DROP TABLE validation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATIONLIST" nicht gefunden
 Table "VALIDATIONLIST" not found; SQL statement:
 DROP TABLE validationlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATIONLIST" nicht gefunden
 Table "LEGISLATIONLIST" not found; SQL statement:
 DROP TABLE legislationlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST" nicht gefunden
 Table "UNITLIST" not found; SQL statement:
 DROP TABLE unitlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 DROP TABLE unit [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ATTACHMENT" nicht gefunden
 Table "ATTACHMENT" not found; SQL statement:
 DROP TABLE attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ECVETFRAMEWORK" nicht gefunden
 Table "ECVETFRAMEWORK" not found; SQL statement:
 DROP TABLE ecvetframework [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTS" nicht gefunden
 Table "COMPLEMENTARYDOCUMENTS" not found; SQL statement:
 DROP TABLE complementarydocuments [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENT" nicht gefunden
-Table "ASSESSMENT" not found; SQL statement:
-DROP TABLE assessment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST" nicht gefunden
 Table "PARTNERLIST" not found; SQL statement:
 DROP TABLE partnerlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENT" nicht gefunden
+Table "ASSESSMENT" not found; SQL statement:
+DROP TABLE assessment [42102-190]
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "EVALUATIONS" nicht gefunden
 Table "EVALUATIONS" not found; SQL statement:
 DROP TABLE evaluations [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT" nicht gefunden
 Table "LEARNINGAGREEMENT" not found; SQL statement:
 DROP TABLE learningagreement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITIONLIST" nicht gefunden
 Table "RECOGNITIONLIST" not found; SQL statement:
 DROP TABLE recognitionlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATION" nicht gefunden
 Table "LEGISLATION" not found; SQL statement:
 DROP TABLE legislation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST" not found; SQL statement:
 DROP TABLE learningoutcomelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINE" nicht gefunden
 Table "PROCEDUREANDGUIDELINE" not found; SQL statement:
 DROP TABLE procedureAndGuideline [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST" nicht gefunden
 Table "COMPETENTINSTITUTIONLIST" not found; SQL statement:
 DROP TABLE competentinstitutionlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESS" nicht gefunden
 Table "PROCESS" not found; SQL statement:
 DROP TABLE process [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITION" nicht gefunden
 Table "RECOGNITION" not found; SQL statement:
 DROP TABLE recognition [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST" nicht gefunden
 Table "LEARNINGAGREEMENTLIST" not found; SQL statement:
 DROP TABLE learningagreementlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CERTIFICATETEMPLATE" nicht gefunden
 Table "CERTIFICATETEMPLATE" not found; SQL statement:
 DROP TABLE certificatetemplate [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHOD" nicht gefunden
 Table "METHOD" not found; SQL statement:
 DROP TABLE method [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENTLIST" nicht gefunden
 Table "REQUIREMENTLIST" not found; SQL statement:
 DROP TABLE requirementlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORD_ATTACHMENT" nicht gefunden
 Table "TRANSCRIPTSOFRECORD_ATTACHMENT" not found; SQL statement:
 DROP TABLE transcriptsofrecord_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFER_ATTACHMENT" nicht gefunden
 Table "CREDITTRANSFER_ATTACHMENT" not found; SQL statement:
 DROP TABLE credittransfer_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENTLIST_ASSESSMENT" nicht gefunden
 Table "ASSESSMENTLIST_ASSESSMENT" not found; SQL statement:
 DROP TABLE assessmentlist_assessment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "MEMORANDUMOFUNDERSTANDING_ATTACHMENT" nicht gefunden
 Table "MEMORANDUMOFUNDERSTANDING_ATTACHMENT" not found; SQL statement:
 DROP TABLE memorandumofunderstanding_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDELIST_USERGUIDE" nicht gefunden
 Table "USERGUIDELIST_USERGUIDE" not found; SQL statement:
 DROP TABLE userguidelist_userguide [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINELIST_PROCEDUREANDGUIDELINE" nicht gefunden
 Table "PROCEDUREANDGUIDELINELIST_PROCEDUREANDGUIDELINE" not found; SQL statement:
 DROP TABLE procedureandguidelinelist_procedureAndGuideline [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFERLIST_CREDITTRANSFER" nicht gefunden
 Table "CREDITTRANSFERLIST_CREDITTRANSFER" not found; SQL statement:
 DROP TABLE credittransferlist_credittransfer [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORKLIST_QUALIFICATIONFRAMEWORK" nicht gefunden
 Table "QUALIFICATIONFRAMEWORKLIST_QUALIFICATIONFRAMEWORK" not found; SQL statement:
 DROP TABLE qualificationframeworklist_qualificationframework [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHODLIST_METHOD" nicht gefunden
 Table "METHODLIST_METHOD" not found; SQL statement:
 DROP TABLE methodlist_method [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORDLIST_TRANSCRIPTSOFRECORD" nicht gefunden
 Table "TRANSCRIPTSOFRECORDLIST_TRANSCRIPTSOFRECORD" not found; SQL statement:
 DROP TABLE transcriptsofrecordlist_transcriptsofrecord [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESSLIST_PROCESS" nicht gefunden
 Table "PROCESSLIST_PROCESS" not found; SQL statement:
 DROP TABLE processlist_process [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDE_ATTACHMENT" nicht gefunden
 Table "USERGUIDE_ATTACHMENT" not found; SQL statement:
 DROP TABLE userguide_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATIONLIST_VALIDATION" nicht gefunden
 Table "VALIDATIONLIST_VALIDATION" not found; SQL statement:
 DROP TABLE validationlist_validation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATIONLIST_LEGISLATION" nicht gefunden
 Table "LEGISLATIONLIST_LEGISLATION" not found; SQL statement:
 DROP TABLE legislationlist_legislation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNIT" nicht gefunden
 Table "UNITLIST_UNIT" not found; SQL statement:
 DROP TABLE unitlist_unit [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNITLIST" nicht gefunden
 Table "UNITLIST_UNITLIST" not found; SQL statement:
 DROP TABLE unitlist_unitlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST_PARTNER" nicht gefunden
 Table "PARTNERLIST_PARTNER" not found; SQL statement:
 DROP TABLE partnerlist_partner [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT_ATTACHMENT" nicht gefunden
 Table "LEARNINGAGREEMENT_ATTACHMENT" not found; SQL statement:
 DROP TABLE learningagreement_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITIONLIST_RECOGNITION" nicht gefunden
 Table "RECOGNITIONLIST_RECOGNITION" not found; SQL statement:
 DROP TABLE recognitionlist_recognition [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" not found; SQL statement:
 DROP TABLE learningoutcomelist_learningoutcome [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST" not found; SQL statement:
 DROP TABLE learningoutcomelist_learningoutcomelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" nicht gefunden
 Table "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" not found; SQL statement:
 DROP TABLE competentinstitutionlist_competentinstitution [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" nicht gefunden
 Table "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" not found; SQL statement:
 DROP TABLE learningagreementlist_learningagreement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CERTIFICATETEMPLATE_ATTACHMENT" nicht gefunden
 Table "CERTIFICATETEMPLATE_ATTACHMENT" not found; SQL statement:
 DROP TABLE certificatetemplate_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENTLIST_REQUIREMENT" nicht gefunden
 Table "REQUIREMENTLIST_REQUIREMENT" not found; SQL statement:
 DROP TABLE requirementlist_requirement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORD" nicht gefunden
 Table "TRANSCRIPTSOFRECORD" not found; SQL statement:
 DROP TABLE transcriptsofrecord [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORK" nicht gefunden
 Table "QUALIFICATIONFRAMEWORK" not found; SQL statement:
 DROP TABLE qualificationframework [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFER" nicht gefunden
 Table "CREDITTRANSFER" not found; SQL statement:
 DROP TABLE credittransfer [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENTLIST" nicht gefunden
 Table "ASSESSMENTLIST" not found; SQL statement:
 DROP TABLE assessmentlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTION" nicht gefunden
 Table "COMPETENTINSTITUTION" not found; SQL statement:
 DROP TABLE competentinstitution [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATION" nicht gefunden
 Table "QUALIFICATION" not found; SQL statement:
 DROP TABLE qualification [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "MEMORANDUMOFUNDERSTANDING" nicht gefunden
 Table "MEMORANDUMOFUNDERSTANDING" not found; SQL statement:
 DROP TABLE memorandumofunderstanding [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDELIST" nicht gefunden
 Table "USERGUIDELIST" not found; SQL statement:
 DROP TABLE userguidelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINELIST" nicht gefunden
 Table "PROCEDUREANDGUIDELINELIST" not found; SQL statement:
 DROP TABLE procedureandguidelinelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFERLIST" nicht gefunden
 Table "CREDITTRANSFERLIST" not found; SQL statement:
 DROP TABLE credittransferlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORKLIST" nicht gefunden
 Table "QUALIFICATIONFRAMEWORKLIST" not found; SQL statement:
 DROP TABLE qualificationframeworklist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHODLIST" nicht gefunden
 Table "METHODLIST" not found; SQL statement:
 DROP TABLE methodlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOME" not found; SQL statement:
 DROP TABLE learningoutcome [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORDLIST" nicht gefunden
 Table "TRANSCRIPTSOFRECORDLIST" not found; SQL statement:
 DROP TABLE transcriptsofrecordlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENT" nicht gefunden
 Table "REQUIREMENT" not found; SQL statement:
 DROP TABLE requirement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESSLIST" nicht gefunden
 Table "PROCESSLIST" not found; SQL statement:
 DROP TABLE processlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Tabelle "PARTNER" nicht gefunden
-Table "PARTNER" not found; SQL statement:
-DROP TABLE partner [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDE" nicht gefunden
 Table "USERGUIDE" not found; SQL statement:
 DROP TABLE userguide [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNER" nicht gefunden
+Table "PARTNER" not found; SQL statement:
+DROP TABLE partner [42102-190]
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATION" nicht gefunden
 Table "VALIDATION" not found; SQL statement:
 DROP TABLE validation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATIONLIST" nicht gefunden
 Table "VALIDATIONLIST" not found; SQL statement:
 DROP TABLE validationlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATIONLIST" nicht gefunden
 Table "LEGISLATIONLIST" not found; SQL statement:
 DROP TABLE legislationlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST" nicht gefunden
 Table "UNITLIST" not found; SQL statement:
 DROP TABLE unitlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 DROP TABLE unit [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ATTACHMENT" nicht gefunden
 Table "ATTACHMENT" not found; SQL statement:
 DROP TABLE attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ECVETFRAMEWORK" nicht gefunden
 Table "ECVETFRAMEWORK" not found; SQL statement:
 DROP TABLE ecvetframework [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTS" nicht gefunden
 Table "COMPLEMENTARYDOCUMENTS" not found; SQL statement:
 DROP TABLE complementarydocuments [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENT" nicht gefunden
-Table "ASSESSMENT" not found; SQL statement:
-DROP TABLE assessment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST" nicht gefunden
 Table "PARTNERLIST" not found; SQL statement:
 DROP TABLE partnerlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENT" nicht gefunden
+Table "ASSESSMENT" not found; SQL statement:
+DROP TABLE assessment [42102-190]
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "EVALUATIONS" nicht gefunden
 Table "EVALUATIONS" not found; SQL statement:
 DROP TABLE evaluations [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT" nicht gefunden
 Table "LEARNINGAGREEMENT" not found; SQL statement:
 DROP TABLE learningagreement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITIONLIST" nicht gefunden
 Table "RECOGNITIONLIST" not found; SQL statement:
 DROP TABLE recognitionlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATION" nicht gefunden
 Table "LEGISLATION" not found; SQL statement:
 DROP TABLE legislation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST" not found; SQL statement:
 DROP TABLE learningoutcomelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINE" nicht gefunden
 Table "PROCEDUREANDGUIDELINE" not found; SQL statement:
 DROP TABLE procedureAndGuideline [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST" nicht gefunden
 Table "COMPETENTINSTITUTIONLIST" not found; SQL statement:
 DROP TABLE competentinstitutionlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESS" nicht gefunden
 Table "PROCESS" not found; SQL statement:
 DROP TABLE process [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITION" nicht gefunden
 Table "RECOGNITION" not found; SQL statement:
 DROP TABLE recognition [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST" nicht gefunden
 Table "LEARNINGAGREEMENTLIST" not found; SQL statement:
 DROP TABLE learningagreementlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CERTIFICATETEMPLATE" nicht gefunden
 Table "CERTIFICATETEMPLATE" not found; SQL statement:
 DROP TABLE certificatetemplate [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHOD" nicht gefunden
 Table "METHOD" not found; SQL statement:
 DROP TABLE method [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENTLIST" nicht gefunden
 Table "REQUIREMENTLIST" not found; SQL statement:
 DROP TABLE requirementlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORD_ATTACHMENT" nicht gefunden
 Table "TRANSCRIPTSOFRECORD_ATTACHMENT" not found; SQL statement:
 DROP TABLE transcriptsofrecord_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFER_ATTACHMENT" nicht gefunden
 Table "CREDITTRANSFER_ATTACHMENT" not found; SQL statement:
 DROP TABLE credittransfer_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENTLIST_ASSESSMENT" nicht gefunden
 Table "ASSESSMENTLIST_ASSESSMENT" not found; SQL statement:
 DROP TABLE assessmentlist_assessment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "MEMORANDUMOFUNDERSTANDING_ATTACHMENT" nicht gefunden
 Table "MEMORANDUMOFUNDERSTANDING_ATTACHMENT" not found; SQL statement:
 DROP TABLE memorandumofunderstanding_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDELIST_USERGUIDE" nicht gefunden
 Table "USERGUIDELIST_USERGUIDE" not found; SQL statement:
 DROP TABLE userguidelist_userguide [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINELIST_PROCEDUREANDGUIDELINE" nicht gefunden
 Table "PROCEDUREANDGUIDELINELIST_PROCEDUREANDGUIDELINE" not found; SQL statement:
 DROP TABLE procedureandguidelinelist_procedureAndGuideline [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFERLIST_CREDITTRANSFER" nicht gefunden
 Table "CREDITTRANSFERLIST_CREDITTRANSFER" not found; SQL statement:
 DROP TABLE credittransferlist_credittransfer [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORKLIST_QUALIFICATIONFRAMEWORK" nicht gefunden
 Table "QUALIFICATIONFRAMEWORKLIST_QUALIFICATIONFRAMEWORK" not found; SQL statement:
 DROP TABLE qualificationframeworklist_qualificationframework [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHODLIST_METHOD" nicht gefunden
 Table "METHODLIST_METHOD" not found; SQL statement:
 DROP TABLE methodlist_method [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORDLIST_TRANSCRIPTSOFRECORD" nicht gefunden
 Table "TRANSCRIPTSOFRECORDLIST_TRANSCRIPTSOFRECORD" not found; SQL statement:
 DROP TABLE transcriptsofrecordlist_transcriptsofrecord [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESSLIST_PROCESS" nicht gefunden
 Table "PROCESSLIST_PROCESS" not found; SQL statement:
 DROP TABLE processlist_process [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDE_ATTACHMENT" nicht gefunden
 Table "USERGUIDE_ATTACHMENT" not found; SQL statement:
 DROP TABLE userguide_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATIONLIST_VALIDATION" nicht gefunden
 Table "VALIDATIONLIST_VALIDATION" not found; SQL statement:
 DROP TABLE validationlist_validation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATIONLIST_LEGISLATION" nicht gefunden
 Table "LEGISLATIONLIST_LEGISLATION" not found; SQL statement:
 DROP TABLE legislationlist_legislation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNIT" nicht gefunden
 Table "UNITLIST_UNIT" not found; SQL statement:
 DROP TABLE unitlist_unit [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNITLIST" nicht gefunden
 Table "UNITLIST_UNITLIST" not found; SQL statement:
 DROP TABLE unitlist_unitlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST_PARTNER" nicht gefunden
 Table "PARTNERLIST_PARTNER" not found; SQL statement:
 DROP TABLE partnerlist_partner [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT_ATTACHMENT" nicht gefunden
 Table "LEARNINGAGREEMENT_ATTACHMENT" not found; SQL statement:
 DROP TABLE learningagreement_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITIONLIST_RECOGNITION" nicht gefunden
 Table "RECOGNITIONLIST_RECOGNITION" not found; SQL statement:
 DROP TABLE recognitionlist_recognition [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" not found; SQL statement:
 DROP TABLE learningoutcomelist_learningoutcome [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST" not found; SQL statement:
 DROP TABLE learningoutcomelist_learningoutcomelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" nicht gefunden
 Table "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" not found; SQL statement:
 DROP TABLE competentinstitutionlist_competentinstitution [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" nicht gefunden
 Table "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" not found; SQL statement:
 DROP TABLE learningagreementlist_learningagreement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CERTIFICATETEMPLATE_ATTACHMENT" nicht gefunden
 Table "CERTIFICATETEMPLATE_ATTACHMENT" not found; SQL statement:
 DROP TABLE certificatetemplate_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENTLIST_REQUIREMENT" nicht gefunden
 Table "REQUIREMENTLIST_REQUIREMENT" not found; SQL statement:
 DROP TABLE requirementlist_requirement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORD" nicht gefunden
 Table "TRANSCRIPTSOFRECORD" not found; SQL statement:
 DROP TABLE transcriptsofrecord [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORK" nicht gefunden
 Table "QUALIFICATIONFRAMEWORK" not found; SQL statement:
 DROP TABLE qualificationframework [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFER" nicht gefunden
 Table "CREDITTRANSFER" not found; SQL statement:
 DROP TABLE credittransfer [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENTLIST" nicht gefunden
 Table "ASSESSMENTLIST" not found; SQL statement:
 DROP TABLE assessmentlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTION" nicht gefunden
 Table "COMPETENTINSTITUTION" not found; SQL statement:
 DROP TABLE competentinstitution [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATION" nicht gefunden
 Table "QUALIFICATION" not found; SQL statement:
 DROP TABLE qualification [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "MEMORANDUMOFUNDERSTANDING" nicht gefunden
 Table "MEMORANDUMOFUNDERSTANDING" not found; SQL statement:
 DROP TABLE memorandumofunderstanding [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDELIST" nicht gefunden
 Table "USERGUIDELIST" not found; SQL statement:
 DROP TABLE userguidelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINELIST" nicht gefunden
 Table "PROCEDUREANDGUIDELINELIST" not found; SQL statement:
 DROP TABLE procedureandguidelinelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFERLIST" nicht gefunden
 Table "CREDITTRANSFERLIST" not found; SQL statement:
 DROP TABLE credittransferlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORKLIST" nicht gefunden
 Table "QUALIFICATIONFRAMEWORKLIST" not found; SQL statement:
 DROP TABLE qualificationframeworklist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHODLIST" nicht gefunden
 Table "METHODLIST" not found; SQL statement:
 DROP TABLE methodlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOME" not found; SQL statement:
 DROP TABLE learningoutcome [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORDLIST" nicht gefunden
 Table "TRANSCRIPTSOFRECORDLIST" not found; SQL statement:
 DROP TABLE transcriptsofrecordlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENT" nicht gefunden
 Table "REQUIREMENT" not found; SQL statement:
 DROP TABLE requirement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESSLIST" nicht gefunden
 Table "PROCESSLIST" not found; SQL statement:
 DROP TABLE processlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Tabelle "PARTNER" nicht gefunden
-Table "PARTNER" not found; SQL statement:
-DROP TABLE partner [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDE" nicht gefunden
 Table "USERGUIDE" not found; SQL statement:
 DROP TABLE userguide [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "PARTNER" nicht gefunden
+Table "PARTNER" not found; SQL statement:
+DROP TABLE partner [42102-190]
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATION" nicht gefunden
 Table "VALIDATION" not found; SQL statement:
 DROP TABLE validation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATIONLIST" nicht gefunden
 Table "VALIDATIONLIST" not found; SQL statement:
 DROP TABLE validationlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATIONLIST" nicht gefunden
 Table "LEGISLATIONLIST" not found; SQL statement:
 DROP TABLE legislationlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST" nicht gefunden
 Table "UNITLIST" not found; SQL statement:
 DROP TABLE unitlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNIT" nicht gefunden
 Table "UNIT" not found; SQL statement:
 DROP TABLE unit [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ATTACHMENT" nicht gefunden
 Table "ATTACHMENT" not found; SQL statement:
 DROP TABLE attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ECVETFRAMEWORK" nicht gefunden
 Table "ECVETFRAMEWORK" not found; SQL statement:
 DROP TABLE ecvetframework [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPLEMENTARYDOCUMENTS" nicht gefunden
 Table "COMPLEMENTARYDOCUMENTS" not found; SQL statement:
 DROP TABLE complementarydocuments [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENT" nicht gefunden
-Table "ASSESSMENT" not found; SQL statement:
-DROP TABLE assessment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST" nicht gefunden
 Table "PARTNERLIST" not found; SQL statement:
 DROP TABLE partnerlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENT" nicht gefunden
+Table "ASSESSMENT" not found; SQL statement:
+DROP TABLE assessment [42102-190]
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "EVALUATIONS" nicht gefunden
 Table "EVALUATIONS" not found; SQL statement:
 DROP TABLE evaluations [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT" nicht gefunden
 Table "LEARNINGAGREEMENT" not found; SQL statement:
 DROP TABLE learningagreement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITIONLIST" nicht gefunden
 Table "RECOGNITIONLIST" not found; SQL statement:
 DROP TABLE recognitionlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATION" nicht gefunden
 Table "LEGISLATION" not found; SQL statement:
 DROP TABLE legislation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST" not found; SQL statement:
 DROP TABLE learningoutcomelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINE" nicht gefunden
 Table "PROCEDUREANDGUIDELINE" not found; SQL statement:
 DROP TABLE procedureAndGuideline [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST" nicht gefunden
 Table "COMPETENTINSTITUTIONLIST" not found; SQL statement:
 DROP TABLE competentinstitutionlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESS" nicht gefunden
 Table "PROCESS" not found; SQL statement:
 DROP TABLE process [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITION" nicht gefunden
 Table "RECOGNITION" not found; SQL statement:
 DROP TABLE recognition [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST" nicht gefunden
 Table "LEARNINGAGREEMENTLIST" not found; SQL statement:
 DROP TABLE learningagreementlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CERTIFICATETEMPLATE" nicht gefunden
 Table "CERTIFICATETEMPLATE" not found; SQL statement:
 DROP TABLE certificatetemplate [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHOD" nicht gefunden
 Table "METHOD" not found; SQL statement:
 DROP TABLE method [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENTLIST" nicht gefunden
 Table "REQUIREMENTLIST" not found; SQL statement:
 DROP TABLE requirementlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORD_ATTACHMENT" nicht gefunden
 Table "TRANSCRIPTSOFRECORD_ATTACHMENT" not found; SQL statement:
 DROP TABLE transcriptsofrecord_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFER_ATTACHMENT" nicht gefunden
 Table "CREDITTRANSFER_ATTACHMENT" not found; SQL statement:
 DROP TABLE credittransfer_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "ASSESSMENTLIST_ASSESSMENT" nicht gefunden
 Table "ASSESSMENTLIST_ASSESSMENT" not found; SQL statement:
 DROP TABLE assessmentlist_assessment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "MEMORANDUMOFUNDERSTANDING_ATTACHMENT" nicht gefunden
 Table "MEMORANDUMOFUNDERSTANDING_ATTACHMENT" not found; SQL statement:
 DROP TABLE memorandumofunderstanding_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDELIST_USERGUIDE" nicht gefunden
 Table "USERGUIDELIST_USERGUIDE" not found; SQL statement:
 DROP TABLE userguidelist_userguide [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCEDUREANDGUIDELINELIST_PROCEDUREANDGUIDELINE" nicht gefunden
 Table "PROCEDUREANDGUIDELINELIST_PROCEDUREANDGUIDELINE" not found; SQL statement:
 DROP TABLE procedureandguidelinelist_procedureAndGuideline [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CREDITTRANSFERLIST_CREDITTRANSFER" nicht gefunden
 Table "CREDITTRANSFERLIST_CREDITTRANSFER" not found; SQL statement:
 DROP TABLE credittransferlist_credittransfer [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "QUALIFICATIONFRAMEWORKLIST_QUALIFICATIONFRAMEWORK" nicht gefunden
 Table "QUALIFICATIONFRAMEWORKLIST_QUALIFICATIONFRAMEWORK" not found; SQL statement:
 DROP TABLE qualificationframeworklist_qualificationframework [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "METHODLIST_METHOD" nicht gefunden
 Table "METHODLIST_METHOD" not found; SQL statement:
 DROP TABLE methodlist_method [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "TRANSCRIPTSOFRECORDLIST_TRANSCRIPTSOFRECORD" nicht gefunden
 Table "TRANSCRIPTSOFRECORDLIST_TRANSCRIPTSOFRECORD" not found; SQL statement:
 DROP TABLE transcriptsofrecordlist_transcriptsofrecord [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PROCESSLIST_PROCESS" nicht gefunden
 Table "PROCESSLIST_PROCESS" not found; SQL statement:
 DROP TABLE processlist_process [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "USERGUIDE_ATTACHMENT" nicht gefunden
 Table "USERGUIDE_ATTACHMENT" not found; SQL statement:
 DROP TABLE userguide_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "VALIDATIONLIST_VALIDATION" nicht gefunden
 Table "VALIDATIONLIST_VALIDATION" not found; SQL statement:
 DROP TABLE validationlist_validation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEGISLATIONLIST_LEGISLATION" nicht gefunden
 Table "LEGISLATIONLIST_LEGISLATION" not found; SQL statement:
 DROP TABLE legislationlist_legislation [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNIT" nicht gefunden
 Table "UNITLIST_UNIT" not found; SQL statement:
 DROP TABLE unitlist_unit [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "UNITLIST_UNITLIST" nicht gefunden
 Table "UNITLIST_UNITLIST" not found; SQL statement:
 DROP TABLE unitlist_unitlist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "PARTNERLIST_PARTNER" nicht gefunden
 Table "PARTNERLIST_PARTNER" not found; SQL statement:
 DROP TABLE partnerlist_partner [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENT_ATTACHMENT" nicht gefunden
 Table "LEARNINGAGREEMENT_ATTACHMENT" not found; SQL statement:
 DROP TABLE learningagreement_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "RECOGNITIONLIST_RECOGNITION" nicht gefunden
 Table "RECOGNITIONLIST_RECOGNITION" not found; SQL statement:
 DROP TABLE recognitionlist_recognition [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOME" not found; SQL statement:
 DROP TABLE learningoutcomelist_learningoutcome [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST" nicht gefunden
 Table "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST" not found; SQL statement:
 DROP TABLE learningoutcomelist_learningoutcomelist [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" nicht gefunden
 Table "COMPETENTINSTITUTIONLIST_COMPETENTINSTITUTION" not found; SQL statement:
 DROP TABLE competentinstitutionlist_competentinstitution [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" nicht gefunden
 Table "LEARNINGAGREEMENTLIST_LEARNINGAGREEMENT" not found; SQL statement:
 DROP TABLE learningagreementlist_learningagreement [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "CERTIFICATETEMPLATE_ATTACHMENT" nicht gefunden
 Table "CERTIFICATETEMPLATE_ATTACHMENT" not found; SQL statement:
 DROP TABLE certificatetemplate_attachment [42102-190]
-2016-01-05 17:54:29 jdbc[3]: exception
+2016-01-06 12:16:02 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Tabelle "REQUIREMENTLIST_REQUIREMENT" nicht gefunden
 Table "REQUIREMENTLIST_REQUIREMENT" not found; SQL statement:
 DROP TABLE requirementlist_requirement [42102-190]
