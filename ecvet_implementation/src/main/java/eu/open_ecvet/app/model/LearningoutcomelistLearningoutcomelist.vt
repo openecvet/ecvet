@@ -37,15 +37,15 @@
             "preferredWidth": 100,
             "scale": 0,
             "type": "INTEGER",
-            "visible": false
+            "visible": true
         },
         {
-            "autoIncrement": false,
+            "autoIncrement": true,
             "autoTruncate": true,
             "caption": "",
             "dataFlavor": "UNDEFINED",
             "defaultValue": 0,
-            "editable": true,
+            "editable": false,
             "format": {
                 "dateFormat": "MEDIUM",
                 "dateSet": "DATE",
@@ -71,10 +71,26 @@
             "maxWidth": 0,
             "minWidth": 0,
             "name": "LEARNINGOUTCOMELIST_ID",
-            "nullable": false,
-            "persistent": true,
+            "nullable": true,
+            "persistent": false,
             "preferredWidth": 100,
             "scale": 0,
+            "tableColumnLink": {
+                "linkedColumn": "ID",
+                "linkedTable": "eu.open_ecvet.app.model.Learningoutcomelist",
+                "path": [{
+                    "first": {
+                        "cardinality": "ONE",
+                        "columns": ["ID"],
+                        "table": "eu.open_ecvet.app.model.Learningoutcomelist"
+                    },
+                    "second": {
+                        "cardinality": "MANY",
+                        "columns": ["LEARNINGOUTCOMELIST_ID"],
+                        "table": "eu.open_ecvet.app.model.LearningoutcomelistLearningoutcomelist"
+                    }
+                }]
+            },
             "type": "INTEGER",
             "visible": false
         },

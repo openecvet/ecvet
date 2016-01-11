@@ -34,16 +34,16 @@ public class LearningoutcomelistLearningoutcomelist extends VirtualTable impleme
 		LEARNINGOUTCOMELISTPARENT_ID.setType(DataType.INTEGER);
 		LEARNINGOUTCOMELISTPARENT_ID.setNullable(false);
 		LEARNINGOUTCOMELISTPARENT_ID.setDefaultValue(0);
-		LEARNINGOUTCOMELISTPARENT_ID.setVisible(false);
 		LEARNINGOUTCOMELISTPARENT_ID.setPreferredWidth(100);
 		LEARNINGOUTCOMELISTPARENT_ID.setTextFormat(TextFormat.getNumberInstance(
 				Locale.getDefault(),null,0,0,false,false));
 		
 		LEARNINGOUTCOMELIST_ID = new VirtualTableColumn<Integer>("LEARNINGOUTCOMELIST_ID");
 		LEARNINGOUTCOMELIST_ID.setType(DataType.INTEGER);
-		LEARNINGOUTCOMELIST_ID.setNullable(false);
+		LEARNINGOUTCOMELIST_ID.setAutoIncrement(true);
 		LEARNINGOUTCOMELIST_ID.setDefaultValue(0);
 		LEARNINGOUTCOMELIST_ID.setVisible(false);
+		LEARNINGOUTCOMELIST_ID.setEditable(false);
 		LEARNINGOUTCOMELIST_ID.setPreferredWidth(100);
 		LEARNINGOUTCOMELIST_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,
 				0,0,false,false));
@@ -54,6 +54,14 @@ public class LearningoutcomelistLearningoutcomelist extends VirtualTable impleme
 		LEARNINGOUTCOMELIST_TITLE.setCaption("TITLE");
 		LEARNINGOUTCOMELIST_TITLE.setPreferredWidth(100);
 		LEARNINGOUTCOMELIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
+		
+		LEARNINGOUTCOMELIST_ID.setPersistent(false);
+		LEARNINGOUTCOMELIST_ID.setTableColumnLink(new TableColumnLink(Learningoutcomelist.class
+				.getName(),Learningoutcomelist.ID.getName(),new EntityRelationship(
+				Learningoutcomelist.class.getName(),new String[]{Learningoutcomelist.ID.getName()},
+				Cardinality.ONE,LearningoutcomelistLearningoutcomelist.class.getName(),
+				new String[]{LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_ID
+						.getName()},Cardinality.MANY)));
 		
 		LEARNINGOUTCOMELIST_TITLE.setPersistent(false);
 		LEARNINGOUTCOMELIST_TITLE.setTableColumnLink(new TableColumnLink(Learningoutcomelist.class
