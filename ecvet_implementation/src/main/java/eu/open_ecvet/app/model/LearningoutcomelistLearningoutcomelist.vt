@@ -18,7 +18,7 @@
                     "",
                     "yyyy-MM-dd",
                     "#,##0.###;-#,##0.###",
-                    "#,##0.00 ¤;-#,##0.00 ¤",
+                    "¤#,##0.00;-¤#,##0.00",
                     "#,##0%"
                 ],
                 "signedColor": "255,0,0",
@@ -37,15 +37,69 @@
             "preferredWidth": 100,
             "scale": 0,
             "type": "INTEGER",
+            "visible": false
+        },
+        {
+            "autoIncrement": false,
+            "autoTruncate": true,
+            "caption": "TITLE",
+            "dataFlavor": "UNDEFINED",
+            "editable": true,
+            "format": {
+                "dateFormat": "MEDIUM",
+                "dateSet": "DATE",
+                "groupingUsed": true,
+                "locale": "%",
+                "maxFractionDigits": 2,
+                "minFractionDigits": 2,
+                "pattern": [
+                    "",
+                    "yyyy-MM-dd",
+                    "#,##0.###;-#,##0.###",
+                    "#,##0.00 ¤;-#,##0.00 ¤",
+                    "#,##0%"
+                ],
+                "signedColor": "255,0,0",
+                "suppressZero": false,
+                "timeFormat": "MEDIUM",
+                "type": "NONE",
+                "useSignedColor": false
+            },
+            "horizontalAlign": "LEFT",
+            "length": 2147483647,
+            "maxWidth": 0,
+            "minWidth": 0,
+            "name": "LEARNINGOUTCOMELIST_TITLE2",
+            "nullable": true,
+            "persistent": false,
+            "preferredWidth": 100,
+            "scale": 0,
+            "tableColumnLink": {
+                "linkedColumn": "TITLE",
+                "linkedTable": "eu.open_ecvet.app.model.Learningoutcomelist",
+                "path": [{
+                    "first": {
+                        "cardinality": "ONE",
+                        "columns": ["ID"],
+                        "table": "eu.open_ecvet.app.model.Learningoutcomelist"
+                    },
+                    "second": {
+                        "cardinality": "MANY",
+                        "columns": ["LEARNINGOUTCOMELISTPARENT_ID"],
+                        "table": "eu.open_ecvet.app.model.LearningoutcomelistLearningoutcomelist"
+                    }
+                }]
+            },
+            "type": "VARCHAR",
             "visible": true
         },
         {
-            "autoIncrement": true,
+            "autoIncrement": false,
             "autoTruncate": true,
             "caption": "",
             "dataFlavor": "UNDEFINED",
             "defaultValue": 0,
-            "editable": false,
+            "editable": true,
             "format": {
                 "dateFormat": "MEDIUM",
                 "dateSet": "DATE",
@@ -57,7 +111,7 @@
                     "",
                     "yyyy-MM-dd",
                     "#,##0.###;-#,##0.###",
-                    "#,##0.00 ¤;-#,##0.00 ¤",
+                    "¤#,##0.00;-¤#,##0.00",
                     "#,##0%"
                 ],
                 "signedColor": "255,0,0",
@@ -71,26 +125,10 @@
             "maxWidth": 0,
             "minWidth": 0,
             "name": "LEARNINGOUTCOMELIST_ID",
-            "nullable": true,
-            "persistent": false,
+            "nullable": false,
+            "persistent": true,
             "preferredWidth": 100,
             "scale": 0,
-            "tableColumnLink": {
-                "linkedColumn": "ID",
-                "linkedTable": "eu.open_ecvet.app.model.Learningoutcomelist",
-                "path": [{
-                    "first": {
-                        "cardinality": "ONE",
-                        "columns": ["ID"],
-                        "table": "eu.open_ecvet.app.model.Learningoutcomelist"
-                    },
-                    "second": {
-                        "cardinality": "MANY",
-                        "columns": ["LEARNINGOUTCOMELIST_ID"],
-                        "table": "eu.open_ecvet.app.model.LearningoutcomelistLearningoutcomelist"
-                    }
-                }]
-            },
             "type": "INTEGER",
             "visible": false
         },

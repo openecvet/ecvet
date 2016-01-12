@@ -7,6 +7,9 @@ import xdev.lang.EventHandlerDelegate;
 import xdev.lang.XDEV;
 import xdev.lang.cmd.Query;
 import xdev.ui.*;
+import xdev.ui.event.FormularAdapter;
+import xdev.ui.event.FormularEvent;
+import xdev.vt.VirtualTable.VirtualTableRow;
 import xdev.vt.VirtualTableFillMethod;
 
 import java.awt.Dimension;
@@ -27,6 +30,7 @@ import eu.open_ecvet.app.helper.UpdateView;
 import eu.open_ecvet.app.helper.UpdateViewHelper;
 import eu.open_ecvet.app.model.Evaluations;
 import eu.open_ecvet.app.model.Learningoutcomelist;
+import eu.open_ecvet.app.model.LearningoutcomelistLearningoutcome;
 import eu.open_ecvet.app.model.LearningoutcomelistLearningoutcomelist;
 import eu.open_ecvet.app.model.Qualificationframeworklist;
 
@@ -37,21 +41,19 @@ public class CheckM2N extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 	
 	private UpdateView	updateView	= new UpdateView()
 									{
-
-										
 										
 										@Override
 										public String getName()
 										{
-										
+											
 											return CheckM2N.class.getSimpleName();
 										}
-
-
+										
+										
 										public void update()
 										{
 											table.refresh();
-//											nmListBox.setModel(LearningoutcomelistLearningoutcome.VT,"{$LEARNINGOUTCOME_TITLE}","LEARNINGOUTCOME_ID",true);
+											//											nmListBox.setModel(LearningoutcomelistLearningoutcome.VT,"{$LEARNINGOUTCOME_TITLE}","LEARNINGOUTCOME_ID",true);
 											//	comboBox.refresh();
 										}
 									};
@@ -101,7 +103,9 @@ public class CheckM2N extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		UpdateViewHelper.instance().add(updateView);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
 	
-	@EventHandlerDelegate void button_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	
+	@EventHandlerDelegate
+	void button_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		try
 		{
@@ -112,45 +116,80 @@ public class CheckM2N extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 				{
 					setDataSource(EcvetH2.DB);
 					
-					from("LEARNINGOUTCOMELIST");
-					select("LEARNINGOUTCOMELIST","ID").into(Learningoutcomelist.ID);
-					select("LEARNINGOUTCOMELIST","DESCRIPTION").into(Learningoutcomelist.DESCRIPTION);
-					select("LEARNINGOUTCOMELIST","TITLE").into(Learningoutcomelist.TITLE);
-					select("LEARNINGOUTCOMELIST","URI").into(Learningoutcomelist.URI);
-					leftJoin("EVALUATIONS","ID","LEARNINGOUTCOMELIST","EVALUATIONS_ID");
-					select("LEARNINGOUTCOMELIST","EVALUATIONS_ID").into(Learningoutcomelist.EVALUATIONS_ID);
-					select("EVALUATIONS","TITLE").into(Learningoutcomelist.EVALUATIONS_TITLE);
-					leftJoin("QUALIFICATIONFRAMEWORKLIST","ID","LEARNINGOUTCOMELIST","QUALIFICATIONFRAMEWORKLIST_ID");
-					select("LEARNINGOUTCOMELIST","QUALIFICATIONFRAMEWORKLIST_ID").into(Learningoutcomelist.QUALIFICATIONFRAMEWORKLIST_ID);
-					select("QUALIFICATIONFRAMEWORKLIST","TITLE").into(Learningoutcomelist.QUALIFICATIONFRAMEWORKLIST_TITLE);
+					from("LEARNINGOUTCOMELIST_LEARNINGOUTCOME");
+					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOME","LEARNINGOUTCOME_ID").into(
+							LearningoutcomelistLearningoutcome.LEARNINGOUTCOME_ID);
+					leftJoin("LEARNINGOUTCOME","ID","LEARNINGOUTCOMELIST_LEARNINGOUTCOME",
+							"LEARNINGOUTCOMELIST_ID");
+					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOME","LEARNINGOUTCOMELIST_ID").into(
+							LearningoutcomelistLearningoutcome.LEARNINGOUTCOMELIST_ID);
+					select("LEARNINGOUTCOME","TITLE").into(
+							LearningoutcomelistLearningoutcome.LEARNINGOUTCOME_TITLE);
 					
-					setVirtualTable(Learningoutcomelist.VT);
+					setVirtualTable(LearningoutcomelistLearningoutcome.VT);
 					setFillMethod(VirtualTableFillMethod.OVERWRITE);
+					
 				}
 			});
+								
+			//		XDEV.Query(new Query()
+			//		{
+			//			@Override
+			//			public void init()
+			//			{
+			//				setDataSource(EcvetH2.DB);
+			//				
+			//				from("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST");
+			//				select("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST","LEARNINGOUTCOMELIST_ID").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_ID);
+			//				leftJoin("LEARNINGOUTCOMELIST","ID","LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST","LEARNINGOUTCOMELISTPARENT_ID");
+			//				select("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST","LEARNINGOUTCOMELISTPARENT_ID").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELISTPARENT_ID);
+			//				select("LEARNINGOUTCOMELIST","TITLE").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_TITLE);
+			//				
+			//				setVirtualTable(LearningoutcomelistLearningoutcomelist.VT);
+			//				setFillMethod(VirtualTableFillMethod.OVERWRITE);
+			//				
+			//				
+			//			}
+			//		});
+			
 		}
 		catch(DBException e)
 		{
 			// TODO Auto-generated code
 			e.printStackTrace();
 		}
-		nmListBox.setModel(Learningoutcomelist.VT,"{$LEARNINGOUTCOME_TITLE}","LEARNINGOUTCOME_ID",true);
+		
+		VirtualTableRow[] virtualTableRows = LearningoutcomelistLearningoutcome.VT.getRows();
+		
+		System.out.println(virtualTableRows.length);
+		for(VirtualTableRow virtualTableRow : virtualTableRows)
+		{
+			System.out.println(virtualTableRow);
+		}
+		
+		nmListBox.setModel(LearningoutcomelistLearningoutcome.VT,"{$LEARNINGOUTCOME_TITLE}",
+				"LEARNINGOUTCOME_ID",true);
+		
+		//				System.out.println((LearningoutcomelistLearningoutcome.VT.getRowCount()));	
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
-
-	@EventHandlerDelegate void cmdNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	
+	
+	@EventHandlerDelegate
+	void cmdNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.reset(eu.open_ecvet.app.model.Learningoutcomelist.VT);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
-
-	@EventHandlerDelegate void cmdReset_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	
+	
+	@EventHandlerDelegate
+	void cmdReset_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.reset();
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
-
-	@EventHandlerDelegate void cmdSave_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	
+	
+	@EventHandlerDelegate
+	void cmdSave_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		if(formular.verifyFormularComponents())
 		{
@@ -164,9 +203,10 @@ public class CheckM2N extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 			}
 		}
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
-
-	@EventHandlerDelegate void cmdSaveAndNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	
+	
+	@EventHandlerDelegate
+	void cmdSaveAndNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		if(formular.verifyFormularComponents())
 		{
@@ -181,18 +221,34 @@ public class CheckM2N extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 			}
 		}
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
-
-	@EventHandlerDelegate void cmdSearch_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	
+	
+	@EventHandlerDelegate
+	void cmdSearch_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.search("AND",table);
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
-
+	
+	
+	@EventHandlerDelegate
+	void formular_formularModelChanged(FormularEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+	
+	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+	
+	
+	@EventHandlerDelegate
+	void button2_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		VirtualTableRow virtualTableRow = formular.getVirtualTableRow();
+		
+		System.out.println(virtualTableRow);
+	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+	
 	// Generated definitions, do not edit! ${GENERATED-CODE-BLOCK-START:DEFINITIONS}
 	XdevContainer	container, container3, container2;
-	XdevButton		xShortcut, cmdNew, cmdReset, cmdSave, cmdSaveAndNew, cmdSearch, button,
-			deleteButton;
+	XdevButton		xShortcut, cmdNew, cmdReset, cmdSave, cmdSaveAndNew, cmdSearch, button2,
+			button, deleteButton;
 	XdevTextField	textField2, textField;
 	XdevFormular	formular;
 	XdevTable		table;
@@ -226,6 +282,7 @@ public class CheckM2N extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		cmdSaveAndNew = new XdevButton();
 		cmdSearch = new XdevButton();
 		container2 = new XdevContainer();
+		button2 = new XdevButton();
 		button = new XdevButton();
 		deleteButton = new XdevButton();
 		
@@ -277,6 +334,8 @@ public class CheckM2N extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		cmdSaveAndNew.setText("Speichern + Neu");
 		cmdSearch.setTabIndex(15);
 		cmdSearch.setText("Suche");
+		button2.setTabIndex(17);
+		button2.setText("show row");
 		button.setTabIndex(5);
 		button.setText("Fill");
 		deleteButton.setTabIndex(4);
@@ -307,31 +366,50 @@ public class CheckM2N extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		container3.add(cmdSaveAndNew);
 		container3.add(cmdSearch);
 		formular.setLayout(new GridBagLayout());
-		formular.add(label2,new GBC(1,1,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(textField2,new GBC(2,1,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label2,new GBC(1,1,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
+				3),0,0));
+		formular.add(textField2,new GBC(2,1,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
+				new Insets(3,3,3,3),0,0));
 		formular.add(label6,new GBC(3,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(label3,new GBC(1,2,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		JScrollPane textArea_carrier = new XScrollPane(textArea,XScrollPane.VERTICAL_SCROLLBAR_ALWAYS,XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-		formular.add(textArea_carrier,new GBC(2,2,1,1,1.0,1.0,GBC.BASELINE_LEADING,GBC.BOTH,new Insets(3,3,3,3),0,0));
-		JScrollPane nmListBox_carrier = new XScrollPane(nmListBox,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		formular.add(nmListBox_carrier,new GBC(3,2,1,4,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
-		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(comboBox2,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(label,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(comboBox,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(container3,new GBC(1,6,3,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(label3,new GBC(1,2,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
+				3),0,0));
+		JScrollPane textArea_carrier = new XScrollPane(textArea,
+				XScrollPane.VERTICAL_SCROLLBAR_ALWAYS,XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		formular.add(textArea_carrier,new GBC(2,2,1,1,1.0,1.0,GBC.BASELINE_LEADING,GBC.BOTH,
+				new Insets(3,3,3,3),0,0));
+		JScrollPane nmListBox_carrier = new XScrollPane(nmListBox,
+				XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		formular.add(nmListBox_carrier,new GBC(3,2,1,4,1.0,1.0,GBC.WEST,GBC.BOTH,
+				new Insets(3,3,3,3),0,0));
+		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
+				3),0,0));
+		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
+				new Insets(3,3,3,3),0,0));
+		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
+				3),0,0));
+		formular.add(comboBox2,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
+				new Insets(3,3,3,3),0,0));
+		formular.add(label,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,
+				new Insets(3,3,3,3),0,0));
+		formular.add(comboBox,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
+				new Insets(3,3,3,3),0,0));
+		formular.add(container3,new GBC(1,6,3,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,
+				3),0,0));
 		GBC.addSpacer(formular,true,true);
 		container2.setLayout(new GridBagLayout());
-		container2.add(button,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(3,3,3,3),0,0));
-		container2.add(deleteButton,new GBC(2,1,1,1,0.0,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
+		container2.add(button2,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(3,3,3,3),0,0));
+		container2.add(button,new GBC(2,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(3,3,3,3),0,0));
+		container2.add(deleteButton,new GBC(3,1,1,1,0.0,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),
+				0,0));
 		GBC.addSpacer(container2,true,true);
 		this.setLayout(new GridBagLayout());
 		this.add(container,new GBC(1,1,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		JScrollPane table_carrier = new XScrollPane(table,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		this.add(table_carrier,new GBC(1,2,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		this.add(formular,new GBC(1,3,1,1,0.1,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(0,0,0,0),0,0));
+		JScrollPane table_carrier = new XScrollPane(table,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
+				XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		this.add(table_carrier,new GBC(1,2,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),
+				0,0));
+		this.add(formular,
+				new GBC(1,3,1,1,0.1,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(0,0,0,0),0,0));
 		this.add(container2,new GBC(1,4,1,1,0.1,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(this,true,true);
 		
@@ -343,11 +421,20 @@ public class CheckM2N extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 				this_windowClosing(e);
 			}
 		});
+		formular.addFormularListener(new FormularAdapter()
+		{
+			@Override
+			public void formularModelChanged(FormularEvent event)
+			{
+				formular_formularModelChanged(event);
+			}
+		});
 		cmdNew.addActionListener(e -> cmdNew_actionPerformed(e));
 		cmdReset.addActionListener(e -> cmdReset_actionPerformed(e));
 		cmdSave.addActionListener(e -> cmdSave_actionPerformed(e));
 		cmdSaveAndNew.addActionListener(e -> cmdSaveAndNew_actionPerformed(e));
 		cmdSearch.addActionListener(e -> cmdSearch_actionPerformed(e));
+		button2.addActionListener(e -> button2_actionPerformed(e));
 		button.addActionListener(e -> button_actionPerformed(e));
 		deleteButton.addActionListener(e -> deleteButton_actionPerformed(e));
 		this_init();

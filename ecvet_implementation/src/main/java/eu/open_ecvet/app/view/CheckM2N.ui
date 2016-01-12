@@ -137,136 +137,6 @@
         {
             "children": [
                 {
-                    "class": "xdev.ui.XdevButton",
-                    "events": ["action.actionPerformed"],
-                    "properties": {
-                        "-constraints": {
-                            "value": {
-                                "anchor": "WEST",
-                                "fill": "NONE",
-                                "gridHeight": 1,
-                                "gridWidth": 1,
-                                "gridx": 1,
-                                "gridy": 1,
-                                "insets": "3,3,3,3",
-                                "ipadx": 0,
-                                "ipady": 0,
-                                "type": "XDEV_TABLELAYOUT",
-                                "weightx": 0,
-                                "weighty": 0
-                            }
-                        },
-                        "-fieldName": {
-                            "value": "button"
-                        },
-                        "height": {
-                            "value": 22
-                        },
-                        "tabIndex": {
-                            "value": 5
-                        },
-                        "text": {
-                            "value": "Fill"
-                        },
-                        "width": {
-                            "value": 43
-                        },
-                        "x": {
-                            "value": 3
-                        },
-                        "y": {
-                            "value": 3
-                        }
-                    }
-                },
-                {
-                    "class": "xdev.ui.XdevButton",
-                    "events": ["action.actionPerformed"],
-                    "properties": {
-                        "-constraints": {
-                            "value": {
-                                "anchor": "EAST",
-                                "fill": "NONE",
-                                "gridHeight": 1,
-                                "gridWidth": 1,
-                                "gridx": 2,
-                                "gridy": 1,
-                                "insets": "3,3,3,3",
-                                "ipadx": 0,
-                                "ipady": 0,
-                                "type": "XDEV_TABLELAYOUT",
-                                "weightx": 0,
-                                "weighty": 0
-                            }
-                        },
-                        "-fieldName": {
-                            "value": "deleteButton"
-                        },
-                        "height": {
-                            "value": 22
-                        },
-                        "tabIndex": {
-                            "value": 4
-                        },
-                        "text": {
-                            "value": "Delete"
-                        },
-                        "width": {
-                            "value": 64
-                        },
-                        "x": {
-                            "value": 52
-                        },
-                        "y": {
-                            "value": 3
-                        }
-                    }
-                }
-            ],
-            "class": "xdev.ui.XdevContainer",
-            "properties": {
-                "-constraints": {
-                    "value": {
-                        "anchor": "EAST",
-                        "fill": "NONE",
-                        "gridHeight": 1,
-                        "gridWidth": 1,
-                        "gridx": 1,
-                        "gridy": 4,
-                        "insets": "3,3,3,3",
-                        "ipadx": 0,
-                        "ipady": 0,
-                        "type": "XDEV_TABLELAYOUT",
-                        "weightx": 0.1,
-                        "weighty": 0
-                    }
-                },
-                "-fieldName": {
-                    "value": "container2"
-                },
-                "height": {
-                    "value": 29
-                },
-                "layout": {
-                    "value": {
-                        "autoFill": "AUTO_FILL_BOTH",
-                        "type": "XDEV_TABLELAYOUT"
-                    }
-                },
-                "width": {
-                    "value": 120
-                },
-                "x": {
-                    "value": 677
-                },
-                "y": {
-                    "value": 401
-                }
-            }
-        },
-        {
-            "children": [
-                {
                     "class": "xdev.ui.XdevNmListBox",
                     "properties": {
                         "-autofillWithData": {
@@ -859,7 +729,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 0
+                                        "zpos": 1
                                     }
                                 },
                                 "-fieldName": {
@@ -892,7 +762,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 0
+                                        "zpos": 2
                                     }
                                 },
                                 "-fieldName": {
@@ -925,7 +795,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 0
+                                        "zpos": 3
                                     }
                                 },
                                 "-fieldName": {
@@ -958,7 +828,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 0
+                                        "zpos": 4
                                     }
                                 },
                                 "-fieldName": {
@@ -1031,6 +901,7 @@
                 }
             ],
             "class": "xdev.ui.XdevFormular",
+            "events": ["formular.formularModelChanged"],
             "properties": {
                 "-constraints": {
                     "value": {
@@ -1065,6 +936,179 @@
                 },
                 "y": {
                     "value": 191
+                }
+            }
+        },
+        {
+            "children": [
+                {
+                    "class": "xdev.ui.XdevButton",
+                    "events": ["action.actionPerformed"],
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "WEST",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 1,
+                                "gridy": 1,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "button2"
+                        },
+                        "height": {
+                            "value": 22
+                        },
+                        "tabIndex": {
+                            "value": 17
+                        },
+                        "text": {
+                            "value": "show row"
+                        },
+                        "width": {
+                            "value": 83
+                        },
+                        "x": {
+                            "value": 3
+                        },
+                        "y": {
+                            "value": 3
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevButton",
+                    "events": ["action.actionPerformed"],
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "WEST",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 2,
+                                "gridy": 1,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "button"
+                        },
+                        "height": {
+                            "value": 22
+                        },
+                        "tabIndex": {
+                            "value": 5
+                        },
+                        "text": {
+                            "value": "Fill"
+                        },
+                        "width": {
+                            "value": 43
+                        },
+                        "x": {
+                            "value": 92
+                        },
+                        "y": {
+                            "value": 3
+                        }
+                    }
+                },
+                {
+                    "class": "xdev.ui.XdevButton",
+                    "events": ["action.actionPerformed"],
+                    "properties": {
+                        "-constraints": {
+                            "value": {
+                                "anchor": "EAST",
+                                "fill": "NONE",
+                                "gridHeight": 1,
+                                "gridWidth": 1,
+                                "gridx": 3,
+                                "gridy": 1,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 0,
+                                "weighty": 0
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "deleteButton"
+                        },
+                        "height": {
+                            "value": 22
+                        },
+                        "tabIndex": {
+                            "value": 4
+                        },
+                        "text": {
+                            "value": "Delete"
+                        },
+                        "width": {
+                            "value": 64
+                        },
+                        "x": {
+                            "value": 141
+                        },
+                        "y": {
+                            "value": 3
+                        }
+                    }
+                }
+            ],
+            "class": "xdev.ui.XdevContainer",
+            "properties": {
+                "-constraints": {
+                    "value": {
+                        "anchor": "EAST",
+                        "fill": "NONE",
+                        "gridHeight": 1,
+                        "gridWidth": 1,
+                        "gridx": 1,
+                        "gridy": 4,
+                        "insets": "3,3,3,3",
+                        "ipadx": 0,
+                        "ipady": 0,
+                        "type": "XDEV_TABLELAYOUT",
+                        "weightx": 0.1,
+                        "weighty": 0
+                    }
+                },
+                "-fieldName": {
+                    "value": "container2"
+                },
+                "height": {
+                    "value": 29
+                },
+                "layout": {
+                    "value": {
+                        "autoFill": "AUTO_FILL_BOTH",
+                        "type": "XDEV_TABLELAYOUT"
+                    }
+                },
+                "width": {
+                    "value": 209
+                },
+                "x": {
+                    "value": 588
+                },
+                "y": {
+                    "value": 401
                 }
             }
         }
