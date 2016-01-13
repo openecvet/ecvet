@@ -1,6 +1,4 @@
-
 package eu.open_ecvet.app.view;
-
 
 import xdev.db.DBException;
 import xdev.lang.EventHandlerDelegate;
@@ -34,231 +32,223 @@ import eu.open_ecvet.app.model.LearningoutcomelistLearningoutcome;
 import eu.open_ecvet.app.model.LearningoutcomelistLearningoutcomelist;
 import eu.open_ecvet.app.model.Qualificationframeworklist;
 
-
-public class CheckM2N extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLASS}
+public class CheckM2N extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPERCLASS}
 {
-	private MainWindow	mainWindow;
-	
-	private UpdateView	updateView	= new UpdateView()
-									{
-										
-										@Override
-										public String getName()
-										{
-											
-											return CheckM2N.class.getSimpleName();
-										}
-										
-										
-										public void update()
-										{
-											table.refresh();
-											//											nmListBox.setModel(LearningoutcomelistLearningoutcome.VT,"{$LEARNINGOUTCOME_TITLE}","LEARNINGOUTCOME_ID",true);
-											//	comboBox.refresh();
-										}
-									};
-	
-	
-	public CheckM2N()
-	{
-		
+	private MainWindow mainWindow;
+
+	private UpdateView updateView = new UpdateView() {
+
+		@Override
+		public String getName() {
+
+			return CheckM2N.class.getSimpleName();
+		}
+
+		public void update() {
+			table.refresh();
+			// nmListBox.setModel(LearningoutcomelistLearningoutcome.VT,"{$LEARNINGOUTCOME_TITLE}","LEARNINGOUTCOME_ID",true);
+			// comboBox.refresh();
+		}
+	};
+
+	public CheckM2N() {
+
 	}
-	
-	
-	public CheckM2N(MainWindow mainWindow)
-	{
+
+	public CheckM2N(MainWindow mainWindow) {
 		this.mainWindow = mainWindow;
 	}
-	
-	
+
 	@EventHandlerDelegate
-	void this_windowClosing(WindowEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+	void this_windowClosing(WindowEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		close();
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
 	@EventHandlerDelegate
-	void deleteButton_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		//		try
-		//		{
-		//			formular.delete();
-		//			formular.reset(Unitlist.VT);
-		//		}
-		//		catch(DBException e)
-		//		{
-		//			// TODO Auto-generated code
-		//			e.printStackTrace();
+	void deleteButton_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		// try
+		// {
+		// formular.delete();
+		// formular.reset(Unitlist.VT);
+		// }
+		// catch(DBException e)
+		// {
+		// // TODO Auto-generated code
+		// e.printStackTrace();
 		updateView.update();
-		this.openInDialog(new AlertWindow(),true);
-		//		}
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
+		this.openInDialog(new AlertWindow(), true);
+		// }
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
 	@EventHandlerDelegate
-	void this_init() // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-	
+	void this_init() //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+
 		UpdateViewHelper.instance().add(updateView);
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
 	@EventHandlerDelegate
-	void button_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		try
-		{
-			XDEV.Query(new Query()
-			{
+	void button_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		try {
+			XDEV.Query(new Query() {
 				@Override
-				public void init()
-				{
+				public void init() {
 					setDataSource(EcvetH2.DB);
-					
+
 					from("LEARNINGOUTCOMELIST_LEARNINGOUTCOME");
-					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOME","LEARNINGOUTCOME_ID").into(
-							LearningoutcomelistLearningoutcome.LEARNINGOUTCOME_ID);
-					leftJoin("LEARNINGOUTCOME","ID","LEARNINGOUTCOMELIST_LEARNINGOUTCOME",
-							"LEARNINGOUTCOMELIST_ID");
-					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOME","LEARNINGOUTCOMELIST_ID").into(
-							LearningoutcomelistLearningoutcome.LEARNINGOUTCOMELIST_ID);
-					select("LEARNINGOUTCOME","TITLE").into(
-							LearningoutcomelistLearningoutcome.LEARNINGOUTCOME_TITLE);
-					
+					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOME", "LEARNINGOUTCOME_ID").into(LearningoutcomelistLearningoutcome.LEARNINGOUTCOME_ID);
+					leftJoin("LEARNINGOUTCOME", "ID", "LEARNINGOUTCOMELIST_LEARNINGOUTCOME", "LEARNINGOUTCOMELIST_ID");
+					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOME", "LEARNINGOUTCOMELIST_ID").into(LearningoutcomelistLearningoutcome.LEARNINGOUTCOMELIST_ID);
+					select("LEARNINGOUTCOME", "TITLE").into(LearningoutcomelistLearningoutcome.LEARNINGOUTCOME_TITLE);
+
 					setVirtualTable(LearningoutcomelistLearningoutcome.VT);
 					setFillMethod(VirtualTableFillMethod.OVERWRITE);
-					
+
 				}
 			});
-								
-			//		XDEV.Query(new Query()
-			//		{
-			//			@Override
-			//			public void init()
-			//			{
-			//				setDataSource(EcvetH2.DB);
-			//				
-			//				from("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST");
-			//				select("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST","LEARNINGOUTCOMELIST_ID").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_ID);
-			//				leftJoin("LEARNINGOUTCOMELIST","ID","LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST","LEARNINGOUTCOMELISTPARENT_ID");
-			//				select("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST","LEARNINGOUTCOMELISTPARENT_ID").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELISTPARENT_ID);
-			//				select("LEARNINGOUTCOMELIST","TITLE").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_TITLE);
-			//				
-			//				setVirtualTable(LearningoutcomelistLearningoutcomelist.VT);
-			//				setFillMethod(VirtualTableFillMethod.OVERWRITE);
-			//				
-			//				
-			//			}
-			//		});
-			
-		}
-		catch(DBException e)
-		{
+
+			XDEV.Query(new Query() {
+				@Override
+				public void init() {
+					setDataSource(EcvetH2.DB);
+
+					from("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST");
+					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST", "LEARNINGOUTCOMELIST_ID").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_ID);
+					leftJoin("LEARNINGOUTCOMELIST", "ID", "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST", "LEARNINGOUTCOMELISTPARENT_ID");
+					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST", "LEARNINGOUTCOMELISTPARENT_ID").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELISTPARENT_ID);
+					select("LEARNINGOUTCOMELIST", "TITLE").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_TITLE);
+
+					setVirtualTable(LearningoutcomelistLearningoutcomelist.VT);
+					setFillMethod(VirtualTableFillMethod.OVERWRITE);
+
+				}
+			});
+
+			XDEV.Query(new Query() {
+				@Override
+				public void init() {
+					setDataSource(EcvetH2.DB);
+					from("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST");
+					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST", "LEARNINGOUTCOMELISTPARENT_ID").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELISTPARENT_ID);
+					leftJoin("LEARNINGOUTCOMELIST", "ID", "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST", "LEARNINGOUTCOMELIST_ID");
+					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST", "LEARNINGOUTCOMELIST_ID").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_ID);
+					select("LEARNINGOUTCOMELIST", "TITLE").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_TITLE);
+
+					setVirtualTable(LearningoutcomelistLearningoutcomelist.VT);
+					setFillMethod(VirtualTableFillMethod.OVERWRITE);
+				}
+			});
+
+		} catch (DBException e) {
 			// TODO Auto-generated code
 			e.printStackTrace();
 		}
+
+	
+
+		nmListBox.setModel(LearningoutcomelistLearningoutcome.VT, "{$LEARNINGOUTCOME_TITLE}", "LEARNINGOUTCOME_ID", false);
+
+		nmListBox.refresh(formular.getVirtualTable().createRow());
 		
+		System.out.println(LearningoutcomelistLearningoutcome.VT);
 		VirtualTableRow[] virtualTableRows = LearningoutcomelistLearningoutcome.VT.getRows();
-		
+
 		System.out.println(virtualTableRows.length);
-		for(VirtualTableRow virtualTableRow : virtualTableRows)
-		{
+		for (VirtualTableRow virtualTableRow : virtualTableRows) {
 			System.out.println(virtualTableRow);
 		}
-		
-		nmListBox.setModel(LearningoutcomelistLearningoutcome.VT,"{$LEARNINGOUTCOME_TITLE}",
-				"LEARNINGOUTCOME_ID",true);
-		
-		//				System.out.println((LearningoutcomelistLearningoutcome.VT.getRowCount()));	
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
+
+		// System.out.println((LearningoutcomelistLearningoutcome.VT.getRowCount()));
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
 	@EventHandlerDelegate
-	void cmdNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+	void cmdNew_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.reset(eu.open_ecvet.app.model.Learningoutcomelist.VT);
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
 	@EventHandlerDelegate
-	void cmdReset_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+	void cmdReset_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.reset();
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
 	@EventHandlerDelegate
-	void cmdSave_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		if(formular.verifyFormularComponents())
-		{
-			try
-			{
+	void cmdSave_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		if (formular.verifyFormularComponents()) {
+			try {
 				formular.save();
-			}
-			catch(Exception e)
-			{
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
 	@EventHandlerDelegate
-	void cmdSaveAndNew_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		if(formular.verifyFormularComponents())
-		{
-			try
-			{
+	void cmdSaveAndNew_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		if (formular.verifyFormularComponents()) {
+			try {
 				formular.save();
 				formular.reset(eu.open_ecvet.app.model.Learningoutcomelist.VT);
-			}
-			catch(Exception e)
-			{
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
 	@EventHandlerDelegate
-	void cmdSearch_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		formular.search("AND",table);
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
+	void cmdSearch_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		formular.search("AND", table);
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
 	@EventHandlerDelegate
-	void formular_formularModelChanged(FormularEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-	
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
+	void formular_formularModelChanged(FormularEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
 	@EventHandlerDelegate
-	void button2_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		VirtualTableRow virtualTableRow = formular.getVirtualTableRow();
-		
-		System.out.println(virtualTableRow);
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	// Generated definitions, do not edit! ${GENERATED-CODE-BLOCK-START:DEFINITIONS}
-	XdevContainer	container, container3, container2;
-	XdevButton		xShortcut, cmdNew, cmdReset, cmdSave, cmdSaveAndNew, cmdSearch, button2,
-			button, deleteButton;
-	XdevTextField	textField2, textField;
-	XdevFormular	formular;
-	XdevTable		table;
-	XdevTextArea	textArea;
-	XdevComboBox	comboBox2, comboBox;
-	XdevLabel		label2, label6, label3, label4, label5, label;
-	XdevNmListBox	nmListBox;
+	void button2_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		VirtualTableRow formularVirtualTableRow = formular.getVirtualTableRow();
+		System.out.println("formularVirtualTableRow: " + formularVirtualTableRow);
+
+		VirtualTableRow[] virtualTableRows = nmListBox.getVirtualTable().getRows();
+		System.out.println(nmListBox.getVirtualTable());
+		System.out.println("virtualTableRows");
+		for (VirtualTableRow virtualTableRow : virtualTableRows) {
+			System.out.println(virtualTableRow);
+		}
+
+		System.out.println("selectedVirtualTableRows");
+		VirtualTableRow[] selectedVirtualTableRows = nmListBox.getSelectedVirtualTableRows();
+		for (VirtualTableRow selectedVirtualTableRow : selectedVirtualTableRows) {
+			System.out.println(selectedVirtualTableRow);
+		}
+
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
+	// Generated definitions, do not
+	// edit! ${GENERATED-CODE-BLOCK-START:DEFINITIONS}
+	XdevContainer container, container3, container2;
+	XdevButton xShortcut, cmdNew, cmdReset, cmdSave, cmdSaveAndNew, cmdSearch, button2, button, deleteButton;
+	XdevTextField textField2, textField;
+	XdevFormular formular;
+	XdevTable table;
+	XdevTextArea textArea;
+	XdevComboBox comboBox2, comboBox;
+	XdevLabel label2, label6, label3, label4, label5, label;
+	XdevNmListBox nmListBox;
 	// End generated definitions ${GENERATED-CODE-BLOCK-END:DEFINITIONS}
-	
-	{// Generated initializers, do not edit! ${GENERATED-CODE-BLOCK-START:INITIALIZERS}
+
+	{// Generated initializers, do not
+		// edit! ${GENERATED-CODE-BLOCK-START:INITIALIZERS}
 		container = new XdevContainer();
 		xShortcut = new XdevButton();
 		table = new XdevTable();
@@ -285,15 +275,15 @@ public class CheckM2N extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		button2 = new XdevButton();
 		button = new XdevButton();
 		deleteButton = new XdevButton();
-		
+
 		this.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 		this.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
-		this.setPreferredSize(new Dimension(800,600));
+		this.setPreferredSize(new Dimension(800, 600));
 		xShortcut.setTabIndex(1);
 		xShortcut.setText("Button");
 		table.setTabIndex(3);
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		table.setModel(Learningoutcomelist.VT,"*",true);
+		table.setModel(Learningoutcomelist.VT, "ID, TITLE, URI, EVALUATIONS_TITLE, QUALIFICATIONFRAMEWORKLIST_TITLE", true);
 		label2.setText("TITLE");
 		label2.setName("label2");
 		textField2.setDataField("eu.open_ecvet.app.model.Learningoutcomelist.TITLE");
@@ -319,11 +309,11 @@ public class CheckM2N extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		comboBox2.setDataField("eu.open_ecvet.app.model.Learningoutcomelist.EVALUATIONS_ID");
 		comboBox2.setTabIndex(9);
 		comboBox2.setName("comboBox2");
-		comboBox2.setModel(Evaluations.VT,"TITLE","ID",true);
+		comboBox2.setModel(Evaluations.VT, "TITLE", "ID", true);
 		label.setText("QUALIFICATIONFRAMEWORKLIST_ID");
 		comboBox.setDataField("eu.open_ecvet.app.model.Learningoutcomelist.QUALIFICATIONFRAMEWORKLIST_ID");
 		comboBox.setTabIndex(10);
-		comboBox.setModel(Qualificationframeworklist.VT,"TITLE","ID",true);
+		comboBox.setModel(Qualificationframeworklist.VT, "TITLE", "ID", true);
 		cmdNew.setTabIndex(11);
 		cmdNew.setText("Neu");
 		cmdReset.setTabIndex(12);
@@ -340,9 +330,9 @@ public class CheckM2N extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		button.setText("Fill");
 		deleteButton.setTabIndex(4);
 		deleteButton.setText("Delete");
-		
+
 		table.saveState();
-		MasterDetail.connect(table,formular);
+		MasterDetail.connect(table, formular);
 		label2.saveState();
 		textField2.saveState();
 		label6.saveState();
@@ -355,77 +345,55 @@ public class CheckM2N extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		comboBox2.saveState();
 		label.saveState();
 		comboBox.saveState();
-		
+
 		container.setLayout(new GridBagLayout());
-		container.add(xShortcut,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(0,0,0,0),0,0));
-		GBC.addSpacer(container,true,true);
-		container3.setLayout(new FlowLayout(FlowLayout.TRAILING,3,3));
+		container.add(xShortcut, new GBC(1, 1, 1, 1, 0.0, 0.0, GBC.WEST, GBC.NONE, new Insets(0, 0, 0, 0), 0, 0));
+		GBC.addSpacer(container, true, true);
+		container3.setLayout(new FlowLayout(FlowLayout.TRAILING, 3, 3));
 		container3.add(cmdNew);
 		container3.add(cmdReset);
 		container3.add(cmdSave);
 		container3.add(cmdSaveAndNew);
 		container3.add(cmdSearch);
 		formular.setLayout(new GridBagLayout());
-		formular.add(label2,new GBC(1,1,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(textField2,new GBC(2,1,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
-				new Insets(3,3,3,3),0,0));
-		formular.add(label6,new GBC(3,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(label3,new GBC(1,2,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		JScrollPane textArea_carrier = new XScrollPane(textArea,
-				XScrollPane.VERTICAL_SCROLLBAR_ALWAYS,XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-		formular.add(textArea_carrier,new GBC(2,2,1,1,1.0,1.0,GBC.BASELINE_LEADING,GBC.BOTH,
-				new Insets(3,3,3,3),0,0));
-		JScrollPane nmListBox_carrier = new XScrollPane(nmListBox,
-				XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		formular.add(nmListBox_carrier,new GBC(3,2,1,4,1.0,1.0,GBC.WEST,GBC.BOTH,
-				new Insets(3,3,3,3),0,0));
-		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
-				new Insets(3,3,3,3),0,0));
-		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(comboBox2,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
-				new Insets(3,3,3,3),0,0));
-		formular.add(label,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,
-				new Insets(3,3,3,3),0,0));
-		formular.add(comboBox,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
-				new Insets(3,3,3,3),0,0));
-		formular.add(container3,new GBC(1,6,3,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,
-				3),0,0));
-		GBC.addSpacer(formular,true,true);
+		formular.add(label2, new GBC(1, 1, 1, 1, 0.0, 0.0, GBC.BASELINE_LEADING, GBC.NONE, new Insets(3, 3, 3, 3), 0, 0));
+		formular.add(textField2, new GBC(2, 1, 1, 1, 1.0, 0.0, GBC.BASELINE_LEADING, GBC.HORIZONTAL, new Insets(3, 3, 3, 3), 0, 0));
+		formular.add(label6, new GBC(3, 1, 1, 1, 0.0, 0.0, GBC.WEST, GBC.NONE, new Insets(3, 3, 3, 3), 0, 0));
+		formular.add(label3, new GBC(1, 2, 1, 1, 0.0, 0.0, GBC.BASELINE_LEADING, GBC.NONE, new Insets(3, 3, 3, 3), 0, 0));
+		JScrollPane textArea_carrier = new XScrollPane(textArea, XScrollPane.VERTICAL_SCROLLBAR_ALWAYS, XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		formular.add(textArea_carrier, new GBC(2, 2, 1, 1, 1.0, 1.0, GBC.BASELINE_LEADING, GBC.BOTH, new Insets(3, 3, 3, 3), 0, 0));
+		JScrollPane nmListBox_carrier = new XScrollPane(nmListBox, XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		formular.add(nmListBox_carrier, new GBC(3, 2, 1, 4, 1.0, 1.0, GBC.WEST, GBC.BOTH, new Insets(3, 3, 3, 3), 0, 0));
+		formular.add(label4, new GBC(1, 3, 1, 1, 0.0, 0.0, GBC.BASELINE_LEADING, GBC.NONE, new Insets(3, 3, 3, 3), 0, 0));
+		formular.add(textField, new GBC(2, 3, 1, 1, 1.0, 0.0, GBC.BASELINE_LEADING, GBC.HORIZONTAL, new Insets(3, 3, 3, 3), 0, 0));
+		formular.add(label5, new GBC(1, 4, 1, 1, 0.0, 0.0, GBC.BASELINE_LEADING, GBC.NONE, new Insets(3, 3, 3, 3), 0, 0));
+		formular.add(comboBox2, new GBC(2, 4, 1, 1, 1.0, 0.0, GBC.BASELINE_LEADING, GBC.HORIZONTAL, new Insets(3, 3, 3, 3), 0, 0));
+		formular.add(label, new GBC(1, 5, 1, 1, 0.0, 0.0, GBC.BASELINE_LEADING, GBC.NONE, new Insets(3, 3, 3, 3), 0, 0));
+		formular.add(comboBox, new GBC(2, 5, 1, 1, 1.0, 0.0, GBC.BASELINE_LEADING, GBC.HORIZONTAL, new Insets(3, 3, 3, 3), 0, 0));
+		formular.add(container3, new GBC(1, 6, 3, 1, 1.0, 0.0, GBC.CENTER, GBC.HORIZONTAL, new Insets(3, 3, 3, 3), 0, 0));
+		GBC.addSpacer(formular, true, true);
 		container2.setLayout(new GridBagLayout());
-		container2.add(button2,new GBC(1,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(3,3,3,3),0,0));
-		container2.add(button,new GBC(2,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(3,3,3,3),0,0));
-		container2.add(deleteButton,new GBC(3,1,1,1,0.0,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),
-				0,0));
-		GBC.addSpacer(container2,true,true);
+		container2.add(button2, new GBC(1, 1, 1, 1, 0.0, 0.0, GBC.WEST, GBC.NONE, new Insets(3, 3, 3, 3), 0, 0));
+		container2.add(button, new GBC(2, 1, 1, 1, 0.0, 0.0, GBC.WEST, GBC.NONE, new Insets(3, 3, 3, 3), 0, 0));
+		container2.add(deleteButton, new GBC(3, 1, 1, 1, 0.0, 0.0, GBC.EAST, GBC.NONE, new Insets(3, 3, 3, 3), 0, 0));
+		GBC.addSpacer(container2, true, true);
 		this.setLayout(new GridBagLayout());
-		this.add(container,new GBC(1,1,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		JScrollPane table_carrier = new XScrollPane(table,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
-				XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		this.add(table_carrier,new GBC(1,2,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),
-				0,0));
-		this.add(formular,
-				new GBC(1,3,1,1,0.1,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(0,0,0,0),0,0));
-		this.add(container2,new GBC(1,4,1,1,0.1,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
-		GBC.addSpacer(this,true,true);
-		
-		this.addWindowListener(new WindowAdapter()
-		{
+		this.add(container, new GBC(1, 1, 1, 1, 0.1, 0.0, GBC.WEST, GBC.HORIZONTAL, new Insets(3, 3, 3, 3), 0, 0));
+		JScrollPane table_carrier = new XScrollPane(table, XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		this.add(table_carrier, new GBC(1, 2, 1, 1, 0.1, 0.0, GBC.WEST, GBC.HORIZONTAL, new Insets(3, 3, 3, 3), 0, 0));
+		this.add(formular, new GBC(1, 3, 1, 1, 0.1, 0.0, GBC.CENTER, GBC.HORIZONTAL, new Insets(0, 0, 0, 0), 0, 0));
+		this.add(container2, new GBC(1, 4, 1, 1, 0.1, 0.0, GBC.EAST, GBC.NONE, new Insets(3, 3, 3, 3), 0, 0));
+		GBC.addSpacer(this, true, true);
+
+		this.addWindowListener(new WindowAdapter() {
 			@Override
-			public void windowClosing(WindowEvent e)
-			{
+			public void windowClosing(WindowEvent e) {
 				this_windowClosing(e);
 			}
 		});
-		formular.addFormularListener(new FormularAdapter()
-		{
+		formular.addFormularListener(new FormularAdapter() {
 			@Override
-			public void formularModelChanged(FormularEvent event)
-			{
+			public void formularModelChanged(FormularEvent event) {
 				formular_formularModelChanged(event);
 			}
 		});
@@ -438,6 +406,6 @@ public class CheckM2N extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLA
 		button.addActionListener(e -> button_actionPerformed(e));
 		deleteButton.addActionListener(e -> deleteButton_actionPerformed(e));
 		this_init();
-	}// ${GENERATED-CODE-BLOCK-END:INITIALIZERS}
-	
+	}//  ${GENERATED-CODE-BLOCK-END:INITIALIZERS}
+
 }

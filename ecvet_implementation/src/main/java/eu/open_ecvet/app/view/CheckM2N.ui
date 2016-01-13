@@ -83,7 +83,7 @@
             "properties": {
                 "-autofillColumns": {
                     "value": {
-                        "expression": "*"
+                        "expression": "ID, TITLE, URI, EVALUATIONS_TITLE, QUALIFICATIONFRAMEWORKLIST_TITLE"
                     }
                 },
                 "-autofillWithData": {

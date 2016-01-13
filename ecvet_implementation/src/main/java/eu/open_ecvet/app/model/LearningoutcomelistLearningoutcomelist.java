@@ -15,8 +15,6 @@ import xdev.vt.VirtualTableColumn;
 
 import java.util.Locale;
 
-import eu.open_ecvet.app.data_src.EcvetH2;
-
 
 public class LearningoutcomelistLearningoutcomelist extends VirtualTable implements
 		StaticInstanceSupport // ${GENERATED-CODE-LINE:VT_SUPERCLASS}
@@ -24,7 +22,6 @@ public class LearningoutcomelistLearningoutcomelist extends VirtualTable impleme
 	
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
 	public final static VirtualTableColumn<Integer>	LEARNINGOUTCOMELISTPARENT_ID;
-	public final static VirtualTableColumn<String>	LEARNINGOUTCOMELIST_TITLE2;
 	public final static VirtualTableColumn<Integer>	LEARNINGOUTCOMELIST_ID;
 	public final static VirtualTableColumn<String>	LEARNINGOUTCOMELIST_TITLE;
 	
@@ -39,13 +36,6 @@ public class LearningoutcomelistLearningoutcomelist extends VirtualTable impleme
 		LEARNINGOUTCOMELISTPARENT_ID.setPreferredWidth(100);
 		LEARNINGOUTCOMELISTPARENT_ID.setTextFormat(TextFormat.getNumberInstance(
 				Locale.getDefault(),null,0,0,false,false));
-		
-		LEARNINGOUTCOMELIST_TITLE2 = new VirtualTableColumn<String>("LEARNINGOUTCOMELIST_TITLE2");
-		LEARNINGOUTCOMELIST_TITLE2.setType(DataType.VARCHAR,2147483647);
-		LEARNINGOUTCOMELIST_TITLE2.setDefaultValue(null);
-		LEARNINGOUTCOMELIST_TITLE2.setCaption("TITLE");
-		LEARNINGOUTCOMELIST_TITLE2.setPreferredWidth(100);
-		LEARNINGOUTCOMELIST_TITLE2.setTextFormat(TextFormat.getPlainInstance());
 		
 		LEARNINGOUTCOMELIST_ID = new VirtualTableColumn<Integer>("LEARNINGOUTCOMELIST_ID");
 		LEARNINGOUTCOMELIST_ID.setType(DataType.INTEGER);
@@ -63,14 +53,6 @@ public class LearningoutcomelistLearningoutcomelist extends VirtualTable impleme
 		LEARNINGOUTCOMELIST_TITLE.setPreferredWidth(100);
 		LEARNINGOUTCOMELIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
 		
-		LEARNINGOUTCOMELIST_TITLE2.setPersistent(false);
-		LEARNINGOUTCOMELIST_TITLE2.setTableColumnLink(new TableColumnLink(Learningoutcomelist.class
-				.getName(),Learningoutcomelist.TITLE.getName(),new EntityRelationship(
-				Learningoutcomelist.class.getName(),new String[]{Learningoutcomelist.ID.getName()},
-				Cardinality.ONE,LearningoutcomelistLearningoutcomelist.class.getName(),
-				new String[]{LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELISTPARENT_ID
-						.getName()},Cardinality.MANY)));
-		
 		LEARNINGOUTCOMELIST_TITLE.setPersistent(false);
 		LEARNINGOUTCOMELIST_TITLE.setTableColumnLink(new TableColumnLink(Learningoutcomelist.class
 				.getName(),Learningoutcomelist.TITLE.getName(),new EntityRelationship(
@@ -85,9 +67,8 @@ public class LearningoutcomelistLearningoutcomelist extends VirtualTable impleme
 	{
 		super(LearningoutcomelistLearningoutcomelist.class.getName(),"PUBLIC",
 				"LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST",LEARNINGOUTCOMELISTPARENT_ID,
-				LEARNINGOUTCOMELIST_TITLE2,LEARNINGOUTCOMELIST_ID,LEARNINGOUTCOMELIST_TITLE);
+				LEARNINGOUTCOMELIST_ID,LEARNINGOUTCOMELIST_TITLE);
 		
-		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(LEARNINGOUTCOMELISTPARENT_ID);
 		
 		addIndex(new Index("PRIMARY_KEY",IndexType.PRIMARY_KEY,"LEARNINGOUTCOMELISTPARENT_ID",
