@@ -139,6 +139,16 @@
                 {
                     "class": "xdev.ui.XdevNmListBox",
                     "properties": {
+                        "-autofillColumns": {
+                            "value": {
+                                "expression": "{$LEARNINGOUTCOMELIST_TITLE}"
+                            }
+                        },
+                        "-autofillDataColumn": {
+                            "value": {
+                                "expression": "LEARNINGOUTCOMELISTPARENT_ID"
+                            }
+                        },
                         "-autofillWithData": {
                             "value": true
                         },
@@ -160,6 +170,9 @@
                         },
                         "-fieldName": {
                             "value": "nmListBox"
+                        },
+                        "-virtualTable": {
+                            "value": "eu.open_ecvet.app.model.LearningoutcomelistLearningoutcomelist"
                         },
                         "height": {
                             "value": 141

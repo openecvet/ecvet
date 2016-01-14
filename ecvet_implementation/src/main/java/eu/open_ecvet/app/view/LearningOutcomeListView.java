@@ -237,15 +237,13 @@ public class LearningOutcomeListView extends XdevWindow // ${GENERATED-CODE-LIN
 		label7.setText("Learning Outcome");
 		label5.setText("EVALUATIONS_ID");
 		label5.setName("label5");
-		evaluationsComboBox
-				.setDataField("eu.open_ecvet.app.model.Learningoutcomelist.EVALUATIONS_ID");
+		evaluationsComboBox.setDataField("eu.open_ecvet.app.model.Learningoutcomelist.EVALUATIONS_ID");
 		evaluationsComboBox.setTabIndex(8);
 		evaluationsComboBox.setName("comboBox2");
 		evaluationsComboBox.setModel(Evaluations.VT,"TITLE","ID",true);
 		learningOutcomeNmListBox.setTabIndex(16);
 		label.setText("QUALIFICATIONFRAMEWORKLIST_ID");
-		qualificationFramworkListcomboBox
-				.setDataField("eu.open_ecvet.app.model.Learningoutcomelist.QUALIFICATIONFRAMEWORKLIST_ID");
+		qualificationFramworkListcomboBox.setDataField("eu.open_ecvet.app.model.Learningoutcomelist.QUALIFICATIONFRAMEWORKLIST_ID");
 		qualificationFramworkListcomboBox.setTabIndex(9);
 		qualificationFramworkListcomboBox.setModel(Qualificationframeworklist.VT,"TITLE","ID",true);
 		cmdNew.setTabIndex(10);
@@ -288,61 +286,38 @@ public class LearningOutcomeListView extends XdevWindow // ${GENERATED-CODE-LIN
 		container3.add(cmdSaveAndNew);
 		container3.add(cmdSearch);
 		formular.setLayout(new GridBagLayout());
-		formular.add(label2,new GBC(1,1,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(textField2,new GBC(2,1,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
-				new Insets(3,3,3,3),0,0));
+		formular.add(label2,new GBC(1,1,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(textField2,new GBC(2,1,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label6,new GBC(3,1,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(label3,new GBC(1,2,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		JScrollPane textArea_carrier = new XScrollPane(textArea,
-				XScrollPane.VERTICAL_SCROLLBAR_ALWAYS,XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-		formular.add(textArea_carrier,new GBC(2,2,1,1,1.0,1.0,GBC.BASELINE_LEADING,GBC.BOTH,
-				new Insets(3,3,3,3),0,0));
-		JScrollPane learningOutcomeListNmListBox_carrier = new XScrollPane(
-				learningOutcomeListNmListBox,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
-				XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		formular.add(learningOutcomeListNmListBox_carrier,new GBC(3,2,1,1,1.0,1.0,GBC.WEST,
-				GBC.BOTH,new Insets(3,3,3,3),0,0));
-		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,
-				new Insets(3,3,3,3),0,0));
+		formular.add(label3,new GBC(1,2,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		JScrollPane textArea_carrier = new XScrollPane(textArea,XScrollPane.VERTICAL_SCROLLBAR_ALWAYS,XScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		formular.add(textArea_carrier,new GBC(2,2,1,1,1.0,1.0,GBC.BASELINE_LEADING,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		JScrollPane learningOutcomeListNmListBox_carrier = new XScrollPane(learningOutcomeListNmListBox,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		formular.add(learningOutcomeListNmListBox_carrier,new GBC(3,2,1,1,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		formular.add(label4,new GBC(1,3,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(textField,new GBC(2,3,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		formular.add(label7,new GBC(3,3,1,1,0.0,0.0,GBC.WEST,GBC.NONE,new Insets(3,3,3,3),0,0));
-		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,
-				3),0,0));
-		formular.add(evaluationsComboBox,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,
-				GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		JScrollPane learningOutcomeNmListBox_carrier = new XScrollPane(learningOutcomeNmListBox,
-				XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		formular.add(learningOutcomeNmListBox_carrier,new GBC(3,4,1,2,1.0,1.0,GBC.WEST,GBC.BOTH,
-				new Insets(3,3,3,3),0,0));
-		formular.add(label,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,
-				new Insets(3,3,3,3),0,0));
-		formular.add(qualificationFramworkListcomboBox,new GBC(2,5,1,1,1.0,0.0,
-				GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		formular.add(container3,new GBC(1,6,3,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,
-				3),0,0));
+		formular.add(label5,new GBC(1,4,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(evaluationsComboBox,new GBC(2,4,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		JScrollPane learningOutcomeNmListBox_carrier = new XScrollPane(learningOutcomeNmListBox,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		formular.add(learningOutcomeNmListBox_carrier,new GBC(3,4,1,2,1.0,1.0,GBC.WEST,GBC.BOTH,new Insets(3,3,3,3),0,0));
+		formular.add(label,new GBC(1,5,1,1,0.0,0.0,GBC.BASELINE_LEADING,GBC.NONE,new Insets(3,3,3,3),0,0));
+		formular.add(qualificationFramworkListcomboBox,new GBC(2,5,1,1,1.0,0.0,GBC.BASELINE_LEADING,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		formular.add(container3,new GBC(1,6,3,1,1.0,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(formular,true,true);
 		container2.setLayout(new GridBagLayout());
-		container2.add(deleteButton,new GBC(1,1,1,1,0.0,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),
-				0,0));
+		container2.add(deleteButton,new GBC(1,1,1,1,0.0,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(container2,true,true);
 		this.setLayout(new GridBagLayout());
 		this.add(container,new GBC(1,1,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
-		JScrollPane table_carrier = new XScrollPane(table,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
-				XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-		this.add(table_carrier,new GBC(1,2,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),
-				0,0));
-		this.add(formular,
-				new GBC(1,3,1,1,0.1,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(0,0,0,0),0,0));
+		JScrollPane table_carrier = new XScrollPane(table,XScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,XScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		this.add(table_carrier,new GBC(1,2,1,1,0.1,0.0,GBC.WEST,GBC.HORIZONTAL,new Insets(3,3,3,3),0,0));
+		this.add(formular,new GBC(1,3,1,1,0.1,0.0,GBC.CENTER,GBC.HORIZONTAL,new Insets(0,0,0,0),0,0));
 		this.add(container2,new GBC(1,4,1,1,0.1,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(this,true,true);
 		
-		learningOutcomeListNmListBox.setModel(LearningoutcomelistLearningoutcomelist.VT,
-				"{$LEARNINGOUTCOMELIST_TITLE}","LEARNINGOUTCOMELIST_ID",true);
-		learningOutcomeNmListBox.setModel(LearningoutcomelistLearningoutcome.VT,
-				"{$LEARNINGOUTCOME_TITLE}","LEARNINGOUTCOME_ID",true);
+		learningOutcomeListNmListBox.setModel(LearningoutcomelistLearningoutcomelist.VT,"{$LEARNINGOUTCOMELIST_TITLE}","LEARNINGOUTCOMELIST_ID",true);
+		learningOutcomeNmListBox.setModel(LearningoutcomelistLearningoutcome.VT,"{$LEARNINGOUTCOME_TITLE}","LEARNINGOUTCOME_ID",true);
 		
 		this.addWindowListener(new WindowAdapter()
 		{

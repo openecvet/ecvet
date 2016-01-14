@@ -1,14 +1,12 @@
+
 package eu.open_ecvet.app.view;
 
-import xdev.db.DBException;
+
 import xdev.lang.EventHandlerDelegate;
-import xdev.lang.XDEV;
-import xdev.lang.cmd.Query;
 import xdev.ui.*;
 import xdev.ui.event.FormularAdapter;
 import xdev.ui.event.FormularEvent;
 import xdev.vt.VirtualTable.VirtualTableRow;
-import xdev.vt.VirtualTableFillMethod;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -23,7 +21,6 @@ import javax.swing.ListSelectionModel;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingConstants;
 
-import eu.open_ecvet.app.data_src.EcvetH2;
 import eu.open_ecvet.app.helper.UpdateView;
 import eu.open_ecvet.app.helper.UpdateViewHelper;
 import eu.open_ecvet.app.model.Evaluations;
@@ -32,39 +29,50 @@ import eu.open_ecvet.app.model.LearningoutcomelistLearningoutcome;
 import eu.open_ecvet.app.model.LearningoutcomelistLearningoutcomelist;
 import eu.open_ecvet.app.model.Qualificationframeworklist;
 
+
 public class CheckM2N extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPERCLASS}
 {
-	private MainWindow mainWindow;
-
-	private UpdateView updateView = new UpdateView() {
-
-		@Override
-		public String getName() {
-
-			return CheckM2N.class.getSimpleName();
-		}
-
-		public void update() {
-			table.refresh();
-			// nmListBox.setModel(LearningoutcomelistLearningoutcome.VT,"{$LEARNINGOUTCOME_TITLE}","LEARNINGOUTCOME_ID",true);
-			// comboBox.refresh();
-		}
-	};
-
-	public CheckM2N() {
-
+	private MainWindow	mainWindow;
+	
+	private UpdateView	updateView	= new UpdateView()
+									{
+										
+										@Override
+										public String getName()
+										{
+											
+											return CheckM2N.class.getSimpleName();
+										}
+										
+										
+										public void update()
+										{
+											table.refresh();
+											// nmListBox.setModel(LearningoutcomelistLearningoutcome.VT,"{$LEARNINGOUTCOME_TITLE}","LEARNINGOUTCOME_ID",true);
+											// comboBox.refresh();
+										}
+									};
+	
+	
+	public CheckM2N()
+	{
+		
 	}
-
-	public CheckM2N(MainWindow mainWindow) {
+	
+	
+	public CheckM2N(MainWindow mainWindow)
+	{
 		this.mainWindow = mainWindow;
 	}
-
+	
+	
 	@EventHandlerDelegate
 	void this_windowClosing(WindowEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		close();
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
+	
 	@EventHandlerDelegate
 	void deleteButton_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
@@ -78,162 +86,128 @@ public class CheckM2N extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPERCL
 		// // TODO Auto-generated code
 		// e.printStackTrace();
 		updateView.update();
-		this.openInDialog(new AlertWindow(), true);
+		this.openInDialog(new AlertWindow(),true);
 		// }
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
+	
 	@EventHandlerDelegate
 	void this_init() //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-
+	
 		UpdateViewHelper.instance().add(updateView);
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
+	
 	@EventHandlerDelegate
 	void button_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		try {
-			XDEV.Query(new Query() {
-				@Override
-				public void init() {
-					setDataSource(EcvetH2.DB);
-
-					from("LEARNINGOUTCOMELIST_LEARNINGOUTCOME");
-					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOME", "LEARNINGOUTCOME_ID").into(LearningoutcomelistLearningoutcome.LEARNINGOUTCOME_ID);
-					leftJoin("LEARNINGOUTCOME", "ID", "LEARNINGOUTCOMELIST_LEARNINGOUTCOME", "LEARNINGOUTCOMELIST_ID");
-					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOME", "LEARNINGOUTCOMELIST_ID").into(LearningoutcomelistLearningoutcome.LEARNINGOUTCOMELIST_ID);
-					select("LEARNINGOUTCOME", "TITLE").into(LearningoutcomelistLearningoutcome.LEARNINGOUTCOME_TITLE);
-
-					setVirtualTable(LearningoutcomelistLearningoutcome.VT);
-					setFillMethod(VirtualTableFillMethod.OVERWRITE);
-
-				}
-			});
-
-//			XDEV.Query(new Query() {
-//				@Override
-//				public void init() {
-//					setDataSource(EcvetH2.DB);
-//
-//					from("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST");
-//					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST", "LEARNINGOUTCOMELIST_ID").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_ID);
-//					leftJoin("LEARNINGOUTCOMELIST", "ID", "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST", "LEARNINGOUTCOMELISTPARENT_ID");
-//					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST", "LEARNINGOUTCOMELISTPARENT_ID").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELISTPARENT_ID);
-//					select("LEARNINGOUTCOMELIST", "TITLE").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_TITLE);
-//
-//					setVirtualTable(LearningoutcomelistLearningoutcomelist.VT);
-//					setFillMethod(VirtualTableFillMethod.OVERWRITE);
-//
-//				}
-//			});
-
-			XDEV.Query(new Query() {
-				@Override
-				public void init() {
-					setDataSource(EcvetH2.DB);
-					from("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST");
-					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST", "LEARNINGOUTCOMELISTPARENT_ID").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELISTPARENT_ID);
-					leftJoin("LEARNINGOUTCOMELIST", "ID", "LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST", "LEARNINGOUTCOMELIST_ID");
-					select("LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST", "LEARNINGOUTCOMELIST_ID").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_ID);
-					select("LEARNINGOUTCOMELIST", "TITLE").into(LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_TITLE);
-
-					setVirtualTable(LearningoutcomelistLearningoutcomelist.VT);
-					setFillMethod(VirtualTableFillMethod.OVERWRITE);
-				}
-			});
-
-		} catch (DBException e) {
-			// TODO Auto-generated code
-			e.printStackTrace();
-		}
-
 	
-
-		nmListBox.setModel(LearningoutcomelistLearningoutcomelist.VT, "{$LEARNINGOUTCOMELIST_TITLE}", "LEARNINGOUTCOMELIST_ID", false);
-
-//		nmListBox.refresh(formular.getVirtualTable().createRow());
+		//		nmListBox.setModel(Test.VT, "{$LEARNINGOUTCOMELIST_TITLE}", "LEARNINGOUTCOMELIST_ID", true);
 		
-		System.out.println(LearningoutcomelistLearningoutcome.VT);
+		nmListBox.refresh(formular.getVirtualTable().createRow());
+		
+		// System.out.println(LearningoutcomelistLearningoutcome.VT);
 		VirtualTableRow[] virtualTableRows = LearningoutcomelistLearningoutcome.VT.getRows();
-
-		System.out.println(virtualTableRows.length);
-		for (VirtualTableRow virtualTableRow : virtualTableRows) {
-			System.out.println(virtualTableRow);
+		
+		// System.out.println(virtualTableRows.length);
+		for(VirtualTableRow virtualTableRow : virtualTableRows)
+		{
+			// System.out.println(virtualTableRow);
 		}
-
+		
 		// System.out.println((LearningoutcomelistLearningoutcome.VT.getRowCount()));
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
+	
 	@EventHandlerDelegate
 	void cmdNew_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.reset(eu.open_ecvet.app.model.Learningoutcomelist.VT);
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
+	
 	@EventHandlerDelegate
 	void cmdReset_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		formular.reset();
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
+	
 	@EventHandlerDelegate
 	void cmdSave_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		if (formular.verifyFormularComponents()) {
-			try {
+		if(formular.verifyFormularComponents())
+		{
+			try
+			{
 				formular.save();
-			} catch (Exception e) {
+			}
+			catch(Exception e)
+			{
 				e.printStackTrace();
 			}
 		}
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
+	
 	@EventHandlerDelegate
 	void cmdSaveAndNew_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		if (formular.verifyFormularComponents()) {
-			try {
+		if(formular.verifyFormularComponents())
+		{
+			try
+			{
 				formular.save();
 				formular.reset(eu.open_ecvet.app.model.Learningoutcomelist.VT);
-			} catch (Exception e) {
+			}
+			catch(Exception e)
+			{
 				e.printStackTrace();
 			}
 		}
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
+	
 	@EventHandlerDelegate
 	void cmdSearch_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		formular.search("AND", table);
+		formular.search("AND",table);
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
+	
 	@EventHandlerDelegate
 	void formular_formularModelChanged(FormularEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-
+	
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
+	
 	@EventHandlerDelegate
 	void button2_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		VirtualTableRow formularVirtualTableRow = formular.getVirtualTableRow();
-		System.out.println("formularVirtualTableRow: " + formularVirtualTableRow);
-
-//		VirtualTableRow[] virtualTableRows = nmListBox.getVirtualTable().getRows();
-//		System.out.println(nmListBox.getVirtualTable());
-//		System.out.println("virtualTableRows");
-//		for (VirtualTableRow virtualTableRow : virtualTableRows) {
-//			System.out.println(virtualTableRow);
-//		}
-//
-//		System.out.println("selectedVirtualTableRows");
-//		VirtualTableRow[] selectedVirtualTableRows = nmListBox.getSelectedVirtualTableRows();
-//		for (VirtualTableRow selectedVirtualTableRow : selectedVirtualTableRows) {
-//			System.out.println(selectedVirtualTableRow);
-//		}
-
+		// System.out.println("formularVirtualTableRow: " +
+		// formularVirtualTableRow);
+		
+		// VirtualTableRow[] virtualTableRows =
+		// nmListBox.getVirtualTable().getRows();
+		// System.out.println(nmListBox.getVirtualTable());
+		// System.out.println("virtualTableRows");
+		// for (VirtualTableRow virtualTableRow : virtualTableRows) {
+		// System.out.println(virtualTableRow);
+		// }
+		//
+		// System.out.println("selectedVirtualTableRows");
+		// VirtualTableRow[] selectedVirtualTableRows =
+		// nmListBox.getSelectedVirtualTableRows();
+		// for (VirtualTableRow selectedVirtualTableRow :
+		// selectedVirtualTableRows) {
+		// System.out.println(selectedVirtualTableRow);
+		// }
+		
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
 	// Generated definitions, do not
 	// edit! ${GENERATED-CODE-BLOCK-START:DEFINITIONS}
 	XdevContainer	container, container3, container2;
@@ -247,7 +221,7 @@ public class CheckM2N extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPERCL
 	XdevLabel		label2, label6, label3, label4, label5, label;
 	XdevNmListBox	nmListBox;
 	// End generated definitions ${GENERATED-CODE-BLOCK-END:DEFINITIONS}
-
+	
 	{// Generated initializers, do not
 		// edit! ${GENERATED-CODE-BLOCK-START:INITIALIZERS}
 		container = new XdevContainer();
@@ -386,6 +360,8 @@ public class CheckM2N extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPERCL
 		this.add(container2,new GBC(1,4,1,1,0.1,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(this,true,true);
 		
+		nmListBox.setModel(LearningoutcomelistLearningoutcomelist.VT,"{$LEARNINGOUTCOMELIST_TITLE}","LEARNINGOUTCOMELISTPARENT_ID",true);
+		
 		this.addWindowListener(new WindowAdapter()
 		{
 			@Override
@@ -412,5 +388,5 @@ public class CheckM2N extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPERCL
 		deleteButton.addActionListener(e -> deleteButton_actionPerformed(e));
 		this_init();
 	}//  ${GENERATED-CODE-BLOCK-END:INITIALIZERS}
-
+	
 }

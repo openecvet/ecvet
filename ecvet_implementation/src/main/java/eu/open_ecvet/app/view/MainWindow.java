@@ -93,11 +93,9 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 	void tabbedPane_stateChanged(ChangeEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		String tabName = tabbedPane.getSelectedComponent().getName();
-		System.out.println(tabName);
 		UpdateView updateView = UpdateViewHelper.instance().get(tabName);
 		
-		if(updateView != null)
-		{
+		if(updateView != null){
 			updateView.update();
 		}
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}

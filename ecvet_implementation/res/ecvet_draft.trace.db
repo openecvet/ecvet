@@ -49985,3 +49985,2965 @@ The object is already closed [90007-170]
 	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
 	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
 	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2016-01-14 13:46:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:46:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:46:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:46:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:46:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:47:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:47:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:47:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:47:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:47:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:47:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:47:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:47:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:48:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:48:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:48:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:48:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:48:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:48:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:52:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:52:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:52:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:52:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:54:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:54:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:54:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:54:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:54:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:54:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:54:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:55:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:56:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:56:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:56:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:56:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:56:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:56:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:56:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:56:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 13:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:01:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:01:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:01:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:01:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:01:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:01:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:01:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:01:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:01:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:01:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:02:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:02:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:02:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:02:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:02:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:02:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:02:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:03:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:03:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:03:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:03:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:03:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:04:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:04:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:04:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:04:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:04:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:04:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:04:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:04:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:04:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:04:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:08:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:08:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:08:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:08:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:08:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:09:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:09:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:09:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:10:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:10:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:10:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:10:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:10:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:10:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:10:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:16:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:16:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:16:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:16:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:16:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:16:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:16:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:16:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:16:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:16:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:16:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:18:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:18:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:23:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:23:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:23:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:23:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:23:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:26:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:26:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:26:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:26:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:26:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:26:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:26:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:26:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:26:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:27:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:27:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:27:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:27:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:27:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:28:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:28:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:28:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:28:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:28:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:28:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:28:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:28:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:28:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:28:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:29:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:29:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:29:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:29:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:29:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:35:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:35:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:35:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:35:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:35:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:35:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:35:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:35:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:35:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:36:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:36:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:36:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:36:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:36:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:37:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:37:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:37:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:37:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:37:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:37:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:37:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:37:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:37:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:38:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:38:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:38:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:38:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:38:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:38:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:38:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:39:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:39:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:39:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:39:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:39:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:39:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:39:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:39:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:39:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:39:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:39:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:39:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:39:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:39:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:40:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:40:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:40:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:40:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:40:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:40:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:40:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:40:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:40:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:45:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:45:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:45:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:45:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:45:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:46:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:46:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:46:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:46:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:47:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:47:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:47:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:47:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:47:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:47:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:47:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:47:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:47:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:56:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:56:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:56:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:56:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:56:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:56:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:56:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:56:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:56:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:57:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:57:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:57:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:57:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:57:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:57:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:57:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:57:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:57:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:58:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:58:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:58:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:58:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:58:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:59:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:59:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:59:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:59:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:59:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:59:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:59:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:59:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 14:59:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:01:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:01:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:01:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:01:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:01:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:02:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:02:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:02:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:02:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:02:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:02:46 database: close
+org.h2.message.DbException: Eingabe/Ausgabe: "java.io.EOFException"; "/home/tgrabietz/src/java/ecvet/ecvet_implementation/res/ecvet_draft.h2.db"
+IO Exception: "java.io.EOFException"; "/home/tgrabietz/src/java/ecvet/ecvet_implementation/res/ecvet_draft.h2.db" [90031-190]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convertIOException(DbException.java:330)
+	at org.h2.store.FileStore.readFully(FileStore.java:275)
+	at org.h2.store.PageStore.readPage(PageStore.java:1325)
+	at org.h2.store.PageStore.getPage(PageStore.java:749)
+	at org.h2.store.PageStreamTrunk$Iterator.next(PageStreamTrunk.java:251)
+	at org.h2.store.PageLog.free(PageLog.java:213)
+	at org.h2.store.PageStore.compact(PageStore.java:498)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1346)
+	at org.h2.engine.Database.close(Database.java:1276)
+	at org.h2.engine.Database.removeSession(Database.java:1160)
+	at org.h2.engine.Session.close(Session.java:710)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:383)
+Caused by: org.h2.jdbc.JdbcSQLException: Eingabe/Ausgabe: "java.io.EOFException"; "/home/tgrabietz/src/java/ecvet/ecvet_implementation/res/ecvet_draft.h2.db"
+IO Exception: "java.io.EOFException"; "/home/tgrabietz/src/java/ecvet/ecvet_implementation/res/ecvet_draft.h2.db" [90031-190]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 13 more
+Caused by: java.io.EOFException
+	at org.h2.store.fs.FileUtils.readFully(FileUtils.java:358)
+	at org.h2.store.FileStore.readFully(FileStore.java:273)
+	... 10 more
+2016-01-14 15:20:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:20:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:20:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:20:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:20:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:20:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:20:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:20:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:20:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:27:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:27:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:27:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:27:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:27:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:27:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:27:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:27:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:27:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:27:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:28:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:29:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:29:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:29:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:29:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:29:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:29:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:29:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:29:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:29:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:29:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:29:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:30:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:30:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:30:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:30:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:30:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:30:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:30:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:30:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:32:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:33:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:33:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:33:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:33:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:33:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:33:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:35:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:35:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:35:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:35:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:35:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:35:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:35:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:35:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:35:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:35:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:36:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:36:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:36:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:36:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:36:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:36:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:36:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:36:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:38:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:38:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:38:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:38:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:38:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:38:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:38:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:38:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:38:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:38:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:39:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:39:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:39:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:40:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:40:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:40:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:40:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:40:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:40:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:44:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:44:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:44:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:44:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:44:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:44:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:45:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:45:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:45:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:45:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:45:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:45:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:45:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:45:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:45:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:45:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:46:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:46:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:46:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:46:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:46:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:46:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:46:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:46:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:46:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:46:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:47:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:47:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:51:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:51:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:51:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:51:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:51:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:51:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:54:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:54:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 15:54:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+01-14 16:00:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.TableSupport.setModel(TableSupport.java:360)
+	at xdev.ui.TableSupport.setModel(TableSupport.java:277)
+	at xdev.ui.XdevTable.setModel(XdevTable.java:276)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:261)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 16:00:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.setModel(ItemList.java:880)
+	at xdev.ui.XdevComboBox.setModel(XdevComboBox.java:242)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:287)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 16:00:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.setModel(ItemList.java:880)
+	at xdev.ui.XdevComboBox.setModel(XdevComboBox.java:242)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:291)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+2016-01-14 16:00:16 database: close
+org.h2.message.DbException: Eingabe/Ausgabe: "java.io.EOFException"; "/home/tgrabietz/src/java/ecvet/ecvet_implementation/res/ecvet_draft.h2.db"
+IO Exception: "java.io.EOFException"; "/home/tgrabietz/src/java/ecvet/ecvet_implementation/res/ecvet_draft.h2.db" [90031-190]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convertIOException(DbException.java:330)
+	at org.h2.store.FileStore.readFully(FileStore.java:275)
+	at org.h2.store.PageStore.readPage(PageStore.java:1325)
+	at org.h2.store.PageStore.getPage(PageStore.java:749)
+	at org.h2.store.PageStreamTrunk$Iterator.next(PageStreamTrunk.java:251)
+	at org.h2.store.PageLog.free(PageLog.java:213)
+	at org.h2.store.PageStore.compact(PageStore.java:498)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1346)
+	at org.h2.engine.Database.close(Database.java:1276)
+	at org.h2.engine.DatabaseCloser.run(DatabaseCloser.java:63)
+Caused by: org.h2.jdbc.JdbcSQLException: Eingabe/Ausgabe: "java.io.EOFException"; "/home/tgrabietz/src/java/ecvet/ecvet_implementation/res/ecvet_draft.h2.db"
+IO Exception: "java.io.EOFException"; "/home/tgrabietz/src/java/ecvet/ecvet_implementation/res/ecvet_draft.h2.db" [90031-190]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 11 more
+Caused by: java.io.EOFException
+	at org.h2.store.fs.FileUtils.readFully(FileUtils.java:358)
+	at org.h2.store.FileStore.readFully(FileStore.java:273)
+	... 8 more
+2016-01-14 16:00:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:00:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:00:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:00:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:01:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:01:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:01:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:01:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:03:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:03:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:03:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:03:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:06:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:06:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:06:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:06:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:06:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:06:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:06:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:06:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:07:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:07:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:07:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:07:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:07:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:07:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:07:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:07:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:07:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:07:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:07:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:07:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:14:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:14:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:14:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:14:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:14:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:14:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:14:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:14:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:14:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:14:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:14:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:14:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:19:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:19:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:19:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:19:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:19:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:19:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:19:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:19:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:19:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:19:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:19:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:19:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:23:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:23:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:23:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:23:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Mehrdeutiger Feldname "LEARNINGOUTCOMELIST_ID"
+Ambiguous column name "LEARNINGOUTCOMELIST_ID"; SQL statement:
+SELECT
+  LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST.LEARNINGOUTCOMELISTPARENT_ID,
+  LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST.LEARNINGOUTCOMELIST_ID,
+  LEARNINGOUTCOMELIST.TITLE AS LEARNINGOUTCOMELIST_TITLE
+
+FROM LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST
+
+LEFT JOIN LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST ON LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST.LEARNINGOUTCOMELIST_ID = LEARNINGOUTCOMELIST.ID [90059-190]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.mapColumn(ExpressionColumn.java:124)
+	at org.h2.expression.ExpressionColumn.mapColumns(ExpressionColumn.java:94)
+	at org.h2.expression.Comparison.mapColumns(Comparison.java:483)
+	at org.h2.table.TableFilter$3.accept(TableFilter.java:535)
+	at org.h2.table.TableFilter.visit(TableFilter.java:1004)
+	at org.h2.table.TableFilter.addJoin(TableFilter.java:532)
+	at org.h2.command.Parser.readJoin(Parser.java:1519)
+	at org.h2.command.Parser.parseJoinTableFilter(Parser.java:1879)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1874)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1982)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1867)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1688)
+	at org.h2.command.Parser.parseSelect(Parser.java:1676)
+	at org.h2.command.Parser.parsePrepared(Parser.java:432)
+	at org.h2.command.Parser.parse(Parser.java:304)
+	at org.h2.command.Parser.parse(Parser.java:276)
+	at org.h2.command.Parser.prepareCommand(Parser.java:241)
+	at org.h2.engine.Session.prepareLocal(Session.java:460)
+	at org.h2.engine.Session.prepareCommand(Session.java:402)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:73)
+	at xdev.db.jdbc.JDBCConnection.queryJDBCImpl(JDBCConnection.java:268)
+	at xdev.db.jdbc.JDBCConnection.queryJDBC(JDBCConnection.java:232)
+	at xdev.db.jdbc.JDBCConnection.queryJDBC(JDBCConnection.java:221)
+	at xdev.db.jdbc.JDBCConnection.query(JDBCConnection.java:160)
+	at xdev.db.jdbc.JDBCConnection.query(JDBCConnection.java:142)
+	at xdev.db.jdbc.JDBCConnection.query(JDBCConnection.java:1)
+	at xdev.lang.cmd.Query.execute(Query.java:649)
+	at xdev.lang.XDEV.Query(XDEV.java:62)
+	at eu.open_ecvet.app.view.CheckM2N.button_actionPerformed(CheckM2N.java:98)
+	at eu.open_ecvet.app.view.CheckM2N.lambda$6(CheckM2N.java:391)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6535)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6300)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4891)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2750)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2016-01-14 16:23:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:23:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:23:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:23:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:23:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:23:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:23:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:23:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:27:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:27:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:27:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+2016-01-14 16:27:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-190]
+01-14 16:39:13 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.TableSupport.setModel(TableSupport.java:360)
+	at xdev.ui.TableSupport.setModel(TableSupport.java:277)
+	at xdev.ui.XdevTable.setModel(XdevTable.java:276)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:261)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 16:39:13 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.setModel(ItemList.java:880)
+	at xdev.ui.XdevComboBox.setModel(XdevComboBox.java:242)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:287)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 16:39:13 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.setModel(ItemList.java:880)
+	at xdev.ui.XdevComboBox.setModel(XdevComboBox.java:242)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:291)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 17:57:14 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.TableSupport.setModel(TableSupport.java:360)
+	at xdev.ui.TableSupport.setModel(TableSupport.java:277)
+	at xdev.ui.XdevTable.setModel(XdevTable.java:276)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:260)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 17:57:14 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.setModel(ItemList.java:880)
+	at xdev.ui.XdevComboBox.setModel(XdevComboBox.java:242)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:286)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 17:57:14 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.setModel(ItemList.java:880)
+	at xdev.ui.XdevComboBox.setModel(XdevComboBox.java:242)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:290)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 17:59:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.TableSupport.setModel(TableSupport.java:360)
+	at xdev.ui.TableSupport.setModel(TableSupport.java:277)
+	at xdev.ui.XdevTable.setModel(XdevTable.java:276)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:261)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 17:59:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.setModel(ItemList.java:880)
+	at xdev.ui.XdevComboBox.setModel(XdevComboBox.java:242)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:287)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 17:59:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.setModel(ItemList.java:880)
+	at xdev.ui.XdevComboBox.setModel(XdevComboBox.java:242)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:291)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 17:59:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.updateModel(ItemList.java:1074)
+	at xdev.ui.listbox.ListBoxSupport.updateModel(ListBoxSupport.java:431)
+	at xdev.ui.XdevListBox.updateModel(XdevListBox.java:434)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:95)
+	at xdev.ui.XdevNmListBox.setModel(XdevNmListBox.java:79)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:363)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 17:59:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ManyToMany$State.fillUpNMTable(ManyToMany.java:182)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:98)
+	at xdev.ui.XdevNmListBox.setModel(XdevNmListBox.java:79)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:363)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 17:59:09 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.updateModel(ItemList.java:1074)
+	at xdev.ui.listbox.ListBoxSupport.updateModel(ListBoxSupport.java:431)
+	at xdev.ui.XdevListBox.updateModel(XdevListBox.java:434)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:95)
+	at xdev.ui.FormularSupport.setModel(FormularSupport.java:276)
+	at xdev.ui.XdevFormular.setModel(XdevFormular.java:726)
+	at xdev.ui.DefaultMasterDetailHandler$1.valueChanged(DefaultMasterDetailHandler.java:138)
+	at xdev.ui.TableSupport$1.valueChanged(TableSupport.java:1103)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:184)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:154)
+	at javax.swing.DefaultListSelectionModel.setValueIsAdjusting(DefaultListSelectionModel.java:685)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.setValueIsAdjusting(BasicTableUI.java:953)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.mouseReleased(BasicTableUI.java:1166)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:290)
+	at java.awt.Component.processMouseEvent(Component.java:6535)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6300)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4891)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2750)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+01-14 17:59:09 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ManyToMany$State.fillUpNMTable(ManyToMany.java:182)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:98)
+	at xdev.ui.FormularSupport.setModel(FormularSupport.java:276)
+	at xdev.ui.XdevFormular.setModel(XdevFormular.java:726)
+	at xdev.ui.DefaultMasterDetailHandler$1.valueChanged(DefaultMasterDetailHandler.java:138)
+	at xdev.ui.TableSupport$1.valueChanged(TableSupport.java:1103)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:184)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:154)
+	at javax.swing.DefaultListSelectionModel.setValueIsAdjusting(DefaultListSelectionModel.java:685)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.setValueIsAdjusting(BasicTableUI.java:953)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.mouseReleased(BasicTableUI.java:1166)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:290)
+	at java.awt.Component.processMouseEvent(Component.java:6535)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6300)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4891)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2750)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+01-14 17:59:10 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.updateModel(ItemList.java:1074)
+	at xdev.ui.listbox.ListBoxSupport.updateModel(ListBoxSupport.java:431)
+	at xdev.ui.XdevListBox.updateModel(XdevListBox.java:434)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:95)
+	at xdev.ui.FormularSupport.setModel(FormularSupport.java:276)
+	at xdev.ui.XdevFormular.setModel(XdevFormular.java:726)
+	at xdev.ui.DefaultMasterDetailHandler$1.valueChanged(DefaultMasterDetailHandler.java:138)
+	at xdev.ui.TableSupport$1.valueChanged(TableSupport.java:1103)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:184)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:154)
+	at javax.swing.DefaultListSelectionModel.setValueIsAdjusting(DefaultListSelectionModel.java:685)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.setValueIsAdjusting(BasicTableUI.java:953)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.mouseReleased(BasicTableUI.java:1166)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:290)
+	at java.awt.Component.processMouseEvent(Component.java:6535)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6300)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4891)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2750)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+01-14 17:59:10 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ManyToMany$State.fillUpNMTable(ManyToMany.java:182)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:98)
+	at xdev.ui.FormularSupport.setModel(FormularSupport.java:276)
+	at xdev.ui.XdevFormular.setModel(XdevFormular.java:726)
+	at xdev.ui.DefaultMasterDetailHandler$1.valueChanged(DefaultMasterDetailHandler.java:138)
+	at xdev.ui.TableSupport$1.valueChanged(TableSupport.java:1103)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:184)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:154)
+	at javax.swing.DefaultListSelectionModel.setValueIsAdjusting(DefaultListSelectionModel.java:685)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.setValueIsAdjusting(BasicTableUI.java:953)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.mouseReleased(BasicTableUI.java:1166)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:290)
+	at java.awt.Component.processMouseEvent(Component.java:6535)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6300)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4891)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2750)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+01-14 18:00:40 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.TableSupport.setModel(TableSupport.java:360)
+	at xdev.ui.TableSupport.setModel(TableSupport.java:277)
+	at xdev.ui.XdevTable.setModel(XdevTable.java:276)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:261)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 18:00:40 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.setModel(ItemList.java:880)
+	at xdev.ui.XdevComboBox.setModel(XdevComboBox.java:242)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:287)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 18:00:40 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.setModel(ItemList.java:880)
+	at xdev.ui.XdevComboBox.setModel(XdevComboBox.java:242)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:291)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 18:00:40 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.updateModel(ItemList.java:1074)
+	at xdev.ui.listbox.ListBoxSupport.updateModel(ListBoxSupport.java:431)
+	at xdev.ui.XdevListBox.updateModel(XdevListBox.java:434)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:95)
+	at xdev.ui.XdevNmListBox.setModel(XdevNmListBox.java:79)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:363)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 18:00:40 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ManyToMany$State.fillUpNMTable(ManyToMany.java:182)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:98)
+	at xdev.ui.XdevNmListBox.setModel(XdevNmListBox.java:79)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:363)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 18:00:46 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.updateModel(ItemList.java:1074)
+	at xdev.ui.listbox.ListBoxSupport.updateModel(ListBoxSupport.java:431)
+	at xdev.ui.XdevListBox.updateModel(XdevListBox.java:434)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:95)
+	at eu.open_ecvet.app.view.CheckM2N.button_actionPerformed(CheckM2N.java:108)
+	at eu.open_ecvet.app.view.CheckM2N.lambda$6(CheckM2N.java:387)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6535)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6300)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4891)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2750)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+01-14 18:00:46 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ManyToMany$State.fillUpNMTable(ManyToMany.java:182)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:98)
+	at eu.open_ecvet.app.view.CheckM2N.button_actionPerformed(CheckM2N.java:108)
+	at eu.open_ecvet.app.view.CheckM2N.lambda$6(CheckM2N.java:387)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6535)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6300)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4891)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2750)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+01-14 18:00:47 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.updateModel(ItemList.java:1074)
+	at xdev.ui.listbox.ListBoxSupport.updateModel(ListBoxSupport.java:431)
+	at xdev.ui.XdevListBox.updateModel(XdevListBox.java:434)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:95)
+	at eu.open_ecvet.app.view.CheckM2N.button_actionPerformed(CheckM2N.java:108)
+	at eu.open_ecvet.app.view.CheckM2N.lambda$6(CheckM2N.java:387)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6535)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6300)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4891)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2750)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+01-14 18:00:47 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ManyToMany$State.fillUpNMTable(ManyToMany.java:182)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:98)
+	at eu.open_ecvet.app.view.CheckM2N.button_actionPerformed(CheckM2N.java:108)
+	at eu.open_ecvet.app.view.CheckM2N.lambda$6(CheckM2N.java:387)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6535)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6300)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4891)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2750)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+01-14 18:01:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.TableSupport.setModel(TableSupport.java:360)
+	at xdev.ui.TableSupport.setModel(TableSupport.java:277)
+	at xdev.ui.XdevTable.setModel(XdevTable.java:276)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:261)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 18:01:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.setModel(ItemList.java:880)
+	at xdev.ui.XdevComboBox.setModel(XdevComboBox.java:242)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:287)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 18:01:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.setModel(ItemList.java:880)
+	at xdev.ui.XdevComboBox.setModel(XdevComboBox.java:242)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:291)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 18:01:39 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.updateModel(ItemList.java:1074)
+	at xdev.ui.listbox.ListBoxSupport.updateModel(ListBoxSupport.java:431)
+	at xdev.ui.XdevListBox.updateModel(XdevListBox.java:434)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:95)
+	at xdev.ui.XdevNmListBox.setModel(XdevNmListBox.java:79)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:363)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 18:01:39 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ManyToMany$State.fillUpNMTable(ManyToMany.java:182)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:98)
+	at xdev.ui.XdevNmListBox.setModel(XdevNmListBox.java:79)
+	at eu.open_ecvet.app.view.CheckM2N.<init>(CheckM2N.java:363)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at java.lang.Class.newInstance(Class.java:442)
+	at xdev.Application.startApplicationImpl(Application.java:584)
+	at xdev.Application.startApplication(Application.java:546)
+	at xdev.Application.main(Application.java:295)
+01-14 18:01:42 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.updateModel(ItemList.java:1074)
+	at xdev.ui.listbox.ListBoxSupport.updateModel(ListBoxSupport.java:431)
+	at xdev.ui.XdevListBox.updateModel(XdevListBox.java:434)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:95)
+	at xdev.ui.FormularSupport.setModel(FormularSupport.java:276)
+	at xdev.ui.XdevFormular.setModel(XdevFormular.java:726)
+	at xdev.ui.DefaultMasterDetailHandler$1.valueChanged(DefaultMasterDetailHandler.java:138)
+	at xdev.ui.TableSupport$1.valueChanged(TableSupport.java:1103)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:184)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:154)
+	at javax.swing.DefaultListSelectionModel.setValueIsAdjusting(DefaultListSelectionModel.java:685)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.setValueIsAdjusting(BasicTableUI.java:953)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.mouseReleased(BasicTableUI.java:1166)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:290)
+	at java.awt.Component.processMouseEvent(Component.java:6535)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6300)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4891)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2750)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+01-14 18:01:42 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ManyToMany$State.fillUpNMTable(ManyToMany.java:182)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:98)
+	at xdev.ui.FormularSupport.setModel(FormularSupport.java:276)
+	at xdev.ui.XdevFormular.setModel(XdevFormular.java:726)
+	at xdev.ui.DefaultMasterDetailHandler$1.valueChanged(DefaultMasterDetailHandler.java:138)
+	at xdev.ui.TableSupport$1.valueChanged(TableSupport.java:1103)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:184)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:154)
+	at javax.swing.DefaultListSelectionModel.setValueIsAdjusting(DefaultListSelectionModel.java:685)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.setValueIsAdjusting(BasicTableUI.java:953)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.mouseReleased(BasicTableUI.java:1166)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:290)
+	at java.awt.Component.processMouseEvent(Component.java:6535)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6300)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4891)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2750)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+01-14 18:01:43 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ItemList.setModelImpl(ItemList.java:927)
+	at xdev.ui.ItemList.setModel(ItemList.java:906)
+	at xdev.ui.ItemList.updateModel(ItemList.java:1074)
+	at xdev.ui.listbox.ListBoxSupport.updateModel(ListBoxSupport.java:431)
+	at xdev.ui.XdevListBox.updateModel(XdevListBox.java:434)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:95)
+	at xdev.ui.FormularSupport.setModel(FormularSupport.java:276)
+	at xdev.ui.XdevFormular.setModel(XdevFormular.java:726)
+	at xdev.ui.DefaultMasterDetailHandler$1.valueChanged(DefaultMasterDetailHandler.java:138)
+	at xdev.ui.TableSupport$1.valueChanged(TableSupport.java:1103)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:184)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:154)
+	at javax.swing.DefaultListSelectionModel.setValueIsAdjusting(DefaultListSelectionModel.java:685)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.setValueIsAdjusting(BasicTableUI.java:953)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.mouseReleased(BasicTableUI.java:1166)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:290)
+	at java.awt.Component.processMouseEvent(Component.java:6535)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6300)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4891)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2750)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+01-14 18:01:43 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Das Objekt wurde bereits geschlossen
+The object is already closed [90007-170]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:2945)
+	at org.h2.jdbc.JdbcResultSet.getStatement(JdbcResultSet.java:225)
+	at xdev.db.jdbc.JDBCUtils.closeSilent(JDBCUtils.java:93)
+	at xdev.db.jdbc.JDBCResult.close(JDBCResult.java:355)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8154)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8137)
+	at xdev.vt.VirtualTable.queryAndFill(VirtualTable.java:8117)
+	at xdev.ui.ManyToMany$State.fillUpNMTable(ManyToMany.java:182)
+	at xdev.ui.XdevNmListBox.refresh(XdevNmListBox.java:98)
+	at xdev.ui.FormularSupport.setModel(FormularSupport.java:276)
+	at xdev.ui.XdevFormular.setModel(XdevFormular.java:726)
+	at xdev.ui.DefaultMasterDetailHandler$1.valueChanged(DefaultMasterDetailHandler.java:138)
+	at xdev.ui.TableSupport$1.valueChanged(TableSupport.java:1103)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:184)
+	at javax.swing.DefaultListSelectionModel.fireValueChanged(DefaultListSelectionModel.java:154)
+	at javax.swing.DefaultListSelectionModel.setValueIsAdjusting(DefaultListSelectionModel.java:685)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.setValueIsAdjusting(BasicTableUI.java:953)
+	at javax.swing.plaf.basic.BasicTableUI$Handler.mouseReleased(BasicTableUI.java:1166)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:290)
+	at java.awt.Component.processMouseEvent(Component.java:6535)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6300)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4891)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2750)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)

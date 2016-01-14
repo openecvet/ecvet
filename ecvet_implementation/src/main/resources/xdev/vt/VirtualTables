@@ -69,5 +69,6 @@
     <vt class="eu.open_ecvet.app.model.Validation" />
     <vt class="eu.open_ecvet.app.model.Validationlist" />
     <vt class="eu.open_ecvet.app.model.ValidationlistValidation" />
+    <vt class="eu.open_ecvet.app.view.Test" />
 </vts>
 
