@@ -360,7 +360,7 @@ public class CheckM2N extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPERCL
 		this.add(container2,new GBC(1,4,1,1,0.1,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(this,true,true);
 		
-		nmListBox.setModel(LearningoutcomelistLearningoutcomelist.VT,"{$LEARNINGOUTCOMELIST_TITLE}","LEARNINGOUTCOMELISTPARENT_ID",true);
+		nmListBox.setModel(LearningoutcomelistLearningoutcomelist.VT,"{$LEARNINGOUTCOMELISTCHILD_TITLE}","LEARNINGOUTCOMELIST_ID",true);
 		
 		this.addWindowListener(new WindowAdapter()
 		{

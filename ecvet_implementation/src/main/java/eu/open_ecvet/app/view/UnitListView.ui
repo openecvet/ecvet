@@ -188,7 +188,7 @@
                         "gridHeight": 1,
                         "gridWidth": 1,
                         "gridx": 1,
-                        "gridy": 3,
+                        "gridy": 4,
                         "insets": "3,3,3,3",
                         "ipadx": 0,
                         "ipady": 0,
@@ -216,12 +216,67 @@
                     "value": 726
                 },
                 "y": {
-                    "value": 315
+                    "value": 560
                 }
             }
         },
         {
             "children": [
+                {
+                    "class": "xdev.ui.XdevNmListBox",
+                    "properties": {
+                        "-autofillColumns": {
+                            "value": {
+                                "expression": "{$UNIT_TITLE}"
+                            }
+                        },
+                        "-autofillDataColumn": {
+                            "value": {
+                                "expression": "UNIT_ID"
+                            }
+                        },
+                        "-autofillWithData": {
+                            "value": true
+                        },
+                        "-constraints": {
+                            "value": {
+                                "anchor": "WEST",
+                                "fill": "BOTH",
+                                "gridHeight": 2,
+                                "gridWidth": 1,
+                                "gridx": 3,
+                                "gridy": 4,
+                                "insets": "3,3,3,3",
+                                "ipadx": 0,
+                                "ipady": 0,
+                                "type": "XDEV_TABLELAYOUT",
+                                "weightx": 1,
+                                "weighty": 1
+                            }
+                        },
+                        "-fieldName": {
+                            "value": "unitNmListBox"
+                        },
+                        "-virtualTable": {
+                            "value": "eu.open_ecvet.app.model.UnitlistUnit"
+                        },
+                        "height": {
+                            "value": 134
+                        },
+                        "tabIndex": {
+                            "value": 16
+                        },
+                        "width": {
+                            "value": 250
+                        },
+                        "x": {
+                            "value": 547
+                        },
+                        "y": {
+                            "value": 195
+                        }
+                    }
+                },
                 {
                     "class": "xdev.ui.XdevLabel",
                     "properties": {
@@ -248,10 +303,10 @@
                             "value": 16
                         },
                         "text": {
-                            "value": "Unit"
+                            "value": "Label"
                         },
                         "width": {
-                            "value": 24
+                            "value": 32
                         },
                         "x": {
                             "value": 547
@@ -266,7 +321,7 @@
                     "properties": {
                         "-autofillColumns": {
                             "value": {
-                                "expression": "{$UNITLIST_TITLE2}"
+                                "expression": "{$UNITLISTCHILD_TITLE}"
                             }
                         },
                         "-autofillDataColumn": {
@@ -294,7 +349,7 @@
                             }
                         },
                         "-fieldName": {
-                            "value": "unitListNmListBox"
+                            "value": "unitListMnListBox"
                         },
                         "-virtualTable": {
                             "value": "eu.open_ecvet.app.model.UnitlistUnitlist"
@@ -342,10 +397,10 @@
                             "value": 16
                         },
                         "text": {
-                            "value": "Units"
+                            "value": "Label"
                         },
                         "width": {
-                            "value": 31
+                            "value": 32
                         },
                         "x": {
                             "value": 547
@@ -847,13 +902,13 @@
                                     "value": 10
                                 },
                                 "text": {
-                                    "value": "Neu"
+                                    "value": "New"
                                 },
                                 "width": {
-                                    "value": 50
+                                    "value": 52
                                 },
                                 "x": {
-                                    "value": 352
+                                    "value": 438
                                 },
                                 "y": {
                                     "value": 3
@@ -867,7 +922,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 1
+                                        "zpos": 0
                                     }
                                 },
                                 "-fieldName": {
@@ -880,13 +935,13 @@
                                     "value": 11
                                 },
                                 "text": {
-                                    "value": "Zurücksetzen"
+                                    "value": "Search"
                                 },
                                 "width": {
-                                    "value": 105
+                                    "value": 68
                                 },
                                 "x": {
-                                    "value": 405
+                                    "value": 493
                                 },
                                 "y": {
                                     "value": 3
@@ -900,7 +955,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 2
+                                        "zpos": 0
                                     }
                                 },
                                 "-fieldName": {
@@ -913,13 +968,13 @@
                                     "value": 12
                                 },
                                 "text": {
-                                    "value": "Speichern"
+                                    "value": "Save"
                                 },
                                 "width": {
-                                    "value": 85
+                                    "value": 56
                                 },
                                 "x": {
-                                    "value": 513
+                                    "value": 564
                                 },
                                 "y": {
                                     "value": 3
@@ -933,7 +988,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 3
+                                        "zpos": 0
                                     }
                                 },
                                 "-fieldName": {
@@ -946,13 +1001,13 @@
                                     "value": 13
                                 },
                                 "text": {
-                                    "value": "Speichern + Neu"
+                                    "value": "Save + New"
                                 },
                                 "width": {
-                                    "value": 124
+                                    "value": 97
                                 },
                                 "x": {
-                                    "value": 601
+                                    "value": 623
                                 },
                                 "y": {
                                     "value": 3
@@ -966,7 +1021,7 @@
                                 "-constraints": {
                                     "value": {
                                         "type": "FLOW",
-                                        "zpos": 4
+                                        "zpos": 0
                                     }
                                 },
                                 "-fieldName": {
@@ -979,13 +1034,13 @@
                                     "value": 14
                                 },
                                 "text": {
-                                    "value": "Suche"
+                                    "value": "Search"
                                 },
                                 "width": {
-                                    "value": 63
+                                    "value": 68
                                 },
                                 "x": {
-                                    "value": 728
+                                    "value": 723
                                 },
                                 "y": {
                                     "value": 3
@@ -1033,7 +1088,7 @@
                             "value": 3
                         },
                         "y": {
-                            "value": 247
+                            "value": 335
                         }
                     }
                 }
@@ -1060,7 +1115,7 @@
                     "value": "formular"
                 },
                 "height": {
-                    "value": 278
+                    "value": 366
                 },
                 "layout": {
                     "value": {
@@ -1087,7 +1142,7 @@
             "value": "UnitListView"
         },
         "height": {
-            "value": 600
+            "value": 619
         },
         "horizontalScrollBarPolicy": {
             "value": "HORIZONTAL_SCROLLBAR_AS_NEEDED"

@@ -141,12 +141,12 @@
                     "properties": {
                         "-autofillColumns": {
                             "value": {
-                                "expression": "{$LEARNINGOUTCOMELIST_TITLE}"
+                                "expression": "{$LEARNINGOUTCOMELISTCHILD_TITLE}"
                             }
                         },
                         "-autofillDataColumn": {
                             "value": {
-                                "expression": "LEARNINGOUTCOMELISTPARENT_ID"
+                                "expression": "LEARNINGOUTCOMELIST_ID"
                             }
                         },
                         "-autofillWithData": {

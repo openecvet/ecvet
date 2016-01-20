@@ -22,10 +22,9 @@
     <vt class="eu.open_ecvet.app.model.LearningagreementlistLearningagreement" />
     <vt class="eu.open_ecvet.app.model.Learningoutcome" />
     <vt class="eu.open_ecvet.app.model.Learningoutcomelist" />
+    <vt class="eu.open_ecvet.app.model.LearningoutcomelistChild" />
     <vt class="eu.open_ecvet.app.model.LearningoutcomelistLearningoutcome" />
     <vt class="eu.open_ecvet.app.model.LearningoutcomelistLearningoutcomelist" />
-    <vt class="eu.open_ecvet.app.model.Learningoutcomelistlist" />
-    <vt class="eu.open_ecvet.app.model.LearningoutcomelistlistLearningoutcomelist" />
     <vt class="eu.open_ecvet.app.model.Legislation" />
     <vt class="eu.open_ecvet.app.model.Legislationlist" />
     <vt class="eu.open_ecvet.app.model.LegislationlistLegislation" />
@@ -60,6 +59,7 @@
     <vt class="eu.open_ecvet.app.model.Unit" />
     <vt class="eu.open_ecvet.app.model.UnitLearningoutcomelist" />
     <vt class="eu.open_ecvet.app.model.Unitlist" />
+    <vt class="eu.open_ecvet.app.model.UnitlistChild" />
     <vt class="eu.open_ecvet.app.model.UnitlistUnit" />
     <vt class="eu.open_ecvet.app.model.UnitlistUnitlist" />
     <vt class="eu.open_ecvet.app.model.Userguide" />
@@ -69,6 +69,5 @@
     <vt class="eu.open_ecvet.app.model.Validation" />
     <vt class="eu.open_ecvet.app.model.Validationlist" />
     <vt class="eu.open_ecvet.app.model.ValidationlistValidation" />
-    <vt class="eu.open_ecvet.app.view.Test" />
 </vts>
 

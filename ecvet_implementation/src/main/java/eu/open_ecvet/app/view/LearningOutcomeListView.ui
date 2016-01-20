@@ -238,7 +238,7 @@
                     "properties": {
                         "-autofillColumns": {
                             "value": {
-                                "expression": "{$LEARNINGOUTCOMELIST_TITLE}"
+                                "expression": "{$LEARNINGOUTCOMELISTCHILD_TITLE}"
                             }
                         },
                         "-autofillDataColumn": {
@@ -819,13 +819,13 @@
                                     "value": 10
                                 },
                                 "text": {
-                                    "value": "Neu"
+                                    "value": "New"
                                 },
                                 "width": {
-                                    "value": 50
+                                    "value": 52
                                 },
                                 "x": {
-                                    "value": 352
+                                    "value": 446
                                 },
                                 "y": {
                                     "value": 3
@@ -852,13 +852,13 @@
                                     "value": 11
                                 },
                                 "text": {
-                                    "value": "Zurücksetzen"
+                                    "value": "Reset"
                                 },
                                 "width": {
-                                    "value": 105
+                                    "value": 60
                                 },
                                 "x": {
-                                    "value": 405
+                                    "value": 501
                                 },
                                 "y": {
                                     "value": 3
@@ -885,13 +885,13 @@
                                     "value": 12
                                 },
                                 "text": {
-                                    "value": "Speichern"
+                                    "value": "Save"
                                 },
                                 "width": {
-                                    "value": 85
+                                    "value": 56
                                 },
                                 "x": {
-                                    "value": 513
+                                    "value": 564
                                 },
                                 "y": {
                                     "value": 3
@@ -918,13 +918,13 @@
                                     "value": 13
                                 },
                                 "text": {
-                                    "value": "Speichern + Neu"
+                                    "value": "Save + New"
                                 },
                                 "width": {
-                                    "value": 124
+                                    "value": 97
                                 },
                                 "x": {
-                                    "value": 601
+                                    "value": 623
                                 },
                                 "y": {
                                     "value": 3
@@ -951,13 +951,13 @@
                                     "value": 14
                                 },
                                 "text": {
-                                    "value": "Suche"
+                                    "value": "Search"
                                 },
                                 "width": {
-                                    "value": 63
+                                    "value": 68
                                 },
                                 "x": {
-                                    "value": 728
+                                    "value": 723
                                 },
                                 "y": {
                                     "value": 3

@@ -23,9 +23,8 @@ public class UnitlistUnitlist extends VirtualTable implements StaticInstanceSupp
 	
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
 	public final static VirtualTableColumn<Integer>	UNITLISTPARENT_ID;
-	public final static VirtualTableColumn<String>	UNITLIST_TITLE;
 	public final static VirtualTableColumn<Integer>	UNITLIST_ID;
-	public final static VirtualTableColumn<String>	UNITLIST_TITLE2;
+	public final static VirtualTableColumn<String>	UNITLISTCHILD_TITLE;
 	
 	static
 	{
@@ -38,13 +37,6 @@ public class UnitlistUnitlist extends VirtualTable implements StaticInstanceSupp
 		UNITLISTPARENT_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,
 				false,false));
 		
-		UNITLIST_TITLE = new VirtualTableColumn<String>("UNITLIST_TITLE");
-		UNITLIST_TITLE.setType(DataType.VARCHAR,2147483647);
-		UNITLIST_TITLE.setDefaultValue(null);
-		UNITLIST_TITLE.setCaption("TITLE");
-		UNITLIST_TITLE.setPreferredWidth(100);
-		UNITLIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
-		
 		UNITLIST_ID = new VirtualTableColumn<Integer>("UNITLIST_ID");
 		UNITLIST_ID.setType(DataType.INTEGER);
 		UNITLIST_ID.setNullable(false);
@@ -54,33 +46,26 @@ public class UnitlistUnitlist extends VirtualTable implements StaticInstanceSupp
 		UNITLIST_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,0,0,false,
 				false));
 		
-		UNITLIST_TITLE2 = new VirtualTableColumn<String>("UNITLIST_TITLE2");
-		UNITLIST_TITLE2.setType(DataType.VARCHAR,2147483647);
-		UNITLIST_TITLE2.setDefaultValue(null);
-		UNITLIST_TITLE2.setCaption("TITLE");
-		UNITLIST_TITLE2.setPreferredWidth(100);
-		UNITLIST_TITLE2.setTextFormat(TextFormat.getPlainInstance());
+		UNITLISTCHILD_TITLE = new VirtualTableColumn<String>("UNITLISTCHILD_TITLE");
+		UNITLISTCHILD_TITLE.setType(DataType.VARCHAR,2147483647);
+		UNITLISTCHILD_TITLE.setDefaultValue(null);
+		UNITLISTCHILD_TITLE.setCaption("TITLE");
+		UNITLISTCHILD_TITLE.setPreferredWidth(100);
+		UNITLISTCHILD_TITLE.setTextFormat(TextFormat.getPlainInstance());
 		
-		UNITLIST_TITLE.setPersistent(false);
-		UNITLIST_TITLE.setTableColumnLink(new TableColumnLink(Unitlist.class.getName(),
-				Unitlist.TITLE.getName(),new EntityRelationship(Unitlist.class.getName(),
-						new String[]{Unitlist.ID.getName()},Cardinality.ONE,UnitlistUnitlist.class
-								.getName(),new String[]{UnitlistUnitlist.UNITLISTPARENT_ID
-								.getName()},Cardinality.MANY)));
-		
-		UNITLIST_TITLE2.setPersistent(false);
-		UNITLIST_TITLE2.setTableColumnLink(new TableColumnLink(Unitlist.class.getName(),
-				Unitlist.TITLE.getName(),new EntityRelationship(Unitlist.class.getName(),
-						new String[]{Unitlist.ID.getName()},Cardinality.ONE,UnitlistUnitlist.class
-								.getName(),new String[]{UnitlistUnitlist.UNITLIST_ID.getName()},
-						Cardinality.MANY)));
+		UNITLISTCHILD_TITLE.setPersistent(false);
+		UNITLISTCHILD_TITLE.setTableColumnLink(new TableColumnLink(UnitlistChild.class.getName(),
+				UnitlistChild.TITLE.getName(),new EntityRelationship(UnitlistUnitlist.class
+						.getName(),new String[]{UnitlistUnitlist.UNITLIST_ID.getName()},
+						Cardinality.MANY,UnitlistChild.class.getName(),
+						new String[]{UnitlistChild.ID.getName()},Cardinality.ONE)));
 	}
 	
 	
 	public UnitlistUnitlist()
 	{
 		super(UnitlistUnitlist.class.getName(),"PUBLIC","UNITLIST_UNITLIST",UNITLISTPARENT_ID,
-				UNITLIST_TITLE,UNITLIST_ID,UNITLIST_TITLE2);
+				UNITLIST_ID,UNITLISTCHILD_TITLE);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(UNITLISTPARENT_ID);

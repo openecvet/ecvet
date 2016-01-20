@@ -155,10 +155,6 @@ public class EcvetH2_relations extends EntityRelationshipModel implements Static
 				TranscriptsofrecordAttachment.class.getName(),
 				new String[]{TranscriptsofrecordAttachment.ATTACHMENT_ID.getName()},
 				Cardinality.MANY);
-		add(Learningoutcomelist.class.getName(),new String[]{Learningoutcomelist.ID.getName()},
-				Cardinality.ONE,LearningoutcomelistLearningoutcomelist.class.getName(),
-				new String[]{LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_ID
-						.getName()},Cardinality.MANY);
 		add(Methodlist.class.getName(),new String[]{Methodlist.ID.getName()},Cardinality.ONE,
 				MethodlistMethod.class.getName(),
 				new String[]{MethodlistMethod.METHODLIST_ID.getName()},Cardinality.MANY);
@@ -302,9 +298,6 @@ public class EcvetH2_relations extends EntityRelationshipModel implements Static
 		add(Processlist.class.getName(),new String[]{Processlist.ID.getName()},Cardinality.ONE,
 				Assessment.class.getName(),new String[]{Assessment.PROCESSLIST_ID.getName()},
 				Cardinality.MANY);
-		add(Unitlist.class.getName(),new String[]{Unitlist.ID.getName()},Cardinality.ONE,
-				UnitlistUnitlist.class.getName(),
-				new String[]{UnitlistUnitlist.UNITLIST_ID.getName()},Cardinality.MANY);
 		add(Qualificationframework.class.getName(),
 				new String[]{Qualificationframework.ID.getName()},
 				Cardinality.ONE,
@@ -319,6 +312,14 @@ public class EcvetH2_relations extends EntityRelationshipModel implements Static
 		add(Partnerlist.class.getName(),new String[]{Partnerlist.ID.getName()},Cardinality.ONE,
 				PartnerlistPartner.class.getName(),
 				new String[]{PartnerlistPartner.PARTNERLIST_ID.getName()},Cardinality.MANY);
+		add(LearningoutcomelistChild.class.getName(),
+				new String[]{LearningoutcomelistChild.ID.getName()},Cardinality.ONE,
+				LearningoutcomelistLearningoutcomelist.class.getName(),
+				new String[]{LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_ID
+						.getName()},Cardinality.MANY);
+		add(UnitlistUnitlist.class.getName(),new String[]{UnitlistUnitlist.UNITLIST_ID.getName()},
+				Cardinality.MANY,UnitlistChild.class.getName(),
+				new String[]{UnitlistChild.ID.getName()},Cardinality.ONE);
 	}
 	// End generated code ${GENERATED-CODE-BLOCK-END:ER_MODEL}
 	

@@ -45,14 +45,9 @@ public class LearningOutcomeListView extends XdevWindow // ${GENERATED-CODE-LIN
 										
 										public void update()
 										{
-											learningOutcomeListNmListBox.setModel(
-													LearningoutcomelistLearningoutcomelist.VT,
-													"{$LEARNINGOUTCOMELIST_TITLE}",
-													"LEARNINGOUTCOMELIST_ID",true);
-											learningOutcomeNmListBox.setModel(
-													LearningoutcomelistLearningoutcome.VT,
-													"{$LEARNINGOUTCOME_TITLE}",
-													"LEARNINGOUTCOME_ID",true);
+											
+											learningOutcomeListNmListBox.setModel(LearningoutcomelistLearningoutcomelist.VT,"{$LEARNINGOUTCOMELISTCHILD_TITLE}","LEARNINGOUTCOMELIST_ID",true);
+											learningOutcomeNmListBox.setModel(LearningoutcomelistLearningoutcome.VT,"{$LEARNINGOUTCOME_TITLE}","LEARNINGOUTCOME_ID",true);
 											
 											qualificationFramworkListcomboBox
 													.setModel(Qualificationframeworklist.VT,
@@ -247,15 +242,15 @@ public class LearningOutcomeListView extends XdevWindow // ${GENERATED-CODE-LIN
 		qualificationFramworkListcomboBox.setTabIndex(9);
 		qualificationFramworkListcomboBox.setModel(Qualificationframeworklist.VT,"TITLE","ID",true);
 		cmdNew.setTabIndex(10);
-		cmdNew.setText("Neu");
+		cmdNew.setText("New");
 		cmdReset.setTabIndex(11);
-		cmdReset.setText("Zurücksetzen");
+		cmdReset.setText("Reset");
 		cmdSave.setTabIndex(12);
-		cmdSave.setText("Speichern");
+		cmdSave.setText("Save");
 		cmdSaveAndNew.setTabIndex(13);
-		cmdSaveAndNew.setText("Speichern + Neu");
+		cmdSaveAndNew.setText("Save + New");
 		cmdSearch.setTabIndex(14);
-		cmdSearch.setText("Suche");
+		cmdSearch.setText("Search");
 		deleteButton.setTabIndex(4);
 		deleteButton.setText("Delete");
 		
@@ -316,7 +311,7 @@ public class LearningOutcomeListView extends XdevWindow // ${GENERATED-CODE-LIN
 		this.add(container2,new GBC(1,4,1,1,0.1,0.0,GBC.EAST,GBC.NONE,new Insets(3,3,3,3),0,0));
 		GBC.addSpacer(this,true,true);
 		
-		learningOutcomeListNmListBox.setModel(LearningoutcomelistLearningoutcomelist.VT,"{$LEARNINGOUTCOMELIST_TITLE}","LEARNINGOUTCOMELIST_ID",true);
+		learningOutcomeListNmListBox.setModel(LearningoutcomelistLearningoutcomelist.VT,"{$LEARNINGOUTCOMELISTCHILD_TITLE}","LEARNINGOUTCOMELIST_ID",true);
 		learningOutcomeNmListBox.setModel(LearningoutcomelistLearningoutcome.VT,"{$LEARNINGOUTCOME_TITLE}","LEARNINGOUTCOME_ID",true);
 		
 		this.addWindowListener(new WindowAdapter()

@@ -20,9 +20,8 @@ public class LearningoutcomelistLearningoutcomelist extends VirtualTable impleme
 
 	// Generated code, do not edit! ${GENERATED-CODE-BLOCK-START:VIRTUAL_TABLE}
 	public final static VirtualTableColumn<Integer>	LEARNINGOUTCOMELIST_ID;
-	public final static VirtualTableColumn<String>	LEARNINGOUTCOMELIST_TITLE;
+	public final static VirtualTableColumn<String>	LEARNINGOUTCOMELISTCHILD_TITLE;
 	public final static VirtualTableColumn<Integer>	LEARNINGOUTCOMELISTPARENT_ID;
-	public final static VirtualTableColumn<String>	LEARNINGOUTCOMELIST_TITLE2;
 	
 	static
 	{
@@ -35,12 +34,13 @@ public class LearningoutcomelistLearningoutcomelist extends VirtualTable impleme
 		LEARNINGOUTCOMELIST_ID.setTextFormat(TextFormat.getNumberInstance(Locale.getDefault(),null,
 				0,0,false,false));
 		
-		LEARNINGOUTCOMELIST_TITLE = new VirtualTableColumn<String>("LEARNINGOUTCOMELIST_TITLE");
-		LEARNINGOUTCOMELIST_TITLE.setType(DataType.VARCHAR,2147483647);
-		LEARNINGOUTCOMELIST_TITLE.setDefaultValue(null);
-		LEARNINGOUTCOMELIST_TITLE.setCaption("TITLE");
-		LEARNINGOUTCOMELIST_TITLE.setPreferredWidth(100);
-		LEARNINGOUTCOMELIST_TITLE.setTextFormat(TextFormat.getPlainInstance());
+		LEARNINGOUTCOMELISTCHILD_TITLE = new VirtualTableColumn<String>(
+				"LEARNINGOUTCOMELISTCHILD_TITLE");
+		LEARNINGOUTCOMELISTCHILD_TITLE.setType(DataType.VARCHAR,2147483647);
+		LEARNINGOUTCOMELISTCHILD_TITLE.setDefaultValue(null);
+		LEARNINGOUTCOMELISTCHILD_TITLE.setCaption("TITLE");
+		LEARNINGOUTCOMELISTCHILD_TITLE.setPreferredWidth(100);
+		LEARNINGOUTCOMELISTCHILD_TITLE.setTextFormat(TextFormat.getPlainInstance());
 		
 		LEARNINGOUTCOMELISTPARENT_ID = new VirtualTableColumn<Integer>(
 				"LEARNINGOUTCOMELISTPARENT_ID");
@@ -52,28 +52,14 @@ public class LearningoutcomelistLearningoutcomelist extends VirtualTable impleme
 		LEARNINGOUTCOMELISTPARENT_ID.setTextFormat(TextFormat.getNumberInstance(
 				Locale.getDefault(),null,0,0,false,false));
 		
-		LEARNINGOUTCOMELIST_TITLE2 = new VirtualTableColumn<String>("LEARNINGOUTCOMELIST_TITLE2");
-		LEARNINGOUTCOMELIST_TITLE2.setType(DataType.VARCHAR,2147483647);
-		LEARNINGOUTCOMELIST_TITLE2.setDefaultValue(null);
-		LEARNINGOUTCOMELIST_TITLE2.setCaption("TITLE");
-		LEARNINGOUTCOMELIST_TITLE2.setPreferredWidth(100);
-		LEARNINGOUTCOMELIST_TITLE2.setTextFormat(TextFormat.getPlainInstance());
-		
-		LEARNINGOUTCOMELIST_TITLE.setPersistent(false);
-		LEARNINGOUTCOMELIST_TITLE.setTableColumnLink(new TableColumnLink(Learningoutcomelist.class
-				.getName(),Learningoutcomelist.TITLE.getName(),new EntityRelationship(
-				Learningoutcomelist.class.getName(),new String[]{Learningoutcomelist.ID.getName()},
-				Cardinality.ONE,LearningoutcomelistLearningoutcomelist.class.getName(),
-				new String[]{LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_ID
-						.getName()},Cardinality.MANY)));
-		
-		LEARNINGOUTCOMELIST_TITLE2.setPersistent(false);
-		LEARNINGOUTCOMELIST_TITLE2.setTableColumnLink(new TableColumnLink(Learningoutcomelist.class
-				.getName(),Learningoutcomelist.TITLE.getName(),new EntityRelationship(
-				Learningoutcomelist.class.getName(),new String[]{Learningoutcomelist.ID.getName()},
-				Cardinality.ONE,LearningoutcomelistLearningoutcomelist.class.getName(),
-				new String[]{LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELISTPARENT_ID
-						.getName()},Cardinality.MANY)));
+		LEARNINGOUTCOMELISTCHILD_TITLE.setPersistent(false);
+		LEARNINGOUTCOMELISTCHILD_TITLE.setTableColumnLink(new TableColumnLink(
+				LearningoutcomelistChild.class.getName(),LearningoutcomelistChild.TITLE.getName(),
+				new EntityRelationship(LearningoutcomelistChild.class.getName(),
+						new String[]{LearningoutcomelistChild.ID.getName()},Cardinality.ONE,
+						LearningoutcomelistLearningoutcomelist.class.getName(),
+						new String[]{LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_ID
+								.getName()},Cardinality.MANY)));
 	}
 	
 	
@@ -81,7 +67,7 @@ public class LearningoutcomelistLearningoutcomelist extends VirtualTable impleme
 	{
 		super(LearningoutcomelistLearningoutcomelist.class.getName(),"PUBLIC",
 				"LEARNINGOUTCOMELIST_LEARNINGOUTCOMELIST",LEARNINGOUTCOMELIST_ID,
-				LEARNINGOUTCOMELIST_TITLE,LEARNINGOUTCOMELISTPARENT_ID,LEARNINGOUTCOMELIST_TITLE2);
+				LEARNINGOUTCOMELISTCHILD_TITLE,LEARNINGOUTCOMELISTPARENT_ID);
 		
 		setDataSource(EcvetH2.DB);
 		setPrimaryColumn(LEARNINGOUTCOMELIST_ID);
