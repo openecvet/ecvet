@@ -1,10 +1,10 @@
-
 package eu.open_ecvet.app.view;
 
-
+import xdev.db.DBException;
 import xdev.lang.EventHandlerDelegate;
 import xdev.ui.*;
 import xdev.ui.DefaultAction;
+import xdev.ui.XdevFileFilter;
 
 import java.awt.Dimension;
 import java.awt.Font;
@@ -16,31 +16,31 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JTabbedPane;
 import javax.swing.event.ChangeEvent;
+import javax.xml.bind.JAXBException;
 
+import eu.open_ecvet.app.data_src.EcvetH2;
+import eu.open_ecvet.app.helper.JaxBHelper;
 import eu.open_ecvet.app.helper.UpdateView;
 import eu.open_ecvet.app.helper.UpdateViewHelper;
 
-
-public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERCLASS}
+public class MainWindow extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPERCLASS}
 {
-	
+
 	@EventHandlerDelegate
-	void this_windowClosing(WindowEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+	void this_windowClosing(WindowEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		close();
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
 	@EventHandlerDelegate
-	void menuItem2_actionPerformed(ActionEvent arg0) //�${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{//�${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-	
-	}//�${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
+	void menuItem2_actionPerformed(ActionEvent arg0) // �${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{// �${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+
+	}// �${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
 	@EventHandlerDelegate
-	void this_init() // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+	void this_init() //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		memorandumOfUnderstandingTab.setName(MemorandumOfUnderstandingView.class.getSimpleName());
 		frameworkTab.setName(FrameworkView.class.getSimpleName());
 		competentInstitutionListTab.setName(CompetentInstitutionListView.class.getSimpleName());
@@ -56,7 +56,7 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		learningAgreementTab.setName(LearningAgreementView.class.getSimpleName());
 		transcriptsOfRecordListTab.setName(TranscriptsOfRecordListView.class.getSimpleName());
 		transcriptsOfRecordTab.setName(TranscriptsOfRecordView.class.getSimpleName());
-		
+
 		creditTransferListTab.setName(CreditTransferListView.class.getSimpleName());
 		creditTransferTab.setName(CreditTransferView.class.getSimpleName());
 		userGuideListTab.setName(UserGuideListView.class.getSimpleName());
@@ -64,10 +64,10 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		qualificationTab.setName(QualificationView.class.getSimpleName());
 		unitListTab.setName(UnitListView.class.getSimpleName());
 		unitTab.setName(UnitView.class.getSimpleName());
-		
+
 		learningOutcomeListTab.setName(LearningOutcomeListView.class.getSimpleName());
 		learningOutcomeTab.setName(LearningOutcomeView.class.getSimpleName());
-		
+
 		qualificationFrameworkListTab.setName(QualificationFrameworkListView.class.getSimpleName());
 		qualificationFrameworkTab.setName(QualificationFrameworkView.class.getSimpleName());
 		evaluationsTab.setName(EvaluationsView.class.getSimpleName());
@@ -84,23 +84,89 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		recognitionListTab.setName(RecognitionListView.class.getSimpleName());
 		recognitionTab.setName(RecognitionView.class.getSimpleName());
 		certificateTemplateTab.setName(CertificateTemplateView.class.getSimpleName());
-		
+
 		attachmentTab.setName(AttachmentView.class.getSimpleName());
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
 	@EventHandlerDelegate
-	void tabbedPane_stateChanged(ChangeEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+	void tabbedPane_stateChanged(ChangeEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		String tabName = tabbedPane.getSelectedComponent().getName();
 		UpdateView updateView = UpdateViewHelper.instance().get(tabName);
-		
-		if(updateView != null){
+
+		if (updateView != null)
+		{
 			updateView.update();
 		}
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
+	@EventHandlerDelegate
+	void saveDialog_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		XdevFileChooser xdevFileChooser = new XdevFileChooser();
+		XdevFileFilter fileFilter = new XdevFileFilter("XML-Files", "xml");
+		xdevFileChooser.setFileFilter(fileFilter);
+		try
+		{
+			EcvetH2.DB.closeAllOpenConnections();
+			xdevFileChooser.showSaveDialog();
+			JaxBHelper.saveXML(xdevFileChooser.getSelectedFile());
+			EcvetH2.DB.openConnection();
+		}
+		catch (DBException | JAXBException e1)
+		{
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
+	// Generated definitions, do not
+	@EventHandlerDelegate
+	void open_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		
+		XdevFileChooser xdevFileChooser = new XdevFileChooser();
+		XdevFileFilter fileFilter = new XdevFileFilter("XML-Files", "xml");
+		xdevFileChooser.setFileFilter(fileFilter);
+		try
+		{
+			EcvetH2.DB.closeAllOpenConnections();
+			xdevFileChooser.showOpenDialog();
+			JaxBHelper.loadXML(xdevFileChooser.getSelectedFile());
+			EcvetH2.DB.openConnection();
+		}
+		catch (DBException | JAXBException e1)
+		{
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		
+
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+
+
+	@EventHandlerDelegate void dropTables_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		
+//		tabbedPane.setSelectedComponent();
+		try
+		{
+			EcvetH2.DB.closeAllOpenConnections();
+			JaxBHelper.dropTables();
+			EcvetH2.DB.openConnection();
+			
+		}
+		catch(DBException e)
+		{
+			// TODO Auto-generated code
+			e.printStackTrace();
+		}
 	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-	
-	// Generated definitions, do not edit! ${GENERATED-CODE-BLOCK-START:DEFINITIONS}
+
+
+	// edit! ${GENERATED-CODE-BLOCK-START:DEFINITIONS}
 	XdevPicture	picture;
 	XdevMenuBar	menuBar;
 	XdevTab		tab, memorandumOfUnderstandingTab, frameworkTab, competentInstitutionListTab,
@@ -114,7 +180,7 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 			validationTab, requirementListTab, requirementTab, recognitionListTab, recognitionTab,
 			certificateTemplateTab, qualificationFrameworkListTab, qualificationFrameworkTab,
 			attachmentTab;
-	XdevMenuItem	menuItem, menuItem2;
+	XdevMenuItem	open, saveDialog, dropTables, menuItem2;
 	XdevTabbedPane	tabbedPane;
 	XdevWindowContainer	memorandumOfUnderstandingWindowContainer, frameworkContainer,
 			competentInstitutionListWindowContainer, competentInstitutionWindowContainer,
@@ -137,13 +203,16 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 	XdevLabel			label, label2;
 	XdevMenu			menu;
 	// End generated definitions ${GENERATED-CODE-BLOCK-END:DEFINITIONS}
-	
-	MainWindow			self	= this;
-	
-	{// Generated initializers, do not edit! ${GENERATED-CODE-BLOCK-START:INITIALIZERS}
+
+	MainWindow self = this;
+
+	{// Generated initializers, do not
+		// edit! ${GENERATED-CODE-BLOCK-START:INITIALIZERS}
 		menuBar = new XdevMenuBar();
 		menu = new XdevMenu();
-		menuItem = new XdevMenuItem(new DefaultAction("Save",null,null,null,true));
+		open = new XdevMenuItem(new DefaultAction("Open",null,null,null,true));
+		saveDialog = new XdevMenuItem(new DefaultAction("Save",null,null,null,true));
+		dropTables = new XdevMenuItem(new DefaultAction("Drop Tables",null,null,null,true));
 		menuItem2 = new XdevMenuItem(new DefaultAction("About",null,null,null,true));
 		tabbedPane = new XdevTabbedPane();
 		tab = new XdevTab();
@@ -373,7 +442,9 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 		picture.saveState();
 		label2.saveState();
 		
-		menu.add(menuItem);
+		menu.add(open);
+		menu.add(saveDialog);
+		menu.add(dropTables);
 		menu.add(menuItem2);
 		menuBar.add(menu);
 		tab.setLayout(new GridBagLayout());
@@ -603,9 +674,12 @@ public class MainWindow extends XdevWindow // ${GENERATED-CODE-LINE:BEAN_SUPERC
 				this_windowClosing(e);
 			}
 		});
+		open.addActionListener(e -> open_actionPerformed(e));
+		saveDialog.addActionListener(e -> saveDialog_actionPerformed(e));
+		dropTables.addActionListener(e -> dropTables_actionPerformed(e));
 		menuItem2.addActionListener(e -> menuItem2_actionPerformed(e));
 		tabbedPane.addChangeListener(e -> tabbedPane_stateChanged(e));
 		this_init();
-	}// ${GENERATED-CODE-BLOCK-END:INITIALIZERS}
-	
+	}//  ${GENERATED-CODE-BLOCK-END:INITIALIZERS}
+
 }

@@ -2,11 +2,15 @@
 package eu.open_ecvet.app.view;
 
 
+import xdev.db.DBException;
 import xdev.lang.EventHandlerDelegate;
+import xdev.lang.XDEV;
+import xdev.lang.cmd.Query;
 import xdev.ui.*;
 import xdev.ui.event.FormularAdapter;
 import xdev.ui.event.FormularEvent;
 import xdev.vt.VirtualTable.VirtualTableRow;
+import xdev.vt.VirtualTableFillMethod;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -21,8 +25,10 @@ import javax.swing.ListSelectionModel;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingConstants;
 
+import eu.open_ecvet.app.data_src.EcvetH2;
 import eu.open_ecvet.app.helper.UpdateView;
 import eu.open_ecvet.app.helper.UpdateViewHelper;
+import eu.open_ecvet.app.model.Attachment;
 import eu.open_ecvet.app.model.Evaluations;
 import eu.open_ecvet.app.model.Learningoutcomelist;
 import eu.open_ecvet.app.model.LearningoutcomelistLearningoutcome;
@@ -102,7 +108,33 @@ public class CheckM2N extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPERCL
 	@EventHandlerDelegate
 	void button_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-	
+	try
+	{
+		XDEV.Query(new Query()
+		{
+			@Override
+			public void init()
+			{
+				setDataSource(EcvetH2.DB);
+				
+				from("ATTACHMENT");
+				select("ATTACHMENT","ID").into(Attachment.ID);
+				select("ATTACHMENT","ATTACHMENTURL").into(Attachment.ATTACHMENTURL);
+				select("ATTACHMENT","DESCRIPTION").into(Attachment.DESCRIPTION);
+				select("ATTACHMENT","IDREFTOKEN").into(Attachment.IDREFTOKEN);
+				select("ATTACHMENT","TITLE").into(Attachment.TITLE);
+				select("ATTACHMENT","URI").into(Attachment.URI);
+				
+				setVirtualTable(Attachment.VT);
+				setFillMethod(VirtualTableFillMethod.OVERWRITE);
+			}
+		});
+	}
+	catch(DBException e)
+	{
+		// TODO Auto-generated code
+		e.printStackTrace();
+	}
 		//		nmListBox.setModel(Test.VT, "{$LEARNINGOUTCOMELIST_TITLE}", "LEARNINGOUTCOMELIST_ID", true);
 		
 		nmListBox.refresh(formular.getVirtualTable().createRow());

@@ -7,6 +7,16 @@
         },
         {
             "exported": true,
+            "path": "/home/tgrabietz/.m2/repository/org/apache/logging/log4j/log4j-api/2.1/log4j-api-2.1.jar",
+            "type": "EXTERNAL_JAR_FILE"
+        },
+        {
+            "exported": true,
+            "path": "/home/tgrabietz/.m2/repository/org/apache/logging/log4j/log4j-core/2.1/log4j-core-2.1.jar",
+            "type": "EXTERNAL_JAR_FILE"
+        },
+        {
+            "exported": true,
             "path": "/home/tgrabietz/.m2/repository/org/eclipse/persistence/eclipselink/2.5.0-RC1/eclipselink-2.5.0-RC1.jar",
             "type": "EXTERNAL_JAR_FILE"
         },

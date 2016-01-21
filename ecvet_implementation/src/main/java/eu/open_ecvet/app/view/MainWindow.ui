@@ -5,12 +5,13 @@
                 "children": [
                     {
                         "class": "xdev.ui.XdevMenuItem",
+                        "events": ["action.actionPerformed"],
                         "properties": {
                             "-fieldName": {
-                                "value": "menuItem"
+                                "value": "open"
                             },
                             "text": {
-                                "value": "Save"
+                                "value": "Open"
                             }
                         }
                     },
@@ -25,10 +26,46 @@
                                 }
                             },
                             "-fieldName": {
+                                "value": "saveDialog"
+                            },
+                            "text": {
+                                "value": "Save"
+                            }
+                        }
+                    },
+                    {
+                        "class": "xdev.ui.XdevMenuItem",
+                        "events": ["action.actionPerformed"],
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "type": "NULL",
+                                    "zpos": 3
+                                }
+                            },
+                            "-fieldName": {
                                 "value": "menuItem2"
                             },
                             "text": {
                                 "value": "About"
+                            }
+                        }
+                    },
+                    {
+                        "class": "xdev.ui.XdevMenuItem",
+                        "events": ["action.actionPerformed"],
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "type": "NULL",
+                                    "zpos": 2
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "dropTables"
+                            },
+                            "text": {
+                                "value": "Drop Tables"
                             }
                         }
                     }

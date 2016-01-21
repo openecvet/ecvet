@@ -8,48 +8,49 @@
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 
 		<class>eu.open_ecvet.entity.AssessmentListType</class>
+		<class>eu.open_ecvet.entity.MethodType</class>
 		<class>eu.open_ecvet.entity.AssessmentType</class>
 		<class>eu.open_ecvet.entity.AttachmentType</class>
+		<class>eu.open_ecvet.entity.ObjectFactory</class>
 		<class>eu.open_ecvet.entity.CertificateTemplateType</class>
-		<class>eu.open_ecvet.entity.CompetentInstitutionListType</class>
-		<class>eu.open_ecvet.entity.CompetentInstitutionType</class>
-		<class>eu.open_ecvet.entity.ComplementaryDocumentsType</class>
-		<class>eu.open_ecvet.entity.CreditTransferListType</class>
-		<class>eu.open_ecvet.entity.CreditTransferType</class>
-		<class>eu.open_ecvet.entity.EcvetAttachment</class>
-		<class>eu.open_ecvet.entity.EcvetElement</class>
-		<class>eu.open_ecvet.entity.EcvetFrameworkType</class>
-		<class>eu.open_ecvet.entity.EvaluationsType</class>
-		<class>eu.open_ecvet.entity.FileDataType</class>
-		<class>eu.open_ecvet.entity.LearningAgreementListType</class>
-		<class>eu.open_ecvet.entity.LearningAgreementType</class>
-		<class>eu.open_ecvet.entity.LearningOutcomeListType</class>
-		<class>eu.open_ecvet.entity.LearningOutcomeType</class>
-		<class>eu.open_ecvet.entity.LegislationListType</class>
-		<class>eu.open_ecvet.entity.LegislationType</class>
-		<class>eu.open_ecvet.entity.MemorandumOfUnderstandingType</class>
-		<class>eu.open_ecvet.entity.MethodListType</class>
-		<class>eu.open_ecvet.entity.MethodType</class>
 		<class>eu.open_ecvet.entity.PartnerListType</class>
+		<class>eu.open_ecvet.entity.CompetentInstitutionListType</class>
 		<class>eu.open_ecvet.entity.PartnerType</class>
+		<class>eu.open_ecvet.entity.CompetentInstitutionType</class>
 		<class>eu.open_ecvet.entity.ProcedureAndGuidelineListType</class>
+		<class>eu.open_ecvet.entity.ComplementaryDocumentsType</class>
 		<class>eu.open_ecvet.entity.ProcedureAndGuidelineType</class>
+		<class>eu.open_ecvet.entity.CreditTransferListType</class>
 		<class>eu.open_ecvet.entity.ProcessListType</class>
+		<class>eu.open_ecvet.entity.CreditTransferType</class>
 		<class>eu.open_ecvet.entity.ProcessType</class>
+		<class>eu.open_ecvet.entity.EcvetAttachment</class>
 		<class>eu.open_ecvet.entity.QualificationFrameworkListType</class>
+		<class>eu.open_ecvet.entity.EcvetElement</class>
 		<class>eu.open_ecvet.entity.QualificationFrameworkType</class>
+		<class>eu.open_ecvet.entity.EcvetFrameworkType</class>
 		<class>eu.open_ecvet.entity.QualificationType</class>
+		<class>eu.open_ecvet.entity.EvaluationsType</class>
 		<class>eu.open_ecvet.entity.RecognitionListType</class>
+		<class>eu.open_ecvet.entity.FileDataType</class>
 		<class>eu.open_ecvet.entity.RecognitionType</class>
 		<class>eu.open_ecvet.entity.RequirementListType</class>
 		<class>eu.open_ecvet.entity.RequirementType</class>
+		<class>eu.open_ecvet.entity.LearningAgreementListType</class>
 		<class>eu.open_ecvet.entity.TranscriptsOfRecordListType</class>
+		<class>eu.open_ecvet.entity.LearningAgreementType</class>
 		<class>eu.open_ecvet.entity.TranscriptsOfRecordType</class>
+		<class>eu.open_ecvet.entity.LearningOutcomeListType</class>
 		<class>eu.open_ecvet.entity.UnitListType</class>
+		<class>eu.open_ecvet.entity.LearningOutcomeType</class>
 		<class>eu.open_ecvet.entity.UnitType</class>
+		<class>eu.open_ecvet.entity.LegislationListType</class>
 		<class>eu.open_ecvet.entity.UserGuideListType</class>
+		<class>eu.open_ecvet.entity.LegislationType</class>
 		<class>eu.open_ecvet.entity.UserGuideType</class>
+		<class>eu.open_ecvet.entity.MemorandumOfUnderstandingType</class>
 		<class>eu.open_ecvet.entity.ValidationListType</class>
+		<class>eu.open_ecvet.entity.MethodListType</class>
 		<class>eu.open_ecvet.entity.ValidationType</class>
 
 
@@ -57,17 +58,15 @@
 
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
-			<property name="javax.persistence.jdbc.url"
-				value="jdbc:h2:./res/ecvet_draft;MV_STORE=FALSE;MVCC=FALSE" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:h2:./res/ecvet_draft;MV_STORE=FALSE;MVCC=FALSE" />
 			<property name="javax.persistence.jdbc.user" value="sa" />
 			<property name="eclipselink.target-database"
 				value="org.eclipse.persistence.platform.database.H2Platform" />
-			<!-- <property name="eclipselink.ddl-generation" value="drop-and-create-tables" 
-				/> -->
+			<!-- <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/> -->
 			<property name="eclipselink.ddl-generation.output-mode"
 				value="both" />
 			<property name="eclipselink.logging.level" value="info" />
-			<property name="eclipselink.application-location" value="./src/main/resources/h2/" />
+			<property name="eclipselink.application-location" value="./res/" />
 		</properties>
 	</persistence-unit>
 </persistence>
