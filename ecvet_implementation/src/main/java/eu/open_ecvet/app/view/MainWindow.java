@@ -1,4 +1,6 @@
+
 package eu.open_ecvet.app.view;
+
 
 import xdev.db.DBException;
 import xdev.lang.EventHandlerDelegate;
@@ -23,24 +25,31 @@ import eu.open_ecvet.app.helper.JaxBHelper;
 import eu.open_ecvet.app.helper.UpdateView;
 import eu.open_ecvet.app.helper.UpdateViewHelper;
 
+
 public class MainWindow extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPERCLASS}
 {
-
+	
+	private int	selectedFrameworkPrimaryKey	= 0;
+	
+	
 	@EventHandlerDelegate
 	void this_windowClosing(WindowEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		close();
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
+	
 	@EventHandlerDelegate
 	void menuItem2_actionPerformed(ActionEvent arg0) // �${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{// �${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-
+	
 	}// �${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
+	
 	@EventHandlerDelegate
 	void this_init() //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+		exportXML.setEnabled(false);
 		memorandumOfUnderstandingTab.setName(MemorandumOfUnderstandingView.class.getSimpleName());
 		frameworkTab.setName(FrameworkView.class.getSimpleName());
 		competentInstitutionListTab.setName(CompetentInstitutionListView.class.getSimpleName());
@@ -56,7 +65,7 @@ public class MainWindow extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPER
 		learningAgreementTab.setName(LearningAgreementView.class.getSimpleName());
 		transcriptsOfRecordListTab.setName(TranscriptsOfRecordListView.class.getSimpleName());
 		transcriptsOfRecordTab.setName(TranscriptsOfRecordView.class.getSimpleName());
-
+		
 		creditTransferListTab.setName(CreditTransferListView.class.getSimpleName());
 		creditTransferTab.setName(CreditTransferView.class.getSimpleName());
 		userGuideListTab.setName(UserGuideListView.class.getSimpleName());
@@ -64,10 +73,10 @@ public class MainWindow extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPER
 		qualificationTab.setName(QualificationView.class.getSimpleName());
 		unitListTab.setName(UnitListView.class.getSimpleName());
 		unitTab.setName(UnitView.class.getSimpleName());
-
+		
 		learningOutcomeListTab.setName(LearningOutcomeListView.class.getSimpleName());
 		learningOutcomeTab.setName(LearningOutcomeView.class.getSimpleName());
-
+		
 		qualificationFrameworkListTab.setName(QualificationFrameworkListView.class.getSimpleName());
 		qualificationFrameworkTab.setName(QualificationFrameworkView.class.getSimpleName());
 		evaluationsTab.setName(EvaluationsView.class.getSimpleName());
@@ -84,73 +93,75 @@ public class MainWindow extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPER
 		recognitionListTab.setName(RecognitionListView.class.getSimpleName());
 		recognitionTab.setName(RecognitionView.class.getSimpleName());
 		certificateTemplateTab.setName(CertificateTemplateView.class.getSimpleName());
-
+		
 		attachmentTab.setName(AttachmentView.class.getSimpleName());
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
+	
 	@EventHandlerDelegate
 	void tabbedPane_stateChanged(ChangeEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		String tabName = tabbedPane.getSelectedComponent().getName();
 		UpdateView updateView = UpdateViewHelper.instance().get(tabName);
-
-		if (updateView != null)
+		
+		if(updateView != null)
 		{
 			updateView.update();
 		}
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
+	
 	@EventHandlerDelegate
-	void saveDialog_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	void exportXML_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
 		XdevFileChooser xdevFileChooser = new XdevFileChooser();
-		XdevFileFilter fileFilter = new XdevFileFilter("XML-Files", "xml");
+		XdevFileFilter fileFilter = new XdevFileFilter("XML-Files","xml");
 		xdevFileChooser.setFileFilter(fileFilter);
 		try
 		{
 			EcvetH2.DB.closeAllOpenConnections();
 			xdevFileChooser.showSaveDialog();
-			JaxBHelper.saveXML(xdevFileChooser.getSelectedFile());
+			JaxBHelper.exportXML(xdevFileChooser.getSelectedFile());
 			EcvetH2.DB.openConnection();
 		}
-		catch (DBException | JAXBException e1)
+		catch(DBException | JAXBException e1)
 		{
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
+	
+	
 	// Generated definitions, do not
 	@EventHandlerDelegate
-	void open_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	void importXML_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
 	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		
+	
 		XdevFileChooser xdevFileChooser = new XdevFileChooser();
-		XdevFileFilter fileFilter = new XdevFileFilter("XML-Files", "xml");
+		XdevFileFilter fileFilter = new XdevFileFilter("XML-Files","xml");
 		xdevFileChooser.setFileFilter(fileFilter);
 		try
 		{
 			EcvetH2.DB.closeAllOpenConnections();
 			xdevFileChooser.showOpenDialog();
-			JaxBHelper.loadXML(xdevFileChooser.getSelectedFile());
+			JaxBHelper.importXML(xdevFileChooser.getSelectedFile());
 			EcvetH2.DB.openConnection();
 		}
-		catch (DBException | JAXBException e1)
+		catch(DBException | JAXBException e1)
 		{
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-
 		
-
 	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
-
-	@EventHandlerDelegate void dropTables_actionPerformed(ActionEvent event) // ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
-	{// ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
-		
-//		tabbedPane.setSelectedComponent();
+	
+	
+	@EventHandlerDelegate
+	void dropTables_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+	
+		// tabbedPane.setSelectedComponent();
 		try
 		{
 			EcvetH2.DB.closeAllOpenConnections();
@@ -163,9 +174,44 @@ public class MainWindow extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPER
 			// TODO Auto-generated code
 			e.printStackTrace();
 		}
-	}// ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
-
-
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+	
+	
+	@EventHandlerDelegate
+	void exportMySql_actionPerformed(ActionEvent event) //  ${GENERATED-CODE-BLOCK-START:EVENT_HANDLER_DELEGATE}
+	{//  ${GENERATED-CODE-BLOCK-END:EVENT_HANDLER_DELEGATE}
+	
+	}//  ${GENERATED-CODE-LINE:EVENT_HANDLER_DELEGATE}
+	
+	
+	public void updateExportMenuItem(int selectedFrameworkPrimaryKey)
+	{
+		setSelectedFrameworkPrimaryKey(selectedFrameworkPrimaryKey);
+		
+		if(selectedFrameworkPrimaryKey == 0)
+		{
+			exportXML.setEnabled(false);
+			exportMySql.setEnabled(false);
+		}
+		else
+		{
+			exportXML.setEnabled(true);
+			exportMySql.setEnabled(true);
+		}
+	}
+	
+	
+	public int getSelectedFrameworkPrimaryKey()
+	{
+		return selectedFrameworkPrimaryKey;
+	}
+	
+	
+	public void setSelectedFrameworkPrimaryKey(int selectedFrameworkPrimaryKey)
+	{
+		this.selectedFrameworkPrimaryKey = selectedFrameworkPrimaryKey;
+	}
+	
 	// edit! ${GENERATED-CODE-BLOCK-START:DEFINITIONS}
 	XdevPicture	picture;
 	XdevMenuBar	menuBar;
@@ -180,7 +226,7 @@ public class MainWindow extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPER
 			validationTab, requirementListTab, requirementTab, recognitionListTab, recognitionTab,
 			certificateTemplateTab, qualificationFrameworkListTab, qualificationFrameworkTab,
 			attachmentTab;
-	XdevMenuItem	open, saveDialog, dropTables, menuItem2;
+	XdevMenuItem	importXML, exportXML, dropTables, exportMySql, menuItem2;
 	XdevTabbedPane	tabbedPane;
 	XdevWindowContainer	memorandumOfUnderstandingWindowContainer, frameworkContainer,
 			competentInstitutionListWindowContainer, competentInstitutionWindowContainer,
@@ -203,16 +249,17 @@ public class MainWindow extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPER
 	XdevLabel			label, label2;
 	XdevMenu			menu;
 	// End generated definitions ${GENERATED-CODE-BLOCK-END:DEFINITIONS}
-
-	MainWindow self = this;
-
+	
+	MainWindow			self	= this;
+	
 	{// Generated initializers, do not
 		// edit! ${GENERATED-CODE-BLOCK-START:INITIALIZERS}
 		menuBar = new XdevMenuBar();
 		menu = new XdevMenu();
-		open = new XdevMenuItem(new DefaultAction("Open",null,null,null,true));
-		saveDialog = new XdevMenuItem(new DefaultAction("Save",null,null,null,true));
+		importXML = new XdevMenuItem(new DefaultAction("Import XML",null,null,null,true));
+		exportXML = new XdevMenuItem(new DefaultAction("Export XML",null,null,null,true));
 		dropTables = new XdevMenuItem(new DefaultAction("Drop Tables",null,null,null,true));
+		exportMySql = new XdevMenuItem(new DefaultAction("Exportt MySQL",null,null,null,true));
 		menuItem2 = new XdevMenuItem(new DefaultAction("About",null,null,null,true));
 		tabbedPane = new XdevTabbedPane();
 		tab = new XdevTab();
@@ -442,9 +489,10 @@ public class MainWindow extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPER
 		picture.saveState();
 		label2.saveState();
 		
-		menu.add(open);
-		menu.add(saveDialog);
+		menu.add(importXML);
+		menu.add(exportXML);
 		menu.add(dropTables);
+		menu.add(exportMySql);
 		menu.add(menuItem2);
 		menuBar.add(menu);
 		tab.setLayout(new GridBagLayout());
@@ -674,12 +722,13 @@ public class MainWindow extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPER
 				this_windowClosing(e);
 			}
 		});
-		open.addActionListener(e -> open_actionPerformed(e));
-		saveDialog.addActionListener(e -> saveDialog_actionPerformed(e));
+		importXML.addActionListener(e -> importXML_actionPerformed(e));
+		exportXML.addActionListener(e -> exportXML_actionPerformed(e));
 		dropTables.addActionListener(e -> dropTables_actionPerformed(e));
+		exportMySql.addActionListener(e -> exportMySql_actionPerformed(e));
 		menuItem2.addActionListener(e -> menuItem2_actionPerformed(e));
 		tabbedPane.addChangeListener(e -> tabbedPane_stateChanged(e));
 		this_init();
 	}//  ${GENERATED-CODE-BLOCK-END:INITIALIZERS}
-
+	
 }

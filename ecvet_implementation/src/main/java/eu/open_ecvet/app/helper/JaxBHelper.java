@@ -24,39 +24,6 @@ public class JaxBHelper
 
 	private static EntityManagerFactory entityManagerFactory;
 
-	public static void main(String[] args) throws JAXBException
-	{
-		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("ecvet_h2_data");
-		EntityManager entityManager = entityManagerFactory.createEntityManager();
-		EntityTransaction tx = entityManager.getTransaction();
-
-		tx.begin();
-
-		// TypedQuery<EcvetFrameworkType> query =
-		// entityManager.createQuery("SELECT entity FROM EcvetFrameworkType entity",
-		// EcvetFrameworkType.class);
-		//
-		// List<EcvetFrameworkType> frameworks = query.getResultList();
-		//
-		// for (EcvetFrameworkType framework : frameworks)
-		// {
-		// LogManager.getLogger(JaxBHelper.class).debug(framework.getId());
-		// }
-		// EcvetFrameworkType singleFramework = frameworks.get(0);
-
-		JAXBContext jc = JAXBContext.newInstance(EcvetFrameworkType.class);
-		Unmarshaller unmarshaller = jc.createUnmarshaller();
-		EcvetFrameworkType ecvetFramework = (EcvetFrameworkType) unmarshaller.unmarshal(new File("res/clay.xml"));
-
-		entityManager.persist(ecvetFramework);
-		tx.commit();
-
-		// Marshaller m = jc.createMarshaller();
-		// m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-		// m.marshal( singleFramework, System.out );
-
-	}
-
 	private static EntityManager getEM(boolean drop)
 	{
 		Map<String, Object> properties = new HashMap<String, Object>();
@@ -73,7 +40,7 @@ public class JaxBHelper
 
 	}
 
-	public static void loadXML(File file) throws JAXBException
+	public static void importXML(File file) throws JAXBException
 	{
 		EntityManager entityManager = getEM(false);
 
@@ -89,7 +56,7 @@ public class JaxBHelper
 		tx.commit();
 	}
 
-	public static void saveXML(File file) throws JAXBException
+	public static void exportXML(File file) throws JAXBException
 	{
 		EntityManager entityManager = getEM(false);
 

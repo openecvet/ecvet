@@ -8,10 +8,10 @@
                         "events": ["action.actionPerformed"],
                         "properties": {
                             "-fieldName": {
-                                "value": "open"
+                                "value": "importXML"
                             },
                             "text": {
-                                "value": "Open"
+                                "value": "Import XML"
                             }
                         }
                     },
@@ -26,10 +26,28 @@
                                 }
                             },
                             "-fieldName": {
-                                "value": "saveDialog"
+                                "value": "exportXML"
                             },
                             "text": {
-                                "value": "Save"
+                                "value": "Export XML"
+                            }
+                        }
+                    },
+                    {
+                        "class": "xdev.ui.XdevMenuItem",
+                        "events": ["action.actionPerformed"],
+                        "properties": {
+                            "-constraints": {
+                                "value": {
+                                    "type": "NULL",
+                                    "zpos": 4
+                                }
+                            },
+                            "-fieldName": {
+                                "value": "menuItem2"
+                            },
+                            "text": {
+                                "value": "About"
                             }
                         }
                     },
@@ -44,10 +62,10 @@
                                 }
                             },
                             "-fieldName": {
-                                "value": "menuItem2"
+                                "value": "exportMySql"
                             },
                             "text": {
-                                "value": "About"
+                                "value": "Exportt MySQL"
                             }
                         }
                     },
