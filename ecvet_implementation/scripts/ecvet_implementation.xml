@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generated build file-->
+<!--XDEV 4.1.3 @ Jan 27, 2016 11:27:31 AM-->
+<project name="ecvet_implementation" basedir="." default="deploy">
+    <target name="deploy">
+        <taskdef name="GenerateApplication" classname="xdev.util.builder.ant.tasks.GenerateApplication" />
+        <GenerateApplication project="ecvet_implementation" todir="/home/tgrabietz/deployed" opentodir="true" vmoptions="-XX:+UseParallelGC -XX:+CMSClassUnloadingEnabled -Dsun.java2d.noddraw -Xms64m -Xmx512m" main="eu.open_ecvet.app.view.MainWindow" windowsexe="true" executablejar="true">
+            <exclude path="target/" />
+        </GenerateApplication>
+    </target>
+</project>
+

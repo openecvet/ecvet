@@ -55,9 +55,6 @@ public class EcvetH2_relations extends EntityRelationshipModel implements Static
 		add(Partnerlist.class.getName(),new String[]{Partnerlist.ID.getName()},Cardinality.ONE,
 				Competentinstitution.class.getName(),
 				new String[]{Competentinstitution.PARTNERLIST_ID.getName()},Cardinality.MANY);
-		add(Unitlist.class.getName(),new String[]{Unitlist.ID.getName()},Cardinality.ONE,
-				UnitlistUnitlist.class.getName(),
-				new String[]{UnitlistUnitlist.UNITLISTPARENT_ID.getName()},Cardinality.MANY);
 		add(Requirementlist.class.getName(),new String[]{Requirementlist.ID.getName()},
 				Cardinality.ONE,RequirementlistRequirement.class.getName(),
 				new String[]{RequirementlistRequirement.REQUIREMENTLIST_ID.getName()},
@@ -194,10 +191,6 @@ public class EcvetH2_relations extends EntityRelationshipModel implements Static
 		add(Userguidelist.class.getName(),new String[]{Userguidelist.ID.getName()},Cardinality.ONE,
 				Complementarydocuments.class.getName(),
 				new String[]{Complementarydocuments.USERGUIDELIST_ID.getName()},Cardinality.MANY);
-		add(Learningoutcomelist.class.getName(),new String[]{Learningoutcomelist.ID.getName()},
-				Cardinality.ONE,LearningoutcomelistLearningoutcomelist.class.getName(),
-				new String[]{LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELISTPARENT_ID
-						.getName()},Cardinality.MANY);
 		add(Qualificationframeworklist.class.getName(),
 				new String[]{Qualificationframeworklist.ID.getName()},Cardinality.ONE,
 				Learningoutcome.class.getName(),
@@ -312,14 +305,21 @@ public class EcvetH2_relations extends EntityRelationshipModel implements Static
 		add(Partnerlist.class.getName(),new String[]{Partnerlist.ID.getName()},Cardinality.ONE,
 				PartnerlistPartner.class.getName(),
 				new String[]{PartnerlistPartner.PARTNERLIST_ID.getName()},Cardinality.MANY);
+		add(LearningoutcomelistLearningoutcomelist.class.getName(),
+				new String[]{LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELISTPARENT_ID
+						.getName()},Cardinality.MANY,Learningoutcomelist.class.getName(),
+				new String[]{Learningoutcomelist.ID.getName()},Cardinality.ONE);
 		add(LearningoutcomelistChild.class.getName(),
 				new String[]{LearningoutcomelistChild.ID.getName()},Cardinality.ONE,
 				LearningoutcomelistLearningoutcomelist.class.getName(),
 				new String[]{LearningoutcomelistLearningoutcomelist.LEARNINGOUTCOMELIST_ID
 						.getName()},Cardinality.MANY);
-		add(UnitlistUnitlist.class.getName(),new String[]{UnitlistUnitlist.UNITLIST_ID.getName()},
-				Cardinality.MANY,UnitlistChild.class.getName(),
-				new String[]{UnitlistChild.ID.getName()},Cardinality.ONE);
+		add(Unitlist.class.getName(),new String[]{Unitlist.ID.getName()},Cardinality.ONE,
+				UnitlistUnitlist.class.getName(),
+				new String[]{UnitlistUnitlist.UNITLISTPARENT_ID.getName()},Cardinality.MANY);
+		add(UnitlistChild.class.getName(),new String[]{UnitlistChild.ID.getName()},Cardinality.ONE,
+				UnitlistUnitlist.class.getName(),
+				new String[]{UnitlistUnitlist.UNITLIST_ID.getName()},Cardinality.MANY);
 	}
 	// End generated code ${GENERATED-CODE-BLOCK-END:ER_MODEL}
 	

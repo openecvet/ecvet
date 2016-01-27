@@ -432,6 +432,27 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
+					<xsd:element name="ecvetPoints" type="xsd:int">
+						<xsd:annotation>
+							<xsd:documentation>
+								According to: C 155/14 Annex 1 - Definitions
+								(i) ‘ECVET points’ means a numerical representation of the
+								overall weight of learning outcomes in a qualification and of
+								the
+								relative weight of units in
+								relation to the qualification.
+							</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="relativeWeight" type="xsd:int">
+						<xsd:annotation>
+							<xsd:documentation>
+								convenient field = wholeEcvetPoints(from the
+								qualification) / 100 * ecvetPoints (from the unit)
+
+							</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
 					<xsd:element name="unitList" type="unitListType"
 						minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
@@ -507,7 +528,8 @@
 								each
 								other (and the German
 								translation agrees with me) so the
-								assessement and validation elements make more senseto assign this to the child elements 
+								assessement and validation elements make more senseto assign
+								this to the child elements
 							</xsd:documentation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -739,6 +761,22 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
+				<xsd:element name="ecvetPoints" type="xsd:int">
+						<xsd:annotation>
+							<xsd:documentation>
+								not recommended. Possibly usefull for granulate the ecvetpoints, which are given to units
+							</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="relativeWeight" type="xsd:int">
+						<xsd:annotation>
+							<xsd:documentation>
+								convenient field = wholeEcvetPoints(from the
+								qualification) / 100 * ecvetPoints (from the unit)
+
+							</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
 					<xsd:element name="learningOutcomeList" type="learningOutcomeListType"
 						minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
@@ -808,7 +846,8 @@
 								each
 								other (and the German
 								translation agrees with me) so the
-								assessement and validation elements make more sense to assign this to the child elements 
+								assessement and validation elements make more sense to assign
+								this to the child elements
 							</xsd:documentation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -883,7 +922,8 @@
 								each
 								other (and the German
 								translation agrees with me) so the
-								assessement and validation elements make more sense to assign this to the child elements 
+								assessement and validation elements make more sense to assign
+								this to the child elements
 							</xsd:documentation>
 							<xsd:appinfo>
 								<annox:annotate target="field">

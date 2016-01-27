@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2016.01.06 um 12:15:53 PM CET 
+// Generiert: 2016.01.27 um 12:35:22 PM CET 
 //
 
 
@@ -49,6 +49,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
+ *         &lt;element name="ecvetPoints" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="relativeWeight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="learningOutcomeList" type="{}learningOutcomeListType" maxOccurs="unbounded" minOccurs="0"/&gt;
  *         &lt;element name="learningOutcome" type="{}learningOutcomeType" maxOccurs="unbounded" minOccurs="0"/&gt;
  *         &lt;element name="qualificationFrameworkList" type="{}qualificationFrameworkListType"/&gt;
@@ -63,6 +65,8 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "learningOutcomeListType", propOrder = {
+    "ecvetPoints",
+    "relativeWeight",
     "learningOutcomeList",
     "learningOutcome",
     "qualificationFrameworkList",
@@ -79,6 +83,8 @@ public class LearningOutcomeListType
     implements Serializable
 {
 
+    protected int ecvetPoints;
+    protected int relativeWeight;
     @ManyToMany(cascade = {
         CascadeType.PERSIST,
         CascadeType.MERGE,
@@ -119,6 +125,38 @@ public class LearningOutcomeListType
         CascadeType.ALL
     })
     protected EvaluationsType evaluations;
+
+    /**
+     * Ruft den Wert der ecvetPoints-Eigenschaft ab.
+     * 
+     */
+    public int getEcvetPoints() {
+        return ecvetPoints;
+    }
+
+    /**
+     * Legt den Wert der ecvetPoints-Eigenschaft fest.
+     * 
+     */
+    public void setEcvetPoints(int value) {
+        this.ecvetPoints = value;
+    }
+
+    /**
+     * Ruft den Wert der relativeWeight-Eigenschaft ab.
+     * 
+     */
+    public int getRelativeWeight() {
+        return relativeWeight;
+    }
+
+    /**
+     * Legt den Wert der relativeWeight-Eigenschaft fest.
+     * 
+     */
+    public void setRelativeWeight(int value) {
+        this.relativeWeight = value;
+    }
 
     /**
      * Gets the value of the learningOutcomeList property.
