@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2016.01.27 um 12:35:22 PM CET 
+// Generiert: 2016.02.03 um 12:47:52 PM CET 
 //
 
 
@@ -19,7 +19,6 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -35,7 +34,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="qualificationFramework" type="{}qualificationFrameworkType" maxOccurs="unbounded"/&gt;
+ *         &lt;element name="qualificationFramework" type="{}qualificationFrameworkType" maxOccurs="unbounded" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -59,7 +58,6 @@ public class QualificationFrameworkListType
     implements Serializable
 {
 
-    @XmlElement(required = true)
     @ManyToMany(cascade = {
         CascadeType.PERSIST,
         CascadeType.MERGE,

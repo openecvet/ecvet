@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2016.01.27 um 12:35:22 PM CET 
+// Generiert: 2016.02.03 um 12:47:52 PM CET 
 //
 
 
@@ -15,7 +15,6 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -41,12 +40,12 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="memorandumOfUnderstanding" type="{}memorandumOfUnderstandingType"/&gt;
- *         &lt;element name="procedureAndGuidelineList" type="{}procedureAndGuidelineListType"/&gt;
- *         &lt;element name="learningAgreementList" type="{}learningAgreementListType"/&gt;
- *         &lt;element name="transcriptsOfRecordList" type="{}transcriptsOfRecordListType"/&gt;
- *         &lt;element name="creditTransferList" type="{}creditTransferListType"/&gt;
- *         &lt;element name="userGuideList" type="{}userGuideListType"/&gt;
+ *         &lt;element name="memorandumOfUnderstanding" type="{}memorandumOfUnderstandingType" minOccurs="0"/&gt;
+ *         &lt;element name="procedureAndGuidelineList" type="{}procedureAndGuidelineListType" minOccurs="0"/&gt;
+ *         &lt;element name="learningAgreementList" type="{}learningAgreementListType" minOccurs="0"/&gt;
+ *         &lt;element name="transcriptsOfRecordList" type="{}transcriptsOfRecordListType" minOccurs="0"/&gt;
+ *         &lt;element name="creditTransferList" type="{}creditTransferListType" minOccurs="0"/&gt;
+ *         &lt;element name="userGuideList" type="{}userGuideListType" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -75,29 +74,23 @@ public class ComplementaryDocumentsType
     implements Serializable
 {
 
-    @XmlElement(required = true)
     @OneToOne(targetEntity = MemorandumOfUnderstandingType.class, cascade = {
         CascadeType.ALL
     })
     protected MemorandumOfUnderstandingType memorandumOfUnderstanding;
-    @XmlElement(required = true)
     @OneToOne(targetEntity = ProcedureAndGuidelineListType.class, cascade = {
         CascadeType.ALL
     })
     protected ProcedureAndGuidelineListType procedureAndGuidelineList;
-    @XmlElement(required = true)
     @OneToOne(targetEntity = LearningAgreementListType.class, cascade = {
         CascadeType.ALL
     })
     protected LearningAgreementListType learningAgreementList;
-    @XmlElement(required = true)
     @OneToOne(targetEntity = TranscriptsOfRecordListType.class, cascade = {
         CascadeType.ALL
     })
     protected TranscriptsOfRecordListType transcriptsOfRecordList;
-    @XmlElement(required = true)
     protected CreditTransferListType creditTransferList;
-    @XmlElement(required = true)
     @OneToOne(targetEntity = UserGuideListType.class, cascade = {
         CascadeType.ALL
     })

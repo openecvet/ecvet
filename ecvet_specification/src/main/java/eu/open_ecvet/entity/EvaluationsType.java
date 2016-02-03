@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2016.01.27 um 12:35:22 PM CET 
+// Generiert: 2016.02.03 um 12:47:52 PM CET 
 //
 
 
@@ -15,7 +15,6 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -29,9 +28,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="assessmentList" type="{}assessmentListType"/&gt;
- *         &lt;element name="validationList" type="{}validationListType"/&gt;
- *         &lt;element name="recognitionList" type="{}recognitionListType"/&gt;
+ *         &lt;element name="assessmentList" type="{}assessmentListType" minOccurs="0"/&gt;
+ *         &lt;element name="validationList" type="{}validationListType" minOccurs="0"/&gt;
+ *         &lt;element name="recognitionList" type="{}recognitionListType" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -57,17 +56,14 @@ public class EvaluationsType
     implements Serializable
 {
 
-    @XmlElement(required = true)
     @OneToOne(targetEntity = AssessmentListType.class, cascade = {
         CascadeType.ALL
     })
     protected AssessmentListType assessmentList;
-    @XmlElement(required = true)
     @OneToOne(targetEntity = ValidationListType.class, cascade = {
         CascadeType.ALL
     })
     protected ValidationListType validationList;
-    @XmlElement(required = true)
     @OneToOne(targetEntity = RecognitionListType.class, cascade = {
         CascadeType.ALL
     })

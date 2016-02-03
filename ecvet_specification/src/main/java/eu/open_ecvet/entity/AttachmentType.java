@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2016.01.27 um 12:35:22 PM CET 
+// Generiert: 2016.02.03 um 12:47:52 PM CET 
 //
 
 
@@ -15,7 +15,6 @@ import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlIDREF;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
@@ -31,8 +30,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="attachmentUrl" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="idrefToken" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="attachmentUrl" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="idrefToken" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *       &lt;attribute name="idref" use="required" type="{http://www.w3.org/2001/XMLSchema}IDREF" /&gt;
  *     &lt;/extension&gt;
@@ -58,9 +57,7 @@ public class AttachmentType
     implements Serializable
 {
 
-    @XmlElement(required = true)
     protected String attachmentUrl;
-    @XmlElement(required = true)
     protected String idrefToken;
     @XmlAttribute(name = "idref", required = true)
     @XmlIDREF

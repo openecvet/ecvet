@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2016.01.27 um 12:35:22 PM CET 
+// Generiert: 2016.02.03 um 12:47:52 PM CET 
 //
 
 
@@ -15,7 +15,6 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -39,8 +38,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="requirementList" type="{}requirementListType"/&gt;
- *         &lt;element name="assessmentURI" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="requirementList" type="{}requirementListType" minOccurs="0"/&gt;
+ *         &lt;element name="assessmentURI" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -65,12 +64,10 @@ public class ValidationType
     implements Serializable
 {
 
-    @XmlElement(required = true)
     @OneToOne(targetEntity = RequirementListType.class, cascade = {
         CascadeType.ALL
     })
     protected RequirementListType requirementList;
-    @XmlElement(required = true)
     protected String assessmentURI;
 
     /**

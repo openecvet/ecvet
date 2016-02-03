@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2016.01.27 um 12:35:22 PM CET 
+// Generiert: 2016.02.03 um 12:47:52 PM CET 
 //
 
 
@@ -32,6 +32,7 @@ import javax.xml.namespace.QName;
 public class ObjectFactory {
 
     private final static QName _EcvetFramework_QNAME = new QName("", "ecvetFramework");
+    private final static QName _EcvetElementId_QNAME = new QName("", "id");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: eu.open_ecvet.entity
@@ -399,6 +400,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "", name = "ecvetFramework")
     public JAXBElement<EcvetFrameworkType> createEcvetFramework(EcvetFrameworkType value) {
         return new JAXBElement<EcvetFrameworkType>(_EcvetFramework_QNAME, EcvetFrameworkType.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "", name = "id", scope = EcvetElement.class)
+    public JAXBElement<Integer> createEcvetElementId(Integer value) {
+        return new JAXBElement<Integer>(_EcvetElementId_QNAME, Integer.class, EcvetElement.class, value);
     }
 
 }

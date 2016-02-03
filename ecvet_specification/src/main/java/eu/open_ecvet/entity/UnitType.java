@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2016.01.27 um 12:35:22 PM CET 
+// Generiert: 2016.02.03 um 12:47:52 PM CET 
 //
 
 
@@ -15,7 +15,6 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -39,11 +38,11 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="ecvetPoints" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="relativeWeight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="learningOutcomeList" type="{}learningOutcomeListType"/&gt;
- *         &lt;element name="qualificationFrameworkList" type="{}qualificationFrameworkListType"/&gt;
- *         &lt;element name="evaluations" type="{}evaluationsType"/&gt;
+ *         &lt;element name="ecvetPoints" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="relativeWeight" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="learningOutcomeList" type="{}learningOutcomeListType" minOccurs="0"/&gt;
+ *         &lt;element name="qualificationFrameworkList" type="{}qualificationFrameworkListType" minOccurs="0"/&gt;
+ *         &lt;element name="evaluations" type="{}evaluationsType" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -71,19 +70,16 @@ public class UnitType
     implements Serializable
 {
 
-    protected int ecvetPoints;
-    protected int relativeWeight;
-    @XmlElement(required = true)
+    protected Integer ecvetPoints;
+    protected Integer relativeWeight;
     @OneToOne(targetEntity = LearningOutcomeListType.class, cascade = {
         CascadeType.ALL
     })
     protected LearningOutcomeListType learningOutcomeList;
-    @XmlElement(required = true)
     @OneToOne(targetEntity = QualificationFrameworkListType.class, cascade = {
         CascadeType.ALL
     })
     protected QualificationFrameworkListType qualificationFrameworkList;
-    @XmlElement(required = true)
     @OneToOne(targetEntity = EvaluationsType.class, cascade = {
         CascadeType.ALL
     })
@@ -92,32 +88,48 @@ public class UnitType
     /**
      * Ruft den Wert der ecvetPoints-Eigenschaft ab.
      * 
+     * @return
+     *     possible object is
+     *     {@link Integer }
+     *     
      */
-    public int getEcvetPoints() {
+    public Integer getEcvetPoints() {
         return ecvetPoints;
     }
 
     /**
      * Legt den Wert der ecvetPoints-Eigenschaft fest.
      * 
+     * @param value
+     *     allowed object is
+     *     {@link Integer }
+     *     
      */
-    public void setEcvetPoints(int value) {
+    public void setEcvetPoints(Integer value) {
         this.ecvetPoints = value;
     }
 
     /**
      * Ruft den Wert der relativeWeight-Eigenschaft ab.
      * 
+     * @return
+     *     possible object is
+     *     {@link Integer }
+     *     
      */
-    public int getRelativeWeight() {
+    public Integer getRelativeWeight() {
         return relativeWeight;
     }
 
     /**
      * Legt den Wert der relativeWeight-Eigenschaft fest.
      * 
+     * @param value
+     *     allowed object is
+     *     {@link Integer }
+     *     
      */
-    public void setRelativeWeight(int value) {
+    public void setRelativeWeight(Integer value) {
         this.relativeWeight = value;
     }
 

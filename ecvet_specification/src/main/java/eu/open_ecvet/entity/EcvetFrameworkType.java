@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.11 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2016.01.27 um 12:35:22 PM CET 
+// Generiert: 2016.02.03 um 12:47:52 PM CET 
 //
 
 
@@ -30,8 +30,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{}ecvetElement"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="competentInstitutionList" type="{}competentInstitutionListType"/&gt;
- *         &lt;element name="complementaryDocuments" type="{}complementaryDocumentsType"/&gt;
+ *         &lt;element name="competentInstitutionList" type="{}competentInstitutionListType" minOccurs="0"/&gt;
+ *         &lt;element name="complementaryDocuments" type="{}complementaryDocumentsType" minOccurs="0"/&gt;
  *         &lt;element name="qualification" type="{}qualificationType"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
@@ -59,12 +59,10 @@ public class EcvetFrameworkType
     implements Serializable
 {
 
-    @XmlElement(required = true)
     @OneToOne(targetEntity = CompetentInstitutionListType.class, cascade = {
         CascadeType.ALL
     })
     protected CompetentInstitutionListType competentInstitutionList;
-    @XmlElement(required = true)
     @OneToOne(targetEntity = ComplementaryDocumentsType.class, cascade = {
         CascadeType.ALL
     })
