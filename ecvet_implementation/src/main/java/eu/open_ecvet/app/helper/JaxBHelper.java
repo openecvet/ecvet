@@ -50,7 +50,7 @@ public class JaxBHelper
 
 		JAXBContext jc = JAXBContext.newInstance(EcvetFrameworkType.class);
 		Unmarshaller unmarshaller = jc.createUnmarshaller();
-		EcvetFrameworkType ecvetFramework = (EcvetFrameworkType) unmarshaller.unmarshal(new File("res/clay.xml"));
+		EcvetFrameworkType ecvetFramework = (EcvetFrameworkType) unmarshaller.unmarshal(file);
 
 		entityManager.persist(ecvetFramework);
 		tx.commit();

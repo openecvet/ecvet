@@ -1,91 +1,136 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-    <ecvetFrameworkType URI="de.lernlehm.framework.LearnWithClay">
-        <title>Learn with clay</title>
-        <description></description>
-        <qualification URI="">
-            <title>Designer in clay plastering</title>
-            <description></description>
-            <unitList URI="">
-                <title>Designer in clay plastering</title>
-                <description></description>
-                <unit URI="">
-                    <title>U1-Preparing Clay Plaster</title>
-                    <description></description>
-                    <learningOutcomeList URI="">
-                        <title>Wrapper</title>
-                        <description>Wrapper</description>
-                        <learningOutcomeList URI="">
-                            <title>Preparing Clay Plaster</title>
-                            <description></description>
-                            <learningOutcome URI="">
-                                <title>Main constituents of earth as a raw material</title>
-                                <description></description>
-                            </learningOutcome>
-                            <learningOutcome URI="">
-                                <title>Behaviour of earth in relation to water : consistency, cohesion, reversibility</title>
-                                <description></description>
-                            </learningOutcome>
-                            <learningOutcome URI="">
-                                <title>Basic properties of earth - composition and texture (grain size distribution), cohesion, plasticity, colour, absorbtion)</title>
-                                <description></description>
-                            </learningOutcome>
-                            <learningOutcome URI="">
-                                <title>Different clay minerals and their properties</title>
-                                <description></description>
-                            </learningOutcome>
-                            <qualificationFrameworkList URI="">
-                                <title>EQF-Knowledge</title>
-                                <description></description>
-                                <qualificationFramework framework="EQF" frameworkLevel="0" frameworkTerm="knowledge" URI="">
-                                    <title>EQF-Knowledge</title>
-                                    <description></description>
-                                    <indicator></indicator>
-                                </qualificationFramework>
-                            </qualificationFrameworkList>
-                        </learningOutcomeList>
-                    </learningOutcomeList>
-                    <qualificationFrameworkList URI="">
-                        <title>EQF-4</title>
-                        <description></description>
-                        <qualificationFramework framework="EQF" frameworkLevel="4" frameworkTerm="all" URI="">
-                            <title>EQF-4</title>
-                            <description></description>
-                            <indicator></indicator>
-                        </qualificationFramework>
-                    </qualificationFrameworkList>
-                    <evaluations URI="">
-                        <title>U1-Evaluation </title>
-                        <description></description>
-                        <validationList URI="">
-                            <title>U1-Validation</title>
-                            <description></description>
-                            <validation URI="">
-                                <title>Criterion: Quality of the Plaster Mix</title>
-                                <description></description>
-                                <requirementList URI="">
-                                    <title>Quality of the Plaster Mix</title>
-                                    <description></description>
-                                    <requirement URI="">
-                                        <title>The proportions to guarantee a stable plaster are correct</title>
-                                        <description></description>
-                                        <achievementCriterion></achievementCriterion>
-                                    </requirement>
-                                    <requirement URI="">
-                                        <title>The base coat that may have some cracks, adheres strongly to the wall</title>
-                                        <description></description>
-                                        <achievementCriterion></achievementCriterion>
-                                    </requirement>
-                                    <requirement URI="">
-                                        <title>The finish coat has no cracks</title>
-                                        <description></description>
-                                        <achievementCriterion></achievementCriterion>
-                                    </requirement>
-                                </requirementList>
-                                <assessmentURI></assessmentURI>
-                            </validation>
-                        </validationList>
-                    </evaluations>
-                </unit>
-            </unitList>
-        </qualification>
-    </ecvetFrameworkType>
+<ecvetFrameworkType URI="de.lernlehm.framework.LearnWithClay">
+	<id>1</id>
+	<title>Learn with clay</title>
+	<description></description>
+	<qualification URI="">
+		<id>1</id>
+		<title>Designer in clay plastering</title>
+		<description></description>
+		<unitList URI="">
+			<id>1</id>
+			<title>Designer in clay plastering</title>
+			<description></description>
+			<ecvetPoints>0</ecvetPoints>
+			<relativeWeight>15</relativeWeight>
+			<unit URI="">
+				<id>1</id>
+				<title>Unit n° 1 - Preparing Clay Plaster</title>
+				<description></description>
+				<ecvetPoints>0</ecvetPoints>
+				<relativeWeight>0</relativeWeight>
+				<learningOutcomeList URI="">
+					<id>2</id>
+					<title> Preparing Clay Plaster</title>
+					<description> Preparing Clay Plaster</description>
+					<ecvetPoints>0</ecvetPoints>
+					<relativeWeight>0</relativeWeight>
+					<learningOutcomeList URI="">
+						<id>1</id>
+						<title>Preparing Clay Plaster: Knowledge</title>
+						<description></description>
+						<ecvetPoints>0</ecvetPoints>
+						<relativeWeight>0</relativeWeight>
+						<learningOutcome URI="">
+							<id>1</id>
+							<title>Main constituents of earth as a raw material</title>
+							<description></description>
+							<ecvetPoints>0</ecvetPoints>
+							<relativeWeight>0</relativeWeight>
+						</learningOutcome>
+						<learningOutcome URI="">
+							<id>2</id>
+							<title>Different clay minerals and their properties</title>
+							<description></description>
+							<ecvetPoints>0</ecvetPoints>
+							<relativeWeight>0</relativeWeight>
+						</learningOutcome>
+						<learningOutcome URI="">
+							<id>3</id>
+							<title>Basic properties of earth - composition and texture (grain
+								size distribution), cohesion, plasticity, colour, absorbtion)
+							</title>
+							<description></description>
+							<ecvetPoints>0</ecvetPoints>
+							<relativeWeight>0</relativeWeight>
+						</learningOutcome>
+						<learningOutcome URI="">
+							<id>4</id>
+							<title>Behaviour of earth in relation to water : consistency,
+								cohesion, reversibility</title>
+							<description></description>
+							<ecvetPoints>0</ecvetPoints>
+							<relativeWeight>0</relativeWeight>
+						</learningOutcome>
+						<qualificationFrameworkList URI="">
+							<id>1</id>
+							<title>EQF-Knowledge</title>
+							<description></description>
+							<qualificationFramework framework="EQF"
+								frameworkLevel="0" frameworkTerm="knowledge" URI="">
+								<id>1</id>
+								<title>EQF-Knowledge</title>
+								<description></description>
+								<indicator></indicator>
+							</qualificationFramework>
+						</qualificationFrameworkList>
+					</learningOutcomeList>
+				</learningOutcomeList>
+				<qualificationFrameworkList URI="">
+					<id>2</id>
+					<title>EQF-4</title>
+					<description></description>
+					<qualificationFramework framework="EQF"
+						frameworkLevel="4" frameworkTerm="all" URI="">
+						<id>2</id>
+						<title>EQF-4</title>
+						<description></description>
+						<indicator></indicator>
+					</qualificationFramework>
+				</qualificationFrameworkList>
+				<evaluations URI="">
+					<id>1</id>
+					<title>U1-Evaluation </title>
+					<description></description>
+					<validationList URI="">
+						<id>1</id>
+						<title>U1-Validation</title>
+						<description></description>
+						<validation URI="">
+							<id>1</id>
+							<title>Criterion: Quality of the Plaster Mix</title>
+							<description></description>
+							<requirementList URI="">
+								<id>1</id>
+								<title>Quality of the Plaster Mix</title>
+								<description></description>
+								<requirement URI="">
+									<id>1</id>
+									<title>The finish coat has no cracks</title>
+									<description></description>
+									<achievementCriterion></achievementCriterion>
+								</requirement>
+								<requirement URI="">
+									<id>2</id>
+									<title>The base coat that may have some cracks, adheres
+										strongly to the wall</title>
+									<description></description>
+									<achievementCriterion></achievementCriterion>
+								</requirement>
+								<requirement URI="">
+									<id>3</id>
+									<title>The proportions to guarantee a stable plaster are
+										correct</title>
+									<description></description>
+									<achievementCriterion></achievementCriterion>
+								</requirement>
+							</requirementList>
+							<assessmentURI></assessmentURI>
+						</validation>
+					</validationList>
+				</evaluations>
+			</unit>
+		</unitList>
+		<wholeEcvetPoints>0</wholeEcvetPoints>
+	</qualification>
+</ecvetFrameworkType>

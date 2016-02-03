@@ -30,7 +30,8 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="competentInstitutionList" type="competentInstitutionListType">
+					<xsd:element minOccurs="0" name="competentInstitutionList"
+						type="competentInstitutionListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -42,7 +43,8 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="complementaryDocuments" type="complementaryDocumentsType">
+					<xsd:element minOccurs="0" name="complementaryDocuments"
+						type="complementaryDocumentsType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -54,7 +56,7 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="qualification" type="qualificationType">
+					<xsd:element minOccurs="1" name="qualification" type="qualificationType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -163,7 +165,8 @@
 							complementaryDocumentList (which allows to attach files etc)
 						</xsd:documentation>
 					</xsd:annotation>
-					<xsd:element name="memorandumOfUnderstanding" type="memorandumOfUnderstandingType">
+					<xsd:element minOccurs="0" name="memorandumOfUnderstanding"
+						type="memorandumOfUnderstandingType">
 						<xsd:annotation>
 							<xsd:documentation>
 								provide a general framework of cooperation and
@@ -181,7 +184,8 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="procedureAndGuidelineList" type="procedureAndGuidelineListType">
+					<xsd:element minOccurs="0" name="procedureAndGuidelineList"
+						type="procedureAndGuidelineListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -201,7 +205,8 @@
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="learningAgreementList" type="learningAgreementListType">
+					<xsd:element minOccurs="0" name="learningAgreementList"
+						type="learningAgreementListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -213,7 +218,8 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="transcriptsOfRecordList" type="transcriptsOfRecordListType">
+					<xsd:element minOccurs="0" name="transcriptsOfRecordList"
+						type="transcriptsOfRecordListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -225,7 +231,8 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="creditTransferList" type="creditTransferListType">
+					<xsd:element minOccurs="0" name="creditTransferList"
+						type="creditTransferListType">
 						<xsd:annotation>
 							<xsd:documentation>
 								<xsd:appinfo>
@@ -239,7 +246,7 @@
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="userGuideList" type="userGuideListType">
+					<xsd:element minOccurs="0" name="userGuideList" type="userGuideListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -273,7 +280,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="creditTransfer" type="creditTransferType"
+					<xsd:element minOccurs="0" name="creditTransfer" type="creditTransferType"
 						maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:appinfo>
@@ -326,8 +333,8 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element maxOccurs="unbounded" name="transcriptsOfRecord"
-						type="transcriptsOfRecordType">
+					<xsd:element minOccurs="0" maxOccurs="unbounded"
+						name="transcriptsOfRecord" type="transcriptsOfRecordType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -366,7 +373,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element maxOccurs="unbounded" name="userGuide"
+					<xsd:element minOccurs="0" maxOccurs="unbounded" name="userGuide"
 						type="userGuideType">
 						<xsd:annotation>
 							<xsd:appinfo>
@@ -432,7 +439,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="ecvetPoints" type="xsd:int">
+					<xsd:element minOccurs="0" name="ecvetPoints" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
 								According to: C 155/14 Annex 1 - Definitions
@@ -444,7 +451,7 @@
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="relativeWeight" type="xsd:int">
+					<xsd:element minOccurs="0" name="relativeWeight" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
 								convenient field = wholeEcvetPoints(from the
@@ -483,8 +490,8 @@
 						</xsd:annotation>
 					</xsd:element>
 
-					<xsd:element name="unit" type="unitType" minOccurs="0"
-						maxOccurs="unbounded">
+					<xsd:element name="unit" type="unitType"
+						minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -507,7 +514,8 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="qualificationFrameworkList" type="qualificationFrameworkListType">
+					<xsd:element minOccurs="0" name="qualificationFrameworkList"
+						type="qualificationFrameworkListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -519,7 +527,7 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="evaluations" type="evaluationsType">
+					<xsd:element minOccurs="0" name="evaluations" type="evaluationsType">
 						<xsd:annotation>
 							<xsd:documentation>
 								constructed in a way that enables discrete
@@ -567,7 +575,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="ecvetPoints" type="xsd:int">
+					<xsd:element minOccurs="0" name="ecvetPoints" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
 								According to: C 155/14 Annex 1 - Definitions
@@ -579,7 +587,7 @@
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="relativeWeight" type="xsd:int">
+					<xsd:element minOccurs="0" name="relativeWeight" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
 								convenient field = wholeEcvetPoints(from the
@@ -588,7 +596,8 @@
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="learningOutcomeList" type="learningOutcomeListType">
+					<xsd:element minOccurs="0" name="learningOutcomeList"
+						type="learningOutcomeListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -601,7 +610,8 @@
 						</xsd:annotation>
 					</xsd:element>
 
-					<xsd:element name="qualificationFrameworkList" type="qualificationFrameworkListType">
+					<xsd:element minOccurs="0" name="qualificationFrameworkList"
+						type="qualificationFrameworkListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -613,7 +623,7 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="evaluations" type="evaluationsType">
+					<xsd:element minOccurs="0" name="evaluations" type="evaluationsType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -626,7 +636,7 @@
 						</xsd:annotation>
 					</xsd:element>
 
-					<!-- <xsd:element name="validityInTime" type="xsd:duration"> -->
+					<!-- <xsd:element minOccurs="0" name="validityInTime" type="xsd:duration"> -->
 					<!-- <xsd:annotation> -->
 					<!-- <xsd:documentation> -->
 					<!-- ECVET — PRINCIPLES AND TECHNICAL SPECIFICATIONS -->
@@ -655,8 +665,8 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="qualificationFramework" type="qualificationFrameworkType"
-						maxOccurs="unbounded">
+					<xsd:element minOccurs="0" name="qualificationFramework"
+						type="qualificationFrameworkType" maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -695,7 +705,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="indicator" type="xsd:string">
+					<xsd:element minOccurs="0" name="indicator" type="xsd:string">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<xsd:documentation>
@@ -761,14 +771,15 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-				<xsd:element name="ecvetPoints" type="xsd:int">
+					<xsd:element minOccurs="0" name="ecvetPoints" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
-								not recommended. Possibly usefull for granulate the ecvetpoints, which are given to units
+								not recommended. Possibly usefull for
+								granulate the ecvetpoints, which are given to units
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="relativeWeight" type="xsd:int">
+					<xsd:element minOccurs="0" name="relativeWeight" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
 								convenient field = wholeEcvetPoints(from the
@@ -777,8 +788,8 @@
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="learningOutcomeList" type="learningOutcomeListType"
-						minOccurs="0" maxOccurs="unbounded">
+					<xsd:element name="learningOutcomeList"
+						type="learningOutcomeListType" minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -825,7 +836,8 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="qualificationFrameworkList" type="qualificationFrameworkListType">
+					<xsd:element minOccurs="0" name="qualificationFrameworkList"
+						type="qualificationFrameworkListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -837,7 +849,7 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="evaluations" type="evaluationsType">
+					<xsd:element minOccurs="0" name="evaluations" type="evaluationsType">
 						<xsd:annotation>
 							<xsd:documentation>
 								constructed in a way that enables discrete
@@ -880,7 +892,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="ecvetPoints" type="xsd:int">
+					<xsd:element minOccurs="0" name="ecvetPoints" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
 								According to: C 155/14 Annex 1 - Definitions
@@ -892,7 +904,7 @@
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="relativeWeight" type="xsd:int">
+					<xsd:element minOccurs="0" name="relativeWeight" type="xsd:int">
 						<xsd:annotation>
 							<xsd:documentation>
 								convenient field = wholeEcvetPoints(from the
@@ -901,7 +913,8 @@
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="qualificationFrameworkList" type="qualificationFrameworkListType">
+					<xsd:element minOccurs="0" name="qualificationFrameworkList"
+						type="qualificationFrameworkListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -913,7 +926,7 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="evaluations" type="evaluationsType">
+					<xsd:element minOccurs="0" name="evaluations" type="evaluationsType">
 						<xsd:annotation>
 							<xsd:documentation>
 								constructed in a way that enables discrete
@@ -962,7 +975,7 @@
 							types (re)usable for unit / learningOutcome
 						</xsd:documentation>
 					</xsd:annotation>
-					<xsd:element name="assessmentList" type="assessmentListType">
+					<xsd:element minOccurs="0" name="assessmentList" type="assessmentListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -974,7 +987,7 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="validationList" type="validationListType">
+					<xsd:element minOccurs="0" name="validationList" type="validationListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -986,7 +999,7 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="recognitionList" type="recognitionListType">
+					<xsd:element minOccurs="0" name="recognitionList" type="recognitionListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -1014,7 +1027,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="validation" type="validationType"
+					<xsd:element minOccurs="0" name="validation" type="validationType"
 						maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:documentation>
@@ -1067,7 +1080,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="requirementList" type="requirementListType">
+					<xsd:element minOccurs="0" name="requirementList" type="requirementListType">
 						<xsd:annotation>
 							<xsd:documentation>
 								According to: C 155/14 Annex 1 - Definitions
@@ -1083,7 +1096,7 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="assessmentURI" type="xsd:string">
+					<xsd:element minOccurs="0" name="assessmentURI" type="xsd:string">
 						<!-- TODO: id ref ? -->
 					</xsd:element>
 				</xsd:sequence>
@@ -1102,7 +1115,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="requirement" type="requirementType"
+					<xsd:element minOccurs="0" name="requirement" type="requirementType"
 						maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:appinfo>
@@ -1142,7 +1155,8 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="achievementCriterion" type="xsd:string" />
+					<xsd:element minOccurs="0" name="achievementCriterion"
+						type="xsd:string" />
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
@@ -1159,7 +1173,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="assessment" type="assessmentType"
+					<xsd:element minOccurs="0" name="assessment" type="assessmentType"
 						maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:appinfo>
@@ -1210,7 +1224,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="methodList" type="methodListType">
+					<xsd:element minOccurs="0" name="methodList" type="methodListType">
 						<xsd:annotation>
 							<xsd:documentation>
 								According to: C 155/14 Annex 1 - Definitions
@@ -1226,7 +1240,7 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="processList" type="processListType">
+					<xsd:element minOccurs="0" name="processList" type="processListType">
 						<xsd:annotation>
 							<xsd:documentation>
 								According to: C 155/14 Annex 1 - Definitions
@@ -1258,7 +1272,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="process" type="processType"
+					<xsd:element minOccurs="0" name="process" type="processType"
 						maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:appinfo>
@@ -1311,7 +1325,8 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="method" type="methodType" maxOccurs="unbounded">
+					<xsd:element minOccurs="0" name="method" type="methodType"
+						maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -1363,8 +1378,8 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element maxOccurs="unbounded" name="competentInstitution"
-						type="competentInstitutionType">
+					<xsd:element minOccurs="0" maxOccurs="unbounded"
+						name="competentInstitution" type="competentInstitutionType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -1417,7 +1432,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="partnerList" type="partnerListType">
+					<xsd:element minOccurs="0" name="partnerList" type="partnerListType">
 						<xsd:annotation>
 							<xsd:documentation>
 								ANNEX II ECVET — PRINCIPLES AND TECHNICAL
@@ -1434,7 +1449,7 @@
 							</xsd:appinfo>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="legislationList" type="legislationListType">
+					<xsd:element minOccurs="0" name="legislationList" type="legislationListType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -1474,8 +1489,8 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="procedureAndGuideline" type="procedureAndGuidelineType"
-						maxOccurs="unbounded">
+					<xsd:element minOccurs="0" name="procedureAndGuideline"
+						type="procedureAndGuidelineType" maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -1514,9 +1529,9 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="assessment" type="xsd:string"></xsd:element>
-					<xsd:element name="validation" type="xsd:string"></xsd:element>
-					<xsd:element name="recognition" type="xsd:string"></xsd:element>
+					<xsd:element minOccurs="0" name="assessment" type="xsd:string"></xsd:element>
+					<xsd:element minOccurs="0" name="validation" type="xsd:string"></xsd:element>
+					<xsd:element minOccurs="0" name="recognition" type="xsd:string"></xsd:element>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
@@ -1533,7 +1548,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="legislation" type="legislationType"
+					<xsd:element minOccurs="0" name="legislation" type="legislationType"
 						maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:appinfo>
@@ -1580,8 +1595,8 @@
 							definition in (e))
 						</xsd:documentation>
 					</xsd:annotation>
-					<xsd:element name="rules" type="xsd:string"></xsd:element>
-					<xsd:element name="practices" type="xsd:string"></xsd:element>
+					<xsd:element minOccurs="0" name="rules" type="xsd:string"></xsd:element>
+					<xsd:element minOccurs="0" name="practices" type="xsd:string"></xsd:element>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
@@ -1598,8 +1613,8 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element maxOccurs="unbounded" name="learningAgreement"
-						type="learningAgreementType">
+					<xsd:element minOccurs="0" maxOccurs="unbounded"
+						name="learningAgreement" type="learningAgreementType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -1662,8 +1677,10 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetAttachment">
 				<xsd:sequence>
-					<xsd:element name="hostingInstitutionURI" type="xsd:string"></xsd:element>
-					<xsd:element name="homeInstitutionURI" type="xsd:string"></xsd:element>
+					<xsd:element minOccurs="0" name="hostingInstitutionURI"
+						type="xsd:string"></xsd:element>
+					<xsd:element minOccurs="0" name="homeInstitutionURI"
+						type="xsd:string"></xsd:element>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
@@ -1680,7 +1697,7 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element maxOccurs="unbounded" name="recognition"
+					<xsd:element minOccurs="0" maxOccurs="unbounded" name="recognition"
 						type="recognitionType">
 						<xsd:annotation>
 							<xsd:appinfo>
@@ -1720,14 +1737,16 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="competentInstitutionURI" type="xsd:string">
+					<xsd:element minOccurs="0" name="competentInstitutionURI"
+						type="xsd:string">
 						<xsd:annotation>
 							<xsd:documentation>
 								references to the competentInstitutionType URI
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="certificateTemplate" type="certificateTemplateType">
+					<xsd:element minOccurs="0" name="certificateTemplate"
+						type="certificateTemplateType">
 						<xsd:annotation>
 							<xsd:documentation>
 								digital content can be attached
@@ -1771,7 +1790,8 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element maxOccurs="unbounded" name="partner" type="partnerType">
+					<xsd:element minOccurs="0" maxOccurs="unbounded" name="partner"
+						type="partnerType">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -1823,8 +1843,8 @@
 		<xsd:complexContent>
 			<xsd:extension base="ecvetElement">
 				<xsd:sequence>
-					<xsd:element name="attachmentUrl" type="xsd:string"></xsd:element>
-					<xsd:element name="idrefToken" type="xsd:string">
+					<xsd:element minOccurs="0" name="attachmentUrl" type="xsd:string"></xsd:element>
+					<xsd:element minOccurs="0" name="idrefToken" type="xsd:string">
 						<xsd:annotation>
 							<xsd:documentation>
 								Dummy: to store binaries outside the DB
@@ -1877,7 +1897,8 @@
 			</xsd:appinfo>
 		</xsd:annotation>
 		<xsd:sequence>
-			<xsd:element name="id" nillable="true" type="xsd:int">
+			<xsd:element minOccurs="0" name="id" nillable="true"
+				type="xsd:int">
 				<xsd:annotation>
 					<xsd:appinfo>
 						<annox:annotate target="field">
@@ -1897,7 +1918,7 @@
 					</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
-			<xsd:element name="description" type="xsd:string">
+			<xsd:element minOccurs="0" name="description" type="xsd:string">
 				<xsd:annotation>
 					<xsd:appinfo>
 						<annox:annotate target="field">
