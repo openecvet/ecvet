@@ -23,8 +23,7 @@
 				<annox:annotate target="field">
 					<Entity annox:class="javax.persistence.Entity"></Entity>
 					<Table annox:class="javax.persistence.Table" name="ecvetframework"></Table>
-					<XmlRootElement annox:class="javax.xml.bind.annotation.XmlRootElement"></XmlRootElement>
-<!-- 					<XmlType annox:class="javax.xml.bind.annotation.XmlType"><name>ecvetFramework</name></XmlType> -->
+					<XmlRootElement annox:class="javax.xml.bind.annotation.XmlRootElement"><name>ecvetFramework</name></XmlRootElement>
 				</annox:annotate>
 			</xsd:appinfo>
 		</xsd:annotation>
@@ -491,8 +490,8 @@
 						</xsd:annotation>
 					</xsd:element>
 
-					<xsd:element name="unit" type="unitType"
-						minOccurs="0" maxOccurs="unbounded">
+					<xsd:element name="unit" type="unitType" minOccurs="0"
+						maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -789,8 +788,8 @@
 							</xsd:documentation>
 						</xsd:annotation>
 					</xsd:element>
-					<xsd:element name="learningOutcomeList"
-						type="learningOutcomeListType" minOccurs="0" maxOccurs="unbounded">
+					<xsd:element name="learningOutcomeList" type="learningOutcomeListType"
+						minOccurs="0" maxOccurs="unbounded">
 						<xsd:annotation>
 							<xsd:appinfo>
 								<annox:annotate target="field">
@@ -1898,8 +1897,7 @@
 			</xsd:appinfo>
 		</xsd:annotation>
 		<xsd:sequence>
-			<xsd:element minOccurs="0" name="id" nillable="true"
-				type="xsd:int">
+			<xsd:element name="id" minOccurs="0" type="xsd:int">
 				<xsd:annotation>
 					<xsd:appinfo>
 						<annox:annotate target="field">
