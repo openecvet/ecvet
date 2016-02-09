@@ -1,183 +1,508 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ecvetFramework URI="de.lernlehm.framework.LearnWithClay" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/draft.xsd">
-	<title>Learn with clay</title>
-	<description></description>
-	<qualification URI="">
-		<title>Designer in clay plastering</title>
-		<description></description>
-		<unitList URI="">
-			<title>Designer in clay plastering</title>
-			<description></description>
-			<ecvetPoints>0</ecvetPoints>
-			<relativeWeight>15</relativeWeight>
-			<unit URI="">
-				<title>Test: Unit n° 1 - Preparing Clay Plaster</title>
-				<description></description>
-				<ecvetPoints>0</ecvetPoints>
-				<relativeWeight>0</relativeWeight>
-				<learningOutcomeList URI="">
-					<title> Preparing Clay Plaster</title>
-					<description> Preparing Clay Plaster</description>
-					<ecvetPoints>0</ecvetPoints>
-					<relativeWeight>0</relativeWeight>
-					<learningOutcomeList URI="">
-						<title>Preparing Clay Plaster: Knowledge</title>
-						<description></description>
-						<ecvetPoints>0</ecvetPoints>
-						<relativeWeight>0</relativeWeight>
-						<learningOutcome URI="">
-							<title>Preparation and mixing of clay plaster</title>
-							<description>· Current legislative workplace requirements · Relevant codes of practice and current standards for quality of work and materials · Tools, machinery and equipment · The order of work in planning and making plaster · Safe and healthy working practices</description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<learningOutcome URI="">
-							<title>Sourcing of materials : raw material, manufactured products, clay powders</title>
-							<description></description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<learningOutcome URI="">
-							<title>Different clay minerals and their properties</title>
-							<description></description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<learningOutcome URI="">
-							<title>Composition of clay plaster</title>
-							<description></description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<learningOutcome URI="">
-							<title>Principles of stabilisation of clay plaster for interior and exterior work</title>
-							<description></description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<learningOutcome URI="">
-							<title>Basic properties of earth - composition and texture (grain size distribution), cohesion, plasticity, colour, absorbtion)
-                                </title>
-							<description></description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<learningOutcome URI="">
-							<title>Principal additives (aggregates, fibre, stabilisers, pigments) their use and their effects</title>
-							<description></description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<learningOutcome URI="">
-							<title>Behaviour of earth in relation to water : consistency, cohesion, reversibility</title>
-							<description></description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<learningOutcome URI="">
-							<title>Estimate of quantities and calculation of mixture ratios</title>
-							<description></description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<learningOutcome URI="">
-							<title>Test method for determining the mixture (constituent proportions) for different plaster layers and for different areas of application</title>
-							<description></description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<learningOutcome URI="">
-							<title>Finished plaster quality to achieve the required standard for the particular conditions of use</title>
-							<description></description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<learningOutcome URI="">
-							<title>Manufactured products, their use and areas of application</title>
-							<description></description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<learningOutcome URI="">
-							<title>Field Identification tests for earth</title>
-							<description></description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<learningOutcome URI="">
-							<title>Awareness of impact on indoor climate and environment</title>
-							<description></description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<learningOutcome URI="">
-							<title>Criteria in guaging correct proportions of constituents for clay plaster</title>
-							<description></description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<learningOutcome URI="">
-							<title>Main constituents of earth as a raw material</title>
-							<description></description>
-							<ecvetPoints>0</ecvetPoints>
-							<relativeWeight>0</relativeWeight>
-						</learningOutcome>
-						<qualificationFrameworkList URI="">
-							<title>EQF-Knowledge</title>
-							<description></description>
-							<qualificationFramework framework="EQF" frameworkLevel="0" frameworkTerm="knowledge" URI="">
-								<title>EQF-Knowledge</title>
-								<description></description>
-								<indicator></indicator>
-							</qualificationFramework>
-						</qualificationFrameworkList>
-						<evaluations URI="">
-							<title>U1-Evaluation </title>
-							<description></description>
-							<validationList URI="">
-								<title>U1-Validation</title>
-								<description></description>
-								<validation URI="">
-									<title>Criterion: Quality of the Plaster Mix</title>
-									<description></description>
-									<requirementList URI="">
-										<title>Quality of the Plaster Mix</title>
-										<description></description>
-										<requirement URI="">
-											<title>The finish coat has no cracks</title>
-											<description></description>
-											<achievementCriterion></achievementCriterion>
-										</requirement>
-										<requirement URI="">
-											<title>The proportions to guarantee a stable plaster are correct
-                                        </title>
-											<description></description>
-											<achievementCriterion></achievementCriterion>
-										</requirement>
-										<requirement URI="">
-											<title>The base coat that may have some cracks, adheres strongly to the wall</title>
-											<description></description>
-											<achievementCriterion></achievementCriterion>
-										</requirement>
-									</requirementList>
-									<assessmentURI></assessmentURI>
-								</validation>
-							</validationList>
-						</evaluations>
-					</learningOutcomeList>
-				</learningOutcomeList>
-				<qualificationFrameworkList URI="">
-					<title>EQF-4</title>
-					<description></description>
-					<qualificationFramework framework="EQF" frameworkLevel="4" frameworkTerm="all" URI="">
-						<title>EQF-4</title>
-						<description></description>
-						<indicator></indicator>
-					</qualificationFramework>
-				</qualificationFrameworkList>
-
-			</unit>
-		</unitList>
-		<wholeEcvetPoints>0</wholeEcvetPoints>
-	</qualification>
+  <id>1</id>
+  <title>Learn with clay</title>
+  <description></description>
+  <qualification URI="">
+    <id>1</id>
+    <title>Designer in clay plastering</title>
+    <description></description>
+    <unitList URI="">
+      <id>1</id>
+      <title>Designer in clay plastering</title>
+      <description></description>
+      <ecvetPoints>0</ecvetPoints>
+      <relativeWeight>15</relativeWeight>
+      <unit URI="">
+        <id>1</id>
+        <title>Test: Unit n° 1 - Preparing Clay Plaster</title>
+        <description></description>
+        <ecvetPoints>0</ecvetPoints>
+        <relativeWeight>0</relativeWeight>
+        <learningOutcomeList URI="">
+          <id>3</id>
+          <title> Preparing Clay Plaster</title>
+          <description> Preparing Clay Plaster</description>
+          <ecvetPoints>0</ecvetPoints>
+          <relativeWeight>0</relativeWeight>
+          <learningOutcomeList URI="">
+            <id>2</id>
+            <title>Preparing Clay Plaster: Knowledge</title>
+            <description></description>
+            <ecvetPoints>0</ecvetPoints>
+            <relativeWeight>0</relativeWeight>
+            <learningOutcome URI="">
+              <id>26</id>
+              <title>Sourcing of materials : raw material, manufactured
+                products, clay powders</title>
+              <description></description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <learningOutcome URI="">
+              <id>8</id>
+              <title>Criteria in guaging correct proportions of
+                constituents for clay plaster</title>
+              <description></description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <learningOutcome URI="">
+              <id>13</id>
+              <title>Composition of clay plaster</title>
+              <description></description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <learningOutcome URI="">
+              <id>32</id>
+              <title>Principal additives (aggregates, fibre,
+                stabilisers, pigments) their use and their effects
+              </title>
+              <description></description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <learningOutcome URI="">
+              <id>9</id>
+              <title>Test method for determining the mixture
+                (constituent proportions) for different plaster layers
+                and for different areas of application</title>
+              <description></description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <learningOutcome URI="">
+              <id>33</id>
+              <title>Different clay minerals and their properties
+              </title>
+              <description></description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <learningOutcome URI="">
+              <id>20</id>
+              <title>Field Identification tests for earth</title>
+              <description></description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <learningOutcome URI="">
+              <id>3</id>
+              <title>Main constituents of earth as a raw material
+              </title>
+              <description></description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <learningOutcome URI="">
+              <id>4</id>
+              <title>Behaviour of earth in relation to water :
+                consistency, cohesion, reversibility</title>
+              <description></description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <learningOutcome URI="">
+              <id>31</id>
+              <title>Basic properties of earth - composition and texture
+                (grain size distribution), cohesion, plasticity, colour,
+                absorbtion)
+              </title>
+              <description></description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <learningOutcome URI="">
+              <id>29</id>
+              <title>Preparation and mixing of clay plaster</title>
+              <description>· Current legislative workplace requirements
+                · Relevant codes of practice and current standards for
+                quality of work and materials · Tools, machinery and
+                equipment · The order of work in planning and making
+                plaster · Safe and healthy working practices
+              </description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <learningOutcome URI="">
+              <id>25</id>
+              <title>Manufactured products, their use and areas of
+                application</title>
+              <description></description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <learningOutcome URI="">
+              <id>24</id>
+              <title>Awareness of impact on indoor climate and
+                environment</title>
+              <description></description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <learningOutcome URI="">
+              <id>12</id>
+              <title>Principles of stabilisation of clay plaster for
+                interior and exterior work</title>
+              <description></description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <learningOutcome URI="">
+              <id>17</id>
+              <title>Estimate of quantities and calculation of mixture
+                ratios</title>
+              <description></description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <learningOutcome URI="">
+              <id>19</id>
+              <title>Finished plaster quality to achieve the required
+                standard for the particular conditions of use</title>
+              <description></description>
+              <ecvetPoints>0</ecvetPoints>
+              <relativeWeight>0</relativeWeight>
+            </learningOutcome>
+            <qualificationFrameworkList URI="">
+              <id>3</id>
+              <title>EQF-Knowledge</title>
+              <description></description>
+              <qualificationFramework framework="EQF"
+                frameworkLevel="0" frameworkTerm="knowledge" URI="">
+                <id>1</id>
+                <title>EQF-Knowledge</title>
+                <description></description>
+                <indicator></indicator>
+              </qualificationFramework>
+            </qualificationFrameworkList>
+            <evaluations>
+              <title>U1-Knowledge-Evaluation</title>
+              <validationList>
+                <title>Assessing the knowledge</title>
+                <validation>
+                  <title>Written Examination</title>
+                </validation>
+              </validationList>
+            </evaluations>
+          </learningOutcomeList>
+          <learningOutcomeList URI="">
+            <id>4</id>
+            <title>Prepeareing Clay Plaster: Skills</title>
+            <description></description>
+            <learningOutcome>
+              <id>10</id>
+              <title>Select and use appropriate tools, machinery and
+                equipment to prepare raw materials and to mix</title>
+            </learningOutcome>
+            <learningOutcome>
+              <id>2</id>
+              <title>Conduct field identification tests</title>
+            </learningOutcome>
+            <learningOutcome>
+              <id>14</id>
+              <title>Select, calculate and source materials</title>
+            </learningOutcome>
+            <learningOutcome>
+              <id>22</id>
+              <title>Organise the building site</title>
+            </learningOutcome>
+            <learningOutcome>
+              <id>27</id>
+              <title>Comply with current legislation, official guidance
+                and workplace safety requirements at all times</title>
+            </learningOutcome>
+            <learningOutcome>
+              <id>1</id>
+              <title>Make sample panels</title>
+            </learningOutcome>
+            <learningOutcome>
+              <id>7</id>
+              <title>Select the components for different plasters ;
+                conduct test methods and interpret the results</title>
+            </learningOutcome>
+            <learningOutcome>
+              <id>30</id>
+              <title>Calculate total quantities of plaster for the
+                finished job and totals for each constituent</title>
+            </learningOutcome>
+            <learningOutcome>
+              <id>18</id>
+              <title>Calculate quantities of each constituent for the
+                mixing process</title>
+            </learningOutcome>
+            <learningOutcome>
+              <id>16</id>
+              <title>Prepare raw materials (dry, grind, size, sieve,
+                soften in water, store, transport)</title>
+            </learningOutcome>
+            <evaluations URI="">
+              <id>1</id>
+              <title>U1-Skills-Evaluation </title>
+              <description></description>
+              <validationList URI="">
+                <id>1</id>
+                <title>U1-Skills-Validation</title>
+                <description></description>
+                <validation URI="">
+                  <id>4</id>
+                  <title>Quality of the Plaster Mix</title>
+                  <requirementList URI="">
+                    <id>6</id>
+                    <title>Quality of the Plaster Mix</title>
+                    <description>Indicators</description>
+                    <requirement URI="">
+                      <id>3</id>
+                      <title>The proportions to guarantee a stable
+                        plaster are correct</title>
+                      <description></description>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                    <requirement URI="">
+                      <id>11</id>
+                      <title>The base coat that may have some cracks,
+                        adheres strongly to the wall</title>
+                      <description></description>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                    <requirement URI="">
+                      <id>9</id>
+                      <title>The finish coat has no cracks</title>
+                      <description></description>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                  </requirementList>
+                  <assessmentURI></assessmentURI>
+                </validation>
+                <validation>
+                  <id>3</id>
+                  <title>Workability</title>
+                  <requirementList>
+                    <id>5</id>
+                    <title>Workability</title>
+                    <requirement>
+                      <id>5</id>
+                      <title>The consistency is appropriate for the
+                        application technique and for the function of
+                        the layer</title>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                    <requirement>
+                      <id>4</id>
+                      <title>The grain and fiber size are appropriate
+                        for the application technique</title>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                  </requirementList>
+                </validation>
+                <validation>
+                  <id>5</id>
+                  <title>Recipe</title>
+                  <requirementList>
+                    <id>3</id>
+                    <title>Recipe</title>
+                    <requirement>
+                      <id>13</id>
+                      <title>Test samples are logically ordered and have
+                        a clear key</title>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                    <requirement>
+                      <id>10</id>
+                      <title>Test sample thicknesses and dimensions are
+                        the same</title>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                    <requirement>
+                      <id>16</id>
+                      <title>The chosen recipe from the test results is:
+                      </title>
+                      <description>
+                        · correct for the plaster layer
+                        · appropriate for the application technique
+                        · suitable for selected surface finishing technique
+                        · corresponds to the desired finished texture and colour
+                      </description>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                    <requirement>
+                      <id>1</id>
+                      <title>The chosen recipe is clearly written down
+                        and can be repeated</title>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                    <requirement>
+                      <id>15</id>
+                      <title>he quantities of the different constituents
+                        have been calculated according to the recipe
+                      </title>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                  </requirementList>
+                </validation>
+                <validation>
+                  <id>2</id>
+                  <title>The Mix</title>
+                  <requirementList>
+                    <id>4</id>
+                    <title>The Mix</title>
+                    <requirement>
+                      <id>12</id>
+                      <title>Each mixing cycle follows the recipe
+                      </title>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                    <requirement>
+                      <id>14</id>
+                      <title>The plaster mix is homogenous</title>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                    <requirement>
+                      <id>7</id>
+                      <title>The quantity of plaster is sufficient
+                      </title>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                  </requirementList>
+                </validation>
+                <validation>
+                  <id>1</id>
+                  <title>Preparation</title>
+                  <requirementList>
+                    <id>1</id>
+                    <title>Preparation</title>
+                    <requirement>
+                      <id>8</id>
+                      <title>The materials are soaked for the
+                        appropriate time</title>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                    <requirement>
+                      <id>2</id>
+                      <title>The materials are sized and sieved for the
+                        appropriate purpose</title>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                    <requirement>
+                      <id>17</id>
+                      <title>Field tests have been performed accurately
+                      </title>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                  </requirementList>
+                </validation>
+                <validation>
+                  <id>6</id>
+                  <title>Sample boards</title>
+                  <requirementList>
+                    <id>2</id>
+                    <title>Sample boards</title>
+                    <requirement>
+                      <id>6</id>
+                      <title>Sample boards have an appropriate key for
+                        the sample plaster finish, are well executed and
+                        can be easily transported without damage</title>
+                      <achievementCriterion>0-29; 20-49; 50-66; 67-80;
+                        81-91; 92-100</achievementCriterion>
+                    </requirement>
+                  </requirementList>
+                </validation>
+              </validationList>
+            </evaluations>
+          </learningOutcomeList>
+          <learningOutcomeList URI="">
+            <id>1</id>
+            <title>Prepearing Clay Plaster: Competences</title>
+            <description></description>
+            <learningOutcome>
+              <id>23</id>
+              <title>Source materials, in particular find raw materials
+                and select earth samples, and prepare them</title>
+            </learningOutcome>
+            <learningOutcome>
+              <id>21</id>
+              <title>Explain your choice of recipes for different
+                plaster layers and for different application techniques,
+                from both raw materials and from manufactured products
+              </title>
+            </learningOutcome>
+            <learningOutcome>
+              <id>15</id>
+              <title>Plan and organise the process of preparing clay
+                plaster for usual and predictable building sites</title>
+            </learningOutcome>
+            <learningOutcome>
+              <id>5</id>
+              <title>Control the quality of the plaster</title>
+            </learningOutcome>
+            <learningOutcome>
+              <id>11</id>
+              <title>Supervise the mixing process</title>
+            </learningOutcome>
+            <learningOutcome>
+              <id>6</id>
+              <title>Input into the decision making process concerning
+                the plaster choice</title>
+            </learningOutcome>
+            <learningOutcome>
+              <id>28</id>
+              <title>Advise on suitable areas of application for clay
+                plaster and the benefits for indoor climate</title>
+            </learningOutcome>
+            <qualificationFrameworkList URI="">
+              <id>1</id>
+              <title>EQF-Competences</title>
+              <description></description>
+              <qualificationFramework framework="EQF"
+                frameworkLevel="0" frameworkTerm="competences" URI="">
+                <id>2</id>
+                <title>EQF-Competences</title>
+                <description></description>
+                <indicator></indicator>
+              </qualificationFramework>
+            </qualificationFrameworkList>
+            <evaluations>
+              <title>U1-Competence-Evaluation</title>
+              <validationList>
+                <title>Assessing the Competence</title>
+                <validation>
+                  <title>Inteview</title>
+                </validation>
+              </validationList>
+            </evaluations>
+          </learningOutcomeList>
+        </learningOutcomeList>
+        <qualificationFrameworkList URI="">
+          <id>2</id>
+          <title>EQF-4</title>
+          <description></description>
+          <qualificationFramework framework="EQF"
+            frameworkLevel="4" frameworkTerm="all" URI="">
+            <id>3</id>
+            <title>EQF-4</title>
+            <description></description>
+            <indicator></indicator>
+          </qualificationFramework>
+        </qualificationFrameworkList>
+      </unit>
+    </unitList>
+    <wholeEcvetPoints>0</wholeEcvetPoints>
+  </qualification>
 </ecvetFramework>
