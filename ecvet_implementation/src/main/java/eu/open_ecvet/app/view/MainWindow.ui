@@ -64,8 +64,11 @@
                             "-fieldName": {
                                 "value": "exportMySql"
                             },
+                            "enabled": {
+                                "value": false
+                            },
                             "text": {
-                                "value": "Exportt MySQL"
+                                "value": "Export MySQL"
                             }
                         }
                     },

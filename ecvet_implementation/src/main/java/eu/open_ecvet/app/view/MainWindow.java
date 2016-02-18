@@ -259,7 +259,7 @@ public class MainWindow extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPER
 		importXML = new XdevMenuItem(new DefaultAction("Import XML",null,null,null,true));
 		exportXML = new XdevMenuItem(new DefaultAction("Export XML",null,null,null,true));
 		dropTables = new XdevMenuItem(new DefaultAction("Drop Tables",null,null,null,true));
-		exportMySql = new XdevMenuItem(new DefaultAction("Exportt MySQL",null,null,null,true));
+		exportMySql = new XdevMenuItem(new DefaultAction("Export MySQL",null,null,null,true));
 		menuItem2 = new XdevMenuItem(new DefaultAction("About",null,null,null,true));
 		tabbedPane = new XdevTabbedPane();
 		tab = new XdevTab();
@@ -354,6 +354,7 @@ public class MainWindow extends XdevWindow //  ${GENERATED-CODE-LINE:BEAN_SUPER
 		this.setFont(new Font("Arial",Font.PLAIN,11));
 		this.setPreferredSize(new Dimension(800,600));
 		menu.setText("File");
+		exportMySql.setEnabled(false);
 		tabbedPane.setTabPlacement(XdevTabbedPane.LEFT);
 		tabbedPane.setTabLayoutPolicy(JTabbedPane.SCROLL_TAB_LAYOUT);
 		tab.setTitle("Welcome");
